@@ -1,4 +1,8 @@
 import { Container, Typography, Box, Button, Paper } from "@mui/material";
+import Accordion from "@mui/material/Accordion";
+import AccordionSummary from "@mui/material/AccordionSummary";
+import AccordionDetails from "@mui/material/AccordionDetails";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
 import Head from "next/head";
 import SEO from "@/components/UI/SEO";
@@ -29,6 +33,53 @@ export default function HomePage() {
     },
   };
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "偏差値ランキングはどのように作成されていますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "School Stationの偏差値ランキングは、各高校の入試難易度・合格ボーダーラインを基に作成しています。2026年度版では全国の公立・私立・国立高校を網羅し、最新の入試データを反映しています。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "偏差値はどのように活用すればよいですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "偏差値は志望校選びの参考指標の一つです。自分の模試偏差値と学校の偏差値を比較し、安全校・チャレンジ校のバランスを取りながら受験校を決定するのが一般的です。偏差値だけでなく、学校の教育方針・進学実績・通学距離なども合わせて検討しましょう。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "公立と私立の偏差値は比較できますか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "公立と私立の偏差値は同じ基準で比較可能です。ただし、公立高校は都道府県ごとに入試制度が異なるため、受験を検討している地域の入試制度も確認することをおすすめします。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "中学受験と高校受験、どちらを選ぶべきですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "どちらが適切かはお子様の状況や志望進路によって異なります。中高一貫校への進学を希望する場合は中学受験、地元の公立高校や特定の私立高校を目指す場合は高校受験が一般的です。早めに進路の方向性を決め、学習計画を立てることが重要です。"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "偏差値が高い学校に合格するにはどうすればよいですか？",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "目標校の偏差値より高い模試偏差値を安定して取れるよう、計画的な学習が必要です。中学3年生の春から対策を始めるのが理想的で、苦手科目の克服と得意科目の強化を並行して進めましょう。定期テストで高い内申点を維持することも重要です。"
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <SEO
@@ -40,6 +91,7 @@ export default function HomePage() {
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero */}
@@ -148,100 +200,41 @@ export default function HomePage() {
             志望校選びや偏差値の活用方法など、高校受験に役立つ情報をまとめたコラム記事。受験生に必要な知識をわかりやすく解説しています。
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 2.5, mb: 3 }}>
-            <Link href="/column/hensachi-guide/" style={{ textDecoration: "none" }}>
-              <Paper
-                elevation={0}
-                sx={{
-                  p: 2.5,
-                  border: "1px solid #E0E0E0",
-                  borderLeft: "4px solid #FF6F00",
-                  transition: "all 0.3s ease",
-                  height: "100%",
-                  "&:hover": {
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                    transform: "translateY(-2px)",
-                    borderLeftColor: "#E65100",
-                  },
-                }}
-              >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
-                  偏差値の見方・使い方を徹底解説
-                </Typography>
-                <Typography sx={{ fontSize: 12, color: "#757575", lineHeight: 1.5 }}>
-                  偏差値とは何か、初心者からの徹底解説。計算方法や見方を理解しましょう。
-                </Typography>
-              </Paper>
-            </Link>
-            <Link href="/column/koko-choice/" style={{ textDecoration: "none" }}>
-              <Paper
-                elevation={0}
-                sx={{
-                  p: 2.5,
-                  border: "1px solid #E0E0E0",
-                  borderLeft: "4px solid #FF6F00",
-                  transition: "all 0.3s ease",
-                  height: "100%",
-                  "&:hover": {
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                    transform: "translateY(-2px)",
-                    borderLeftColor: "#E65100",
-                  },
-                }}
-              >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
-                  志望校の選び方｜受験校を決める5つの基準
-                </Typography>
-                <Typography sx={{ fontSize: 12, color: "#757575", lineHeight: 1.5 }}>
-                  学力レベルから教育方針まで、最適な志望校選びの基準を解説します。
-                </Typography>
-              </Paper>
-            </Link>
-            <Link href="/column/naishin-up/" style={{ textDecoration: "none" }}>
-              <Paper
-                elevation={0}
-                sx={{
-                  p: 2.5,
-                  border: "1px solid #E0E0E0",
-                  borderLeft: "4px solid #FF6F00",
-                  transition: "all 0.3s ease",
-                  height: "100%",
-                  "&:hover": {
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                    transform: "translateY(-2px)",
-                    borderLeftColor: "#E65100",
-                  },
-                }}
-              >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
-                  内申点の上げ方｜中学生が今すぐできる具体的な方法
-                </Typography>
-                <Typography sx={{ fontSize: 12, color: "#757575", lineHeight: 1.5 }}>
-                  定期テスト対策や授業態度など、すぐに実践できるポイントをご紹介。
-                </Typography>
-              </Paper>
-            </Link>
-          </Box>
-          <Box sx={{ textAlign: "center" }}>
-            <Link href="/column/" style={{ textDecoration: "none" }}>
-              <Box
-                component="a"
-                sx={{
-                  display: "inline-block",
-                  px: 3,
-                  py: 1.2,
-                  bgcolor: "#FF6F00",
-                  color: "#fff",
-                  borderRadius: 1,
-                  fontWeight: 600,
-                  fontSize: "0.95rem",
-                  textDecoration: "none",
-                  "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)" },
-                  transition: "all 0.2s",
-                }}
-              >
-                すべてのコラムを見る
-              </Box>
-            </Link>
+            {[
+              { href: "/column/hensachi-guide/", title: "偏差値の見方・使い方を徹底解説", desc: "偏差値とは何か、計算方法や見方を理解しましょう。" },
+              { href: "/column/koko-choice/", title: "志望校の選び方｜受験校を決める5つの基準", desc: "学力レベルから教育方針まで、最適な志望校選びを解説。" },
+              { href: "/column/nyushi-schedule/", title: "高校受験スケジュール完全ガイド", desc: "中学3年間の受験スケジュールと準備の進め方。" },
+              { href: "/column/kouritsu-vs-shiritsu/", title: "公立vs私立｜高校選びの徹底比較", desc: "費用・環境・進学実績から最適な選択を。" },
+              { href: "/column/naishin-up/", title: "内申点の上げ方｜今すぐできる具体的な方法", desc: "定期テスト対策や授業態度などのポイントをご紹介。" },
+              { href: "/column/mensetsu-guide/", title: "高校受験の面接対策完全ガイド", desc: "よく聞かれる質問と答え方のコツを解説します。" },
+              { href: "/column/chugaku-entrance/", title: "中学受験の基礎知識｜いつから準備する？", desc: "費用・日程・学校選びを徹底解説。" },
+              { href: "/column/study-methods/", title: "高校受験に向けた効果的な勉強法", desc: "教科別攻略と時間管理のコツを解説。" },
+            ].map((article) => (
+              <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
+                <Paper
+                  elevation={0}
+                  sx={{
+                    p: 2.5,
+                    border: "1px solid #E0E0E0",
+                    borderLeft: "4px solid #FF6F00",
+                    transition: "all 0.3s ease",
+                    height: "100%",
+                    "&:hover": {
+                      boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                      transform: "translateY(-2px)",
+                      borderLeftColor: "#E65100",
+                    },
+                  }}
+                >
+                  <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                    {article.title}
+                  </Typography>
+                  <Typography sx={{ fontSize: 12, color: "#757575", lineHeight: 1.5 }}>
+                    {article.desc}
+                  </Typography>
+                </Paper>
+              </Link>
+            ))}
           </Box>
         </Box>
 
@@ -270,6 +263,66 @@ export default function HomePage() {
                 {pref.title}
               </Button>
             </Link>
+          ))}
+        </Box>
+
+        {/* Stats Section */}
+        <Box sx={{ my: 5, p: 3, bgcolor: "#F5F9FF", borderRadius: 2 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.2rem", fontWeight: 700, color: "#0D47A1" }}>
+            School Stationの特徴
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }, gap: 2 }}>
+            {[
+              { num: "5,000校以上", label: "掲載高校数" },
+              { num: "47都道府県", label: "対応エリア" },
+              { num: "2026年版", label: "最新データ" },
+              { num: "無料", label: "利用料金" },
+            ].map((stat) => (
+              <Box key={stat.label} sx={{ textAlign: "center", p: 2, bgcolor: "#fff", borderRadius: 1, boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}>
+                <Typography sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", lineHeight: 1.2 }}>
+                  {stat.num}
+                </Typography>
+                <Typography sx={{ fontSize: 12, color: "#757575", mt: 0.5 }}>{stat.label}</Typography>
+              </Box>
+            ))}
+          </Box>
+        </Box>
+
+        {/* FAQ Section */}
+        <Box sx={{ my: 5 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.3rem", color: "#0D47A1", fontWeight: 700 }}>
+            よくある質問
+          </Typography>
+          {[
+            {
+              question: "偏差値ランキングはどのように作成されていますか？",
+              answer: "School Stationの偏差値ランキングは、各高校の入試難易度・合格ボーダーラインを基に作成しています。2026年度版では全国の公立・私立・国立高校を網羅し、最新の入試データを反映しています。"
+            },
+            {
+              question: "偏差値はどのように活用すればよいですか？",
+              answer: "偏差値は志望校選びの参考指標の一つです。自分の模試偏差値と学校の偏差値を比較し、安全校・チャレンジ校のバランスを取りながら受験校を決定するのが一般的です。偏差値だけでなく、学校の教育方針・進学実績・通学距離なども合わせて検討しましょう。"
+            },
+            {
+              question: "公立と私立の偏差値は比較できますか？",
+              answer: "公立と私立の偏差値は同じ基準で比較可能です。ただし、公立高校は都道府県ごとに入試制度が異なるため、受験を検討している地域の入試制度も確認することをおすすめします。"
+            },
+            {
+              question: "中学受験と高校受験、どちらを選ぶべきですか？",
+              answer: "どちらが適切かはお子様の状況や志望進路によって異なります。中高一貫校への進学を希望する場合は中学受験、地元の公立高校や特定の私立高校を目指す場合は高校受験が一般的です。早めに進路の方向性を決め、学習計画を立てることが重要です。"
+            },
+            {
+              question: "偏差値が高い学校に合格するにはどうすればよいですか？",
+              answer: "目標校の偏差値より高い模試偏差値を安定して取れるよう、計画的な学習が必要です。中学3年生の春から対策を始めるのが理想的で、苦手科目の克服と得意科目の強化を並行して進めましょう。定期テストで高い内申点を維持することも重要です。"
+            },
+          ].map((faq, index) => (
+            <Accordion key={index} sx={{ mb: 1, border: "1px solid #E0E0E0", "&:before": { display: "none" } }}>
+              <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ bgcolor: "#F5F9FF", "&:hover": { bgcolor: "#EEF5FF" } }}>
+                <Typography sx={{ fontWeight: 600, color: "#0D47A1" }}>{faq.question}</Typography>
+              </AccordionSummary>
+              <AccordionDetails sx={{ bgcolor: "#fff", color: "#424242", lineHeight: 1.8 }}>
+                {faq.answer}
+              </AccordionDetails>
+            </Accordion>
           ))}
         </Box>
 

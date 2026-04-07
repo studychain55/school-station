@@ -65,6 +65,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/column/koukou-futoko/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-daiichi/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-open/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-tokkatsu/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-shokugyou/", changefreq: "monthly", priority: 0.7 },
   ];
 
   const today = new Date().toISOString().split("T")[0];

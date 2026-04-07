@@ -1,33 +1,95 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 import prefectures from "@/data/prefectures";
 import { REGIONS } from "@/data/regions";
+import supabase from "@/utils/supabase";
 
 const SITE_URL = "https://school-station.com";
 
-export default function handler(_req: NextApiRequest, res: NextApiResponse) {
-  const urls: string[] = [
-    "/",
-    "/rankings/koukou/",
-    "/rankings/koukou/public/",
-    "/rankings/koukou/private/",
-    "/rankings/koukou/national/",
+type URLEntry = {
+  loc: string;
+  lastmod?: string;
+  changefreq: "always" | "hourly" | "daily" | "weekly" | "monthly" | "yearly" | "never";
+  priority: number;
+};
+
+export default async function handler(_req: NextApiRequest, res: NextApiResponse) {
+  const urls: URLEntry[] = [
+    { loc: "/", changefreq: "weekly", priority: 1.0 },
+    { loc: "/rankings/koukou/", changefreq: "weekly", priority: 0.9 },
+    { loc: "/rankings/koukou/public/", changefreq: "weekly", priority: 0.8 },
+    { loc: "/rankings/koukou/private/", changefreq: "weekly", priority: 0.8 },
+    { loc: "/rankings/koukou/national/", changefreq: "weekly", priority: 0.7 },
   ];
 
+  const today = new Date().toISOString().split("T")[0];
+
   // Region pages
-  REGIONS.forEach((r) => urls.push(`/rankings/koukou/region/${r.slug}/`));
+  REGIONS.forEach((r) => {
+    urls.push({
+      loc: `/rankings/koukou/region/${r.slug}/`,
+      changefreq: "weekly",
+      priority: 0.7,
+      lastmod: today,
+    });
+  });
 
   // Prefecture pages
   prefectures.forEach((p) => {
-    urls.push(`/rankings/koukou/p-${p.slug}/`);
-    urls.push(`/rankings/koukou/public/p-${p.slug}/`);
+    urls.push({
+      loc: `/rankings/koukou/p-${p.slug}/`,
+      changefreq: "weekly",
+      priority: 0.75,
+      lastmod: today,
+    });
+    urls.push({
+      loc: `/rankings/koukou/public/p-${p.slug}/`,
+      changefreq: "weekly",
+      priority: 0.7,
+      lastmod: today,
+    });
   });
+
+  // Fetch schools and add detail pages
+  try {
+    const { data: schools } = await supabase
+      .from("MinkouSchool")
+      .select("id, prefecture_id, updated_at")
+      .eq("is_hidden", false);
+
+    if (schools && schools.length > 0) {
+      schools.forEach((school) => {
+        const prefId = school.prefecture_id;
+        const pref = prefectures.find((p) => p.id === prefId);
+        if (pref) {
+          const lastmod = school.updated_at ? school.updated_at.split("T")[0] : today;
+          urls.push({
+            loc: `/rankings/koukou/p-${pref.slug}/schools/${school.id}/`,
+            changefreq: "monthly",
+            priority: 0.6,
+            lastmod,
+          });
+        }
+      });
+    }
+  } catch (error) {
+    console.error("Error fetching schools for sitemap:", error);
+    // Continue without school detail pages if DB fails
+  }
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url><loc>${SITE_URL}${url}</loc><changefreq>weekly</changefreq></url>`).join("\n")}
+${urls
+  .map(
+    (url) => `  <url>
+    <loc>${SITE_URL}${url.loc}</loc>
+${url.lastmod ? `    <lastmod>${url.lastmod}</lastmod>\n` : ""}    <changefreq>${url.changefreq}</changefreq>
+    <priority>${url.priority}</priority>
+  </url>`
+  )
+  .join("\n")}
 </urlset>`;
 
   res.setHeader("Content-Type", "application/xml");
-  res.setHeader("Cache-Control", "public, s-maxage=86400, stale-while-revalidate=604800");
+  res.setHeader("Cache-Control", "public, s-maxage=3600, stale-while-revalidate=86400");
   res.status(200).send(sitemap);
 }

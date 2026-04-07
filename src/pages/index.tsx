@@ -139,6 +139,36 @@ export default function HomePage() {
           ))}
         </Box>
 
+        {/* Column Section */}
+        <Box sx={{ my: 5, p: 3, bgcolor: "#F5F9FF", borderRadius: 2, border: "1px solid #BBDEFB" }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.2rem", color: "#0D47A1" }}>
+            高校受験コラム
+          </Typography>
+          <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.6, mb: 2 }}>
+            志望校選びや偏差値の活用方法など、高校受験に役立つ情報をまとめたコラム記事。受験生に必要な知識をわかりやすく解説しています。
+          </Typography>
+          <Link href="/column/" style={{ textDecoration: "none" }}>
+            <Box
+              component="a"
+              sx={{
+                display: "inline-block",
+                px: 2.5,
+                py: 1,
+                bgcolor: "#FF6F00",
+                color: "#fff",
+                borderRadius: 1,
+                fontWeight: 600,
+                fontSize: "0.95rem",
+                textDecoration: "none",
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)" },
+                transition: "all 0.2s",
+              }}
+            >
+              コラム一覧を見る
+            </Box>
+          </Link>
+        </Box>
+
         {/* Regions */}
         <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
           地方別ランキング

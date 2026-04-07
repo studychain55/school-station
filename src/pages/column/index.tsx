@@ -13,6 +13,18 @@ export default function ColumnIndexPage() {
 
   const articles = [
     {
+      title: "高校から大学受験を見据えた学習計画の立て方",
+      description: "高1・高2・高3の各時期にやるべきことを詳しく解説。推薦入試・総合型選抜・一般入試に対応した効果的な学習戦略を、段階的にご紹介します。",
+      href: "/column/daigaku-juken/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校生活を充実させる方法｜勉強・部活・友達・行事の両立",
+      description: "高校生活の4つの柱（勉強・部活・人間関係・学校行事）のバランスの取り方を解説。時間管理、部活と勉強の両立テクニック、修学旅行・体育祭・文化祭の取り組み方をご紹介。",
+      href: "/column/koukou-seikatsu/",
+      date: "2026-04-07",
+    },
+    {
       title: "高校入試の種類と対策｜推薦・一般・特色選抜の違い",
       description: "高校入試の3つの主要な種類（推薦入試・一般入試・特色選抜）について、出願資格、対策方法、面接のポイント、出願スケジュールを詳しく解説。",
       href: "/column/kokosei-nyushi/",

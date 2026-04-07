@@ -74,6 +74,19 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
     })),
   };
 
+  const schoolJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "School",
+    "name": school.name,
+    ...(school.address ? {
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "JP",
+        "streetAddress": school.address,
+      }
+    } : {}),
+  };
+
   return (
     <>
       <SEO
@@ -85,6 +98,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
       />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schoolJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{
           __html: JSON.stringify({

@@ -22,6 +22,8 @@ export default function PublicRanking(props: RankingPageProps) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/daigaku-juken/", title: "高校から大学受験を見据えた学習計画の立て方" },
+              { href: "/column/koukou-seikatsu/", title: "高校生活を充実させる方法｜勉強・部活・友達・行事の両立" },
               { href: "/column/kokosei-nyushi/", title: "高校入試の種類と対策｜推薦・一般・特色選抜の違い" },
               { href: "/column/kokosei-study/", title: "高校生の効率的な勉強法｜定期テスト・大学受験対策" },
               { href: "/column/hensachi-guide/", title: "偏差値の見方・使い方を徹底解説" },

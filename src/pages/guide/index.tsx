@@ -400,6 +400,8 @@ export default function GuidePage() {
               { href: "/column/chugaku-entrance/", title: "中学受験の基礎知識｜いつから準備する？", desc: "費用・日程・学校選びを徹底解説。" },
               { href: "/column/tokkoku-guide/", title: "推薦入試・特色選抜完全ガイド", desc: "推薦入試の種類・資格・面接対策を解説。" },
               { href: "/column/bukatsu-choise/", title: "高校の部活選び｜入学前に知ること", desc: "部活と勉強の両立、大学受験への影響を解説。" },
+              { href: "/column/taiken-nyugaku/", title: "学校見学・体験入学の活用ガイド", desc: "見学・体験入学で学校の実態をチェック。" },
+              { href: "/column/kokosei-baito/", title: "高校生のバイトと勉強の両立方法", desc: "学業と部活、バイトの3つを両立させるコツ。" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
                 <Paper elevation={0} sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", height: "100%", "&:hover": { boxShadow: "0 2px 8px rgba(0,0,0,0.08)", borderLeftColor: "#E65100" }, transition: "all 0.2s" }}>

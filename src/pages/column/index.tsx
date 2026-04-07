@@ -13,6 +13,18 @@ export default function ColumnIndexPage() {
 
   const articles = [
     {
+      title: "受験のストレスと上手に付き合う方法",
+      description: "受験ストレスの対処法、睡眠・栄養の管理、メンタルトレーニング、親とのコミュニケーションなど、心身の健康を保ちながら受験に臨むための完全ガイド。",
+      href: "/column/juken-stress/",
+      date: "2026-04-07",
+    },
+    {
+      title: "スポーツ推薦で高校に入る方法とポイント",
+      description: "スポーツ推薦入試の手続き、必要な準備、成功の秘訣、入学後の両立方法を詳しく解説。スポーツ推薦で志望校に合格するための完全ガイド。",
+      href: "/column/koko-sports/",
+      date: "2026-04-07",
+    },
+    {
       title: "偏差値の見方・使い方を徹底解説",
       description: "偏差値とは何か、どのように活用すべきか、初心者からの徹底解説。偏差値の計算方法、見方、そして受験戦略への活かし方を理解しましょう。",
       href: "/column/hensachi-guide/",

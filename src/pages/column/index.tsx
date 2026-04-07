@@ -25,6 +25,12 @@ export default function ColumnIndexPage() {
       date: "2026-04-07",
     },
     {
+      title: "学校見学・体験入学の活用ガイド｜志望校選びに役立てよう",
+      description: "学校見学・体験入学を最大限に活用するための完全ガイド。見学のコツ、質問するべき項目、志望校比較方法など、効果的な学校選びのための情報。",
+      href: "/column/taiken-nyugaku/",
+      date: "2026-04-07",
+    },
+    {
       title: "高校受験のスケジュール｜中3の年間スケジュール解説",
       description: "中3が知っておくべき高校受験の年間スケジュール。春の基礎固めから冬の追い込みまで、各時期の勉強法と重要ポイントをまとめました。",
       href: "/column/nyushi-schedule/",
@@ -70,6 +76,12 @@ export default function ColumnIndexPage() {
       title: "高校の部活選び｜入学前に知っておくべきこと",
       description: "高校の部活選びの完全ガイド。部活と勉強の両立方法、主要部活の特徴、顧問の選び方、大学受験への影響など、充実した高校生活のためのポイント。",
       href: "/column/bukatsu-choise/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校生のバイトと勉強の両立｜受験に影響しない働き方",
+      description: "高校生がバイトと勉強を両立させるための実践的なガイド。時間管理、バイト先選び、受験期の対策など、受験に影響しない効果的な働き方。",
+      href: "/column/kokosei-baito/",
       date: "2026-04-07",
     },
   ];

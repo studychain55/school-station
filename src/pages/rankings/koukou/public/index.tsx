@@ -28,6 +28,9 @@ export default function PublicRanking(props: RankingPageProps) {
               { href: "/column/kouritsu-vs-shiritsu/", title: "公立vs私立｜高校選びの徹底比較" },
               { href: "/column/naishin-up/", title: "内申点の上げ方｜今すぐできる具体的な方法" },
               { href: "/column/study-methods/", title: "高校受験に向けた効果的な勉強法" },
+              { href: "/column/naishin-up/", title: "内申点の上げ方｜今すぐできる具体的な方法" },
+              { href: "/column/chugaku-entrance/", title: "中学受験の基礎知識｜いつから準備する？" },
+              { href: "/column/bukatsu-choise/", title: "高校の部活選び｜入学前に知ること" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
                 <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>

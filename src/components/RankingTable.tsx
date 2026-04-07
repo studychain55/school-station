@@ -1,10 +1,14 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography, Box } from "@mui/material";
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper, Typography, Box, Link as MuiLink, Tooltip } from "@mui/material";
+import NextLink from "next/link";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ClassificationBadge from "./ClassificationBadge";
+import { generateGoogleMapsUrl } from "@/utils/maps";
 import type { MinkouSchoolListItem } from "@/types";
 
 type Props = {
   schools: MinkouSchoolListItem[];
   startRank?: number;
+  prefectureSlug?: string;
 };
 
 function formatDeviation(school: MinkouSchoolListItem): string {
@@ -15,7 +19,7 @@ function formatDeviation(school: MinkouSchoolListItem): string {
   return String(school.deviation_value_max);
 }
 
-export default function RankingTable({ schools, startRank = 1 }: Props) {
+export default function RankingTable({ schools, startRank = 1, prefectureSlug }: Props) {
   if (schools.length === 0) {
     return (
       <Box sx={{ py: 6, textAlign: "center" }}>
@@ -69,9 +73,49 @@ export default function RankingTable({ schools, startRank = 1 }: Props) {
                 </TableCell>
                 <TableCell sx={{ py: 1.2 }}>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexWrap: "wrap" }}>
-                    <Typography sx={{ fontWeight: 600, fontSize: { xs: 13, sm: 14 } }}>
-                      {school.name}
-                    </Typography>
+                    <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
+                      {prefectureSlug ? (
+                        <NextLink href={`/rankings/koukou/p-${prefectureSlug}/schools/${school.id}/`} style={{ textDecoration: "none" }}>
+                          <MuiLink
+                            component="span"
+                            sx={{
+                              fontWeight: 600,
+                              fontSize: { xs: 13, sm: 14 },
+                              color: "#1565C0",
+                              cursor: "pointer",
+                              "&:hover": { textDecoration: "underline" },
+                            }}
+                          >
+                            {school.name}
+                          </MuiLink>
+                        </NextLink>
+                      ) : (
+                        <Typography sx={{ fontWeight: 600, fontSize: { xs: 13, sm: 14 } }}>
+                          {school.name}
+                        </Typography>
+                      )}
+                      {school.address && (
+                        <Tooltip title="Google Mapsで位置情報を確認">
+                          <MuiLink
+                            href={generateGoogleMapsUrl(school)}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            sx={{
+                              display: "inline-flex",
+                              alignItems: "center",
+                              justifyContent: "center",
+                              minWidth: 24,
+                              minHeight: 24,
+                              color: "#1565C0",
+                              "&:hover": { color: "#0D47A1" },
+                              transition: "color 0.2s",
+                            }}
+                          >
+                            <LocationOnIcon sx={{ fontSize: 16 }} />
+                          </MuiLink>
+                        </Tooltip>
+                      )}
+                    </Box>
                     {/* Mobile only: classification badge inline */}
                     <Box sx={{ display: { xs: "inline-flex", sm: "none" } }}>
                       <ClassificationBadge classification={school.classification} />

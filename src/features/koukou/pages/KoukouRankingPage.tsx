@@ -30,6 +30,7 @@ export default function KoukouRankingPage(props: Props) {
     description,
     breadcrumbs,
     prefectureTitle,
+    prefectureSlug,
     classificationLabel,
     regionTitle,
     canonical,
@@ -121,7 +122,7 @@ export default function KoukouRankingPage(props: Props) {
             <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
               偏差値トップ5
             </Typography>
-            <RankingTable schools={top5} startRank={1} />
+            <RankingTable schools={top5} startRank={1} prefectureSlug={prefectureSlug} />
           </Box>
         )}
 
@@ -130,7 +131,7 @@ export default function KoukouRankingPage(props: Props) {
           <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
             全ランキング（{totalCount.toLocaleString()}校）
           </Typography>
-          <RankingTable schools={schools} startRank={startRank} />
+          <RankingTable schools={schools} startRank={startRank} prefectureSlug={prefectureSlug} />
         </Box>
 
         {/* Pagination */}

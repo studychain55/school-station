@@ -22,6 +22,8 @@ export default function NationalRanking(props: RankingPageProps) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/koukou-event/", title: "高校の体育祭・文化祭・修学旅行の魅力｜高校生活を充実させるイベントガイド" },
+              { href: "/column/koukou-oyako/", title: "保護者が知っておくべき高校受験サポート方法｜親ができること・できないこと" },
               { href: "/column/koukou-math/", title: "高校数学の勉強法｜数学が苦手な人のための効率的な学習方法" },
               { href: "/column/koukou-school-select/", title: "高校の校則と学校選びのポイント｜制服・スマホ・アルバイトのルールを比較" },
               { href: "/column/koukou-tokutasei/", title: "高校の特待生・奨学金制度｜私立高校でお得に通うための条件と申請方法" },

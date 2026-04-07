@@ -21,6 +21,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/rankings/koukou/national/", changefreq: "weekly", priority: 0.7 },
     { loc: "/guide/", changefreq: "monthly", priority: 0.8 },
     { loc: "/column/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-event/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-oyako/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-math/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-school-select/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-tokutasei/", changefreq: "monthly", priority: 0.7 },

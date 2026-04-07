@@ -162,6 +162,8 @@ export default function PrefectureRanking(props: PrefectureRankingPageProps) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/koukou-tokutasei/", title: "高校の特待生・奨学金制度｜私立高校でお得に通うための条件と申請方法" },
+              { href: "/column/koukou-english/", title: "高校の英語教育の変化｜英語4技能・大学入学共通テストへの対応策" },
               { href: "/column/daigaku-juken/", title: "高校から大学受験を見据えた学習計画の立て方" },
               { href: "/column/koukou-seikatsu/", title: "高校生活を充実させる方法｜勉強・部活・友達・行事の両立" },
               { href: "/column/kokosei-nyushi/", title: "高校入試の種類と対策｜推薦・一般・特色選抜の違い" },

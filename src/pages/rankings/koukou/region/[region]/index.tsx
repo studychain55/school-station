@@ -111,6 +111,8 @@ export default function RegionRanking(props: RegionRankingPageProps) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/koukou-tokutasei/", title: "高校の特待生・奨学金制度｜私立高校でお得に通うための条件と申請方法" },
+              { href: "/column/koukou-english/", title: "高校の英語教育の変化｜英語4技能・大学入学共通テストへの対応策" },
               { href: "/column/hensachi-guide/", title: "偏差値の見方・使い方を徹底解説" },
               { href: "/column/koko-choice/", title: "志望校の選び方｜受験校を決める5つの基準" },
               { href: "/column/nyushi-schedule/", title: "高校受験スケジュール完全ガイド" },

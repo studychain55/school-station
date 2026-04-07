@@ -24,6 +24,8 @@ export default function KoukouRankingIndex(props: Props) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/koukou-tokutasei/", title: "高校の特待生・奨学金制度｜私立高校でお得に通うための条件と申請方法" },
+              { href: "/column/koukou-english/", title: "高校の英語教育の変化｜英語4技能・大学入学共通テストへの対応策" },
               { href: "/column/koukou-career/", title: "高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較" },
               { href: "/column/koukou-hensachi/", title: "偏差値の見方と志望校選びへの活用法｜失敗しない高校選びのコツ" },
               { href: "/column/daigaku-juken/", title: "高校から大学受験を見据えた学習計画の立て方" },

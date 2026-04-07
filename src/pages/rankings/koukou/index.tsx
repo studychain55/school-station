@@ -34,6 +34,8 @@ export default function KoukouRankingIndex(props: Props) {
               { href: "/column/chugaku-entrance/", title: "中学受験の基礎知識｜いつから準備する？" },
               { href: "/column/tokkoku-guide/", title: "推薦入試・特色選抜完全ガイド" },
               { href: "/column/bukatsu-choise/", title: "高校の部活選び｜入学前に知ること" },
+              { href: "/column/taiken-nyugaku/", title: "学校見学・体験入学の活用ガイド｜志望校選びに役立てよう" },
+              { href: "/column/kokosei-baito/", title: "高校生のバイトと勉強の両立｜受験に影響しない働き方" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
                 <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>

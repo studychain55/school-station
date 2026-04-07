@@ -61,6 +61,7 @@ export default function KoukouRankingPage(props: Props) {
         breadcrumbs={breadcrumbs}
         faqItems={faqItems}
         schools={schools.slice(0, 10).map((s, i) => ({ name: s.name, position: i + 1 }))}
+        isRankingPage={true}
       />
       <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3 } }}>
         <BreadCrumb items={breadcrumbs} />
@@ -167,9 +168,44 @@ export default function KoukouRankingPage(props: Props) {
           </Box>
         </Box>
 
+        {/* SEO Text Section */}
+        <Box sx={{ mb: 4, p: 2, bgcolor: "#F5F5F5", borderRadius: 1 }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", mb: 1.5, fontWeight: 600 }}>
+            {areaLabel || "全国"}{classLabel} 高校偏差値ランキングについて
+          </Typography>
+          <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+            {prefectureTitle && (
+              <>
+                {prefectureTitle}の高校を偏差値順にランキング。School Station では{totalCount}校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
+                <br />
+                <br />
+                偏差値は学校の学力レベルを示す指標で、50を平均として上下に分布します。偏差値が高いほど入試難易度が高い傾向にあります。{prefectureTitle}の中でも偏差値トップの高校は入試競争が激しくなるため、志願倍率や入試結果も合わせてご確認ください。
+              </>
+            )}
+            {regionTitle && (
+              <>
+                {regionTitle}地方の高校を偏差値順にランキング。School Station では{totalCount}校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
+                <br />
+                <br />
+                {regionTitle}内の都道府県ごとに偏差値の分布が異なります。詳細は各都道府県のランキングページでご確認ください。
+              </>
+            )}
+            {!prefectureTitle && !regionTitle && (
+              <>
+                全国の高校を偏差値順にランキング。School Station では{totalCount}校の高校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
+                <br />
+                <br />
+                偏差値は学校の学力レベルを示す指標で、50を平均として上下に分布します。各都道府県や地方ごとのランキングもご確認いただけます。自分の志望エリアに合わせて、最適な学校選択をしてください。
+              </>
+            )}
+          </Typography>
+        </Box>
+
         {/* FAQ */}
         <FAQ items={faqItems} />
       </Container>
     </>
   );
 }
+
+const CURRENT_YEAR = new Date().getFullYear();

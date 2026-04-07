@@ -47,6 +47,7 @@ export function generateFAQItems(params: MetadataParams & { schools: MinkouSchoo
   const { prefectureTitle, classificationLabel, regionTitle, totalCount, schools } = params;
   const area = prefectureTitle || regionTitle || "全国";
   const classLabel = classificationLabel || "";
+  const classPrefixWithSpace = classificationLabel ? `${classificationLabel}の` : "";
   const items: { question: string; answer: string }[] = [];
 
   if (schools.length > 0) {
@@ -85,6 +86,20 @@ export function generateFAQItems(params: MetadataParams & { schools: MinkouSchoo
     items.push({
       question: `${area}の${classLabel}高校偏差値トップ7はどの学校ですか？`,
       answer: `${area}の${classLabel}高校偏差値トップ7は、${top7}です。`,
+    });
+  }
+
+  // 追加FAQ: 偏差値の定義
+  items.push({
+    question: "高校の偏差値とは何ですか？",
+    answer: `偏差値は、学校の学力レベルを示す指標で、平均を50とした統計値です。偏差値が高いほど入試難易度が高く、競争が激しい傾向にあります。${area}の${classPrefixWithSpace}高校は、${schools.length > 0 ? `最高偏差値${schools[0].deviation_value_max}から最低偏差値${schools[schools.length - 1].deviation_value_max}まで` : "様々な"}の幅で分布しており、自分の学力や志望に合わせて学校選択が可能です。`,
+  });
+
+  // 追加FAQ: ランキング選択時の参考
+  if (prefectureTitle && schools.length > 5) {
+    items.push({
+      question: `${prefectureTitle}の高校選びでは何を参考にするべきですか？`,
+      answer: `偏差値ランキングは学校選びの重要な指標ですが、学校の教育方針、部活動、施設、アクセスなども考慮することをお勧めします。${prefectureTitle}の中でも、学科ごとに偏差値が異なる場合もあるため、志望学科を絞った上で詳細情報を確認してください。`,
     });
   }
 

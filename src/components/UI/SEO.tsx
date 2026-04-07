@@ -8,6 +8,7 @@ type SEOProps = {
   breadcrumbs?: Breadcrumb[];
   faqItems?: { question: string; answer: string }[];
   schools?: { name: string; position: number }[];
+  isRankingPage?: boolean;
 };
 
 const SITE_URL = "https://school-station.com";
@@ -29,8 +30,41 @@ const websiteJsonLd = {
   },
 };
 
-export default function SEO({ title, description, canonical, breadcrumbs, faqItems, schools }: SEOProps) {
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "School Station",
+  "description": "高校偏差値ランキング情報サイト",
+  "url": SITE_URL,
+  "logo": `${SITE_URL}/logo.png`,
+  "sameAs": [],
+};
+
+export default function SEO({ title, description, canonical, breadcrumbs, faqItems, schools, isRankingPage }: SEOProps) {
   const fullCanonical = canonical ? `${SITE_URL}${canonical}` : undefined;
+
+  const articleJsonLd = isRankingPage ? {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "url": fullCanonical,
+    "image": OG_IMAGE,
+    "datePublished": new Date().toISOString().split('T')[0],
+    "dateModified": new Date().toISOString().split('T')[0],
+    "author": {
+      "@type": "Organization",
+      "name": "School Station",
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "School Station",
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/logo.png`,
+      },
+    },
+  } : null;
 
   const breadcrumbJsonLd = breadcrumbs && breadcrumbs.length > 0 ? {
     "@context": "https://schema.org",
@@ -91,6 +125,10 @@ export default function SEO({ title, description, canonical, breadcrumbs, faqIte
 
       {/* JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+      {articleJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      )}
       {breadcrumbJsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       )}

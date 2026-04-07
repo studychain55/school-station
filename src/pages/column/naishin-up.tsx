@@ -8,6 +8,7 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
 export default function NaishinUpPage() {
+  const CURRENT_YEAR = new Date().getFullYear();
   const breadcrumbs = [
     { label: "ホーム", href: "/" },
     { label: "コラム", href: "/column/" },
@@ -164,6 +165,19 @@ export default function NaishinUpPage() {
                 "text": item.answer
               }
             }))
+          })
+        }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "内申点の上げ方｜中学生が今すぐできる具体的な方法",
+            "description": "内申点を上げるための具体的な方法を解説。定期テスト対策、授業態度、提出物管理など、すぐに実践できる5つのポイントをご紹介します。",
+            "datePublished": `${CURRENT_YEAR}-04-07`,
+            "author": {
+              "@type": "Organization",
+              "name": "School Station",
+            },
           })
         }} />
       </Head>

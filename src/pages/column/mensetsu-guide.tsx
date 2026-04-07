@@ -8,6 +8,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import ClearIcon from "@mui/icons-material/Clear";
 
 export default function MensetsGuPage() {
+  const CURRENT_YEAR = new Date().getFullYear();
   const breadcrumbs = [
     { label: "ホーム", href: "/" },
     { label: "コラム", href: "/column/" },
@@ -205,6 +206,19 @@ export default function MensetsGuPage() {
                 "text": item.answer
               }
             }))
+          })
+        }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": "高校受験の面接対策｜よく出る質問と答え方を解説",
+            "description": "高校受験の面接対策を徹底解説。よく出る質問・回答例・本番での注意点など、合格につながる面接対策をすべてご紹介します。",
+            "datePublished": `${CURRENT_YEAR}-04-07`,
+            "author": {
+              "@type": "Organization",
+              "name": "School Station",
+            },
           })
         }} />
       </Head>

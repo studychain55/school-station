@@ -396,6 +396,10 @@ export default function GuidePage() {
               { href: "/column/kouritsu-vs-shiritsu/", title: "公立vs私立｜高校選びの徹底比較", desc: "費用・環境・進学実績から最適な選択を解説。" },
               { href: "/column/naishin-up/", title: "内申点の上げ方｜今すぐできる方法", desc: "定期テスト対策など、すぐに実践できるポイント。" },
               { href: "/column/study-methods/", title: "高校受験に向けた効果的な勉強法", desc: "教科別攻略と時間管理のコツを徹底解説。" },
+              { href: "/column/mensetsu-guide/", title: "高校受験の面接対策完全ガイド", desc: "よく聞かれる質問と答え方のコツを解説。" },
+              { href: "/column/chugaku-entrance/", title: "中学受験の基礎知識｜いつから準備する？", desc: "費用・日程・学校選びを徹底解説。" },
+              { href: "/column/tokkoku-guide/", title: "推薦入試・特色選抜完全ガイド", desc: "推薦入試の種類・資格・面接対策を解説。" },
+              { href: "/column/bukatsu-choise/", title: "高校の部活選び｜入学前に知ること", desc: "部活と勉強の両立、大学受験への影響を解説。" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
                 <Paper elevation={0} sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", height: "100%", "&:hover": { boxShadow: "0 2px 8px rgba(0,0,0,0.08)", borderLeftColor: "#E65100" }, transition: "all 0.2s" }}>

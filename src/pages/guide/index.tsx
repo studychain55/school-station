@@ -383,6 +383,59 @@ export default function GuidePage() {
 
         <Divider sx={{ my: 4 }} />
 
+        {/* Popular Prefecture Links */}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1" }}>
+            都道府県別の高校偏差値ランキング
+          </Typography>
+          <Typography variant="body2" sx={{ color: "#424242", mb: 3 }}>
+            お住まいの地域の高校偏差値ランキングをチェックしてみましょう。各都道府県の公立・私立・国立高校を一覧で確認できます。
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }, gap: 1.5, mb: 3 }}>
+            {[
+              { label: "東京都", slug: "tokyo" },
+              { label: "神奈川県", slug: "kanagawa" },
+              { label: "大阪府", slug: "osaka" },
+              { label: "愛知県", slug: "aichi" },
+              { label: "埼玉県", slug: "saitama" },
+              { label: "千葉県", slug: "chiba" },
+              { label: "兵庫県", slug: "hyogo" },
+              { label: "福岡県", slug: "fukuoka" },
+              { label: "北海道", slug: "hokkaido" },
+              { label: "宮城県", slug: "miyagi" },
+              { label: "京都府", slug: "kyoto" },
+              { label: "広島県", slug: "hiroshima" },
+            ].map((pref) => (
+              <Link key={pref.slug} href={`/rankings/koukou/p-${pref.slug}/`} style={{ textDecoration: "none" }}>
+                <Box
+                  sx={{
+                    p: 1.5,
+                    textAlign: "center",
+                    border: "1px solid #E0E0E0",
+                    borderRadius: 1,
+                    fontSize: 13,
+                    fontWeight: 500,
+                    color: "#1565C0",
+                    "&:hover": { bgcolor: "#F5F9FF", borderColor: "#1565C0" },
+                    transition: "all 0.15s",
+                  }}
+                >
+                  {pref.label}
+                </Box>
+              </Link>
+            ))}
+          </Box>
+          <Box sx={{ textAlign: "center" }}>
+            <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+              <Box component="span" sx={{ fontSize: 13, color: "#1565C0", textDecoration: "underline", cursor: "pointer" }}>
+                全47都道府県のランキングを見る →
+              </Box>
+            </Link>
+          </Box>
+        </Box>
+
+        <Divider sx={{ my: 4 }} />
+
         {/* Call to Action */}
         <Box sx={{ textAlign: "center", py: 3 }}>
           <Typography variant="h3" component="h3" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 600 }}>

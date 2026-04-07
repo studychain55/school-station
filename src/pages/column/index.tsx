@@ -24,6 +24,18 @@ export default function ColumnIndexPage() {
       href: "/column/koko-choice/",
       date: "2026-04-07",
     },
+    {
+      title: "高校受験のスケジュール｜中3の年間スケジュール解説",
+      description: "中3が知っておくべき高校受験の年間スケジュール。春の基礎固めから冬の追い込みまで、各時期の勉強法と重要ポイントをまとめました。",
+      href: "/column/nyushi-schedule/",
+      date: "2026-04-07",
+    },
+    {
+      title: "公立高校と私立高校の違い｜費用・教育内容を比較",
+      description: "公立高校と私立高校の学費、教育内容、受験方法、校風の違いを徹底比較。あなたに合った学校選びをサポートします。",
+      href: "/column/kouritsu-vs-shiritsu/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

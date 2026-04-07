@@ -23,6 +23,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/column/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/hensachi-guide/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koko-choice/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/nyushi-schedule/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/kouritsu-vs-shiritsu/", changefreq: "monthly", priority: 0.7 },
   ];
 
   const today = new Date().toISOString().split("T")[0];

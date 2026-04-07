@@ -64,6 +64,8 @@ export default function KoukouRankingIndex(props: Props) {
               { href: "/column/koukou-ryuunen/", title: "高校で留年・退学になりそうな場合の対処法｜代替進路の選択肢" },
               { href: "/column/koukou-sports/", title: "体育・スポーツ系高校の特徴｜スポーツ推薦入学と進路の実態" },
               { href: "/column/koukou-arts/", title: "音楽・美術・芸術系高校の選び方｜専門的な教育環境と進学先" },
+              { href: "/column/koukou-gakuhi/", title: "高校の学費・授業料と奨学金ガイド｜公立・私立・通信の費用比較" },
+              { href: "/column/koukou-futoko/", title: "不登校・体調不良のサポートが充実した高校の選び方｜スクールカウンセラーと支援体制" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
                 <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>

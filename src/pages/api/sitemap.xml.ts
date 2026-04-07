@@ -80,6 +80,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/column/koukou-ryugaku/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-volunteer/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-taiiku/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-shakai/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-test-week/", changefreq: "monthly", priority: 0.7 },
   ];
 
   const today = new Date().toISOString().split("T")[0];

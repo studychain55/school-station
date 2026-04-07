@@ -27,6 +27,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/column/kouritsu-vs-shiritsu/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/naishin-up/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/mensetsu-guide/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/chugaku-entrance/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/study-methods/", changefreq: "monthly", priority: 0.7 },
   ];
 
   const today = new Date().toISOString().split("T")[0];

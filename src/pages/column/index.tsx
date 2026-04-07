@@ -48,6 +48,18 @@ export default function ColumnIndexPage() {
       href: "/column/mensetsu-guide/",
       date: "2026-04-07",
     },
+    {
+      title: "中学受験の基礎知識｜いつから準備する？費用・日程・学校選びを解説",
+      description: "中学受験とは何か、いつから準備すべきか、費用の内訳、志望校の選び方など、中学受験の基礎知識をわかりやすく解説します。",
+      href: "/column/chugaku-entrance/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校受験に向けた効果的な勉強法｜教科別攻略と時間管理のコツ",
+      description: "高校受験合格に必要な勉強量、教科別の効果的な勉強法、スケジュール管理のコツ、モチベーション維持方法をわかりやすく解説します。",
+      href: "/column/study-methods/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

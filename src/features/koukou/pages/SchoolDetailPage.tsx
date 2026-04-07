@@ -1,5 +1,6 @@
 import { Container, Typography, Box, Paper, Card, CardContent, Button, Rating, Divider, Link as MuiLink } from "@mui/material";
 import Head from "next/head";
+import Link from "next/link";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import SEO from "@/components/UI/SEO";
@@ -13,9 +14,11 @@ type Props = {
   breadcrumbs: Breadcrumb[];
   canonical: string;
   prefectureTitle?: string;
+  relatedSchools?: MinkouSchoolListItem[];
+  prefectureSlug?: string;
 };
 
-export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefectureTitle }: Props) {
+export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefectureTitle, relatedSchools = [], prefectureSlug }: Props) {
   const faqItems = [
     {
       question: `${school.name}の偏差値はどのくらいですか？`,
@@ -48,6 +51,18 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
     "educationalLevel": "High School",
   };
 
+  const SITE_URL = "https://school-station.com";
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": breadcrumbs.map((bc, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "name": bc.label,
+      ...(bc.href ? { "item": `${SITE_URL}${bc.href}` } : {}),
+    })),
+  };
+
   return (
     <>
       <SEO
@@ -59,6 +74,21 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
       />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": faqItems.map((item) => ({
+              "@type": "Question",
+              "name": item.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": item.answer,
+              },
+            })),
+          })
+        }} />
       </Head>
 
       <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3 } }}>
@@ -264,6 +294,56 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
             </Card>
           </Box>
         </Box>
+
+        {/* Related Schools Section */}
+        {relatedSchools && relatedSchools.length > 0 && (
+          <Box sx={{ mb: 4 }}>
+            <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.25rem", fontWeight: 600 }}>
+              {prefectureTitle}の関連高校
+            </Typography>
+            <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 2 }}>
+              {relatedSchools.slice(0, 6).map((relatedSchool) => (
+                <Link
+                  key={relatedSchool.id}
+                  href={`/rankings/koukou/p-${prefectureSlug}/schools/${relatedSchool.id}/`}
+                  style={{ textDecoration: "none" }}
+                >
+                  <Card
+                    sx={{
+                      height: "100%",
+                      cursor: "pointer",
+                      transition: "all 0.3s ease",
+                      "&:hover": {
+                        boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
+                        transform: "translateY(-2px)",
+                      },
+                      border: "1px solid #E0E0E0",
+                    }}
+                  >
+                    <CardContent>
+                      <Typography variant="h3" component="h3" sx={{ fontSize: "0.95rem", fontWeight: 600, mb: 1, color: "#0D47A1" }}>
+                        {relatedSchool.name}
+                      </Typography>
+                      <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
+                        <Box sx={{ p: 1, bgcolor: "#F5F9FF", borderRadius: 0.5, textAlign: "center" }}>
+                          <Typography sx={{ color: "#757575", fontSize: 11 }}>
+                            偏差値
+                          </Typography>
+                          <Typography sx={{ color: "#1565C0", fontSize: 18, fontWeight: 700 }}>
+                            {relatedSchool.deviation_value_max || "-"}
+                          </Typography>
+                        </Box>
+                        <Typography sx={{ fontSize: 12, color: "#757575" }}>
+                          {relatedSchool.classification === "PUBLIC" ? "公立" : relatedSchool.classification === "PRIVATE" ? "私立" : "国立"}
+                        </Typography>
+                      </Box>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))}
+            </Box>
+          </Box>
+        )}
 
         {/* FAQ */}
         <Box sx={{ mb: 4 }}>

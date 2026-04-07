@@ -10,6 +10,7 @@ type Props = {
   prefectureTitle: string;
   prefectureSlug: string;
   schoolId: number;
+  relatedSchools: MinkouSchoolListItem[];
 };
 
 export default function SchoolDetail(props: Props) {
@@ -26,6 +27,8 @@ export default function SchoolDetail(props: Props) {
       breadcrumbs={breadcrumbs}
       canonical={`/rankings/koukou/p-${props.prefectureSlug}/schools/${props.schoolId}/`}
       prefectureTitle={props.prefectureTitle}
+      relatedSchools={props.relatedSchools}
+      prefectureSlug={props.prefectureSlug}
     />
   );
 }
@@ -56,12 +59,29 @@ export const getServerSideProps: GetServerSideProps<Props> = async ({ params }) 
     return { notFound: true };
   }
 
+  // Fetch related schools (same prefecture, sorted by deviation value)
+  const { data: relatedSchools } = await supabase
+    .from("MinkouSchool")
+    .select(
+      `id, source_id, slug, name, level, classification, gender,
+       prefecture_id, city_id, address,
+       star_rating, review_count,
+       deviation_value_min, deviation_value_max,
+       description, source_url`
+    )
+    .eq("prefecture_id", pref.id)
+    .eq("is_hidden", false)
+    .neq("id", schoolId)
+    .order("deviation_value_max", { ascending: false })
+    .limit(5);
+
   return {
     props: {
       school: school as MinkouSchoolListItem,
       prefectureTitle: pref.title,
       prefectureSlug: pref.slug,
       schoolId,
+      relatedSchools: (relatedSchools || []) as MinkouSchoolListItem[],
     },
     revalidate: 3600, // Revalidate every hour
   };

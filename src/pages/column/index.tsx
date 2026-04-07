@@ -36,6 +36,18 @@ export default function ColumnIndexPage() {
       href: "/column/kouritsu-vs-shiritsu/",
       date: "2026-04-07",
     },
+    {
+      title: "内申点の上げ方｜中学生が今すぐできる具体的な方法",
+      description: "内申点を上げるための具体的な方法を解説。定期テスト対策、授業態度、提出物管理など、すぐに実践できるポイントをご紹介します。",
+      href: "/column/naishin-up/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校受験の面接対策｜よく出る質問と答え方を解説",
+      description: "高校受験の面接対策を徹底解説。よく出る質問・回答例・本番での注意点など、合格につながる面接対策をすべてご紹介します。",
+      href: "/column/mensetsu-guide/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

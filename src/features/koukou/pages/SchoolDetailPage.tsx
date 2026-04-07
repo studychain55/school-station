@@ -49,6 +49,17 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
     "address": school.address || undefined,
     "contactType": "General",
     "educationalLevel": "High School",
+    ...(school.star_rating && school.review_count && school.review_count >= 3
+      ? {
+          aggregateRating: {
+            "@type": "AggregateRating",
+            ratingValue: String(school.star_rating),
+            reviewCount: String(school.review_count),
+            bestRating: "5",
+            worstRating: "1",
+          },
+        }
+      : {}),
   };
 
   const SITE_URL = "https://school-station.com";

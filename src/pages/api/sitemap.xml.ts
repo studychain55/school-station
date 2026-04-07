@@ -49,6 +49,31 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     });
   });
 
+  // Fetch cities and add city pages
+  try {
+    const { data: cities } = await supabase
+      .from("City")
+      .select("id, prefecture_id")
+      .eq("is_hidden", false);
+
+    if (cities && cities.length > 0) {
+      cities.forEach((city) => {
+        const pref = prefectures.find((p) => p.id === city.prefecture_id);
+        if (pref) {
+          urls.push({
+            loc: `/rankings/koukou/p-${pref.slug}/c-${city.id}/`,
+            changefreq: "weekly",
+            priority: 0.65,
+            lastmod: today,
+          });
+        }
+      });
+    }
+  } catch (error) {
+    console.error("Error fetching cities for sitemap:", error);
+    // Continue without city pages if DB fails
+  }
+
   // Fetch schools and add detail pages
   try {
     const { data: schools } = await supabase

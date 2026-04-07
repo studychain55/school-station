@@ -52,7 +52,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
     <>
       <SEO
         title={`${school.name} 偏差値【${new Date().getFullYear()}年度版】| School Station`}
-        description={`${school.name}の${new Date().getFullYear()}年度偏差値は${school.deviation_value_max || "データなし"}。${prefectureTitle || ""}高校の中での評価や基本情報、進学支援情報をChool Stationでチェック。`}
+        description={`${school.name}の${new Date().getFullYear()}年度偏差値は${school.deviation_value_max || "データなし"}。${prefectureTitle || ""}高校の中での評価や基本情報、進学支援情報をSchool Stationでチェック。`}
         canonical={canonical}
         breadcrumbs={breadcrumbs}
         faqItems={faqItems}

@@ -382,6 +382,68 @@ export default function KokoChoicePage() {
 
         <Divider sx={{ my: 4 }} />
 
+        {/* 関連記事 */}
+        <Section title="関連記事" id="related">
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2 }}>
+            <Link href="/column/hensachi-guide/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                  偏差値の見方・使い方を徹底解説
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  偏差値とは何か、受験戦略にどう活かすか
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/kouritsu-vs-shiritsu/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                  公立と私立高校の違い
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  学費、カリキュラム、進学実績など総合比較
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/mensetsu-guide/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                  面接試験の対策ガイド
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  よくある質問と効果的な対策方法
+                </Typography>
+              </Paper>
+            </Link>
+          </Box>
+        </Section>
+
+        <Divider sx={{ my: 4 }} />
+
         {/* Navigation */}
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2, my: 4 }}>
           <Link href="/column/hensachi-guide/" style={{ textDecoration: "none" }}>

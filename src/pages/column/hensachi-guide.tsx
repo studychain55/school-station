@@ -364,6 +364,68 @@ export default function HensachiGuidePage() {
 
         <Divider sx={{ my: 4 }} />
 
+        {/* 関連記事 */}
+        <Section title="関連記事" id="related">
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2 }}>
+            <Link href="/column/koko-choice/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                  志望校の選び方
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  偏差値と総合的な判断で、自分に合った志望校を選ぶポイント
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/nyushi-schedule/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                  受験スケジュール・日程を完全ガイド
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  受験本番に向けた計画立案と準備スケジュール
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/naishin-up/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                  内申点を上げる方法
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  内申点が重要な理由と効果的な対策
+                </Typography>
+              </Paper>
+            </Link>
+          </Box>
+        </Section>
+
+        <Divider sx={{ my: 4 }} />
+
         {/* Navigation */}
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2, my: 4 }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>

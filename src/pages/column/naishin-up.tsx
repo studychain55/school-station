@@ -340,6 +340,69 @@ export default function NaishinUpPage() {
 
         <Divider sx={{ my: 4 }} />
 
+        {/* 関連記事 */}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+            関連記事
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2 }}>
+            <Link href="/column/nyushi-schedule/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#FF6F00" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#FF6F00", mb: 1 }}>
+                  受験スケジュール・日程を完全ガイド
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  受験本番に向けた計画立案と準備スケジュール
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/hensachi-guide/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#FF6F00" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#FF6F00", mb: 1 }}>
+                  偏差値の見方・使い方を徹底解説
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  偏差値とは何か、受験戦略にどう活かすか
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/koko-choice/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 3,
+                  border: "1px solid #E0E0E0",
+                  transition: "all 0.2s",
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#FF6F00" },
+                }}
+              >
+                <Typography sx={{ fontWeight: 600, color: "#FF6F00", mb: 1 }}>
+                  志望校の選び方
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  偏差値と総合的な判断で最適な学校を選ぶ
+                </Typography>
+              </Paper>
+            </Link>
+          </Box>
+        </Box>
+
         {/* Call to Action */}
         <Box sx={{ textAlign: "center", py: 3 }}>
           <Typography variant="h3" component="h3" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 600 }}>

@@ -522,6 +522,18 @@ export default function ColumnIndexPage() {
       href: "/column/koukou-concentration/",
       date: "2026-04-07",
     },
+    {
+      title: "高校生のモチベーション維持ガイド｜勉強のやる気アップ・受験動機・目標設定・習慣化・メンタル管理",
+      description: "高校生の勉強モチベーション維持の実践的方法。モチベーション低下の原因分析、目標設定、習慣化の科学、受験期の心理的戦略、親の支援方法を完全ガイド。",
+      href: "/column/koukou-motivation/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校生の夏期学習戦略ガイド｜夏休み勉強計画・受験対策・志望校準備・時間活用・習慣定着",
+      description: "高校生の夏休み勉強戦略の完全ガイド。効果的な計画立案、学習時間設定、過去問活用、体調管理、高1～3別の学習目標を詳細解説。",
+      href: "/column/koukou-summer-study/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

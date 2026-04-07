@@ -13,6 +13,18 @@ export default function ColumnIndexPage() {
 
   const articles = [
     {
+      title: "高校入試の種類と対策｜推薦・一般・特色選抜の違い",
+      description: "高校入試の3つの主要な種類（推薦入試・一般入試・特色選抜）について、出願資格、対策方法、面接のポイント、出願スケジュールを詳しく解説。",
+      href: "/column/kokosei-nyushi/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校生の効率的な勉強法｜定期テスト・大学受験対策",
+      description: "高校生向けの効率的な勉強法を詳しく解説。勉強時間の目安、定期テスト対策、科目別の学習方法、大学受験ロードマップ、スマートフォン対策など。",
+      href: "/column/kokosei-study/",
+      date: "2026-04-07",
+    },
+    {
       title: "高校受験にかかるお金の全まとめ｜費用の相場と節約術",
       description: "高校受験にかかる全費用を徹底解説。受験料、塾代、教材費から入学後の費用まで、費用の相場と節約術をご紹介します。",
       href: "/column/juken-kihu/",

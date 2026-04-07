@@ -33,6 +33,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/column/bukatsu-choise/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/taiken-nyugaku/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/kokosei-baito/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/kokosei-nyushi/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/kokosei-study/", changefreq: "monthly", priority: 0.7 },
   ];
 
   const today = new Date().toISOString().split("T")[0];

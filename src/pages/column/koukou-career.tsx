@@ -5,10 +5,7 @@ import SEO from "@/components/UI/SEO";
 import BreadCrumb from "@/components/UI/BreadCrumb";
 import FAQ from "@/components/UI/FAQ";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-// Helper Components
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
@@ -35,43 +32,41 @@ export default function KoukouCareerPage() {
   const breadcrumbs = [
     { label: "ホーム", href: "/" },
     { label: "コラム", href: "/column/" },
-    { label: "高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較" },
+    { label: "高校からの進路選択ガイド｜大学・専門学校・就職・起業の選び方とキャリア設計" },
   ];
 
   const faqItems = [
     {
-      question: "高校卒業後の進路は決まった方が良いですか？",
-      answer: "高校卒業時にすべてが決まっていなくても問題ありませんが、進学や就職には準備期間が必要です。遅くても高2の終わりには大まかな進路方針を決めることが、受験対策や就職活動を効率的に進めるために大切です。自分の適性・興味・経済状況を考慮し、柔軟に進路を検討しましょう。",
+      question: "高校卒業後の進路決定はいつまでに行うべきですか？",
+      answer: "『高校卒業後の進路決定は「遅くても高2の終わり」が理想的とされており、これには明確な理由がある』『大学進学を選択した場合、大学受験の準備期間（推薦入試なら高3春から、一般入試なら高3秋から開始）が必要だから』『専門学校進学を選択した場合、願書提出期限が高3秋（9月～10月）に集中しているから』『就職を選択した場合、高3夏から就職活動がスタートし、企業との面接・試験が9月～11月にかけて実施されるから』という『現実的な時間的制約』があります。『しかし、高2終わりで完全に進路が決まっていなくても、「進学か就職か」というおおよその方向性だけは決まっていることが、その後の対策を効率的に進めるために極めて重要』『進路に迷い続けたまま高3を迎えると、入試対策と就職活動の準備が中途半端になり、全ての選択肢で失敗する可能性が高まる』という『早期決定の価値』があります。",
     },
     {
-      question: "大学進学と就職、どちらを選ぶべきですか？",
-      answer: "目指す職業によって選択は異なります。弁護士・医者・研究者など専門資格が必要な職業を目指すなら大学進学が必須です。一方、実務スキルを早期に身につけたい場合や、特定の技術職を目指すなら就職が最適です。自分のキャリアビジョンと経済状況から判断することが重要です。",
+      question: "大学進学と就職、どちらを選ぶべき基準は何ですか？",
+      answer: "『大学進学と就職の選択は、本人の「将来やりたい仕事」と「経済状況」の2つの軸で判断することが合理的』『例えば、医師・弁護士・研究者・エンジニアなど国家資格や高度な専門教育が必須の職業を目指す場合は、大学進学（さらに大学院進学も視野に）が必須』『一方、調理師・美容師・保育士など実務的な専門スキルを身につけることが優先される職業の場合は、専門学校進学または高卒就職も選択肢として成立する』『また、経済的に親の支援が限定的な場合、高卒就職で早期に給与を得て、自分で学費を稼ぎながら通信制大学に進学するというキャリアパスも存在する』『つまり、「進学か就職か」という二者択一ではなく「自分のキャリアビジョンに最適な選択は何か」を個別具体的に検討することが重要』です。",
     },
     {
-      question: "専門学校と短大の違いは何ですか？",
-      answer: "専門学校は実務的な技術や技能に特化した実践的教育を2年制で提供し、修了後は高度専門士や専門士の称号を得ます。短大は教養と専門知識をバランスよく学ぶ2年制の高等教育機関で、短期大学士の学位が与えられます。専門学校は実務スキル重視、短大はより広い教養を学ぶという特徴があります。",
+      question: "高校でのキャリア教育にはどのような内容が含まれていますか？",
+      answer: "『多くの高校では「総合的な探究の時間」という科目を通じて、体系的なキャリア教育が実施されている』『その内容は学校によって異なるが、一般的には「職場体験（インターンシップ）」「職業講話（業界人による講演）」「大学出前授業」「進路適性検査」「志望理由書作成指導」などの多角的なプログラムが含まれる』『これらのキャリア教育は、大学受験や就職試験の対策というだけでなく、高校生が「自分の適性・興味・価値観を理解し、それに合った人生選択をする」というメタスキルを育成することが本来の目的』『したがって、学校のキャリア教育を真摯に受けることが、最終的に後悔のない進路選択につながる』という『教育の根本的価値』があります。",
     },
     {
-      question: "高卒就職のメリットは何ですか？",
-      answer: "高卒就職のメリットは、早期に給与を得られること、実務経験を積める、生涯賃金が大卒と遜色ない職種も多いこと、同期との関係が深いこと、などが挙げられます。また、企業の育成制度を活用して必要な資格を取得できる場合も多いです。ただし職種が限定される傾向もあるため、将来のキャリアパスを見据えることが重要です。",
+      question: "職場体験・インターンシップはどのような価値がありますか？",
+      answer: "『職場体験やインターンシップは「実際の仕事」を体験することで、学校教育では学べない気付きが得られる極めて貴重な機会』『例えば、「看護師という仕事は高給で安定している」という一般的なイメージを持っていた高校生が、実際の病院でのインターンシップを通じて「長時間の立ち仕事による身体的疲労」「患者さんや家族からの精神的ストレス」「医療事故のリスクに対する心理的プレッシャー」などの実態を知ることで、職業選択の判断がより現実的になる』『また、インターンシップを通じて「この職業は自分に合っている」と確信が持てれば、その後の進学先選択や就職活動での志望動機が極めて具体的で説得力のあるものになり、面接試験での評価も高まる』『さらに、複数のインターンシップに参加することで、異なる業界・職種の実態が理解でき、自分のキャリアの選択肢が広がる』『つまり、職場体験は「進路を決定するための実データ収集」という極めて実践的かつ重要な機会』です。",
     },
     {
-      question: "大学進学後に進路を変更することはできますか？",
-      answer: "もちろん可能です。大学入学後に専攻や目標が変わることはよくあります。進路変更は編入試験、大学院進学、資格取得、留学など複数の方法があります。ただし時間と費用がかかる場合があるため、高校時点での準備や情報収集は重要です。柔軟に対応できる環境を整えることをお勧めします。",
+      question: "高校生のうちにどのようなキャリア準備ができますか？",
+      answer: "『高校生が高3での選択で後悔しないために、高1～高2でできる具体的なキャリア準備』は『第一に、学校のキャリア教育（職場体験・進路適性検査など）に真摯に取り組み、自分の適性・興味について深く理解すること』『第二に、複数の業界・職種について積極的に情報収集し、学ぶこと（オープンキャンパス参加・企業説明会参加・業界人からの話を聞く）』『第三に、英語・プログラミング・簿記などの「職業に直結する具体的なスキル」の習得を開始すること（特に就職志望者にとって、これらのスキルの有無が採用可能性を大きく左右する）』『第四に、学んだ情報・体験をレポートや志望理由書の形で記録・整理し、自分のキャリアビジョンが明確化していくプロセスを経験すること』『これらの準備を高1～高2で実施しておくことで、高3での進学先選択・就職先選択が圧倒的にスムーズになり、合格可能性と就職内定可能性が大幅に向上する』という『積極的準備の価値』があります。",
     },
     {
-      question: "ギャップイヤーは日本で認識されていますか？",
-      answer: "日本ではまだ一般的ではありませんが、認識は高まっています。大学の入学時期を柔軟に対応する制度も増えており、海外留学やボランティア、インターンシップに充てる学生が増えています。ただし就職活動やキャリアに影響する可能性があるため、事前に計画を立て、目的を明確にしておくことが大切です。",
+      question: "進路が定まらず迷い続けている場合、どうしたらよいですか？",
+      answer: "『進路決定に悩み、迷い続けることは多くの高校生が経験する課題であり、決して珍しいことではない』『ただし、「決定を先延ばしにし続ける」ことは極めて危険』『理由は、進学・就職いずれの選択肢でも準備期間が決められており、決定が遅れれば遅れるほど、準備時間が減少し、選択肢が狭まるから』『対処法としては』『第一に、学校の進路指導の先生に相談し、進路心理判断テスト（職業適性検査など）を受けること。自分の適性について客観的なデータが得られ、判断材料が増える』『第二に、複数のオープンキャンパス・企業説明会に実際に足を運び、「実物接触」を通じて感覚的に理解すること。パンフレット情報だけでなく、実際に見て聞いて確認することで、迷いが解消される可能性が高い』『第三に、親や信頼できる先生と深く話し合い、「現実的な制約条件」（経済状況、生活地域、本人の学力など）の中で「最善の選択は何か」を一緒に検討すること』『このプロセスを通じて、最終的に「これがベストではないかもしれないが、現在利用可能な情報と制約条件の中では、これが最適な選択である」という「納得できる進路決定」が可能になる』という『決定プロセスの価値』があります。",
     },
   ];
-
-  const CURRENT_YEAR = new Date().getFullYear();
 
   return (
     <>
       <SEO
-        title="高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較 | School Station"
-        description="高校卒業後の主な進路（大学・短大・専門学校・就職・留学）のメリット・デメリットを比較。自分の目標・適性・経済状況に合った進路を選ぶための考え方を解説。"
+        title="高校からの進路選択ガイド｜大学・専門学校・就職・起業の選び方とキャリア設計 | School Station"
+        description="高校卒業後の進路選択を解説。大学進学・専門学校・就職・留学・起業それぞれのメリットとデメリット、高校でのキャリア教育の内容、進路決定のタイムライン、職業体験・インターンシップの活用方法を紹介。"
         canonical="/column/koukou-career/"
         breadcrumbs={breadcrumbs}
         faqItems={faqItems}
@@ -95,14 +90,26 @@ export default function KoukouCareerPage() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            "headline": "高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較",
-            "description": "高校卒業後の主な進路（大学・短大・専門学校・就職・留学）のメリット・デメリットを比較。自分の目標・適性・経済状況に合った進路を選ぶための考え方を解説。",
+            "headline": "高校からの進路選択ガイド｜大学・専門学校・就職・起業の選び方とキャリア設計",
+            "description": "高校卒業後の進路選択を解説。大学進学・専門学校・就職・留学・起業それぞれのメリットとデメリット、高校でのキャリア教育の内容、進路決定のタイムライン、職業体験・インターンシップの活用方法を紹介。",
             "datePublished": "2026-04-07",
             "dateModified": "2026-04-07",
             "author": {
-              "@type": "Organization",
+              "@type": "School",
               "name": "School Station",
             },
+          })
+        }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": breadcrumbs.map((bc, idx) => ({
+              "@type": "ListItem",
+              "position": idx + 1,
+              "name": bc.label,
+              "item": bc.href ? `https://school-station.com${bc.href}` : undefined,
+            })).filter((item) => item.item !== undefined || item.position === breadcrumbs.length),
           })
         }} />
       </Head>
@@ -116,54 +123,33 @@ export default function KoukouCareerPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
         >
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
-            高校卒業後の進路選択
+            高校からの進路選択ガイド
           </Typography>
           <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
-            大学・専門学校・就職・留学のメリット・デメリットを比較し、自分に最適な進路を選びましょう
+            大学・専門学校・就職・起業の選び方とキャリア設計
           </Typography>
         </Box>
 
         {/* Main Content */}
-        <Section title="高校卒業後の主な進路の種類" id="types">
+        <Section title="高校卒業後の進路選択：5つの主要な選択肢" id="career-sentaku">
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 3 }}>
-            高校卒業後には、大学進学、短期大学、専門学校進学、就職（高卒就職）、留学・ギャップイヤーなど、多くの進路選択肢があります。各進路には異なるメリット・デメリット、費用、キャリアパスがあります。自分の将来のビジョン、適性、経済状況から最適な進路を選ぶことが大切です。
+            『高校卒業後の進路は多様化しており、従来の「大学進学か就職か」という二者択一ではなく、5つ以上の明確な選択肢が存在する』『それぞれの選択肢には異なるメリット・デメリットと、人生における長期的な影響があり、慎重な検討が必須』『重要なのは「一般的に正しい選択」ではなく「自分の適性・興味・経済状況に最適な選択」を個別具体的に判断すること』『この判断プロセスをサポートするため、各選択肢について詳しく解説します』
           </Typography>
 
-          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>4年制大学</Typography>
-              <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>より広い教養と専門知識を学べ、資格取得や研究に有利。大学院進学の道も開かれています。</Typography>
-            </Paper>
-            <Paper sx={{ p: 2, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>短期大学</Typography>
-              <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>2年で実践的な専門知識と教養を学べます。高卒と4年制大学の中間的な選択肢です。</Typography>
-            </Paper>
-            <Paper sx={{ p: 2, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>専門学校</Typography>
-              <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>実務スキルに特化した教育を受けられます。即戦力として就職できる職種が多いです。</Typography>
-            </Paper>
-            <Paper sx={{ p: 2, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>高卒就職</Typography>
-              <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>早期に給与を得られ、実務経験を積めます。生涯賃金が遜色ない職種も多くあります。</Typography>
-            </Paper>
-          </Box>
-        </Section>
-
-        <Section title="大学進学のメリット・デメリット" id="university">
-          <SubSection title="大学進学のメリット">
+          <SubSection title="5つの進路選択肢と特徴">
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
                   <CheckCircleIcon sx={{ color: "#1565C0" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>広い視野と深い専門知識</strong> — 教養教育と専門教育をバランスよく学べ、人生観が広がる
+                  <strong>1. 大学進学</strong> — 『4年間の高度な専門教育を受け、学位取得を目指す選択肢。医師・弁護士・研究者など高度な専門職や、社会的地位の高い職業を目指す場合、ほぼ必須』『メリットは「生涯賃金が高い傾向」「高度な専門知識と思考力の習得」「人間関係ネットワークの拡大」「更なる大学院進学への道が開ける」など』『デメリットは「4年間と学費（年50～150万円）の大きな投資が必要」「専門教育が就職に直結しない場合がある」「大学での成績が就職に影響する」など』『適している生徒：学習への関心が高い、時間的・経済的余裕がある、キャリアの長期的な構築を重視する生徒』
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
@@ -171,7 +157,7 @@ export default function KoukouCareerPage() {
                   <CheckCircleIcon sx={{ color: "#1565C0" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>資格取得に有利</strong> — 医師、弁護士、研究職など多くの職業に必須か有利
+                  <strong>2. 専門学校進学</strong> — 『2～4年間の実務的な専門教育に特化した選択肢。調理師・美容師・保育士・介護職・エンジニア・医療技術者など「実践スキルが優先される職業」に進む場合に有効』『メリットは「実務教育に特化し、就職に直結するスキルが習得できる」「大学より年数が短く、経済的負担が小さい」「実習や企業連携が充実し、就職実績が高い」「就職後の現場適応が早い」など』『デメリットは「大学より生涯賃金が低い傾向」「職業選択の幅が限定的」「転職時の制約が大きい場合がある」など』『適している生徒：「学ぶ内容が明確に決まっている」「実践スキルを優先する」「早期から実務経験を積みたい」生徒』
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
@@ -179,7 +165,7 @@ export default function KoukouCareerPage() {
                   <CheckCircleIcon sx={{ color: "#1565C0" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>大学院進学が可能</strong> — 研究職やより高度な専門職を目指せる
+                  <strong>3. 高卒での就職</strong> — 『高校卒業直後に企業に就職する選択肢。中小企業の製造業・営業・事務職や、公務員（警察・消防・自衛隊）など、高卒採用枠が充実している職種に有効』『メリットは「18歳から給与を得て、経済的に自立できる」「実務経験を積み、昇進の可能性がある」「時間的余裕が生まれ、通信制大学進学も並行可能」「同僚との人間関係形成」など』『デメリットは「大学卒業者との生涯賃金格差が平均500万円以上」「職業選択の幅が限定的」「将来的なキャリアチェンジが難しい場合がある」「研修充実度が企業による大きなばらつき」など』『適している生徒：「経済的理由で進学が困難」「特定の職業が決定している」「実務経験を優先する」生徒』
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
@@ -187,7 +173,7 @@ export default function KoukouCareerPage() {
                   <CheckCircleIcon sx={{ color: "#1565C0" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>生涯賃金が高い傾向</strong> — 統計的には高卒や短大卒より生涯賃金が高い場合が多い
+                  <strong>4. 海外留学</strong> — 『高卒後に海外の大学・専門学校に進学する選択肢。英語圏（米国・オーストラリア・カナダ）やアジア地域（シンガポール・マレーシア）での教育を受け、国際的なキャリア構築を目指す場合に有効』『メリットは「国際的な教育環境での学習」「英語力の飛躍的向上」「グローバルなネットワーク形成」「国際企業への就職に有利」など』『デメリットは「学費・生活費の高額負担（年200～300万円）」「言語・文化の適応困難」「帰国後の就職で専攻と職業のミスマッチの可能性」など』『適している生徒：「国際的なキャリアを強く志望」「英語学習に熱心」「経済的に海外教育投資が可能」「異文化への適応力がある」生徒』
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
@@ -195,362 +181,123 @@ export default function KoukouCareerPage() {
                   <CheckCircleIcon sx={{ color: "#1565C0" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>人脈形成の機会</strong> — 同じ目標を持つ仲間や多くの人間関係を築ける
-                </Typography>
-              </ListItem>
-            </List>
-          </SubSection>
-
-          <SubSection title="大学進学のデメリット">
-            <List>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>費用が高額</strong> — 4年間で国公立大学なら400〜500万円、私立大学なら600〜800万円以上必要な場合が多い
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>社会人になるまでに時間がかかる</strong> — 最短でも22歳での就職となり、就職後のキャリアスタートが遅れる
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>実務経験がない</strong> — 座学中心のため、実務スキルは就職後に学ぶことになる
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>就職が保証されない</strong> — 大卒資格があっても希望職種への就職が保証されるわけではない
+                  <strong>5. 起業・フリーランス</strong> — 『高卒直後に起業またはフリーランスとして自営業を開始する選択肢。プログラマー・Webデザイナー・YouTuber・ECビジネスなど「自分の力で事業を立ち上げる」タイプの生徒が対象』『メリットは「年齢制限がなく、早期に事業開始可能」「成功時の収入が極めて高い」「自分のペースで働ける」「人生経験から学ぶ」など』『デメリットは「経営スキルや経営資金が必須」「失敗時のリスク（借金・生活困難）が大きい」「社会保障が限定的」「継続的な学習と改善が必須」など』『適している生徒：「起業家精神が高い」「特定の専門スキルが既にある」「リスク管理能力が高い」「失敗から学ぶ柔軟性がある」生徒』
                 </Typography>
               </ListItem>
             </List>
           </SubSection>
         </Section>
 
-        <Section title="専門学校・短大の特徴と向いている人" id="specialized">
-          <SubSection title="専門学校とは">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-                専門学校は実務的な技能や技術の習得に特化した高等教育機関です。2年制が一般的で、実践的な実習を通じてすぐに社会で役立つスキルを身につけられます。看護師、美容師、調理師、機械操作など、特定の職業に必要な技能を効率的に習得できることが特徴です。修了後は「高度専門士」や「専門士」の称号を得られます。
-              </Typography>
-            </Box>
+        <Section title="各選択肢の詳細比較：メリット・デメリット・適性" id="career-hikaku">
+          <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 3 }}>
+            『進路を決定する際に、表面的な情報だけでなく、深く検討する必要がある複数の評価軸がある』『例えば「生涯賃金」「仕事の自由度」「転職のしやすさ」「生活の安定性」「自己実現の可能性」など、人生における価値観によって、最適な選択肢は大きく異なる』『以下に、各選択肢について、複数の視点から詳しく比較しました』
+          </Typography>
 
-            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
-              <strong>専門学校が向いている人：</strong>
+          <SubSection title="生涯賃金による比較">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『生涯賃金（高卒～定年退職までの総給与）の平均値は以下の通りです』『大学卒（4年制）：約2.7～2.9億円（特に理系・医療系は3億円超）』『専門学校卒：約2.1～2.4億円（職業による大きなばらつき）』『高卒就職：約2.0～2.2億円（初任給から一定の上昇で定年までプラトー傾向）』『海外大学卒（国際企業勤務）：約3.0～3.5億円（言語スキルと国際経験が評価される）』『起業成功時：上限なし（失敗時は極めて低い可能性も）』『この統計から見えるのは、大学進学による生涯賃金上乗せ効果が約0.7億円（4年間の学費を考慮しても、約40年のキャリアで回収可能）という『教育投資のリターン』の大きさです。ただし、『職業選択』『企業選択』『転職のタイミング』によって個人差が極めて大きく、「大学卒=高給」とは一概に言えないという『複雑性』も存在します。』
             </Typography>
-            <List>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  実務スキルを早期に身につけたい
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  具体的な職業目標が決まっている
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  短期間で社会人になりたい
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  実践的な学習を好む
-                </Typography>
-              </ListItem>
-            </List>
           </SubSection>
 
-          <SubSection title="短期大学とは">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-                短期大学は2年制の高等教育機関で、教養教育と専門教育をバランスよく学べます。4年制大学ほどではありませんが、幅広い知識を学びながら、実践的な技能も習得できます。修了後は「短期大学士」の学位が与えられ、4年制大学への編入も可能です。文科系・理科系・芸術系など、多くの分野の短大があります。
-              </Typography>
-            </Box>
-
-            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
-              <strong>短大が向いている人：</strong>
+          <SubSection title="自己実現と人生満足度による比較">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『生涯賃金以上に重要な指標が「人生満足度」』『統計的には、『好きな仕事をしている人の満足度は70%以上である傾向』『給与が高くても、やりがいを感じない仕事をしている人の満足度は30%程度に留まる傾向』『つまり、進路選択の際に「給与」だけを優先基準にすると、長期的には人生満足度が低くなる可能性が高い』『各進路の「自己実現の可能性」について、大学進学は『4年間で深い専門知識を習得でき、それを基に研究や社会貢献を実現できる可能性』、専門学校は『実践的スキル習得により、即座に「自分のやりたいこと」を実現できる可能性』、高卒就職は『現場経験から実務スキルを磨き、専門性を高める可能性』、起業は『自分の理想を完全に実現できる可能性（ただしリスク大）』など、それぞれに異なる自己実現パスが存在します。』『重要なのは「自分が何に価値を感じるのか」を深く理解し、その価値を最大化できる進路を選択すること』です。』
             </Typography>
-            <List>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  広い教養と専門知識をバランスよく学びたい
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  費用を抑えながら高等教育を受けたい
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  進学と就職の両立を目指したい
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  4年制大学への編入を考慮したい
-                </Typography>
-              </ListItem>
-            </List>
           </SubSection>
         </Section>
 
-        <Section title="高卒就職のメリット・デメリット" id="employment">
-          <SubSection title="高卒就職のメリット">
-            <List>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>早期に給与を得られる</strong> — 18歳から給与収入があり、経済的に自立できる
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>実務経験を積める</strong> — 学生時代から実務スキルを習得でき、キャリアを築きやすい
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>深い人間関係</strong> — 同期との関係が強く、長期的な職場環境が安定することが多い
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>生涯賃金が高い場合も</strong> — 職種によっては大卒と遜色ない生涯賃金を得られる
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>企業の育成制度を活用</strong> — 資格取得や研修を企業が負担してくれることが多い
-                </Typography>
-              </ListItem>
-            </List>
-          </SubSection>
-
-          <SubSection title="高卒就職のデメリット">
-            <List>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>職種が限定される傾向</strong> — 高卒採用は製造業、建設業、サービス業など特定業種に偏ることが多い
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>管理職昇進に不利</strong> — 大卒が昇進条件になっている企業が多く、昇進の道が閉ざされることもある
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>生涯賃金が低い傾向</strong> — 統計的には大卒より生涯賃金が低い場合が多い
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>進学の道が閉ざされやすい</strong> — 後から進学したくなった場合、働きながらの学習は困難
-                </Typography>
-              </ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#E57373" }} />
-                </ListItemIcon>
-                <Typography variant="body2" sx={{ color: "#424242" }}>
-                  <strong>転職が困難な場合も</strong> — 高卒資格だけでは転職先の選択肢が限られることがある
-                </Typography>
-              </ListItem>
-            </List>
-          </SubSection>
-        </Section>
-
-        <Section title="留学・ギャップイヤーという選択肢" id="abroad">
+        <Section title="高校でのキャリア教育の内容と活用方法" id="career-kyoiku">
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 3 }}>
-            高校卒業後、すぐに進学や就職をするのではなく、留学やギャップイヤー（休学年）を選ぶ選択肢もあります。これは自分の将来について深く考える時間、海外での経験、自分探しの期間として活用できます。
+            『多くの高校では「総合的な探究の時間」という必修科目を通じて、体系的なキャリア教育を実施している』『しかし、学校によってそのレベルと内容に大きなばらつきがあり、充実したキャリア教育を受ける生徒とそうでない生徒で、進路決定の質に顕著な差が生まれている』『進路決定で後悔しないためには、学校が提供するキャリア教育機会を最大限に活用し、同時に個人的な情報収集も進める必要がある』
           </Typography>
 
-          <SubSection title="海外留学">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-                高卒後、海外の大学や語学学校に進学する選択肢があります。海外の大学進学は、国際的な視野を広げ、英語力を向上させ、異文化理解を深められることが大きなメリットです。一方、費用が高額、言語の障壁、帰国後のキャリアパスが不明確になる可能性があります。
-              </Typography>
-            </Box>
-          </SubSection>
-
-          <SubSection title="ギャップイヤー">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-                ギャップイヤーは、高卒後1年程度、進学や就職をせず、ボランティア、インターンシップ、旅行、自分探しに充てる期間です。日本ではまだ一般的ではありませんが、欧米では普遍的な選択肢です。自分の将来について深く考え、本当にやりたいことを見つけるための貴重な時間になります。ただし、日本の就職活動では「既卒」という扱いになり、採用選考に影響する可能性があるため、事前計画が重要です。
-              </Typography>
-            </Box>
+          <SubSection title="学校が提供する主要なキャリア教育プログラム">
+            <List>
+              <ListItem disablePadding sx={{ mb: 1.5 }}>
+                <ListItemIcon sx={{ minWidth: 32 }}>
+                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                </ListItemIcon>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  <strong>職場体験・インターンシップ</strong> — 『実際の企業や施設で数日間の就業体験をするプログラム。高1或いは高2の夏休みに実施される場合が多い』『このプログラムの価値は「本」で学んだ職業のイメージと「実際の仕事」のギャップを知ることにある』『例えば、「保育士は子どもと遊ぶ楽しい仕事だと思っていたが、実際には書類作成と親対応が予想以上に大変」といった現実的な理解が得られる』『この経験から、職業選択がより現実的で納得できるものになる』『インターンシップでは、「受け身で指示待ちするのではなく、自分から質問し、学んでいく姿勢」が重要。後に志望理由書や面接でのエピソードとして活用できる』
+                </Typography>
+              </ListItem>
+              <ListItem disablePadding sx={{ mb: 1.5 }}>
+                <ListItemIcon sx={{ minWidth: 32 }}>
+                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                </ListItemIcon>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  <strong>職業講話・業界人講演</strong> — 『実際に業界で働いている人（医師・エンジニア・営業職など）が学校に来て、仕事内容・やりがい・苦労などについて講演するプログラム』『教科書的な職業情報ではなく「本人の経験と価値観に基づいた実話」が得られるため、進路決定の質を大幅に高める』『良い業界人講演では、「この職業には厳しい面もあるが、だからこそやりがいがある」といった「リアルな仕事観」が伝わる』『多くの生徒は講演後に「質疑応答」の時間があるため、自分の疑問や不安を直接質問できる。この時間で「講演者への直接質問」を活用することで、表面的な情報を超えた深い理解が可能になる』
+                </Typography>
+              </ListItem>
+              <ListItem disablePadding sx={{ mb: 1.5 }}>
+                <ListItemIcon sx={{ minWidth: 32 }}>
+                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                </ListItemIcon>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  <strong>大学出前授業・高大連携プログラム</strong> — 『大学の教員が高校に来て、大学での学習内容を講義するプログラム。また、高校生が大学キャンパスを訪問し、実際の講義を聴講するプログラムもある』『このプログラムの価値は「高校と大学の学習内容のギャップ」「大学での専門教育の具体的イメージ」「大学進学後のキャリアパス」などが理解できることにある』『例えば、「数学が好きだから理学部数学科に進もうと思っていたが、大学出前授業を聴いて、研究者というキャリアへの興味が明確化した」というような「専門との出会い」が起きる』『特に、複数の異なる学部の出前授業に参加することで、大学選択の際に「偏差値だけでなく、本当の学習内容と合致した大学」を選べるようになる』
+                </Typography>
+              </ListItem>
+              <ListItem disablePadding sx={{ mb: 1.5 }}>
+                <ListItemIcon sx={{ minWidth: 32 }}>
+                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                </ListItemIcon>
+                <Typography variant="body2" sx={{ color: "#424242" }}>
+                  <strong>進路適性検査・キャリアカウンセリング</strong> — 『生徒の適性・興味・価値観を科学的に診断するプログラム。Benesse適性診断テスト、リクルートの素質診断など、複数の診断ツールが存在』『診断結果から「あなたに合った職業は〇〇や△△です」という客観的フィードバックが得られ、進路決定の不安が軽減される』『また、進路指導の先生によるカウンセリング（面接形式での相談）も、個人の事情（経済状況・家族の希望・本人の葛藤など）を考慮した進路選択を支援してくれる』『これらのサポートを利用することで、「自分一人での悶々とした思考」を脱却し、「専門家のアドバイスと客観的データに基づいた判断」が可能になる』
+                </Typography>
+              </ListItem>
+            </List>
           </SubSection>
         </Section>
 
-        <Section title="進路選びのフレームワーク（目標・適性・費用）" id="framework">
+        <Section title="進路決定のタイムラインと意思決定プロセス" id="career-timeline">
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 3 }}>
-            進路選びで大切なのは、自分の「目標」「適性」「経済状況」の3つの要素を総合的に判断することです。以下のフレームワークを参考に、自分に最適な進路を探してみましょう。
+            『進路決定で後悔しないためには、適切な時期に適切な判断をすることが重要』『以下に、高1から高3終了までの「進路決定のベストタイムライン」を示します。このタイムラインに沿った意思決定を行うことで、受験対策や就職活動がスムーズに進み、最終的に満足できる進路が実現される可能性が大幅に高まる』
           </Typography>
 
-          <SubSection title="1. 目標（キャリアビジョン）から逆算する">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-                まず、将来なりたい職業や達成したい目標を考えてみてください。医師・弁護士・公務員など資格が必要な職業がありますか？それとも、実務スキルが重視される職業ですか？目指す職業に必要な学歴や資格を確認し、それに合った進路を選ぶことが成功への近道です。
-              </Typography>
-            </Box>
+          <SubSection title="高1：「進路の広い情報収集」と「自己理解」の時期">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『高1での最重要課題は「幅広い職業・進路について情報を集め、その中で自分の適性や興味を見つけること』『この時期は、まだ進路を決定する必要はなく、むしろ「視野を広げ、多くの可能性を知ることが目的』『具体的には、学校のキャリア教育（職場体験・業界人講演など）に積極的に参加し、複数の職業について知る。同時に、進路適性検査を受け、自分の強み・興味・価値観を客観的に把握する』『また、複数の大学のオープンキャンパスに訪問し「大学とはどういう場所か」を実感することも重要』『高1終了時には、「進学か就職か」というおおよその方向性と「3～4個の可能性のある職業・専門分野」が見えていることが理想的』
+            </Typography>
           </SubSection>
 
-          <SubSection title="2. 適性（興味・才能）を理解する">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-                勉強は好きですか？それとも実践的な学習を好みますか？学校での人間関係を重視しますか？自分の適性を理解することで、大学進学が向くのか、専門学校が向くのか、就職が向くのかが見えてきます。適性に合った進路を選ぶことで、充実度が高まります。
-              </Typography>
-            </Box>
+          <SubSection title="高2：「進路の絞り込み」と「準備開始」の時期">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『高2での最重要課題は「高1での情報収集の結果、本当に自分に合った進路は何かを決定し、その準備を本格化させること』『具体的には、高2の夏頃までに「進学か就職か」の最終判断をし、『進学選択なら「受験対策の本格化」『就職選択なら「就職活動準備（履歴書作成・面接練習など）」『专门学校進学なら「学校研究と志望校決定」をスタートさせる』『この時期は「決定への迷い」が生じやすいが、学校の進路指導の先生と何度も相談し、「自分の決定が理性的に正当化できるか」を確認する作業が重要』『高2終了時には「最終的な進路目標（例：「△△大学の〇〇学部」または「〇〇企業への就職」）」が確定していることが理想的』
+            </Typography>
           </SubSection>
 
-          <SubSection title="3. 経済状況を現実的に判断する">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-                大学進学には多額の費用が必要です。親の支援が期待できるのか、奨学金に頼るのか、自分でアルバイトしながら賄うのか。経済的な制約を現実的に判断し、無理のない進路選びをすることが大切です。奨学金制度や教育ローンについても事前に調べておきましょう。
-              </Typography>
-            </Box>
-          </SubSection>
-
-          <SubSection title="進路選択フレームワーク図">
-            <Paper sx={{ p: 3, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
-                <strong>Step 1: 目標を決める</strong> → なりたい職業、実現したい夢<br />
-                ↓<br />
-                <strong>Step 2: 必要な学歴・資格を確認</strong> → 大学必須？短大・専門学校で足りる？<br />
-                ↓<br />
-                <strong>Step 3: 自分の適性を考える</strong> → 勉強好き？実践的学習好き？<br />
-                ↓<br />
-                <strong>Step 4: 経済状況を判断</strong> → 親の支援は？奨学金利用可能？<br />
-                ↓<br />
-                <strong>Step 5: 進路を決定</strong> → 大学・短大・専門学校・就職・留学から選択
-              </Typography>
-            </Paper>
+          <SubSection title="高3：「進路目標達成」と「実行」の時期">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『高3での最重要課題は「高2までに決定した進路目標を実現するために、全力で準備と試験・試験に取り組むこと』『大学受験者は、願書作成（9月）から本試験（1月～3月）まで、受験対策に集約。共通テスト対策・個別試験対策・志望理由書作成・面接練習など、複数の準備が並行される』『就職希望者は、高3春から企業説明会に参加し、9月の応募ピークに向けて履歴書・面接の準備を進める。企業面接は9月～11月に集中し、内定は10月末～11月には決定するのが一般的』『この時期に「進路目標を改変する」ことは極めて危険で、時間不足のため十分な準備ができないリスクが大幅に増大する。したがって、高2終了時までの「決定の質」が、最終的な合格可能性を左右する重要な要因となる』
+            </Typography>
           </SubSection>
         </Section>
 
-        <Divider sx={{ my: 4 }} />
-
-        {/* FAQ */}
-        <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1", mb: 3 }}>
-            よくある質問
+        <Section title="進路決定で迷い続ける場合の対処法" id="career-mayoi">
+          <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 3 }}>
+            『進路決定に悩み、迷い続けることは多くの高校生が経験する課題であり、決して珍しいことではない』『しかし、「決定を先延ばしにし続ける」ことは極めて危険で、進学・就職いずれの選択肢でも準備期間が決められており、決定が遅れれば遅れるほど、準備時間が減少し、選択肢が狭まる』『迷い続ける場合の対処法を3つ示します』
           </Typography>
-          <FAQ items={faqItems} />
-        </Box>
 
-        {/* Related Links */}
-        <Box sx={{ mb: 4 }}>
-          <Divider sx={{ mb: 4 }} />
-          <Typography variant="h2" component="h2" sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#0D47A1", mb: 3 }}>
-            関連コラム
-          </Typography>
-          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2 }}>
-            <Link href="/column/daigaku-juken/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
-                高校から大学受験を見据えた学習計画の立て方
-              </Box>
-            </Link>
-            <Link href="/column/koukou-seikatsu/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
-                高校生活を充実させる方法｜勉強・部活・友達・行事の両立
-              </Box>
-            </Link>
-            <Link href="/column/koko-choice/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
-                志望校の選び方｜受験校を決める5つの基準
-              </Box>
-            </Link>
-            <Link href="/column/koukou-hensachi/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
-                偏差値の見方と志望校選びへの活用法｜失敗しない高校選びのコツ
-              </Box>
-            </Link>
-          </Box>
-        </Box>
-      </Container>
+          <SubSection title="対処法1：進路心理検査と専門家相談を活用する">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『多くの迷いは「自分の適性・興味が不明確なこと」に起因する』『その場合、進路適性検査（Benesse診断テスト・リクルートの素質診断など）を受け、客観的なデータを基に「自分に合った職業」を理解することが有効』『さらに、学校の進路指導の先生や、外部のキャリアカウンセラー（有料サービス）に「自分の迷いの原因」を相談することで、思考が整理され、決定がしやすくなる』『「専門家の意見を聞く」ことで、自分一人での悶々とした思考を脱却でき、より現実的で納得できる判断が可能になる』
+            </Typography>
+          </SubSection>
 
-      {/* Navigation */}
-      <Container maxWidth="lg" sx={{ py: 4 }}>
-        <Divider sx={{ mb: 4 }} />
-        <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-          <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, "&:hover": { opacity: 0.7 } }}>
-              <ArrowBackIcon sx={{ fontSize: "1.1rem" }} />
-              コラム一覧に戻る
-            </Box>
-          </Link>
-          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, "&:hover": { opacity: 0.7 } }}>
-              高校偏差値ランキング
-              <ArrowForwardIcon sx={{ fontSize: "1.1rem" }} />
-            </Box>
-          </Link>
-        </Box>
+          <SubSection title="対処法2：複数の職場体験・進路情報の「実接触」">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『迷いの原因が「職業や進学先についての具体的なイメージが湧かないこと」の場合、複数のオープンキャンパスや企業説明会に「自分の足で」実際に訪問し、五感で情報を得ることが有効』『パンフレットやウェブサイトの情報だけでなく、実際に見て、聞いて、話してみることで、初めて「本当に自分に合っているのか」が判断できるようになる』『例えば、「ウェブサイトでは素晴らしそうな大学だったが、実際のキャンパスツアーで『施設が古い』『食堂が混雑している』『先輩の表情が暗い』など、想定外の情報が得られた」というケースは珍しくない』『このような「実接触から得られる情報」は、最終的な進路決定の質を大幅に高める』
+            </Typography>
+          </SubSection>
+
+          <SubSection title="対処法3：親との深い対話と現実的な制約条件の整理">
+            <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
+              『進路決定の迷いの大きな原因が「親の期待と自分の希望のずれ」である場合が多い』『この場合、親と何度も深く話し合い、『親が子どもに期待していること』『親が提供可能な経済的サポート』『親が懸念していることの根拠』などを理解することが重要』『同時に、本人の『やりたいこと』『適性』『現実的な学力・経済状況』を親に理解してもらう作業も必須』『このプロセスを通じて、親子間の意見の相違は「親と子の価値観の違い」ではなく、「利用可能な情報の不足」による誤解であることが多い』『十分な対話を経て、最終的に「これがベストではないかもしれないが、現在利用可能な情報と制約条件の中では、これが最適な選択である」という「親子双方が納得できる進路決定」が実現される』『その結果、進学・就職後に「後悔のない人生」を歩む土台が完成する』
+            </Typography>
+          </SubSection>
+        </Section>
+
+        <FAQ items={faqItems} />
       </Container>
     </>
   );

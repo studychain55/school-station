@@ -383,6 +383,37 @@ export default function GuidePage() {
 
         <Divider sx={{ my: 4 }} />
 
+        {/* Related Column Articles */}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1" }}>
+            関連コラム記事
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 2, mb: 2 }}>
+            {[
+              { href: "/column/hensachi-guide/", title: "偏差値の見方・使い方を徹底解説", desc: "偏差値とは何か、計算方法や見方を初心者向けに解説。" },
+              { href: "/column/koko-choice/", title: "志望校の選び方｜受験校を決める5つの基準", desc: "学力レベルから教育方針まで、最適な志望校選びの基準。" },
+              { href: "/column/nyushi-schedule/", title: "高校受験スケジュール完全ガイド", desc: "中学3年間の受験スケジュールと準備の進め方。" },
+              { href: "/column/kouritsu-vs-shiritsu/", title: "公立vs私立｜高校選びの徹底比較", desc: "費用・環境・進学実績から最適な選択を解説。" },
+              { href: "/column/naishin-up/", title: "内申点の上げ方｜今すぐできる方法", desc: "定期テスト対策など、すぐに実践できるポイント。" },
+              { href: "/column/study-methods/", title: "高校受験に向けた効果的な勉強法", desc: "教科別攻略と時間管理のコツを徹底解説。" },
+            ].map((article) => (
+              <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
+                <Paper elevation={0} sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", height: "100%", "&:hover": { boxShadow: "0 2px 8px rgba(0,0,0,0.08)", borderLeftColor: "#E65100" }, transition: "all 0.2s" }}>
+                  <Typography sx={{ fontSize: 13, fontWeight: 600, color: "#0D47A1", mb: 0.5 }}>{article.title}</Typography>
+                  <Typography sx={{ fontSize: 12, color: "#757575" }}>{article.desc}</Typography>
+                </Paper>
+              </Link>
+            ))}
+          </Box>
+          <Link href="/column/" style={{ textDecoration: "none" }}>
+            <Box component="span" sx={{ fontSize: 13, color: "#1565C0", textDecoration: "underline", cursor: "pointer" }}>
+              すべてのコラム記事を見る →
+            </Box>
+          </Link>
+        </Box>
+
+        <Divider sx={{ my: 4 }} />
+
         {/* Popular Prefecture Links */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1" }}>

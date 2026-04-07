@@ -350,6 +350,91 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           <FAQ items={faqItems} />
         </Box>
 
+        {/* Related Column Articles Section */}
+        <Box sx={{ mb: 4 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.25rem", fontWeight: 600 }}>
+            受験コラムを読む
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 2 }}>
+            <Link href="/column/hensachi-guide/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 2.5,
+                  border: "1px solid #E0E0E0",
+                  borderLeft: "4px solid #FF6F00",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                    transform: "translateY(-2px)",
+                    borderLeftColor: "#E65100",
+                  },
+                }}
+              >
+                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                  偏差値の見方・使い方を徹底解説
+                </Typography>
+                <Typography sx={{ fontSize: 12, color: "#757575" }}>
+                  偏差値の計算方法や見方、受験戦略への活かし方を初心者向けに解説
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/koko-choice/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 2.5,
+                  border: "1px solid #E0E0E0",
+                  borderLeft: "4px solid #FF6F00",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                    transform: "translateY(-2px)",
+                    borderLeftColor: "#E65100",
+                  },
+                }}
+              >
+                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                  志望校の選び方｜受験校を決める5つの基準
+                </Typography>
+                <Typography sx={{ fontSize: 12, color: "#757575" }}>
+                  学力レベル・学科・教育方針など、最適な志望校選びの基準を解説
+                </Typography>
+              </Paper>
+            </Link>
+            <Link href="/column/nyushi-schedule/" style={{ textDecoration: "none" }}>
+              <Paper
+                elevation={0}
+                sx={{
+                  p: 2.5,
+                  border: "1px solid #E0E0E0",
+                  borderLeft: "4px solid #FF6F00",
+                  transition: "all 0.3s ease",
+                  "&:hover": {
+                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
+                    transform: "translateY(-2px)",
+                    borderLeftColor: "#E65100",
+                  },
+                }}
+              >
+                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                  高校受験のスケジュール｜中3の年間スケジュール
+                </Typography>
+                <Typography sx={{ fontSize: 12, color: "#757575" }}>
+                  春の基礎固めから冬の追い込みまで、時期別の勉強法を解説
+                </Typography>
+              </Paper>
+            </Link>
+          </Box>
+          <Box sx={{ mt: 2, textAlign: "center" }}>
+            <Link href="/column/" style={{ textDecoration: "none" }}>
+              <Typography sx={{ color: "#1565C0", fontSize: 14, fontWeight: 600, "&:hover": { textDecoration: "underline" } }}>
+                すべてのコラムを見る →
+              </Typography>
+            </Link>
+          </Box>
+        </Box>
+
         {/* SEO Text Section */}
         <Box sx={{ mb: 4, p: 2, bgcolor: "#F5F5F5", borderRadius: 1 }}>
           <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>

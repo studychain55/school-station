@@ -156,6 +156,18 @@ export default function ColumnIndexPage() {
       href: "/column/koukou-bukatsu/",
       date: "2026-04-07",
     },
+    {
+      title: "高校の転校・転入手続きガイド｜公立・私立・通信制それぞれの方法",
+      description: "高校を転校・転入する際の手続きと必要書類を解説。公立高校・私立高校・通信制高校への転入方法の違い、転校後の単位認定、在籍期間の扱いについて紹介。",
+      href: "/column/koukou-tenko/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校で留年・退学になりそうな場合の対処法｜代替進路の選択肢",
+      description: "高校で留年・退学の危機にある場合の対処法と代替進路を解説。出席日数・単位不足への対応、高卒認定試験の活用、通信制への転校、高校中退後の進路選択肢を紹介。",
+      href: "/column/koukou-ryuunen/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

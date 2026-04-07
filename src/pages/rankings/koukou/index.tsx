@@ -24,6 +24,8 @@ export default function KoukouRankingIndex(props: Props) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/koukou-shingaku/", title: "高校入学後の大学進学準備｜1年生から始めるべき勉強習慣と情報収集" },
+              { href: "/column/koukou-juku/", title: "高校生の塾・予備校の選び方｜集団授業・個別指導・映像授業の比較" },
               { href: "/column/koukou-seiseki/", title: "内申点の仕組みと上げ方｜高校受験に必要な評定平均と内申点の目安" },
               { href: "/column/koukou-soudan/", title: "高校選びで失敗しない相談先ガイド｜塾・学校説明会・先輩情報の活用法" },
               { href: "/column/koukou-event/", title: "高校の体育祭・文化祭・修学旅行の魅力｜高校生活を充実させるイベントガイド" },

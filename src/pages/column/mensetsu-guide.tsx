@@ -488,31 +488,32 @@ export default function MensetsGuPage() {
           </Box>
         </Box>
 
-        {/* Call to Action */}
-        <Box sx={{ textAlign: "center", py: 3 }}>
-          <Typography variant="h3" component="h3" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 600 }}>
-            面接対策と並行して、志望校の偏差値も確認
+        {/* ランキングを確認する */}
+        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+            実際に高校の偏差値を確認してみましょう
           </Typography>
-          <Typography variant="body2" sx={{ color: "#424242", mb: 3 }}>
-            面接対策と同時に、志望校の偏差値や合格に必要な学力を確認しましょう。総合的な受験対策が成功につながります。
+          <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
+            School Stationでは全国5,000校以上の高校偏差値を無料で検索できます。
           </Typography>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Box
-              component="a"
+              component="span"
               sx={{
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#FF6F00",
+                bgcolor: "#0D47A1",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
-                textDecoration: "none",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
+                fontSize: "0.9rem",
+                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
+                cursor: "pointer",
               }}
             >
-              高校偏差値ランキングを見る
+              高校偏差値ランキングを見る →
             </Box>
           </Link>
         </Box>

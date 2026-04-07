@@ -487,6 +487,38 @@ export default function StudyMethodsPage() {
 
         <Divider sx={{ my: 4 }} />
 
+        {/* ランキングを確認する */}
+        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+            実際に高校の偏差値を確認してみましょう
+          </Typography>
+          <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
+            School Stationでは全国5,000校以上の高校偏差値を無料で検索できます。
+          </Typography>
+          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+            <Box
+              component="span"
+              sx={{
+                display: "inline-block",
+                px: 3,
+                py: 1.2,
+                bgcolor: "#0D47A1",
+                color: "#fff",
+                borderRadius: 1,
+                fontWeight: 600,
+                fontSize: "0.9rem",
+                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                transition: "all 0.2s",
+                cursor: "pointer",
+              }}
+            >
+              高校偏差値ランキングを見る →
+            </Box>
+          </Link>
+        </Box>
+
+        <Divider sx={{ my: 4 }} />
+
         {/* 関連記事 */}
         <Box sx={{ mb: 4 }}>
           <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>

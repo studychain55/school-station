@@ -144,6 +144,18 @@ export default function ColumnIndexPage() {
       href: "/column/koukou-setsumeikai/",
       date: "2026-04-07",
     },
+    {
+      title: "高校の推薦入試対策｜学校推薦型・総合型選抜の違いと面接のコツ",
+      description: "高校受験の推薦入試（学校推薦型・総合型選抜）の仕組みと対策を解説。内申点の重要性、志望動機の書き方、面接の準備方法まで詳しく紹介。",
+      href: "/column/suisen-nyushi/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校の部活動選び｜勉強との両立と進路への影響",
+      description: "高校の部活動の選び方と勉強との両立方法を解説。文化系・体育系の特徴から、部活動が大学受験・進路選択に与える影響、時間管理のコツまで詳しく紹介。",
+      href: "/column/koukou-bukatsu/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

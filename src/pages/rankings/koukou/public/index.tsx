@@ -42,6 +42,8 @@ export default function PublicRanking(props: RankingPageProps) {
               { href: "/column/koko-sports/", title: "スポーツ推薦で高校に入る方法とポイント" },
               { href: "/column/tsushinsei-koukou/", title: "通信制・定時制高校の違い｜選び方ガイド" },
               { href: "/column/koukou-setsumeikai/", title: "学校説明会・オープンキャンパス活用法" },
+              { href: "/column/suisen-nyushi/", title: "高校の推薦入試対策完全ガイド" },
+              { href: "/column/koukou-bukatsu/", title: "高校の部活動選び｜勉強との両立" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
                 <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>

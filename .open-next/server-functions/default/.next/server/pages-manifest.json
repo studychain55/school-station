@@ -1,0 +1,17 @@
+{
+  "/": "pages/index.html",
+  "/404": "pages/404.html",
+  "/500": "pages/500.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/_error": "pages/_error.js",
+  "/api/sitemap.xml": "pages/api/sitemap.xml.js",
+  "/rankings/koukou": "pages/rankings/koukou.js",
+  "/rankings/koukou/national": "pages/rankings/koukou/national.js",
+  "/rankings/koukou/p-[prefecture]": "pages/rankings/koukou/p-[prefecture].js",
+  "/rankings/koukou/p-[prefecture]/c-[city]": "pages/rankings/koukou/p-[prefecture]/c-[city].js",
+  "/rankings/koukou/private": "pages/rankings/koukou/private.js",
+  "/rankings/koukou/public": "pages/rankings/koukou/public.js",
+  "/rankings/koukou/public/p-[prefecture]": "pages/rankings/koukou/public/p-[prefecture].js",
+  "/rankings/koukou/region/[region]": "pages/rankings/koukou/region/[region].js"
+}

@@ -1,0 +1,11 @@
+var R=require("../../../../chunks/ssr/[turbopack]_runtime.js")("server/pages/rankings/koukou/region/[region].js")
+R.c("server/chunks/ssr/_0tkisp8._.js")
+R.c("server/chunks/ssr/node_modules_@mui_material_esm_Button_Button_0--qs-c.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0475dwg._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0mt_2zq._.js")
+R.c("server/chunks/ssr/[externals]_next_dist_compiled_@opentelemetry_api_0849mwb._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0j60m2o._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__0k~o29f._.js")
+R.c("server/chunks/ssr/_0o3-bji._.js")
+R.m(1971)
+module.exports=R.m(1971).exports

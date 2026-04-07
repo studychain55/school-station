@@ -1,0 +1,201 @@
+{
+  "version": 3,
+  "pages404": true,
+  "appType": "pages",
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:file((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+)/",
+      "destination": "/:file",
+      "internal": true,
+      "priority": true,
+      "missing": [
+        {
+          "type": "header",
+          "key": "x-nextjs-data"
+        }
+      ],
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/]+\\.\\w+))/$"
+    },
+    {
+      "source": "/:notfile((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+)",
+      "destination": "/:notfile/",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?!\\.well-known(?:/.*)?)(?:[^/]+/)*[^/\\.]+))$"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "DENY"
+        },
+        {
+          "key": "X-XSS-Protection",
+          "value": "1; mode=block"
+        },
+        {
+          "key": "Strict-Transport-Security",
+          "value": "max-age=31536000; includeSubDomains"
+        }
+      ],
+      "regex": "^(?:/(.*))(?:/)?$"
+    }
+  ],
+  "onMatchHeaders": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [
+    {
+      "page": "/rankings/koukou/region/[region]",
+      "regex": "^/rankings/koukou/region/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPregion": "nxtPregion"
+      },
+      "namedRegex": "^/rankings/koukou/region/(?<nxtPregion>[^/]+?)(?:/)?$"
+    }
+  ],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/404",
+      "regex": "^/404(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/404(?:/)?$"
+    },
+    {
+      "page": "/500",
+      "regex": "^/500(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/500(?:/)?$"
+    },
+    {
+      "page": "/api/sitemap.xml",
+      "regex": "^/api/sitemap\\.xml(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou",
+      "regex": "^/rankings/koukou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/rankings/koukou(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/national",
+      "regex": "^/rankings/koukou/national(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/rankings/koukou/national(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/p-[prefecture]",
+      "regex": "^/rankings/koukou/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/rankings/koukou/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/p-[prefecture]/c-[city]",
+      "regex": "^/rankings/koukou/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture",
+        "nxtPcity": "nxtPcity"
+      },
+      "namedRegex": "^/rankings/koukou/(?<nxtPprefecture>[^/]+?)/(?<nxtPcity>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/private",
+      "regex": "^/rankings/koukou/private(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/rankings/koukou/private(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/public",
+      "regex": "^/rankings/koukou/public(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/rankings/koukou/public(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/public/p-[prefecture]",
+      "regex": "^/rankings/koukou/public/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/rankings/koukou/public/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    }
+  ],
+  "dataRoutes": [
+    {
+      "page": "/rankings/koukou",
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/national",
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/national\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/p-[prefecture]",
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/p-[prefecture]\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/p-[prefecture]/c-[city]",
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/p-[prefecture]/c-[city]\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/private",
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/private\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/public",
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/public\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/public/p-[prefecture]",
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/public/p-[prefecture]\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/region/[region]",
+      "routeKeys": {
+        "nxtPregion": "nxtPregion"
+      },
+      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/region/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/region/(?<nxtPregion>[^/]+?)\\.json$"
+    }
+  ],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": false,
+    "dynamicRSCPrerender": false
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  }
+}

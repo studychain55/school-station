@@ -65,6 +65,8 @@ export default function KoukouRankingIndex(props: Props) {
               { href: "/column/koukou-sports/", title: "体育・スポーツ系高校の特徴｜スポーツ推薦入学と進路の実態" },
               { href: "/column/koukou-arts/", title: "音楽・美術・芸術系高校の選び方｜専門的な教育環境と進学先" },
               { href: "/column/koukou-gakuhi/", title: "高校の学費・授業料と奨学金ガイド｜公立・私立・通信の費用比較" },
+              { href: "/column/koukou-mensetsu/", title: "高校入試の面接対策｜よく聞かれる質問と回答例・当日の服装マナー" },
+              { href: "/column/koukou-tsuugaku/", title: "高校の通学時間と通学方法の選び方｜1時間以内が理想？電車・自転車・バスの実態" },
               { href: "/column/koukou-futoko/", title: "不登校・体調不良のサポートが充実した高校の選び方｜スクールカウンセラーと支援体制" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>

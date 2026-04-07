@@ -19,6 +19,7 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/rankings/koukou/public/", changefreq: "weekly", priority: 0.8 },
     { loc: "/rankings/koukou/private/", changefreq: "weekly", priority: 0.8 },
     { loc: "/rankings/koukou/national/", changefreq: "weekly", priority: 0.7 },
+    { loc: "/guide/", changefreq: "monthly", priority: 0.8 },
   ];
 
   const today = new Date().toISOString().split("T")[0];

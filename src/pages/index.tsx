@@ -15,6 +15,20 @@ export default function HomePage() {
     "description": "高校偏差値ランキングの総合情報サイト",
   };
 
+  const websiteJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "url": "https://school-station.com",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://school-station.com/rankings/koukou/?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
   return (
     <>
       <SEO
@@ -25,6 +39,7 @@ export default function HomePage() {
       />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
       </Head>
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero */}

@@ -13,6 +13,18 @@ export default function ColumnIndexPage() {
 
   const articles = [
     {
+      title: "高校受験にかかるお金の全まとめ｜費用の相場と節約術",
+      description: "高校受験にかかる全費用を徹底解説。受験料、塾代、教材費から入学後の費用まで、費用の相場と節約術をご紹介します。",
+      href: "/column/juken-kihu/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校受験の塾・予備校の選び方｜個別指導vs集団指導",
+      description: "高校受験に向けた塾・予備校選びの完全ガイド。個別指導と集団指導の特徴、オンライン塾の活用、コスト比較、体験授業の活用法を解説します。",
+      href: "/column/yobiko-choice/",
+      date: "2026-04-07",
+    },
+    {
       title: "受験のストレスと上手に付き合う方法",
       description: "受験ストレスの対処法、睡眠・栄養の管理、メンタルトレーニング、親とのコミュニケーションなど、心身の健康を保ちながら受験に臨むための完全ガイド。",
       href: "/column/juken-stress/",

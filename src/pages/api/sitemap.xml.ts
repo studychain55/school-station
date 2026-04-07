@@ -31,6 +31,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/column/koukou-soudan/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-event/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-oyako/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-kokugo/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-rekishi/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-math/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-kagaku/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-school-select/", changefreq: "monthly", priority: 0.7 },

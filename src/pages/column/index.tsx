@@ -132,6 +132,18 @@ export default function ColumnIndexPage() {
       href: "/column/kokosei-baito/",
       date: "2026-04-07",
     },
+    {
+      title: "通信制高校と定時制高校の違い｜どちらを選ぶべきか徹底比較",
+      description: "通信制高校と定時制高校の仕組みや違いを徹底比較。学費・卒業要件・進学実績・向いている人の特徴を解説し、どちらを選ぶべきか判断できるガイドを提供。",
+      href: "/column/tsushinsei-koukou/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校の学校説明会・オープンキャンパスを最大限活用する方法",
+      description: "高校受験を控えた中学生向けに、学校説明会とオープンキャンパスの違い、参加前の準備、当日の確認ポイント、複数校を比較するコツを解説。",
+      href: "/column/koukou-setsumeikai/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

@@ -37,6 +37,8 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
     { loc: "/column/kokosei-study/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/daigaku-juken/", changefreq: "monthly", priority: 0.7 },
     { loc: "/column/koukou-seikatsu/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/tsushinsei-koukou/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/column/koukou-setsumeikai/", changefreq: "monthly", priority: 0.7 },
   ];
 
   const today = new Date().toISOString().split("T")[0];

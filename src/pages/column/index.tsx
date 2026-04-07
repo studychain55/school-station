@@ -474,6 +474,18 @@ export default function ColumnIndexPage() {
       href: "/column/koukou-ryuunen/",
       date: "2026-04-07",
     },
+    {
+      title: "高校生の読書習慣ガイド｜文読力向上・古典文学・読書の楽しさと入試対策",
+      description: "高校生の読書習慣の形成方法。読書量の目安、古典文学と現代文の読解力向上、書籍の選び方、読書時間の確保、読書記録の効果、受験対策との関係を完全ガイド。",
+      href: "/column/koukou-reading/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校生の集中力アップガイド｜脳科学に基づく集中力維持・環境整備・瞑想・栄養の最適化",
+      description: "高校生が勉強で集中力を高める方法。集中力の科学、理想的な時間配分、スマートフォン対策、最適な勉強環境、瞑想・マインドフルネス、栄養・睡眠・運動の役割、集中力低下時の対処法を完全ガイド。",
+      href: "/column/koukou-concentration/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

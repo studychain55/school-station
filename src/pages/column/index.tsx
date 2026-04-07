@@ -60,6 +60,18 @@ export default function ColumnIndexPage() {
       href: "/column/study-methods/",
       date: "2026-04-07",
     },
+    {
+      title: "特色選抜・推薦入試完全ガイド｜受験資格と対策",
+      description: "特色選抜・推薦入試の完全ガイド。学校推薦と自己推薦の違い、内申点要件、面接対策、自己PR作成法など、推薦入試で合格するための全知識。",
+      href: "/column/tokkoku-guide/",
+      date: "2026-04-07",
+    },
+    {
+      title: "高校の部活選び｜入学前に知っておくべきこと",
+      description: "高校の部活選びの完全ガイド。部活と勉強の両立方法、主要部活の特徴、顧問の選び方、大学受験への影響など、充実した高校生活のためのポイント。",
+      href: "/column/bukatsu-choise/",
+      date: "2026-04-07",
+    },
   ];
 
   return (

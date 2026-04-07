@@ -22,6 +22,8 @@ export default function PublicRanking(props: RankingPageProps) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/koukou-seiseki/", title: "内申点の仕組みと上げ方｜高校受験に必要な評定平均と内申点の目安" },
+              { href: "/column/koukou-soudan/", title: "高校選びで失敗しない相談先ガイド｜塾・学校説明会・先輩情報の活用法" },
               { href: "/column/koukou-event/", title: "高校の体育祭・文化祭・修学旅行の魅力｜高校生活を充実させるイベントガイド" },
               { href: "/column/koukou-oyako/", title: "保護者が知っておくべき高校受験サポート方法｜親ができること・できないこと" },
               { href: "/column/koukou-math/", title: "高校数学の勉強法｜数学が苦手な人のための効率的な学習方法" },

@@ -22,6 +22,8 @@ export default function PrivateRanking(props: RankingPageProps) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 1.5 }}>
             {[
+              { href: "/column/koukou-career/", title: "高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較" },
+              { href: "/column/koukou-hensachi/", title: "偏差値の見方と志望校選びへの活用法｜失敗しない高校選びのコツ" },
               { href: "/column/daigaku-juken/", title: "高校から大学受験を見据えた学習計画の立て方" },
               { href: "/column/koukou-seikatsu/", title: "高校生活を充実させる方法｜勉強・部活・友達・行事の両立" },
               { href: "/column/kokosei-nyushi/", title: "高校入試の種類と対策｜推薦・一般・特色選抜の違い" },

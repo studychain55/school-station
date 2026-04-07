@@ -34,6 +34,8 @@ export default function KoukouRankingIndex(props: Props) {
               { href: "/column/koukou-school-select/", title: "高校の校則と学校選びのポイント｜制服・スマホ・アルバイトのルールを比較" },
               { href: "/column/koukou-tokutasei/", title: "高校の特待生・奨学金制度｜私立高校でお得に通うための条件と申請方法" },
               { href: "/column/koukou-english/", title: "高校の英語教育の変化｜英語4技能・大学入学共通テストへの対応策" },
+              { href: "/column/koukou-ict/", title: "高校のICT教育・タブレット活用の現状｜1人1台端末時代の高校選び" },
+              { href: "/column/koukou-language/", title: "外国語教育に力を入れる高校の選び方｜英語以外の言語教育も充実した学校" },
               { href: "/column/koukou-career/", title: "高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較" },
               { href: "/column/koukou-hensachi/", title: "偏差値の見方と志望校選びへの活用法｜失敗しない高校選びのコツ" },
               { href: "/column/daigaku-juken/", title: "高校から大学受験を見据えた学習計画の立て方" },

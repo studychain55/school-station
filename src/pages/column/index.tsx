@@ -85,6 +85,18 @@ export default function ColumnIndexPage() {
       date: "2026-04-07",
     },
     {
+      title: "高校のICT教育・タブレット活用の現状｜1人1台端末時代の高校選び",
+      description: "GIGAスクール構想で変わった高校のICT環境（1人1台タブレット）、タブレット・PCを活用した授業スタイル（プログラミング・動画学習・デジタルノート）、ICT教育に力を入れる高校の見分け方、Chromebook・iPad・Windowsの使われ方の違い、ICT活用が大学受験・就職に与える影響を完全解説。",
+      href: "/column/koukou-ict/",
+      date: "2026-04-07",
+    },
+    {
+      title: "外国語教育に力を入れる高校の選び方｜英語以外の言語教育も充実した学校",
+      description: "英語教育が充実した高校の特徴（ネイティブ教師・英検・TOEFL対策）、英語以外の言語（中国語・韓国語・フランス語・スペイン語）の授業がある高校、海外留学プログラム・国際交流が活発な学校の選び方、Super English Language High School（SELHi）の仕組み、語学力重視の大学入試（英語外部試験利用）への対応を完全解説。",
+      href: "/column/koukou-language/",
+      date: "2026-04-07",
+    },
+    {
       title: "高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較",
       description: "高校卒業後の主な進路（大学・短大・専門学校・就職・留学）のメリット・デメリットを比較。自分の目標・適性・経済状況に合った進路を選ぶための考え方を解説。",
       href: "/column/koukou-career/",

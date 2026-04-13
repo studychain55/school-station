@@ -1,11 +1,18 @@
 @import "tailwindcss";
 
+@theme inline {
+  --color-primary: #1e782d;
+  --color-primary-light: #e9f2ea;
+  --color-primary-dark: #155420;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: "Noto Sans JP", "Helvetica Neue", Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: 0.04em;
   background-color: #f8fafc;
 }
 

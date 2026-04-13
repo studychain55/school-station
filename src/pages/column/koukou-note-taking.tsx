@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -121,14 +121,14 @@ export default function KoukouNoteTakingPage() {
           textAlign: "center",
           py: { xs: 4, sm: 5 },
           mb: 4,
-          background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+          background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
           borderRadius: 3,
           color: "#fff",
         }}>
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校生のノート術ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             効果的な講義記録・単語帳作成・復習法・教科別ノート術・受験対策
           </Typography>
         </Box>
@@ -139,7 +139,7 @@ export default function KoukouNoteTakingPage() {
           </Typography>
 
           <SubSection title="ノート作成の時間配分">
-            <Box sx={{ mb: 3, p: 2, bgcolor: "#E3F2FD", borderRadius: 1 }}>
+            <Box sx={{ mb: 3, p: 2, bgcolor: "#e9f2ea", borderRadius: 1 }}>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 2 }}>
                 <strong>講義中（50分）</strong> キーワード・図表・要点のみ記録（10～15分相当の書き込み）<br/>
                 <strong>講義直後（30分）</strong> ノートを見直し、補足説明・関連事項を追記<br/>
@@ -151,10 +151,10 @@ export default function KoukouNoteTakingPage() {
 
           <SubSection title="効果的なノート作成のポイント">
             <List sx={{ mb: 3 }}>
-              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon><ListItemText primary="キーワード・図表を優先" secondary="完全な文章は不要、理解に集中することが最優先" /></ListItem>
-              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon><ListItemText primary="左ページに講義内容、右ページに復習用コメント" secondary="ページを二分することで、視認性と復習効率が向上" /></ListItem>
-              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon><ListItemText primary="見出しを階層化する（大見出し・中見出し・小見出し）" secondary="後での検索・復習が容易になり、全体構造が明確" /></ListItem>
-              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon><ListItemText primary="装飾は必要最小限に" secondary="複雑な色分け・図解作成に時間をかけると学習効率が低下" /></ListItem>
+              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon><ListItemText primary="キーワード・図表を優先" secondary="完全な文章は不要、理解に集中することが最優先" /></ListItem>
+              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon><ListItemText primary="左ページに講義内容、右ページに復習用コメント" secondary="ページを二分することで、視認性と復習効率が向上" /></ListItem>
+              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon><ListItemText primary="見出しを階層化する（大見出し・中見出し・小見出し）" secondary="後での検索・復習が容易になり、全体構造が明確" /></ListItem>
+              <ListItem><ListItemIcon><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon><ListItemText primary="装飾は必要最小限に" secondary="複雑な色分け・図解作成に時間をかけると学習効率が低下" /></ListItem>
             </List>
           </SubSection>
         </Section>

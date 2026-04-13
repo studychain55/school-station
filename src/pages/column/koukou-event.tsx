@@ -11,7 +11,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -22,7 +22,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -125,7 +125,7 @@ export default function KoukouEventPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -133,7 +133,7 @@ export default function KoukouEventPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の体育祭・文化祭・修学旅行の魅力
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             高校生活を充実させる主要イベントの特徴を理解し、学校選びに活かすための完全ガイド
           </Typography>
         </Box>
@@ -145,20 +145,20 @@ export default function KoukouEventPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>友人関係の深化</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>友人関係の深化</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>イベント準備を通じて、クラスメイトとの絆が深まります。協力して目標を達成する経験は、その後の人間関係構築に大きく影響します。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>学校への帰属意識</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>学校への帰属意識</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>充実したイベントを経験することで、学校への愛着が深まります。この帰属意識が高まると、勉強へのモチベーションも向上します。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>リーダーシップの育成</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>リーダーシップの育成</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>イベント準備の中で、役割分担やチーム運営を学びます。これらの経験はリーダーシップや組織的思考力の育成につながります。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>一生の思い出作り</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>一生の思い出作り</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高校時代の思い出は、生涯の精神的な支えになります。充実したイベント経験は、人生の質を高める重要な資産です。</Typography>
             </Paper>
           </Box>
@@ -173,7 +173,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>予算の制約がある</strong> — 公立高校は公費で運営されるため、イベント予算が限定的です。派手な装飾や豪華な賞品は少ないですが、生徒たちの工夫と創意工夫で盛り上がります。
@@ -181,7 +181,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>実行委員会が中心</strong> — 体育祭の運営は生徒の実行委員会が担当します。生徒主導で進められるため、より自主性が育ちます。
@@ -189,7 +189,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>手作り感がある</strong> — 看板や装飾は手作りされることが多く、温かみのある雰囲気が特徴です。その分、完成までのプロセスで友人関係が深まります。
@@ -202,7 +202,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>大規模で豪華</strong> — 私立高校は経営資金が豊富で、体育祭の予算も大きいです。大規模な看板、音響設備、豪華な賞品など、規模が大きいのが特徴です。
@@ -210,7 +210,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>伝統が重視される</strong> — 多くの私立高校は長い歴史を持ち、毎年同じ形式で体育祭が開催されることが多いです。この伝統が学校のアイデンティティになっています。
@@ -218,7 +218,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>企画が豊富</strong> — 予算が豊富なため、様々な趣向を凝らした企画が実施されます。招待選手によるパフォーマンスなど、エンターテイメント性が高いです。
@@ -228,7 +228,7 @@ export default function KoukouEventPage() {
           </SubSection>
 
           <SubSection title="進学校と進学校でない学校の体育祭の違い">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>進学校の体育祭：</strong>進学校では、受験勉強を優先するため、体育祭の期間を短めに設定する傾向があります。また、体育祭よりも文化祭に力を入れることが多いです。ただし、限られた時間の中で運営されるため、効率性が重視され、その経験が大学進学後に活かされます。
               </Typography>
@@ -248,7 +248,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>クラス企画</strong> — 屋台（焼きそば、たこ焼きなど）、劇、展示などが一般的です。クオリティは学校によって大きく異なります。
@@ -256,7 +256,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活動による発表</strong> — 音楽部、演劇部、ダンス部などが、完成度の高いパフォーマンスを披露します。この活発さが学校の文化レベルを示します。
@@ -264,7 +264,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>有志企画</strong> — 音楽バンド、ダンスグループなど、有志による企画の質がその学校の文化的レベルを示す重要な指標です。
@@ -277,7 +277,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>パフォーマンスの質が高い</strong> — プロ並みのクオリティを持つパフォーマンスが見られます。部活動や有志グループの実力が高く、準備期間に十分な時間をかけていることが分かります。
@@ -285,7 +285,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>出し物の多様性</strong> — 様々な種類の企画が実施されており、多くの生徒が参加しています。このことが学校全体の活気につながります。
@@ -293,7 +293,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>来校者の多さ</strong> — 地域の人々や卒業生が訪れるほど、文化祭が充実していることを示します。学外からも注目される文化祭は、その学校の評判の高さを反映しています。
@@ -306,7 +306,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>出し物が少ない</strong> — クラス企画が屋台ばかり、部活動の発表がほとんどないなど、出し物の種類が限定的です。
@@ -314,7 +314,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>パフォーマンスの質が低い</strong> — 準備不足が見られ、本番での失敗やトラブルが多いです。これは学校全体の活気の低さを示しています。
@@ -322,7 +322,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>参加率が低い</strong> — 学校全体の雰囲気が盛り上がっていないことを示しています。一部の生徒だけが頑張っている傾向が見られます。
@@ -341,7 +341,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>京都・奈良（最も一般的）</strong> — 日本史の重要な遺跡を巡り、日本文化と歴史への深い理解を養います。多くの高校が選択する伝統的な行き先です。
@@ -349,7 +349,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>広島（平和学習）</strong> — 原爆資料館の見学などを通じて、平和学習を重視する学校が選択します。社会的課題への関心が高まります。
@@ -357,7 +357,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>海外（アメリカ、オーストラリア、東南アジアなど）</strong> — 国際感覚の育成と英語力の向上を目指す学校が選択します。生徒の視野が大きく広がります。
@@ -365,7 +365,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>長野・信州（自然学習）</strong> — 自然環境と地域経済への理解を深めることを目的とする学校が選択します。環境問題への関心が高まります。
@@ -373,7 +373,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ハワイ（グローバル教育）</strong> — グローバル教育に力を入れる学校が選択します。ハワイの多文化社会を学ぶ機会になります。
@@ -383,7 +383,7 @@ export default function KoukouEventPage() {
           </SubSection>
 
           <SubSection title="修学旅行から何が学べるのか">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>教科学習の深化：</strong>国語・歴史・社会・地理など、様々な教科の学習内容をより深く理解できます。教科書の内容が実際の遺跡や現地の人との交流を通じて、生きた知識になります。
               </Typography>
@@ -403,20 +403,20 @@ export default function KoukouEventPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>学校の教育力の指標</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>学校の教育力の指標</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>イベント運営を通じて、企画・運営・実行の各段階で教育的な学びが生まれます。活発な学校は、生徒の主体性を尊重し、創造的思考を育成できている証拠です。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>学校文化の豊かさ</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>学校文化の豊かさ</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>学校に独自の文化がある学校は、イベントも活発です。学校の歴史の中で作られた伝統が、継続的にイベントの質を高めています。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>生徒モチベーションの高さ</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>生徒モチベーションの高さ</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>学校全体のモチベーションが高い学校では、イベント準備に全力で取り組む生徒が多くいます。この雰囲気が全体を盛り上げます。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>進学実績への好影響</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>進学実績への好影響</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>充実したイベント経験が、大学面接での自己PRにつながり、進学実績の向上にも貢献しています。イベント運営での経験は、大学でも高く評価されます。</Typography>
             </Paper>
           </Box>
@@ -431,7 +431,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>イベント写真の展示</strong> — 校内にイベント写真が飾られているか、その規模と質を見ることで、イベントの活発さが分かります。写真が充実していれば、イベントが学校の大切な活動であることを示しています。
@@ -439,7 +439,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>在学生への質問</strong> — 『学園祭はどのくらい盛り上がっていますか？』『体育祭の規模は？』と在学生に直接質問することで、実際の雰囲気が分かります。生徒の回答から、学校への愛着度も見えてきます。
@@ -447,7 +447,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>施設の充実度</strong> — イベント用の施設（音響設備、舞台、体育館など）が充実していれば、学校がイベントに投資していることの証拠です。施設の充実度から学校の優先順位が見えてきます。
@@ -460,7 +460,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>『体育祭・文化祭の準備期間はどのくらいですか？』</strong> — 準備期間が長ければ長いほど、イベントに力を入れていることを示しています。進学校では準備期間が短い傾向があります。
@@ -468,7 +468,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>『修学旅行の行き先と決定方針について教えてください』</strong> — 行き先から学校の教育方針が見えてきます。また、生徒の希望を反映した決定をしているかも重要な判断基準です。
@@ -476,7 +476,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>『部活動の発表会や文化祭での出し物について教えてください』</strong> — 部活動の活発さと文化祭での出し物のレベルから、学校全体の文化的レベルが推測できます。
@@ -489,7 +489,7 @@ export default function KoukouEventPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>Instagram・TikTok</strong> — 多くの高校がイベント動画や写真をSNSで公開しています。実際のイベントの雰囲気を、動画で確認することができます。フォロワー数やコメント数からも、イベント人気度が分かります。
@@ -497,7 +497,7 @@ export default function KoukouEventPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校ウェブサイト</strong> — 学校ウェブサイトのイベント情報から、学校の優先順位が見えてきます。イベントに関する情報を丁寧に掲載していれば、学校がイベントを大切にしていることを示しています。
@@ -517,7 +517,7 @@ export default function KoukouEventPage() {
         {/* Navigation */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 2 }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#0D47A1" } }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1e782d", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#1e782d" } }}>
               <ArrowBackIcon sx={{ fontSize: "1.2rem" }} />
               コラム一覧に戻る
             </Box>

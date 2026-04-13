@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -123,7 +123,7 @@ export default function KoukouSeifukuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -131,7 +131,7 @@ export default function KoukouSeifukuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の制服・服装規定ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             制服あり・なし校の違いと校則が進学・生活に与える影響
           </Typography>
         </Box>
@@ -146,7 +146,7 @@ export default function KoukouSeifukuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>制服あり校</strong> — 『全ての生徒が指定制服の着用を義務付けられる学校。公立高校の約60%、私立高校の約90%が該当。制服の種類は「イートン型」「セーラー型」「ブレザー型」など様々』『特徴は「朝の服装選択時間が短い」「学校の一体感が強い」「制服による経済的格差が生まれない」「風紀指導が厳しい傾向」など』『制服校の「校則」は『スカート丈の規定（膝から5cm以内）』『靴・靴下の色指定』『カバン・靴の指定品強制』『髪型規定（肩より短い、黒髪のみ、パーマ禁止）』『アクセサリー・ピアス禁止』など、極めて細かい』
@@ -154,7 +154,7 @@ export default function KoukouSeifukuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>私服校（制服なし校）</strong> — 『生徒が「私服（自由な服装）」で登校する学校。公立高校の約30%、私立高校の約5%が該当』『特徴は「毎日の服装選択が自由」「個性の表現が尊重される」「校風が「自主性重視」である傾向」「私服選択に伴う経済的負担がある」「服装による『格差』や『いじめ』の可能性』』『私服校でも「服装の基準」が存在し、『露出度の高い服装禁止』『奇抜すぎる服装禁止』『安全上問題のある服装禁止』といった『基準の範囲内での自由』という運用が一般的』『私服校の「校則」は『制服校より格段に緩い』傾向であり、『携帯電話の持ち込みOK』『髪型の自由（茶髪・パーマOK）』『アクセサリーの着用OK』など、生徒の自主性を尊重する傾向』
@@ -203,7 +203,7 @@ export default function KoukouSeifukuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>1. 実際の生徒の制服姿・服装</strong> — 『学校説明会や校舎見学の際に「実際の生徒たちの制服の着こなし』を見ることが重要』『規定通りに着ている生徒が大多数か、それとも「ルーズな着こなし』の生徒も多いか』『これは「学校の風紀指導の実際』と『その校則に対する生徒の納得度』を示唆する』『厳しい校則のはずが「ルーズに着こなしている生徒が目立つ』場合、『実は校則が形骸化している』『生徒が「納得していない校則』を無視している』という両方の可能性がある』『逆に「全員が規定通り着ている』場合、『校則が厳しく徹底されている』『生徒がそれを受け入れている』という両方の可能性がある』『どちらが「望ましいのか」は『自分の価値観次第』であり、『実際の景色から「この学校の雰囲気は自分に合っているか』を判断することが重要』
@@ -211,7 +211,7 @@ export default function KoukouSeifukuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>2. 在校生への「率直な質問」</strong> — 『学校説明会での個別相談時間に『「校則について、どのように感じていますか？」「制服について、満足していますか？」といった「率直な質問』をすることが重要』『多くの在校生は『正直な意見』を述べてくれる』『「校則は厳しいですが、その中で『個性の工夫を楽しんでいます」』『「最初は違和感があった私服校ですが『今は自由度が好きです」』といった『実際の経験に基づいた返答』が得られる』『複数の在校生に同じ質問をすることで『学校の「制服・校則』についての『実態』が見えてくる』
@@ -219,7 +219,7 @@ export default function KoukouSeifukuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>3. 校則の具体的な「内容」を確認</strong> — 『学校のホームページや説明会で「校則」の『正文』を確認することが重要』『例えば、『「スカート丈は膝から5cm以内」』『「ピアスは禁止』『「髪型は肩より短く』といった『具体的な規定』を知ることで『実生活での制約』を判断できる』『この確認を通じて『「この規定で自分は生活できるか』という『現実的な判断』が可能になる』
@@ -227,7 +227,7 @@ export default function KoukouSeifukuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>4. 「風紀指導」の実施頻度と内容</strong> — 『『定期的な風紀検査の実施頻度（月1回 vs 学期1回など）』『違反時の「指導の厳しさ』『改善までの「期間』といった『実際の運用』を確認する』『同じ「スカート丈規定」でも『月1回の厳密な測定が行われる学校』『学期1回の簡潔な確認に留まる学校』では『生徒が感じる「窮屈さ」が大きく異なる』『このような『運用面での違い』を把握することが重要』
@@ -235,7 +235,7 @@ export default function KoukouSeifukuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>5. 制服のデザイン・素材への「個人的な満足感』</strong> — 『「毎日3年間着る制服」であり『そのデザインが自分の好みに合うか』は『心理的な満足度』に大きな影響を与える』『例えば『「デザインは古くさいと感じるが『素材は高級で質感が好き』といった『複合的な評価』を自分の中で整理することが重要』『最終的に『「このデザインなら3年間着ても後悔しない』という『内的納得』が得られるかどうか』が判断基準』
@@ -243,7 +243,7 @@ export default function KoukouSeifukuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>6. 「私服校の場合：服装選択の『自由度』の実態』</strong> — 『私服校でも『実は「カジュアルな黒・紺・グレーに限定」という暗黙の圧力』『「高級ブランドを着ている生徒が多く、経済格差が顕在化』といった『見かけほど自由ではない』ケースが存在する』『在校生に『「本当に好きな服装で登校できるか』『服装による『いじめやからかい』があるか』といった『率直な質問』をすることが重要』『私服校だから「完全に自由』とは限らず『その『自由の質』を把握することが重要』
@@ -251,7 +251,7 @@ export default function KoukouSeifukuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>7. 親世代との「価値観の対話』</strong> — 『最後に『親に「この学校の制服・校則について、どう思うか」という『親の視点での評価』を聞くことが重要』『例えば『親が「厳しい校則は生徒の規律形成に必要』と考えるのに対し『生徒が「個性の表現が重要』と考える場合、『親子間の『価値観の相違』が原因で『入学後に『学校選択への後悔』が生じる可能性』『親子で『学校選択の理由』『制服・校則についての考え』を『事前に話し合う』ことで『納得のいく選択』が可能になる』

@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function KoukouSetsumeikaiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function KoukouSetsumeikaiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             学校説明会・オープンキャンパスを最大限活用する方法
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             事前準備から当日確認、複数校比較までのすべてを網羅した完全ガイド
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function KoukouSetsumeikaiPage() {
           </Typography>
 
           <SubSection title="学校説明会とは">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 学校説明会は、学校の教職員が学校の教育方針、カリキュラム、入試情報、進学実績などを説明する場です。通常は体育館などの大きな講堂で実施され、多くの中学生と保護者が参加します。
               </Typography>
@@ -145,7 +145,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>特徴：学校の情報を体系的に学べる</strong> — 学校の基本的な情報が分かりやすく説明されます。
@@ -153,7 +153,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>時間：通常1時間～1時間半</strong> — スケジュールが立てやすく、複数校参加しやすいです。
@@ -161,7 +161,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>参加者：保護者同伴を想定</strong> — 家族で学校情報を共有できます。
@@ -169,7 +169,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>実施時期：年3～5回程度</strong> — 複数回開催されるため、都合のつく日程に参加できます。
@@ -179,7 +179,7 @@ export default function KoukouSetsumeikaiPage() {
           </SubSection>
 
           <SubSection title="オープンキャンパスとは">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 オープンキャンパスは、中学生がキャンパスを訪問し、授業体験、施設見学、先生や先輩との交流を通じて、学校の雰囲気を直接感じる場です。学校によっては「体験入学」や「キャンパスツアー」と呼ぶこともあります。
               </Typography>
@@ -188,7 +188,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>特徴：学校を五感で体験できる</strong> — 校舎の雰囲気、在学生の様子、施設の充実度などを実際に見て感じられます。
@@ -196,7 +196,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>時間：2時間～4時間</strong> — 時間に余裕があり、深く学校を知ることができます。
@@ -204,7 +204,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>参加者：本人中心</strong> — 中学生が主体的に参加する場です。保護者が見学することもできます。
@@ -212,7 +212,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>実施時期：夏休み中心</strong> — 夏休みに集中して開催されることが多いです。
@@ -225,9 +225,9 @@ export default function KoukouSetsumeikaiPage() {
             <Box sx={{ overflowX: "auto" }}>
               <Paper sx={{ p: 0 }}>
                 <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>項目</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>学校説明会</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>オープンキャンパス</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>項目</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>学校説明会</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>オープンキャンパス</Box>
 
                   <Box sx={{ p: 2, fontWeight: 600, bgcolor: "#F5F5F5" }}>内容</Box>
                   <Box sx={{ p: 2 }}>学校情報の説明</Box>
@@ -265,7 +265,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>参加の必要性：低い</Typography>
@@ -281,7 +281,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>参加の必要性：高い（推奨）</Typography>
@@ -297,7 +297,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>参加の必要性：中程度</Typography>
@@ -327,7 +327,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学校のホームページを確認</Typography>
@@ -338,7 +338,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>偏差値を確認</Typography>
@@ -349,7 +349,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>部活動を確認</Typography>
@@ -362,7 +362,7 @@ export default function KoukouSetsumeikaiPage() {
           </SubSection>
 
           <SubSection title="2. 質問リストの作成">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 学校説明会やオープンキャンパスで先生に質問するリストを事前に作成しましょう。曖昧な質問ではなく、具体的で自分にとって重要な質問をすることが大切です。
               </Typography>
@@ -371,7 +371,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進学実績：</strong> 過去3年間の大学進学実績、進学先の大学名、指定校推薦の有無
@@ -379,7 +379,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>補習制度：</strong> 苦手教科の補習、進学対応の個別指導の有無
@@ -387,7 +387,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活と勉強の両立：</strong> 部活の時間帯、掛け持ちの可否、受験期の対応
@@ -395,7 +395,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>校則：</strong> 制服規定、髪型、携帯電話、アルバイトの可否
@@ -403,7 +403,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>奨学金制度：</strong> 学費サポート、授業料減免の有無
@@ -411,7 +411,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>通学：</strong> 通学時間、駐輪場・駐車場、通学路の安全性
@@ -424,7 +424,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>メモ帳とペン：</strong> 重要な情報をメモするため必須です。
@@ -432,7 +432,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>スマートフォン：</strong> 校舎や施設の写真撮影、位置情報確認に便利です。
@@ -440,7 +440,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>タオルと飲料：</strong> 夏場は熱中症対策が重要です。
@@ -448,7 +448,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>上履き（オープンキャンパスの場合）：</strong> 指定があるか事前に確認しましょう。
@@ -469,7 +469,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>在学生の表情：</strong> 生き生きしているか、落ち着いているか。学校生活に満足しているか。
@@ -477,7 +477,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>校舎の清潔さ：</strong> トイレ、廊下、教室が清潔か。学校全体の雰囲気は整理整頓されているか。
@@ -485,7 +485,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>先生の態度：</strong> 生徒に親身に向き合っているか、説明が分かりやすいか。
@@ -493,7 +493,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>全体の雰囲気：</strong> 緊張感がありながらも和やかか。自分がこの環境で学びたいと感じるか。
@@ -506,7 +506,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>図書館：</strong> 蔵書数、自習スペースの充実度、利用環境の良さ。
@@ -514,7 +514,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>実験室：</strong> 理系科目の実験設備が充実しているか。
@@ -522,7 +522,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>コンピュータ室：</strong> パソコンの台数、最新のOSか、利用制限はあるか。
@@ -530,7 +530,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>体育館・運動場：</strong> スポーツ設備は十分か、部活動に支障がないか。
@@ -538,7 +538,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>食堂・購買部：</strong> 食事が充実しているか、価格は手頃か。
@@ -551,7 +551,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>質問への対応：</strong> 丁寧に答えているか、曖昧な回答をしていないか。
@@ -559,7 +559,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>生徒への接し方：</strong> 生徒を尊重しているか、指導は厳しすぎないか。
@@ -567,7 +567,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>信頼できるか：</strong> 先生の話に一貫性があるか、本当に生徒のことを考えているか。
@@ -592,10 +592,10 @@ export default function KoukouSetsumeikaiPage() {
             <Box sx={{ overflowX: "auto" }}>
               <Paper sx={{ p: 0 }}>
                 <Box sx={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)" }}>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>評価項目</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>A高校</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>B高校</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>C高校</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>評価項目</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>A高校</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>B高校</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.85rem" }}>C高校</Box>
 
                   <Box sx={{ p: 1.5, fontWeight: 600, bgcolor: "#F5F5F5", fontSize: "0.85rem" }}>偏差値</Box>
                   <Box sx={{ p: 1.5, fontSize: "0.85rem" }}>68</Box>
@@ -633,7 +633,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>大学進学を目指すなら：</strong> 進学実績、進学指導、進学対応コース
@@ -641,7 +641,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活動を重視するなら：</strong> 部活の充実度、実績、顧問の質
@@ -649,7 +649,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自由度を求めるなら：</strong> 校風、校則の厳しさ、生徒の主体性
@@ -657,7 +657,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>通学時間を短くしたいなら：</strong> 立地、アクセス、通学路の安全性
@@ -684,7 +684,7 @@ export default function KoukouSetsumeikaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>1. 感覚と理屈のバランスを取る</Typography>
@@ -695,7 +695,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>2. 「目標校・実力相応校・安全校」の3段階を決める</Typography>
@@ -706,7 +706,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>3. 親とよく話し合う</Typography>
@@ -717,7 +717,7 @@ export default function KoukouSetsumeikaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>4. 決定後は迷わない</Typography>
@@ -743,7 +743,7 @@ export default function KoukouSetsumeikaiPage() {
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2, my: 5 }}>
           <Link href="/column/tsushinsei-koukou/" style={{ textDecoration: "none" }}>
             <Paper sx={{ p: 2, border: "1px solid #E0E0E0", textAlign: "center", cursor: "pointer", "&:hover": { boxShadow: 2 } }}>
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0", fontWeight: 600, fontSize: "0.9rem" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d", fontWeight: 600, fontSize: "0.9rem" }}>
                 <ArrowBackIcon sx={{ fontSize: "1rem" }} />
                 前の記事
               </Box>
@@ -752,7 +752,7 @@ export default function KoukouSetsumeikaiPage() {
           </Link>
           <Link href="/column/kokosei-baito/" style={{ textDecoration: "none" }}>
             <Paper sx={{ p: 2, border: "1px solid #E0E0E0", textAlign: "center", cursor: "pointer", "&:hover": { boxShadow: 2 } }}>
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0", fontWeight: 600, fontSize: "0.9rem" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d", fontWeight: 600, fontSize: "0.9rem" }}>
                 次の記事
                 <ArrowForwardIcon sx={{ fontSize: "1rem" }} />
               </Box>

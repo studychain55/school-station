@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouNaishinshoPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouNaishinshoPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             内申書（調査書）の仕組み
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             高校受験への影響と内申点を上げるための具体的対策
           </Typography>
         </Box>
@@ -147,7 +147,7 @@ export default function KoukouNaishinshoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学習成績</strong> — 『国語・社会・数学・理科・英語・音楽・美術・保健体育・技術家庭の9教科』について『5段階評価』『各学年の成績』『3年間の成績推移』が記載されます。『各教科の成績は定期テストの得点』『小テストの成績』『授業への参加度』『提出物の提出状況』などを総合的に判定した『総合評価』です。『成績が上昇傾向にある場合は高く評価される』『成績が低下している場合は懸念される』という『成績の推移』も『重要な評価要素』となります。
@@ -155,7 +155,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>欠席日数・遅刻・早退の記録</strong> — 『3年間の欠席日数』『遅刻の回数』『早退の回数』が『定量的に記載』されます。『欠席日数が多い（10日以上）』『遅刻が常習的（月1回以上）』『学校への来校意思が低い』と判断される生徒は『調査書に負の評価が記載される』『推薦資格を失う可能性がある』という『極めて重大な影響』を受けます。『公立推薦の推薦資格条件』に『欠席日数が○日以下』という『厳しい制限』が設定されている場合がほとんどです。
@@ -163,7 +163,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>特別活動（部活動・生徒会）での実績</strong> — 『部活動での役職（部長・副部長など）』『県大会・全国大会での成績』『生徒会での役職』『委員会活動での主な活動内容』などが『記載』されます。『特別活動での実績』は『学力試験では測定できない生徒のリーダーシップ』『協調性』『継続性』『社会性』を『定性的に評価する重要な情報』です。『推薦入試では特別活動での実績が求められる場合が多い』『特別活動での成果が面接での評価に直結する』という『重大な役割』があります。
@@ -171,7 +171,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>資格・検定試験の成績</strong> — 『英検』『漢検』『数検』『TOEIC』などの『外部資格試験の成績』『取得した資格』が『記載されることがある』という『プラスの評価要素』です。『英検2級取得』『数検3級取得』などの『難度の高い資格』は『内申点の加点対象』『推薦資格の優遇条件』『奨学金申請の加点』など『複数の形で有利に働く』という『重要な実績』です。
@@ -196,7 +196,7 @@ export default function KoukouNaishinshoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>パターン1：3年間の全科目全成績を平均（東京・神奈川など）</strong> — 『9教科×5段階×3年間すべての成績を総合評価』『最高点が45点』『最低点が9点』という『最もシンプルな方式』です。『中学1年生の成績も重要』『3年間を通した継続的な成績向上が評価される』という『長期的な成績管理が重要』という特徴があります。
@@ -204,7 +204,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>パターン2：中学3年生のみの成績を評価（一部地域）</strong> — 『中学3年生の通知表成績のみを内申点の計算対象とする』『最高点が45点』『中学1年・2年の成績は直接的には反映されない』という『最終学年重視』の方式です。『中学3年生での成績向上が重要』『中学1年・2年で低い成績でも中学3年生で巻き返すことで高い内申点を獲得できる』というチャンスが存在します。
@@ -212,7 +212,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>パターン3：特定教科の加重計算（一部地域）</strong> — 『英数国などの主要5教科を2倍に評価する』『芸術系科目を通常評価する』など『教科によって異なる配点』が採用される場合があります。『主要5教科の成績が高い』『得意な教科を活かした受験戦略』が『より効果的』という『科目別の戦略立て』が重要になります。
@@ -231,7 +231,7 @@ export default function KoukouNaishinshoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立推薦選抜での内申点（合否の50～80%を占める）</strong> — 『公立推薦選抜は内申点が最重要評価要素』『内申点が高い（目安として3.8以上）』『学力試験がない、または簡易的な試験のみ』『面接・小論文が重要』という『総合評価』が特徴です。『推薦資格そのものが内申点に基づいて決定される』『内申点が低いと推薦を受けることすら困難』『推薦合格の可能性が内申点に極めて大きく左右される』という『内申点が合否を決定する最重要要因』としての位置づけです。
@@ -239,7 +239,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立一般選抜での内申点（合否の20～30%程度）</strong> — 『公立一般選抜は学力試験が70～80%を占める』『内申点は20～30%程度の配分』『同じ学力試験得点の複数受験生の順位決定時に内申点が活用される』という『補助的ながら重要な役割』を担います。『学力試験で高得点を取得できれば内申点が低くても合格可能』『学力試験で失敗した場合に内申点が順位を左右する』という『条件付きの重要性』があります。
@@ -247,7 +247,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>私立高校での内申点（学校によって大きく異なる）</strong> — 『私立高校では内申点の扱いが極めて多様』『内申点をほぼ見ない学校』『内申点を参考程度に扱う学校』『内申点を重視する学校』『入試形態によって異なる扱い』など『学校ごとに大きく異なる』という『特徴』があります。『各私立高校の募集要項を詳しく確認する』『学校説明会で内申点の扱いを質問する』『内申点が低い場合は内申点をほぼ見ない学校を選ぶ』という『戦略的な高校選び』が重要です。
@@ -272,7 +272,7 @@ export default function KoukouNaishinshoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>提出物の期限内提出と質の向上</strong> — 『提出物（宿題・ワークシート・レポート）を期限内に提出する』『提出物の質を高める（丁寧な字・誤字脱字がない・解答の根拠を記載）』『提出物を出さないことが成績低下につながる』という『極めてシンプルながら効果的な対策』です。『提出物を出さない生徒は成績が低くなる傾向が強い』『定期テストの成績は良いのに提出物がないため成績が下がった』というケースが存在するため『提出物の提出を絶対条件』として捉えることが重要です。
@@ -280,7 +280,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業中の積極的な参加と学習態度の改善</strong> — 『授業中に手を上げて発言する』『先生の質問に対して積極的に答える』『わからないことを質問する』『ノートを丁寧に取る』『授業に集中する』という『授業への前向きな態度』が『成績評価の重要な要素』となります。『成績は定期テストだけで決まるのではなく、授業態度が大きく影響する』『授業に真摯に取り組む姿勢が成績向上につながる』という『実態を理解する』ことが重要です。
@@ -305,7 +305,7 @@ export default function KoukouNaishinshoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>面接での厳しい追及</strong> — 『高校の面接試験で欠席や遅刻について質問される』『理由を説明する必要がある』『学校への来校意思の有無を疑われる』『高校進学後の出席状況について懸念を持たれる』という『ネガティブな印象形成』につながります。『説得力のある理由がない場合（体調不良や家庭の事情がない）』『面接官に不信感を与える可能性がある』『合否判定に悪影響する可能性がある』という『極めてリスクの高い状況』が生まれます。
@@ -313,7 +313,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>内申点への直接的な悪影響</strong> — 『欠席が多い生徒は授業に参加していない』『学習活動の積み重ねが不足』『提出物の提出状況が悪い傾向』『テスト成績が低くなる傾向』という『間接的ながら確実な悪影響』が発生します。『結果として通知表の成績が低下する』『内申点が低くなる』という『悪循環』が生まれるため『欠席を減らすことが内申点向上の基本』となります。
@@ -338,7 +338,7 @@ export default function KoukouNaishinshoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>私立高校中心の受験戦略</strong> — 『内申点が低い場合、私立高校は内申点をほぼ見ない学校が多い』『当日の学力試験が最重要評価要因』『実力に合わせた高校選択が可能』という『内申点の低さをカバーしやすい選択肢』です。『複数の私立高校に出願』『安全校から実力校までをバランスよく受験』『合格の確保を優先する』という『戦略的な受験計画』が有効です。
@@ -346,7 +346,7 @@ export default function KoukouNaishinshoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立高校選択での注意点</strong> — 『内申点が低い場合、公立高校受験は困難』『内申点の配分が20～30%である点を活かして、学力試験で高得点を狙う』『内申点の配分が低い高校（学力試験重視の学校）を選択する』という『戦略的な選択』が必要です。『当日の学力試験で90点以上（満点100点の場合）を取得する』『絶対的な学力優位性を示す』ことで『内申点の低さを補完する』という『実力による挽回』が必要となります。

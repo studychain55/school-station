@@ -191,7 +191,7 @@ export default function NaishinUpPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 5,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -199,7 +199,7 @@ export default function NaishinUpPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             内申点の上げ方｜中学生が今すぐできる具体的な方法
           </Typography>
-          <Typography variant="body1" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body1" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             定期テスト・授業態度・提出物で、内申点を確実に上げるための方法を徹底解説します
           </Typography>
         </Box>
@@ -219,7 +219,7 @@ export default function NaishinUpPage() {
           <Typography variant="body1" sx={{ mb: 2, lineHeight: 1.8, color: "#424242" }}>
             内申点は、中学1～3年生の3年間の成績をまとめたものです。通常、5段階評価（1～5）の9教科（国語、数学、英語、理科、社会、音楽、美術、体育、技術家庭）の成績が記録されます。
           </Typography>
-          <Box sx={{ bgcolor: "#E3F2FD", p: 3, borderRadius: 2, mb: 3 }}>
+          <Box sx={{ bgcolor: "#e9f2ea", p: 3, borderRadius: 2, mb: 3 }}>
             <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 2 }}>
               内申点の計算方法
             </Typography>
@@ -297,7 +297,7 @@ export default function NaishinUpPage() {
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 3 }}>
             {timelineData.map((item, idx) => (
-              <Paper key={idx} elevation={0} sx={{ p: 2.5, border: "2px solid #1976D2", bgcolor: "#E3F2FD" }}>
+              <Paper key={idx} elevation={0} sx={{ p: 2.5, border: "2px solid #1976D2", bgcolor: "#e9f2ea" }}>
                 <Box sx={{ display: "flex", alignItems: "center", gap: 2, mb: 2 }}>
                   <CheckCircleIcon sx={{ color: "#1976D2", fontSize: "1.8rem" }} />
                   <Box>
@@ -355,8 +355,8 @@ export default function NaishinUpPage() {
         <Divider sx={{ my: 4 }} />
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             実際に高校の偏差値を確認してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -369,12 +369,12 @@ export default function NaishinUpPage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -388,7 +388,7 @@ export default function NaishinUpPage() {
 
         {/* 関連記事 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             関連記事
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2 }}>

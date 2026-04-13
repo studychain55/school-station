@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouTaiikuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouTaiikuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の体育授業・スポーツ活動ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             運動習慣の重要性と部活・課外活動との違い
           </Typography>
         </Box>
@@ -147,7 +147,7 @@ export default function KoukouTaiikuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>運動技能の習得と専門化</strong> — 『中学では「全員が全種目を浅く学ぶ」『高校では「自分が興味を持つ種目を深く学ぶ」『この段階的な専門化により、生徒は「自分が本当に好きなスポーツ」を発見できる』『その発見が、生涯スポーツ実践の基盤になる』『例えば、中学では「陸上」「球技」「体操」の基本を全員で学ぶが、高校では「自分は球技の方が向いている」と気付き、野球やバスケットボールに専門的に取り組む』という『適性発見と深化』が可能になります。『この深化プロセスが、生徒の自己理解と自己実現に直結する』『スポーツを通じた「自分探し」が、その後の進路選択にも影響する場合が多い』という『人生的な意義』があります。
@@ -155,7 +155,7 @@ export default function KoukouTaiikuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>心身の健全な発達と健康寿命の延長</strong> — 『高校時代の運動習慣形成が、その後の人生での健康寿命を左右する』『研究によると、高校時代に週3回以上運動する習慣がある生徒は、成人後も運動習慣を継続する確率が3倍高い』『その結果、生活習慣病の発症が遅延し、健康寿命が5～10年延長される』『つまり、高校での体育授業への真摯な取り組みが、その後の30年～50年の人生での身体的健康を決定する』『メンタルヘルスの観点でも、運動習慣がある人はストレス耐性が高く、うつ症状のリスクが50%以上低い』という『極めて大きな健康効果』があります。『健康寿命が長い人は、仕事の生産性も高く、人生全体の満足度も高い』『つまり、高校体育への投資は、単なる「今の成績」ではなく「人生全体の質」を左右する重要な教育』です。
@@ -163,7 +163,7 @@ export default function KoukouTaiikuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>社会性・協調性・人間関係スキルの育成</strong> — 『スポーツは本質的に「集団活動」『チーム競技では、自分の役割を果たしながら、他のメンバーと協力し、共通の目標を達成するプロセスを経験する』『この経験を通じて、自然と「協調性」「リーダーシップ」「責任感」「相互扶助」などの社会的スキルが育成される』『これらのスキルは、大学進学後の研究室やゼミでの活動、就職後の職場でのチームワークで、そのまま活かされる』『スポーツ経験者は「チームの一員として貢献する能力」「困難な状況での相互サポート」「目標達成への粘り強さ」を身につけており』『その結果、大学受験や就職試験でも評価される』『企業採用試験で「スポーツ経験」が重視される理由は、この社会性育成の価値を認識しているから』という『キャリア的な重要性』もあります。
@@ -182,7 +182,7 @@ export default function KoukouTaiikuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ1：体育授業への真摯な参加（週2時間）</strong> — 『全ての高校生は週2時間の体育授業を受ける』『この時間を「成績を取るための最小限の参加」ではなく「新しいスポーツを学ぶ機会」として捉えることが重要』『例えば、ダンスが苦手でも「苦手なスポーツこそ成長の機会」と考え、積極的に参加する』『体育教員は「成績の良さ」よりも「学ぶ姿勢」を高く評価する』『つまり、記録が低くても、努力と改善への姿勢があれば、体育の成績は上がる』『体育授業での「頑張り」が日常生活での身体活動への動機づけになる』『毎日の授業での小さな成功体験が積み重なると、「運動って楽しい」という感覚が生まれる』という『好循環』が形成されます。
@@ -190,7 +190,7 @@ export default function KoukouTaiikuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ2：部活動への加入（週3～5時間）</strong> — 『体育授業だけでは週2時間の運動にとどまる』『生涯にわたる運動習慣を形成するには、運動部への加入が極めて有効』『部活動に入ると、週3～5時間の継続的な運動ができる』『その結果、合計で週5～7時間の運動習慣が自動的に形成される』『この時間数が、研究で示された「健康寿命延長に必要な週3時間」を大きく超え、その後の人生での健康効果が最大化される』『部活動では、技能習得だけでなく「チームの一員としての責任」「試合での緊張体験」「勝敗を通じた挫折と回復の経験」など』『単なる運動では得られない深い学習機会』が提供される』『この経験が、メンタルヘルスの向上と、困難対応能力の育成につながる』『部活動への加入は「スポーツ技能」と「心理的成長」の両者を同時に達成する』『最も効率的な方法』です。
@@ -198,7 +198,7 @@ export default function KoukouTaiikuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ3：日常生活での身体活動（毎日30分程度）</strong> — 『体育授業と部活動による運動に加えて、日常生活での身体活動が極めて重要』『例えば、通学時の自転車・ウォーキング、階段の利用、休み時間でのストレッチ、週末の散歩やジョギング』『このような「生活の中の運動」が習慣化すると』『運動が「特別な活動」ではなく「生活の自然な一部」になる』『この段階に到達すると、その後の人生での運動習慣継続がほぼ自動的になる』『高校時代にこの段階に到達する生徒は』『その後20～30年にわたって自然と運動習慣を継続し』『結果的に健康寿命が大きく延長される』『つまり、高校時代の「日常生活での身体活動」への意識が』『その後の人生での健康を決定する』『極めて重要なポイント』です。
@@ -217,7 +217,7 @@ export default function KoukouTaiikuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>体力測定成績は内申書に記載される</strong> — 『学校によっては、スポーツテストの成績が「体育」の成績評価に大きく反映される』『さらに、体力測定の結果が調査書に記載される学校も多い』『大学の総合型選抜で、調査書を重視する大学の場合、スポーツテストの成績が評価対象になることもある』『特に、スポーツ科学部や体育大学志望の場合、体力測定成績が志望適性を判断する材料になる』『つまり、体力測定は「体育の成績」という学校内での評価だけでなく『大学進学にも直結する可能性がある』『その意味で、決して軽視できない』重要な評価』です。
@@ -225,7 +225,7 @@ export default function KoukouTaiikuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活動成績とスポーツテスト成績の相乗効果</strong> — 『部活動で試合成績を上げながら、スポーツテストでも高成績を上げている生徒は』『「バランスの取れた体力を持つ生徒」と評価される』『理由は、試合成績が「特定の競技スキル」を示す一方『スポーツテストは「基礎的な全身体力」を示す』『この両者を高水準で示している生徒は『その競技の本当の適性が高く、努力をしている証拠』『だからこそ、面接官やスポーツ科学関連大学の入試担当者は『部活成績とスポーツテスト成績の両方を確認する』『この両者が高いと「この生徒は本当にスポーツに適性がある」と確信できる』『つまり、部活動への真摯な取り組みとスポーツテスト対策の両者が』『相乗効果で進学評価を高める』という『実践的な利点』があります。

@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function KoukouRyuunenPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function KoukouRyuunenPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の留年・退学対処ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             留年・退学の危機を乗り越える方法と、代替進路の選択肢を完全解説
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function KoukouRyuunenPage() {
           </Typography>
 
           <SubSection title="出席日数の基準">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", fontWeight: 600, mb: 1.5 }}>
                 一般的な基準：年間授業日数の1/3以上の欠席で留年
               </Typography>
@@ -190,7 +190,7 @@ export default function KoukouRyuunenPage() {
           </SubSection>
 
           <SubSection title="修得単位の基準">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", fontWeight: 600, mb: 1.5 }}>
                 一般的な基準：各科目で一定以上の成績が必要
               </Typography>
@@ -202,7 +202,7 @@ export default function KoukouRyuunenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『1』の評価：単位認定なし（留年の主原因）
@@ -210,7 +210,7 @@ export default function KoukouRyuunenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『2』の評価：単位認定あり（ただし、改善が必要な学習状況）
@@ -218,7 +218,7 @@ export default function KoukouRyuunenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『3』以上の評価：単位認定あり（十分な学習状況）
@@ -259,7 +259,7 @@ export default function KoukouRyuunenPage() {
           </SubSection>
 
           <SubSection title="単位不足への対応">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 3 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 3 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", fontWeight: 600, mb: 2 }}>
                 ステップ1：『1』評価の科目に集中
               </Typography>
@@ -428,11 +428,11 @@ export default function KoukouRyuunenPage() {
           </Typography>
 
           <SubSection title="高卒認定試験の概要">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 3 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 3 }}>
               <List>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography variant="body2" sx={{ color: "#424242", fontWeight: 600 }}>
@@ -445,7 +445,7 @@ export default function KoukouRyuunenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography variant="body2" sx={{ color: "#424242", fontWeight: 600 }}>
@@ -458,7 +458,7 @@ export default function KoukouRyuunenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography variant="body2" sx={{ color: "#424242", fontWeight: 600 }}>
@@ -471,7 +471,7 @@ export default function KoukouRyuunenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography variant="body2" sx={{ color: "#424242", fontWeight: 600 }}>
@@ -490,7 +490,7 @@ export default function KoukouRyuunenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   大学入試への受験資格が得られる
@@ -498,7 +498,7 @@ export default function KoukouRyuunenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   短期大学・高等専修学校への進学が可能
@@ -506,7 +506,7 @@ export default function KoukouRyuunenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   就職試験で『高卒以上』の応募資格を満たす
@@ -514,7 +514,7 @@ export default function KoukouRyuunenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   公務員試験の受験資格が得られる（試験による）
@@ -572,14 +572,14 @@ export default function KoukouRyuunenPage() {
           </SubSection>
 
           <SubSection title="通信制高校への転入">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 3 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 3 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", fontWeight: 600, mb: 2 }}>
                 通信制高校の特徴
               </Typography>
               <List>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     自宅での学習が中心（月数回のスクーリングのみ）
@@ -587,7 +587,7 @@ export default function KoukouRyuunenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     自分のペースで学習できる
@@ -595,7 +595,7 @@ export default function KoukouRyuunenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     年間を通じていつでも転入可能
@@ -603,7 +603,7 @@ export default function KoukouRyuunenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     単位認定が比較的寛容
@@ -611,7 +611,7 @@ export default function KoukouRyuunenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     全日制と同じ高卒資格が取得できる
@@ -631,7 +631,7 @@ export default function KoukouRyuunenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography variant="body2" sx={{ color: "#424242", fontWeight: 600 }}>
@@ -644,7 +644,7 @@ export default function KoukouRyuunenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography variant="body2" sx={{ color: "#424242", fontWeight: 600 }}>
@@ -657,7 +657,7 @@ export default function KoukouRyuunenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography variant="body2" sx={{ color: "#424242", fontWeight: 600 }}>

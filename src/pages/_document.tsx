@@ -11,7 +11,7 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap"
           rel="stylesheet"
         />
-        <meta name="theme-color" content="#0D47A1" />
+        <meta name="theme-color" content="#1e782d" />
       </Head>
       <body>
         <Main />

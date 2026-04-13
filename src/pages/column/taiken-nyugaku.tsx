@@ -91,7 +91,7 @@ export default function TaikenNyugakuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -99,7 +99,7 @@ export default function TaikenNyugakuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             学校見学・体験入学の活用ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             志望校選びを成功させるための学校見学・体験入学の活用方法を完全解説
           </Typography>
         </Box>
@@ -154,7 +154,7 @@ export default function TaikenNyugakuPage() {
 
           <Paper sx={{ overflowX: "auto", mb: 3 }}>
             <Table>
-              <TableHead sx={{ bgcolor: "#0D47A1" }}>
+              <TableHead sx={{ bgcolor: "#1e782d" }}>
                 <TableRow>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>時期</TableCell>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>活動内容</TableCell>
@@ -198,7 +198,7 @@ export default function TaikenNyugakuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>事前にWebサイトを確認</Typography>
@@ -209,7 +209,7 @@ export default function TaikenNyugakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>質問リストを作成</Typography>
@@ -220,7 +220,7 @@ export default function TaikenNyugakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>アクセス方法の確認</Typography>
@@ -231,7 +231,7 @@ export default function TaikenNyugakuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>必要物の準備</Typography>
@@ -300,30 +300,30 @@ export default function TaikenNyugakuPage() {
             学校見学の際に確認すべき項目を一覧にしました。複数校を比較する際の参考にしてください：
           </Typography>
 
-          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
             <SubSection title="施設・環境">
               <List sx={{ m: 0 }}>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">校舎の設備は充実しているか</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">図書館・コンピュータ室・実験室などの設備は整っているか</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">校舎は清潔に保たれているか</Typography>
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">キャンパスの雰囲気・環境は良好か</Typography>
                 </ListItem>
@@ -336,25 +336,25 @@ export default function TaikenNyugakuPage() {
               <List sx={{ m: 0 }}>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">在校生は明るく、生き生きしているか</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">生徒同士の関係は良好か</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">教職員は親身に対応しているか</Typography>
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">学校全体の雰囲気は自分に合っているか</Typography>
                 </ListItem>
@@ -367,25 +367,25 @@ export default function TaikenNyugakuPage() {
               <List sx={{ m: 0 }}>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">教育方針・カリキュラムは明確か</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">進学実績は良好か</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">大学受験対策は充実しているか</Typography>
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">就職サポートは充実しているか</Typography>
                 </ListItem>
@@ -398,25 +398,25 @@ export default function TaikenNyugakuPage() {
               <List sx={{ m: 0 }}>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">部活動の種類は充実しているか</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">部活動と勉強の両立は可能か</Typography>
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 0.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">学園祭・行事は充実しているか</Typography>
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
                   </ListItemIcon>
                   <Typography variant="body2">国際交流・特別プログラムはあるか</Typography>
                 </ListItem>
@@ -462,8 +462,8 @@ export default function TaikenNyugakuPage() {
         <Divider sx={{ my: 4 }} />
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             高校の情報を検索してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -476,12 +476,12 @@ export default function TaikenNyugakuPage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -503,10 +503,10 @@ export default function TaikenNyugakuPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   志望校の選び方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -521,10 +521,10 @@ export default function TaikenNyugakuPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   偏差値の見方・使い方を徹底解説
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -539,10 +539,10 @@ export default function TaikenNyugakuPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   高校受験のスケジュール完全ガイド
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -568,7 +568,7 @@ export default function TaikenNyugakuPage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <ArrowBackIcon />
                 <Typography sx={{ fontWeight: 600 }}>コラム一覧へ</Typography>
               </Box>
@@ -585,7 +585,7 @@ export default function TaikenNyugakuPage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Typography sx={{ fontWeight: 600, color: "#1565C0" }}>
+              <Typography sx={{ fontWeight: 600, color: "#1e782d" }}>
                 次の記事: 志望校の選び方
               </Typography>
             </Paper>
@@ -599,7 +599,7 @@ export default function TaikenNyugakuPage() {
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box id={id} sx={{ mb: 3 }}>
-      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#1e782d" }}>
         {title}
       </Typography>
       {children}

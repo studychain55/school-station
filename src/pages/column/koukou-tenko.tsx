@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function KoukouTenkoPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function KoukouTenkoPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の転校・転入手続きガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             公立・私立・通信制の転入方法の違い、必要書類、単位認定について完全解説
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function KoukouTenkoPage() {
           </Typography>
 
           <SubSection title="転校（同一都道府県内での移動）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 同じ都道府県内で別の高校に移動する場合を『転校』と呼びます。例えば、東京都内の高校から別の東京都内の高校に移動する場合が該当します。転校は比較的手続きが簡単で、転出元と転入先の学校同士で調整を行うことが多いです。
               </Typography>
@@ -145,7 +145,7 @@ export default function KoukouTenkoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   同一都道府県の教育委員会のルールに従える
@@ -153,7 +153,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   都道府県外転入に比べて教育委員会を通じた申告が簡潔な場合が多い
@@ -161,7 +161,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   単位認定や成績評価のルールが統一されているため、手続きが円滑に進みやすい
@@ -171,7 +171,7 @@ export default function KoukouTenkoPage() {
           </SubSection>
 
           <SubSection title="転入（他の都道府県からの引越し）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 他の都道府県から引っ越してきた場合、その地域の高校に『転入』します。都道府県が異なるため、教育委員会の対応も異なり、より複雑な手続きが必要になることがあります。
               </Typography>
@@ -180,7 +180,7 @@ export default function KoukouTenkoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   転出地の教育委員会と転入地の教育委員会両方への申告が必要
@@ -188,7 +188,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   都道府県によってカリキュラムや単位認定基準が異なる場合がある
@@ -196,7 +196,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   転入試験の受験が必須のケースが多い
@@ -206,7 +206,7 @@ export default function KoukouTenkoPage() {
           </SubSection>
 
           <SubSection title="編入（進学学年を上げずに転校）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 高校在学中に、進学学年を上げずに別の高校に移ることを『編入』と呼びます。例えば、高1で入学した高校から、別の高校の高1に編入する場合が該当します。編入は転校・転入と比べて受け入れ校が限定される傾向にあります。
               </Typography>
@@ -215,7 +215,7 @@ export default function KoukouTenkoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   編入可能な学年が限定される（高1のみ、など）ことが多い
@@ -223,7 +223,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   受け入れ校の定員状況に大きく影響される
@@ -231,7 +231,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   転入試験が必須である場合が多い
@@ -317,7 +317,7 @@ export default function KoukouTenkoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   教育委員会を通じた複雑な手続きが不要な場合が多い
@@ -325,7 +325,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   年間を通じて転入生を受け付けている学校が多い
@@ -333,7 +333,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   学校によっては、一般入試よりも転入試験が簡単な場合がある
@@ -381,7 +381,7 @@ export default function KoukouTenkoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   年間を通じていつでも転入可能（学校により異なる）
@@ -389,7 +389,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   スクーリング（登校日）の日程を柔軟に選択できる
@@ -397,7 +397,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   単位認定が比較的寛容で、多くの単位が認定される傾向
@@ -405,7 +405,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   転入試験がない、または非常に簡単な学校が多い
@@ -413,7 +413,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   仕事や家庭の事情がある生徒にも対応可能
@@ -423,7 +423,7 @@ export default function KoukouTenkoPage() {
           </SubSection>
 
           <SubSection title="通信制高校転入時の単位認定">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 通信制高校は、前籍校での修得単位をほぼ全て認定することが多いです。これは、全日制高校のカリキュラムと通信制のカリキュラムが、教育内容において共通基盤を有しているためです。転入前に『成績証明書』『修得単位一覧』を用意し、学校に単位認定の基準を確認しましょう。
               </Typography>
@@ -499,7 +499,7 @@ export default function KoukouTenkoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   転入学願書（転入先学校で指定されるフォーム）
@@ -507,7 +507,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   健康診断票（転入先学校で要求される場合）
@@ -515,7 +515,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   予防接種記録（学校により異なる）
@@ -523,7 +523,7 @@ export default function KoukouTenkoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   住所を証明する書類（公立高校転入時に教育委員会から要求される場合）
@@ -539,14 +539,14 @@ export default function KoukouTenkoPage() {
           </Typography>
 
           <SubSection title="単位認定の基準">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 3 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 3 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 高校卒業には通常74単位以上の取得が必要です。転入時に認定される単位は、転入先学校のカリキュラムと照らし合わせて判定されます。以下の点が考慮されます：
               </Typography>
               <List>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     教育内容の一致度（同一科目なら認定されやすい）
@@ -554,7 +554,7 @@ export default function KoukouTenkoPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     学習時間数の確認（転入先の要件を満たしているか）
@@ -562,7 +562,7 @@ export default function KoukouTenkoPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     評価の適切性（合格判定の基準）

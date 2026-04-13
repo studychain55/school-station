@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouHensachiHowPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouHensachiHowPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の偏差値の正しい見方と活用法
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             模試の種類によって偏差値が変わる理由を完全解説
           </Typography>
         </Box>
@@ -150,7 +150,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>平均点との差</strong> — 偏差値50は『全国の受験生の平均的な学力』を表します。『自分の得点が平均点より高い』『偏差値50以上』『自分の得点が平均点より低い』『偏差値50未満』という『単純な対応』があります。ただし『平均点は試験ごとに異なる』『難しい試験では平均点が下がり、同じ得点でも偏差値が上がる』『易しい試験では平均点が上がり、同じ得点でも偏差値が下がる』という『重要な特性』があります。このため『同じ得点でも試験の難度によって偏差値が変動する』という『直感に反する現象』が起こります。
@@ -158,7 +158,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>標準偏差と成績分布</strong> — 『標準偏差』は『受験生の成績がどの程度のばらつきを持っているか』を示す指標です。『標準偏差が大きい』『受験生の成績にばらつきがあり、高得点と低得点の差が大きい』『標準偏差が小さい』『受験生の成績が平均点の周辺に集中している』という『成績分布の違い』を示します。偏差値60は『上位16%（全国約30万人中約4.8万人）』『偏差値70は上位2.3%（約7,000人）』『偏差値80は上位0.13%（約20人）』という『統計的な意味』を持ちます。これらの『確率的な位置付け』が『自分の学力を客観的に評価する』際に『最も有用な情報』となります。
@@ -166,7 +166,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>偏差値だけでは学力が判定できない理由</strong> — 偏差値は『相対的な位置を示す指標に過ぎず』『絶対的な学力の判定』『実際の学習理解度の判定』には『複数の指標を組み合わせる』ことが必要です。『偏差値60でも各教科の理解度は異なる』『得意教科が偏差値70で苦手教科が偏差値40という個人差』『大学進学後に必要な基礎知識の習得度』など『偏差値だけでは計測できない』重要な情報があります。したがって『模試の偏差値』『各教科の得点率』『定期テストの成績』『学習理解度チェックテスト』など『複数の指標を総合的に評価する』ことが『真の学力把握』につながります。
@@ -182,7 +182,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>偏差値と合格可能性の対応</strong> — 『偏差値60=合格可能性約80%』『偏差値55=合格可能性約65%』『偏差値50=合格可能性約50%』『偏差値45=合格可能性約35%』という『統計的な対応関係』があります。ただし『内申点』『面接試験』『願書の志願理由』『学校の定員状況』など『複数の要因』が合格を左右するため『偏差値だけでの合格判定は不完全』です。『多角的な評価要因』を『総合的に考慮』することが『より正確な合格可能性の判断』につながります。
@@ -204,7 +204,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>全統模試：広い母集団が特徴</strong> — 『全統模試の受験者は全国の高校生』『学力レベルが多様（進学志望から就職希望者まで）』『最も広い層を代表する模試』です。『平均学力が全国的な実態を反映する』『最も客観的な学力判定が可能』『複数の進学先を検討する受験生向け』という特徴があります。『全統模試で偏差値60の学校』『一般的には全国的に見ても上位16%程度の学力レベルの学校』と解釈できます。
@@ -212,7 +212,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>駿台模試：難関大志望者が中心</strong> — 『駿台模試の受験者は難関大学志望者が中心』『受験者の平均学力が全統より高い』『「同じ学校でも偏差値が全統より低く出る傾向」』という『重要な特性』があります。例えば『全統で偏差値60の学校が駿台では偏差値55になる』という『約5ポイント低下』は『母集団のレベルの違い』を反映しています。『難関大学志望者の中での相対的な位置』『難関大学入試対策としての学力評価』を得たい場合に『駿台模試が適切』です。
@@ -220,7 +220,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進研模試：幅広い受験者層を反映</strong> — 『進研模試の受験者は中堅校から進学校まで幅広い層』『学力の中位～上位層を主体とする』『「偏差値が全統より高く出やすい傾向」』という『特徴』があります。『学習習慣が定着している受験生向けの模試』『基礎から標準レベルの問題を重視』『高校1年生から受験開始』という『継続的な学力測定』に適しています。
@@ -236,7 +236,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>出題難度の統一が困難な理由</strong> — 各模試は『毎月異なる問題を出題』『試験のたびに受験者層が変動』『前月比での難度調整が必要』という『複雑な出題戦略』を必要とします。『前月が易しい出題だったため今月は難しくする』『受験者数が増えたため若干難しめにする』という『動的な調整』により『偏差値の算出方法が試験ごとに微妙に変わる』という現象が起きます。
@@ -244,7 +244,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>得意分野による得点差</strong> — 『模試ごとに出題分野に偏りがある』『古文が多い月と漢文が多い月では得点が変動する』『図形問題が多い数学と方程式が多い月では理系受験生の得点が変動する』という『得意分野への依存性』があります。『複数の模試を受験して平均的な実力を把握する』ことが『より客観的な学力評価』につながります。
@@ -263,7 +263,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>全統模試（河合塾主催）</strong> — 『受験者数が最も多い（毎回約50万人）』『全国的に均等な分布』『高校現役生が主体』『最も標準的な偏差値判定が可能』という『信頼性の高さ』が特徴です。『複数の志望校を検討する受験生』『全国的な位置付けを知りたい受験生』『標準的な偏差値判定を重視する受験生』に最適です。『全統模試で偏差値60』『一般的に信頼性が高い判定』と解釈できます。
@@ -271,7 +271,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>駿台模試（駿台予備校主催）</strong> — 『難関大学志望者が受験者の中心』『受験者の平均学力が高い』『偏差値がやや低く出やすい傾向』『難関大学入試対策を主眼とした出題』が特徴です。『東京大学・京都大学・医学部志望者』『難関大学への適性判定を重視する受験生』『高度な思考力が必要な問題への対応力を測りたい受験生』に適しています。『駿台で偏差値55』『難関大志望者の中での位置付け』『他の模試より慎重に解釈する必要』があります。
@@ -279,7 +279,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進研模試（ベネッセ主催）</strong> — 『多くの高校が学校内実施』『受験者数が多い（毎回約100万人）』『基礎から標準レベルの問題が中心』『偏差値がやや高く出やすい傾向』『高校1年生から受験開始可能』が特徴です。『基礎学力の定着度を確認したい受験生』『継続的な学力測定を望む受験生』『進学実績のある一般的な進学校の生徒』に適しています。『進研で偏差値65』『全統での同等偏差値は約60程度』『各模試の特性を考慮した換算』が必要です。
@@ -287,7 +287,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>W模試（高卒認定試験向け）</strong> — 『高等専修学校・高卒認定受験者向け』『高卒認定試験受験者が母集団』『一般的な高校受験者との直接比較が困難』という『独自の位置付け』があります。『高卒認定取得後の大学進学を目指す受験生』『通信制高校からの大学進学を目指す受験生』が対象です。『他の標準模試との直接比較は避ける』『W模試内での相対的な位置付けを重視』することが重要です。
@@ -303,7 +303,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>おすすめの模試受験戦略</strong> — 『毎月全統模試を受験（基準となる標準偏差値）』『2～3ヶ月ごとに駿台模試を受験（難関大対策の確認）』『必要に応じて進研模試を受験（基礎定着度の確認）』という『段階的なアプローチ』が効果的です。『各模試の偏差値を記録して推移をグラフ化する』『各模試での得点率を記録して分析する』『模試ごとの特性を理解した上での偏差値解釈』が『より精度の高い学力把握』を可能にします。
@@ -322,7 +322,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進学実績の読み方</strong> — 『難関大学（東京大学・京都大学・早稲田大学・慶應義塾大学）への進学者数』『医学部への進学者数』『国公立大学への進学率』は『学校の指導力』『生徒の学習レベル』『進学サポートの質』を示す『定量的な指標』です。『偏差値60の学校が毎年東京大学に10名合格させている』『偏差値55の学校が東京大学への進学者ゼロ』という『大きな違い』が存在します。『学校パンフレットの進学実績』『学校ホームページの詳細データ』『大学のホームページの進学者統計』『塾の進学実績ランキング』を『複数のソースから確認』することが『正確な進学実績把握』につながります。
@@ -330,7 +330,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進学実績の経年変化から見える学校の動向</strong> — 『過去5年間の進学実績の推移』『難関大学進学者数の増減』『進学率の改善状況』から『学校の教育改革の成功状況』『教育力の向上傾向』を判定できます。『進学実績が継続して伸びている学校』『教育改革により進学実績が大幅改善した学校』『実績が停滞している学校』に『大きな差』があり『将来の学力伸びの可能性』が変わります。
@@ -343,7 +343,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>カリキュラムの質と多様性</strong> — 『個別指導が充実しているか』『少人数クラスで丁寧な指導が行われているか』『演習時間が十分か』『生徒のレベルに応じた複数のコース設定があるか』といった『教育内容の質』が『学力伸びの大きな要因』です。『偏差値が同じでもカリキュラムが充実した学校』『学習環境が整備された学校』『きめ細かい指導が行われている学校』に進学すれば『入学後の学力伸びが大きい』という『重要な事実』があります。
@@ -351,7 +351,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学習施設と進路指導の充実</strong> — 『自習室の設備と利用可能時間』『図書館やパソコン室の整備状況』『質問対応体制（放課後の質問受付）』『進路指導の専任者配置』『大学進学説明会の頻度』といった『学習環境のインフラ』が『学力伸びに直接影響』します。『学習施設が充実している学校』『進路指導が手厚い学校』『生徒のやる気を引き出す環境が整った学校』では『同じ入学レベルでも高い進学実績』を達成しやすいという『教育環境の重要性』があります。
@@ -373,7 +373,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進学実績の改善</strong> — 『難関大学への進学者数が増加している』『進学実績が継続して伸びている』『教育改革により成果が出ている』といった『具体的な成果』が『偏差値上昇の背景』にあります。『受験生が進学実績の向上を察知する』『学校への志望者が増加する』『入試志願者が増える』『偏差値が上昇する』という『正の循環』が起きます。
@@ -381,7 +381,7 @@ export default function KoukouHensachiHowPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校からの積極的な情報発信</strong> — 『学校説明会の充実』『進学実績の詳細な公表』『新しい教育プログラムの導入』『施設の充実』『教職員の質的向上』といった『学校からの積極的な取り組み』が『受験生の志望度を高める』という『要因』があります。
@@ -397,7 +397,7 @@ export default function KoukouHensachiHowPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>確認が必要な情報</strong> — 『偏差値低下の理由』『進学実績が停滞している背景』『施設や教職員の状況』『学校の今後の改革計画』などを『学校訪問や説明会』『在校生の声』『卒業生の評価』から『詳しく確認する』ことが『リスク回避』につながります。『短期的な偏差値低下はばらつきの可能性もある』『複数年の傾向を見ることが重要』という『冷静な判断』が必要です。

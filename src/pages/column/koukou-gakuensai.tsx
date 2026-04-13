@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function KoukouGakuensaiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function KoukouGakuensaiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の学園祭・文化祭完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             企画の選び方、出展内容の決定、準備スケジュール、当日の運営から実行委員の役割まで、学園祭を成功させるすべてのノウハウを解説
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function KoukouGakuensaiPage() {
           </Typography>
 
           <SubSection title="学園祭の種類と特徴">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 高校の学園祭には、主に『文化祭』『体育祭』『文化祭と体育祭の併催』という3パターンがあります。それぞれの特徴を理解し、自分たちの高校にどのような学園祭があるのかを把握することが重要です。
               </Typography>
@@ -145,7 +145,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>文化祭</Typography>
@@ -156,7 +156,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>体育祭</Typography>
@@ -167,7 +167,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>文化祭と体育祭の併催</Typography>
@@ -230,7 +230,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>食販売（たこ焼き、クレープ、焼きそば、カレーなど）</Typography>
@@ -241,7 +241,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>教室での展示（迷路、射的、ゲーム、展示作品など）</Typography>
@@ -252,7 +252,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>舞台での演技（劇、コント、ダンス、歌など）</Typography>
@@ -263,7 +263,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>オタクの聖地、アニメカフェ、韓国カフェなどのテーマ企画</Typography>
@@ -276,7 +276,7 @@ export default function KoukouGakuensaiPage() {
           </SubSection>
 
           <SubSection title="企画を決める際の民主的なプロセス">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 企画決定で『議論がこじれる』パターンの多くは、『意見をまとめるプロセスが不透明』だからです。以下の手順で進めることをお勧めします。
               </Typography>
@@ -285,7 +285,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>第1段階：複数の案を出す（1週間程度）</Typography>
@@ -296,7 +296,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>第2段階：メリット・デメリットを比較（1週間程度）</Typography>
@@ -307,7 +307,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>第3段階：投票で決定</Typography>
@@ -331,7 +331,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>クラス全体で企画案を募集</Typography>
@@ -342,7 +342,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>企画を投票で決定</Typography>
@@ -358,7 +358,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>企画責任者を決定</Typography>
@@ -369,7 +369,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>全員の係を決定</Typography>
@@ -380,7 +380,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>予算計画を立案</Typography>
@@ -396,7 +396,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>毎週ミーティングを開く</Typography>
@@ -407,7 +407,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『チェックリスト』を活用</Typography>
@@ -418,7 +418,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>予期せぬ問題への対応</Typography>
@@ -434,7 +434,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>当日の『操作マニュアル』を作成</Typography>
@@ -445,7 +445,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>当日の『朝礼』で全員で心を合わせる</Typography>
@@ -456,7 +456,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>当日は『来場者の笑顔』を最優先に</Typography>
@@ -480,7 +480,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『当日限定タスク』を用意する</Typography>
@@ -491,7 +491,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『興味に合わせた係分け』</Typography>
@@ -502,7 +502,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『参加度の低い生徒の声を聞く』</Typography>
@@ -570,7 +570,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『選手と応援・運営のバランス』を取る</Typography>
@@ -581,7 +581,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『応援のテーマ』を決める</Typography>
@@ -592,7 +592,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『得点計算が複雑でない』ことの重要性</Typography>
@@ -608,7 +608,7 @@ export default function KoukouGakuensaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『怪我や体調不良』への対応</Typography>
@@ -619,7 +619,7 @@ export default function KoukouGakuensaiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『接戦での気持ちの切り替え』</Typography>

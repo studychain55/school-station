@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouBenkyouPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouBenkyouPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校での勉強方法ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             中学との違いと授業についていくための予習・復習習慣
           </Typography>
         </Box>
@@ -153,7 +153,7 @@ export default function KoukouBenkyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学の難度上昇</strong> — 『中学数学は具体的な数字や図形を扱うのに対し、高校数学は文字式や抽象的な概念を中心に進む』『関数の複雑性が劇的に増す』『計算の難度が数段階上がる』『証明問題が導入される』という『本質的な難度上昇』があります。『中学までの「計算できる」という基準は高校では最低限の要件』『「仕組みを理解して応用できる」という高度な思考力が要求される』という『求める学力レベルの大幅な変化』があります。
@@ -161,7 +161,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>英語の難度上昇</strong> — 『中学英語は簡潔な文法を習うのに対し、高校英語は複雑な文法が毎日のように登場』『仮定法・関係代名詞・分詞構文など難度の高い文法が次々と導入される』『長文の長さと複雑性が劇的に増す』『語彙数が数倍に増加』という『圧倒的な難度上昇』があります。『中学英語で「単語と基本文法を覚えていれば何とかなった」から高校英語では「複雑な文法構造を瞬時に理解しながら読む」という『根本的な学習方法の転換』が必須です。
@@ -169,7 +169,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>理科（化学・物理）の難度上昇</strong> — 『高校化学では原子・分子の概念が中心となり、複雑な化学方程式と計算が必須』『高校物理では力学の基本概念をしっかり理解していないとその後全くついていけない』『抽象的な概念の理解が最優先』という『高度な思考力が要求される』という『本質的な学習内容の変化』があります。
@@ -194,7 +194,7 @@ export default function KoukouBenkyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学Ⅱ（特に因数分解から関数へ）</strong> — 『中学数学の比較にならないほど複雑な式の計算』『因数分解の難度が数段階上昇』『関数の概念が抽象的で理解困難』『指数・対数・三角関数という新概念の登場』という『多層的なつまずき要因』があります。『数学Ⅰで基礎をしっかり理解していない生徒は数学Ⅱで一気に脱落』『最初の2～3週間での理解定着が その後の2年間を左右する』という『極めて重大な時期』です。
@@ -202,7 +202,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>英文法（英語Ⅱでの仮定法・関係代名詞）</strong> — 『中学英文法の「現在形・過去形」から「仮定法」「関係代名詞」「分詞構文」といった複雑な文法へ急転直下』『各文法の用法が多岐にわたり区別困難』『文法の理解なしに長文読解が不可能』という『系統的な学習が必須』です。『英文法で基礎をつかめない生徒は長文読解まで進むと完全に脱落』『高1の時点での早期補習が極めて重要』という『開始時期の重要性』があります。
@@ -210,7 +210,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>古文（現代文との全く異なる言語体系）</strong> — 『古文は現代日本語とは全く異なる言語体系』『古い文法（助動詞「ぬ」「ん」「なる」など）の習得が必須』『内容理解の前に「言語としての古文」を理解する必要がある』『文法の理解がなければ意味不明』という『言語学習として最初からやり直す』という『根本的な学習の困難さ』があります。
@@ -218,7 +218,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>化学・物理（概念理解の困難さ）</strong> — 『高校化学では原子・分子・イオンなど目に見えない微視的な概念が中心』『化学反応式が複雑で、計算が多数』『物理では「力」「加速度」「エネルギー」など抽象的な概念の理解が基盤』『基本概念を理解していないと応用問題が全く解けない』という『理解度が成績を大きく左右する』という『実態があります。
@@ -243,7 +243,7 @@ export default function KoukouBenkyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>目的：次のテーマの全体像を把握し、授業の効率を最大化</strong> — 『教科書を読んで次のテーマ全体を把握』『難しい用語の意味を事前に調べる』『前回までの学習内容との連関を理解』『授業で重点的に聞くべき部分を事前に特定』という『効率的で目的的な予習』が『授業での理解を大幅に促進する』という『科学的な学習効果』があります。
@@ -251,7 +251,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>予習時間と方法</strong> — 『科目あたり10～15分の予習』『教科書の該当部分を読む』『用語の意味を調べる』『図や表の意味を理解する』『わからない部分に印を付ける』という『シンプルで実行可能な予習方法』が『継続可能で効果的』です。『完璧に理解することが目的ではなく、授業の受け方を効率化する』という『予習の本質的な目的』を理解することが重要です。
@@ -264,7 +264,7 @@ export default function KoukouBenkyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>目的：授業で習った内容を定着させ、わからない部分を解消</strong> — 『授業ノートを見直して重要ポイントを整理』『板書の意味を完全に理解する』『わかりにくかった部分を教科書や映像授業で再学習』『基本問題を解いて理解を確認』『翌日以降の学習への架け橋を作る』という『多段階的な復習プロセス』が『学習定着の効果』を最大化します。
@@ -272,7 +272,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>復習時間と方法</strong> — 『科目あたり30～40分の復習』『授業当日または翌日の復習が最も効果的（記憶が新しいうちに）』『ノートを見直す（5～10分）』『わかりにくい部分を教科書で確認（5～10分）』『基本問題を解く（15～20分）』『重要ポイントをまとめノートに記録（5～10分）』という『構造化された復習プロセス』が『効率的で実行可能』です。『ただ教科書を読むだけの復習は効果が薄い』『問題を解く体験を通じた復習が記憶定着につながる』という『実践的な学習方法』が重要です。
@@ -297,7 +297,7 @@ export default function KoukouBenkyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>試験範囲の確認と科目別計画立案</strong> — 『学校から配布される試験範囲表を詳しく確認』『各科目の試験範囲を把握』『各科目の予想得点ターゲットを設定（満点目指す科目、80点目指す科目など）』『科目別の学習時間配分を決定（苦手科目に多く、得意科目に少なく）』という『事前準備』が『その後の効率的な学習』を実現します。
@@ -334,7 +334,7 @@ export default function KoukouBenkyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業で理解できなかった部分の復習</strong> — 『高校の授業スピードについていけず理解できなかった単元』『先生の説明ではわからなかった部分』『難度の高い科目の基本からやり直す』という『補完的な活用』が『極めて効果的』です。『映像授業は何度でも見直せる』『自分のペースで学習できる』『丁寧な説明を受けられる』という『利点を活かした使い方』です。
@@ -342,7 +342,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>つまずきやすい科目の予習</strong> — 『数学Ⅱ・英文法・古文など難度の高い科目』『最初の理解が極めて重要な科目』『高校の授業だけでは理解が不十分な可能性がある科目』について『事前に映像授業で予習する』『基本的な概念を理解した上で高校の授業に臨む』という『戦略的な予習活用』が『高校授業の効果を数倍にします』。
@@ -350,7 +350,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>苦手分野の集中学習</strong> — 『定期テスト前に特定の分野が苦手な場合』『短時間で重要ポイントを整理したい場合』『別の講師による別のアプローチで理解したい場合』などで『映像授業を集中的に活用』『その後に問題演習を行う』という『段階的な学習戦略』が有効です。
@@ -363,7 +363,7 @@ export default function KoukouBenkyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>「見ただけ」で終わらない</strong> — 『映像授業を「見た気になる」という最大の落とし穴』『授業を見ているだけでは成績向上はない』『映像授業で学んだ内容を問題演習で確認することが必須』という『実行フェーズの重要性』があります。『毎週5時間映像授業を見ても、問題演習をしなければ全く成績が向上しない』という『厳しい現実』を理解することが重要です。
@@ -371,7 +371,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高校の授業を軽視しない</strong> — 『映像授業で十分と思い込んで、高校の授業を真摯に受けない』『映像授業の講師の方が良いと考えて、学校の先生への質問をしない』という『危険な思考陥り入る可能性がある』ため『映像授業は補助的な位置づけ』『高校の授業が中心』という『正確な認識』が重要です。『高校の授業と映像授業を統合させた理解』『両者の利点を組み合わせた学習』が『最も効果的』です。
@@ -379,7 +379,7 @@ export default function KoukouBenkyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>時間管理が重要</strong> — 『映像授業に時間を費やしすぎて、本来の勉強時間が削減される』『ダラダラと映像授業を見続ける』『高校の課題や問題演習をする時間がなくなる』という『本末転倒の結果』が生まれやすいため『映像授業の活用時間を制限』『問題演習に優先的に時間を配分』『映像授業はあくまで補助手段』という『メリハリある時間管理』が必須です。

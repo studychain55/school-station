@@ -232,7 +232,7 @@ export default function MensetsGuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 5,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -240,7 +240,7 @@ export default function MensetsGuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校受験の面接対策｜よく出る質問と答え方を解説
           </Typography>
-          <Typography variant="body1" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body1" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             面接で高評価を得るための準備・よくある質問・本番での注意点をすべて解説します
           </Typography>
         </Box>
@@ -257,7 +257,7 @@ export default function MensetsGuPage() {
           <Typography variant="h2" component="h2" sx={{ fontSize: "1.5rem", fontWeight: 700, mb: 3, pb: 2, borderBottom: "3px solid #1976D2" }}>
             高校受験の面接について
           </Typography>
-          <Box sx={{ bgcolor: "#E3F2FD", p: 3, borderRadius: 2, mb: 3 }}>
+          <Box sx={{ bgcolor: "#e9f2ea", p: 3, borderRadius: 2, mb: 3 }}>
             <Typography variant="body1" sx={{ lineHeight: 1.8, mb: 2 }}>
               <strong>面接の目的：</strong>学力以外の部分、つまりコミュニケーション能力・志望動機の強さ・人間性・礼儀・態度などを総合的に評価することです。
             </Typography>
@@ -348,8 +348,8 @@ export default function MensetsGuPage() {
           <TableContainer component={Paper} elevation={0} sx={{ border: "1px solid #E0E0E0" }}>
             <Table>
               <TableHead>
-                <TableRow sx={{ bgcolor: "#E3F2FD" }}>
-                  <TableCell sx={{ fontWeight: 700, color: "#0D47A1" }}>OK - これはやる</TableCell>
+                <TableRow sx={{ bgcolor: "#e9f2ea" }}>
+                  <TableCell sx={{ fontWeight: 700, color: "#1e782d" }}>OK - これはやる</TableCell>
                   <TableCell sx={{ fontWeight: 700, color: "#C62828" }}>NG - これはしない</TableCell>
                 </TableRow>
               </TableHead>
@@ -441,7 +441,7 @@ export default function MensetsGuPage() {
 
         {/* 関連記事 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             関連記事
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2 }}>
@@ -503,8 +503,8 @@ export default function MensetsGuPage() {
         </Box>
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             実際に高校の偏差値を確認してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -517,12 +517,12 @@ export default function MensetsGuPage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}

@@ -189,32 +189,32 @@ export default function KokoseiStudyPage() {
           <SubSection title="テスト1週間前のスケジュール例">
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>テスト8日前～5日前：全教科の範囲確認</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>テスト8日前～5日前：全教科の範囲確認</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     各教科の試験範囲をノートにまとめ、全体像を把握する時期。「この範囲では何が重要か」を意識しながら、教科書を一通り読む。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>テスト4日前～2日前：過去問・練習問題に挑戦</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>テスト4日前～2日前：過去問・練習問題に挑戦</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     教科書の理解が進んだら、過去のテスト問題や教科書の練習問題に取り組む。「実際のテストではどのように出題されるか」を体験することが大切です。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>テスト前日：復習に徹する</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>テスト前日：復習に徹する</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     新しい内容は避け、できなかった問題をもう一度解く。自分がミスしやすいパターンを復習することが効果的です。夜は十分に睡眠を取ることが、翌日の成績に大きく影響します。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>テスト当日：冷静さを保つ</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>テスト当日：冷静さを保つ</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     朝は十分な睡眠後に起床し、栄養のある朝食を摂る。焦らず、落ち着いて試験に臨むことが、実力を発揮するコツです。
                   </Typography>

@@ -11,7 +11,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -22,7 +22,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -125,7 +125,7 @@ export default function KoukouShokugyouPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -133,7 +133,7 @@ export default function KoukouShokugyouPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校のキャリア教育・職場体験ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             大学選びと将来の仕事を考えるきっかけ作り
           </Typography>
         </Box>
@@ -151,7 +151,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>体験内容</strong> — 『実際の業務補助』『顧客対応』『製造現場での作業』『事務作業』など『その職場の実際の仕事』を体験します。単なる『見学』ではなく『実際に手を動かす経験』が特徴です。
@@ -159,7 +159,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>受け入れ企業の多様性</strong> — 『製造業』『流通業』『医療機関』『福祉施設』『学校』『行政機関』『飲食店』など『様々な業種』が参加することで『生徒が自分の興味分野を発見しやすい環境』が整備されます。
@@ -167,7 +167,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>事前事後学習</strong> — 『体験前のマナー研修』『質問事項の準備』『事後のレポート作成』『発表会での実報告』などを通じて『体験の学習効果』が最大化されます。
@@ -183,7 +183,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>深い業務体験</strong> — 『営業ノウハウ』『製品企画プロセス』『顧客分析方法』など『その職場の本質的な業務プロセス』を学べます。推薦入試の『自己推薦文』で『具体的な仕事内容への理解』『その業界への適性確認』を述べる際の『重要な根拠』になります。
@@ -191,7 +191,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>大学進学との連動</strong> — 『経営学を学ぶために営業インターン』『医療を学ぶために病院実習』など『大学での学び』と『職業体験』を結びつけることで『進学後の学習動機』が明確になります。
@@ -222,7 +222,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ホームページでの記載内容</strong> — 『キャリア教育』『進路指導』の専用ページが『詳細で更新が新しい』『職場体験受け入れ企業数』『進路決定率90%以上』『進路指導室の施設説明』などが記載されている学校は『キャリア教育を重視している証拠』です。
@@ -230,7 +230,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>説明会での具体的な説明</strong> — 『1年生から3年生までの進路指導カリキュラム』『職場体験の実施内容』『大学との連携プログラム』『進路指導スタッフの配置』『OB/OG支援システム』などの『具体的な施策』が説明される学校は『本気でキャリア教育に取り組んでいる』という確実な指標です。
@@ -238,7 +238,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>在校生への質問</strong> — 『職場体験はいつ、どこで実施された？』『進路指導は親身だったか？』『進路指導室はよく使われているか？』『進路決定までの流れ』などを実際の生徒に聞くと『キャリア教育の実態』が『本当のところ』わかります。
@@ -246,7 +246,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校見学での確認</strong> — 『進路指導室の広さ』『大学・専門学校パンフの数量』『赤本（過去問）の充実』『OB/OGコーナーの有無』『進路実績の掲示』などから『キャリア支援体制』が『可視的に』わかります。
@@ -265,7 +265,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>職場研究</strong> — 『その企業は何をしている会社か』『どのくらいの規模か』『業界での立場は』『最近のニュースはないか』をホームページ・ニュース検索で『事前知識を入れる』ことで『体験時の理解度』が向上します。
@@ -273,7 +273,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>質問リストの作成</strong> — 『この職場ではどのような工夫をして顧客満足を実現しているのか』『働く上で最も大切なことは何か』『高校生のうちに身につけるべきスキルは何か』など『具体的な質問』を準備することで『意識的な学び』が促進されます。
@@ -281,7 +281,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自分の関心・適性の整理</strong> — 『なぜこの職場を選んだのか』『この仕事に興味を持った理由は』『自分の適性とこの職業の関連性は』を『予め考える』ことで『体験中の観察ポイント』が明確になります。
@@ -294,7 +294,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>その仕事の本質を理解する</strong> — 『データ入力の作業』『顧客への説明』『チーム内での役割分担』など『表面的な作業』ではなく『その作業がなぜ必要か』『企業経営にどう貢献しているか』『どのようなスキルが必要か』を『意識的に観察』することが『深い学び』につながります。
@@ -302,7 +302,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>働く大人のマインドセットを学ぶ</strong> — 『どのような工夫をして仕事の品質を高めているか』『どのような困難に直面し、どう乗り越えているか』『やりがいはどのような場面で感じるか』『人間関係構築の工夫は』などから『職業人としてのマインド』『社会人基礎スキル』が学べます。
@@ -310,7 +310,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自分の適性とのマッチング</strong> — 『この仕事内容は自分に向いているか』『この職場環境は自分に合っているか』『この業界で働くことを想像できるか』を『リアルな体験』から判断することで『進路決定時の根拠』が得られます。
@@ -323,7 +323,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>体験レポート作成</strong> — 『何が新しい発見だったか』『予想と異なったことは』『働く大人のマインドセット』『自分の適性とのマッチング』『次に学びたいことは』を『構造的に』記述することで『学習効果』が定着します。
@@ -331,7 +331,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>発表会での実報告</strong> — 『クラス内での発表』『学年全体での発表会』で『自分の体験』『学んだこと』『将来への示唆』を『他者に説明する』ことで『思考の整理』『表現力の向上』『他の生徒への刺激』が生まれます。
@@ -350,7 +350,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>大学・専門学校のパンフレット</strong> — 『募集要項』『学部学科の特色』『進学実績』『キャンパス施設』『奨学金情報』など『大学選択に必要な情報』が網羅されています。『志望大学のパンフを3回以上読む』ことが『入試面接』『推薦理由書』での『具体的な記述』につながります。
@@ -358,7 +358,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>赤本（過去問）と解答解説</strong> — 『志望大学の過去5～10年分の入試問題』『模範解答』『出題傾向分析』が揃っています。『志望大学の試験レベル』『頻出単元』『対策方法』が『具体的に』わかります。
@@ -366,7 +366,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>OB/OG情報</strong> — 『卒業生がどこに進学しているか』『その大学で何を学んでいるか』『就職先はどこか』『その大学は本当に合ったか』など『実際の進学者の声』が格納されています。『志望大学の出身OB/OGに会う』ことで『入学後のリアルな生活』『学び内容』『就職後の仕事』が『フィルターなく』聞けます。
@@ -374,7 +374,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>資格試験情報</strong> — 『大学受験に有利な資格』『その資格の難易度』『高校在学中の取得方法』『取得後のメリット』などが記載されています。『英検』『簿記』『情報技術資格』など『入試加点』『推薦評価加点』につながる資格情報が有用です。
@@ -382,7 +382,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>求人票と就職情報</strong> — 『高卒採用企業の求人票』『就職先企業の情報』『就職後の研修制度』『キャリアパス』などが管理されています。『就職を検討している生徒』『就職と進学で迷っている生徒』の『判断材料』になります。
@@ -395,7 +395,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>定期的な訪問</strong> — 『週1回は訪問する』『新しい大学パンフをチェックする』『OB/OG情報を読む』『進路指導の先生と雑談する』など『継続的な関わり』で『新しい情報』『具体的なアドバイス』が得られます。
@@ -403,7 +403,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進路指導の先生への相談</strong> — 『自分の適性を考えると、どのような大学・学部が合っているか』『志望大学は本当に現実的か』『大学選びで迷っているときの判断基準は』など『個別相談』で『専門的なアドバイス』が得られます。
@@ -411,7 +411,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>OB/OG訪問の段取り</strong> — 『進路指導室から志望大学の出身OB/OGを紹介してもらう』『大学での学び』『キャンパスライフ』『就職後の仕事』を『直接聞く』ことで『リアルな情報』が得られます。
@@ -430,7 +430,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>適性検査を活用する</strong> — 『性格検査』『興味関心検査』『学力診断』を受けることで『自分の適性』『得意分野』『向いている職業傾向』が『客観的に』わかります。学校の進路指導で『団体検査』が実施されるほか『オンライン適性検査』『塾の適性診断』も活用できます。
@@ -438,7 +438,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>職場体験に真摯に取り組む</strong> — 『多様な職業を経験する』『実際の働き手の話を聞く』『自分の適性とのマッチングを検討する』という『プロセス』を通じて『漠然とした興味が具体的な職業イメージに変わる』という『重要な転機』が訪れます。
@@ -446,7 +446,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進路指導室で多様な職業を知る</strong> — 『パンフレット閲覧』『大学学部紹介』『職業ガイド』『OB/OG情報』を『広く浅く』読むことで『世の中にはこんなにたくさんの職業がある』『これだけ多様な学部がある』という『視野の拡大』が起こります。
@@ -454,7 +454,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>親と進路について定期的に話し合う</strong> — 『高1：適性検査の結果を親子で共有』『高1冬：職場体験の感想を親に報告』『高2春：文理選択について親と相談』など『定期的な親子対話』で『親の人生経験の知恵』『親の支援体制の確認』『親との進路観の相互理解』が深まります。
@@ -467,7 +467,7 @@ export default function KoukouShokugyouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>文理選択を決断する</strong> — 『自分の適性』『将来の職業イメージ』『得意な教科』『志望大学の学部』を総合判断して『文系か理系か』を『早期に（高1冬～高2春）決定する』ことで『その後の対策』『大学選択』がスムーズに進みます。
@@ -475,7 +475,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>志望大学を絞り込む</strong> — 『高2秋～冬』に『3～5校の志望大学候補』を設定し『各大学のパンフ研究』『OB/OG訪問』『オープンキャンパス参加』を『集中的に』行うことで『志望理由』が『具体的に』なり『入試勉強のモチベーション』が高まります。
@@ -483,7 +483,7 @@ export default function KoukouShokugyouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>入試戦略を立てる</strong> — 『一般選抜か推薦選抜か』『国公立か私立か』『いつまでに志望大学を最終決定するか』『入試対策はいつから本格化するか』など『具体的なアクションプラン』を『進路指導の先生と一緒に』立てることで『迷わない受験準備』が可能になります。
@@ -525,7 +525,7 @@ export default function KoukouShokugyouPage() {
 
         {/* FAQ Section */}
         <Box sx={{ my: 5 }}>
-          <Typography variant="h2" sx={{ fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" sx={{ fontSize: "1.5rem", fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくある質問
           </Typography>
           <FAQ items={faqItems} />
@@ -534,7 +534,7 @@ export default function KoukouShokugyouPage() {
         {/* Navigation */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: 6, pt: 3, borderTop: "1px solid #ddd" }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", color: "#1565C0", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+            <Box sx={{ display: "flex", alignItems: "center", color: "#1e782d", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
               <ArrowBackIcon sx={{ mr: 1 }} />
               <Typography>コラム一覧に戻る</Typography>
             </Box>

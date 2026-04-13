@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouSleepPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouSleepPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校生の睡眠と学習効率ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             脳の記憶定着と健康的な睡眠時間の確保
           </Typography>
         </Box>
@@ -153,7 +153,7 @@ export default function KoukouSleepPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>記憶力の低下</strong> — 『睡眠5時間の生徒は、7時間の生徒と比べて、翌日新しい情報を覚える能力が40～50%低下』『定期テスト1週間前の睡眠不足で、習った知識の定着率が急低下』『試験直後には何とか思い出すが、1ヶ月後に同じ問題を出すと全く思い出せない』という『睡眠不足による「浅い学習」』があります。
@@ -161,7 +161,7 @@ export default function KoukouSleepPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>集中力と判断力の低下</strong> — 『睡眠3時間の生徒の脳機能は「軽く酒に酔った状態」と医学的に同等』『授業中の集中力が40～50%に低下』『計算ミスが増加、読解が雑になる』『複雑な判断が必要な問題（数学の証明問題・英語の長文読解）で特に成績低下が顕著』という『認知機能全体の衰退』があります。
@@ -169,7 +169,7 @@ export default function KoukouSleepPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>心身の健康悪化</strong> — 『睡眠不足が1～2週間続くと、単なる眠気を超えてうつ症状が出現』『無気力・倦怠感・不安感が増加』『学校への行きたくない気分が増加』『最終的に学校不登校に至るケースも存在』『睡眠は心身の健康維持の最優先事項』という『全人的な発達への悪影響』があります。
@@ -213,7 +213,7 @@ export default function KoukouSleepPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>寝る1時間前からスマートフォン禁止</strong> — 『スマートフォンのブルーライトはメラトニン（睡眠ホルモン）分泌を抑制』『就寝1時間前のスマホで入眠が30分～1時間遅延』『結果として睡眠時間が減少』『スマートフォンは夜10時に親に預けるか、ベッドの外に置く』『どうしても使う場合は夜間モード（ナイトシフト）に設定』という『スマホ管理の重要性』があります。
@@ -221,7 +221,7 @@ export default function KoukouSleepPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>寝る2～3時間前の入浴</strong> — 『温かいお風呂に浸かることで体温が上昇』『入浴後に体温が低下していく過程で眠気が発生』『入浴のタイミングは就寝2～3時間前が最適』『寝直前の入浴は逆に脳が覚醒して入眠が困難になる』『毎日同じ時刻に入浴する習慣も睡眠リズム確立に効果的』という『入浴の機能的な活用』があります。
@@ -229,7 +229,7 @@ export default function KoukouSleepPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>寝る前のカフェイン摂取禁止</strong> — 『コーヒー・紅茶・緑茶のカフェインは脳の睡眠中枢を刺激』『就寝6時間前までのカフェイン摂取が入眠を妨害』『高校生の中には「夜コーヒーを飲んで勉強する」という習慣の生徒も』『実際には睡眠が浅くなり、翌日の疲れが増加』『就寝8時間前以降はカフェイン飲料を避けるべき』という『カフェイン管理の重要性』があります。
@@ -237,7 +237,7 @@ export default function KoukouSleepPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>寝室の環境整備</strong> — 『真っ暗な寝室（照度0～10ルクス）がメラトニン分泌を最大化』『湿度60～70%、気温16～19℃の寝室環境が深い睡眠を実現』『最新の科学的データ』『スマートフォンのライト・部屋の照明・窓からの街灯が入眠を妨害』『完全に真っ暗で適温な寝室作りが「深い睡眠」の基盤』という『物理的な環境整備の重要性』があります。

@@ -11,7 +11,7 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -22,7 +22,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -125,7 +125,7 @@ export default function KoukouOyakoPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -133,7 +133,7 @@ export default function KoukouOyakoPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             保護者が知っておくべき高校受験サポート方法
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             親ができること・できないことを理解し、子どもの受験を最適にサポートするための実践的ガイド
           </Typography>
         </Box>
@@ -145,20 +145,20 @@ export default function KoukouOyakoPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>情報収集</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>情報収集</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高校の情報・入試日程・願書手続きなど、必要な情報を積極的に集める。子ども本人では気づきにくい情報も、親が収集してサポートします。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>環境整備</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>環境整備</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>勉強しやすい家庭環境を整え、健康管理（栄養・睡眠）をサポート。親の役割は『邪魔しない』ことも含まれます。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>メンタルサポート</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>メンタルサポート</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>成績が上がらない時期、不安感が強い時期に、精神的なサポートをする。親の安定した態度が、子どもの心の支えになります。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>受験の見守り</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>受験の見守り</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>最終的には、子どもが自分の力で受験を乗り越えるのを見守る。過度な指示は避け、子どもの判断を尊重する。</Typography>
             </Paper>
           </Box>
@@ -173,7 +173,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高校情報の収集</strong> — 志望高校の偏差値、合格実績、教育方針、進学先など、子ども本人では集めきれない情報を親が主導的に収集します。複数の情報源から確認することが大切です。
@@ -181,7 +181,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>入試日程と願書管理</strong> — 願書提出期限、試験日程、合格発表日など、手続き系の情報管理は親の責任です。提出書類漏れがないか確認するのも親の役割です。
@@ -189,7 +189,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校説明会への参加</strong> — 親も学校説明会に参加し、学校の雰囲気を直接感じることが重要です。その情報を子どもと共有することで、志望校の選定がより現実的になります。
@@ -202,7 +202,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>栄養管理</strong> — 脳を使う受験勉強には、バランスの取れた食事が不可欠です。疲労回復に役立つ栄養を意識した食事を用意することが、親の重要なサポートです。
@@ -210,7 +210,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>睡眠時間の確保</strong> — 睡眠不足は学習効率を大きく低下させます。受験期であっても、十分な睡眠時間（7～8時間）を確保するよう勧告することが重要です。徹夜勉強を容認しないことが大切です。
@@ -218,7 +218,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>勉強しやすい環境設備</strong> — 机の照明、椅子の高さ、室温など、勉強環境を物理的に整えることが親の責任です。勉強妨害となるテレビやスマートフォンは、リビングなど別の場所に置くなどの配慮も必要です。
@@ -226,7 +226,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>病気予防</strong> — インフルエンザ予防接種、手洗い・うがい習慣の励行など、受験期の病気を防ぐための環境作りが重要です。受験直前の体調管理は人生の分岐点です。
@@ -239,7 +239,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>話を聞く姿勢</strong> — 子どもが不安や悩みを話してきたときは、まず『聞く』ことが大切です。親が一方的に意見を言うのではなく、子どもの気持ちを受け止めることが重要です。
@@ -247,7 +247,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>失敗を許容する姿勢</strong> — 模試で悪い点数を取ったとき、親が責める姿勢を見せると、子どもは失敗を隠すようになります。『失敗は成功のもと』という姿勢を示すことが大切です。
@@ -255,7 +255,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>専門家への相談</strong> — 心理的な問題がある場合は、学校のキャリアカウンセラーやスクールカウンセラーへの相談も視野に入れます。親だけで対応できないこともあります。
@@ -263,7 +263,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>応援と励ましの言葉</strong> — 『頑張ってね』『応援しているよ』など、子どもの努力を認める言葉が重要です。定期的に『あなたの頑張りを見ているよ』というメッセージを伝えることが大切です。
@@ -276,7 +276,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>塾選び</strong> — 子どもに合った塾を選ぶのは親の重要な役割です。個別指導と集団指導の違い、オンライン塾など、複数の選択肢から検討する必要があります。
@@ -284,7 +284,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>定期的な面談</strong> — 塾の講師と月1～2回面談し、子どもの学習進捗状況を確認します。塾での様子や課題を共有することで、家庭でのサポート方法も見えてきます。
@@ -303,7 +303,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>『勉強しなさい』という指示</strong> — 何度言っても逆効果です。親の指示で勉強する子どもは、親の目がなくなると勉強しなくなります。子ども本人の『やる気』を引き出すことが大切です。
@@ -311,7 +311,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>成績が悪いことを責める</strong> — 『こんな成績では合格できない』『兄弟は〇〇高校に合格した』など、他者との比較や責めの言葉は禁物です。子どもの自信を奪い、親子関係を悪化させます。
@@ -319,7 +319,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学習内容への細かい指示</strong> — 『この教材をやりなさい』『こういう勉強法をしなさい』など、具体的な学習指導は塾や学校の先生に任せるべきです。親が指示しすぎると、子どもは思考を停止します。
@@ -327,7 +327,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>勉強の進捗状況を細かくチェック</strong> — 『今日、何時間勉強した？』『模試の点数は？』など、細かいチェックは子どもにストレスを与えます。信頼の気持ちを示し、おおらかに見守ることが大切です。
@@ -335,7 +335,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>『〇〇高校に絶対合格しろ』というプレッシャー</strong> — 親の期待が強すぎると、子どもは『親の期待に応えるため』に勉強するようになります。これは自分の夢を失うことになります。
@@ -343,7 +343,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>友人関係や部活への干渉</strong> — 『友人と遊ぶ時間がもったいない』『部活をやめて勉強に集中しろ』など、友人関係や部活までコントロールしようとする親もいます。これは大きな失敗です。バランスの取れた生活が、実は最も効果的な学習につながります。
@@ -383,7 +383,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>親も一緒に参加する</strong> — 学校説明会は子どもだけでなく、親も参加することをお勧めします。学校の雰囲気、教育方針、施設などを直接確認できます。
@@ -391,7 +391,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>質問すべき項目を準備する</strong> — 学費、進学実績、部活動、受験方式など、事前に質問項目を用意し、スタッフに直接質問します。
@@ -399,7 +399,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数校の説明会に参加</strong> — 志望校候補を3～5校絞った上で、それぞれの説明会に参加し、比較検討することが大切です。
@@ -412,7 +412,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>定期面談の活用</strong> — 塾の講師や学校の先生と面談し、お子さんの学力レベルに合った志望校を相談します。子どもの適性と学力に合った選択が重要です。
@@ -420,7 +420,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進学実績の確認</strong> — 高校からの大学進学実績、合格者の受験方式、進学先の特徴など、具体的な数字を確認します。
@@ -433,7 +433,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校ウェブサイトの確認</strong> — 学校の公式ウェブサイトから、入試科目、配点、過去問、教育方針などを確認します。
@@ -441,7 +441,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>受験情報サイトの活用</strong> — School Station などの高校情報サイトで、偏差値、進学実績、部活動などを比較します。複数の情報源から確認することが大切です。
@@ -449,7 +449,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>受験案内冊子の取得</strong> — 各高校の受験案内冊子を取り寄せ、詳細な情報（受験日程、出願方法、試験科目など）を確認します。
@@ -468,7 +468,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>責めずに原因を一緒に考える</strong> — 『成績が上がらないのはなぜだろう』と、冷静に分析します。勉強法の工夫、学習時間の見直しなど、建設的な対話を心がけます。
@@ -476,7 +476,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>小さな進歩を認める</strong> — 『〇〇が得意になったね』『この単元はマスターできたね』など、小さな成長を認める言葉を意識的に伝えます。
@@ -484,7 +484,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>プロの意見を尊重する</strong> — 塾の講師や学校の先生の指導方針を信頼し、親は『見守る』姿勢を保ちます。
@@ -497,7 +497,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>話を聞く</strong> — 『不安なことがあったら、何でも話してね』と、子どもが話しやすい雰囲気を作ります。親が『聞き手』に徹することが大切です。
@@ -505,7 +505,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>『今できることをやろう』という前向きメッセージ</strong> — 不確実な未来を心配するより、『今できることに集中しよう』という考え方を示します。
@@ -513,7 +513,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>家庭での安定した雰囲気作り</strong> — 親の不安が子どもに伝わると、さらに不安が増幅されます。家庭を『安心できる場所』として保つことが重要です。
@@ -526,7 +526,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>定期的な励ましの言葉</strong> — 『あなたの頑張りを見ているよ』『応援しているよ』など、定期的に伝えることで、子どものモチベーションが維持されます。
@@ -534,7 +534,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>適度なリフレッシュ機会</strong> — 『たまには息抜きしようか』『好きなものを食べようか』など、適度なリフレッシュを促します。休息も受験勉強の一部です。
@@ -542,7 +542,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>志望校への関心を高める</strong> — 『〇〇高校ってこんなに良い学校だよ』と、志望校の魅力を伝え、子どもの目標達成への意欲を高めます。
@@ -561,7 +561,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>試験会場への移動ルートの確認</strong> — 実際に試験会場を訪問し、移動ルート、所要時間、公共交通機関の状況を確認します。朝、どのくらいの時間に家を出ればいいかを把握することが大切です。
@@ -569,7 +569,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>必要な提出書類の整理</strong> — 受験票、身分証明書、筆記用具など、必要な書類や物品をリストアップし、試験当日の朝に持ち物漏れがないか確認します。
@@ -577,7 +577,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>睡眠リズムの調整</strong> — 本番と同じ時間に寝起きする習慣をつけ、本番での体のコンディションを整えます。
@@ -585,7 +585,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>体調管理の強化</strong> — インフルエンザ予防接種の確認、手洗い・うがい習慣の徹底、十分な睡眠と栄養補給を意識します。
@@ -598,7 +598,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>栄養バランスの取れた朝食</strong> — 子どもが食べやすく、栄養のある朝食を用意します。ただし、いつもと違うものは避け、消化の良いものを心がけます。
@@ -606,7 +606,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>余裕を持った出発</strong> — 試験開始時間の30分～1時間前には試験会場に到着するよう、余裕を持たせた時間で出発します。
@@ -614,7 +614,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ポジティブな声かけ</strong> — 『これまでの頑張りをぶつけてきてね』『応援しているよ』など、前向きなメッセージを伝えます。『絶対合格するんだよ』というプレッシャーはかけないことが重要です。
@@ -627,7 +627,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>試験会場での待機</strong> — 試験中は、親は試験会場の控え室やカフェなどで待機します。試験終了時間まで、子どもに干渉しないことが大切です。
@@ -635,7 +635,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>親自身の心身管理</strong> — 親も不安ですが、その不安を子どもに見せないことが大切です。本を読む、散歩するなど、親自身も落ち着いて過ごすことを心がけます。
@@ -643,7 +643,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数試験の場合の対応</strong> — 複数日試験がある場合は、各試験終了後の食事や睡眠管理が重要です。試験結果の詳しい質問は避けるべき配慮も必要です。
@@ -656,7 +656,7 @@ export default function KoukouOyakoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>結果発表までの過ごし方</strong> — 『今回の試験はどうだった？』という質問は避けることが大切です。試験が終わったら、それ以上のプレッシャーをかけないようにします。
@@ -664,7 +664,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>日常生活の回復</strong> — 試験後も、学校への出席や普通の生活を続けることが大切です。受験だけに人生が占領されないようにします。
@@ -672,7 +672,7 @@ export default function KoukouOyakoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数校受験の場合の対応</strong> — 複数校を受験した場合は、各校の結果発表日を整理し、家族で冷静に対応方法を話し合うことが重要です。
@@ -692,7 +692,7 @@ export default function KoukouOyakoPage() {
         {/* Navigation */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 2 }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#0D47A1" } }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1e782d", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#1e782d" } }}>
               <ArrowBackIcon sx={{ fontSize: "1.2rem" }} />
               コラム一覧に戻る
             </Box>

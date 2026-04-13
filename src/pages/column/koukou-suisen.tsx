@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function KoukouSuisenPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function KoukouSuisenPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校推薦入試完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             学校推薦型選抜と総合型選抜の違い、出願資格、対策方法、面接・志望理由書の書き方をすべて解説
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function KoukouSuisenPage() {
           </Typography>
 
           <SubSection title="学校推薦型選抜の特徴">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 学校推薦型選抜は、『高校の先生による推薦が必須』という特徴があります。高3の秋から出願が開始され、学力試験がない場合がほとんどです。評定平均が出願資格の重要な判定基準になります。
               </Typography>
@@ -145,7 +145,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>推薦が必須</Typography>
@@ -156,7 +156,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>評定平均が重要</Typography>
@@ -167,7 +167,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学力試験がない場合が多い</Typography>
@@ -178,7 +178,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>出願時期が早い</Typography>
@@ -191,7 +191,7 @@ export default function KoukouSuisenPage() {
           </SubSection>
 
           <SubSection title="総合型選抜の特徴">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 総合型選抜（旧AO入試）は、『推薦の有無に関わらず、自分でエントリーして受験』できる点が学校推薦型との大きな違いです。大学側が求める人物像に合った生徒が合格する傾向があります。
               </Typography>
@@ -200,7 +200,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>推薦が不要</Typography>
@@ -211,7 +211,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>大学の求める人物像との適合性が重要</Typography>
@@ -222,7 +222,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>出願時期が多様</Typography>
@@ -233,7 +233,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>面接以外の試験が実施される場合もある</Typography>
@@ -263,7 +263,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>計算方法</Typography>
@@ -274,7 +274,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>高1の成績が重要</Typography>
@@ -285,7 +285,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>1つの低い成績がすべてを左右することもある</Typography>
@@ -298,11 +298,11 @@ export default function KoukouSuisenPage() {
           </SubSection>
 
           <SubSection title="推薦入試の出願資格となる評定平均の目安">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <List>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>中堅大学：評定平均3.5以上</Typography>
@@ -313,7 +313,7 @@ export default function KoukouSuisenPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>難関大学：評定平均3.8～4.0以上</Typography>
@@ -324,7 +324,7 @@ export default function KoukouSuisenPage() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>国公立大学：評定平均3.8～4.2以上（学部による）</Typography>
@@ -349,7 +349,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『その大学である理由』を明確に</Typography>
@@ -360,7 +360,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>具体的な学習内容を示す</Typography>
@@ -371,7 +371,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>高校での経験を活かす</Typography>
@@ -382,7 +382,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>卒業後のビジョンを示す</Typography>
@@ -445,7 +445,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『最初の30秒』で好印象を</Typography>
@@ -456,7 +456,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『志望理由書の内容』を深堀される</Typography>
@@ -467,7 +467,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『具体例』を交えた回答</Typography>
@@ -478,7 +478,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『質問への直接的な回答』</Typography>
@@ -491,7 +491,7 @@ export default function KoukouSuisenPage() {
           </SubSection>
 
           <SubSection title="よく聞かれる面接質問と回答例">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1.5 }}>
                 『なぜ本学を志望するのか』
               </Typography>
@@ -527,7 +527,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>評定平均を意識した学習</Typography>
@@ -538,7 +538,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>課外活動に取り組む</Typography>
@@ -549,7 +549,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>資格取得に挑戦</Typography>
@@ -565,7 +565,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>大学のオープンキャンパスに参加</Typography>
@@ -576,7 +576,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>進路指導の先生に相談</Typography>
@@ -587,7 +587,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>志望理由書の執筆開始</Typography>
@@ -603,7 +603,7 @@ export default function KoukouSuisenPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>志望理由書を完成させて出願</Typography>
@@ -614,7 +614,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>面接対策開始</Typography>
@@ -625,7 +625,7 @@ export default function KoukouSuisenPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>面接実施</Typography>

@@ -88,7 +88,7 @@ export default function KokoChoicePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -96,7 +96,7 @@ export default function KokoChoicePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             志望校の選び方
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             受験校を決める5つの基準。自分に最適な学校を選ぶためのガイド
           </Typography>
         </Box>
@@ -106,7 +106,7 @@ export default function KokoChoicePage() {
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
             志望校選びは、高校受験における最も重要な決断の一つです。単に「入試に合格すること」だけでなく、「その学校で充実した3年間を過ごすこと」を視野に入れた選択が必要です。
           </Typography>
-          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
               志望校選びで失敗すると、勉強へのモチベーション低下、対人関係の悩み、キャリアの後悔につながる可能性があります。時間をかけて慎重に検討することが大切です。
             </Typography>
@@ -123,7 +123,7 @@ export default function KokoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>自分の偏差値を知る</Typography>
@@ -134,7 +134,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>3段階志望法を活用</Typography>
@@ -145,7 +145,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>現実的な目標設定</Typography>
@@ -164,7 +164,7 @@ export default function KokoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>普通科</Typography>
@@ -175,7 +175,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>専門学科</Typography>
@@ -194,7 +194,7 @@ export default function KokoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学校の理念を確認</Typography>
@@ -205,7 +205,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学校見学を活用</Typography>
@@ -216,7 +216,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>卒業生の声を聞く</Typography>
@@ -235,7 +235,7 @@ export default function KokoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>通学時間</Typography>
@@ -246,7 +246,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>交通費</Typography>
@@ -257,7 +257,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>周辺環境</Typography>
@@ -276,7 +276,7 @@ export default function KokoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>進学実績の確認</Typography>
@@ -287,7 +287,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>進路指導の体制</Typography>
@@ -298,7 +298,7 @@ export default function KokoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学習環境</Typography>
@@ -383,8 +383,8 @@ export default function KokoChoicePage() {
         <Divider sx={{ my: 4 }} />
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             実際に高校の偏差値を確認してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -397,12 +397,12 @@ export default function KokoChoicePage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -424,10 +424,10 @@ export default function KokoChoicePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   偏差値の見方・使い方を徹底解説
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -442,10 +442,10 @@ export default function KokoChoicePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   公立と私立高校の違い
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -460,10 +460,10 @@ export default function KokoChoicePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   面接試験の対策ガイド
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -489,7 +489,7 @@ export default function KokoChoicePage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <ArrowBackIcon />
                 <Typography sx={{ fontWeight: 600 }}>前の記事</Typography>
               </Box>
@@ -506,7 +506,7 @@ export default function KokoChoicePage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <Typography sx={{ fontWeight: 600 }}>コラム一覧へ</Typography>
                 <ArrowForwardIcon />
               </Box>
@@ -521,7 +521,7 @@ export default function KokoChoicePage() {
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box id={id} sx={{ mb: 3 }}>
-      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#1e782d" }}>
         {title}
       </Typography>
       {children}

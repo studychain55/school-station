@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -123,7 +123,7 @@ export default function KoukouShakaiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -131,7 +131,7 @@ export default function KoukouShakaiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校社会の勉強法完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             地理・日本史・世界史・倫理・政治経済の選択戦略と攻略法
           </Typography>
         </Box>
@@ -146,7 +146,7 @@ export default function KoukouShakaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>地理（高1～高3）</strong> — 『「自然地理」「人文地理」「地誌」から構成される、『社会現象の『空間的な配置』『因果関係』を理解する領域』『暗記量は『日本史・世界史より圧倒的に少なく』『時間投資が少なくて済む』『習得に40～60時間が必要で、『短期間での成績向上』が期待できる』『ただし、『地図帳・統計資料の読み込み能力』『グラフ・図表の分析能力』『地理的思考力』が求められ、『単なる知識の詰め込み』では対応できない』『メリット：最短習得、短期間での成績向上、知識の『汎用性』が高い。デメリット：『地理的思考』が必要で、『感覚的な才能差』が出やすい』
@@ -154,7 +154,7 @@ export default function KoukouShakaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>日本史（高1～高3）</strong> — 『「政治史」「経済史」「文化史」が『時系列的に』展開される、『日本社会の『歴史的発展過程』を理解する領域』『暗記量は『極めて膨大』『年号、人物名、出来事の『因果関係』『時代ごとの特徴』など『覚えるべき項目が無数』『習得に100～150時間の学習時間が必要で、『高1から早期の学習開始』が『合格に不可欠』『メリット：『日本の歴史理解』『時代背景の把握』が深まり、『二次試験での『記述問題』『論述問題』に強くなる。デメリット：『暗記量が膨大』『習得に時間がかかる』『効率的な勉強法』を習得していないと『時間浪費の悪循環』に陥りやすい』
@@ -162,7 +162,7 @@ export default function KoukouShakaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>世界史（高1～高3）</strong> — 『『ヨーロッパ史』『イスラム史』『東アジア史』『その他地域』が『複数の時間軸で』同時進行する、『最も『複雑で難易度が高い』領域』『暗記量は『日本史と同等かそれ以上に膨大』『多くの国・地域の『歴史的背景』『国家間の関係性』『思想的動き』が出題される』『習得に120～180時間の学習時間が必要で、『最も習得に時間がかかる科目』『メリット：『グローバルな視点』『多角的な歴史理解』『国際関係への深い洞察』が養成される。デメリット：『暗記量が『膨大で複雑』『関連付けが難しい』『習得難度が最も高い』『挫折者が最も多い科目』
@@ -170,7 +170,7 @@ export default function KoukouShakaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>倫理（高2～高3）</strong> — 『『西洋哲学』『東洋思想』『日本思想』『人生観・倫理』から構成される、『『社会科学の理論的側面』『人生の価値観』を理解する領域』『暗記量は『社会科の中でも『比較的少なく』『習得に30～50時間が必要』『ただし、『哲学者の『思想の本質』『人生問題への解答』を『深く理解する必要』があり、『浅い知識では対応不可能』『メリット：『人生観の形成』『倫理的思考力の養成』『短期習得』が可能。デメリット：『抽象的概念の理解』が必要で、『具体的な実例』なしでは『理解困難』
@@ -178,7 +178,7 @@ export default function KoukouShakaiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>政治経済（高3）</strong> — 『『政治体制』『経済体制』『国家政策』『国際政治・経済』から構成される、『『現代社会の仕組み』『時事問題』を理解する領域』『暗記量は『倫理と同程度で比較的少なく』『習得に30～50時間が必要』『ただし、『時事ネタ』『ニュース』『『今この瞬間の政治・経済現象』と『学習内容』の『即座の連携』が重要で、『新聞やニュース』の『常時チェック』が『習得の鍵』『メリット：『実用的な知識』『時事問題への対応』『短期習得』が可能。デメリット：『時事ネタの『常時更新』が必要で、『予測不可能な出題』に対応する『柔軟な思考力』が求められる』
@@ -197,7 +197,7 @@ export default function KoukouShakaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『【文学部・人文系学部志望】 → 日本史推奨』『日本の『文学』『歴史』『思想』『文化』への『深い理解』が『入試での『差別化』につながり、『二次試験での『記述問題』『論述問題』に強くなる』『【経済学部・商学部志望】 → 地理推奨』『地域ごとの『産業分布』『経済活動』『国際貿易』などの『『地理的理解』が『経済学の『『基礎教養』となり、『短期習得』『効率的な成績向上』が可能』『【国際関係学部・外国語学部志向】 → 世界史推奨』『『グローバルな視点』『各地域の『文化・思想』『国際紛争の『歴史的背景』への『深い理解』が『志望動機』『入試での『論述問題』で評価されやすい』『【法学部・政治学部志向】 → 政治経済推奨』『『政治体制』『経済システム』『法的枠組み』『『国際政治』への『実務的理解』が『『志望学部の『『適性』と『『合致』『【社会科学系全般・教育学部志向】 → 倫理推奨』『『人生観』『倫理的思考』『社会の『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[
@@ -216,7 +216,7 @@ export default function KoukouShakaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『地理の習得は『「地図帳と統計資料の『毎日の読み込み』『地域ごとの『自然条件』『経済活動』『人口分布』の『関連付け』『最近のニュースと地理の『結びつけ』という『三つのアプローチが鍵』『第一に、『地図帳を『単なる参考書』ではなく『教科書』として扱い、『毎日30～45分、『自分が興味を持つ地域』『テストに出やすい地域』を『深く読み込む習慣』をつける』『例えば、『なぜシンガポールは『『商業の中心地』になったのか』『どういう『自然条件』『地理的位置』がそれを実現したのか』という『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[
@@ -229,7 +229,7 @@ export default function KoukouShakaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『日本史の習得は『「通史の『大きな流れ』の理解』『同時代性の『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[
@@ -242,7 +242,7 @@ export default function KoukouShakaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『世界史の習得は『「地域別の『独立した通史』『同時代性の『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[
@@ -255,7 +255,7 @@ export default function KoukouShakaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『倫理・政治経済の習得は『「抽象的な『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[
@@ -274,7 +274,7 @@ export default function KoukouShakaiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『共通テスト『『『『『『『『『『『『『『『『『『[[『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『『[[
@@ -287,7 +287,7 @@ export default function KoukouShakaiPage() {
         {/* FAQ */}
         <Divider sx={{ my: 4 }} />
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくある質問（FAQ）
           </Typography>
           <FAQ items={faqItems} />

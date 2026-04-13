@@ -81,7 +81,7 @@ export default function RankingTable({ schools, startRank = 1, prefectureSlug }:
                             sx={{
                               fontWeight: 600,
                               fontSize: { xs: 13, sm: 14 },
-                              color: "#1565C0",
+                              color: "#1e782d",
                               cursor: "pointer",
                               "&:hover": { textDecoration: "underline" },
                             }}
@@ -106,8 +106,8 @@ export default function RankingTable({ schools, startRank = 1, prefectureSlug }:
                               justifyContent: "center",
                               minWidth: 24,
                               minHeight: 24,
-                              color: "#1565C0",
-                              "&:hover": { color: "#0D47A1" },
+                              color: "#1e782d",
+                              "&:hover": { color: "#0d5a1f" },
                               transition: "color 0.2s",
                             }}
                           >
@@ -147,7 +147,7 @@ export default function RankingTable({ schools, startRank = 1, prefectureSlug }:
                   )}
                 </TableCell>
                 <TableCell sx={{ textAlign: "center", px: { xs: 1, sm: 2 } }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: { xs: 14, sm: 16 }, color: "#1565C0" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: { xs: 14, sm: 16 }, color: "#1e782d" }}>
                     {formatDeviation(school)}
                   </Typography>
                 </TableCell>

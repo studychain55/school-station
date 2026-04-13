@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -128,7 +128,7 @@ export default function KoukouSchoolSelectPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -136,7 +136,7 @@ export default function KoukouSchoolSelectPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の校則と学校選びのポイント
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             校則の厳しさから見た高校比較と、自分に合った校風を見つける方法を完全解説
           </Typography>
         </Box>
@@ -148,12 +148,12 @@ export default function KoukouSchoolSelectPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>校則が厳しい学校の特徴</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>校則が厳しい学校の特徴</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>進学重点校や私立の名門校に多い傾向があります。「自主性を育てるため、厳しい枠組みの中で成長させる」という教育哲学に基づいています。生徒の非行を防止し、勉強に集中させることを重視しています。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>校則が緩い学校の特徴</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>校則が緩い学校の特徴</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>自由度を重視し、「生徒の自主性を尊重する」という教育方針を掲げる学校です。通信制高校や進学校以外の多くの高校が該当します。生徒の個性や自主的な判断を尊重することが教育の中核です。</Typography>
             </Paper>
           </Box>
@@ -162,7 +162,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>教育方針</strong> — 「規律を重視する」学校は校則が厳しく、「自主性を尊重する」学校は緩い傾向にあります。学校のパンフレットや説明会でこうした方針を確認できます。
@@ -170,7 +170,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>立地と生徒層</strong> — 都市部の学校は比較的自由で、郊外・農村部の学校は厳しい傾向があります。また進学実績が高い学校ほど校則が厳しい傾向にあります。
@@ -178,7 +178,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校の歴史</strong> — 創立100年を超える伝統校は校則が厳しい傾向があります。反対に、新しい学校（開校20年以内）は校則が緩いことが多いです。
@@ -186,7 +186,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立vs私立</strong> — 一般的に私立校の方が校則が厳しい傾向にあります。公立校は教育委員会の指導に従うため、私立校より校則が相対的に緩いことが多いです。
@@ -202,20 +202,20 @@ export default function KoukouSchoolSelectPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>制服高校のメリット</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>制服高校のメリット</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>朝の身支度が簡単で、毎日同じ制服を着るため費用管理が容易です。学校への帰属意識が高まり、不登校が減る傾向にあります。男女平等感も生まれやすいです。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>制服高校のデメリット</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>制服高校のデメリット</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>制服が自分に合わない場合、毎日不快感を抱く可能性があります。入学時に制服代（3～5万円）がかかります。校則が厳しい傾向にあり、自由度が限定されます。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>私服高校のメリット</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>私服高校のメリット</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>自分の好みで服装を選ぶ自由があり、個性を表現できます。校則が緩い傾向にあり、自分のペースで学校生活を送れます。自己表現力が高まります。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>私服高校のデメリット</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>私服高校のデメリット</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>毎日の服装選択に時間がかかります。長期的には衣服購入費が高額になります。服装による経済的・文化的格差が生まれやすくなります。</Typography>
             </Paper>
           </Box>
@@ -224,7 +224,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>性格と向き不向き</strong> — 朝の身支度が面倒な人は制服が便利です。ファッションに興味がある人は私服がおすすめです。自分の性格に合わせた選択が大切です。
@@ -232,7 +232,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>経済面の考慮</strong> — 家計に余裕がない場合は制服（初期費用のみ）が有利です。経済的に安定している場合は私服でも問題ありません。
@@ -240,7 +240,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校見学での確認</strong> — 学校見学時に制服を実際に見て、デザインが気に入るか確認しましょう。制服が素敵な学校は、生徒のモチベーションも高い傾向があります。
@@ -256,7 +256,7 @@ export default function KoukouSchoolSelectPage() {
           </Typography>
 
           <SubSection title="スマホ完全禁止の学校">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>特徴と実態：</strong>進学重点校や伝統校の一部でスマホを学校に持ち込み禁止にしている学校があります。持ち込んだ場合は没収され、保護者に返却されることもあります。
               </Typography>
@@ -267,7 +267,7 @@ export default function KoukouSchoolSelectPage() {
           </SubSection>
 
           <SubSection title="スマホ持参OK・校内使用禁止">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>特徴と実態：</strong>スマホを学校に持ってくることは許可されますが、授業中や休み時間の使用は禁止されている学校です。多くの公立高校がこのルールを採用しています。
               </Typography>
@@ -278,7 +278,7 @@ export default function KoukouSchoolSelectPage() {
           </SubSection>
 
           <SubSection title="スマホ持参・校内使用OK">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>特徴と実態：</strong>スマホの利用に関して特に規制がない学校です。通信制高校や自由度を重視する学校で見られます。
               </Typography>
@@ -292,7 +292,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自分のスマホリテラシーで判断</strong> — スマホに依存しやすい場合は持ち込み禁止の学校が合っています。自分でコントロールできれば、持参OKの学校でも問題ありません。
@@ -300,7 +300,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>友人との連絡手段の確保</strong> — スマホが禁止の場合、連絡手段を別に用意する必要があります。友人との情報共有方法を事前に確認しましょう。
@@ -319,7 +319,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>割合と特徴：</strong>進学重点校や私立の名門校、公立でも進学実績が高い学校の多くが禁止としています。全国的には約40～50%の高校がアルバイトを禁止しています。
@@ -327,7 +327,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>理由：</strong>勉強に集中させたい、生活リズムを保たせたい、非行防止という教育的配慮からです。受験勉強に専念させたいという方針が強い学校が禁止にしています。
@@ -340,7 +340,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>割合と特徴：</strong>全国的には約50～60%の高校がアルバイトを許可しています。公立高校や商業高校、進学校以外の多くの高校です。条件付きで許可する学校もあります。
@@ -348,7 +348,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>理由：</strong>「社会経験は教育の一環」という考え方、生活費が必要な家庭への配慮、生徒の自主性を尊重する方針からです。ただし成績が落ちないこと、定期テスト期間は禁止など条件がある場合も多いです。
@@ -372,7 +372,7 @@ export default function KoukouSchoolSelectPage() {
           </Typography>
 
           <SubSection title="校則が厳しい学校の進学実績">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 一般的に、校則が厳しい学校（特に進学重点校）は進学実績が良好です。しかし、これは「校則が厳しいから成績が良い」のではなく、「進学に力を入れている学校が校則を厳しくしている」という因果関係です。厳しい規律の中での学習環境が、結果的に学力向上に寄与しているとも考えられます。
               </Typography>
@@ -380,7 +380,7 @@ export default function KoukouSchoolSelectPage() {
           </SubSection>
 
           <SubSection title="校則が緩い学校の進学実績">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 校則が緩い学校でも、進学実績が優秀な学校は存在します。自由度を重視しながらも、学生の自主性を尊重し、高い進学実績を上げている学校もあります。重要なのは、学校の指導方針がどれだけ学生に適応しているかです。
               </Typography>
@@ -391,7 +391,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>教員の質と指導熱心度</strong> — 校則の厳しさより、教員の質が進学実績に大きく影響します。優秀な教員を集めている学校は、校則の有無に関わらず実績が良好です。
@@ -399,7 +399,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>入学生の学力レベル</strong> — 入試難度が高い学校ほど進学実績が良好です。校則ではなく、選別された学生の学力が成果を生んでいる側面が大きいです。
@@ -407,7 +407,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学習環境と施設</strong> — 図書館の充実、自習室の環境、ICT活用など、学習環境の質が進学実績に直結します。
@@ -415,7 +415,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学生のモチベーション</strong> — 校則の有無より、学生自身がどれだけ勉強に前向きかが重要です。自主性を尊重される中で高いモチベーションを保つ生徒も多くいます。
@@ -434,7 +434,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>生徒の服装と所作</strong> — 制服の着こなし、メイクやアクセサリーの自由度、全体的な雰囲気から校風が分かります。生徒が楽しそうに学校生活を送っているか観察しましょう。
@@ -442,7 +442,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校内の掲示物</strong> — 校則や生活指導について貼り出されている掲示物から、学校の指導方針を読み取れます。禁止事項が多いか少ないか確認しましょう。
@@ -450,7 +450,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活動の活発さ</strong> — 多様な部活が盛んな学校は、生徒に自由度を与えている傾向があります。一方、進学重点校は部活動に時間を割かないことが多いです。
@@ -458,7 +458,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>生徒と教職員の関係</strong> — 廊下で見かける生徒と教職員の関係が親密か距離があるか、観察してみましょう。信頼関係が築かれている学校では、生徒も伸び伸びとしています。
@@ -471,7 +471,7 @@ export default function KoukouSchoolSelectPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>具体的なルール</strong> — 「スマホの使用ルールについて教えてください」「アルバイトについては許可されていますか」など、具体的に質問しましょう。
@@ -479,7 +479,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>違反時の対応</strong> — 「校則違反した場合、どのような指導を受けるのか」を知ることで、学校の指導姿勢が分かります。
@@ -487,7 +487,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>生徒の生活実態</strong> — 「先輩たちの放課後の過ごし方は？」「校則は生徒にとって必要だと感じていますか？」など、在校生の実感を聞いてみましょう。
@@ -495,7 +495,7 @@ export default function KoukouSchoolSelectPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>校則の改定</strong> — 「最近、校則が改定されたことはありますか」という質問で、学校が生徒のニーズに応えようとしているか確認できます。
@@ -523,7 +523,7 @@ export default function KoukouSchoolSelectPage() {
         {/* Navigation */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 2 }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#0D47A1" } }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1e782d", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#1e782d" } }}>
               <ArrowBackIcon sx={{ fontSize: "1.2rem" }} />
               コラム一覧に戻る
             </Box>

@@ -72,14 +72,14 @@ export default function KoukouRankingPage(props: Props) {
           sx={{
             mb: 3,
             p: { xs: 2.5, sm: 3 },
-            background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)",
+            background: "linear-gradient(135deg, #e9f2ea 0%, #bcd7c0 100%)",
             borderRadius: 2,
           }}
         >
           <Typography
             variant="h1"
             component="h1"
-            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#0D47A1" }}
+            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#1e782d" }}
           >
             {areaLabel}{classLabel} 高校偏差値ランキング
           </Typography>
@@ -170,7 +170,7 @@ export default function KoukouRankingPage(props: Props) {
         </Box>
 
         {/* SEO Text Section */}
-        <Box sx={{ mb: 4, p: 2, bgcolor: "#F5F5F5", borderRadius: 1 }}>
+        <Box sx={{ mb: 4, p: 2, bgcolor: "#f4f4f4", borderRadius: 1 }}>
           <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", mb: 1.5, fontWeight: 600 }}>
             {areaLabel || "全国"}{classLabel} 高校偏差値ランキングについて
           </Typography>
@@ -221,14 +221,14 @@ export default function KoukouRankingPage(props: Props) {
               { href: "/column/bukatsu-choise/", title: "高校の部活選び｜入学前に知ること" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
-                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>
+                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>
                   {article.title}
                 </Box>
               </Link>
             ))}
           </Box>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box component="span" sx={{ fontSize: 13, color: "#1565C0", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+            <Box component="span" sx={{ fontSize: 13, color: "#1e782d", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
               すべてのコラムを見る →
             </Box>
           </Link>

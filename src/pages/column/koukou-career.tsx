@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -123,7 +123,7 @@ export default function KoukouCareerPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -131,7 +131,7 @@ export default function KoukouCareerPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校からの進路選択ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             大学・専門学校・就職・起業の選び方とキャリア設計
           </Typography>
         </Box>
@@ -146,7 +146,7 @@ export default function KoukouCareerPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>1. 大学進学</strong> — 『4年間の高度な専門教育を受け、学位取得を目指す選択肢。医師・弁護士・研究者など高度な専門職や、社会的地位の高い職業を目指す場合、ほぼ必須』『メリットは「生涯賃金が高い傾向」「高度な専門知識と思考力の習得」「人間関係ネットワークの拡大」「更なる大学院進学への道が開ける」など』『デメリットは「4年間と学費（年50～150万円）の大きな投資が必要」「専門教育が就職に直結しない場合がある」「大学での成績が就職に影響する」など』『適している生徒：学習への関心が高い、時間的・経済的余裕がある、キャリアの長期的な構築を重視する生徒』
@@ -154,7 +154,7 @@ export default function KoukouCareerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>2. 専門学校進学</strong> — 『2～4年間の実務的な専門教育に特化した選択肢。調理師・美容師・保育士・介護職・エンジニア・医療技術者など「実践スキルが優先される職業」に進む場合に有効』『メリットは「実務教育に特化し、就職に直結するスキルが習得できる」「大学より年数が短く、経済的負担が小さい」「実習や企業連携が充実し、就職実績が高い」「就職後の現場適応が早い」など』『デメリットは「大学より生涯賃金が低い傾向」「職業選択の幅が限定的」「転職時の制約が大きい場合がある」など』『適している生徒：「学ぶ内容が明確に決まっている」「実践スキルを優先する」「早期から実務経験を積みたい」生徒』
@@ -162,7 +162,7 @@ export default function KoukouCareerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>3. 高卒での就職</strong> — 『高校卒業直後に企業に就職する選択肢。中小企業の製造業・営業・事務職や、公務員（警察・消防・自衛隊）など、高卒採用枠が充実している職種に有効』『メリットは「18歳から給与を得て、経済的に自立できる」「実務経験を積み、昇進の可能性がある」「時間的余裕が生まれ、通信制大学進学も並行可能」「同僚との人間関係形成」など』『デメリットは「大学卒業者との生涯賃金格差が平均500万円以上」「職業選択の幅が限定的」「将来的なキャリアチェンジが難しい場合がある」「研修充実度が企業による大きなばらつき」など』『適している生徒：「経済的理由で進学が困難」「特定の職業が決定している」「実務経験を優先する」生徒』
@@ -170,7 +170,7 @@ export default function KoukouCareerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>4. 海外留学</strong> — 『高卒後に海外の大学・専門学校に進学する選択肢。英語圏（米国・オーストラリア・カナダ）やアジア地域（シンガポール・マレーシア）での教育を受け、国際的なキャリア構築を目指す場合に有効』『メリットは「国際的な教育環境での学習」「英語力の飛躍的向上」「グローバルなネットワーク形成」「国際企業への就職に有利」など』『デメリットは「学費・生活費の高額負担（年200～300万円）」「言語・文化の適応困難」「帰国後の就職で専攻と職業のミスマッチの可能性」など』『適している生徒：「国際的なキャリアを強く志望」「英語学習に熱心」「経済的に海外教育投資が可能」「異文化への適応力がある」生徒』
@@ -178,7 +178,7 @@ export default function KoukouCareerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>5. 起業・フリーランス</strong> — 『高卒直後に起業またはフリーランスとして自営業を開始する選択肢。プログラマー・Webデザイナー・YouTuber・ECビジネスなど「自分の力で事業を立ち上げる」タイプの生徒が対象』『メリットは「年齢制限がなく、早期に事業開始可能」「成功時の収入が極めて高い」「自分のペースで働ける」「人生経験から学ぶ」など』『デメリットは「経営スキルや経営資金が必須」「失敗時のリスク（借金・生活困難）が大きい」「社会保障が限定的」「継続的な学習と改善が必須」など』『適している生徒：「起業家精神が高い」「特定の専門スキルが既にある」「リスク管理能力が高い」「失敗から学ぶ柔軟性がある」生徒』
@@ -215,7 +215,7 @@ export default function KoukouCareerPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>職場体験・インターンシップ</strong> — 『実際の企業や施設で数日間の就業体験をするプログラム。高1或いは高2の夏休みに実施される場合が多い』『このプログラムの価値は「本」で学んだ職業のイメージと「実際の仕事」のギャップを知ることにある』『例えば、「保育士は子どもと遊ぶ楽しい仕事だと思っていたが、実際には書類作成と親対応が予想以上に大変」といった現実的な理解が得られる』『この経験から、職業選択がより現実的で納得できるものになる』『インターンシップでは、「受け身で指示待ちするのではなく、自分から質問し、学んでいく姿勢」が重要。後に志望理由書や面接でのエピソードとして活用できる』
@@ -223,7 +223,7 @@ export default function KoukouCareerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>職業講話・業界人講演</strong> — 『実際に業界で働いている人（医師・エンジニア・営業職など）が学校に来て、仕事内容・やりがい・苦労などについて講演するプログラム』『教科書的な職業情報ではなく「本人の経験と価値観に基づいた実話」が得られるため、進路決定の質を大幅に高める』『良い業界人講演では、「この職業には厳しい面もあるが、だからこそやりがいがある」といった「リアルな仕事観」が伝わる』『多くの生徒は講演後に「質疑応答」の時間があるため、自分の疑問や不安を直接質問できる。この時間で「講演者への直接質問」を活用することで、表面的な情報を超えた深い理解が可能になる』
@@ -231,7 +231,7 @@ export default function KoukouCareerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>大学出前授業・高大連携プログラム</strong> — 『大学の教員が高校に来て、大学での学習内容を講義するプログラム。また、高校生が大学キャンパスを訪問し、実際の講義を聴講するプログラムもある』『このプログラムの価値は「高校と大学の学習内容のギャップ」「大学での専門教育の具体的イメージ」「大学進学後のキャリアパス」などが理解できることにある』『例えば、「数学が好きだから理学部数学科に進もうと思っていたが、大学出前授業を聴いて、研究者というキャリアへの興味が明確化した」というような「専門との出会い」が起きる』『特に、複数の異なる学部の出前授業に参加することで、大学選択の際に「偏差値だけでなく、本当の学習内容と合致した大学」を選べるようになる』
@@ -239,7 +239,7 @@ export default function KoukouCareerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進路適性検査・キャリアカウンセリング</strong> — 『生徒の適性・興味・価値観を科学的に診断するプログラム。Benesse適性診断テスト、リクルートの素質診断など、複数の診断ツールが存在』『診断結果から「あなたに合った職業は〇〇や△△です」という客観的フィードバックが得られ、進路決定の不安が軽減される』『また、進路指導の先生によるカウンセリング（面接形式での相談）も、個人の事情（経済状況・家族の希望・本人の葛藤など）を考慮した進路選択を支援してくれる』『これらのサポートを利用することで、「自分一人での悶々とした思考」を脱却し、「専門家のアドバイスと客観的データに基づいた判断」が可能になる』

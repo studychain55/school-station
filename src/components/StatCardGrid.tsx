@@ -12,7 +12,7 @@ export default function StatCardGrid({ schools, totalCount }: Props) {
   const nationalCount = schools.filter((s) => s.classification === "NATIONAL").length;
 
   const cards = [
-    { label: "全校", count: totalCount, color: "#1565C0", bg: "#E3F2FD" },
+    { label: "全校", count: totalCount, color: "#1e782d", bg: "#e9f2ea" },
     { label: "公立", count: publicCount, color: "#2E7D32", bg: "#E8F5E9" },
     { label: "私立", count: privateCount, color: "#C62828", bg: "#FFEBEE" },
     { label: "国立", count: nationalCount, color: "#F57F17", bg: "#FFF8E1" },

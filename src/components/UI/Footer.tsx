@@ -34,16 +34,16 @@ const FOOTER_SECTIONS = [
   },
 ];
 
-const linkStyle = { color: "#BBDEFB", textDecoration: "none", fontSize: 13, lineHeight: "2" };
+const linkStyle = { color: "#bcd7c0", textDecoration: "none", fontSize: 13, lineHeight: "2" };
 
 export default function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: "#0D47A1", color: "#fff", pt: 5, pb: 3, mt: 6 }}>
+    <Box component="footer" sx={{ bgcolor: "#1e782d", color: "#fff", pt: 5, pb: 3, mt: 6 }}>
       <Container maxWidth="lg">
         <Grid container spacing={3} sx={{ mb: 4 }}>
           {FOOTER_SECTIONS.map((section) => (
             <Grid key={section.title} size={{ xs: 6, sm: 4 }}>
-              <Typography sx={{ fontWeight: 700, fontSize: 14, mb: 1.5, color: "#E3F2FD" }}>
+              <Typography sx={{ fontWeight: 700, fontSize: 14, mb: 1.5, color: "#e9f2ea" }}>
                 {section.title}
               </Typography>
               <Box component="ul" sx={{ listStyle: "none", p: 0, m: 0 }}>

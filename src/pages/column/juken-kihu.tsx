@@ -88,7 +88,7 @@ export default function JukenKihuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -96,7 +96,7 @@ export default function JukenKihuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校受験にかかるお金の全まとめ
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             費用の相場から節約術まで、受験に必要な金銭面での全知識
           </Typography>
         </Box>
@@ -106,7 +106,7 @@ export default function JukenKihuPage() {
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
             高校受験にかかるお金は、準備段階から受験当日、そして入学後までの様々な場面で発生します。事前に費用を把握し、家族で予算を立てることが重要です。
           </Typography>
-          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
               高校受験の費用は家計に大きな影響を与えます。事前に総額を把握し、塾の選択、受験校の数などを計画的に決めることで、不要な出費を抑えることができます。
             </Typography>
@@ -157,7 +157,7 @@ export default function JukenKihuPage() {
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
               高校受験では、複数校の受験が一般的です。各学校の受験料の目安は以下の通りです。
             </Typography>
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <List sx={{ m: 0 }}>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <Box>
@@ -189,7 +189,7 @@ export default function JukenKihuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>参考書・問題集</Typography>
@@ -200,7 +200,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>模試受験料</Typography>
@@ -211,7 +211,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学習アプリ・通信教育</Typography>
@@ -227,7 +227,7 @@ export default function JukenKihuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   学校見学・説明会への交通費：5,000～10,000円
@@ -235,7 +235,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   志望理由書・自己PR文の添削料（個別相談の場合）：0～10,000円
@@ -243,7 +243,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   スーツ・上履き・受験用の鞄など：10,000～20,000円
@@ -260,7 +260,7 @@ export default function JukenKihuPage() {
             以下は、受験準備から合格、入学までにかかる費用の目安です。
           </Typography>
           <Box sx={{ overflowX: "auto", mb: 3 }}>
-            <Box sx={{ minWidth: 600, bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ minWidth: 600, bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Box sx={{ mb: 2, fontWeight: 600, fontSize: "0.9rem" }}>
                 <Typography sx={{ fontWeight: 700, mb: 1 }}>シナリオA: 塾に通わない場合</Typography>
                 <Typography variant="body2" sx={{ color: "#424242", mb: 1 }}>
@@ -272,11 +272,11 @@ export default function JukenKihuPage() {
                 <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                   その他（交通費等）: 2～3万円
                 </Typography>
-                <Typography sx={{ fontWeight: 700, color: "#0D47A1" }}>
+                <Typography sx={{ fontWeight: 700, color: "#1e782d" }}>
                   総額: 22～28万円
                 </Typography>
               </Box>
-              <Box sx={{ borderTop: "1px solid #BBDEFB", pt: 2, fontWeight: 600, fontSize: "0.9rem" }}>
+              <Box sx={{ borderTop: "1px solid #bcd7c0", pt: 2, fontWeight: 600, fontSize: "0.9rem" }}>
                 <Typography sx={{ fontWeight: 700, mb: 1 }}>シナリオB: 集団指導塾に通う場合</Typography>
                 <Typography variant="body2" sx={{ color: "#424242", mb: 1 }}>
                   塾月謝と特別講座: 35～50万円
@@ -290,11 +290,11 @@ export default function JukenKihuPage() {
                 <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                   その他: 2～3万円
                 </Typography>
-                <Typography sx={{ fontWeight: 700, color: "#0D47A1" }}>
+                <Typography sx={{ fontWeight: 700, color: "#1e782d" }}>
                   総額: 47～68万円
                 </Typography>
               </Box>
-              <Box sx={{ borderTop: "1px solid #BBDEFB", pt: 2, fontWeight: 600, fontSize: "0.9rem" }}>
+              <Box sx={{ borderTop: "1px solid #bcd7c0", pt: 2, fontWeight: 600, fontSize: "0.9rem" }}>
                 <Typography sx={{ fontWeight: 700, mb: 1 }}>シナリオC: 個別指導塾に通う場合</Typography>
                 <Typography variant="body2" sx={{ color: "#424242", mb: 1 }}>
                   塾月謝と特別講座: 60～90万円
@@ -308,7 +308,7 @@ export default function JukenKihuPage() {
                 <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                   その他: 2～3万円
                 </Typography>
-                <Typography sx={{ fontWeight: 700, color: "#0D47A1" }}>
+                <Typography sx={{ fontWeight: 700, color: "#1e782d" }}>
                   総額: 72～108万円
                 </Typography>
               </Box>
@@ -326,7 +326,7 @@ export default function JukenKihuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>オンライン塾を活用</Typography>
@@ -337,7 +337,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>塾を絞る</Typography>
@@ -348,7 +348,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>キャンペーンを活用</Typography>
@@ -364,7 +364,7 @@ export default function JukenKihuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>無料リソースを活用</Typography>
@@ -375,7 +375,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>参考書は厳選</Typography>
@@ -386,7 +386,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>図書館を活用</Typography>
@@ -402,7 +402,7 @@ export default function JukenKihuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>受験校を厳選</Typography>
@@ -413,7 +413,7 @@ export default function JukenKihuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>減免制度を確認</Typography>
@@ -482,7 +482,7 @@ export default function JukenKihuPage() {
           <List>
             <ListItem disablePadding sx={{ mb: 1.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>奨学金制度</Typography>
@@ -493,7 +493,7 @@ export default function JukenKihuPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 1.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>授業料減免制度</Typography>
@@ -504,7 +504,7 @@ export default function JukenKihuPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 1.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>生活保護制度</Typography>
@@ -515,7 +515,7 @@ export default function JukenKihuPage() {
             </ListItem>
             <ListItem disablePadding>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学校の相談窓口</Typography>
@@ -536,8 +536,8 @@ export default function JukenKihuPage() {
         <Divider sx={{ my: 4 }} />
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             志望校の学費を比較しましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -550,12 +550,12 @@ export default function JukenKihuPage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -577,10 +577,10 @@ export default function JukenKihuPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   高校受験の塾・予備校の選び方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -595,10 +595,10 @@ export default function JukenKihuPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   志望校の選び方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -613,10 +613,10 @@ export default function JukenKihuPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   公立と私立高校の違い
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -642,7 +642,7 @@ export default function JukenKihuPage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <ArrowBackIcon />
                 <Typography sx={{ fontWeight: 600 }}>前の記事</Typography>
               </Box>
@@ -659,7 +659,7 @@ export default function JukenKihuPage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <Typography sx={{ fontWeight: 600 }}>コラムに戻る</Typography>
               </Box>
             </Paper>
@@ -673,7 +673,7 @@ export default function JukenKihuPage() {
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box id={id} sx={{ mb: 3 }}>
-      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#1e782d" }}>
         {title}
       </Typography>
       {children}

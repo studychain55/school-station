@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -123,7 +123,7 @@ export default function KoukouEnglishPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -131,7 +131,7 @@ export default function KoukouEnglishPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校英語・4技能対策の完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             リーディング・リスニング・スピーキング・ライティングの勉強法
           </Typography>
         </Box>
@@ -146,7 +146,7 @@ export default function KoukouEnglishPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>リーディング（読む）</strong> — 『英文を読んで内容を理解する技能。大学入学共通テストでは約100点分の配点があり、最優先で対策すべき技能』『英語長文読解問題の数と難易度が年々増加し、限られた時間内に大量の英文を読む速読能力が求められる』『高校1年生から段階的に長文読解力を磨くことが、大学進学の鍵を握る』
@@ -154,7 +154,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>リスニング（聞く）</strong> — 『英語の音声を聞いて内容を理解する技能。共通テストでは約100点分の配点があり、リーディングと同等の重要性がある』『日本の高校教育では従来リスニングが軽視される傾向があったが、現在は同等かそれ以上の対策が必須』『スピーキング練習にも直結する基礎技能』
@@ -162,7 +162,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>スピーキング（話す）</strong> — 『自分の考えや意見を英語で表現する技能。共通テストには含まれないが、総合型選抜・推薦入試の面接試験で極めて重要』『英検やGTECなどの外部試験でスピーキングスコアが高いと、大学が評価加点することが多い』『グローバル化に対応した人材育成の観点からも重視される』
@@ -170,7 +170,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ライティング（書く）</strong> — 『英語で文章を作成する技能。共通テストではごく限定的な出題だが、総合型選抜での志望理由書翻訳問題や英作文で評価される』『また、スピーキング練習の準備段階として、英文を正確に作成する力が必須』『国際交流や留学を視野に入れた生徒にとっては極めて重要』
@@ -189,7 +189,7 @@ export default function KoukouEnglishPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ1：単語力と文法力の定着確認</strong> — 『長文読解の基礎は語彙と文法。高校英語で必須の3,000語をすべて習得し、関係詞・仮定法・分詞構文などの複雑な構文を理解していることが前提』『単語帳を使った語彙学習は毎日20～30分、文法問題演習は週3時間程度が目安』
@@ -197,7 +197,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ2：スクリプト付きで精読トレーニング</strong> — 『最初は設問を見ずに、長文を「スクリプト（訳や説明）を見ながら」丁寧に読むフェーズから開始』『文の構造を図解化したり、段落ごとの要点をまとめたりして、深い理解を心がける』『1週間に1～2編のペースで、5～10回繰り返し読むことで、英語特有の論理展開パターンが脳に刻み込まれる』
@@ -205,7 +205,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ3：音読トレーニングで流暢性向上</strong> — 『同じ長文を毎日20～30分かけて、5～10回繰り返し音読することで、読むスピードが加速する』『この段階では「理解」よりも「流暢性」（スムーズに読むスピード）が目標。音読により、英語の自然なリズムとイントネーションが習得される』『3～4週間の継続で、初見の文章でも読むペースが顕著に向上』
@@ -213,7 +213,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ4：設問形式に慣れた問題演習</strong> — 『スクリプトなしで長文を読み、設問に答える演習に移行』『最初は制限時間なしで、徐々に時間制限を厳しくしていく』『1週間に3～5編のペースで、模試形式の問題演習を実施。間違えた問題は必ず復習し、なぜ間違えたのかを分析』
@@ -221,7 +221,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ステップ5：共通テスト形式での時間管理練習</strong> — 『40分で4編の長文を読み、25個の設問に答える共通テスト形式の問題演習を実施』『時間管理が鍵で、1編あたり10分程度で読み終わる必要がある。複数回の実施を通じて、時間内での正答率を高める工夫が必須』
@@ -240,7 +240,7 @@ export default function KoukouEnglishPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階1：スクリプト付きリスニング（初期段階：2～3週間）</strong> — 『音声を聞きながら、同時にスクリプトを読む学習。この段階では「聞き取り」よりも「音と意味の対応」を目的とする』『高校リスニング教科書付属のCD音声やYouTube教育チャンネルの字幕付き動画が有効。毎日30～45分の継続で、耳が英語の音に慣れ始める』『スクリプトで内容を理解したら、その音声を何度も繰り返し聞き、音とスクリプトがぴったり合致する感覚を養う』
@@ -248,7 +248,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階2：スクリプトなしリスニング（中期段階：3～4週間）</strong> — 『スクリプトを見ずに音声のみを聞き、内容を選択肢から選ぶ学習に移行』『共通テストやリスニング教材の問題形式を使用。最初は1回の音声で理解できなくても、2回目、3回目で内容をつかむ訓練』『1日45～60分、週5日以上の継続で、高1～高2レベルのリスニング問題であれば70%以上の正答率を達成可能』『この段階での「間違い」は極めて重要な学習機会で、間違えた問題のスクリプトを確認し、なぜ聞き取れなかったのかを分析する習慣が大切』
@@ -256,7 +256,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階3：シャドーイングで仕上げ（応用段階：1～2ヶ月）</strong> — 『音声を聞きながら、同時に発話する「シャドーイング」トレーニングを実施』『この学習法は、リスニング力を最高レベルに引き上げるだけでなく、スピーキング能力も同時に鍛えられる極めて効率的な方法』『1日15～20分のシャドーイングを6週間継続すれば、共通テスト本番レベルのリスニング問題でも85%以上の正答率を目指すことが現実的』『シャドーイングの際は、音声の音韻変化（同化・脱落・延伸など）を意識し、ネイティブと同じリズムで発話することが重要』
@@ -275,7 +275,7 @@ export default function KoukouEnglishPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>アプローチ1：教科書・教材を使った音読とスピーチ</strong> — 『高校英語の教科書の英文や、リスニング教材のスクリプトを繰り返し音読することで、自然な発音とリズムを習得』『さらに進んで、身近なテーマ（「私の将来の夢」「サステナビリティについて思うこと」など）について1～2分程度のスピーチを作成し、何度も繰り返し発話する訓練』『この学習法は費用がかからず、自宅で実施可能。週2～3回、各30分の継続で、スムーズな発話が可能になる』
@@ -283,7 +283,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>アプローチ2：オンライン英会話で実際の対話経験</strong> — 『DMM英会話、レアジョブ、ネイティブキャンプなどのオンライン英会話サービスを週2～3回利用』『月額5,000～10,000円程度で、フィリピン人や日本人講師との実際の英会話が実現可能』『講師との対話の中で、自分の弱点（時制の誤用・単語不足・文法誤り）が明確になり、その場で訂正を受けることで、大幅な改善が可能』『総合型選抜の面接対策として、利用する講師に「面接をしてください」と依頼すれば、本番さながらの練習ができる』
@@ -291,7 +291,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>アプローチ3：学校の英語授業での主体的な参加</strong> — 『学校の英語の授業で、グループディスカッション・プレゼンテーション・音読活動などに積極的に参加』『英語教の先生に「スピーキング練習を積極的に行いたい」と声をかけることで、英語の授業内容が自分のニーズに合わせて調整される可能性がある』『学校で英語スピーチコンテストなどの課外活動が開催されている場合、積極的に参加することで、実践的で高度なスピーキング訓練が可能』『この学習方法は費用無料で、同級生との協力により楽しみながらスピーキング能力を高められる利点がある』
@@ -310,7 +310,7 @@ export default function KoukouEnglishPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>英検（実用英語技能検定）</strong> — 『最も認知度が高く、大学・高校での受験優遇措置が最も充実している試験』『準1級取得が大学推薦入試での強力なアピール材料。2級でも上位国公立大での加点対象となることが多い』『対策：高2で準2級→2級、高3で準1級の段階的受験が現実的。各級合格までに3～4ヶ月の集中学習が必要』『費用は受験料のみで比較的安価』
@@ -318,7 +318,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>GTEC（ジーテック）</strong> — 『ベネッセが主催する大学入試向けの英語試験。スコアで合格判定を行い、段階的な成績報告がされる』『多くの国公立大学がGTECスコアを入試成績に加算する仕組みを採用。特に理系大学での活用が顕著』『対策：高1から受験開始し、段階的にスコアを伸ばす戦略が有効。高3で1200点以上が目安』『学校での一括受験の場合、受験料が割安になることもある』
@@ -326,7 +326,7 @@ export default function KoukouEnglishPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>TEAP（ティープ）</strong> — 『上智大学が中心となって開発した外部試験で、大学の推薦入試での活用が進んでいる』『特に上智大学・青山学院大学・学習院大学などのMARCH上位校での加点が充実』『対策：高2から受験開始し、高3春までに1回以上の受験を目安に。試験は年4回実施』『読む・聞く・書く・話すの4技能を評価されるため、総合的な英語力向上に直結』

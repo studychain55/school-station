@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouMorningRoutinePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouMorningRoutinePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校生の朝の習慣ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             早起き・朝勉強・集中力アップのルーティン
           </Typography>
         </Box>
@@ -153,7 +153,7 @@ export default function KoukouMorningRoutinePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ポジティブなマインドセット</strong> — 『朝の習慣が整っている生徒は心理的な安定性が高い』『毎日のルーティンで「今日も大丈夫」という自信が生まれる』『朝がスムーズに進むだけで1日全体のモチベーションが向上』『学校での人間関係・勉強へのストレスが軽減される』という『心理的な好循環』があります。
@@ -161,7 +161,7 @@ export default function KoukouMorningRoutinePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ストレス軽減と睡眠の質改善</strong> — 『朝のルーティンが整うと夜の睡眠時間も自動的に早寝になる』『毎日同じ時間に起床することで体内時計がリセット』『夜の就寝時刻も安定して、睡眠の質が向上』『睡眠の質が向上すると心理的ストレスが軽減』『翌朝もスムーズに目覚められる』という『正の循環スパイラル』が形成されます。
@@ -169,7 +169,7 @@ export default function KoukouMorningRoutinePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自己効力感の向上</strong> — 『朝の目標（6時に起床する、朝勉強を30分やる）を毎日達成する経験』『小さな成功体験の積み重ねで自信が蓄積』『「自分はできる」という自己効力感が受験期の困難に耐える力につながる』『朝の習慣が人生全体に対するポジティブな影響を与える』という『長期的な心理発達への寄与』があります。
@@ -206,7 +206,7 @@ export default function KoukouMorningRoutinePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学（得意分野に限定）</strong> — 『朝の高い思考能力を活かして、応用問題や新しい単元の学習に最適』『ただし完全に新しい内容は避けて、既習内容の応用に限定』『難度が高すぎるとモチベーション低下につながる』という『適切な難度選択』が重要です。
@@ -214,7 +214,7 @@ export default function KoukouMorningRoutinePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>英単語・英文法の反復</strong> — 『暗記系学習は朝の新鮮な脳に最適』『英単語50個を毎朝反復で3週間で定着』『英文法の問題集を同じ問題を何度も繰り返すことで脳に刻み込まれる』『短時間で実行可能で成果が目に見える』という『効率性と動機づけの両立』があります。
@@ -222,7 +222,7 @@ export default function KoukouMorningRoutinePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>古文・漢文の音読</strong> — 『古文は音読することで「言語のリズム」を脳に刻み込む』『毎朝同じ章を3日間音読すると記憶が定着』『漢文も句法を音読で習得する方法が極めて効果的』『朝食後の「目覚めきる前」の軽い活動として最適』という『言語系学習との相性の良さ』があります。
@@ -230,7 +230,7 @@ export default function KoukouMorningRoutinePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>避けるべき教科・内容</strong> — 『物理・化学などの難度の高い内容は避ける』『完全に新しい単元の学習は避ける』『問題が難しすぎてモチベーション低下につながるコンテンツ』『朝から心理的に負担になる学習』という『朝の貴重な時間を活かす選別』が重要です。
@@ -249,7 +249,7 @@ export default function KoukouMorningRoutinePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>第1段階（1～2週間）：意志の力が必要な時期</strong> — 『この期間は朝が辛い』『毎朝「起きたくない」という欲求との葛藤』『毎日が困難に感じられる』『親のサポートやアラーム複数個の設置など外部的な支援が不可欠』『この段階で挫折する生徒が多数』『ここを乗り越えることが習慣化の第一歩』という『困難だが越えるべき関門』があります。
@@ -257,7 +257,7 @@ export default function KoukouMorningRoutinePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>第2段階（2～3週間）：脳が適応し始める時期</strong> — 『この段階から朝起きるのが少しずつ楽になり始める』『朝のリズムが脳に刻まれ始める』『朝食や朝勉強への抵抗感が減少』『「朝は存在する」という新しい現実が脳に認識される』『この段階での成功体験が習慣定着を加速』という『重要な転換期』です。
@@ -265,7 +265,7 @@ export default function KoukouMorningRoutinePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>第3段階（3～4週間以降）：習慣が自動化される時期</strong> — 『この段階になると朝のルーティンが完全に自動化』『目覚まし前に目覚める生徒も出現』『朝起きることが当たり前になって、むしろ朝が楽しみになる生徒も』『習慣が完成して、その後の維持が極めて容易』『この段階到達後は、ずっと習慣を継続できる』という『習慣の完成と自動化』があります。

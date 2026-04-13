@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -117,11 +117,11 @@ export default function KoukouSenbatsuPage() {
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         <BreadCrumb items={breadcrumbs} />
 
-        <Box sx={{ textAlign: "center", py: { xs: 4, sm: 5 }, mb: 4, background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)", borderRadius: 3, color: "#fff" }}>
+        <Box sx={{ textAlign: "center", py: { xs: 4, sm: 5 }, mb: 4, background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)", borderRadius: 3, color: "#fff" }}>
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校1年生の学習ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             先取り学習・予習復習習慣づくり、中学との違いへの適応戦略
           </Typography>
         </Box>
@@ -133,17 +133,17 @@ export default function KoukouSenbatsuPage() {
           <SubSection title="中学との最大の違い">
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>授業スピードが2～3倍になり、予習なしについていくことが物理的に不可能になります。
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>内容の難度が数段階上昇し、「暗記」では対応できず「理解」が必須になります。
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>毎日4～5時間の自学習が必須になり、部活・行事との両立が現実的な課題になります。
                 </Typography>
               </ListItem>
@@ -173,25 +173,25 @@ export default function KoukouSenbatsuPage() {
           <SubSection title="高校1年のタイムラインに沿った先取り学習">
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#0D47A1", mb: 0.8 }}>春休み（入学前）</Typography>
+                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#1e782d", mb: 0.8 }}>春休み（入学前）</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>中学の復習を中心に。高校数学・英語の基礎単元を軽く予習する程度。完全な先取りは避けます。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#0D47A1", mb: 0.8 }}>高1年4月～7月</Typography>
+                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#1e782d", mb: 0.8 }}>高1年4月～7月</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>授業と同じペースで学習。予習は「教科書を読んで全体像を把握」程度。復習に時間を割くことを優先します。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#0D47A1", mb: 0.8 }}>高1年9月～12月</Typography>
+                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#1e782d", mb: 0.8 }}>高1年9月～12月</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>定期テスト対策を充実させながら、次の単元を軽く予習。「授業で初見」ではなく「復習として聞く」というマインドセットを作ります。
                   </Typography>
                 </Box>
@@ -208,19 +208,19 @@ export default function KoukouSenbatsuPage() {
           <SubSection title="実践的な習慣化ステップ">
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>Week 1-3：最初は1教科、1日15分から</strong> — すべての科目に同時に取り組むと挫折確実。数学だけ、英語だけ、という形で小さく始めます。
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>Week 4-8：同じ時間に同じ場所で</strong> — 「毎日夜7時に机に座る」という習慣化により、脳が自動的に学習モードに入ります。
                 </Typography>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon>
+                <ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>Week 9-12：成功の小さな積み重ねを記録</strong> — 「できた」という実績を見える化（シール、チェックマーク）することで、脳のドーパミン報酬系が刺激されます。
                 </Typography>
@@ -241,9 +241,9 @@ export default function KoukouSenbatsuPage() {
         <Section title="つまずきの早期発見と対応" id="tsumazuki-taisaku">
           <SubSection title="つまずきの危険信号">
             <List>
-              <ListItem disablePadding sx={{ mb: 1.5 }}><ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon><Typography variant="body2" sx={{ color: "#424242" }}>授業で「何を言っているかわからない」という状態が2～3日続く</Typography></ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}><ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon><Typography variant="body2" sx={{ color: "#424242" }}>練習問題で「解き方の流れがわからない」という状態が出現する</Typography></ListItem>
-              <ListItem disablePadding sx={{ mb: 1.5 }}><ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1565C0" }} /></ListItemIcon><Typography variant="body2" sx={{ color: "#424242" }}>予習時に「教科書を読んでもさっぱりわからない」という困惑が生じる</Typography></ListItem>
+              <ListItem disablePadding sx={{ mb: 1.5 }}><ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon><Typography variant="body2" sx={{ color: "#424242" }}>授業で「何を言っているかわからない」という状態が2～3日続く</Typography></ListItem>
+              <ListItem disablePadding sx={{ mb: 1.5 }}><ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon><Typography variant="body2" sx={{ color: "#424242" }}>練習問題で「解き方の流れがわからない」という状態が出現する</Typography></ListItem>
+              <ListItem disablePadding sx={{ mb: 1.5 }}><ListItemIcon sx={{ minWidth: 32 }}><CheckCircleIcon sx={{ color: "#1e782d" }} /></ListItemIcon><Typography variant="body2" sx={{ color: "#424242" }}>予習時に「教科書を読んでもさっぱりわからない」という困惑が生じる</Typography></ListItem>
             </List>
           </SubSection>
           <SubSection title="対応の黄金ルール：24時間以内の質問">
@@ -254,14 +254,14 @@ export default function KoukouSenbatsuPage() {
         <Box sx={{ my: 5 }}><Divider sx={{ mb: 4 }} /><FAQ items={faqItems} /></Box>
 
         <Paper elevation={0} sx={{ p: { xs: 3, sm: 4 }, background: "linear-gradient(135deg, #F5F5F5 0%, #EEEEEE 100%)", borderRadius: 2, border: "1px solid #E0E0E0", textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1", mb: 2 }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#1e782d", mb: 2 }}>
             高校1年の準備が、3年間の成否を決める
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8, mb: 3 }}>
             高校1年の最初の3ヶ月は「学習の基礎」を作る極めて重要な時期です。予習復習の習慣、つまずきの早期対応、学習環境の整備——これらを完成させることで、その後の大学受験まで安定した学力成長が実現できます。
           </Typography>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "inline-block", mt: 2, px: 3, py: 1.2, bgcolor: "#1565C0", color: "#fff", borderRadius: 1, fontWeight: 600, "&:hover": { bgcolor: "#0D47A1" } }}>
+            <Box sx={{ display: "inline-block", mt: 2, px: 3, py: 1.2, bgcolor: "#1e782d", color: "#fff", borderRadius: 1, fontWeight: 600, "&:hover": { bgcolor: "#1e782d" } }}>
               コラム一覧に戻る
             </Box>
           </Link>

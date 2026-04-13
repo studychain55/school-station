@@ -89,7 +89,7 @@ export default function GuidePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -97,15 +97,15 @@ export default function GuidePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.4rem", sm: "1.8rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校受験完全ガイド
           </Typography>
-          <Typography variant="body1" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body1" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             志望校選びから入試対策まで、受験に必要な知識をわかりやすく解説
           </Typography>
         </Box>
 
         {/* Quick Navigation */}
         <Box sx={{ mb: 5, display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2 }}>
-          <Paper elevation={0} sx={{ p: 2.5, border: "1px solid #E0E0E0", borderLeft: "4px solid #1565C0" }}>
-            <Typography variant="h3" component="h3" sx={{ fontWeight: 700, color: "#1565C0", mb: 1 }}>
+          <Paper elevation={0} sx={{ p: 2.5, border: "1px solid #E0E0E0", borderLeft: "4px solid #1e782d" }}>
+            <Typography variant="h3" component="h3" sx={{ fontWeight: 700, color: "#1e782d", mb: 1 }}>
               初心者向け
             </Typography>
             <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.6 }}>
@@ -135,7 +135,7 @@ export default function GuidePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="中学3年生の秋（9月～10月）"
@@ -146,7 +146,7 @@ export default function GuidePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="冬（11月～1月）"
@@ -157,7 +157,7 @@ export default function GuidePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="冬～春（1月～3月）"
@@ -205,7 +205,7 @@ export default function GuidePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="学力レベルの把握"
@@ -216,7 +216,7 @@ export default function GuidePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="受験戦略の立案"
@@ -227,7 +227,7 @@ export default function GuidePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="併願校の選択"
@@ -258,7 +258,7 @@ export default function GuidePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学力レベル</Typography>
@@ -270,7 +270,7 @@ export default function GuidePage() {
 
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学科・専攻分野</Typography>
@@ -282,7 +282,7 @@ export default function GuidePage() {
 
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>教育方針と特色</Typography>
@@ -294,7 +294,7 @@ export default function GuidePage() {
 
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>部活動と施設</Typography>
@@ -306,7 +306,7 @@ export default function GuidePage() {
 
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>通学の利便性</Typography>
@@ -318,7 +318,7 @@ export default function GuidePage() {
 
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>大学進学実績</Typography>
@@ -385,7 +385,7 @@ export default function GuidePage() {
 
         {/* Related Column Articles */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 700, color: "#1e782d" }}>
             関連コラム記事
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 2, mb: 2 }}>
@@ -405,14 +405,14 @@ export default function GuidePage() {
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
                 <Paper elevation={0} sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", height: "100%", "&:hover": { boxShadow: "0 2px 8px rgba(0,0,0,0.08)", borderLeftColor: "#E65100" }, transition: "all 0.2s" }}>
-                  <Typography sx={{ fontSize: 13, fontWeight: 600, color: "#0D47A1", mb: 0.5 }}>{article.title}</Typography>
+                  <Typography sx={{ fontSize: 13, fontWeight: 600, color: "#1e782d", mb: 0.5 }}>{article.title}</Typography>
                   <Typography sx={{ fontSize: 12, color: "#757575" }}>{article.desc}</Typography>
                 </Paper>
               </Link>
             ))}
           </Box>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box component="span" sx={{ fontSize: 13, color: "#1565C0", textDecoration: "underline", cursor: "pointer" }}>
+            <Box component="span" sx={{ fontSize: 13, color: "#1e782d", textDecoration: "underline", cursor: "pointer" }}>
               すべてのコラム記事を見る →
             </Box>
           </Link>
@@ -422,7 +422,7 @@ export default function GuidePage() {
 
         {/* Popular Prefecture Links */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.3rem", fontWeight: 700, color: "#1e782d" }}>
             都道府県別の高校偏差値ランキング
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", mb: 3 }}>
@@ -452,8 +452,8 @@ export default function GuidePage() {
                     borderRadius: 1,
                     fontSize: 13,
                     fontWeight: 500,
-                    color: "#1565C0",
-                    "&:hover": { bgcolor: "#F5F9FF", borderColor: "#1565C0" },
+                    color: "#1e782d",
+                    "&:hover": { bgcolor: "#F5F9FF", borderColor: "#1e782d" },
                     transition: "all 0.15s",
                   }}
                 >
@@ -464,7 +464,7 @@ export default function GuidePage() {
           </Box>
           <Box sx={{ textAlign: "center" }}>
             <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
-              <Box component="span" sx={{ fontSize: 13, color: "#1565C0", textDecoration: "underline", cursor: "pointer" }}>
+              <Box component="span" sx={{ fontSize: 13, color: "#1e782d", textDecoration: "underline", cursor: "pointer" }}>
                 全47都道府県のランキングを見る →
               </Box>
             </Link>
@@ -509,7 +509,7 @@ export default function GuidePage() {
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box id={id} sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#1e782d" }}>
         {title}
       </Typography>
       {children}

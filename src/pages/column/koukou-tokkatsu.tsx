@@ -11,7 +11,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -22,7 +22,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -133,7 +133,7 @@ export default function KoukouTokkatsuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -141,7 +141,7 @@ export default function KoukouTokkatsuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の特別活動・生徒会活動ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             入試・大学推薦に活かせる学校生活の実績作り
           </Typography>
         </Box>
@@ -159,7 +159,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>生徒会長・副会長</strong> — 『学校の意思決定機関』『学園祭や体育祭の総責任者』として『組織運営』『予算管理』『会議主催』など経営的な経験を積みます。
@@ -167,7 +167,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>書記・会計</strong> — 『記録・報告』『予算管理』といった『事務能力』『正確性』『責任感』が求められます。
@@ -175,7 +175,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>推薦入試での評価</strong> — 『学校全体をリードした経験』は『大学が求める主体性』『実行力』『社会貢献意識』の強い証拠となります。
@@ -191,7 +191,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>図書委員</strong> — 図書館の蔵書管理、利用者サービス、書評紹介、図書館催事の企画を通じて『情報活用能力』『サービス精神』を育成。
@@ -199,7 +199,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>保健委員</strong> — 感染症予防、健康診断支援、衛生啓発活動を通じて『健康管理意識』『思いやり』を育成。
@@ -207,7 +207,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>放送委員</strong> — 朝礼の放送、学校行事の実況放送、校内放送技術を通じて『コミュニケーション能力』『技術スキル』を育成。
@@ -223,7 +223,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>文化祭（学園祭）</strong> — クラスの展示企画、模擬店経営、ステージパフォーマンスなどで『創意工夫』『営業スキル』『表現力』を育成。実行委員は『全校規模の企画運営』を経験。
@@ -231,7 +231,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>体育祭</strong> — クラス対抗競技、団体競技、応援の準備などで『体力』『団結力』『応援精神』『個人の役割認識』が育成されます。
@@ -239,7 +239,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>修学旅行</strong> — 事前学習、現地での班別研修、事後報告会を通じて『自主性』『課題探究能力』『インタビュースキル』『報告表現力』を育成。
@@ -294,7 +294,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>企画力</strong> — 『去年より盛り上がるには何が必要か』『参加者は何を求めているか』『予算の中で何ができるか』といった『ニーズ分析』『アイデア出し』『実現可能性の検討』を経験。
@@ -302,7 +302,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>組織運営力</strong> — 『分科会の設置』『担当者の配置』『進捗管理』『期限管理』『課題解決』といった『プロジェクト管理』を経験。大学ゼミの『グループ研究』『課題研究』で即座に活かせるスキル。
@@ -310,7 +310,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>危機管理力</strong> — 『天候の急変対応』『機材不良への対応』『参加者の安全確保』『トラブル対応』といった『予期しない状況への対処』『判断力』『責任感』が育成。
@@ -335,7 +335,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自分の興味関心から選ぶ</strong> — 『図書が好き→図書委員』『体をよく動かしたい→体育委員』『情報発信に興味→放送委員』など、『やる気が続く委員会』を選ぶことで『質の高い活動』が可能になります。
@@ -343,7 +343,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自分の強みが活かせる委員会を選ぶ</strong> — 『企画力がある→学園祭実行委員会』『コミュニケーション能力が高い→広報委員』『きめ細かい→整理整頓が得意な生活委員』など、『既存スキルの延伸』ができる委員会を選ぶ。
@@ -351,7 +351,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>キャリア目標に関連する委員会</strong> — 『マスコミ志望→放送委員・広報委員』『図書館司書志望→図書委員』『教育学部志望→ホームルーム副担当』など、『将来の進路との関連性』を意識した選択も有効。
@@ -364,7 +364,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>1年生から継続する</strong> — 『1年間の短期活動』より『3年間継続』『2年間委員長』などの『継続性』が『責任感』『貢献度』を示す強い証拠になります。推薦入試では『複数年の活動実績』が『安定性』『熱意』の評価に繋がります。
@@ -372,7 +372,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>改善提案をする</strong> — 『昨年と同じ活動』ではなく『今年はどう工夫するか』『何が課題か』『どう解決するか』という『問題解決志向』を示すことが『創意工夫』『実行力』の評価につながります。
@@ -380,7 +380,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>成果を数字で示す</strong> — 『図書館利用者が前年比40%増』『保健委員会主催の啓発活動で感染者が20%減少』『放送アンケートで満足度が85%に達した』など『定量的な成果』があると『実行力』『効果測定能力』が評価されやすくなります。
@@ -388,7 +388,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>後進への指導を意識する</strong> — 『後輩委員の育成』『マニュアル作成』『年度末の引き継ぎ記録を整備』など『組織継続』『人材育成』を意識した活動が『リーダーシップ』『社会性』の評価を高めます。
@@ -410,7 +410,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>具体的な役職名</strong> — 『生徒会副会長』『文化祭実行委員長』『図書委員会委員長』など『何年度の何という役職か』を明記。
@@ -418,7 +418,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>具体的な活動内容</strong> — 『体育祭のスローガンを『チーム意識』に設定し、全クラスが団結した企画運営を主導した』『図書館利用促進キャンペーンで新作紹介ポップを100枚作成し利用者を増やした』など『何をしたのか』を具体的に記述。
@@ -426,7 +426,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>その活動から得た学び</strong> — 『多様な意見を調整する大切さを学んだ』『相手ニーズを考えることの重要性を気づいた』『組織の一員としての責任感を実感した』など『内省的な記述』を含める。
@@ -445,7 +445,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>成功例だけでなく失敗例も話す</strong> — 『最初の企画は上手くいかなかったが、メンバーの意見を聞いて改善した』『計画の遅れに気づいて巻き返した』など『困難からの学び』は『成長力』『レジリエンス』を示す強い証拠になります。
@@ -453,7 +453,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学び『を』実践できることを示す</strong> — 『特別活動で学んだリーダーシップを大学で活かしたい理由は？』と聞かれた時『○○大学の△△プログラムで××の研究に取り組み、チーム力を活かしたい』と『具体的な大学での活動計画』を述べることで『学学連携』『学習動機』が評価されます。
@@ -472,7 +472,7 @@ export default function KoukouTokkatsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>生徒会主催の大会期間を把握する</strong> — 部活動の『大会日程』『公式戦』を確認して『生徒会の重要会議』『行事実行委員会』がその前後に設定されるよう『段取り』することで『時間的負担』を軽減できます。
@@ -480,7 +480,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>役務免除制度の活用</strong> — 多くの学校では『試験期間中の委員会活動免除』『大きな部活大会前の活動軽減』『怪我時の役務免除』など『特別な配慮制度』が存在します。学校の生徒指導部に『部活動と特別活動の両立支援』について相談することが有効です。
@@ -488,7 +488,7 @@ export default function KoukouTokkatsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>デジタルツールの活用</strong> — 『Slack』『Google Drive』『Teams』などの『情報共有ツール』を使って『会議時間を短縮』『離れた場所での文書編集』『非同期的な意思決定』を可能にすることで『時間効率』が向上します。
@@ -512,7 +512,7 @@ export default function KoukouTokkatsuPage() {
 
         {/* FAQ Section */}
         <Box sx={{ my: 5 }}>
-          <Typography variant="h2" sx={{ fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" sx={{ fontSize: "1.5rem", fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくある質問
           </Typography>
           <FAQ items={faqItems} />
@@ -521,7 +521,7 @@ export default function KoukouTokkatsuPage() {
         {/* Navigation */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mt: 6, pt: 3, borderTop: "1px solid #ddd" }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", color: "#1565C0", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+            <Box sx={{ display: "flex", alignItems: "center", color: "#1e782d", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
               <ArrowBackIcon sx={{ mr: 1 }} />
               <Typography>コラム一覧に戻る</Typography>
             </Box>

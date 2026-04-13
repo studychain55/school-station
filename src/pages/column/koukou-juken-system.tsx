@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouJukenSystemPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouJukenSystemPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校入試の種類と仕組み
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             推薦・一般・公立・私立の入試制度を完全解説
           </Typography>
         </Box>
@@ -150,7 +150,7 @@ export default function KoukouJukenSystemPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学力試験の重要性</strong> — 公立一般選抜では『学力試験の成績』が『合格の最重要要因』となります。一般的には『学力試験の成績が70～80%』『調査書が20～30%』という配分で評価されることが多く、『高い学力試験得点』が『ほぼ合格を確実にする』ほどの影響力を持ちます。学力試験は『都道府県が統一した出題内容』『同じ日程での全校実施』という特徴があるため、『全県統一の公正な評価』が行われます。公立高校の人気校では『学力試験で120点満点中100点以上の高得点が必要』といった『非常に高い得点が求められる』傾向があります。
@@ -158,7 +158,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数校受験が可能</strong> — 公立一般選抜は『多くの都道府県で複数校の出願が可能』という重要な特徴があります。『第一志望校』『第二志望校』『第三志望校』など『複数の学校に出願』して『最も偏差値の高い合格校に進学する』という『段階受験』の考え方が有効です。ただし『各都道府県による異なるルール』『出願校数の制限』『同時出願可能な学校の条件』などが存在するため、『事前の確認』が重要です。
@@ -174,7 +174,7 @@ export default function KoukouJukenSystemPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>推薦要件と出願条件</strong> — 公立推薦選抜に出願するには『中学校長の推薦が必須』『内申点が一定基準以上（目安として4.0以上の5段階評価など）』『学習態度や生活指導で問題がない』といった『厳しい条件』が課されます。推薦制度は『学力試験では測定できない素質や適性を持つ生徒』『学校の掲げる教育理念に適合した生徒』を選抜することを目的としているため、『調査書の評価』『面接での印象評価』『小論文での表現力評価』が『重要な判定要素』となります。
@@ -182,7 +182,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>単願と併願の違い</strong> — 公立推薦選抜は『単願推薦（推薦合格時の進学確約が条件）』『併願推薦（推薦合格後も他校の一般入試受験が可能）』に分かれます。『単願推薦で合格すれば』『その高校への進学が確定される』ため『精神的安定』が得られますが『他校への出願が不可能』になります。一方『併願推薦』は『合格後も選択肢が残る』という『柔軟性』が特徴ですが『進学確約がない』ため『他校一般入試での合格を狙う』という『二転三転のリスク』があります。自分の適性『確実に合格したい』『複数の選択肢を確保したい』に応じて『適切な推薦方式』を選択することが重要です。
@@ -198,7 +198,7 @@ export default function KoukouJukenSystemPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数日程での受験機会</strong> — 私立一般入試は『複数の入試日程』『複数の教科選択パターン』を用意している学校が多く、『1月（北海道・東北地方以外）』『2月（地域によって異なる）』『3月』など『複数日程での出願が可能』です。『同じ高校に複数日程で出願』『異なる高校に出願』など『柔軟な受験戦略』が可能となり『合格の可能性を最大化』できます。ただし『各日程での合格最低点が異なる』『受験者層が異なる』ため『受験日程ごとに難度が変動する』という注意が必要です。
@@ -206,7 +206,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>受験費用と特待生制度</strong> — 私立一般入試は『1校あたりの入試出願料が15,000～25,000円程度』『複数日程受験すると総額が高くなる』という『経済的負担』があります。一方『学力試験成績が優秀な場合、授業料が減免される特待生制度』『合格後の進学意思確認なし（併願制度）』により『経済的リスク』を軽減できます。特待生制度で『授業料全額免除』『授業料50%減免』などの待遇が得られれば『実質負担額』が公立高校並みになる場合もあり『経済的理由で進学が困難』という生徒にとって『重要な進学経路』となります。
@@ -222,7 +222,7 @@ export default function KoukouJukenSystemPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校推薦と自己推薦の違い</strong> — 『学校推薦（指定校推薦）』は『高校と中学校の間での事前合意に基づき』『特定の中学校から推薦を受けた生徒のみ出願可能』という『狭き門』です。一方『自己推薦』は『生徒本人が直接出願』『学校の推薦が不要』『すべての生徒が出願可能』という『開かれた制度』です。『学校推薦は合格率が高い（80～95%）』『自己推薦は合格率が低い（30～50%）』という『大きな差』があるため『学校推薦への出願機会があれば極めて有利』です。
@@ -230,7 +230,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>スポーツ推薦と進学確約</strong> — 『スポーツ推薦』は『学校の部活動で実績を持つ生徒』『将来その部活動を担う見込みがある生徒』を対象とした『特別な推薦制度』です。スポーツ推薦は『学力試験を課さない』『内申点の基準が緩い』という『有利な条件』がある反面『進学後の部活動継続が暗黙の了解』『進学後の進路変更が困難』という『制約』があります。また『スポーツ推薦による進学』は『学力が低いまま高校に進学する』『大学進学時に学力が足りない』というリスクも存在するため『進学後の学習計画』『大学進学の可能性』を冷静に検討することが重要です。
@@ -249,7 +249,7 @@ export default function KoukouJukenSystemPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>私立入試（1月～2月中旬）</strong> — 私立高校入試は『1月中旬（大学入試センター試験のような全国模試）』『1月下旬～2月上旬』『2月中旬』など『複数日程』で実施されます。『受験料が必要』『複数日程に複数出願可能』『合格発表は試験から1～3日程度で開始』という『迅速なプロセス』が特徴です。私立入試で『複数合格を獲得』することで『進学先の保険』『経済的負担軽減の選択肢』が確保されます。
@@ -257,7 +257,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立推薦入試（2月中旬）</strong> — 公立推薦選抜は『一般的に2月中旬（中旬～下旬）』に実施されます。『推薦合格の発表は試験から1週間程度後』『合格確定から入学手続きまで1～2週間』という『短期間での決定』が求められます。『単願推薦で合格すれば』『その時点で進学が確定される』ため『その後の公立一般入試への出願はできない』という『重要な制約』があります。
@@ -265,7 +265,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立一般入試（3月上旬）</strong> — 公立高校一般選抜は『全国的に3月上旬（多くの地域で3月上旬から中旬）』に実施されます。『学力試験は全県統一の同一日程』『合格発表は試験から1週間～10日程度後』『進学手続きの期限は発表から3～5日程度』という『全国統一のプロセス』が特徴です。『公立一般入試での合格確定後は』『高等専修学校への進学変更』『工業高等専門学校への進学変更』など『進路変更の機会が限定される』ため『慎重な進学先選択』が重要です。
@@ -290,7 +290,7 @@ export default function KoukouJukenSystemPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立推薦での内申点の重要性</strong> — 公立推薦入試では『内申点が合否の50～80%を占める』という『極めて高い影響度』があります。『内申点が高い（目安として4.2以上）』ことが『推薦資格の前提条件』となり『内申点が低いと推薦を受けることさえ困難』です。このため『中学1年生の時点から定期テスト対策』『提出物の厳密な提出』『授業態度の改善』に『長期的に取り組む』ことが『推薦資格獲得』に不可欠です。
@@ -298,7 +298,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立一般での内申点の役割</strong> — 公立一般選抜では『学力試験70～80%、内申点20～30%』という『学力試験重視』の配分が一般的です。しかし『同じ学力試験得点の複数の受験生がいる場合、内申点で順位が決まる』『内申点が極端に低いと合格が困難』という『重要な役割』があります。『内申点を上げること』は『学力試験対策と同等の重要性』があり『両者の バランスを取った受験対策』が『合格を確実にする鍵』となります。
@@ -320,7 +320,7 @@ export default function KoukouJukenSystemPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略1：安全校の私立で合格確保</strong> — 『自分の模試偏差値より5～10ポイント低い私立高校』に『必ず合格できる可能性が高い』『安全校として受験』します。『1月中旬～2月上旬の私立入試で合格を確定させる』ことで『その後の公立入試に向けて精神的に余裕を持って取り組める』という『心理的メリット』があります。安全校での特待生合格により『授業料が減免される場合』『経済的メリット』も大きいです。
@@ -328,7 +328,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略2：実力相応校の私立にも合格を狙う</strong> — 『自分の模試偏差値と同程度の私立高校』に複数出願し『実力を試す』とともに『実力相応校での合格も確保』します。『複数の私立高校から合格を得る』ことで『進学先の選択肢』が増え『進学後の後悔』を防ぐことができます。
@@ -336,7 +336,7 @@ export default function KoukouJukenSystemPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略3：公立一般入試で最高峰にチャレンジ</strong> — 『私立で複数の合格を獲得した上で』『3月の公立一般入試で自分の目標とする高校にチャレンジ』します。『既に複数の合格を確保している』という『精神的な安定感』が『本番での実力発揮』を促進し『公立入試での成功確率を高める』という『心理的効果』があります。

@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouMentsetsuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouMentsetsuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校・大学入試面接対策ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             よく聞かれる質問と答え方、面接官が評価する項目、志望動機の答え方、身だしなみ・マナー対策
           </Typography>
         </Box>
@@ -155,10 +155,10 @@ export default function KoukouMentsetsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#0D47A1", mb: 0.8 }}>
+                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#1e782d", mb: 0.8 }}>
                     「あなたの長所・短所は？」
                   </Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -168,10 +168,10 @@ export default function KoukouMentsetsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
-                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#0D47A1", mb: 0.8 }}>
+                  <Typography variant="body2" sx={{ fontWeight: 600, color: "#1e782d", mb: 0.8 }}>
                     「部活動・委員会活動での経験は？」
                   </Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -188,7 +188,7 @@ export default function KoukouMentsetsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   【試験6週間前】自己分析と志望動機の作成。自分の強み・弱み・経験を整理し、個性的で説得力のある志望動機を作成します。
@@ -196,7 +196,7 @@ export default function KoukouMentsetsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   【試験4～5週間前】質問対策と回答作成。定型質問への回答を複数パターン用意し、暗記ではなく考え方を理解することが重要です。
@@ -204,7 +204,7 @@ export default function KoukouMentsetsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   【試験3～4週間前】模擬面接練習。学校の先生や塾講師と複数回の本番想定練習を行い、具体的なフィードバックを受けることが効果的です。
@@ -212,7 +212,7 @@ export default function KoukouMentsetsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   【試験1～2週間前】仕上げと本番対策。身だしなみ・入退場の所作を最終確認し、前日は十分な睡眠を取ることが重要です。
@@ -231,7 +231,7 @@ export default function KoukouMentsetsuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   試験1.5～2時間前に起床し、軽い朝食（おにぎり+卵など）を取ることで血糖値を安定させ、集中力を維持できます。
@@ -239,7 +239,7 @@ export default function KoukouMentsetsuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   会場到着後は焦って勉強を始めず、深呼吸でリラックスし、同じ受験者との比較は避けることが大切です。
@@ -265,14 +265,14 @@ export default function KoukouMentsetsuPage() {
             textAlign: "center",
           }}
         >
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1", mb: 2 }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#1e782d", mb: 2 }}>
             面接試験の対策は「計画的な準備」と「本番での落ち着き」
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8, mb: 3 }}>
             面接試験は学力試験とは異なり、その場での思考力・表現力・人間性が直接評価される試験です。事前対策で基礎を固め、本番でその実力を落ち着いて発揮することが合格の鍵となります。
           </Typography>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "inline-block", mt: 2, px: 3, py: 1.2, bgcolor: "#1565C0", color: "#fff", borderRadius: 1, fontWeight: 600, "&:hover": { bgcolor: "#0D47A1" } }}>
+            <Box sx={{ display: "inline-block", mt: 2, px: 3, py: 1.2, bgcolor: "#1e782d", color: "#fff", borderRadius: 1, fontWeight: 600, "&:hover": { bgcolor: "#1e782d" } }}>
               コラム一覧に戻る
             </Box>
           </Link>

@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -123,7 +123,7 @@ export default function KoukouMathPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -131,7 +131,7 @@ export default function KoukouMathPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校数学の勉強法完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             数学I・II・III・A・Bの攻略と共通テスト・二次試験対策
           </Typography>
         </Box>
@@ -146,7 +146,7 @@ export default function KoukouMathPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学I（高1必須）</strong> — 『二次関数・三角比・指数対数など高校数学の基礎概念が集約された必修分野。全範囲の習得に100～150時間の学習時間が必要で、この段階での理解度が全体成績を左右する最重要単元』『共通テストでも毎年出題され、確実な基礎構築が不可欠』
@@ -154,7 +154,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学A（高1並行）</strong> — 『確率・整数・図形の性質など、数学Iと異なる思考角度の内容。抽象的・論理的思考が強く求められ、「なぜそうなるのか」という推論力が重要』『共通テストのⅠAで重点配点され、確実な対策が合格に直結』
@@ -162,7 +162,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学II（高2主体）</strong> — 『複素数・微分・積分など、Iよりはるかに難易度が上がる内容。特に微積分は「面積計算」「最大値最小値」など実践的な応用が豊富で、二次試験頻出単元』『習得に120～150時間必要で、丁寧な段階的学習が必須』
@@ -170,7 +170,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学B（高2並行）</strong> — 『数列・ベクトル・統計が含まれ、IIと並行して学習される。特にベクトルは立体図形の問題で強力で、二次試験では頻繁に登場』『各単元で80～100時間の学習を要し、着実な進度管理が重要』
@@ -178,7 +178,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>数学III（高3主体）</strong> — 『微分・積分の応用と極限が中心で、理系大学の二次試験では必ず出題される。IIの微積分と比較して『抽象度と計算難度が3～4倍上昇』『IIの完全習得がないと習得困難で、最低でも150～200時間の学習時間が必須』
@@ -197,7 +197,7 @@ export default function KoukouMathPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『二次関数は高校数学の核で、この分野の習得度で数学全体の成績が決まると言っても過言でない』『効果的学習法は、①教科書の基本例題5～10個を通じて「頂点形」「標準形」「因数分解形」の3つの表現形式の使い分けを理解、②グラフ描画トレーニングを毎日30分継続し、方程式⇄グラフの相互変換を自動化、③判別式・軸・最大値最小値などの「重要な量」が何を意味するのかを深く理解、④最大値最小値問題を週5問解き、複数の制約条件を組み合わせた複雑な問題に対応力を養成する』『この方法で3～4週間の継続で、ほぼ全ての二次関数問題に対応可能になる』
@@ -205,7 +205,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『図形問題が苦手な生徒は、多くの場合「図を描く力の不足」が根本原因』『改善方法は、毎日15～20分かけて『図を丁寧に描く習慣』をつけることで、空間認識能力が劇的に向上』『さらに、『定理や性質を「図の上に書き込む習慣」』をつけることで、論理と図形のリンクが強くなり、証明問題の難度が急速に低下』『具体的には、相似・平行線・垂直・角度などの基本的な関係を『図に色分けして表示する』ことで、「見える化」が達成され、解法が明確になる』
@@ -218,7 +218,7 @@ export default function KoukouMathPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『微分は「変化率（傾き）を求める操作」、積分は「面積を求める逆操作」という『本質的な意味』を深く理解することが最優先』『多くの生徒は公式「f\'(x)」「∫f(x)dx」を無思考に適用するが、これでは応用問題で対応不可』『習得法は、①「平均変化率」から「微分係数」への論理的導出を理解し、②各基本公式（xⁿの微分など）が「なぜそうなるのか」を導出し、③実際に最大値最小値・接線・速度などの『実践的意味』を持つ問題を繰り返し解く』『この方法で4～5週間の継続で、微分のほぼ全ての応用問題に対応可能』『積分も同様に、「面積」「体積」「道のり」などの『具体的な対象』を意識しながら学習することで、抽象的な計算が意味を持つようになり、習得が加速する』
@@ -231,7 +231,7 @@ export default function KoukouMathPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『確率は「場合分けの厳密性」と「論理的推論」が極めて重要な分野で、曖昧な思考では失点が多い』『習得法は、①和の法則・積の法則・条件付き確率などの基本的な考え方をしっかり理解、②「サイコロ2個」「カード抽出」など『具体的なシナリオ』で繰り返し練習し、③複雑な条件付き確率では『樹形図や表』を使った「可視化」を心がけることで、ミスが激減』『共通テストのデータの分析では、『平均・分散・標準偏差・相関係数』などが出題されるが、単なる計算ではなく『数値の意味』を理解することが得点差につながる』『1か月の継続で、ほぼ全ての確率・統計問題に対応可能になる』
@@ -250,7 +250,7 @@ export default function KoukouMathPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階1：基礎計算の完全自動化（高2終了までに完結）</strong> — 『共通テストの致命的な失点は「計算ミス」であり、複雑な問題を時間内に解くためには、基礎計算が完全に自動化されていることが必須』『具体的には①素因数分解・②分数計算・③√の計算・④因数分解・⑤展開式を毎日10～15分かけて訓練』『この段階で計算が自動化されていると、複雑な問題も時間内に解ける余裕が生まれる』
@@ -258,7 +258,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階2：共通テスト形式への習慣化（高3春夏）</strong> — 『過去5年分の共通テスト問題を実際の時間制限下で解き、『問題形式への慣れ』『時間管理スキル』『複数単元の統合的思考』を養成』『週2回の模試演習で、本番の緊張感や時間の使い方を体験的に習得』『この段階での正答率が60%以上なら、本番で70点達成は確実』
@@ -266,7 +266,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階3：弱点分析と最終調整（高3秋冬）</strong> — 『模試や過去問の結果から『得点できない特定単元』『時間が足りない分野』『計算ミスが頻繁な単元』を分析』『これらを重点的に対策することで、本番での得点率を5～10%向上させることが可能』『特に最後の1ヶ月は、自分の弱点に特化した『ミニ参考書』を作成し、毎日30分復習することで、確実な得点安定性が実現する』
@@ -285,7 +285,7 @@ export default function KoukouMathPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高2段階：基礎の完全習得と知識の有機化</strong> — 『難関大合格には、高2段階で数学I～Bの全範囲を完全習得し、各単元を『独立した知識』ではなく『有機的につながった知識体系』として理解することが極めて重要』『具体的には、高2中にI～Bの全範囲を「標準的な参考書」を使って完成させ、その後「発展的な問題」を週5～10問解き、複数単元を組み合わせた思考になじむ』『この段階での習得度が、高3での難問演習の効率を左右するため、ここで手を抜くと後々大きな障害になる』『目安としては、高2終了時に『標準的な参考書の全ての例題が解けて』『複数単元の統合問題も解けるレベル』に到達することが必須』
@@ -293,7 +293,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高3春夏段階：難問演習と解法パターンの習得</strong> — 『高3から本格的な難問演習に移行し、教科書レベルをはるかに超える問題に毎日2～3時間挑戦』『使用教材は「大学への数学」「やさしい理系数学」など、出題単元の傾向に合わせて選定』『重要なのは『正答率』ではなく『複雑な問題のアプローチ方法を学ぶこと』で、最初の段階では正答率40%程度が目安』『難問に挑戦する過程で『どのような工夫が有効か』『どこで見通しを立てるか』という『メタ的思考』が育成され、これが後々の本番で大きな威力を発揮する』『週1回の模試受験で、実際の試験環境での対応力を確認することも重要』
@@ -301,7 +301,7 @@ export default function KoukouMathPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高3秋冬段階：過去問分析と最終仕上げ</strong> — 『志望大学の過去10年分の問題を詳しく分析し、『出題単元の傾向』『時間内での解法戦略』『部分点の取り方』『答案の書き方』を把握』『同じ大学の過去問を『最初の5回は参考書を見ながら解く』『次の3回は時間制限なしで解く』『最後の2回は本番形式で解く』という段階的アプローチが効果的』『この過程を通じて『その大学の出題傾向への完全対応』が実現し、本番での正答率が顕著に向上する』『最後の1ヶ月は『苦手単元の最終調整』と『計算ミス撲滅の訓練』に注力』『目安としては、本番での正答率70%以上の安定性を達成することが難関大合格の条件』
@@ -314,7 +314,7 @@ export default function KoukouMathPage() {
         {/* FAQ */}
         <Divider sx={{ my: 4 }} />
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくある質問（FAQ）
           </Typography>
           <FAQ items={faqItems} />

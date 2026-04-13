@@ -10,7 +10,7 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -221,8 +221,8 @@ export default function KoukouSportsPage() {
                 <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#C62828", mb: 1 }}>授業での実習時間</Typography>
                 <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7, fontSize: "0.95rem" }}>週15～20時間のスポーツ実習科目が組み込まれています。専門競技の技術向上だけでなく、複数の競技を体験し、幅広いスポーツ知識を身につけます。</Typography>
               </Paper>
-              <Paper sx={{ p: 2.5, bgcolor: "#E3F2FD", border: "1px solid #BBDEFB" }}>
-                <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>部活動</Typography>
+              <Paper sx={{ p: 2.5, bgcolor: "#e9f2ea", border: "1px solid #bcd7c0" }}>
+                <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>部活動</Typography>
                 <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7, fontSize: "0.95rem" }}>放課後・土日の練習で、より専門的・高度な競技技術を磨きます。全国大会出場を目標とした練習環境が整備されています。</Typography>
               </Paper>
             </Box>

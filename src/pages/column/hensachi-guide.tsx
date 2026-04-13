@@ -87,7 +87,7 @@ export default function HensachiGuidePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -95,7 +95,7 @@ export default function HensachiGuidePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             偏差値の見方・使い方を徹底解説
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             偏差値とは何か、どのように活用すべきか、初心者からわかりやすく解説します
           </Typography>
         </Box>
@@ -126,7 +126,7 @@ export default function HensachiGuidePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>受験者の得点</Typography>
@@ -137,7 +137,7 @@ export default function HensachiGuidePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>平均得点</Typography>
@@ -148,7 +148,7 @@ export default function HensachiGuidePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>標準偏差</Typography>
@@ -170,7 +170,7 @@ export default function HensachiGuidePage() {
 
           <Paper sx={{ overflowX: "auto", mb: 3 }}>
             <Table>
-              <TableHead sx={{ bgcolor: "#0D47A1" }}>
+              <TableHead sx={{ bgcolor: "#1e782d" }}>
                 <TableRow>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>偏差値範囲</TableCell>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>評価</TableCell>
@@ -180,12 +180,12 @@ export default function HensachiGuidePage() {
               <TableBody>
                 <TableRow sx={{ "&:nth-of-type(odd)": { bgcolor: "#F5F9FF" } }}>
                   <TableCell sx={{ fontWeight: 600 }}>70以上</TableCell>
-                  <TableCell sx={{ color: "#1565C0", fontWeight: 600 }}>最難関</TableCell>
+                  <TableCell sx={{ color: "#1e782d", fontWeight: 600 }}>最難関</TableCell>
                   <TableCell>受験者の上位2%。極めて難易度の高い学校</TableCell>
                 </TableRow>
                 <TableRow sx={{ "&:nth-of-type(odd)": { bgcolor: "#F5F9FF" } }}>
                   <TableCell sx={{ fontWeight: 600 }}>65～70</TableCell>
-                  <TableCell sx={{ color: "#0D47A1", fontWeight: 600 }}>難関</TableCell>
+                  <TableCell sx={{ color: "#1e782d", fontWeight: 600 }}>難関</TableCell>
                   <TableCell>受験者の上位7%程度。難易度の高い学校</TableCell>
                 </TableRow>
                 <TableRow sx={{ "&:nth-of-type(odd)": { bgcolor: "#F5F9FF" } }}>
@@ -227,7 +227,7 @@ export default function HensachiGuidePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="自分の偏差値より高い学校"
@@ -238,7 +238,7 @@ export default function HensachiGuidePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="自分の偏差値と同程度"
@@ -249,7 +249,7 @@ export default function HensachiGuidePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <ListItemText
                   primary="自分の偏差値より低い学校"
@@ -265,7 +265,7 @@ export default function HensachiGuidePage() {
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
               <strong>3段階志望法</strong>を参考に、複数の志望校を設定することが一般的です。
             </Typography>
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <List sx={{ m: 0 }}>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <Box>
@@ -365,8 +365,8 @@ export default function HensachiGuidePage() {
         <Divider sx={{ my: 4 }} />
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             実際に高校の偏差値を確認してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -379,12 +379,12 @@ export default function HensachiGuidePage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -406,10 +406,10 @@ export default function HensachiGuidePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   志望校の選び方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -424,10 +424,10 @@ export default function HensachiGuidePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   受験スケジュール・日程を完全ガイド
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -442,10 +442,10 @@ export default function HensachiGuidePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   内申点を上げる方法
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -471,7 +471,7 @@ export default function HensachiGuidePage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <ArrowBackIcon />
                 <Typography sx={{ fontWeight: 600 }}>コラム一覧へ</Typography>
               </Box>
@@ -488,7 +488,7 @@ export default function HensachiGuidePage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Typography sx={{ fontWeight: 600, color: "#1565C0" }}>
+              <Typography sx={{ fontWeight: 600, color: "#1e782d" }}>
                 次の記事: 志望校の選び方
               </Typography>
             </Paper>
@@ -502,7 +502,7 @@ export default function HensachiGuidePage() {
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box id={id} sx={{ mb: 3 }}>
-      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#1e782d" }}>
         {title}
       </Typography>
       {children}

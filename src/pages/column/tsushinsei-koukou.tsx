@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function TsushinSeiKoukouPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function TsushinSeiKoukouPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             通信制高校と定時制高校の違い
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             仕組み、学費、卒業条件、進学実績を徹底比較。あなたに合った高校選びをサポート
           </Typography>
         </Box>
@@ -134,7 +134,7 @@ export default function TsushinSeiKoukouPage() {
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
             通信制高校は、教育改革の一環として注目を集めている教育形態です。レポート提出、スクーリング（対面授業）、試験を組み合わせた学習方法で、高卒資格を取得できます。自分のペースで学べることが最大の特徴です。
           </Typography>
-          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
               通信制高校は、働きながら学びたい人、既に中退した人、独特な学習環境を求める人など、多様なニーズに対応した高等教育機関です。
             </Typography>
@@ -144,7 +144,7 @@ export default function TsushinSeiKoukouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>レポート提出</Typography>
@@ -155,7 +155,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>スクーリング</Typography>
@@ -166,7 +166,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>試験</Typography>
@@ -182,7 +182,7 @@ export default function TsushinSeiKoukouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自分のペースで学習可能</strong> — 仕事や趣味との両立が容易です。
@@ -190,7 +190,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>費用が安い場合が多い</strong> — 公立通信制高校は特に学費が低いです。
@@ -198,7 +198,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>多様な学生が集う</strong> — 社会人、フリーター、芸能人など、様々なバックグラウンドを持つ生徒が在籍しています。
@@ -206,7 +206,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自己管理が重要</strong> — レポート提出や学習計画を自分で管理する必要があります。
@@ -222,7 +222,7 @@ export default function TsushinSeiKoukouPage() {
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
             定時制高校は、働きながら高卒資格を取得したい人向けの教育機関です。夜間（または昼間）に毎日通学し、4年間で高卒資格を取得します。全日制高校と同じ卒業資格が得られます。
           </Typography>
-          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
               定時制高校は、昼間は働いて、夜間に学ぶという、仕事と教育を両立させたい人の強い味方です。
             </Typography>
@@ -232,7 +232,7 @@ export default function TsushinSeiKoukouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>毎日通学</Typography>
@@ -243,7 +243,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>対面授業</Typography>
@@ -254,7 +254,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>4年制が標準</Typography>
@@ -270,7 +270,7 @@ export default function TsushinSeiKoukouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>対面授業による充実した学習</strong> — 教職員との直接的なサポートが得られます。
@@ -278,7 +278,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>友人関係の構築</strong> — 毎日通学することで、同級生との関係が深まりやすいです。
@@ -286,7 +286,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校行事への参加</strong> — 文化祭や体育祭など、学校行事に参加できます。
@@ -294,7 +294,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>卒業まで時間がかかる</strong> — 4年かかるため、卒業後のキャリアスタートが遅れる場合があります。
@@ -310,9 +310,9 @@ export default function TsushinSeiKoukouPage() {
           <Box sx={{ overflowX: "auto" }}>
             <Paper sx={{ p: 0 }}>
               <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)" }}>
-                <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>項目</Box>
-                <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>通信制高校</Box>
-                <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>定時制高校</Box>
+                <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>項目</Box>
+                <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>通信制高校</Box>
+                <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 2, fontWeight: 700, fontSize: "0.9rem" }}>定時制高校</Box>
 
                 <Box sx={{ p: 2, fontWeight: 600, bgcolor: "#F5F5F5" }}>授業形態</Box>
                 <Box sx={{ p: 2 }}>レポート + スクーリング</Box>
@@ -348,7 +348,7 @@ export default function TsushinSeiKoukouPage() {
           <List>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>自己管理能力が高い人</Typography>
@@ -359,7 +359,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>働きながら学びたい人</Typography>
@@ -370,7 +370,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>趣味や特技を活かしたい人</Typography>
@@ -381,7 +381,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>自分のペースで学びたい人</Typography>
@@ -392,7 +392,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>既に中退した人</Typography>
@@ -410,7 +410,7 @@ export default function TsushinSeiKoukouPage() {
           <List>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>毎日通学できる人</Typography>
@@ -421,7 +421,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>対面授業を希望する人</Typography>
@@ -432,7 +432,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学園生活を重視する人</Typography>
@@ -443,7 +443,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 2 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>将来、大学進学を考えている人</Typography>
@@ -454,7 +454,7 @@ export default function TsushinSeiKoukouPage() {
             </ListItem>
             <ListItem disablePadding>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d" }} />
               </ListItemIcon>
               <Box>
                 <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>生活リズムを大切にしたい人</Typography>
@@ -477,7 +477,7 @@ export default function TsushinSeiKoukouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   進学実績豊富な通信制高校を選ぶことが大切です。学校のサイトで過去の進学実績を確認しましょう。
@@ -485,7 +485,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   進学対応コースや大学受験サポートプログラムがあるか確認しましょう。
@@ -493,7 +493,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   自己管理能力を高め、自学自習での学習習慣をつけることが重要です。
@@ -506,7 +506,7 @@ export default function TsushinSeiKoukouPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   定時制高校の多くは大学進学対応のコースを設置しており、進学指導が充実しています。
@@ -514,7 +514,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   夜間課程であっても、昼間に受験対策講座や補習が行われることがあります。
@@ -522,7 +522,7 @@ export default function TsushinSeiKoukouPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   4年制のため、実際の大学受験は5年目（高卒後）になることもあるため、計画的な準備が必要です。
@@ -545,7 +545,7 @@ export default function TsushinSeiKoukouPage() {
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2, my: 5 }}>
           <Link href="/column/koukou-seikatsu/" style={{ textDecoration: "none" }}>
             <Paper sx={{ p: 2, border: "1px solid #E0E0E0", textAlign: "center", cursor: "pointer", "&:hover": { boxShadow: 2 } }}>
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0", fontWeight: 600, fontSize: "0.9rem" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d", fontWeight: 600, fontSize: "0.9rem" }}>
                 <ArrowBackIcon sx={{ fontSize: "1rem" }} />
                 前の記事
               </Box>
@@ -554,7 +554,7 @@ export default function TsushinSeiKoukouPage() {
           </Link>
           <Link href="/column/koukou-setsumeikai/" style={{ textDecoration: "none" }}>
             <Paper sx={{ p: 2, border: "1px solid #E0E0E0", textAlign: "center", cursor: "pointer", "&:hover": { boxShadow: 2 } }}>
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0", fontWeight: 600, fontSize: "0.9rem" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d", fontWeight: 600, fontSize: "0.9rem" }}>
                 次の記事
                 <ArrowForwardIcon sx={{ fontSize: "1rem" }} />
               </Box>

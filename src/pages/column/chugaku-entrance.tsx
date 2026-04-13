@@ -132,7 +132,7 @@ export default function ChugakuEntrancePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -140,14 +140,14 @@ export default function ChugakuEntrancePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             中学受験の基礎知識
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             いつから準備する？費用・日程・学校選びを解説。中学受験を検討する家族必読のガイド
           </Typography>
         </Box>
 
         {/* Overview */}
         <Paper sx={{ p: { xs: 2, sm: 3 }, mb: 4, bgcolor: "#F5F5F5", border: "1px solid #E0E0E0" }}>
-          <Typography variant="h3" component="h2" sx={{ fontSize: "1.2rem", fontWeight: 700, mb: 2, color: "#0D47A1" }}>
+          <Typography variant="h3" component="h2" sx={{ fontSize: "1.2rem", fontWeight: 700, mb: 2, color: "#1e782d" }}>
             中学受験とは
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8 }}>
@@ -159,7 +159,7 @@ export default function ChugakuEntrancePage() {
 
         {/* 準備開始時期 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             準備開始時期の目安
           </Typography>
 
@@ -197,7 +197,7 @@ export default function ChugakuEntrancePage() {
 
         {/* 費用の内訳 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             費用の内訳
           </Typography>
 
@@ -209,9 +209,9 @@ export default function ChugakuEntrancePage() {
             <Table sx={{ border: "1px solid #E0E0E0" }}>
               <TableHead sx={{ bgcolor: "#F5F5F5" }}>
                 <TableRow>
-                  <TableCell sx={{ fontWeight: 700, color: "#0D47A1" }}>費用項目</TableCell>
-                  <TableCell sx={{ fontWeight: 700, color: "#0D47A1" }}>説明</TableCell>
-                  <TableCell sx={{ fontWeight: 700, color: "#0D47A1", textAlign: "right" }}>総額</TableCell>
+                  <TableCell sx={{ fontWeight: 700, color: "#1e782d" }}>費用項目</TableCell>
+                  <TableCell sx={{ fontWeight: 700, color: "#1e782d" }}>説明</TableCell>
+                  <TableCell sx={{ fontWeight: 700, color: "#1e782d", textAlign: "right" }}>総額</TableCell>
                 </TableRow>
               </TableHead>
               <TableBody>
@@ -231,7 +231,7 @@ export default function ChugakuEntrancePage() {
 
         {/* 志望校の選び方 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             志望校の選び方
           </Typography>
 
@@ -312,13 +312,13 @@ export default function ChugakuEntrancePage() {
 
         {/* 受験スケジュール */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             中学受験の日程（目安）
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "1fr" }, gap: 2 }}>
-            <Paper sx={{ p: 3, bgcolor: "#E3F2FD", border: "1px solid #BBDEFB" }}>
-              <Typography sx={{ fontWeight: 700, color: "#0D47A1", mb: 1 }}>
+            <Paper sx={{ p: 3, bgcolor: "#e9f2ea", border: "1px solid #bcd7c0" }}>
+              <Typography sx={{ fontWeight: 700, color: "#1e782d", mb: 1 }}>
                 4月～11月：塾での受験対策期間
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -359,7 +359,7 @@ export default function ChugakuEntrancePage() {
 
         {/* FAQ */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             よくある質問
           </Typography>
           <FAQ items={faqItems} />
@@ -368,8 +368,8 @@ export default function ChugakuEntrancePage() {
         <Divider sx={{ my: 4 }} />
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             実際に高校の偏差値を確認してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -382,12 +382,12 @@ export default function ChugakuEntrancePage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -401,7 +401,7 @@ export default function ChugakuEntrancePage() {
 
         {/* 関連記事 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             関連記事
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr 1fr" }, gap: 2 }}>
@@ -412,10 +412,10 @@ export default function ChugakuEntrancePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#0D47A1" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#0D47A1", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   偏差値の見方・使い方を徹底解説
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -430,10 +430,10 @@ export default function ChugakuEntrancePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#0D47A1" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#0D47A1", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   志望校の選び方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -448,10 +448,10 @@ export default function ChugakuEntrancePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#0D47A1" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#0D47A1", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   高校受験のスケジュール
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -475,8 +475,8 @@ export default function ChugakuEntrancePage() {
               }}
             >
               <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1 }}>
-                <ArrowBackIcon sx={{ fontSize: "1.2rem", color: "#0D47A1" }} />
-                <Typography variant="body2" sx={{ fontWeight: 600, color: "#0D47A1" }}>
+                <ArrowBackIcon sx={{ fontSize: "1.2rem", color: "#1e782d" }} />
+                <Typography variant="body2" sx={{ fontWeight: 600, color: "#1e782d" }}>
                   コラム一覧に戻る
                 </Typography>
               </Box>
@@ -494,7 +494,7 @@ export default function ChugakuEntrancePage() {
               }}
             >
               <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1 }}>
-                <Typography variant="body2" sx={{ fontWeight: 600, color: "#0D47A1" }}>
+                <Typography variant="body2" sx={{ fontWeight: 600, color: "#1e782d" }}>
                   高校偏差値ランキング
                 </Typography>
               </Box>

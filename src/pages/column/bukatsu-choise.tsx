@@ -186,11 +186,11 @@ export default function BukatsuChoisePage() {
           </Typography>
 
           <SubSection title="運動部">
-            <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <List>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <Box>
-                    <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5, color: "#1565C0" }}>野球・サッカー・バレーボール</Typography>
+                    <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>野球・サッカー・バレーボール</Typography>
                     <Typography variant="body2" sx={{ color: "#424242" }}>
                       <strong>練習時間：</strong> 平日2～3時間、土日は試合や練習試合。<br/>
                       <strong>難易度：</strong> 高い。毎日の練習と体力が必要。<br/>
@@ -200,7 +200,7 @@ export default function BukatsuChoisePage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <Box>
-                    <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5, color: "#1565C0" }}>テニス・陸上・水泳</Typography>
+                    <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>テニス・陸上・水泳</Typography>
                     <Typography variant="body2" sx={{ color: "#424242" }}>
                       <strong>練習時間：</strong> 平日1～2時間、土日は大会や練習。<br/>
                       <strong>難易度：</strong> 中程度。個人の頑張り次第で成果が出やすい。<br/>
@@ -210,7 +210,7 @@ export default function BukatsuChoisePage() {
                 </ListItem>
                 <ListItem disablePadding>
                   <Box>
-                    <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5, color: "#1565C0" }}>剣道・柔道・弓道</Typography>
+                    <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>剣道・柔道・弓道</Typography>
                     <Typography variant="body2" sx={{ color: "#424242" }}>
                       <strong>練習時間：</strong> 平日1.5～2時間、土日は大会。<br/>
                       <strong>難易度：</strong> 中程度。礼儀や精神修養が重視される。<br/>

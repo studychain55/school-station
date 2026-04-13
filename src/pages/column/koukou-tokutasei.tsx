@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -128,7 +128,7 @@ export default function KoukouTokutaseiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -136,7 +136,7 @@ export default function KoukouTokutaseiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の特待生・奨学金制度
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             私立高校の授業料を減らす特待生制度と奨学金の種類、申請方法を完全解説
           </Typography>
         </Box>
@@ -148,20 +148,20 @@ export default function KoukouTokutaseiPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>全額特待生（S特）</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>全額特待生（S特）</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>授業料全額免除。在学中、毎年成績基準をクリアすれば免除が継続されます。最も手厚い支援です。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>半額特待生（A特）</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>半額特待生（A特）</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>授業料の50%を免除。S特より基準はやや緩和されており、多くの高校で数多くの生徒が対象になります。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>部分特待生（B特）</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>部分特待生（B特）</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>授業料の25％免除、または入学金免除。入学金のみ免除される場合もあります。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>入学金減免</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>入学金減免</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>授業料は対象外ですが、入学金（20～30万円）のみ全額または一部免除される制度です。</Typography>
             </Paper>
           </Box>
@@ -176,7 +176,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>定期テスト成績</strong> — 中学での成績評価。平均4.5以上の高い成績が目安。進学校ほど基準は厳しくなります。
@@ -184,7 +184,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>模試成績</strong> — 塾主催や河合塾など大手模試での偏差値60以上。高い偏差値ほど特待生認定の可能性が上がります。
@@ -192,7 +192,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高校入試成績</strong> — 推薦入試や一般入試の成績により、入学後に特待生が決定される場合もあります。
@@ -205,7 +205,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>全国大会入賞</strong> — 陸上、野球、バスケットボール、剣道など、全国大会での入賞経験がある選手。
@@ -213,7 +213,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>都道府県大会出場</strong> — 都道府県大会での上位入賞。強豪校の場合、ブロック大会出場程度で対象になることもあります。
@@ -221,7 +221,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>記録・成績基準</strong> — 走幅跳で6m以上など、特定の競技で定められた基準記録を達成している場合。
@@ -234,7 +234,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>音楽コンクール入賞</strong> — 全日本学生音楽コンクールなど国際的なコンクール、全国規模の音楽コンクールでの受賞。
@@ -242,7 +242,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>美術・デザイン受賞</strong> — 展覧会での入選、美術系の全国コンテストでの受賞経験がある場合。
@@ -250,7 +250,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>英検・漢検などの資格</strong> — 英検2級以上、漢検2級以上など、高度な資格取得者が対象になることもあります。
@@ -266,7 +266,7 @@ export default function KoukouTokutaseiPage() {
           </Typography>
 
           <SubSection title="給付型奨学金（返済不要）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 給付型奨学金は返済義務がないため、家計が困窮している世帯や成績優秀者向けの奨学金として有効です。月額3,000～20,000円程度が多く、年間で数十万円の支援が受けられます。ただし給付額は家計基準や成績基準を満たす必要があり、選考が厳しい傾向にあります。
               </Typography>
@@ -274,7 +274,7 @@ export default function KoukouTokutaseiPage() {
           </SubSection>
 
           <SubSection title="貸与型奨学金（返済必要）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 貸与型奨学金は卒業後に返済する必要があります。月額1万～12万円程度が一般的で、給付型より基準が緩和されています。返済は通常20年程度の長期に渡り、月額数千円の返済が続きます。利息がつく場合と無利息の場合があるため、事前に確認することが大切です。
               </Typography>
@@ -291,7 +291,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>支給額</strong> — 世帯年収約900万円未満の家庭が対象。月額9,900～33,000円を支給（世帯年収により異なる）。
@@ -299,7 +299,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>申請方法</strong> — 学校の進路指導室で申請書をもらい、必要書類（課税証明書など）を提出します。4月に申請する場合が多いです。
@@ -307,7 +307,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>継続条件</strong> — 毎年申請・更新が必要。家計状況や学業成績により、給付対象外になる可能性があります。
@@ -334,7 +334,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>志望高校の特待生制度を調べる</strong> — パンフレット、ウェブサイト、学校説明会で、特待生の基準や種類、現在の給付状況を確認します。
@@ -342,7 +342,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>定期テストの成績を上げる</strong> — 特待生の学力基準に届くよう、中学の定期テストで高得点を目指します。平均4.5以上を目安に。
@@ -350,7 +350,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>模試を受験する</strong> — 大手塾や予備校の模試で偏差値60以上を目指します。複数回受験して着実に成績を上げることが大切です。
@@ -363,7 +363,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>推薦入試で高い成績を取る</strong> — 推薦入試の成績が特待生認定に直結する高校も多いため、推薦入試を視野に入れる場合は入試対策を集中させます。
@@ -371,7 +371,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>一般入試に向けた学習</strong> — 一般入試での高得点が特待生認定の重要な基準となります。英数国を中心に実力を高めます。
@@ -384,7 +384,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>4月中の申請が鉄則</strong> — 国の就学支援金は4月に申請する必要があります。申請期限を過ぎると遡及支給されない場合があります。
@@ -392,7 +392,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校の奨学金情報説明会に参加</strong> — 入学後、学校は奨学金制度の説明会を開催します。複数の奨学金の併給可能性も確認できます。
@@ -419,7 +419,7 @@ export default function KoukouTokutaseiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>欠席・遅刻を減らす</strong> — 出席状況が悪い場合、特待生資格が失われることがあります。定期的な出席が基本です。
@@ -427,7 +427,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>問題行動を避ける</strong> — 懲罰や指導を受けた場合、特待生資格の取り消しに至る可能性があります。規律ある学校生活を心がけましょう。
@@ -435,7 +435,7 @@ export default function KoukouTokutaseiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>家計状況の確認</strong> — 奨学金では、年1回家計を確認される場合があります。家計が改善した場合、給付が打ち切られることもあります。
@@ -455,7 +455,7 @@ export default function KoukouTokutaseiPage() {
         {/* Navigation */}
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 2 }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#0D47A1" } }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1e782d", fontWeight: 600, cursor: "pointer", "&:hover": { color: "#1e782d" } }}>
               <ArrowBackIcon sx={{ fontSize: "1.2rem" }} />
               コラム一覧に戻る
             </Box>

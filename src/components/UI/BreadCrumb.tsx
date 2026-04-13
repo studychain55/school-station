@@ -17,7 +17,7 @@ export default function BreadCrumb({ items }: Props) {
           <Link
             key={i}
             href={item.href}
-            style={{ color: "#1565C0", textDecoration: "none" }}
+            style={{ color: "#1e782d", textDecoration: "none" }}
           >
             {item.label}
           </Link>

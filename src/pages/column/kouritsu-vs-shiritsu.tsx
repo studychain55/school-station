@@ -189,7 +189,7 @@ export default function KoritsuVsShiritsuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -197,14 +197,14 @@ export default function KoritsuVsShiritsuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             公立高校と私立高校の違い
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             学費、教育内容、受験方法、校風を徹底比較。あなたに合った学校選びをサポートします
           </Typography>
         </Box>
 
         {/* 概要 */}
         <Paper sx={{ p: { xs: 2, sm: 3 }, mb: 4, bgcolor: "#F5F5F5", border: "1px solid #E0E0E0" }}>
-          <Typography variant="h3" component="h2" sx={{ fontSize: "1.2rem", fontWeight: 700, mb: 2, color: "#0D47A1" }}>
+          <Typography variant="h3" component="h2" sx={{ fontSize: "1.2rem", fontWeight: 700, mb: 2, color: "#1e782d" }}>
             公立高校と私立高校の基本的な違い
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8 }}>
@@ -214,13 +214,13 @@ export default function KoritsuVsShiritsuPage() {
 
         {/* 比較表 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             公立・私立の主要な違い
           </Typography>
 
           <TableContainer component={Paper} sx={{ mb: 3 }}>
             <Table>
-              <TableHead sx={{ bgcolor: "#0D47A1" }}>
+              <TableHead sx={{ bgcolor: "#1e782d" }}>
                 <TableRow>
                   <TableCell sx={{ color: "#fff", fontWeight: 700, fontSize: "0.95rem" }}>項目</TableCell>
                   <TableCell sx={{ color: "#fff", fontWeight: 700, fontSize: "0.95rem" }}>公立高校</TableCell>
@@ -230,7 +230,7 @@ export default function KoritsuVsShiritsuPage() {
               <TableBody>
                 {comparisonData.map((row, idx) => (
                   <TableRow key={idx} sx={{ backgroundColor: idx % 2 === 0 ? "#F5F5F5" : "#fff" }}>
-                    <TableCell sx={{ fontWeight: 700, color: "#0D47A1", fontSize: "0.95rem" }}>{row.item}</TableCell>
+                    <TableCell sx={{ fontWeight: 700, color: "#1e782d", fontSize: "0.95rem" }}>{row.item}</TableCell>
                     <TableCell sx={{ fontSize: "0.9rem", color: "#424242" }}>{row.koritsu}</TableCell>
                     <TableCell sx={{ fontSize: "0.9rem", color: "#424242" }}>{row.shiritsu}</TableCell>
                   </TableRow>
@@ -244,7 +244,7 @@ export default function KoritsuVsShiritsuPage() {
 
         {/* メリット・デメリット */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             メリット・デメリット比較
           </Typography>
 
@@ -258,7 +258,7 @@ export default function KoritsuVsShiritsuPage() {
                     fontSize: "1.1rem",
                     fontWeight: 700,
                     mb: 2,
-                    color: idx % 2 === 0 ? "#0D47A1" : "#E65100",
+                    color: idx % 2 === 0 ? "#1e782d" : "#E65100",
                   }}
                 >
                   {section.title}
@@ -280,13 +280,13 @@ export default function KoritsuVsShiritsuPage() {
 
         {/* 学費詳細比較 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             学費の詳細比較
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" }, gap: 3 }}>
-            <Paper sx={{ p: 3, bgcolor: "#E3F2FD", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 2, color: "#0D47A1" }}>
+            <Paper sx={{ p: 3, bgcolor: "#e9f2ea", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 2, color: "#1e782d" }}>
                 公立高校の学費
               </Typography>
               <Box component="ul" sx={{ pl: 2 }}>
@@ -303,8 +303,8 @@ export default function KoritsuVsShiritsuPage() {
                   <strong>年間総額</strong>：約50～70万円
                 </Typography>
               </Box>
-              <Box sx={{ pt: 2, borderTop: "1px solid #BBDEFB", mt: 2 }}>
-                <Typography variant="caption" sx={{ color: "#0D47A1", fontWeight: 700 }}>
+              <Box sx={{ pt: 2, borderTop: "1px solid #bcd7c0", mt: 2 }}>
+                <Typography variant="caption" sx={{ color: "#1e782d", fontWeight: 700 }}>
                   ※都道府県により異なります
                 </Typography>
               </Box>
@@ -341,13 +341,13 @@ export default function KoritsuVsShiritsuPage() {
 
         {/* 受験方法の違い */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             受験方法の違い
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "1fr 1fr" }, gap: 3 }}>
             <Paper sx={{ p: 3, border: "1px solid #E0E0E0" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, mb: 2, color: "#0D47A1" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, mb: 2, color: "#1e782d" }}>
                 公立高校
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242", mb: 2, lineHeight: 1.8 }}>
@@ -394,13 +394,13 @@ export default function KoritsuVsShiritsuPage() {
 
         {/* 学校選びのポイント */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             公立・私立を選ぶ時のポイント
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "repeat(2, 1fr)" }, gap: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#E3F2FD", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1.5, color: "#0D47A1" }}>
+            <Paper sx={{ p: 2.5, bgcolor: "#e9f2ea", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1.5, color: "#1e782d" }}>
                 公立高校がおすすめの場合
               </Typography>
               <Box component="ul" sx={{ pl: 2 }}>
@@ -445,15 +445,15 @@ export default function KoritsuVsShiritsuPage() {
 
         {/* FAQ */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             よくある質問
           </Typography>
           <FAQ items={faqItems} />
         </Box>
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             実際に高校の偏差値を確認してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -466,12 +466,12 @@ export default function KoritsuVsShiritsuPage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -485,7 +485,7 @@ export default function KoritsuVsShiritsuPage() {
 
         {/* 関連記事 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             関連記事
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2 }}>

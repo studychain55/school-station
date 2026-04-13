@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouSogoPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouSogoPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             総合型選抜（AO入試）の対策ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             学力試験なしで評価される、志望理由書・面接・活動実績の準備方法
           </Typography>
         </Box>
@@ -147,7 +147,7 @@ export default function KoukouSogoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学力試験の廃止または簡易化</strong> — 『学力試験がない、または国語・数学・英語などの基礎学力確認のみ』『学力試験の配点が極めて低い、または合否判定に影響しない』という『学力試験中心の一般入試とは全く異なる評価方式』です。『学力試験がなければ、学力が低い生徒も合格可能性がある』『自分の強みを活かした受験戦略が可能』という『大きなメリット』があります。
@@ -155,7 +155,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>志望理由書の提出と審査</strong> — 『志望理由書は「なぜこの高校を志望したのか」「高校で何を学びたいのか」「将来のキャリアプランは何か」を1000～1500字程度で記述する極めて重要な書類』です。『志望理由書の質が第一次選考の合否を大きく左右する』『表面的な理由ではなく、具体的で説得力のある理由が必須』『高校訪問や学園祭参加などの体験を根拠に挙げることが重要』という『準備の質が問われる』重要なプロセスです。
@@ -163,7 +163,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数回の面接選考と活動実績の評価</strong> — 『総合型選抜では複数回（第一次・第二次・最終）の面接が実施されることが一般的』『各面接で志望動機の一貫性、活動実績の詳細、高校入学後の成長意欲などが多角的に評価される』『部活動成績、生徒会役職、ボランティア活動、外部資格取得などの『課外活動の実績が極めて重要な評価要素』です。『実績そのものよりも「その経験から何を学んだのか」という内省力が重要』『面接官は「この生徒は高校で成長する可能性があるか」を評価する』という『定性的な評価の重要性』があります。
@@ -171,7 +171,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>入試時期の早期化（秋の9月～11月開始）</strong> — 『総合型選抜の多くは秋の9月から開始される』『合格発表は秋～冬と比較的早い』『早期合格により、進学先を決定してから冬の一般入試準備に移行することが可能』『ただし、総合型選抜での不合格の場合は推薦入試や一般入試での受験が可能』という『受験戦略の柔軟性』がメリットです。
@@ -190,7 +190,7 @@ export default function KoukouSogoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>私立進学校（大学進学実績が豊富）</strong> — 『将来性が高い生徒、明確な進学目標を持つ生徒を採用する』『学力は高い必要があるが、総合型選抜なら当日の学力試験で失敗しても合格可能』『スーパーイングリッシュプログラムなどの特色教育への適性が評価される』という特徴があります。
@@ -198,7 +198,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>中高一貫私立校</strong> — 『6年間の一貫教育に適した生徒を採用』『長期的な視点で自分のキャリアを考えられる生徒が有利』『部活動や課外活動に継続的に取り組む姿勢が重視される』という特徴があります。
@@ -206,7 +206,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>国際系高校・英語教育重視校</strong> — 『英検準2級以上の資格保有者、海外経験、英語学習への強い関心が極めて重視される』『帰国子女や留学経験者、国際交流活動の経験者が有利』『TOEICやTOEFL等の外部資格試験の成績が評価対象』という特徴があります。
@@ -214,7 +214,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>都立・県立特色校（キャリア教育や探究学習が充実）</strong> — 『自分で課題を設定して研究できる生徒を採用』『社会への関心が高く、主体的に学習する姿勢が重要』『ボランティア活動や地域貢献活動の経験が高く評価される』という特徴があります。
@@ -233,7 +233,7 @@ export default function KoukouSogoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>具体性（なぜこの高校か、他ではなく）</strong> — 『「進学実績が良いから」「きれいなキャンパスだから」という理由は絶対に避ける』『「学園祭で～というプログラムを見て、このような学びがしたいと思った」「英語教育に力を入れている点に魅力を感じた」という『高校訪問や学園祭参加、パンフレット研究などの体験に基づいた具体的な理由』が必須です。『他校との違いを明確に打ち出す』『高校の教育方針・プログラム・施設設備などの具体的要素を挙げる』ことが『説得力のある志望理由書』につながります。
@@ -241,7 +241,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>一貫性（過去の活動実績と志望理由の繋がり）</strong> — 『志望理由書で「〇〇に関心がある」と述べた場合、中学校での活動実績で該当する実績があるべき』『例えば「国際交流に関心がある」なら「英検の勉強を3年間継続してきた」「国際交流ボランティアに参加した」などの根拠が必要』『活動経験と志望理由が矛盾していない』『志望理由が自分の成長過程の必然的な結果に見える』という『ストーリー性のある志望理由書』が『高く評価される』重要なポイントです。
@@ -249,7 +249,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>明確性（高校で何を学びたい、その先何を目指す）</strong> — 『「英語を学びたい」という曖昧な表現ではなく「英語で国際交流ができる人材になり、将来は国連職員として世界平和に貢献したい」などの『具体的で高い目標』が必要です。『高校での3年間で何を成し遂げたいのか』『その先のキャリアをどう構想しているのか』『高校がその目標達成に必要な場所である理由』という『三層構造の明確な目標設定』が『審査官の心を掴む志望理由書』につながります。
@@ -257,7 +257,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>文章力と論理性</strong> — 『誤字脱字がない』『句読点の使い方が正しい』『段落構成が明確（序論・本論・結論）』『文章が読みやすく、意味が明確』という『基本的な文章技能』が重要です。『一文が長すぎない』『抽象的な表現ばかりでなく、具体例を交える』『接続詞の使い方が適切』という『読み手を意識した文章表現』が『審査官の好感度を高める』重要な要素です。
@@ -282,7 +282,7 @@ export default function KoukouSogoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自己紹介（30秒～1分）</strong> — 『名前』『出身中学』『部活動・課外活動』『自分の特徴』『志望理由（端的に）』などを『時間内に効果的にまとめる』『相手の目を見て、聞き手を意識した話し方』『堂々とした態度』が重要です。『何度も練習して、自然な自己紹介ができるまで磨く』ことが『面接の第一印象を大きく左右する』極めて重要なステップです。
@@ -290,7 +290,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>志望動機（「なぜこの高校か」を明確に）</strong> — 『「この高校の～というプログラムに魅力を感じた」「学園祭で見た～という授業展開に強く惹かれた」という『具体的で説得力のある理由』『他校との違いを明確に説明できる力』『高校の特色・教育方針を理解した上での志望であることを示す』という『本気度が伝わる志望動機の説明』が『面接官の好感度を高める』重要なポイントです。
@@ -298,7 +298,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>将来の夢・キャリアプラン（具体性が重要）</strong> — 『「〇〇分野で働きたい」という程度では不十分』『「〇〇という社会課題を解決するために〇〇という職業を目指す」「その目標を達成するために高校では～を学びたい」という『多段階の具体的なキャリアプラン』『高校選択がそのキャリアプランに必須である理由』を『論理的に説明できる力』が『成熟した生徒であることを示す』重要な評価要素です。
@@ -306,7 +306,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>活動実績の説明（数字ではなく経験から何を学んだか）</strong> — 『「部活動で県大会に出場した」という事実よりも「県大会出場という高い目標達成のプロセスで、チームワークの重要性を学んだ」「失敗から立ち直る力が身についた」という『内省的で成長志向の説明』『具体的なエピソード』『その経験が将来にどう活かされるのか』という『質的な評価』が『面接官が重視する評価ポイント』です。
@@ -314,7 +314,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>逆質問（相手に対する質問）</strong> — 『面接の最後に「何か質問がありますか」と聞かれる』『「ありません」と答えるのは関心がないと思われる危険がある』『「高校在学中に海外研修の機会はあるか」「英検取得をサポートするプログラムはあるか」など『志望理由と繋がった、前向きな質問』『高校への関心の高さを示す質問』を準備しておくことが『面接官に良い印象を与える』重要なスキルです。
@@ -333,7 +333,7 @@ export default function KoukouSogoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段落構成（序論・本論・結論）の徹底</strong> — 『序論で自分の主張を明確に述べ』『本論で複数の具体例や根拠を提示して主張を展開し』『結論で全体をまとめる』という『論理的で説得力のある構成』『読者が「この生徒は論理的に考えられる」と感じられる文章構成』が『高得点を獲得する』基本的要素です。
@@ -341,7 +341,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>具体例の活用</strong> — 『抽象的な表現ばかりでなく、新聞記事・統計データ・歴史的事例・身近な経験などの『具体例を複数提示』『説得力を大きく高める』という『評価者が納得できる根拠の充実』が『小論文の質を大きく高める』極めて重要なスキルです。
@@ -349,7 +349,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>過去問とテーマ演習</strong> — 『志望高校の過去3～5年の小論文テーマを調べて、該当テーマで複数回の作成・添削練習』『社会的課題・環境問題・教育問題などのテーマを広く研究』『時事問題への理解を深める』という『継続的な演習』が『実試験での高得点獲得』に必須です。教科の先生に『小論文添削を何度も依頼』『フィードバックを反映した修正』『改善のプロセスを繰り返す』ことが『確実な小論文力向上』につながります。
@@ -362,7 +362,7 @@ export default function KoukouSogoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>他者の意見を尊重する姿勢</strong> — 『異なる意見を聞いて「なぜそのような意見なのか」と質問する』『相手の発言を認めながら、自分の意見を述べる』『議論を自分の主張を押し通すのではなく「みんなで最良の結論に到達する」という姿勢』『協調性とリーダーシップが両立している』という『成熟した態度』が『グループディスカッションで最も高く評価される』重要なポイントです。
@@ -370,7 +370,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>議論を深める質問力</strong> — 『相手の発言に対して「〇〇という根拠がある」という質問』『「その意見とこの意見は矛盾していないか」という論理的な質問』『複数の立場から考察する多面的思考』『議論全体の進行状況を把握して「そろそろ結論を出してみてはどうか」という進行管理』が『グループ内でのリーダーシップ』『思考の深さ』を示す重要な行動です。
@@ -378,7 +378,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>実践演習の重要性</strong> — 『複数の友人とグループディスカッション練習を10回以上重ねる』『異なる立場を持つ人との議論を何度も経験』『自分がどのような役割を果たしやすいのか（リーダー・サポーター・進行管理）を認識』『改善点を反映した本番での実践』という『継続的で実践的な準備』が『当日の高いパフォーマンス』に繋がります。
@@ -397,7 +397,7 @@ export default function KoukouSogoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活動の実績（競技成績・役職・継続性）</strong> — 『県大会出場・全国大会出場などの競技成績』『部長・副部長などの役職』『3年間継続して活動することで培った継続性』『失敗経験から立ち直った経験』などが『評価対象』です。『成績が出ていない部活でも「チームの雰囲気改善のために何をしたか」「困っている後輩をサポートした」という『リーダーシップと思いやりの行動』『実績よりも姿勢が評価される』ケースも多いです。
@@ -405,7 +405,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>生徒会・委員会活動（リーダーシップ・企画力）</strong> — 『生徒会役職（会長・副会長・書記・会計など）』『学園祭・体育祭などの企画運営』『委員会での主導的な活動』『生徒会の活動を通じてどのような課題を認識し、どう解決したか』という『リーダーシップと問題解決力』『学校全体への貢献』が『高く評価される』重要なポイントです。
@@ -413,7 +413,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ボランティア活動・社会貢献（社会的関心・共感力）</strong> — 『福祉施設訪問・地域清掃活動・寄付活動などの継続的なボランティア』『社会的課題への関心の高さ』『困難な状況にある人への共感力』『ボランティア活動から何を学んだか』という『社会性と内省力』が『総合型選抜で極めて高く評価される』重要な要素です。『実績の大きさよりも「社会課題への本気度」「継続的に取り組む力」が評価される』という『質的な評価基準』があります。
@@ -421,7 +421,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>外部資格試験の取得（英検・漢検・数検等）</strong> — 『英検準2級以上』『漢検2級以上』『数検3級以上』などの『難度の高い資格取得』『資格取得に向けた継続的な学習』『資格を活かした学習への積極的な取り組み』が『学習意欲・継続性・成長志向』の『客観的な証拠』となります。『国際系高校への志望なら英検、理系志望なら数検』という『志望理由と資格の一貫性』が『より高く評価される』ポイントです。
@@ -429,7 +429,7 @@ export default function KoukouSogoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学習成績・特定教科での優秀さ</strong> — 『定期テストで常に高得点』『特定教科（英語・数学など）での優秀性』『学習コンテスト・科学展示会などでの入賞経験』『研究発表での評価』などの『学習面での実績』『知識追究の強い動機付け』が『進学校への志望との一貫性』『学習への真摯な姿勢』を示す重要な要素です。

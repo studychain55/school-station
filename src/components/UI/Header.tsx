@@ -12,7 +12,7 @@ export default function Header() {
           top: 0,
           zIndex: 2000,
           padding: "8px 16px",
-          backgroundColor: "#0D47A1",
+          backgroundColor: "#1e782d",
           color: "#fff",
           textDecoration: "none",
         }}
@@ -24,7 +24,7 @@ export default function Header() {
       <AppBar
         position="sticky"
         sx={{
-          bgcolor: "#0D47A1",
+          bgcolor: "#1e782d",
           boxShadow: "0 1px 3px rgba(0,0,0,0.12)",
         }}
       >
@@ -40,7 +40,7 @@ export default function Header() {
             <Box sx={{ flexGrow: 1 }} />
             <Link
               href="/rankings/koukou/"
-              style={{ textDecoration: "none", color: "#E3F2FD", fontSize: 14, fontWeight: 500 }}
+              style={{ textDecoration: "none", color: "#e9f2ea", fontSize: 14, fontWeight: 500 }}
             >
               高校偏差値ランキング
             </Link>

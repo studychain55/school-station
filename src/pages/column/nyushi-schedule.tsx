@@ -189,7 +189,7 @@ export default function NyushiSchedulePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -197,14 +197,14 @@ export default function NyushiSchedulePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校受験のスケジュール
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             中3の年間スケジュール。春の基礎固めから冬の追い込みまで、受験を成功させるための時間配分と重要ポイント
           </Typography>
         </Box>
 
         {/* 概要 */}
         <Paper sx={{ p: { xs: 2, sm: 3 }, mb: 4, bgcolor: "#F5F5F5", border: "1px solid #E0E0E0" }}>
-          <Typography variant="h3" component="h2" sx={{ fontSize: "1.2rem", fontWeight: 700, mb: 2, color: "#0D47A1" }}>
+          <Typography variant="h3" component="h2" sx={{ fontSize: "1.2rem", fontWeight: 700, mb: 2, color: "#1e782d" }}>
             受験スケジュール全体像
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8 }}>
@@ -214,7 +214,7 @@ export default function NyushiSchedulePage() {
 
         {/* スケジュール表 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             中3の年間スケジュール
           </Typography>
 
@@ -228,7 +228,7 @@ export default function NyushiSchedulePage() {
                   </Typography>
                 </Box>
 
-                <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 2, color: "#0D47A1" }}>
+                <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 2, color: "#1e782d" }}>
                   {item.title}
                 </Typography>
 
@@ -260,7 +260,7 @@ export default function NyushiSchedulePage() {
 
         {/* 時期別詳細ガイド */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             時期別の勉強の重点ポイント
           </Typography>
 
@@ -283,8 +283,8 @@ export default function NyushiSchedulePage() {
               </Typography>
             </Paper>
 
-            <Paper sx={{ p: 3, bgcolor: "#E3F2FD", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 2, color: "#1565C0" }}>
+            <Paper sx={{ p: 3, bgcolor: "#e9f2ea", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 2, color: "#1e782d" }}>
                 秋（9月～11月）：志望校対策と実践問題
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8 }}>
@@ -307,13 +307,13 @@ export default function NyushiSchedulePage() {
 
         {/* モチベーション維持 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             受験勉強を成功させるコツ
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", md: "1fr" }, gap: 2 }}>
             <Paper sx={{ p: 2.5, border: "1px solid #E0E0E0" }}>
-              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
                 1. 月単位と週単位の目標を設定
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -322,7 +322,7 @@ export default function NyushiSchedulePage() {
             </Paper>
 
             <Paper sx={{ p: 2.5, border: "1px solid #E0E0E0" }}>
-              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
                 2. 定期考査と入試対策の両立
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -331,7 +331,7 @@ export default function NyushiSchedulePage() {
             </Paper>
 
             <Paper sx={{ p: 2.5, border: "1px solid #E0E0E0" }}>
-              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
                 3. 苦手科目の早期対策
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -340,7 +340,7 @@ export default function NyushiSchedulePage() {
             </Paper>
 
             <Paper sx={{ p: 2.5, border: "1px solid #E0E0E0" }}>
-              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
                 4. 親のサポートとコミュニケーション
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -349,7 +349,7 @@ export default function NyushiSchedulePage() {
             </Paper>
 
             <Paper sx={{ p: 2.5, border: "1px solid #E0E0E0" }}>
-              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
                 5. 体調管理と生活習慣
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -358,7 +358,7 @@ export default function NyushiSchedulePage() {
             </Paper>
 
             <Paper sx={{ p: 2.5, border: "1px solid #E0E0E0" }}>
-              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+              <Typography variant="h4" component="h4" sx={{ fontSize: "1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
                 6. 模擬試験の活用
               </Typography>
               <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -372,15 +372,15 @@ export default function NyushiSchedulePage() {
 
         {/* FAQ */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             よくある質問
           </Typography>
           <FAQ items={faqItems} />
         </Box>
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             実際に高校の偏差値を確認してみましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -393,12 +393,12 @@ export default function NyushiSchedulePage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -412,7 +412,7 @@ export default function NyushiSchedulePage() {
 
         {/* 関連記事 */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, mb: 3, color: "#1e782d" }}>
             関連記事
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" }, gap: 2 }}>

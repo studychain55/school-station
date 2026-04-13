@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -123,7 +123,7 @@ export default function KoukouClubPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -131,7 +131,7 @@ export default function KoukouClubPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の部活動ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             部活の選び方・勉強との両立・引退後の受験対策完全解説
           </Typography>
         </Box>
@@ -146,7 +146,7 @@ export default function KoukouClubPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>運動部</strong> — 『野球・サッカー・バレーボール・バスケットボール・テニス・陸上・柔道・剣道・水泳など、スポーツ競技に特化した部活。高3の夏（インターハイ）が最大目標で、ほぼ全ての高3運動部員はこの時期で引退することになる』『特徴は「練習時間が長い（平日2～3時間、休日5～8時間）」「上下関係が厳しい」「団体競技の場合はチームワークが必須」「怪我のリスクがある」「大学推薦での評価が高い傾向」など』『適している生徒：「体力に自信がある」「競争を通じた成長を求める」「チーム活動が好き」「大学でもスポーツを継続したい」という生徒』
@@ -154,7 +154,7 @@ export default function KoukouClubPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>文化部</strong> — 『吹奏楽・合唱・演劇・美術・書道・茶道・華道・将棋・放送・ロボット研究など、創造性と知的活動に特化した部活。文化祭（9月）が最大目標で、多くの部は9月中旬での引退が一般的』『特徴は「練習時間が比較的自由（平日1～2時間、休日2～4時間）」「個人のペースと創造性が尊重される」「表現力・創造力の育成」「怪我のリスクが低い」など』『適している生徒：「創造的な活動が好き」「表現力を磨きたい」「個人のペースでの活動を希望」「高3での勉強時間確保を重視」という生徒』
@@ -173,7 +173,7 @@ export default function KoukouClubPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>1. 学校の部活設置数と種類</strong> — 『部活選択の自由度は「学校にどの部活が設置されているか」で決定される』『大規模校（生徒数1000人以上）なら30～50の部活が設置されている一方、小規模校では10～15程度に限定される』『あらかじめ志望高校の部活一覧を確認し、「自分が興味を持てる部活があるか」を確認することが重要』『もし興味のある部活がない場合、入学後に新部の創設を提案することも可能だが、承認までに3ヶ月以上かかることが多い』
@@ -181,7 +181,7 @@ export default function KoukouClubPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>2. 部活の練習時間と強度</strong> — 『同じ名称の部活でも、学校によって練習時間・強度は大きく異なる』『例えば、「野球部」でも、強豪校では平日3時間+休日6～8時間の練習が標準であり、一方「緩い野球部」では平日1時間半、休日3時間程度というバラツキがある』『部活体験や説明会の際に、『具体的な平日の練習時間』『休日の活動時間』『練習内容（基礎練習中心 vs 試合練習中心）』『大会への参加頻度』などを、顧問の先生に直接確認することが重要』
@@ -189,7 +189,7 @@ export default function KoukouClubPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>3. 部活の成績・大会実績</strong> — 『「強い部活」と「弱い部活」では、練習内容・心理的プレッシャー・上下関係の厳しさが大きく異なる』『例えば、全国大会常連の強豪部では「試合への絶対的な責任感」「上下関係の厳密性」「敗北時の精神的ダメージ」などが著しい一方、「地域大会レベルの部活」では「練習自体を楽しむ」という緩い雰囲気が支配的』『自分が「競争的な環境での成長を求めるのか、それとも「友人との協力を楽しむ」というアプローチを求めるのか」で、部活選択が大きく異なる』『学校説明会で「〇〇部の最近5年間の大会実績」を確認し、レベル感を把握することが有効』
@@ -197,7 +197,7 @@ export default function KoukouClubPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>4. 顧問の先生の指導方針と評判</strong> — 『部活の「楽しさ」「成長」は「顧問の先生の指導スタイル」に極めて大きく左右される』『「選手の自主性を尊重する指導者」と「厳しい指示命令型の指導者」では、同じ部活でも全く異なる経験になる』『入学後、実際に部活体験をする際に、「先生の指導は厳しいのか、それとも優しいのか」「選手の意見を聞いてくれるのか」という『教育スタイル』を肌で感じることが重要』『先輩から「〇〇先生は厳しいが成長が実感できる」「△△先生は優しく、みんな続けたいと思う」といった「評判の情報」を集めることも有効』
@@ -205,7 +205,7 @@ export default function KoukouClubPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>5. 部員数と人間関係</strong> — 『「30人以上の大きな部」と「5～10人の小さな部」では、人間関係と居場所感が大きく異なる』『大きな部では「競争を通じた自分の力量把握」「多様な人間関係形成」がメリット。小さな部では「全員が重要な役割を担う」「密接な人間関係」がメリット』『また、『部内に同学年がどのくらいいるか』『上下関係は円滑なのか』『部員の雰囲気（競争的か、協力的か）』といった要素が、自分の居心地を大きく左右する』『部活体験で「この先輩たちと3年間を過ごせるか」という「人間関係との相性」を強く意識することが重要』
@@ -213,7 +213,7 @@ export default function KoukouClubPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>6. 勉強時間との両立可能性</strong> — 『最も重要なのは「この部活に入った場合、高3での受験対策に必要な時間を確保できるか」という現実的な判断』『例えば、運動部で平日3時間+休日5時間の練習がある場合、高3でも同じペースで活動するため、帰宅後の勉強時間は限定される』『一方、文化部で練習時間が短い場合、高3での勉強時間確保がより容易』『自分の「目標大学のレベル」「学力の現在地」「受験対策に必要な勉強時間」を考慮した上で、「この部活選択は勉強と両立可能か」を判断することが重要』『後々「部活を続けたかったが、受験対策の時間不足で退部を余儀なくされた」という後悔を避けるためには、この判断が極めて重要』

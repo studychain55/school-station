@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouVolunteerPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouVolunteerPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校生のボランティア活動ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             地域貢献・社会参加の始め方と内申・入試への活用
           </Typography>
         </Box>
@@ -147,7 +147,7 @@ export default function KoukouVolunteerPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>社会的視点の獲得</strong> — 『学校教育では学べない社会の現実を直接経験できる』『貧困・高齢化・障害・環境問題など多様な社会課題への認識が深まる』『単なる知識ではなく、その課題と向き合う人々の実生活を理解できる』という『実体験に基づいた社会理解』が得られます。『この社会的視点は進学後の大学生活でも大きな武器になる』『社会課題に関心を持つ学生が将来的に社会貢献できる人材に育成される』という『人生の基礎となる価値観』が形成されます。
@@ -155,7 +155,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>共感力・傾聴力の発達</strong> — 『困っている人の話を真摯に聞き、相手のニーズを汲み取る力が鍛えられる』『異なる背景・立場を持つ様々な人と関わることで視点が広がる』『自分中心の考え方から相手中心の考え方へとシフトする』という『対人スキルの根底にある感情能力』が育成されます。『共感力と傾聴力は医療・教育・社会福祉・営業など全ての職業で必須スキル』『ボランティア経験者は大学の各種試験でこのスキルが評価される』『企業採用試験でも「人間関係構築能力がある」という評価につながる』という『生涯を通じた財産』になります。
@@ -163,7 +163,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>自己効力感と継続力の育成</strong> — 『自分の行動が相手の生活に良い影響を与えることを体験できる』『その経験から「自分にもできることがある」という自己効力感が生まれる』『継続的な活動を通じて、困難に直面しても取り組み続ける力が養われる』という『心理的な成長』が達成されます。『自己効力感は高校時代の勉強習慣と直結し、大学受験への動機づけが強まる』『継続力は将来のキャリア形成でも最も重要な能力の一つ』『ボランティア経験で「やり遂げた」という成功体験が自信になり、その後の人生選択を左右する』という『極めて重要な心理的資産』が形成されます。
@@ -182,7 +182,7 @@ export default function KoukouVolunteerPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校のボランティア委員会・進路指導室</strong> — 『学校が主催または紹介するボランティア活動は最も安心で安全』『学校との連携があるため、トラブル発生時の対応が迅速』『学校の履歴として公式に認められ、調査書に記載される可能性が高い』『同級生との活動でリーダーシップを発揮できる機会も多い』という『学校ボランティアの大きなメリット』があります。『学校紹介の活動は季節ごとに企画されることが多い』『放課後や土曜日の活動で部活動との両立が可能』『初心者向けの活動が多く、参加ハードルが低い』という『継続しやすい利点』があります。
@@ -190,7 +190,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>社会福祉協議会のボランティアセンター</strong> — 『都道府県・市町村レベルに「ボランティアセンター」が設置されており、多数のボランティア情報が一元管理されている』『高齢者施設・障害者施設・児童施設・環境活動・災害支援など幅広い選択肢から活動を選べる』『ボランティアセンターのスタッフが相談に乗り、自分に合った活動をマッチングしてくれる』『受け入れ先施設との事前調整も行ってくれるため、安心して参加できる』という『総合的サポート』が大きな特徴です。『継続的なボランティア活動を希望する場合、社会福祉協議会の利用がおすすめ』『3ヶ月以上の継続活動では修了証が発行され、その証拠が調査書添付資料になることもある』『面接で「どうやって活動先を探したのか」と聞かれた時に「社会福祉協議会のボランティアセンターを利用した」と答えると、主体性と計画性が評価される』という『入試での活用価値も高い』です。
@@ -198,7 +198,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>NPO・NGO団体とインターネット検索</strong> — 『特定の活動分野に特化したNPO・NGO団体のホームページでボランティア募集情報を検索できる』『認定NPO法人は信頼度が高く、安全な活動が担保されている』『インターネットで「ボランティア募集 高校生 ◯◯（関心分野）」と検索することで、自分の興味に合ったボランティアが見つかる』『オンラインボランティアなど新しい形態の活動も増えている』という『選択肢の広さ』が最大の特徴です。『ただし、団体の信頼性を確認してから参加することが必須』『親や学校の先生に相談して安全が確保される活動かを判断する』『初めての団体の場合、説明会に参加して雰囲気を確認してから参加を決める』という『慎重さ』が重要です。
@@ -217,7 +217,7 @@ export default function KoukouVolunteerPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>最初は無理のない頻度で始める</strong> — 『月1～2回程度の頻度から始めることで、継続可能性が大きく高まる』『最初から月3～4回の頻度で始めると、部活動や勉強との両立が困難になり、途中で止めてしまう』『「続ける」ことの方が「多く参加する」ことより遙かに重要』『3ヶ月程度継続できたら、「自分はこの活動に向いている」という実感が生まれ、その後も続けやすくなる』という『段階的な拡大』が継続の秘訣です。
@@ -225,7 +225,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>毎回のボランティア後に学びを記録する</strong> — 『活動直後に「今日学んだことは何か」「驚いたことは何か」「今後改善すべき点は何か」をレポートにまとめる習慣』が『面接での説得力に直結する』『記録がないと「ボランティアに行ったことがある」という事実だけになるが』『記録があると「社会課題と向き合い、継続的に学んできた」という継続的な成長過程が明示される』『面接官は「この生徒は本当に社会課題について考えているのか」を見抜く』『記録されたレポートがあると説得力が非常に高まる』という『具体的な証拠の重要性』があります。
@@ -233,7 +233,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校の先生や親に進捗を報告する</strong> — 『学校の進路指導の先生や担任に「〇〇のボランティアを継続している」と定期的に報告する』『その報告が先生の記憶に残ると、調査書に「継続的に社会貢献活動に参加」と具体的に記載される可能性が高まる』『親に報告することで、親も子どもの成長を理解し、受験期のメンタルサポートが的確になる』『また、ボランティア先からの感謝状や修了証を学校に提出することで、公式な実績として認められる』という『多層的なサポートシステムの構築』が継続と評価につながります。
@@ -252,7 +252,7 @@ export default function KoukouVolunteerPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階1：調査書（内申書）への記載</strong> — 『学校の調査書に「課外活動」「社会貢献」の欄がある場合、進路指導の先生に「3ヶ月以上のボランティア経験がある」ことを報告する』『先生が調査書に「継続的にボランティア活動に参加し、社会貢献の姿勢を示している」と記載してくれると』『大学の入試担当者が調査書を見た時点で「この生徒は社会への関心が高い」という第一印象を得る』『このプリセット効果が志望理由書や面接での評価に大きく影響する』という『調査書記載の極めて重要性』があります。『ボランティア先からの修了証や感謝状があれば、調査書に添付資料として提出することで、客観性が保証される』『受験大学によっては「調査書を信頼する」という建前なので、調査書への記載が最初の関門』です。
@@ -260,7 +260,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階2：志望理由書での具体例活用</strong> — 『志望理由書では「このボランティア活動を通じて××の課題を知り、この大学の△△学部で深く学びたいと思った」という論理的繋がりを示す』『例えば「高齢者施設でのボランティアを1年間続けたことで、超高齢化社会での福祉の課題を実感した。この経験から、老健施設での実習が充実している貴大学の福祉学部で、高齢者支援のスキルを身につけたいと思う」というような『具体性と説得力のある記述』が高く評価される』『ボランティア経験がなければ、このような具体的で説得力のある志望理由書は書けない』『つまり、ボランティア活動が志望理由書の質を一段階上げる効果がある』という『直接的な入試への活用価値』があります。
@@ -268,7 +268,7 @@ export default function KoukouVolunteerPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階3：面接での深掘り対応と高得点獲得</strong> — 『総合型選抜や推薦入試の面接では必ず「ボランティア活動について教えてください」という質問が出される』『その際に「〇月から〇月までの間、毎月△回、××のボランティアに参加しました」『参加した直後に困っている人のニーズを知ることができ、自分の無力さを感じました」『その後、その課題を改善するために自分たちで何ができるかを考え、××という工夫を提案し、実現することができました」という『具体的でかつ自分の内省と成長が含まれた説明』ができる生徒は』『面接官からの評価が極めて高い』『その結果、面接での得点が他の受験生より大きく上回る』という『現実的な入試効果』が存在します。『ボランティア経験が深く、継続的で、その中で内省と成長を経験した生徒は』『面接での言語化も論理的で説得力があり』『最終的に「この生徒は確実に成長する」と面接官に確信させることができる』という『合格に直結する効果』があります。

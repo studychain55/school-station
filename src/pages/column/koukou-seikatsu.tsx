@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -134,7 +134,7 @@ export default function KoukouSeikatsPage() {
 
         {/* Table of Contents */}
         <Paper sx={{ p: { xs: 2, sm: 3 }, mb: 4, bgcolor: "#F9F9F9", border: "1px solid #E0E0E0" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 600, mb: 2, color: "#0D47A1" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 600, mb: 2, color: "#1e782d" }}>
             目次
           </Typography>
           <List sx={{ pl: 2 }}>
@@ -197,14 +197,14 @@ export default function KoukouSeikatsPage() {
           </Typography>
 
           <SubSection title="1. 勉強：将来の基礎を作る">
-            <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 1.5 }}>
                 高校の勉強は、大学進学や将来のキャリアの土台になります。定期テスト対策を通じて、毎日の学習習慣を作ることが重要です。
               </Typography>
               <List>
                 <ListItem disablePadding sx={{ mb: 1 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#0D47A1" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     目標：定期テストで各科目80点以上、内申点3.5以上を目指す
@@ -212,7 +212,7 @@ export default function KoukouSeikatsPage() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#0D47A1" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     実践：毎日1～2時間の予習復習、テスト2週間前からは3～4時間の集中勉強
@@ -448,24 +448,24 @@ export default function KoukouSeikatsPage() {
             </Typography>
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>朝の時間活用（30～60分）</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>朝の時間活用（30～60分）</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     朝は脳が最も活性化している時間帯。英単語、計算練習など、反復学習に最適です。朝5分早く起きるだけで、週300分の追加勉強時間が確保できます。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>昼休みの活用（20～30分）</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>昼休みの活用（20～30分）</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     お昼休みに軽い復習をすることで、午後の授業への理解が深まります。弁当を食べた後、10分の瞑想や深呼吸で気分をリセットしましょう。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>部活後の勉強（45～60分）</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>部活後の勉強（45～60分）</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     帰宅後は、軽いストレッチや30分の休息を取ってから、勉強を開始。教科書を読む、授業ノートを見直すなど、負担の少ない学習から始めましょう。
                   </Typography>
@@ -718,7 +718,7 @@ export default function KoukouSeikatsPage() {
 
         {/* FAQ */}
         <Box sx={{ mb: 5 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくあるご質問
           </Typography>
           <FAQ items={faqItems} />

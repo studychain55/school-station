@@ -88,7 +88,7 @@ export default function YobikoChoicePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -96,7 +96,7 @@ export default function YobikoChoicePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校受験の塾・予備校の選び方
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             個別指導と集団指導の比較。自分に最適な学習スタイルを見つけるガイド
           </Typography>
         </Box>
@@ -106,7 +106,7 @@ export default function YobikoChoicePage() {
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
             高校受験の成功は、自分に合った学習環境を見つけることが大きく影響します。塾や予備校の選択は、単なる「勉強の場所」ではなく、「受験戦略の要」となります。
           </Typography>
-          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+          <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
               間違った塾選びは、時間と費用の無駄につながるだけでなく、勉強へのモチベーション低下につながる可能性があります。自分の学習スタイル、目標、予算をしっかり把握した上で、慎重に選ぶことが大切です。
             </Typography>
@@ -123,7 +123,7 @@ export default function YobikoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>メリット</Typography>
@@ -134,7 +134,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>デメリット</Typography>
@@ -145,7 +145,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>向いている人</Typography>
@@ -164,7 +164,7 @@ export default function YobikoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>メリット</Typography>
@@ -175,7 +175,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>デメリット</Typography>
@@ -186,7 +186,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>向いている人</Typography>
@@ -209,7 +209,7 @@ export default function YobikoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   通学時間がかからない（往復2時間の時間削減）
@@ -217,7 +217,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   費用が安い（月1～2万円程度）
@@ -225,7 +225,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   自分のペースで学べる（動画は何度でも視聴可能）
@@ -233,7 +233,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   柔軟なスケジュール調整が可能
@@ -246,7 +246,7 @@ export default function YobikoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   自己管理能力が必須（サボりやすい）
@@ -254,7 +254,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   質問しにくい（チャットサポートがあっても返答に時間がかかる）
@@ -262,7 +262,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   モチベーション維持が難しい（周囲の刺激がない）
@@ -279,18 +279,18 @@ export default function YobikoChoicePage() {
             塾にかかる費用は、形式によって大きく異なります。以下は、中3の1年間の目安です。
           </Typography>
           <Box sx={{ overflowX: "auto", mb: 3 }}>
-            <Box sx={{ minWidth: 500, bgcolor: "#F5F9FF", p: 2, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ minWidth: 500, bgcolor: "#F5F9FF", p: 2, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 2, mb: 2, fontWeight: 600, fontSize: "0.9rem" }}>
                 <Typography sx={{ fontWeight: 700 }}>形式</Typography>
                 <Typography sx={{ fontWeight: 700 }}>月額（目安）</Typography>
                 <Typography sx={{ fontWeight: 700 }}>年間（目安）</Typography>
               </Box>
-              <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 2, mb: 2, borderBottom: "1px solid #BBDEFB", pb: 2 }}>
+              <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 2, mb: 2, borderBottom: "1px solid #bcd7c0", pb: 2 }}>
                 <Typography variant="body2">集団指導</Typography>
                 <Typography variant="body2">2～3万円</Typography>
                 <Typography variant="body2">25～35万円</Typography>
               </Box>
-              <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 2, mb: 2, borderBottom: "1px solid #BBDEFB", pb: 2 }}>
+              <Box sx={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 2, mb: 2, borderBottom: "1px solid #bcd7c0", pb: 2 }}>
                 <Typography variant="body2">個別指導</Typography>
                 <Typography variant="body2">4～6万円</Typography>
                 <Typography variant="body2">50～70万円</Typography>
@@ -380,7 +380,7 @@ export default function YobikoChoicePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学校の授業が基本</Typography>
@@ -391,7 +391,7 @@ export default function YobikoChoicePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>定期テスト対策</Typography>
@@ -413,8 +413,8 @@ export default function YobikoChoicePage() {
         <Divider sx={{ my: 4 }} />
 
         {/* ランキングを確認する */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#E3F2FD", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#0D47A1" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
             志望校の偏差値をチェックしましょう
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -427,12 +427,12 @@ export default function YobikoChoicePage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#0D47A1",
+                bgcolor: "#1e782d",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1565C0", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -454,10 +454,10 @@ export default function YobikoChoicePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   高校受験に向けた効果的な勉強法
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -472,10 +472,10 @@ export default function YobikoChoicePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   志望校の選び方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -490,10 +490,10 @@ export default function YobikoChoicePage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1565C0" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1565C0", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
                   内申点の上げ方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -519,7 +519,7 @@ export default function YobikoChoicePage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <ArrowBackIcon />
                 <Typography sx={{ fontWeight: 600 }}>前の記事</Typography>
               </Box>
@@ -536,7 +536,7 @@ export default function YobikoChoicePage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1565C0" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
                 <Typography sx={{ fontWeight: 600 }}>コラムに戻る</Typography>
               </Box>
             </Paper>
@@ -550,7 +550,7 @@ export default function YobikoChoicePage() {
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box id={id} sx={{ mb: 3 }}>
-      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#0D47A1" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#1e782d" }}>
         {title}
       </Typography>
       {children}

@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -111,7 +111,7 @@ export default function DaigakuJukenPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -119,7 +119,7 @@ export default function DaigakuJukenPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校から大学受験を見据えた学習計画の立て方
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             高1・高2・高3の各時期にやるべきことを徹底解説。推薦入試・総合型選抜・一般入試に対応した効果的な学習戦略
 
           </Typography>
@@ -134,15 +134,15 @@ export default function DaigakuJukenPage() {
 
         {/* Table of Contents */}
         <Paper sx={{ p: { xs: 2, sm: 3 }, mb: 4, bgcolor: "#F9F9F9", border: "1px solid #E0E0E0" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 600, mb: 2, color: "#0D47A1" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 600, mb: 2, color: "#1e782d" }}>
             目次
           </Typography>
           <List sx={{ pl: 2 }}>
             <ListItem disablePadding sx={{ mb: 0.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
               </ListItemIcon>
-              <Link href="#grade1" style={{ textDecoration: "none", color: "#1565C0" }}>
+              <Link href="#grade1" style={{ textDecoration: "none", color: "#1e782d" }}>
                 <Typography variant="body2" sx={{ cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
                   高1でやるべきこと：基礎固めと習慣形成
                 </Typography>
@@ -150,9 +150,9 @@ export default function DaigakuJukenPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 0.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
               </ListItemIcon>
-              <Link href="#grade2" style={{ textDecoration: "none", color: "#1565C0" }}>
+              <Link href="#grade2" style={{ textDecoration: "none", color: "#1e782d" }}>
                 <Typography variant="body2" sx={{ cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
                   高2でやるべきこと：応用力育成と進路決定
                 </Typography>
@@ -160,9 +160,9 @@ export default function DaigakuJukenPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 0.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
               </ListItemIcon>
-              <Link href="#grade3" style={{ textDecoration: "none", color: "#1565C0" }}>
+              <Link href="#grade3" style={{ textDecoration: "none", color: "#1e782d" }}>
                 <Typography variant="body2" sx={{ cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
                   高3でやるべきこと：受験直前期の最終追い込み
                 </Typography>
@@ -170,9 +170,9 @@ export default function DaigakuJukenPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 0.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
               </ListItemIcon>
-              <Link href="#suisen" style={{ textDecoration: "none", color: "#1565C0" }}>
+              <Link href="#suisen" style={{ textDecoration: "none", color: "#1e782d" }}>
                 <Typography variant="body2" sx={{ cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
                   推薦入試・総合型選抜の対策戦略
                 </Typography>
@@ -180,9 +180,9 @@ export default function DaigakuJukenPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 0.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
               </ListItemIcon>
-              <Link href="#general" style={{ textDecoration: "none", color: "#1565C0" }}>
+              <Link href="#general" style={{ textDecoration: "none", color: "#1e782d" }}>
                 <Typography variant="body2" sx={{ cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
                   一般入試の基礎固めと実践対策
                 </Typography>
@@ -190,9 +190,9 @@ export default function DaigakuJukenPage() {
             </ListItem>
             <ListItem disablePadding sx={{ mb: 0.5 }}>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
               </ListItemIcon>
-              <Link href="#mock" style={{ textDecoration: "none", color: "#1565C0" }}>
+              <Link href="#mock" style={{ textDecoration: "none", color: "#1e782d" }}>
                 <Typography variant="body2" sx={{ cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
                   模試の活用法と偏差値の読み方
                 </Typography>
@@ -200,9 +200,9 @@ export default function DaigakuJukenPage() {
             </ListItem>
             <ListItem disablePadding>
               <ListItemIcon sx={{ minWidth: 32 }}>
-                <CheckCircleIcon sx={{ color: "#1565C0", fontSize: "1.2rem" }} />
+                <CheckCircleIcon sx={{ color: "#1e782d", fontSize: "1.2rem" }} />
               </ListItemIcon>
-              <Link href="#juku" style={{ textDecoration: "none", color: "#1565C0" }}>
+              <Link href="#juku" style={{ textDecoration: "none", color: "#1e782d" }}>
                 <Typography variant="body2" sx={{ cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
                   塾・予備校選びと自習の組み合わせ
                 </Typography>
@@ -460,24 +460,24 @@ export default function DaigakuJukenPage() {
           <SubSection title="模試の3つの活用法">
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>1. 苦手分野の可視化</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>1. 苦手分野の可視化</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     模試の結果から、自分の苦手分野を明確にします。「英語の長文」「数学の確率」など、具体的な課題を特定することが大切です。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>2. 時間配分の改善</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>2. 時間配分の改善</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     本番と同じ時間制限で模試を解くことで、「どの問題に時間を費やすべきか」が見えます。複数の模試を通じて、最適な時間配分を見つけましょう。
                   </Typography>
                 </Box>
               </ListItem>
               <ListItem disablePadding>
-                <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, width: "100%" }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#0D47A1" }}>3. 志望大学との偏差値比較</Typography>
+                <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, width: "100%" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: "0.95rem", mb: 0.5, color: "#1e782d" }}>3. 志望大学との偏差値比較</Typography>
                   <Typography variant="body2" sx={{ color: "#424242" }}>
                     模試の偏差値と、志望大学の難易度を比較することで、合格可能性を判断できます。目標偏差値との差を埋めるための具体的な計画立案に活かします。
                   </Typography>
@@ -583,7 +583,7 @@ export default function DaigakuJukenPage() {
 
         {/* FAQ */}
         <Box sx={{ mb: 5 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくあるご質問
           </Typography>
           <FAQ items={faqItems} />

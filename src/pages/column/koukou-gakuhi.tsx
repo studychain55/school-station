@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouGakuhiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouGakuhiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の学費・授業料と奨学金ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             公立・私立・通信の費用比較
           </Typography>
         </Box>
@@ -150,7 +150,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業料：0円（高等学校等就学支援金で無償化）</strong> — 世帯収入910万円未満の家庭では、国から月額9,900円が支給され、授業料がゼロになります。この制度により、公立高校の最大の経済的メリットが実現しています。世帯収入がこれを超える場合でも、授業料は月額9,900円程度と非常に安価です。ただし、申請手続きを忘れると支給を受けられない場合があるため、入学時の書類作成時に学校から指示をよく受けてください。
@@ -158,7 +158,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>PTA会費・諸費：月額1,000～2,000円（年間12,000～24,000円）</strong> — PTA活動の運営費として、月額1,000～2,000円が徴収されます。地域差や学校差があり、田舎の学校ほど安く、都市部の学校ほど高い傾向があります。PTA会費は進学指導に直結しない費用のため、保護者の中には負担感を覚える人も多いです。一部の学校では、PTA活動の実績報告書を提示し、費用の透明性を向上させる取り組みが進んでいます。
@@ -166,7 +166,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>教材費・学用品：年間5～10万円</strong> — 教科書代（2,000～5,000円）、副教材費（5,000～15,000円）、実習教材費（実験・実習がある場合）、体育着・上履きなどの購入費用が含まれます。特に、理科系の実験が多い学校では教材費が高くなります。購入の多くは入学時と進級時に集中するため、家庭への経済的負担は1年目が最も大きくなります。
@@ -174,7 +174,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>修学旅行積立金：年間15～35万円（3年間で45～105万円）</strong> — 修学旅行は高校生活の最大イベントであり、積立金は年間を通じて集められます。目的地によって大きく異なり、国内（広島・京都など）が45～60万円、国外（韓国・オーストラリア）が80～150万円程度です。最近では、経済的理由で修学旅行参加を辞退する生徒もおり、一部の学校では参加を任意化し、不参加の場合は別プログラム用意する対応を取っています。3年間で積立金の総額は非常に大きいため、家計計画の重要な要素となります。
@@ -182,7 +182,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活動費：部活による（月額0～20,000円）</strong> — 文化部は費用が少ないことが多いですが、運動部は部費が月額数千円～1万円、さらに遠征費・合宿費が年間数万円～数十万円かかります。全国大会を目指す部活は、合宿費だけで50万円を超える場合もあり、家庭の経済状況に影響を与える場合があります。一部の学校では、部活動費の補助制度を設けており、経済的困窮家庭の生徒が部活を続けやすい環境づくりを進めています。
@@ -198,7 +198,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業料：年間30～60万円（月額25,000～50,000円）</strong> — 私立高校の授業料は、学校の進学実績・立地・設備充実度によって大きく異なります。難関進学校（開成・灘・東大寺など）では60～80万円、中堅進学校では40～60万円、やや偏差値が低い学校では30～45万円が一般的です。高等学校等就学支援金（年間最大39,600円相当）が支給されても、実質的な負担額は年間25～55万円に及びます。都市部の私立が地方よりも高い傾向があり、東京や大阪の難関私立は100万円前後の授業料を設定している学校もあります。
@@ -206,7 +206,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>施設費・設備費：年間10～30万円</strong> — 図書館・実験室・体育館・カフェテリア・ICT環境などの維持費として、年間10～30万円が徴収されます。校舎の老朽化が進んでいる学校では改築費用の積立として、月額5,000円以上の追加徴収がある場合もあります。施設費は学校の設備投資政策によって大きく異なり、ICT環境を重視する学校ではタブレット・PCの購入・メンテナンス費用が追加されることもあります。
@@ -214,7 +214,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>教材費・副教材費：年間5～15万円</strong> — 私立高校の教材費は公立よりも高い傾向があり、オリジナル教材・副教材の費用が多く発生します。進学指導に力を入れる学校では、大学受験対策用の問題集・予想問題などの購入費が加算されることもあります。また、英語教育や国際交流に力を入れている学校では、海外の教材やオンライン学習プラットフォームの利用料が別途かかる場合があります。
@@ -222,7 +222,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>修学旅行積立金：年間20～40万円（3年間で60～120万円）</strong> — 私立高校の修学旅行は、公立よりも目的地が豪華で、海外（オーストラリア・シンガポール・ニュージーランド）へ行く学校が多いです。その結果、積立金が年間30～40万円に上る学校も珍しくありません。国内に限定する学校でも年間25～35万円程度が一般的です。一部の難関私立では、修学旅行に代わる海外研修プログラムを用意しており、参加費用が100万円を超える場合もあります。
@@ -230,7 +230,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>その他の費用：入学金・制服代など</strong> — 入学時には、入学金（10～30万円）、制服代（5～10万円）、上履き・体育着などが一度に必要になります。特に、制服にこだわる高級私立では、制服代が15万円を超える場合もあります。これらの入学時費用が、総学費の大きな部分を占めることになり、家計計画では3年間の費用だけでなく、初年度の支出を特に注視する必要があります。
@@ -249,7 +249,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>支給対象者：世帯収入910万円未満（年収の目安）</strong> — 支給判定は保護者の市区町村民税の課税標準額および控除額に基づいて行われます。年収の目安は約910万円ですが、扶養家族の人数や実際の控除額によって判定結果が変わる場合があるため、正確には学校の進路指導の先生に相談することをお勧めします。世帯構成が複雑な場合（両親が別居・離婚している場合など）は、判定にどちらの親の情報を使用するかについて、学校に確認が必要です。
@@ -257,7 +257,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>公立高校：月額9,900円（年間118,800円）</strong> — 公立高校の授業料がほぼ完全にカバーされます。ただし、世帯収入が一定以上の場合、支給額が減額される可能性があります。具体的には、市区町村民税の課税標準額が300,000円未満であれば月額9,900円、300,000円以上であれば月額6,600円、520,000円以上であれば月額3,300円となります。
@@ -265,7 +265,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>私立高校：月額最大39,600円（年間最大475,200円）</strong> — 私立高校の支給額は、学校の設置認可都道府県によって異なります。東京都・神奈川県・大阪府など、追加の補助がある都道府県では、国の支給額に加えて都道府県の補助を受けられ、実質的には授業料がほぼ無償になる場合もあります。一方、補助制度が充実していない都道府県では、支給額だけでは授業料をカバーできず、実質負担が大きくなる傾向があります。
@@ -278,7 +278,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>申請は学校経由で行うのが一般的</strong> — 入学時に学校から申請書が配布され、保護者が記入して提出します。申請に必要な書類は、課税証明書（または非課税証明書）など限定的であり、多くの学校では学校が一括して市区町村から取得する体制になっています。ただし、前年度の課税情報が未確定の場合（個人事業主など）は、追加書類が必要になることがあります。
@@ -286,7 +286,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>支給時期は4月以降（初年度は夏以降になる場合もある）</strong> — 国の就学支援金は、市区町村から課税情報が送付された後に初めて支給判定が行われるため、初年度は夏以降の支給になる場合があります。その間、授業料を学校に納付する必要があるため、家庭の資金繰りに影響を与える場合があります。学校によっては、就学支援金の支給予定額を差し引いた請求を行う制度を設けており、その場合は資金繰りの負担が軽減されます。
@@ -294,7 +294,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>支給対象外となる場合もある</strong> — 世帯収入が基準を超えている、または高等専修学校や各種学校などの対象外の教育機関に進学した場合は、支給を受けられません。また、高卒資格を持つ者や、既に他の学校から就学支援金を受給している者も対象外になります。こうした対象外の判定について異議がある場合は、学校の進路指導の先生に相談し、判定理由を確認することが重要です。
@@ -313,7 +313,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>東京都：授業料補助＋入学金補助で最大150万円超</strong> — 東京都は『私立高等学校等授業料補助金』と『私立高等学校入学金補助金』の2つの制度を設けています。授業料補助は世帯年収に応じて月額最大39,600円（年間475,200円）、入学金補助は最大250,000円が支給されます。これにより、国の就学支援金と合わせると、年収590万円程度の家庭では、私立高校の授業料・入学金がほぼ全額カバーされることになります。さらに、多子世帯（3人以上の子ども）の場合は、補助額が加算される場合もあります。
@@ -321,7 +321,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>神奈川県：授業料補助で最大80万円弱（年額）</strong> — 神奈川県は『私立高等学校等生徒学費補助金』として、年間800,000円を上限に補助を行っています。世帯年収によって補助率が異なり、年収450万円未満の家庭では授業料がほぼ無償化されます。また、入学金補助については別制度で最大250,000円が支給される場合もあり、初年度の負担が大幅に軽減されます。
@@ -329,7 +329,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>大阪府：授業料補助＋入学金補助で最大60～80万円</strong> — 大阪府は『私立高等学校等の生徒に係る授業料補助』として、年間600,000円程度の補助を行っています。また、入学金補助も別途用意されており、合計で初年度80万円を超える補助を受けられる家庭も存在します。ただし、補助額は所得限度額によって厳しく制限されており、年収が一定以上の家庭では補助を受けられない場合があります。
@@ -342,7 +342,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>補助制度が存在しない地域での選択肢</strong> — 一部の都道府県では、県独自の私立高校補助制度が存在しない、または非常に限定的な場合があります。このような地域では、国の就学支援金と、高校独自の特待生制度・奨学金に頼る必要があります。学校説明会では、『県の補助制度について確認してください』と学校側から説明されることが多いため、具体的な情報は各都道府県の教育委員会のWebサイトから取得することをお勧めします。
@@ -350,7 +350,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>補助内容の定期的な確認が重要</strong> — 私立高校補助制度は、毎年見直されており、予算の都合で補助額が削減される可能性があります。進学後に補助内容が変わる場合もあり、家庭の資金計画に影響を与えることがあります。最新の制度情報は、志望する学校が所在する都道府県の教育委員会のWebサイト、または学校の進路指導室で確認することが確実です。
@@ -369,7 +369,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>日本学生支援機構（JASSO）の奨学金：月額3～12万円</strong> — JASSOの奨学金は、高校段階の最大の経済支援制度です。『第一種奨学金（無利息）』と『第二種奨学金（利息付き）』の2種類があり、成績や経済状況に応じて選択できます。申請は学校が一括して行うのが一般的で、申請時期は毎年4月です。貸与額は毎月指定の銀行口座に振り込まれ、高卒後に返済が開始されます。返済期間は借りた期間によって異なり、3年間借りた場合（36万円）は最大20年かけて返済することになります。
@@ -377,7 +377,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>都道府県の奨学金：月額5,000～20,000円</strong> — 各都道府県が独自に奨学金制度を設けており、JASSOの奨学金に加えて申請できる場合が多いです。無利息の貸与型が主体で、返済期間はJASSOより短い場合が多いです。申請条件や返済期間が都道府県によって異なるため、志望する学校が所在する都道府県の教育委員会のWebサイトで確認することが重要です。
@@ -390,7 +390,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>各都道府県の給付型奨学金：月額5,000～30,000円</strong> — 経済的困窮家庭の生徒を対象に、返済不要の給付型奨学金を提供する都道府県が増えています。採用人数は限定的（都道府県全体で数十～数百人）で、成績基準や家庭の経済状況による書類選考が行われます。給付額は月額5,000～30,000円が一般的で、家庭の経済状況に応じて複数段階に分かれていることが多いです。申請時期は毎年6月頃であることが多く、高1時点での申請が可能な制度も存在します。
@@ -398,7 +398,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>民間団体の給付型奨学金：月額10,000～50,000円</strong> — 財団や企業が独自に設ける給付型奨学金があります。成績優秀者を対象にした『学力給付奨学金』（月額30,000～50,000円）、特定の地域・職業志向者を対象にした『地域創生奨学金』、困窮家庭の生徒を対象にした『福祉奨学金』など、種類が多岐に亘ります。採用人数が極めて限定的（全国で数名～数十名）な場合が多いため、条件が自分に合致しているかの確認が重要です。情報は、学校の進路指導室に掲示されるほか、『奨学金情報サイト』（scholarships.jp など）で検索することができます。
@@ -411,7 +411,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>給付型は複数同時申請が重要（採用確率を高める）</strong> — 給付型奨学金の採用人数は限定的であり、学校独自の給付制度を含めても、全体で数%の競争率になることが一般的です。複数の給付型制度に同時申請することで、採用される可能性を高めることができます。ただし、申請書の記入漏れや論文の質が採否を大きく左右するため、進路指導の先生からアドバイスを受けることが重要です。
@@ -419,7 +419,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>給付型奨学金採用後の評定維持が条件（多くの場合）</strong> — 給付型奨学金の多くは、『進学後の評定平均が一定以上でなければ、翌年度から返納義務が生じる』という条件が付いています。評定平均の条件は制度によって異なり（3.0以上が一般的）、入学後の学習態度が重要になります。特に、進学後に成績が不振になった場合、奨学金返納義務が生じる可能性があるため、進学後も学習に取り組む必要があります。
@@ -427,7 +427,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>奨学金は家庭の経済状況の合否判定に使用される可能性</strong> — 給付型奨学金申請時に提出した『家庭の経済状況説明書』は、進学後に授業料減免の対象判定にも使用される場合があります。つまり、給付型奨学金に採用されると、自動的に授業料減免制度の対象になる場合があり、複数の支援制度を同時に受けることが可能になります。このため、奨学金申請は単なる資金調達ではなく、経済的支援制度全体の入り口として認識することが重要です。
@@ -446,7 +446,7 @@ export default function KoukouGakuhiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>3年間の総学費を計算する（初年度と2～3年目で異なる）</strong> — 初年度には、入学金・制服代・教材費が一度に必要になり、2～3年目より支出が大きい傾向があります。3年間の総学費を計算し、平均的な年間支出額を把握することが重要です。修学旅行積立金が3年目に本格化する学校では、3年目の支出が最も大きくなる場合があるため、学校から事前に予定を確認しておくことをお勧めします。
@@ -454,7 +454,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>支援制度を全て活用したシミュレーション</strong> — 単に学費から国の就学支援金を引くだけでなく、都道府県の補助制度・学校の特待生制度・奨学金までを含めた総合的なシミュレーションを行うことが重要です。志望する学校の所在地の都道府県補助制度を確認し、その学校の学費ホームページで『実質的な年間負担額の例』を確認することをお勧めします。
@@ -462,7 +462,7 @@ export default function KoukouGakuhiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>進学後の奨学金・支援制度の利用可能性を確認</strong> — 進学前の申請では採用されなかった奨学金や支援制度でも、進学後に再申請できる場合があります。特に、進学後に家庭の経済状況が悪化した場合の『緊急奨学金』や『授業料徴収猶予制度』については、学校の事務室に早期に相談することが重要です。

@@ -10,7 +10,7 @@ import WarningIcon from "@mui/icons-material/Warning";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouSoudanPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouSoudanPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校選びで失敗しない相談先ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             塾・学校説明会・先輩情報を上手く活用し、自分に最適な高校を選ぶための完全ガイド
           </Typography>
         </Box>
@@ -144,20 +144,20 @@ export default function KoukouSoudanPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>学習環境の決定</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>学習環境の決定</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>進学校か進学校でない学校か、その選択で受けられる教育内容が大きく異なります。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>人間関係の形成</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>人間関係の形成</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高校での友人関係は、人生に大きな影響を与えます。学校の雰囲気や文化が自分に合っているかが重要です。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>キャリア形成</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>キャリア形成</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高校の進学実績やキャリア支援の充実度は、将来のキャリア形成に大きく影響します。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>自己成長の機会</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>自己成長の機会</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>部活動、行事、課外活動などの充実度が、高校3年間の成長を決めます。</Typography>
             </Paper>
           </Box>
@@ -176,7 +176,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数回の参加：</strong>春と秋の説明会に参加することで、学校の全体像をより深く理解できます。
@@ -184,7 +184,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>在学生への直接質問：</strong>説明会では、在学生に学校生活の実態について質問することが最も効果的です。学校の雰囲気が自分に合っているかを判断できます。
@@ -192,7 +192,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>施設の確認：</strong>図書館、教室の広さ、食堂の質、トイレの清潔さなど、細かい施設も確認しましょう。これらが学校生活の質を決めます。
@@ -200,7 +200,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>部活動の様子を観察：</strong>説明会時に部活動が活動している場合は、部員の態度、練習内容、顧問の指導方法などを観察することで、部活動の実態が分かります。
@@ -217,7 +217,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>メリット：</strong>学力に基づいた客観的なアドバイス、多くの生徒の進学先での成功事例の共有、学力試験対策の指導
@@ -225,7 +225,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>注意点：</strong>部活動や学校文化についての情報は限定的。塾の進学実績を優先させる傾向があるため、学校の雰囲気についてはやや偏りがある可能性あり。
@@ -248,7 +248,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>個別相談の活用：</strong>進路相談の時間を十分に取ってもらい、学力だけでなく、あなたの性格や適性に合った学校を紹介してもらいましょう。
@@ -256,7 +256,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>推薦入試の情報：</strong>進路指導の先生は推薦入試に関する詳細な情報を持っています。推薦入試の合格可能性について、正確な判断をしてもらえます。
@@ -273,7 +273,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>複数の先輩からの話：</strong>1人の先輩の意見では偏りがあるため、複数の先輩からの意見を聞くことで、より客観的な判断ができます。
@@ -281,7 +281,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>具体的な質問：</strong>「学校生活で最も大変だったことは？」「友人関係はどう？」「進学実績は実際どう？」など、具体的な質問をすることで、学校の実態が見えます。
@@ -289,7 +289,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>後悔している点：</strong>先輩が「この高校にして後悔したこと」を聞くことで、失敗しない高校選びができます。先輩の後悔は、あなたの貴重な学習材料です。
@@ -308,7 +308,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   1. 進学校と言われている理由は何ですか？（進学実績？教育方針？）
@@ -316,7 +316,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   2. 過去3年間の大学進学実績（国立大学、早慶上智などの実績数）
@@ -324,7 +324,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   3. 授業内容と教科書の進め方（進度が速い？）
@@ -332,7 +332,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   4. 追加勉強やサポート体制（補習授業？質問対応の時間？）
@@ -340,7 +340,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   5. 宿題の量と自学自習の推奨時間
@@ -353,7 +353,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   6. 部活動の活動時間と勉強との両立
@@ -361,7 +361,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   7. 学校の校風と生徒の雰囲気（厳しい？自由？）
@@ -369,7 +369,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   8. いじめや問題行動への学校の対応
@@ -377,7 +377,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   9. 男女比と共学校での男女の関係
@@ -385,7 +385,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   10. 学園祭・体育祭の様子（活発？盛り上がる？）
@@ -398,7 +398,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   11. 図書館の蔵書数とWi-Fi環境
@@ -406,7 +406,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   12. 食堂の営業時間とメニューの豊富さ
@@ -414,7 +414,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   13. 交通アクセス（駅から何分？バス便はあるか？）
@@ -422,7 +422,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   14. 放課後の利用できる施設（自習室？質問室？）
@@ -441,7 +441,7 @@ export default function KoukouSoudanPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>メリット：</strong>在学生のリアルな感想、最新の学校情報、親には聞きにくい話題（クラス内の人間関係など）
@@ -449,7 +449,7 @@ export default function KoukouSoudanPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>デメリット：</strong>個人的な感情や特定の出来事に基づいている、ネガティブ情報が目立つ傾向、情報の真偽が不確定
@@ -484,8 +484,8 @@ export default function KoukouSoudanPage() {
           <SubSection title="判断の基準となる3つのポイント">
             <List>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", width: "100%" }}>
-                  <Typography variant="body2" sx={{ fontWeight: 700, color: "#0D47A1", mb: 1 }}>
+                <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", width: "100%" }}>
+                  <Typography variant="body2" sx={{ fontWeight: 700, color: "#1e782d", mb: 1 }}>
                     1. 学力に合致しているか
                   </Typography>
                   <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>
@@ -494,8 +494,8 @@ export default function KoukouSoudanPage() {
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", width: "100%" }}>
-                  <Typography variant="body2" sx={{ fontWeight: 700, color: "#0D47A1", mb: 1 }}>
+                <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", width: "100%" }}>
+                  <Typography variant="body2" sx={{ fontWeight: 700, color: "#1e782d", mb: 1 }}>
                     2. 学校の雰囲気が自分に合っているか
                   </Typography>
                   <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>
@@ -504,8 +504,8 @@ export default function KoukouSoudanPage() {
                 </Box>
               </ListItem>
               <ListItem disablePadding sx={{ mb: 2 }}>
-                <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", width: "100%" }}>
-                  <Typography variant="body2" sx={{ fontWeight: 700, color: "#0D47A1", mb: 1 }}>
+                <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", width: "100%" }}>
+                  <Typography variant="body2" sx={{ fontWeight: 700, color: "#1e782d", mb: 1 }}>
                     3. 将来の目標に向かって学べる環境か
                   </Typography>
                   <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>
@@ -517,7 +517,7 @@ export default function KoukouSoudanPage() {
           </SubSection>
 
           <SubSection title="意思決定の流れ">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>ステップ1：情報の整理</strong> — 収集した全ての情報（学校説明会、塾の意見、先輩の話、SNS情報）をノートにまとめ、各学校の特徴を明確にします。
               </Typography>
@@ -547,7 +547,7 @@ export default function KoukouSoudanPage() {
         {/* Back to Column */}
         <Box sx={{ mt: 6, pt: 4, borderTop: "1px solid #E0E0E0" }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Typography sx={{ color: "#1565C0", fontWeight: 600, cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+            <Typography sx={{ color: "#1e782d", fontWeight: 600, cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
               ← コラム一覧に戻る
             </Typography>
           </Link>

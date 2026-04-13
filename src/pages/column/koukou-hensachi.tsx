@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function KoukouHensachiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function KoukouHensachiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             偏差値の見方と志望校選び
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             偏差値を正しく理解し、失敗しない高校選びをするための完全ガイド
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function KoukouHensachiPage() {
           </Typography>
 
           <SubSection title="偏差値の計算方法">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", fontFamily: "monospace" }}>
                 偏差値 = 50 + 10 × (自分の点数 - 平均点) / 標準偏差
               </Typography>
@@ -147,7 +147,7 @@ export default function KoukouHensachiPage() {
           </SubSection>
 
           <SubSection title="偏差値の目安">
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
               <Box sx={{ mb: 2 }}>
                 <Typography variant="body2" sx={{ color: "#424242", mb: 1 }}>
                   <strong>偏差値70以上</strong> — 上位2.3% 最難関高校合格可能
@@ -175,7 +175,7 @@ export default function KoukouHensachiPage() {
           </Typography>
 
           <SubSection title="駿台模試の特徴">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 駿台模試は難易度が高く、全国的に見ても学力上位の受験者が多く参加します。そのため、同じ点数でも河合模試や進研模試より偏差値が高く出ることが多いです。難関国公立大学や最難関私立大学を目指す学生向けの模試です。
               </Typography>
@@ -183,7 +183,7 @@ export default function KoukouHensachiPage() {
           </SubSection>
 
           <SubSection title="河合塾模試の特徴">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 河合塾模試は難易度が標準的で、全国の広い層の受験者が参加します。駿台より偏差値は低めに出ることが多いですが、より多くの受験者層を反映しているため、実際の合格判定には参考になることが多いです。国公立大学や標準レベルの私立大学を目指す学生向けです。
               </Typography>
@@ -191,7 +191,7 @@ export default function KoukouHensachiPage() {
           </SubSection>
 
           <SubSection title="進研模試の特徴">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 進研模試は高校1年生からの模試で、学力層が広いため、同じ点数でも駿台模試や河合塾模試より偏差値が低めに出ます。全国の平均的な受験者を反映しており、私立大学や標準レベルの国公立大学の合格判定に参考になります。学力層の広さが特徴です。
               </Typography>
@@ -211,7 +211,7 @@ export default function KoukouHensachiPage() {
           </Typography>
 
           <SubSection title="偏差値による合格可能性の目安">
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
               <Box sx={{ mb: 2 }}>
                 <Typography variant="body2" sx={{ color: "#424242", mb: 1 }}>
                   <strong>志望校の偏差値より15以上高い</strong> — 合格可能性90%以上（安全校）
@@ -233,7 +233,7 @@ export default function KoukouHensachiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>内申点</strong> — 公立高校の合格には内申点が大きく影響する
@@ -241,7 +241,7 @@ export default function KoukouHensachiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>推薦入試</strong> — 一般入試より低い学力で合格できる可能性がある
@@ -249,7 +249,7 @@ export default function KoukouHensachiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>面接や小論文</strong> — 学力試験より人間性や適性が評価される場合もある
@@ -257,7 +257,7 @@ export default function KoukouHensachiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>本番での実力発揮</strong> — 模試の成績より本番で良い結果を出すことも可能
@@ -273,7 +273,7 @@ export default function KoukouHensachiPage() {
           </Typography>
 
           <SubSection title="校風（学校の雰囲気）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 自由な校風の学校と厳格な校風の学校、進学重視の学校と人間教育重視の学校など、同じ偏差値でも校風は大きく異なります。学校説明会や体験入学で、実際に学校を訪問し、自分に合った校風かどうかを確認することが大切です。3年間毎日通う学校だからこそ、自分の価値観に合致した環境を選ぶことが重要です。
               </Typography>
@@ -281,7 +281,7 @@ export default function KoukouHensachiPage() {
           </SubSection>
 
           <SubSection title="進学実績（志望大学への合格者数）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 大学受験を視野に入れている場合、その高校の進学実績は非常に重要です。偏差値が同じでも、東大・京大・医学部への合格者が多い学校と、地域の国公立大への進学が中心の学校では、進学サポートの質が異なります。自分が目指す大学への進学実績を確認し、その学校の進学指導の質を判断しましょう。
               </Typography>
@@ -289,7 +289,7 @@ export default function KoukouHensachiPage() {
           </SubSection>
 
           <SubSection title="部活動・課外活動の充実度">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 部活動や文化祭などの課外活動は、高校生活の大きな部分を占めます。偏差値が高い進学校でも、部活動が制限されていることもあります。反対に、偏差値が標準的な学校でも、部活動が充実し全国大会で活躍している学校もあります。自分がどのような高校生活を送りたいのかを考え、学校を選ぶことが大切です。
               </Typography>
@@ -297,7 +297,7 @@ export default function KoukouHensachiPage() {
           </SubSection>
 
           <SubSection title="立地・通学時間">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 毎日の通学時間は、学力向上や高校生活の充実度に大きく影響します。偏差値が高くても通学時間が2時間以上では、朝早く起き夜遅く帰宅することになり、睡眠時間や自学時間が削られます。偏差値だけでなく、通学時間や立地も総合的に考慮し、現実的な学校選びをしましょう。
               </Typography>
@@ -311,7 +311,7 @@ export default function KoukouHensachiPage() {
           </Typography>
 
           <SubSection title="受験校の構成例">
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB", mb: 2 }}>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>安全校（2校）</strong><br />
                 合格可能性80%以上の学校。偏差値で言えば、自分の偏差値より15以上高い学校。必ず合格を確保できる学校を選びます。
@@ -364,8 +364,8 @@ export default function KoukouHensachiPage() {
             偏差値以外に、志望校を選ぶ際に確認すべき5つのポイントを紹介します。これらを総合的に判断することで、自分に最適な学校が見つかります。
           </Typography>
 
-          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB", mb: 3 }}>
-            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 2 }}>
+          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0", mb: 3 }}>
+            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 2 }}>
               ポイント1: 教育理念と自分の価値観の一致
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
@@ -373,8 +373,8 @@ export default function KoukouHensachiPage() {
             </Typography>
           </Paper>
 
-          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB", mb: 3 }}>
-            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 2 }}>
+          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0", mb: 3 }}>
+            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 2 }}>
               ポイント2: 自分が学びたい専門分野や学科の充実度
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
@@ -382,8 +382,8 @@ export default function KoukouHensachiPage() {
             </Typography>
           </Paper>
 
-          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB", mb: 3 }}>
-            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 2 }}>
+          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0", mb: 3 }}>
+            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 2 }}>
               ポイント3: 進学実績（特に志望大学への合格実績）
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
@@ -391,8 +391,8 @@ export default function KoukouHensachiPage() {
             </Typography>
           </Paper>
 
-          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB", mb: 3 }}>
-            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 2 }}>
+          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0", mb: 3 }}>
+            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 2 }}>
               ポイント4: 部活動の状況と学力面のバランス
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
@@ -400,8 +400,8 @@ export default function KoukouHensachiPage() {
             </Typography>
           </Paper>
 
-          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 2 }}>
+          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+            <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 2 }}>
               ポイント5: 通学時間と立地
             </Typography>
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
@@ -414,7 +414,7 @@ export default function KoukouHensachiPage() {
 
         {/* FAQ */}
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: "1.3rem", fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくある質問
           </Typography>
           <FAQ items={faqItems} />
@@ -423,27 +423,27 @@ export default function KoukouHensachiPage() {
         {/* Related Links */}
         <Box sx={{ mb: 4 }}>
           <Divider sx={{ mb: 4 }} />
-          <Typography variant="h2" component="h2" sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: "1.1rem", fontWeight: 700, color: "#1e782d", mb: 3 }}>
             関連コラム
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2 }}>
             <Link href="/column/hensachi-guide/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
+              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1" } }}>
                 偏差値の見方・使い方を徹底解説
               </Box>
             </Link>
             <Link href="/column/koko-choice/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
+              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1" } }}>
                 志望校の選び方｜受験校を決める5つの基準
               </Box>
             </Link>
             <Link href="/column/koukou-career/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
+              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1" } }}>
                 高校卒業後の進路選択｜大学・専門学校・就職・留学のメリット比較
               </Box>
             </Link>
             <Link href="/column/taiken-nyugaku/" style={{ textDecoration: "none" }}>
-              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1565C0", "&:hover": { bgcolor: "#FFF8E1" } }}>
+              <Box sx={{ p: 2, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1" } }}>
                 学校見学・体験入学の活用ガイド｜志望校選びに役立てよう
               </Box>
             </Link>
@@ -456,13 +456,13 @@ export default function KoukouHensachiPage() {
         <Divider sx={{ mb: 4 }} />
         <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, "&:hover": { opacity: 0.7 } }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1e782d", fontWeight: 600, "&:hover": { opacity: 0.7 } }}>
               <ArrowBackIcon sx={{ fontSize: "1.1rem" }} />
               コラム一覧に戻る
             </Box>
           </Link>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
-            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1565C0", fontWeight: 600, "&:hover": { opacity: 0.7 } }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, color: "#1e782d", fontWeight: 600, "&:hover": { opacity: 0.7 } }}>
               高校偏差値ランキング
               <ArrowForwardIcon sx={{ fontSize: "1.1rem" }} />
             </Box>

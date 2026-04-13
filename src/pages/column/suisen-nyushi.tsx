@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function SuisenNyushiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function SuisenNyushiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の推薦入試対策完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             学校推薦型・総合型選抜の仕組み、内申点対策、面接準備まですべてを解説
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function SuisenNyushiPage() {
           </Typography>
 
           <SubSection title="学校推薦型選抜">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 学校推薦型選抜は、中学校の校長が推薦を行い、成績（内申点）が基準を満たしていることが出願条件となる入試形式です。学力試験がない、または簡易的な試験で判定される場合が多いです。
               </Typography>
@@ -145,7 +145,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>推薦の条件：</strong> 通常、各学年の内申点平均が3.5以上（5段階評定）など、学校が定めた基準をクリアしていることが必須です。
@@ -153,7 +153,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>選考方法：</strong> 面接や作文、場合によっては簡単な学力試験が実施されます。学力試験よりも、面接や小論文での評価がより重視される傾向があります。
@@ -161,7 +161,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>専願性：</strong> ほとんどの学校推薦型選抜は「専願」です。つまり、その高校に合格した場合は、必ずその高校に進学することが約束となります。
@@ -171,7 +171,7 @@ export default function SuisenNyushiPage() {
           </SubSection>
 
           <SubSection title="総合型選抜">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 総合型選抜は、推薦がなくても本人の意思で出願でき、学力試験がないか簡易的で、本人の適性、志望動機、特技・経験、将来の目標などが総合的に判定される入試形式です。
               </Typography>
@@ -180,7 +180,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>出願資格：</strong> 学校推薦型ほど厳しい内申点の基準がない場合が多いです。本人の意思表示が何より重要です。
@@ -188,7 +188,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>選考方法：</strong> 志望理由書、面接、適性検査など多面的な評価が行われます。『なぜこの高校に行きたいのか』という強い動機が重視されます。
@@ -196,7 +196,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>併願可能性：</strong> 総合型選抜で不合格となった場合、他校の総合型選抜や一般入試に進む選択肢があります。
@@ -217,7 +217,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>定期テストの成績（50%程度）</Typography>
@@ -228,7 +228,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>授業態度と参加度（30%程度）</Typography>
@@ -239,7 +239,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>提出物・課題（15%程度）</Typography>
@@ -250,7 +250,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>出席状況・生活態度（5%程度）</Typography>
@@ -269,7 +269,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>定期テスト対策を徹底：</strong> 最低でも2週間前から計画的に勉強を始め、全科目で安定した成績を取ることを目指します。
@@ -277,7 +277,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>提出物は必ず期限内に：</strong> 宿題やレポートの未提出は内申点に大きなダメージを与えます。優先順位をつけて確実に提出します。
@@ -285,7 +285,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業中は積極的に参加：</strong> 手を挙げて発言する、質問をするなど、先生の目に留まる行動を意識します。
@@ -293,7 +293,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>出席状況を完璧に：</strong> 遅刻・欠席は絶対に避けます。やむを得ない場合は学校に必ず届け出ます。
@@ -314,7 +314,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>「なぜこの高校か」を具体的に</Typography>
@@ -325,7 +325,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>中学時代の経験と結びつける</Typography>
@@ -336,7 +336,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>高校入学後の目標を明確に</Typography>
@@ -347,7 +347,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>誤字脱字をなくす</Typography>
@@ -360,7 +360,7 @@ export default function SuisenNyushiPage() {
           </SubSection>
 
           <SubSection title="自己推薦書の書き方">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 自己推薦書は、志望動機書と異なり、『あなた自身の強み、実績、個性』をアピールする書類です。中学時代の成果や学んだことを、できるだけ具体的かつ説得力を持って表現することが大切です。
               </Typography>
@@ -372,7 +372,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>具体的な実績を数字で示す：</strong> 『部活で全国大会に出場』『英検2級取得』『生徒会副会長として行事改革を実現』など、数字や成果で示すことで説得力が増します。
@@ -380,7 +380,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>失敗から学んだことをアピール：</strong> 失敗自体は悪くありません。『失敗からどう立ち直ったか』『何を学んだか』という成長の姿勢が大切です。
@@ -388,7 +388,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>オリジナリティを出す：</strong> 『頑張りました』だけでなく、『自分にしかない個性や考え方』を表現することで、面接官の記憶に残りやすくなります。
@@ -407,7 +407,7 @@ export default function SuisenNyushiPage() {
 
           <SubSection title="頻出質問と回答のポイント">
             <Box sx={{ mb: 3 }}>
-              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1565C0" }}>1. 「なぜ本校を志望しましたか」</Typography>
+              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1e782d" }}>1. 「なぜ本校を志望しましたか」</Typography>
               <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                 <strong>ポイント：</strong> その高校の『何が自分を惹きつけたのか』を具体的に述べます。教育方針、部活動、進学実績、施設など、実際にリサーチした情報を盛り込むことで、『本当に志望している』という姿勢が伝わります。
               </Typography>
@@ -419,7 +419,7 @@ export default function SuisenNyushiPage() {
             </Box>
 
             <Box sx={{ mb: 3 }}>
-              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1565C0" }}>2. 「あなたの長所と短所を教えてください」</Typography>
+              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1e782d" }}>2. 「あなたの長所と短所を教えてください」</Typography>
               <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                 <strong>ポイント：</strong> 長所は『具体的な状況』で示します。短所を述べる際は、『改善するための努力』を一緒に述べることで、前向きな姿勢を示せます。
               </Typography>
@@ -431,7 +431,7 @@ export default function SuisenNyushiPage() {
             </Box>
 
             <Box sx={{ mb: 3 }}>
-              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1565C0" }}>3. 「高校に入ってやりたいことは何ですか」</Typography>
+              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1e782d" }}>3. 「高校に入ってやりたいことは何ですか」</Typography>
               <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                 <strong>ポイント：</strong> 部活動、勉強、生徒会など、複数の観点から、具体的で実現可能な目標を述べます。『頑張ります』だけでなく、『どうやって実現するか』という行動計画も含めるとより説得力があります。
               </Typography>
@@ -443,7 +443,7 @@ export default function SuisenNyushiPage() {
             </Box>
 
             <Box sx={{ mb: 3 }}>
-              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1565C0" }}>4. 「中学時代の経験で一番成長したことは何ですか」</Typography>
+              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1e782d" }}>4. 「中学時代の経験で一番成長したことは何ですか」</Typography>
               <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                 <strong>ポイント：</strong> 具体的な『状況』『そこから学んだこと』『その後の行動変化』を３段階で説明します。これにより、面接官は『この生徒は経験から学び、成長できる人物』と判断します。
               </Typography>
@@ -455,7 +455,7 @@ export default function SuisenNyushiPage() {
             </Box>
 
             <Box>
-              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1565C0" }}>5. 「10年後のあなたを想像してください」</Typography>
+              <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 1, color: "#1e782d" }}>5. 「10年後のあなたを想像してください」</Typography>
               <Typography variant="body2" sx={{ color: "#424242", mb: 2 }}>
                 <strong>ポイント：</strong> 将来像を述べることで、『人生設計ができている』『この高校でそれに向けて取り組む意思がある』という姿勢を示します。職業に限定せず、『どんな大人になりたいか』という視点も重要です。
               </Typography>
@@ -471,7 +471,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>身だしなみ：</strong> 髪は整える、制服はしわなく、靴は磨くなど、清潔感を心がけます。第一印象は非常に重要です。
@@ -479,7 +479,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>入退室：</strong> ノック3回、『失礼します』と大きな声で言い、着席してから自己紹介などを始めます。最後も『ありがとうございました』と言って退室します。
@@ -487,7 +487,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>視線と笑顔：</strong> 相手の目を見て、笑顔で話します。緊張していても、前向きな表情を心がけます。
@@ -495,7 +495,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>言葉遣い：</strong> 敬語を正しく使い、『あの、その』などの言葉を避けます。落ち着いたペースで、はっきり話します。
@@ -503,7 +503,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>姿勢：</strong> 背筋を伸ばし、椅子に深く腰かけます。貧乏揺すりや腕組みなど、落ち着きのない態度は避けます。
@@ -520,7 +520,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学力試験の負担が軽い</Typography>
@@ -531,7 +531,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>合格確率が高い</Typography>
@@ -542,7 +542,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>入試時期が早い</Typography>
@@ -558,7 +558,7 @@ export default function SuisenNyushiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>内申点の基準がある</Typography>
@@ -569,7 +569,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>落ちる可能性もある</Typography>
@@ -580,7 +580,7 @@ export default function SuisenNyushiPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>学力が身につきにくい可能性</Typography>

@@ -21,9 +21,9 @@ export default function BackToTop() {
         position: "fixed",
         bottom: 24,
         right: 24,
-        bgcolor: "#0D47A1",
+        bgcolor: "#1e782d",
         color: "#fff",
-        "&:hover": { bgcolor: "#1565C0" },
+        "&:hover": { bgcolor: "#1e782d" },
         zIndex: 1000,
         boxShadow: 3,
       }}

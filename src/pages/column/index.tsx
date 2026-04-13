@@ -572,7 +572,7 @@ export default function ColumnIndexPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 5,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -580,7 +580,7 @@ export default function ColumnIndexPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.4rem", sm: "1.8rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校受験コラム
           </Typography>
-          <Typography variant="body1" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body1" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             志望校選び、偏差値の活用方法、受験対策まで、受験生に役立つ情報をお届けします
           </Typography>
         </Box>
@@ -614,7 +614,7 @@ export default function ColumnIndexPage() {
                   sx={{
                     fontSize: { xs: "1.1rem", sm: "1.3rem" },
                     fontWeight: 700,
-                    color: "#0D47A1",
+                    color: "#1e782d",
                     mb: 1.5,
                     lineHeight: 1.4,
                   }}

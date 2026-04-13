@@ -161,14 +161,14 @@ export default function TokKokuGuidePage() {
           </SubSection>
 
           <SubSection title="2. 自己推薦">
-            <Box sx={{ bgcolor: "#E3F2FD", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#e9f2ea", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 <strong>定義：</strong> 高校の推薦なしに、本人が自由に出願できる制度。志望理由や適性が評価されます。
               </Typography>
               <List>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>出願条件が緩い</Typography>
@@ -179,7 +179,7 @@ export default function TokKokuGuidePage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>複数出願が可能</Typography>
@@ -190,7 +190,7 @@ export default function TokKokuGuidePage() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>自己PRが重要</Typography>

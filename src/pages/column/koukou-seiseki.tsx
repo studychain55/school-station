@@ -10,7 +10,7 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouSeisekiPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouSeisekiPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             内申点の仕組みと上げ方
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             高校受験に必要な評定平均と内申点の目安、都道府県別の扱い方の違いを完全ガイド
           </Typography>
         </Box>
@@ -144,20 +144,20 @@ export default function KoukouSeisekiPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>9教科の評定合計</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>9教科の評定合計</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>各教科5段階評価×9教科＝45点満点。全ての教科が高校入試対象であり、得意教科だけでなく苦手教科の成績向上も重要です。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>高校入試での重要性</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>高校入試での重要性</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高校によって内申点と学力試験の比率が異なります。内申点の比率が高い高校では、内申点対策がより重要になります。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>定期テスト重視</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>定期テスト重視</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>各教科の評定の60～70%は定期テストの成績で決まります。つまり、内申点を上げるにはまず定期テスト対策が不可欠です。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>その他の評価項目</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>その他の評価項目</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>提出物、授業態度、出席率、課題提出状況なども評定に含まれます。日常の学習習慣が評定に大きく影響します。</Typography>
             </Paper>
           </Box>
@@ -169,10 +169,10 @@ export default function KoukouSeisekiPage() {
           </Typography>
 
           <SubSection title="基本的な計算方法">
-            <TableContainer component={Paper} sx={{ mb: 3, border: "1px solid #BBDEFB" }}>
+            <TableContainer component={Paper} sx={{ mb: 3, border: "1px solid #bcd7c0" }}>
               <Table>
                 <TableHead>
-                  <TableRow sx={{ bgcolor: "#0D47A1" }}>
+                  <TableRow sx={{ bgcolor: "#1e782d" }}>
                     <TableCell sx={{ color: "#fff", fontWeight: 700 }}>教科</TableCell>
                     <TableCell align="center" sx={{ color: "#fff", fontWeight: 700 }}>評定（5段階）</TableCell>
                     <TableCell sx={{ color: "#fff", fontWeight: 700 }}>評定を決める要素</TableCell>
@@ -213,7 +213,7 @@ export default function KoukouSeisekiPage() {
               </Table>
             </TableContainer>
 
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 上記の比率は学校によって異なりますが、一般的なパターンです。各学校の評定方法は学期ごとに説明されるため、学校から配布される資料を確認することが重要です。
               </Typography>
@@ -224,7 +224,7 @@ export default function KoukouSeisekiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>5（優）：</strong>テスト平均90点以上、提出物の完成度が高い、授業で積極的に発言・参加している
@@ -232,7 +232,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>4（良）：</strong>テスト平均80～89点、提出物の品質が良好、授業態度が積極的
@@ -240,7 +240,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>3（可）：</strong>テスト平均70～79点、提出物は提出されている、授業態度は普通
@@ -248,7 +248,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>2（不可）：</strong>テスト平均60～69点、提出物の未提出がある、授業態度に課題あり
@@ -256,7 +256,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>1（最低）：</strong>テスト平均60点未満、提出物未提出が多い、授業態度に大きな問題あり
@@ -275,7 +275,7 @@ export default function KoukouSeisekiPage() {
             <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
               東京都では、内申点と学力試験（5教科×100点）の比率が1:1です。中学3年間の成績（各学期3回）が記録され、合計45点×2倍で換算されます。つまり、内申点（最高90点）と学力試験（最高500点）の合計で合否が決まります。
             </Typography>
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 内申点の比率が高いため、定期テスト対策と日常学習が受験合否に大きく影響します。
               </Typography>
@@ -304,7 +304,7 @@ export default function KoukouSeisekiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>テスト2～3週間前から準備を開始：</strong>テスト日程を確認したら、計画表を作成して計画的に勉強を進めましょう。先延ばしを避けることが成功の第一歩です。
@@ -312,7 +312,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>教科書とワークの繰り返し学習：</strong>各教科のワークを3回以上解くことで、知識が定着します。わからない問題は、何度も繰り返し解いて理解を深めましょう。
@@ -320,7 +320,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>過去問や模試の活用：</strong>前年度のテスト問題や塾の模試を活用することで、出題傾向を把握できます。得意・不得意な分野を明確にしましょう。
@@ -328,7 +328,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>わからない部分は早めに質問：</strong>テスト1週間前には、分からない部分を先生に質問して解決しておきましょう。疑問点をテストに持ち込まないことが大切です。
@@ -341,7 +341,7 @@ export default function KoukouSeisekiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>提出期限厳守：</strong>未提出は内申点を大きく下げます。提出物カレンダーを作成して、期限を厳管しましょう。
@@ -349,7 +349,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>丁寧で正確な提出物：</strong>ワークは解きっぱなしではなく、間違い箇所を修正してから提出しましょう。丁寧な字で作成することも評価に影響します。
@@ -357,7 +357,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>課題を完全に理解した上で提出：</strong>提出物は、単なる「義務」ではなく、学習成果を示すものです。すべての問題を理解した上で提出することが大切です。
@@ -370,7 +370,7 @@ export default function KoukouSeisekiPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>毎日の授業に集中：</strong>スマートフォンを見ない、居眠りしないなど、基本的な授業態度が評定に影響します。
@@ -378,7 +378,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>積極的な発言・発表：</strong>授業中に質問や発言をすることで、先生の評価が高まります。分からないことは、遠慮なく質問しましょう。
@@ -386,7 +386,7 @@ export default function KoukouSeisekiPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>ノート作成の工夫：</strong>見やすく、整理された字でノートを作成することで、学習効果が高まり、先生の評価も向上します。
@@ -401,10 +401,10 @@ export default function KoukouSeisekiPage() {
             多くの都道府県では、中学3年間の内申点すべてを考慮しますが、中3の成績をより重視する傾向があります。これは、最後の1年間の頑張りが受験合否に最も大きく影響することを意味します。
           </Typography>
 
-          <TableContainer component={Paper} sx={{ mb: 3, border: "1px solid #BBDEFB" }}>
+          <TableContainer component={Paper} sx={{ mb: 3, border: "1px solid #bcd7c0" }}>
             <Table>
               <TableHead>
-                <TableRow sx={{ bgcolor: "#0D47A1" }}>
+                <TableRow sx={{ bgcolor: "#1e782d" }}>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>学年</TableCell>
                   <TableCell align="center" sx={{ color: "#fff", fontWeight: 700 }}>内申点への影響</TableCell>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>重要度</TableCell>
@@ -443,7 +443,7 @@ export default function KoukouSeisekiPage() {
           </Typography>
 
           <SubSection title="進学校（大学進学を想定）">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 <strong>必要内申点：38～45点</strong>（45点満点）
               </Typography>
@@ -454,7 +454,7 @@ export default function KoukouSeisekiPage() {
           </SubSection>
 
           <SubSection title="中位レベルの公立高校">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 <strong>必要内申点：30～37点</strong>（45点満点）
               </Typography>
@@ -465,7 +465,7 @@ export default function KoukouSeisekiPage() {
           </SubSection>
 
           <SubSection title="商業・工業などの実業高校">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 <strong>必要内申点：25～35点</strong>（45点満点）
               </Typography>
@@ -489,7 +489,7 @@ export default function KoukouSeisekiPage() {
         {/* Back to Column */}
         <Box sx={{ mt: 6, pt: 4, borderTop: "1px solid #E0E0E0" }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Typography sx={{ color: "#1565C0", fontWeight: 600, cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+            <Typography sx={{ color: "#1e782d", fontWeight: 600, cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
               ← コラム一覧に戻る
             </Typography>
           </Link>

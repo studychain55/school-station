@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -128,7 +128,7 @@ export default function KoukouOnlineSchoolPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -136,7 +136,7 @@ export default function KoukouOnlineSchoolPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             通信制高校・オンライン高校の選び方
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             卒業資格・学費・自由な時間の両立。あなたのライフスタイルに合わせた高校選び
           </Typography>
         </Box>
@@ -151,7 +151,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>登校日数と時間</strong> — 『全日制高校は「毎日朝から放課後まで登校」「週5日固定」「年間200日以上の登校」』『通信制高校は「週1～3日のスクーリング」「時間帯も選択できる学校が多い」「年間20～30日程度の登校」「自宅学習が中心」』という『圧倒的な時間的自由さ』が特徴です。
@@ -159,7 +159,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学習方法</strong> — 『全日制高校は「教室での一斉授業」「決まったカリキュラム」「集団で同じペースで学習」』『通silon制高校は「郵送・オンラインでの課題提出（レポート）」「動画授業・テキスト自学習」「自分のペースで学習」「得意科目は早く進める、苦手科目は時間をかけるなど、カスタマイズが可能」』という『個別化された学習』が可能です。
@@ -167,7 +167,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学費</strong> — 『全日制公立高校は「年間15万～20万円程度」』『全日制私立高校は「年間100万～150万円程度」』『通信制公立高校は「年間15,000～45,000円程度」（補助金利用で実質ほぼ無料）』『通信制私立高校は「年間230,000～560,000円程度」』という『通信制が経済的に大きなメリット』です。
@@ -175,7 +175,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学校行事・部活動</strong> — 『全日制高校は「文化祭・体育祭など充実した行事」「運動部・文化部など多くの部活が存在」「学校生活の中核」』『通信制高校は「行事が最小限（卒業式程度）」「部活動がない学校が多い」「学校外での活動（趣味・仕事など）が中心」』という『学生生活の定義の違い』があります。
@@ -183,7 +183,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>対人スキルの育成</strong> — 『全日制高校は「集団生活を通じた社会性・協調性の育成」「友人関係の構築」「同級生との深い人間関係形成」』『通信制高校は「スクーリング時の限定的な人間関係」「自律的な学習習慣の形成」「個人としての成長に重点」』という『教育方針の違い』があります。
@@ -202,7 +202,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業料</strong> — 『年間5,000～15,000円程度（月額400～1,250円という極めて低額）』『高等学校等就学支援金制度の対象』『実質的に無料～5,000円程度の負担』という『経済的に最もメリット』があります。
@@ -210,7 +210,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>教材費・施設費</strong> — 『年間5,000～10,000円程度』『テキスト代・学習教材の購入費』『図書館や施設利用料』が含まれます。
@@ -218,7 +218,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>スクーリング費用</strong> — 『年間5,000～20,000円程度（交通費含む）』『週1～3日のスクーリング通学費』『自宅から学校までの距離で大きく異なる』『遠方からの受講生は費用が増加する傾向』があります。
@@ -226,7 +226,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>その他の費用</strong> — 『生徒会費：500～1,000円程度』『修学旅行積立金：通常は実施されないか、実施されても5,000～10,000円程度』『年間総計：15,000～45,000円程度』『3年間で約45,000～135,000円という極めて低額』です。
@@ -239,7 +239,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業料</strong> — 『年間150,000～400,000円程度（学校による大きな差）』『高い授業料は充実した学習サポート・質問対応・進学指導を反映』『安い授業料は最小限のサービスに対応』という『費用とサービスの相関関係』があります。
@@ -247,7 +247,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>施設費・教材費</strong> — 『年間50,000～100,000円程度』『オンラインプラットフォーム利用料』『配信動画の制作・管理費』『テキスト・教材の制作費』などが含まれます。
@@ -255,7 +255,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>サポート料・添削指導料</strong> — 『年間30,000～60,000円程度』『個別の進学指導・キャリアカウンセリング』『提出課題の丁寧な添削・フィードバック』『質問対応サービス（メール・チャット等）』などの充実したサービス』が含まれます。
@@ -263,7 +263,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>スクーリング費用・その他</strong> — 『年間20,000～50,000円程度』『スクーリングは年2～4日程度と少ないが、交通費・宿泊費がかかることもある』『年間総計：230,000～560,000円程度』『公立の5倍～15倍のコスト』『ただし個別指導・進学サポートが充実』という『金額に見合ったサービス』が受けられるか、慎重に検討が必要』です。
@@ -288,7 +288,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>週1～3日制（固定スケジュール）</strong> — 『毎週決まった曜日（例：月火木）に登校』『学校のスケジュールが固定なので、仕事・趣味との調整が必要』『比較的安定した対面授業が受けられる』『定期的な人間関係構築が可能』『スポーツ・音楽などの活動との両立が困難な場合もある』という『安定性がメリット、融通性がデメリット』です。
@@ -296,7 +296,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>集中スクーリング（長期休暇中）</strong> — 『夏休み・春休み・冬休みに1～2週間の集中授業』『普段は自宅学習に集中でき、稼働時間が増加する』『シーズンに登校を集中させるため、スケジュール管理が容易』『大学進学を目指す学生が選ぶことが多い』『スクーリング時の友人関係構築が短期集中』という『時間的な自由度が高い』メリットがあります。
@@ -304,7 +304,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>年数回のスクーリング（最小限型）</strong> — 『年間2～4日程度のスクーリング』『オンライン授業やテキスト学習が中心』『最大限の自由度と時間的融通が可能』『仕事をしながら高卒資格を取得する社会人向け』『最小限の対面授業のため、人間関係構築が難しい』『自己管理能力が極めて高く、モチベーション維持が必須』という『完全な自主性が求められる』形式です。
@@ -312,7 +312,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>完全オンライン型（スクーリング不要）</strong> — 『インターネット配信授業で完結』『一度も登校しなくても卒業可能』『最高レベルの時間的自由度』『海外滞在者・身体障害者などに有効』『対面授業がないため、人間関係構築がない』『完全な自学習のため、モチベーション維持が困難』『オンライン環境（インターネット・PC）が必須』という『極めて自由度が高い一方、自己管理能力が極めて重要』です。
@@ -331,7 +331,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>①在籍期間3年以上</strong> — 『学校への正式な在籍が3年以上必要』『ただし転入（定時制高校からの転入）の場合は在籍期間を短縮できる』『3年未満での途中退学は高卒資格の取得不可』『留年する場合は4年以上の在籍となる』という『厳格な時間要件』があります。
@@ -339,7 +339,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>②総修得単位数74単位以上の取得</strong> — 『1単位の獲得には「レポート提出→スクーリング参加→試験合格」という全3要件の達成が必須』『毎年約25単位程度の取得が必要（3年間で74単位以上）』『特定の科目の単位取得に失敗すると、翌年再履修が必要』『得意科目は早く取得、苦手科目は時間をかけるカスタマイズが可能』『計画的な学習スケジュール立案が成功の鍵』です。
@@ -347,7 +347,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>③特別活動への参加（30時間以上）</strong> — 『特別活動とは「生徒会活動・学校行事・ホームルーム」など学校外活動』『年間約10時間程度の参加で3年間で30時間達成』『オンライン型の学校の場合は実施方法が異なる』『参加実績を学校に報告し、記録される』『多くの生徒が見落とす要件だが、極めて重要』です。
@@ -378,7 +378,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略1：大学入学共通テストで高得点を獲得</strong> — 『共通テストの高得点が「学力証明」になる』『通信制高校の「誤解」を数字で払拭』『難関大学進学のための必須条件』『受験まで1年以上あれば、全日制と同等以上の準備が可能』です。
@@ -386,7 +386,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略2：英検・数学検定など資格取得で学習実績を示す</strong> — 『英検準1級以上・数学検定2級以上など、高度な資格取得』『志望理由書や面接で「資格取得のための学習」を説明』『学習意欲と実績の「証拠」として機能』です。
@@ -394,7 +394,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略3：志望理由書で「通信制を選んだ理由」「学習成果」を明確に記述</strong> — 『「なぜ通信制高校を選んだか」の明確な説明』『その間に「何を学んだか」「どのような成果を得たか」の具体例提示』『審査官の「なぜ通信制？」という疑問を払拭』という『心理的な説得力』が重要です。
@@ -402,7 +402,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略4：面接試験で堂々と「通信制高校での経験」を説明</strong> — 『「自律的に学習を進めた」「困難を乗り越えた」などの成長物語』『「通信制のメリットを活用した」という肯定的な説明』『面接官への「通信制への誤解」払拭』が『第一印象を左右』します。
@@ -410,7 +410,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>戦略5：進学予備校・オンライン予備校などのサポート活用</strong> — 『特に高3時点での受験対策が重要』『通信制高校の進学指導が不十分な場合、外部の予備校利用を検討』『Z会・進研ゼミ・駿台・河合塾など、受験指導の充実した選択肢を活用』『計画的な準備が難関大学進学を実現』します。
@@ -429,7 +429,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>①全日制高校に適応できなかった経験のある生徒</strong> — 『不登校経験のある生徒』『いじめ被害者』『起立性調節障害・社会不安症など、心身の健康上の理由で毎日登校が困難な生徒』『新しい学校での「やり直し」を希望する生徒』『通信制高校の「自由度」が「心理的な安定」に繋がり、学習継続を実現する』という『心理的なメリット』があります。
@@ -437,7 +437,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>②仕事をしながら高卒資格を取得したい社会人</strong> — 『高卒資格を必要とするキャリアチェンジを計画している成人』『夜間定時制では対応できない労働時間の人』『通信制高校の「時間的自由度」が「仕事と学業の両立」を実現』します。
@@ -445,7 +445,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>③スポーツ・芸能・音楽など特定の活動に全力投球したい生徒</strong> — 『プロスポーツ選手を目指すアスリート』『音楽家・芸能人志望者』『全日制高校の「毎日朝から放課後まで登校」という制約が「活動の妨げ」となる場合に、通信制高校が「両立の機会」を提供』します。
@@ -453,7 +453,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>④身体障害・慢性疾患で毎日登校が困難な生徒</strong> — 『身体障害により移動が困難な生徒』『慢性疾患（がん治療中、透析中など）で毎日登校が不可能な生徒』『特にオンライン型の学校が「登校不要」という条件で『完全な対応』が可能』です。
@@ -461,7 +461,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>⑤経済的理由で学費を抑えたい家庭</strong> — 『公立通信制高校の年間15,000～45,000円という極めて低い学費』『補助金適用で実質ほぼ無料の可能性』『経済的に困窮している家庭にとって『高卒資格取得を現実化する唯一の選択肢』』となる場合もあります。
@@ -474,7 +474,7 @@ export default function KoukouOnlineSchoolPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>①自己管理能力が極めて低く、計画的に学習できない生徒</strong> — 『「自由度が高い＝何もしなくていい」と誤解する生徒』『親の強制がないと学習できない生徒』『このタイプが通信制に進むと、卒業までに4年以上かかる可能性が高い』『むしろ毎日の登校と決まった時間割がある全日制高校の方が』『学習習慣の形成に適切』です。
@@ -482,7 +482,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>②学校の集団生活・人間関係構築を強く望む生徒</strong> — 『部活動・学園祭・体育祭など、学校行事を重視する生徒』『クラスの友人との深い人間関係形成を希望する生徒』『通信制高校は「対面授業が少ない」「学校行事がない」という『根本的な不満』に繋がる』『全日制高校の方が『本当に必要な学生生活』を提供』します。
@@ -490,7 +490,7 @@ export default function KoukouOnlineSchoolPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>③親のサポートなしに学習継続が困難な生徒</strong> — 『自宅学習で「親の声かけがないと勉強できない」という依存的な学習スタイル』『通信制高校は『親の継続的な監督が必須』『親が仕事や他の事情で見守りができない家庭では、卒業が困難』』という『現実的な課題』があります。

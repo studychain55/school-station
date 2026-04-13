@@ -12,7 +12,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -23,7 +23,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -116,7 +116,7 @@ export default function KoukouBukatssuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -124,7 +124,7 @@ export default function KoukouBukatssuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校の部活動選び完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             部活動の選び方、勉強との両立、進路選択への影響、時間管理のコツをすべて解説
           </Typography>
         </Box>
@@ -136,7 +136,7 @@ export default function KoukouBukatssuPage() {
           </Typography>
 
           <SubSection title="主な部活動の種類">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 高校の部活動は、大きく『体育系』『文化系』『同好会』に分けられます。それぞれの特徴を理解することが、自分に合った部活動を選ぶ第一歩です。
               </Typography>
@@ -149,7 +149,7 @@ export default function KoukouBukatssuPage() {
               <List>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>練習時間が長い</Typography>
@@ -160,7 +160,7 @@ export default function KoukouBukatssuPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>身体的な疲労がある</Typography>
@@ -171,7 +171,7 @@ export default function KoukouBukatssuPage() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>推薦入試での評価が高い</Typography>
@@ -190,7 +190,7 @@ export default function KoukouBukatssuPage() {
               <List>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>練習時間が比較的少ない</Typography>
@@ -201,7 +201,7 @@ export default function KoukouBukatssuPage() {
                 </ListItem>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>個性的なスキルが身につく</Typography>
@@ -212,7 +212,7 @@ export default function KoukouBukatssuPage() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>文化祭などでの発表機会がある</Typography>
@@ -231,7 +231,7 @@ export default function KoukouBukatssuPage() {
               <List>
                 <ListItem disablePadding sx={{ mb: 1.5 }}>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>自由度が高い</Typography>
@@ -242,7 +242,7 @@ export default function KoukouBukatssuPage() {
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemIcon sx={{ minWidth: 32 }}>
-                    <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                    <CheckCircleIcon sx={{ color: "#1e782d" }} />
                   </ListItemIcon>
                   <Box>
                     <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>推薦入試での評価は低い傾向</Typography>
@@ -259,7 +259,7 @@ export default function KoukouBukatssuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>1. 本当に興味があるか</Typography>
@@ -270,7 +270,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>2. 体力や適性はあるか</Typography>
@@ -281,7 +281,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>3. 顧問の先生は信頼できるか</Typography>
@@ -292,7 +292,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>4. 先輩・後輩の雰囲気は良いか</Typography>
@@ -303,7 +303,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>5. 勉強との両立は現実的か</Typography>
@@ -314,7 +314,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>6. 進路と合致しているか</Typography>
@@ -325,7 +325,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>7. 施設や設備は充実しているか</Typography>
@@ -349,10 +349,10 @@ export default function KoukouBukatssuPage() {
             <Box sx={{ overflowX: "auto", mb: 3 }}>
               <Paper sx={{ p: 0 }}>
                 <Box sx={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", fontSize: "0.85rem" }}>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 1.5, fontWeight: 700 }}>時間帯</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 1.5, fontWeight: 700 }}>体育系部活</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 1.5, fontWeight: 700 }}>文化系部活</Box>
-                  <Box sx={{ bgcolor: "#0D47A1", color: "#fff", p: 1.5, fontWeight: 700 }}>部活なし</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 1.5, fontWeight: 700 }}>時間帯</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 1.5, fontWeight: 700 }}>体育系部活</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 1.5, fontWeight: 700 }}>文化系部活</Box>
+                  <Box sx={{ bgcolor: "#1e782d", color: "#fff", p: 1.5, fontWeight: 700 }}>部活なし</Box>
 
                   <Box sx={{ p: 1.5, fontWeight: 600, bgcolor: "#F5F5F5" }}>放課後～練習開始</Box>
                   <Box sx={{ p: 1.5 }}>軽食・休憩（30分）</Box>
@@ -390,7 +390,7 @@ export default function KoukouBukatssuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>スキマ時間を活用</Typography>
@@ -401,7 +401,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>週末に集中学習</Typography>
@@ -412,7 +412,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>定期テスト1週間前は練習量を調整</Typography>
@@ -423,7 +423,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>授業の予習復習を重視</Typography>
@@ -444,7 +444,7 @@ export default function KoukouBukatssuPage() {
           </Typography>
 
           <SubSection title="推薦入試・総合型選抜での評価">
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mb: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mb: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 推薦入試や総合型選抜では、『学力試験がない、または簡易的である』という特徴があります。その分、部活動での実績や経験が、合否を決める重要な要素になります。
               </Typography>
@@ -453,7 +453,7 @@ export default function KoukouBukatssuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>全国大会出場</Typography>
@@ -464,7 +464,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>部長・副部長などのリーダーシップ経験</Typography>
@@ -475,7 +475,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>3年継続</Typography>
@@ -486,7 +486,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>部活から学んだことの明確な表現</Typography>
@@ -505,7 +505,7 @@ export default function KoukouBukatssuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>調査書の評価</Typography>
@@ -516,7 +516,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>面接試験での話題</Typography>
@@ -535,7 +535,7 @@ export default function KoukouBukatssuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>適性の発見</Typography>
@@ -546,7 +546,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>将来の職業決定</Typography>
@@ -570,7 +570,7 @@ export default function KoukouBukatssuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『勉強に専念したい』という明確な目標がある</Typography>
@@ -581,7 +581,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>健康上の理由がある</Typography>
@@ -592,7 +592,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>部活をやめた後も、他の活動で実績を出している</Typography>
@@ -608,7 +608,7 @@ export default function KoukouBukatssuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>『つらいから』『友人関係がうまくいってないから』という後ろ向きな理由</Typography>
@@ -619,7 +619,7 @@ export default function KoukouBukatssuPage() {
               </ListItem>
               <ListItem disablePadding>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>部活をやめた後、特に何もしていない</Typography>

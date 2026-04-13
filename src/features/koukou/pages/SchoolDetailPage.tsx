@@ -120,8 +120,8 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
         <BreadCrumb items={breadcrumbs} />
 
         {/* Hero Section */}
-        <Box sx={{ mb: 4, p: { xs: 2, sm: 3 }, background: "linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%)", borderRadius: 2 }}>
-          <Typography variant="h1" component="h1" sx={{ fontSize: { xs: "1.4rem", sm: "2rem" }, mb: 1, color: "#0D47A1", fontWeight: 700 }}>
+        <Box sx={{ mb: 4, p: { xs: 2, sm: 3 }, background: "linear-gradient(135deg, #e9f2ea 0%, #bcd7c0 100%)", borderRadius: 2 }}>
+          <Typography variant="h1" component="h1" sx={{ fontSize: { xs: "1.4rem", sm: "2rem" }, mb: 1, color: "#1e782d", fontWeight: 700 }}>
             {school.name}
           </Typography>
           <Typography variant="body1" sx={{ color: "#37474F", mb: 1 }}>
@@ -141,16 +141,16 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                   偏差値情報
                 </Typography>
                 <Box sx={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))", gap: 2 }}>
-                  <Box sx={{ p: 2, bgcolor: "#F5F9FF", borderRadius: 1, textAlign: "center" }}>
+                  <Box sx={{ p: 2, bgcolor: "#f0f6f0", borderRadius: 1, textAlign: "center" }}>
                     <Typography sx={{ color: "#757575", fontSize: 12, mb: 0.5 }}>
                       最高偏差値
                     </Typography>
-                    <Typography sx={{ color: "#1565C0", fontSize: 28, fontWeight: 700 }}>
+                    <Typography sx={{ color: "#1e782d", fontSize: 28, fontWeight: 700 }}>
                       {school.deviation_value_max || "-"}
                     </Typography>
                   </Box>
                   {school.deviation_value_min && school.deviation_value_min !== school.deviation_value_max && (
-                    <Box sx={{ p: 2, bgcolor: "#F5F5F5", borderRadius: 1, textAlign: "center" }}>
+                    <Box sx={{ p: 2, bgcolor: "#f4f4f4", borderRadius: 1, textAlign: "center" }}>
                       <Typography sx={{ color: "#757575", fontSize: 12, mb: 0.5 }}>
                         最低偏差値
                       </Typography>
@@ -174,7 +174,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                             <Typography sx={{ fontSize: 14, fontWeight: 500 }}>
                               {course.name}
                             </Typography>
-                            <Typography sx={{ fontSize: 16, fontWeight: 700, color: "#1565C0" }}>
+                            <Typography sx={{ fontSize: 16, fontWeight: 700, color: "#1e782d" }}>
                               {course.deviation_value}
                             </Typography>
                           </Box>
@@ -212,7 +212,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                           target="_blank"
                           rel="noopener noreferrer"
                           title="Google Mapsで確認"
-                          sx={{ display: "inline-flex", alignItems: "center", color: "#1565C0" }}
+                          sx={{ display: "inline-flex", alignItems: "center", color: "#1e782d" }}
                         >
                           <LocationOnIcon sx={{ fontSize: 16 }} />
                         </MuiLink>
@@ -346,15 +346,15 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                     }}
                   >
                     <CardContent>
-                      <Typography variant="h3" component="h3" sx={{ fontSize: "0.95rem", fontWeight: 600, mb: 1, color: "#0D47A1" }}>
+                      <Typography variant="h3" component="h3" sx={{ fontSize: "0.95rem", fontWeight: 600, mb: 1, color: "#1e782d" }}>
                         {relatedSchool.name}
                       </Typography>
                       <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-                        <Box sx={{ p: 1, bgcolor: "#F5F9FF", borderRadius: 0.5, textAlign: "center" }}>
+                        <Box sx={{ p: 1, bgcolor: "#f0f6f0", borderRadius: 0.5, textAlign: "center" }}>
                           <Typography sx={{ color: "#757575", fontSize: 11 }}>
                             偏差値
                           </Typography>
-                          <Typography sx={{ color: "#1565C0", fontSize: 18, fontWeight: 700 }}>
+                          <Typography sx={{ color: "#1e782d", fontSize: 18, fontWeight: 700 }}>
                             {relatedSchool.deviation_value_max || "-"}
                           </Typography>
                         </Box>
@@ -396,7 +396,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                   },
                 }}
               >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#1e782d", lineHeight: 1.4 }}>
                   偏差値の見方・使い方を徹底解説
                 </Typography>
                 <Typography sx={{ fontSize: 12, color: "#757575" }}>
@@ -419,7 +419,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                   },
                 }}
               >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#1e782d", lineHeight: 1.4 }}>
                   志望校の選び方｜受験校を決める5つの基準
                 </Typography>
                 <Typography sx={{ fontSize: 12, color: "#757575" }}>
@@ -442,7 +442,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                   },
                 }}
               >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#1e782d", lineHeight: 1.4 }}>
                   高校受験のスケジュール｜中3の年間スケジュール
                 </Typography>
                 <Typography sx={{ fontSize: 12, color: "#757575" }}>
@@ -453,7 +453,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           </Box>
           <Box sx={{ mt: 2, textAlign: "center" }}>
             <Link href="/column/" style={{ textDecoration: "none" }}>
-              <Typography sx={{ color: "#1565C0", fontSize: 14, fontWeight: 600, "&:hover": { textDecoration: "underline" } }}>
+              <Typography sx={{ color: "#1e782d", fontSize: 14, fontWeight: 600, "&:hover": { textDecoration: "underline" } }}>
                 すべてのコラムを見る →
               </Typography>
             </Link>
@@ -461,7 +461,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
         </Box>
 
         {/* SEO Text Section */}
-        <Box sx={{ mb: 4, p: 2, bgcolor: "#F5F5F5", borderRadius: 1 }}>
+        <Box sx={{ mb: 4, p: 2, bgcolor: "#f4f4f4", borderRadius: 1 }}>
           <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
             {school.name}について
           </Typography>

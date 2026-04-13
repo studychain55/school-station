@@ -100,7 +100,7 @@ export default function HomePage() {
             textAlign: "center",
             py: { xs: 5, sm: 6 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -108,7 +108,7 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.4rem", sm: "1.8rem", md: "2.2rem" }, mb: 1.5 }}>
             高校偏差値ランキング
           </Typography>
-          <Typography variant="body1" sx={{ color: "#E3F2FD", mb: 3, px: 2 }}>
+          <Typography variant="body1" sx={{ color: "#e9f2ea", mb: 3, px: 2 }}>
             全国の高校偏差値を網羅的に掲載。志望校選びの参考に。
           </Typography>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
@@ -143,11 +143,11 @@ export default function HomePage() {
                   p: { xs: 2, sm: 2.5 },
                   textAlign: "center",
                   border: "1px solid #E0E0E0",
-                  "&:hover": { borderColor: "#1565C0", bgcolor: "#F5F9FF", transform: "translateY(-2px)", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" },
+                  "&:hover": { borderColor: "#1e782d", bgcolor: "#F5F9FF", transform: "translateY(-2px)", boxShadow: "0 4px 12px rgba(0,0,0,0.08)" },
                   transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#0D47A1", fontSize: { xs: 14, sm: 15 } }}>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d", fontSize: { xs: 14, sm: 15 } }}>
                   {pref.title}
                 </Typography>
                 <Typography variant="caption" sx={{ color: "#757575" }}>
@@ -193,7 +193,7 @@ export default function HomePage() {
 
         {/* Column Section */}
         <Box sx={{ my: 5 }}>
-          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.3rem", color: "#0D47A1", fontWeight: 700 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.3rem", color: "#1e782d", fontWeight: 700 }}>
             最新コラム
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.6, mb: 3 }}>
@@ -228,7 +228,7 @@ export default function HomePage() {
                     },
                   }}
                 >
-                  <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#0D47A1", lineHeight: 1.4 }}>
+                  <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#1e782d", lineHeight: 1.4 }}>
                     {article.title}
                   </Typography>
                   <Typography sx={{ fontSize: 12, color: "#757575", lineHeight: 1.5 }}>
@@ -270,7 +270,7 @@ export default function HomePage() {
 
         {/* Stats Section */}
         <Box sx={{ my: 5, p: 3, bgcolor: "#F5F9FF", borderRadius: 2 }}>
-          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.2rem", fontWeight: 700, color: "#0D47A1" }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.2rem", fontWeight: 700, color: "#1e782d" }}>
             School Stationの特徴
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" }, gap: 2 }}>
@@ -281,7 +281,7 @@ export default function HomePage() {
               { num: "無料", label: "利用料金" },
             ].map((stat) => (
               <Box key={stat.label} sx={{ textAlign: "center", p: 2, bgcolor: "#fff", borderRadius: 1, boxShadow: "0 1px 4px rgba(0,0,0,0.06)" }}>
-                <Typography sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", lineHeight: 1.2 }}>
+                <Typography sx={{ fontSize: { xs: "1.3rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", lineHeight: 1.2 }}>
                   {stat.num}
                 </Typography>
                 <Typography sx={{ fontSize: 12, color: "#757575", mt: 0.5 }}>{stat.label}</Typography>
@@ -292,7 +292,7 @@ export default function HomePage() {
 
         {/* FAQ Section */}
         <Box sx={{ my: 5 }}>
-          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.3rem", color: "#0D47A1", fontWeight: 700 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 3, fontSize: "1.3rem", color: "#1e782d", fontWeight: 700 }}>
             よくある質問
           </Typography>
           {[
@@ -319,7 +319,7 @@ export default function HomePage() {
           ].map((faq, index) => (
             <Accordion key={index} sx={{ mb: 1, border: "1px solid #E0E0E0", "&:before": { display: "none" } }}>
               <AccordionSummary expandIcon={<ExpandMoreIcon />} sx={{ bgcolor: "#F5F9FF", "&:hover": { bgcolor: "#EEF5FF" } }}>
-                <Typography sx={{ fontWeight: 600, color: "#0D47A1" }}>{faq.question}</Typography>
+                <Typography sx={{ fontWeight: 600, color: "#1e782d" }}>{faq.question}</Typography>
               </AccordionSummary>
               <AccordionDetails sx={{ bgcolor: "#fff", color: "#424242", lineHeight: 1.8 }}>
                 {faq.answer}

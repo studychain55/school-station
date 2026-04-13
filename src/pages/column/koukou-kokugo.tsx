@@ -9,7 +9,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -20,7 +20,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -123,7 +123,7 @@ export default function KoukouKokugoPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1565C0 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -131,7 +131,7 @@ export default function KoukouKokugoPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校国語の勉強法完全ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             現代文・古文・漢文の読解から古典文法まで完全攻略
           </Typography>
         </Box>
@@ -146,7 +146,7 @@ export default function KoukouKokugoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>現代文（評論・小説）（高1必須）</strong> — 『「論理的読解」「語彙力」「著者の思想把握」が中核で、全領域の基礎となる最重要分野』『習得に50～80時間の学習時間が必要で、この段階での『読解の型』の習得が、他領域の学習を大きく左右する』『共通テストでも配点が高く、二次試験でも深い思考が求められる』『高1から週5～10篇の評論・小説を丁寧に読む習慣をつけることが極めて重要』
@@ -154,7 +154,7 @@ export default function KoukouKokugoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>古文（高2主体）</strong> — 『古文は「古語」「助動詞・助詞」「古典文法」と「古人の思想・文化理解」が組み合わさった複合的領域』『現代文の『読解基礎』が確立されていないと、古文特有の文法が頭に入らない』『習得に70～100時間の学習時間が必要で、文法の完全習得と読解の同時進行が必須』『共通テストでも出題が確定しており、確実な基礎構築が合格に直結』
@@ -162,7 +162,7 @@ export default function KoukouKokugoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>漢文（高2～3）</strong> — 『漢文は「句法」「返り点の読み方」「白文から書き下し文への変換」という『機械的なプロセス』が中核』『現代文・古文とは異なり、『パターン習得』が効率的で、習得時間も30～50時間と比較的短い』『ただし、本当の『読解力』を養うには、『漢文作品の思想や背景』を理解することが重要』『高2秋から本格的に学習を開始して、高3春までに基礎を完成させることが目安』
@@ -181,7 +181,7 @@ export default function KoukouKokugoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『現代文の読解力を高めるには、「テーマ別の読み方」を習得することが極めて重要』『例えば、「評論文（哲学的・思想的）」は『著者の論理展開』を追うことが鍵で、「小説（心理描写・人物描写）」は『登場人物の心理変化』を追うことが鍵となる』『効果的学習法は、①教科書の評論・小説を『どのような『思想』『心理』『表現技法』が使われているか』という『分析視点』を持って5～10回読み返し、②『設問と答えの関係』を『なぜこの答えが正しいのか』という『論理的根拠』とともに理解、③『間違える理由』を『誤読』『論理のすり替わり』『引っかけに乗った』という『ミスのパターン分類』をして、同じミスを繰り返さない工夫をする』『この方法で2～3か月の継続で、現代文の読解精度が顕著に向上する』
@@ -194,7 +194,7 @@ export default function KoukouKokugoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『古文学習で最も効果的なのが「頻出古語・助動詞の『集中習得』」で、全てを網羅する必要はない』『実は、共通テスト・二次試験の古文問題の約80%は『頻出30個の助動詞』『頻出200個の古語』から出題される』『効果的習得法は、①『頻出度ランク』を決めて、『ぬ・たり・た・り・けり・ぞ・なむ・む・べし・き』という『最高頻出助動詞10個』から集中習得、②各助動詞を『複数の古文テキストの具体例』で理解し、『文脈ごとの意味変化』に敏感になり、③『古語は『類義語グループ』として習得』『例えば「をかし・いとおかし・あやし」という『感情を表す古語』を『微妙なニュアンスの違い』とともに理解』『この方法で4～5か月で、古文の文法・古語がほぼ定着し、教科書の古典が『スムーズに読める状態』が達成される』
@@ -207,7 +207,7 @@ export default function KoukouKokugoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   『漢文は「パターン習得」が最も効率的で、『限られた句法』を完全マスターすることが全ての問題の鍵になる』『共通テスト・二次試験で頻出の句法は『也（～なり）』『而（そうして）』『以為（～だと考える）』『乎（～か）』『矣（已に～）』『焉（どこか）』など『約30個程度』に限定される』『習得戦略は『第一に、『書き下し文への変換ルール』を完全自動化』『すなわち『レ点・一二点・上中下の点の位置』『白文から書き下し文への正確な変換』を『毎日15分、機械的に反復』『2～3週間で『脳が無意識に変換できる状態』に到達することが重要』『第二に、『頻出句法の意味』を『具体例を通じて』習得し、『複数の用例』で『その句法がどういう時に、どういう意味で使われるか』を理解』『第三に、『複数句法の組み合わせ』が出現した場合の『読み順序』『全体の意味把握』を訓練』『この段階的習得で、3～4週間で漢文のほぼ全ての問題に対応可能になる』
@@ -226,7 +226,7 @@ export default function KoukouKokugoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階1：基礎読解力の完全習得（高2終了までに完結）</strong> — 『共通テスト対策の前提として、『現代文の『読解型の完成』『古文の基本文法の習得』『漢文の全句法習得』が不可欠』『具体的には、教科書の全ての評論・小説・古典を『丁寧に分析』『複数回の反復読』を通じて、『読解の基本パターン』を脳に刻み込む』『この段階が不十分だと、高3での『共通テスト形式対策』に時間を浪費することになる』
@@ -234,7 +234,7 @@ export default function KoukouKokugoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階2：共通テスト形式への習慣化（高3春夏）</strong> — 『共通テスト形式の『過去問題』『模擬試験』を『時間制限の厳密な管理下』で『週2回以上』解く』『この段階では『正答率』より『時間管理スキル』『難度判定能力』『優先順位の判断』が求められる』『特に『時間不足に陥らない時間配分』『易しい問題と難問の見分け方』『後ろから前へ解く逆解法』などの『テクニック』を習得』『この段階での正答率が70%以上なら、本番での75点以上達成は確実』
@@ -242,7 +242,7 @@ export default function KoukouKokugoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>段階3：弱点分析と最終調整（高3秋冬）</strong> — 『模試や過去問の結果から『得点できない領域』『時間が足りない分野』『ミスが多い問題タイプ』を詳しく分析』『例えば、『古文の助動詞判定で落とす』『漢文の複合句法で誤読』『現代文で設問の誤読』など『ミスパターン』を明確化』『その後、『自分専用の弱点対策テキスト』を作成し、『毎日30分の集中復習』を実施』『最後の2週間は『本番形式での模擬テスト』を週2回実施し、『本番での緊張感への対応』を習得』『この『着実な最終調整』で、本番での確実な75点以上達成が実現する』
@@ -261,7 +261,7 @@ export default function KoukouKokugoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高2段階：基礎読解力の完全習得と古典理解の深化</strong> — 『難関大合格には、高2段階で『現代文の『思考型読解』『古文の『古典文化理解』『漢文の『複合句法の読み解き』を完成させることが極めて重要』『具体的には、高2中に『教科書の全ての評論・小説・古典を『複数の視点から分析』『著者や古人の『時代背景』『思想的背景』を理解した上で読む』『この段階での習得度が、高3での『難問演習』の効率を大きく左右する』『目安としては、『高2終了時に『教科書レベルのどの設問でも『その答えがなぜ正しいのか』を『哲学的・歴史的背景』とともに説明できるレベル』に到達することが必須』
@@ -269,7 +269,7 @@ export default function KoukouKokugoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高3春夏段階：難問演習と深い思考力の育成</strong> — 『高3から本格的な難問演習に移行し、『教科書をはるかに超える思想的に複雑な評論』『難解な古典文学』『複雑な漢文作品』に毎日2～3時間挑戦』『重要なのは『正答率』ではなく『著者や古人の『心理』『思想』『時代背景』を『深く理解する』ことで、最初の段階では正答率40%程度が目安』『難問に挑戦する過程で『複雑な論理構造の読み解き方』『古典文化の歴史的背景の理解』『深い思想的反省』が育成される』『週1回の模試受験で、実際の試験環境での『時間管理』『思考の深さ』『表現の正確さ』を確認することも重要』
@@ -277,7 +277,7 @@ export default function KoukouKokugoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高3秋冬段階：過去問分析と最終仕上げ</strong> — 『志望大学の過去10年分の問題を詳しく分析し、『頻出の『現代文の思想テーマ』『古文の重要古典』『漢文の出題パターン』を把握』『その後、『同じ大学の過去問を『最初の5年は参考資料を見ながら解く』『次の3年は時間無制限で解く』『最後の2年は本番形式で解く』という『段階的アプローチ』が極めて有効』『この過程を通じて『その大学の『出題傾向』『評価される答案の書き方』『部分点の取り方』が完全に習得される』『最後の1か月は『苦手領域の最終集中対策』に注力し、『現代文が弱い人は『著者の思想把握』『古文が弱い人は『古語の多義性』『漢文が弱い人は『複合句法の判定』を繰り返し訓練』『目安としては、本番での正答率70%以上の安定性を達成することが難関大合格の条件』
@@ -290,7 +290,7 @@ export default function KoukouKokugoPage() {
         {/* FAQ */}
         <Divider sx={{ my: 4 }} />
         <Box sx={{ mb: 4 }}>
-          <Typography variant="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 3 }}>
+          <Typography variant="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 3 }}>
             よくある質問（FAQ）
           </Typography>
           <FAQ items={faqItems} />

@@ -10,7 +10,7 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#0D47A1", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1565C0", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouShingakuPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #0D47A1 0%, #1565C0 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouShingakuPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校入学後の大学進学準備
           </Typography>
-          <Typography variant="body2" sx={{ color: "#E3F2FD", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
             1年生から始めるべき勉強習慣と情報収集の完全ガイド
           </Typography>
         </Box>
@@ -144,20 +144,20 @@ export default function KoukouShingakuPage() {
           </Typography>
 
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" }, gap: 2, mb: 3 }}>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>評定平均の積み重ね</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>評定平均の積み重ね</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高1の成績は3年間の評定平均に直結します。指定校推薦を狙う場合、評定平均4.0以上が目安のため、高1から定期テスト対策が不可欠です。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>基礎学力の定着</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>基礎学力の定着</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高1で習う英語・数学は、高2・高3での応用問題の土台となります。基礎が定着していなければ、後々の成績向上は困難です。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>入試情報の早期収集</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>入試情報の早期収集</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高1から大学情報を集めることで、文理選択や科目選択が戦略的になります。志望大学の入試要件を知ることが学習の方向性を定めます。</Typography>
             </Paper>
-            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #BBDEFB" }}>
-              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#0D47A1", mb: 1 }}>学習習慣の構築</Typography>
+            <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0" }}>
+              <Typography variant="h3" component="h3" sx={{ fontSize: "1rem", fontWeight: 700, color: "#1e782d", mb: 1 }}>学習習慣の構築</Typography>
               <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.7 }}>高1での学習習慣が、高2・高3の受験対策の効率性を大きく左右します。早期の習慣化が成功の鍵です。</Typography>
             </Paper>
           </Box>
@@ -172,7 +172,7 @@ export default function KoukouShingakuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業の予習：</strong>各科目の予習に15～20分程度を費やすことで、授業内容の理解度が大きく向上します。教科書を読み、分からない用語を調べておくだけでも効果的です。
@@ -180,7 +180,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>授業後の復習：</strong>授業後その日のうちに30分程度かけて、ノートを整理し、わからない部分を教科書で確認します。この習慣が定着すると、定期テスト対策の効率が劇的に向上します。
@@ -188,7 +188,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>週末のまとめ学習：</strong>週末に1週間の学習内容を総復習し、分からない部分を質問カードに記入して先生に質問する習慣を付けます。
@@ -201,7 +201,7 @@ export default function KoukouShingakuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>テスト2週間前：計画立案と範囲確認：</strong>テスト範囲を把握し、科目ごとに2週間の学習計画表を作成します。1日あたり平均3～4時間の勉強を配分します。
@@ -209,7 +209,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>テスト1週間前：ワーク完成・過去問演習：</strong>学校配布のワークを3回以上繰り返し、前年度のテスト問題（あれば）を解いて出題傾向を把握します。
@@ -217,7 +217,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>テスト3日前：わからない部分の質問：</strong>テスト直前に分からない部分を先生に質問し、疑問点をテストに持ち込まないようにします。
@@ -233,7 +233,7 @@ export default function KoukouShingakuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高1目標：英検準2級合格：</strong>高1までに英検準2級（大学入試の目安）の合格を目指します。週3～4回の英語学習に外部試験対策30分を追加します。
@@ -241,7 +241,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高2目標：英検2級合格：</strong>多くの大学で英検2級以上を優遇します。高2の1月受験を目安に準備を進めます。
@@ -249,7 +249,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>学習リソース：</strong>英検対策本、オンライン英会話、YouTube動画など複数のリソースを組み合わせることで、効率的に英語4技能を高められます。
@@ -265,10 +265,10 @@ export default function KoukouShingakuPage() {
           </Typography>
 
           <SubSection title="評定を上げるための3つのポイント">
-            <TableContainer component={Paper} sx={{ mb: 3, border: "1px solid #BBDEFB" }}>
+            <TableContainer component={Paper} sx={{ mb: 3, border: "1px solid #bcd7c0" }}>
               <Table>
                 <TableHead>
-                  <TableRow sx={{ bgcolor: "#0D47A1" }}>
+                  <TableRow sx={{ bgcolor: "#1e782d" }}>
                     <TableCell sx={{ color: "#fff", fontWeight: 700 }}>項目</TableCell>
                     <TableCell align="center" sx={{ color: "#fff", fontWeight: 700 }}>配点割合</TableCell>
                     <TableCell sx={{ color: "#fff", fontWeight: 700 }}>対策方法</TableCell>
@@ -294,7 +294,7 @@ export default function KoukouShingakuPage() {
               </Table>
             </TableContainer>
 
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB" }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0" }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 <strong>重要ポイント：</strong>評定は一度下がると、その後の成績向上で取り戻すのが非常に難しくなります。高1段階から確実に評定を維持することが、将来の選択肢を大きく広げます。
               </Typography>
@@ -311,7 +311,7 @@ export default function KoukouShingakuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高1での各教科の成績：</strong>理系選択の場合、数学と理科（特に化学・物理）の成績が高1の段階で60点以上ある必要があります。苦手な場合は、高2で急速に対応するのが難しいため、慎重な選択が重要です。
@@ -319,7 +319,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>志望大学の学部学科：</strong>文系大学を志望する場合は文系、理系大学（工学部・医学部など）を志望する場合は理系を選択します。志望校が決まっていない場合は、保護者や学校の進路指導の先生に相談し、複数の進路オプションを検討します。
@@ -327,7 +327,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>得意不得意の正確な把握：</strong>高1の定期テストの成績、高1で習う内容の理解度を正確に把握することが大切です。「何となく得意」ではなく、具体的な点数や理解度で判断します。
@@ -335,7 +335,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>適性と興味の確認：</strong>得意科目＝興味のある科目とは限りません。4年間の大学生活を充実させるためには、興味を持ち続けられる分野を選択することが重要です。
@@ -360,7 +360,7 @@ export default function KoukouShingakuPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高1後期～高2上期：初回訪問：</strong>志望校（複数）の初回訪問はこの時期が最適です。キャンパスの雰囲気、教育設備、学生の様子を観察し、大学のイメージを膨らませます。
@@ -368,7 +368,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高2下期：詳細確認訪問：</strong>文理選択後、具体的な学部学科の説明会に参加し、カリキュラム、入試要件、進学実績などを確認します。複数回訪問することで、大学の理解が深まります。
@@ -376,7 +376,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>確認すべき項目：</strong>①キャンパスの立地・環境、②教育設備の充実度、③学生の雰囲気、④入試方法と要件、⑤奨学金制度、⑥卒業生の進路先などを記録しておきます。
@@ -384,7 +384,7 @@ export default function KoukouShingakuPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1565C0" }} />
+                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高3では時間効率を重視：</strong>高3は受験勉強で忙しいため、オープンキャンパス訪問は最小限に留めます。高1～高2での情報収集を十分に行うことが大切です。
@@ -400,10 +400,10 @@ export default function KoukouShingakuPage() {
           </Typography>
 
           <SubSection title="毎日の学習スケジュール">
-            <TableContainer component={Paper} sx={{ border: "1px solid #BBDEFB" }}>
+            <TableContainer component={Paper} sx={{ border: "1px solid #bcd7c0" }}>
               <Table size="small">
                 <TableHead>
-                  <TableRow sx={{ bgcolor: "#0D47A1" }}>
+                  <TableRow sx={{ bgcolor: "#1e782d" }}>
                     <TableCell sx={{ color: "#fff", fontWeight: 700 }}>時間帯</TableCell>
                     <TableCell sx={{ color: "#fff", fontWeight: 700 }}>学習内容</TableCell>
                     <TableCell sx={{ color: "#fff", fontWeight: 700 }}>時間</TableCell>
@@ -439,7 +439,7 @@ export default function KoukouShingakuPage() {
               </Table>
             </TableContainer>
 
-            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #BBDEFB", mt: 2 }}>
+            <Box sx={{ bgcolor: "#F5F9FF", p: 2.5, borderRadius: 1, border: "1px solid #bcd7c0", mt: 2 }}>
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
                 <strong>合計学習時間：</strong>平日2～2.5時間 + 週末3～4時間。この学習習慣が、高3での受験対策の効率性を大きく高めます。
               </Typography>
@@ -454,7 +454,7 @@ export default function KoukouShingakuPage() {
         {/* Back to Column */}
         <Box sx={{ mt: 6, pt: 4, borderTop: "1px solid #E0E0E0" }}>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Typography sx={{ color: "#1565C0", fontWeight: 600, cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+            <Typography sx={{ color: "#1e782d", fontWeight: 600, cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
               ← コラム一覧に戻る
             </Typography>
           </Link>

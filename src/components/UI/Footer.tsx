@@ -59,6 +59,47 @@ export default function Footer() {
           ))}
         </Grid>
 
+        {/* おすすめサービス */}
+        <Box sx={{ borderTop: "1px solid rgba(255,255,255,0.15)", pt: 3, mb: 3 }}>
+          <Typography sx={{ color: "#fff", fontWeight: 700, fontSize: 13, mb: 1.5 }}>おすすめサービス</Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+          <a href="https://studychain.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">Studychain</a>
+          <a href="https://pilates-station.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ピラティスステーション</a>
+          <a href="https://gym-navi.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ジムナビ</a>
+          <a href="https://ohaka-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">お墓ステーション</a>
+          <a href="https://photo-navi.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">フォトスタジオナビ</a>
+          <a href="https://tantei-navi.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">探偵ナビ</a>
+          <a href="https://sigyo-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">士業ナビ</a>
+          <a href="https://hakenstation.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">派遣ステーション</a>
+          <a href="https://driverstation.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ドライバーステーション</a>
+          <a href="https://internationalschool-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">インターナショナルスクールナビ</a>
+          <a href="https://ryugakustation.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">留学ステーション</a>
+          <a href="https://musicschool-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">音楽教室ステーション</a>
+          <a href="https://butsudan-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">仏壇ステーション</a>
+          <a href="https://eikaiwa-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">英会話ステーション</a>
+          <a href="https://cookschool-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">料理教室ステーション</a>
+          <a href="https://danceschool-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ダンススクールステーション</a>
+          <a href="https://golfschool-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ゴルフスクールステーション</a>
+          <a href="https://whitening-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ホワイトニングステーション</a>
+          <a href="https://seitai-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">整体ステーション</a>
+          <a href="https://kaitai-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">解体ステーション</a>
+          <a href="https://reform-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">リフォームステーション</a>
+          <a href="https://rojinhome-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">老人ホームステーション</a>
+          <a href="https://trimming-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">トリミングステーション</a>
+          <a href="https://petsalon-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ペットサロンナビ</a>
+          <a href="https://pethotel-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ペットホテルナビ</a>
+          <a href="https://animal-hospital-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">動物病院ナビ</a>
+          <a href="https://allkaishu-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">不用品回収ナビ</a>
+          <a href="https://hearing-aid-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">補聴器ナビ</a>
+          <a href="https://ihinseiri-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">遺品整理ナビ</a>
+          <a href="https://suido-repair-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">水道修理ナビ</a>
+          <a href="https://kajidaiko-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">家事代行ナビ</a>
+          <a href="https://kekkon-soudanjo-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">結婚相談所ナビ</a>
+          <a href="https://karaoke-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">カラオケナビ</a>
+          <a href="https://solarsystem-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">太陽光ナビ</a>
+          </Box>
+        </Box>
+
         <Box sx={{ borderTop: "1px solid rgba(255,255,255,0.15)", pt: 3, display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 1 }}>
           <Typography sx={{ fontWeight: 700, fontSize: 15 }}>
             School Station

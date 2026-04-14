@@ -1,11 +1,14 @@
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import theme from "@/theme";
 import Header from "@/components/UI/Header";
 import Footer from "@/components/UI/Footer";
 import BackToTop from "@/components/BackToTop";
 import "@/styles/globals.css";
+
+const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -17,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       </main>
       <Footer />
       <BackToTop />
+      {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </ThemeProvider>
   );
 }

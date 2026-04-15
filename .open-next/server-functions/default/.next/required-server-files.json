@@ -63,7 +63,12 @@
           "search": ""
         }
       ],
-      "remotePatterns": [],
+      "remotePatterns": [
+        {
+          "protocol": "https",
+          "hostname": "images.unsplash.com"
+        }
+      ],
       "qualities": [
         75
       ],
@@ -302,12 +307,75 @@
       "isExperimentalCompile": false
     },
     "htmlLimitedBots": "[\\w-]+-Google|Google-[\\w-]+|Chrome-Lighthouse|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview|Yeti|googleweblight",
-    "bundlePagesRouterDependencies": false,
+    "bundlePagesRouterDependencies": true,
     "configFileName": "next.config.ts",
+    "serverExternalPackages": [],
     "turbopack": {
       "root": "/Users/80dr/school-station"
     },
-    "distDirRoot": ".next"
+    "distDirRoot": ".next",
+    "_originalRewrites": {
+      "beforeFiles": [
+        {
+          "source": "/juku/p-:prefecture/",
+          "destination": "/juku/pref/:prefecture/"
+        },
+        {
+          "source": "/juku/p-:prefecture",
+          "destination": "/juku/pref/:prefecture"
+        },
+        {
+          "source": "/juku/c-:city/",
+          "destination": "/juku/city/:city/"
+        },
+        {
+          "source": "/juku/c-:city",
+          "destination": "/juku/city/:city"
+        },
+        {
+          "source": "/juku/s-:station/",
+          "destination": "/juku/station/:station/"
+        },
+        {
+          "source": "/juku/s-:station",
+          "destination": "/juku/station/:station"
+        },
+        {
+          "source": "/juku/ranking/p-:prefecture/",
+          "destination": "/juku/ranking/pref/:prefecture/"
+        },
+        {
+          "source": "/juku/ranking/p-:prefecture",
+          "destination": "/juku/ranking/pref/:prefecture"
+        },
+        {
+          "source": "/rankings/koukou/p-:prefecture/c-:city/",
+          "destination": "/rankings/koukou/pref/:prefecture/c/:city/"
+        },
+        {
+          "source": "/rankings/koukou/p-:prefecture/c-:city",
+          "destination": "/rankings/koukou/pref/:prefecture/c/:city"
+        },
+        {
+          "source": "/rankings/koukou/p-:prefecture/",
+          "destination": "/rankings/koukou/pref/:prefecture/"
+        },
+        {
+          "source": "/rankings/koukou/p-:prefecture",
+          "destination": "/rankings/koukou/pref/:prefecture"
+        },
+        {
+          "source": "/rankings/koukou/public/p-:prefecture/",
+          "destination": "/rankings/koukou/public/pref/:prefecture/"
+        },
+        {
+          "source": "/rankings/koukou/public/p-:prefecture",
+          "destination": "/rankings/koukou/public/pref/:prefecture"
+        }
+      ],
+      "afterFiles": [],
+      "fallback": []
+    }
   },
   "appDir": "/Users/80dr/school-station",
   "relativeAppDir": "",

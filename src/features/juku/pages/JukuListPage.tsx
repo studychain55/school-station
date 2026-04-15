@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Head from "next/head";
 import Link from "next/link";
-import { Container, Box, Typography, Grid, Pagination } from "@mui/material";
+import { Container, Box, Typography, Grid, Pagination, TextField, InputAdornment } from "@mui/material";
+import SearchIcon from "@mui/icons-material/Search";
 import { useRouter } from "next/router";
 import JukuCard from "@/components/juku/JukuCard";
 import JukuCompareTable from "@/features/juku/components/JukuCompareTable";
@@ -44,6 +46,10 @@ export default function JukuListPage({
 }: JukuListPageProps) {
   const router = useRouter();
   const totalPages = Math.ceil(totalCount / perPage);
+  const [nameFilter, setNameFilter] = useState("");
+  const displayedSchools = nameFilter
+    ? schools.filter((s) => s.name.includes(nameFilter) || s.JukuBrand.name.includes(nameFilter))
+    : schools;
 
   const handlePageChange = (_: React.ChangeEvent<unknown>, page: number) => {
     const query = { ...router.query, page: page > 1 ? String(page) : undefined };
@@ -81,6 +87,27 @@ export default function JukuListPage({
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
+        {/* 塾名絞り込み */}
+        <Box sx={{ mb: 2 }}>
+          <TextField
+            size="small"
+            fullWidth
+            placeholder="塾名・ブランド名で絞り込む"
+            value={nameFilter}
+            onChange={(e) => setNameFilter(e.target.value)}
+            slotProps={{
+              input: {
+                startAdornment: (
+                  <InputAdornment position="start">
+                    <SearchIcon sx={{ fontSize: 18, color: "#9CA3AF" }} />
+                  </InputAdornment>
+                ),
+              },
+            }}
+            sx={{ bgcolor: "#fff", borderRadius: 1 }}
+          />
+        </Box>
+
         {/* クイックフィルター */}
         {(() => {
           const currentPurpose = router.query.purpose as string | undefined;
@@ -184,10 +211,15 @@ export default function JukuListPage({
           </Box>
         ) : (
           <>
+            {nameFilter && (
+              <Typography sx={{ fontSize: 13, color: "#6B7280", mb: 1.5 }}>
+                「{nameFilter}」で絞り込み中 — {displayedSchools.length}件
+              </Typography>
+            )}
             <Grid container spacing={2}>
-              {schools.map((school, i) => (
+              {displayedSchools.map((school, i) => (
                 <Grid key={school.id} size={{ xs: 12, sm: 6, lg: 4 }}>
-                  <JukuCard school={school} rank={currentPage === 1 ? i + 1 : undefined} />
+                  <JukuCard school={school} rank={currentPage === 1 && !nameFilter ? i + 1 : undefined} />
                 </Grid>
               ))}
             </Grid>

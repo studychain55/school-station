@@ -236,7 +236,7 @@ export default function JukuTopPage() {
         <Container maxWidth="lg">
           <Grid container spacing={3} sx={{ textAlign: "center" }}>
             {[
-              { num: "9万+", label: "掲載塾数" },
+              { num: "5万+", label: "掲載塾数" },
               { num: "47", label: "都道府県対応" },
               { num: "無料", label: "完全無料" },
               { num: "口コミ", label: "リアルな評価" },

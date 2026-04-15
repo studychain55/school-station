@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const FOOTER_SECTIONS = [
   {
-    title: "分類別ランキング",
+    title: "高校ランキング",
     links: [
       { label: "全国高校ランキング", href: "/rankings/koukou/" },
       { label: "公立高校ランキング", href: "/rankings/koukou/public/" },
@@ -22,14 +22,25 @@ const FOOTER_SECTIONS = [
     ],
   },
   {
-    title: "人気エリア",
+    title: "塾を探す",
     links: [
-      { label: "東京都", href: "/rankings/koukou/p-tokyo/" },
-      { label: "大阪府", href: "/rankings/koukou/p-osaka/" },
-      { label: "神奈川県", href: "/rankings/koukou/p-kanagawa/" },
-      { label: "愛知県", href: "/rankings/koukou/p-aichi/" },
-      { label: "福岡県", href: "/rankings/koukou/p-fukuoka/" },
-      { label: "埼玉県", href: "/rankings/koukou/p-saitama/" },
+      { label: "塾トップ", href: "/juku/" },
+      { label: "塾ランキング", href: "/juku/ranking/" },
+      { label: "東京の塾", href: "/juku/p-tokyo/" },
+      { label: "大阪の塾", href: "/juku/p-osaka/" },
+      { label: "神奈川の塾", href: "/juku/p-kanagawa/" },
+      { label: "愛知の塾", href: "/juku/p-aichi/" },
+    ],
+  },
+  {
+    title: "目的・スタイルで探す",
+    links: [
+      { label: "中学受験の塾", href: "/juku/?purpose=%E4%B8%AD%E5%AD%A6%E5%8F%97%E9%A8%93" },
+      { label: "高校受験の塾", href: "/juku/?purpose=%E9%AB%98%E6%A0%A1%E5%8F%97%E9%A8%93" },
+      { label: "大学受験の塾", href: "/juku/?purpose=%E5%A4%A7%E5%AD%A6%E5%8F%97%E9%A8%93" },
+      { label: "個別指導の塾", href: "/juku/?category=%E5%80%8B%E5%88%A5%E6%8C%87%E5%B0%8E" },
+      { label: "集団授業の塾", href: "/juku/?category=%E9%9B%86%E5%9B%A3%E6%8E%88%E6%A5%AD" },
+      { label: "オンライン塾", href: "/juku/?category=%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3" },
     ],
   },
 ];
@@ -42,7 +53,7 @@ export default function Footer() {
       <Container maxWidth="lg">
         <Grid container spacing={3} sx={{ mb: 4 }}>
           {FOOTER_SECTIONS.map((section) => (
-            <Grid key={section.title} size={{ xs: 6, sm: 4 }}>
+            <Grid key={section.title} size={{ xs: 6, sm: 3 }}>
               <Typography sx={{ fontWeight: 700, fontSize: 14, mb: 1.5, color: "#e9f2ea" }}>
                 {section.title}
               </Typography>

@@ -4,6 +4,7 @@ import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import Link from "next/link";
+import Image from "next/image";
 import Head from "next/head";
 import SEO from "@/components/UI/SEO";
 import prefectures, { recommendPrefectures } from "@/data/prefectures";
@@ -93,24 +94,84 @@ export default function HomePage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
-      <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
-        {/* Hero */}
+      {/* Hero テンプレート */}
+      <Box sx={{ position: "relative", width: "100%", height: "clamp(280px, 40vw, 440px)" }}>
+        <Image
+          src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1920&q=80"
+          alt="高校"
+          fill
+          priority
+          style={{ objectFit: "cover" }}
+          sizes="100vw"
+        />
         <Box
           sx={{
+            position: "absolute",
+            inset: 0,
+            backgroundColor: "rgba(0,0,0,0.45)",
+          }}
+        />
+        <Box
+          sx={{
+            position: "absolute",
+            inset: 0,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            color: "white",
             textAlign: "center",
-            py: { xs: 5, sm: 6 },
-            mb: 4,
-            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
-            borderRadius: 3,
-            color: "#fff",
+            px: 2,
           }}
         >
-          <Typography variant="h1" sx={{ fontSize: { xs: "1.4rem", sm: "1.8rem", md: "2.2rem" }, mb: 1.5 }}>
-            高校偏差値ランキング
+          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
+            高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ color: "#e9f2ea", mb: 3, px: 2 }}>
-            全国の高校偏差値を網羅的に掲載。志望校選びの参考に。
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+            全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* 都道府県クイックナビ */}
+          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
+            {[
+              { label: "東京", slug: "tokyo" },
+              { label: "神奈川", slug: "kanagawa" },
+              { label: "大阪", slug: "osaka" },
+              { label: "愛知", slug: "aichi" },
+              { label: "福岡", slug: "fukuoka" },
+              { label: "全国ランキング", slug: null },
+            ].map((item) => (
+              <Link
+                key={item.label}
+                href={item.slug ? `/rankings/koukou/p-${item.slug}/` : "/rankings/koukou/"}
+                style={{ textDecoration: "none" }}
+              >
+                <Box
+                  component="span"
+                  sx={{
+                    display: "inline-block",
+                    px: 1.5,
+                    py: 0.6,
+                    borderRadius: 3,
+                    bgcolor: "rgba(255,255,255,0.2)",
+                    color: "white",
+                    fontSize: 12,
+                    fontWeight: 600,
+                    cursor: "pointer",
+                    "&:hover": { bgcolor: "rgba(255,255,255,0.35)" },
+                    transition: "background-color 0.2s",
+                  }}
+                >
+                  {item.label}
+                </Box>
+              </Link>
+            ))}
+          </Box>
+        </Box>
+      </Box>
+
+      <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
+        {/* Hero Button Section */}
+        <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"

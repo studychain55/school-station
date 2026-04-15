@@ -54,11 +54,183 @@
   ],
   "onMatchHeaders": [],
   "rewrites": {
-    "beforeFiles": [],
+    "beforeFiles": [
+      {
+        "source": "/juku/p-:prefecture/",
+        "destination": "/juku/pref/:prefecture/",
+        "regex": "^/juku/p-([^/]+?)/(?:/)?$"
+      },
+      {
+        "source": "/juku/p-:prefecture",
+        "destination": "/juku/pref/:prefecture",
+        "regex": "^/juku/p-([^/]+?)(?:/)?$"
+      },
+      {
+        "source": "/juku/c-:city/",
+        "destination": "/juku/city/:city/",
+        "regex": "^/juku/c-([^/]+?)/(?:/)?$"
+      },
+      {
+        "source": "/juku/c-:city",
+        "destination": "/juku/city/:city",
+        "regex": "^/juku/c-([^/]+?)(?:/)?$"
+      },
+      {
+        "source": "/juku/s-:station/",
+        "destination": "/juku/station/:station/",
+        "regex": "^/juku/s-([^/]+?)/(?:/)?$"
+      },
+      {
+        "source": "/juku/s-:station",
+        "destination": "/juku/station/:station",
+        "regex": "^/juku/s-([^/]+?)(?:/)?$"
+      },
+      {
+        "source": "/juku/ranking/p-:prefecture/",
+        "destination": "/juku/ranking/pref/:prefecture/",
+        "regex": "^/juku/ranking/p-([^/]+?)/(?:/)?$"
+      },
+      {
+        "source": "/juku/ranking/p-:prefecture",
+        "destination": "/juku/ranking/pref/:prefecture",
+        "regex": "^/juku/ranking/p-([^/]+?)(?:/)?$"
+      },
+      {
+        "source": "/rankings/koukou/p-:prefecture/c-:city/",
+        "destination": "/rankings/koukou/pref/:prefecture/c/:city/",
+        "regex": "^/rankings/koukou/p-([^/]+?)/c-([^/]+?)/(?:/)?$"
+      },
+      {
+        "source": "/rankings/koukou/p-:prefecture/c-:city",
+        "destination": "/rankings/koukou/pref/:prefecture/c/:city",
+        "regex": "^/rankings/koukou/p-([^/]+?)/c-([^/]+?)(?:/)?$"
+      },
+      {
+        "source": "/rankings/koukou/p-:prefecture/",
+        "destination": "/rankings/koukou/pref/:prefecture/",
+        "regex": "^/rankings/koukou/p-([^/]+?)/(?:/)?$"
+      },
+      {
+        "source": "/rankings/koukou/p-:prefecture",
+        "destination": "/rankings/koukou/pref/:prefecture",
+        "regex": "^/rankings/koukou/p-([^/]+?)(?:/)?$"
+      },
+      {
+        "source": "/rankings/koukou/public/p-:prefecture/",
+        "destination": "/rankings/koukou/public/pref/:prefecture/",
+        "regex": "^/rankings/koukou/public/p-([^/]+?)/(?:/)?$"
+      },
+      {
+        "source": "/rankings/koukou/public/p-:prefecture",
+        "destination": "/rankings/koukou/public/pref/:prefecture",
+        "regex": "^/rankings/koukou/public/p-([^/]+?)(?:/)?$"
+      }
+    ],
     "afterFiles": [],
     "fallback": []
   },
   "dynamicRoutes": [
+    {
+      "page": "/juku/city/[city]",
+      "regex": "^/juku/city/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcity": "nxtPcity"
+      },
+      "namedRegex": "^/juku/city/(?<nxtPcity>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/pref/[prefecture]",
+      "regex": "^/juku/pref/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/juku/pref/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/ranking/pref/[prefecture]",
+      "regex": "^/juku/ranking/pref/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/juku/ranking/pref/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/station/[station]",
+      "regex": "^/juku/station/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPstation": "nxtPstation"
+      },
+      "namedRegex": "^/juku/station/(?<nxtPstation>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/[brand_id]",
+      "regex": "^/juku/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id"
+      },
+      "namedRegex": "^/juku/(?<nxtPbrand_id>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/[brand_id]/[school_id]",
+      "regex": "^/juku/([^/]+?)/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "namedRegex": "^/juku/(?<nxtPbrand_id>[^/]+?)/(?<nxtPschool_id>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/[brand_id]/[school_id]/prices",
+      "regex": "^/juku/([^/]+?)/([^/]+?)/prices(?:/)?$",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "namedRegex": "^/juku/(?<nxtPbrand_id>[^/]+?)/(?<nxtPschool_id>[^/]+?)/prices(?:/)?$"
+    },
+    {
+      "page": "/juku/[brand_id]/[school_id]/reviews",
+      "regex": "^/juku/([^/]+?)/([^/]+?)/reviews(?:/)?$",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "namedRegex": "^/juku/(?<nxtPbrand_id>[^/]+?)/(?<nxtPschool_id>[^/]+?)/reviews(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/p-[prefecture]/schools/[school_id]",
+      "regex": "^/rankings/koukou/([^/]+?)/schools/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "namedRegex": "^/rankings/koukou/(?<nxtPprefecture>[^/]+?)/schools/(?<nxtPschool_id>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/pref/[prefecture]",
+      "regex": "^/rankings/koukou/pref/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/rankings/koukou/pref/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/pref/[prefecture]/c/[city]",
+      "regex": "^/rankings/koukou/pref/([^/]+?)/c/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture",
+        "nxtPcity": "nxtPcity"
+      },
+      "namedRegex": "^/rankings/koukou/pref/(?<nxtPprefecture>[^/]+?)/c/(?<nxtPcity>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/rankings/koukou/public/pref/[prefecture]",
+      "regex": "^/rankings/koukou/public/pref/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/rankings/koukou/public/pref/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    },
     {
       "page": "/rankings/koukou/region/[region]",
       "regex": "^/rankings/koukou/region/([^/]+?)(?:/)?$",
@@ -92,6 +264,572 @@
       "regex": "^/api/sitemap\\.xml(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/api/sitemap\\.xml(?:/)?$"
+    },
+    {
+      "page": "/column",
+      "regex": "^/column(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column(?:/)?$"
+    },
+    {
+      "page": "/column/bukatsu-choise",
+      "regex": "^/column/bukatsu\\-choise(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/bukatsu\\-choise(?:/)?$"
+    },
+    {
+      "page": "/column/chugaku-entrance",
+      "regex": "^/column/chugaku\\-entrance(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/chugaku\\-entrance(?:/)?$"
+    },
+    {
+      "page": "/column/daigaku-juken",
+      "regex": "^/column/daigaku\\-juken(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/daigaku\\-juken(?:/)?$"
+    },
+    {
+      "page": "/column/hensachi-guide",
+      "regex": "^/column/hensachi\\-guide(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/hensachi\\-guide(?:/)?$"
+    },
+    {
+      "page": "/column/juken-kihu",
+      "regex": "^/column/juken\\-kihu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/juken\\-kihu(?:/)?$"
+    },
+    {
+      "page": "/column/juken-stress",
+      "regex": "^/column/juken\\-stress(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/juken\\-stress(?:/)?$"
+    },
+    {
+      "page": "/column/koko-choice",
+      "regex": "^/column/koko\\-choice(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koko\\-choice(?:/)?$"
+    },
+    {
+      "page": "/column/koko-sports",
+      "regex": "^/column/koko\\-sports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koko\\-sports(?:/)?$"
+    },
+    {
+      "page": "/column/kokosei-baito",
+      "regex": "^/column/kokosei\\-baito(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/kokosei\\-baito(?:/)?$"
+    },
+    {
+      "page": "/column/kokosei-nyushi",
+      "regex": "^/column/kokosei\\-nyushi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/kokosei\\-nyushi(?:/)?$"
+    },
+    {
+      "page": "/column/kokosei-study",
+      "regex": "^/column/kokosei\\-study(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/kokosei\\-study(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-arts",
+      "regex": "^/column/koukou\\-arts(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-arts(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-benkyou",
+      "regex": "^/column/koukou\\-benkyou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-benkyou(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-bukatsu",
+      "regex": "^/column/koukou\\-bukatsu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-bukatsu(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-career",
+      "regex": "^/column/koukou\\-career(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-career(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-club",
+      "regex": "^/column/koukou\\-club(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-club(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-concentration",
+      "regex": "^/column/koukou\\-concentration(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-concentration(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-daiichi",
+      "regex": "^/column/koukou\\-daiichi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-daiichi(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-english",
+      "regex": "^/column/koukou\\-english(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-english(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-event",
+      "regex": "^/column/koukou\\-event(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-event(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-exam-strategy",
+      "regex": "^/column/koukou\\-exam\\-strategy(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-exam\\-strategy(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-futoko",
+      "regex": "^/column/koukou\\-futoko(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-futoko(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-gakuensai",
+      "regex": "^/column/koukou\\-gakuensai(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-gakuensai(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-gakuhi",
+      "regex": "^/column/koukou\\-gakuhi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-gakuhi(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-geijutsu",
+      "regex": "^/column/koukou\\-geijutsu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-geijutsu(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-hensachi",
+      "regex": "^/column/koukou\\-hensachi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-hensachi(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-hensachi-how",
+      "regex": "^/column/koukou\\-hensachi\\-how(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-hensachi\\-how(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-ict",
+      "regex": "^/column/koukou\\-ict(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-ict(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-ict-subject",
+      "regex": "^/column/koukou\\-ict\\-subject(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-ict\\-subject(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-juken-system",
+      "regex": "^/column/koukou\\-juken\\-system(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-juken\\-system(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-juku",
+      "regex": "^/column/koukou\\-juku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-juku(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-kagaku",
+      "regex": "^/column/koukou\\-kagaku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-kagaku(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-kokugo",
+      "regex": "^/column/koukou\\-kokugo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-kokugo(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-language",
+      "regex": "^/column/koukou\\-language(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-language(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-math",
+      "regex": "^/column/koukou\\-math(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-math(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-memory-technique",
+      "regex": "^/column/koukou\\-memory\\-technique(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-memory\\-technique(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-mensetsu",
+      "regex": "^/column/koukou\\-mensetsu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-mensetsu(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-morning-routine",
+      "regex": "^/column/koukou\\-morning\\-routine(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-morning\\-routine(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-motivation",
+      "regex": "^/column/koukou\\-motivation(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-motivation(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-naishinsho",
+      "regex": "^/column/koukou\\-naishinsho(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-naishinsho(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-note-taking",
+      "regex": "^/column/koukou\\-note\\-taking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-note\\-taking(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-online-school",
+      "regex": "^/column/koukou\\-online\\-school(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-online\\-school(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-open",
+      "regex": "^/column/koukou\\-open(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-open(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-oyako",
+      "regex": "^/column/koukou\\-oyako(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-oyako(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-part-time",
+      "regex": "^/column/koukou\\-part\\-time(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-part\\-time(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-reading",
+      "regex": "^/column/koukou\\-reading(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-reading(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-rekishi",
+      "regex": "^/column/koukou\\-rekishi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-rekishi(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-ryugaku",
+      "regex": "^/column/koukou\\-ryugaku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-ryugaku(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-ryuunen",
+      "regex": "^/column/koukou\\-ryuunen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-ryuunen(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-school-select",
+      "regex": "^/column/koukou\\-school\\-select(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-school\\-select(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-seifuku",
+      "regex": "^/column/koukou\\-seifuku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-seifuku(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-seikatsu",
+      "regex": "^/column/koukou\\-seikatsu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-seikatsu(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-seiseki",
+      "regex": "^/column/koukou\\-seiseki(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-seiseki(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-self-study",
+      "regex": "^/column/koukou\\-self\\-study(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-self\\-study(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-senbatsu",
+      "regex": "^/column/koukou\\-senbatsu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-senbatsu(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-setsumeikai",
+      "regex": "^/column/koukou\\-setsumeikai(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-setsumeikai(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-shakai",
+      "regex": "^/column/koukou\\-shakai(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-shakai(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-shingaku",
+      "regex": "^/column/koukou\\-shingaku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-shingaku(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-shokugyou",
+      "regex": "^/column/koukou\\-shokugyou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-shokugyou(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-sleep",
+      "regex": "^/column/koukou\\-sleep(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-sleep(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-sogo",
+      "regex": "^/column/koukou\\-sogo(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-sogo(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-soudan",
+      "regex": "^/column/koukou\\-soudan(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-soudan(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-sports",
+      "regex": "^/column/koukou\\-sports(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-sports(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-stress-kanri",
+      "regex": "^/column/koukou\\-stress\\-kanri(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-stress\\-kanri(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-suisen",
+      "regex": "^/column/koukou\\-suisen(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-suisen(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-summer-study",
+      "regex": "^/column/koukou\\-summer\\-study(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-summer\\-study(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-taiiku",
+      "regex": "^/column/koukou\\-taiiku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-taiiku(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-tenko",
+      "regex": "^/column/koukou\\-tenko(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-tenko(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-test-week",
+      "regex": "^/column/koukou\\-test\\-week(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-test\\-week(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-time-management",
+      "regex": "^/column/koukou\\-time\\-management(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-time\\-management(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-tokkatsu",
+      "regex": "^/column/koukou\\-tokkatsu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-tokkatsu(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-tokutasei",
+      "regex": "^/column/koukou\\-tokutasei(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-tokutasei(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-tsuugaku",
+      "regex": "^/column/koukou\\-tsuugaku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-tsuugaku(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-volunteer",
+      "regex": "^/column/koukou\\-volunteer(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-volunteer(?:/)?$"
+    },
+    {
+      "page": "/column/koukou-winter-study",
+      "regex": "^/column/koukou\\-winter\\-study(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/koukou\\-winter\\-study(?:/)?$"
+    },
+    {
+      "page": "/column/kouritsu-vs-shiritsu",
+      "regex": "^/column/kouritsu\\-vs\\-shiritsu(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/kouritsu\\-vs\\-shiritsu(?:/)?$"
+    },
+    {
+      "page": "/column/mensetsu-guide",
+      "regex": "^/column/mensetsu\\-guide(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/mensetsu\\-guide(?:/)?$"
+    },
+    {
+      "page": "/column/naishin-up",
+      "regex": "^/column/naishin\\-up(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/naishin\\-up(?:/)?$"
+    },
+    {
+      "page": "/column/nyushi-schedule",
+      "regex": "^/column/nyushi\\-schedule(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/nyushi\\-schedule(?:/)?$"
+    },
+    {
+      "page": "/column/study-methods",
+      "regex": "^/column/study\\-methods(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/study\\-methods(?:/)?$"
+    },
+    {
+      "page": "/column/suisen-nyushi",
+      "regex": "^/column/suisen\\-nyushi(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/suisen\\-nyushi(?:/)?$"
+    },
+    {
+      "page": "/column/taiken-nyugaku",
+      "regex": "^/column/taiken\\-nyugaku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/taiken\\-nyugaku(?:/)?$"
+    },
+    {
+      "page": "/column/tokkoku-guide",
+      "regex": "^/column/tokkoku\\-guide(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/tokkoku\\-guide(?:/)?$"
+    },
+    {
+      "page": "/column/tsushinsei-koukou",
+      "regex": "^/column/tsushinsei\\-koukou(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/tsushinsei\\-koukou(?:/)?$"
+    },
+    {
+      "page": "/column/yobiko-choice",
+      "regex": "^/column/yobiko\\-choice(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/column/yobiko\\-choice(?:/)?$"
+    },
+    {
+      "page": "/guide",
+      "regex": "^/guide(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/guide(?:/)?$"
+    },
+    {
+      "page": "/juku",
+      "regex": "^/juku(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/juku(?:/)?$"
+    },
+    {
+      "page": "/juku/c-[city]",
+      "regex": "^/juku/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPcity": "nxtPcity"
+      },
+      "namedRegex": "^/juku/(?<nxtPcity>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/p-[prefecture]",
+      "regex": "^/juku/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/juku/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/ranking",
+      "regex": "^/juku/ranking(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/juku/ranking(?:/)?$"
+    },
+    {
+      "page": "/juku/ranking/p-[prefecture]",
+      "regex": "^/juku/ranking/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "namedRegex": "^/juku/ranking/(?<nxtPprefecture>[^/]+?)(?:/)?$"
+    },
+    {
+      "page": "/juku/s-[station]",
+      "regex": "^/juku/([^/]+?)(?:/)?$",
+      "routeKeys": {
+        "nxtPstation": "nxtPstation"
+      },
+      "namedRegex": "^/juku/(?<nxtPstation>[^/]+?)(?:/)?$"
     },
     {
       "page": "/rankings/koukou",
@@ -145,40 +883,161 @@
   ],
   "dataRoutes": [
     {
+      "page": "/juku/c-[city]",
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/c-[city]\\.json$"
+    },
+    {
+      "page": "/juku/city/[city]",
+      "routeKeys": {
+        "nxtPcity": "nxtPcity"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/city/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/city/(?<nxtPcity>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/juku/p-[prefecture]",
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/p-[prefecture]\\.json$"
+    },
+    {
+      "page": "/juku/pref/[prefecture]",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/pref/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/pref/(?<nxtPprefecture>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/juku/ranking",
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/ranking\\.json$"
+    },
+    {
+      "page": "/juku/ranking/p-[prefecture]",
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/ranking/p-[prefecture]\\.json$"
+    },
+    {
+      "page": "/juku/ranking/pref/[prefecture]",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/ranking/pref/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/ranking/pref/(?<nxtPprefecture>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/juku/s-[station]",
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/s-[station]\\.json$"
+    },
+    {
+      "page": "/juku/station/[station]",
+      "routeKeys": {
+        "nxtPstation": "nxtPstation"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/station/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/station/(?<nxtPstation>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/juku/[brand_id]",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/(?<nxtPbrand_id>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/juku/[brand_id]/[school_id]",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/([^/]+?)/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/(?<nxtPbrand_id>[^/]+?)/(?<nxtPschool_id>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/juku/[brand_id]/[school_id]/prices",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/([^/]+?)/([^/]+?)/prices\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/(?<nxtPbrand_id>[^/]+?)/(?<nxtPschool_id>[^/]+?)/prices\\.json$"
+    },
+    {
+      "page": "/juku/[brand_id]/[school_id]/reviews",
+      "routeKeys": {
+        "nxtPbrand_id": "nxtPbrand_id",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/([^/]+?)/([^/]+?)/reviews\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/juku/(?<nxtPbrand_id>[^/]+?)/(?<nxtPschool_id>[^/]+?)/reviews\\.json$"
+    },
+    {
       "page": "/rankings/koukou",
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou\\.json$"
     },
     {
       "page": "/rankings/koukou/national",
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/national\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/national\\.json$"
     },
     {
       "page": "/rankings/koukou/p-[prefecture]",
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/p-[prefecture]\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/p-[prefecture]\\.json$"
     },
     {
       "page": "/rankings/koukou/p-[prefecture]/c-[city]",
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/p-[prefecture]/c-[city]\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/p-[prefecture]/c-[city]\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/p-[prefecture]/schools/[school_id]",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture",
+        "nxtPschool_id": "nxtPschool_id"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/([^/]+?)/schools/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/(?<nxtPprefecture>[^/]+?)/schools/(?<nxtPschool_id>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/pref/[prefecture]",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/pref/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/pref/(?<nxtPprefecture>[^/]+?)\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/pref/[prefecture]/c/[city]",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture",
+        "nxtPcity": "nxtPcity"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/pref/([^/]+?)/c/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/pref/(?<nxtPprefecture>[^/]+?)/c/(?<nxtPcity>[^/]+?)\\.json$"
     },
     {
       "page": "/rankings/koukou/private",
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/private\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/private\\.json$"
     },
     {
       "page": "/rankings/koukou/public",
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/public\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/public\\.json$"
     },
     {
       "page": "/rankings/koukou/public/p-[prefecture]",
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/public/p-[prefecture]\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/public/p-[prefecture]\\.json$"
+    },
+    {
+      "page": "/rankings/koukou/public/pref/[prefecture]",
+      "routeKeys": {
+        "nxtPprefecture": "nxtPprefecture"
+      },
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/public/pref/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/public/pref/(?<nxtPprefecture>[^/]+?)\\.json$"
     },
     {
       "page": "/rankings/koukou/region/[region]",
       "routeKeys": {
         "nxtPregion": "nxtPregion"
       },
-      "dataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/region/([^/]+?)\\.json$",
-      "namedDataRouteRegex": "^/_next/data/rhspRRtwA7rUmGKrNEKH3/rankings/koukou/region/(?<nxtPregion>[^/]+?)\\.json$"
+      "dataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/region/([^/]+?)\\.json$",
+      "namedDataRouteRegex": "^/_next/data/GEEcpo1WhbDmPhlgG61Ux/rankings/koukou/region/(?<nxtPregion>[^/]+?)\\.json$"
     }
   ],
   "rsc": {

@@ -80,9 +80,24 @@ export default function JukuListPage({
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
-          </Typography>
+          {/* 件数表示 */}
+          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 1 }}>
+            {totalCount > 0 ? (
+              <Typography sx={{ fontSize: 14, color: "#374151" }}>
+                <Box component="span" sx={{ fontWeight: 700, color: "#1e782d" }}>{totalCount.toLocaleString()}件</Box>
+                {" "}中 {(currentPage - 1) * perPage + 1}〜{Math.min(currentPage * perPage, totalCount)}件を表示
+              </Typography>
+            ) : (
+              <Typography sx={{ fontSize: 14, color: "#6B7280" }}>0件</Typography>
+            )}
+            {(router.query.purpose || router.query.category) && (
+              <Link href={router.pathname} style={{ textDecoration: "none" }}>
+                <Box component="span" sx={{ fontSize: 12, color: "#E53935", border: "1px solid #E53935", borderRadius: 5, px: 1.5, py: 0.5, cursor: "pointer", "&:hover": { bgcolor: "#fff5f5" } }}>
+                  絞り込みをリセット
+                </Box>
+              </Link>
+            )}
+          </Box>
         </Container>
       </Box>
 

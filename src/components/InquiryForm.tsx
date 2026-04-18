@@ -40,6 +40,11 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3 text-sm text-green-800 space-y-1">
+        <p>✓ 無料・匿名で相談できます</p>
+        <p>✓ しつこい営業連絡はありません</p>
+        <p>✓ 個人情報は安全に管理されます</p>
+      </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
         <input required value={form.name} onChange={e=>setForm(f=>({...f,name:e.target.value}))}

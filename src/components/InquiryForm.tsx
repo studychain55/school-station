@@ -18,6 +18,7 @@ interface Props {
 export default function InquiryForm({ siteId, facilityTable, facilityId, facilityUid, facilityName }: Props) {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState<'idle'|'loading'|'success'|'error'>('idle');
+  const [agreed, setAgreed] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -61,7 +62,11 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
           rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
-      <button type="submit" disabled={status==='loading'}
+      <label className="flex items-start gap-2 cursor-pointer">
+        <input type="checkbox" checked={agreed} onChange={e=>setAgreed(e.target.checked)} required className="mt-0.5 flex-shrink-0 accent-[#1e782d]" />
+        <span className="text-xs text-gray-500"><a href="/privacy-policy/" className="text-[#1e782d] underline">プライバシーポリシー</a>に同意して送信します</span>
+      </label>
+      <button type="submit" disabled={status==='loading' || !agreed}
         className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
         {status==='loading'?'送信中...':' お問い合わせを送信する'}
       </button>

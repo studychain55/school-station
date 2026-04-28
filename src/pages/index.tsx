@@ -127,9 +127,78 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* インライン検索フォーム */}
+          <Box
+            component="form"
+            action="/rankings/koukou/"
+            method="get"
+            sx={{
+              display: "flex",
+              width: "100%",
+              maxWidth: 480,
+              mb: 2,
+              borderRadius: 2,
+              overflow: "hidden",
+              boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+            }}
+          >
+            <Box
+              component="input"
+              name="q"
+              placeholder="学校名・都市名で検索…"
+              sx={{
+                flex: 1,
+                border: "none",
+                outline: "none",
+                px: 2,
+                py: 1.5,
+                fontSize: 14,
+                color: "#111827",
+                bgcolor: "#fff",
+                "::placeholder": { color: "#9CA3AF" },
+              }}
+            />
+            <Box
+              component="button"
+              type="submit"
+              sx={{
+                border: "none",
+                bgcolor: "#FF6F00",
+                color: "#fff",
+                fontWeight: 700,
+                fontSize: 13,
+                px: 2.5,
+                cursor: "pointer",
+                whiteSpace: "nowrap",
+                "&:hover": { bgcolor: "#E65100" },
+              }}
+            >
+              検索
+            </Box>
+          </Box>
+          {/* 掲載数バッジ */}
+          <Box sx={{ mb: 2, display: "flex", justifyContent: "center" }}>
+            <Box
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 0.75,
+                bgcolor: "rgba(255,255,255,0.15)",
+                border: "1px solid rgba(255,255,255,0.35)",
+                borderRadius: 3,
+                px: 2,
+                py: 0.6,
+              }}
+            >
+              <Box sx={{ width: 8, height: 8, borderRadius: "50%", bgcolor: "#4ADE80" }} />
+              <Typography sx={{ fontSize: 12, color: "#fff", fontWeight: 600, letterSpacing: 0.3 }}>
+                全国5,000校以上を無料で検索
+              </Typography>
+            </Box>
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

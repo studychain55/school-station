@@ -348,14 +348,38 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
                 <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
                   無料で問い合わせる
                 </Typography>
-                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
+                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 1.5 }}>
                   体験授業・資料請求も受付中
                 </Typography>
+                {/* 評価・実績バッジ */}
+                {school.review_average_rating && school.total_review_count > 0 && (
+                  <Box sx={{ bgcolor: "rgba(255,255,255,0.15)", borderRadius: 1.5, px: 1.5, py: 1, mb: 1.5, display: "flex", alignItems: "center", justifyContent: "center", gap: 1 }}>
+                    <Typography sx={{ fontSize: 22, fontWeight: 800, lineHeight: 1, color: "#FFD700" }}>
+                      ★{school.review_average_rating.toFixed(1)}
+                    </Typography>
+                    <Box sx={{ textAlign: "left" }}>
+                      <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.9)", lineHeight: 1.3 }}>
+                        口コミ評価
+                      </Typography>
+                      <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.75)", lineHeight: 1.3 }}>
+                        {school.total_review_count}件の声
+                      </Typography>
+                    </Box>
+                  </Box>
+                )}
+                {/* 安心シグナル */}
+                <Box sx={{ display: "flex", flexDirection: "column", gap: 0.4, mb: 1.75, textAlign: "left" }}>
+                  {["相談・資料請求 完全無料", "24時間以内にご返信", "しつこい勧誘なし"].map((label) => (
+                    <Typography key={label} sx={{ fontSize: 12, color: "rgba(255,255,255,0.9)", display: "flex", alignItems: "center", gap: 0.5 }}>
+                      <Box component="span" sx={{ fontWeight: 800, color: "#4ADE80" }}>✓</Box> {label}
+                    </Typography>
+                  ))}
+                </Box>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>
+                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 }, transition: "opacity 0.15s" }}>
                       <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
-                      公式サイトへ
+                      公式サイトへ（無料）
                     </Box>
                   </a>
                 )}

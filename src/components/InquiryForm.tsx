@@ -40,6 +40,14 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      {/* 安心シグナル */}
+      <div className="flex flex-wrap gap-3 mb-2">
+        {["入力3分で完了", "24時間以内に返信", "相談・資料請求 無料"].map((label) => (
+          <span key={label} className="flex items-center gap-1 text-xs font-semibold text-[#1e782d]">
+            <span className="text-[#1e782d] font-bold">✓</span> {label}
+          </span>
+        ))}
+      </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
         <input required value={form.name} onChange={e=>setForm(f=>({...f,name:e.target.value}))}
@@ -62,9 +70,10 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
-        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        className="w-full bg-[#1e782d] hover:bg-[#155a22] active:bg-[#0f3d17] text-white font-bold py-4 rounded-lg disabled:opacity-50 transition-colors text-base tracking-wide shadow-md">
+        {status==='loading' ? '送信中…' : '無料でお問い合わせする'}
       </button>
+      <p className="text-center text-xs text-gray-400">送信後、担当者より24時間以内にご連絡いたします</p>
     </form>
   );
 }

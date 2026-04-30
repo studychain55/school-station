@@ -1,3 +1,5 @@
+import { useState, useCallback } from "react";
+import { useRouter } from "next/router";
 import { Container, Typography, Box, Button, Paper } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -11,6 +13,17 @@ import prefectures, { recommendPrefectures } from "@/data/prefectures";
 import { REGIONS } from "@/data/regions";
 
 export default function HomePage() {
+  const [searchQuery, setSearchQuery] = useState("");
+  const router = useRouter();
+  const handleSearch = useCallback((e: React.FormEvent) => {
+    e.preventDefault();
+    const kw = searchQuery.trim();
+    if (kw) {
+      router.push(`/rankings/koukou/?q=${encodeURIComponent(kw)}`);
+    } else {
+      router.push("/rankings/koukou/");
+    }
+  }, [searchQuery, router]);
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -127,9 +140,23 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* 検索フォーム */}
+          <Box component="form" onSubmit={handleSearch} sx={{ display: "flex", gap: 1, maxWidth: 480, mx: "auto", mb: 2.5 }}>
+            <Box
+              component="input"
+              type="text"
+              value={searchQuery}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchQuery(e.target.value)}
+              placeholder="高校名・都道府県で検索"
+              sx={{ flex: 1, border: "none", borderRadius: 5, px: 2.5, py: 1.25, fontSize: 14, outline: "none", color: "#121212" }}
+            />
+            <Button type="submit" variant="contained" sx={{ bgcolor: "#E53935", "&:hover": { bgcolor: "#c62828" }, borderRadius: 5, px: 3, fontWeight: 700, whiteSpace: "nowrap" }}>
+              検索
+            </Button>
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

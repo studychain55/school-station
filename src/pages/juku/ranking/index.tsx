@@ -52,7 +52,7 @@ export default function JukuRankingPage({ schools, totalCount }: Props) {
             </Typography>
           </Box>
           <Typography sx={{ color: "rgba(255,255,255,0.85)", fontSize: 14 }}>
-            口コミ評価に基づいた全国の塾・予備校ランキング（{totalCount}件掲載）
+            口コミ評価に基づいた全国の塾・予備校ランキング（<Box component="span" sx={{ fontWeight: 700, color: "#fff", fontSize: 16 }}>{totalCount.toLocaleString()}件</Box>掲載）
           </Typography>
         </Container>
       </Box>

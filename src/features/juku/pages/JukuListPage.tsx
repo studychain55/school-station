@@ -145,7 +145,11 @@ export default function JukuListPage({
           };
 
           return (
-            <Box sx={{ mb: 3 }}>
+            <Box sx={{ mb: 3, bgcolor: "#F9FAFB", border: "1px solid #E5E7EB", borderRadius: 2, p: 2 }}>
+              <Typography sx={{ fontSize: 12, fontWeight: 700, color: "#374151", mb: 1.5, display: "flex", alignItems: "center", gap: 0.5 }}>
+                <Box component="span" sx={{ bgcolor: JUKU_RED, color: "#fff", px: 1, py: 0.2, borderRadius: 1, fontSize: 11 }}>絞り込み</Box>
+                条件を選んで探す
+              </Typography>
               {/* 目的フィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
                 <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
@@ -193,6 +197,7 @@ export default function JukuListPage({
             </Box>
           );
         })()}
+
 
         {schools.length === 0 ? (
           <Box

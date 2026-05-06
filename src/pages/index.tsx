@@ -141,9 +141,16 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 1 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          <Box sx={{ display: "flex", gap: 1, justifyContent: "center", flexWrap: "wrap", mb: 2 }}>
+            {["5,000校以上掲載", "完全無料", "最新2026年版"].map((tag) => (
+              <Box key={tag} component="span" sx={{ bgcolor: "rgba(255,255,255,0.15)", color: "#fff", fontSize: 11, fontWeight: 700, px: 1.5, py: 0.4, borderRadius: 5, border: "1px solid rgba(255,255,255,0.3)" }}>
+                {tag}
+              </Box>
+            ))}
+          </Box>
           {/* 高校名検索フォーム */}
           <Box
             component="form"
@@ -227,9 +234,10 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              全国ランキングを今すぐチェック →
             </Button>
           </Link>
+          <Typography sx={{ fontSize: 12, color: "#757575", mt: 1 }}>無料・登録不要ですぐに使えます</Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

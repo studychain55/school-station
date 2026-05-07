@@ -129,7 +129,7 @@ export default function KoukouRankingPage(props: Props) {
         {/* Full Ranking */}
         <Box sx={{ mb: 2 }}>
           <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
-            全ランキング（{totalCount.toLocaleString()}校）
+            全ランキング（<Box component="span" sx={{ color: "#1e782d", fontWeight: 800 }}>{totalCount.toLocaleString()}校</Box>）
           </Typography>
           <RankingTable schools={schools} startRank={startRank} prefectureSlug={prefectureSlug} />
         </Box>

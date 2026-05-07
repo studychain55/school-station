@@ -40,6 +40,14 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="bg-[#f0f6f0] rounded-lg p-4 mb-2">
+        <p className="font-bold text-[#1e782d] text-sm mb-1">📩 {facilityName} へのお問い合わせ</p>
+        <div className="flex flex-wrap gap-3 text-xs text-gray-600 mt-2">
+          <span>✅ 無料で問い合わせ可能</span>
+          <span>✅ 返信は通常1〜3営業日以内</span>
+          <span>✅ 個人情報は安全に管理</span>
+        </div>
+      </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
         <input required value={form.name} onChange={e=>setForm(f=>({...f,name:e.target.value}))}

@@ -43,7 +43,7 @@ export default function HomePage() {
         "name": "偏差値ランキングはどのように作成されていますか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "School Stationの偏差値ランキングは、各高校の入試難易度・合格ボーダーラインを基に作成しています。2026年度版では全国の公立・私立・国立高校を網羅し、最新の入試データを反映しています。"
+          "text": "School Stationの偏差値ランキングは、各高校の入試難易度・合格ボーダーラインを基に作成しています、2026年度版では全国の公立・私立・国立高校を網羅し、最新の入試データを反映しています。"
         }
       },
       {
@@ -51,7 +51,7 @@ export default function HomePage() {
         "name": "偏差値はどのように活用すればよいですか？",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "偏差値は志望校選びの参考指標の一つです。自分の模試偏差値と学校の偏差値を比較し、安全校・チャレンジ校のバランスを取りながら受験校を決定するのが一般的です。偏差値だけでなく、学校の教育方針・進学実績・通学距離なども合わせて検討しましょう。"
+          "text": "偏差値は志望校選びの参考指標の一つです。自分の模試偏差値と学校の偏差値を比較し、安全校・チャレンジ校のバランスを取りながら受験校を決定するのが一般的です。偏差値だけでなく、学校の教育方针・進学実績・通学距離なども合わせて検討しましょう。"
         }
       },
       {
@@ -84,7 +84,7 @@ export default function HomePage() {
   return (
     <>
       <SEO
-        title="School Station | 高校偏差値ランキング【2026年度版】"
+        title="School Station | 高校偏差値ランキング　2026年度版！"
         description="全国の高校偏差値ランキングを都道府県別・地方別・分類別に掲載。School Stationで志望校選びに役立つ偏差値情報をチェック。"
         canonical="/"
         breadcrumbs={[{ label: "ホーム" }]}
@@ -95,7 +95,7 @@ export default function HomePage() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       </Head>
       {/* Hero テンプレート */}
-      <Box sx={{ position: "relative", width: "100%", height: "clamp(280px, 40vw, 440px)" }}>
+      <Box sx={{ position: "relative", width: "100%", height: "clamp(300px, 42vw, 480px)" }}>
         <Image
           src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&w=1920&q=80"
           alt="高校"
@@ -108,7 +108,7 @@ export default function HomePage() {
           sx={{
             position: "absolute",
             inset: 0,
-            backgroundColor: "rgba(0,0,0,0.45)",
+            backgroundColor: "rgba(0,0,0,0.50)",
           }}
         />
         <Box
@@ -124,12 +124,70 @@ export default function HomePage() {
             px: 2,
           }}
         >
+          <Typography
+            sx={{
+              fontSize: { xs: "0.7rem", sm: "0.8rem" },
+              fontWeight: 700,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: "rgba(255,255,255,0.75)",
+              mb: 1.5,
+            }}
+          >
+            全国5,000校以上・無料で検索できる
+          </Typography>
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, color: "rgba(255,255,255,0.80)", mb: 3 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* Hero CTA Buttons */}
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, justifyContent: "center", mb: 3 }}>
+            <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+              <Box
+                component="span"
+                sx={{
+                  display: "inline-block",
+                  bgcolor: "#FF6F00",
+                  color: "white",
+                  fontWeight: 700,
+                  fontSize: { xs: 14, sm: 16 },
+                  px: 4,
+                  py: 1.5,
+                  borderRadius: 50,
+                  boxShadow: "0 4px 12px rgba(255,111,0,0.4)",
+                  cursor: "pointer",
+                  "&:hover": { bgcolor: "#E65100", transform: "scale(1.03)" },
+                  transition: "all 0.2s",
+                }}
+              >
+                全国ランキングを無料で見る
+              </Box>
+            </Link>
+            <Link href="/rankings/koukou/p-tokyo/" style={{ textDecoration: "none" }}>
+              <Box
+                component="span"
+                sx={{
+                  display: "inline-block",
+                  bgcolor: "rgba(255,255,255,0.20)",
+                  color: "white",
+                  fontWeight: 700,
+                  fontSize: { xs: 13, sm: 15 },
+                  px: 4,
+                  py: 1.5,
+                  borderRadius: 50,
+                  border: "1px solid rgba(255,255,255,0.4)",
+                  cursor: "pointer",
+                  "&:hover": { bgcolor: "rgba(255,255,255,0.30)" },
+                  backdropFilter: "blur(4px)",
+                  transition: "all 0.2s",
+                }}
+              >
+                東京の高校を探す
+              </Box>
+            </Link>
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[
@@ -170,27 +228,6 @@ export default function HomePage() {
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
-        {/* Hero Button Section */}
-        <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
-          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
-            <Button
-              variant="contained"
-              size="large"
-              sx={{
-                bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
-              }}
-            >
-              全国ランキングを見る
-            </Button>
-          </Link>
-        </Box>
-
         {/* Quick Prefecture Links */}
         <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
           人気エリアのランキング
@@ -263,14 +300,14 @@ export default function HomePage() {
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 2.5, mb: 3 }}>
             {[
               { href: "/column/hensachi-guide/", title: "偏差値の見方・使い方を徹底解説", desc: "偏差値とは何か、計算方法や見方を理解しましょう。" },
-              { href: "/column/koko-choice/", title: "志望校の選び方｜受験校を決める5つの基準", desc: "学力レベルから教育方針まで、最適な志望校選びを解説。" },
+              { href: "/column/koko-choice/", title: "志望校の選び方｜受験校を決める5つの基準", desc: "学力レベルから教育方针まで、最適な志望校選びを解説。" },
               { href: "/column/nyushi-schedule/", title: "高校受験スケジュール完全ガイド", desc: "中学3年間の受験スケジュールと準備の進め方。" },
-              { href: "/column/kouritsu-vs-shiritsu/", title: "公立vs私立｜高校選びの徹底比較", desc: "費用・環境・進学実績から最適な選択を。" },
+              { href: "/column/kouritsu-vs-shiritsu/", title: "公立 vs私立｜高校選びの徹底比較", desc: "費用・環境・進学実績から最適な選択を。" },
               { href: "/column/naishin-up/", title: "内申点の上げ方｜今すぐできる具体的な方法", desc: "定期テスト対策や授業態度などのポイントをご紹介。" },
               { href: "/column/mensetsu-guide/", title: "高校受験の面接対策完全ガイド", desc: "よく聞かれる質問と答え方のコツを解説します。" },
               { href: "/column/chugaku-entrance/", title: "中学受験の基礎知識｜いつから準備する？", desc: "費用・日程・学校選びを徹底解説。" },
               { href: "/column/study-methods/", title: "高校受験に向けた効果的な勉強法", desc: "教科別攻略と時間管理のコツを解説。" },
-              { href: "/column/tokkoku-guide/", title: "推薦入試・特色選抜完全ガイド", desc: "推薦入試の種類・資格・面接対策を解説。" },
+              { href: "/column/tokkoku-guide/", title: "推薦入試・特色選拜完全ガイド", desc: "推薦入試の種類・資格・面接対策を解説。" },
               { href: "/column/bukatsu-choise/", title: "高校の部活選び｜入学前に知ること", desc: "部活と勉強の両立、大学受験への影響を解説。" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
@@ -359,11 +396,11 @@ export default function HomePage() {
           {[
             {
               question: "偏差値ランキングはどのように作成されていますか？",
-              answer: "School Stationの偏差値ランキングは、各高校の入試難易度・合格ボーダーラインを基に作成しています。2026年度版では全国の公立・私立・国立高校を網羅し、最新の入試データを反映しています。"
+              answer: "School Stationの偏差値ランキングは、各高校の入試難易度・合格ボーダーラインを基に作成しています、2026年度版では全国の公立・私立・国立高校を網羅し、最新の入試データを反映しています。"
             },
             {
               question: "偏差値はどのように活用すればよいですか？",
-              answer: "偏差値は志望校選びの参考指標の一つです。自分の模試偏差値と学校の偏差値を比較し、安全校・チャレンジ校のバランスを取りながら受験校を決定するのが一般的です。偏差値だけでなく、学校の教育方針・進学実績・通学距離なども合わせて検討しましょう。"
+              answer: "偏差値は志望校選びの参考指標の一つです。自分の模試偏差値と学校の偏差値を比較し、安全校・チャレンジ校のバランスを取りながら受験校を決定するのが一般的です。偏差値だけでなが、学校の教育方针・進学実績・通学距離なども合わせて検討しましょう。"
             },
             {
               question: "公立と私立の偏差値は比較できますか？",
@@ -395,10 +432,10 @@ export default function HomePage() {
             高校偏差値ランキングについて
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8, mb: 2 }}>
-            School Stationは、全国の高校の偏差値情報を網羅的に掲載する総合情報サイトです。2026年度版の最新偏差値データに基づいて、都道府県別・地方別・学校分類別（公立・私立・国立）にランキングを提供しています。
+            School Stationは、全国の高校の偏差値情報を網羅的に掲載する総合情報サイトです、2026年度版の最新偏差値データに基づいて、都道府県別・地方別・学校分類別（公立・私立・国立）にランキングを提供しています。
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8, mb: 2 }}>
-            志望校選びの参考資料として、客観的な偏差値データを活用し、進学先の決定をサポートします。当サイトの情報は教育機関や学習塾での教育支援ツールとしても活用されています。
+            志望校選びの参考資料として、客観的な偏差値データを活用し、進学先の決定をサポートします。当サイトの情報は教育機関や学習塔での教育支援ツールとしても活用されています。
           </Typography>
           <Typography variant="body2" sx={{ color: "#424242", lineHeight: 1.8 }}>
             各ページでは、特定地域や学校分類の詳細なランキング、偏差値分布、学校情報などを検索・閲覧できます。進学希望者はもちろん、保護者や教育関係者の方にも活用いただけるコンテンツを目指しています。

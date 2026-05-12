@@ -128,7 +128,7 @@ export default function HomePage() {
             高校選びのすべてが、ここに
           </Typography>
           <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.9, mb: 2.5, fontWeight: 500 }}>
-            全国5,000校以上の偏差値・進学実績・特色を無料で比較。志望校をすぐに見つけよう。
+            全国<strong>5,000校以上</strong>の偏差値・進学実績・特色を無料で比較。今すぐ志望校を見つけよう。
           </Typography>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
@@ -186,7 +186,7 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              今すぐ全国ランキングを見る →
+              今すぐ無料で全国ランキングを見る →
             </Button>
           </Link>
         </Box>

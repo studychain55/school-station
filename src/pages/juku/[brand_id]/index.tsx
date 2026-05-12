@@ -240,9 +240,9 @@ export default function JukuBrandPage({ brand, schools }: Props) {
                 top: 80,
               }}
             >
-              <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>無料で相談・お問い合わせ</Typography>
+              <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>無料で体験・お問い合わせする</Typography>
               <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                入塾前の疑問・料金・授業内容など、お気軽にご相談ください
+                入塾前の疑問・料金・授業内容など、まずはお気軽にご相談ください
               </Typography>
               {brand.official_site_url && (
                 <a href={brand.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>

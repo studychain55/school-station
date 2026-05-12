@@ -94,10 +94,10 @@ export default function JukuTopPage() {
             かんたん検索
           </Typography>
           <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.95)", mb: 1, fontWeight: 700 }}>
-            <Box component="span" sx={{ fontSize: { xs: 20, sm: 24 }, fontWeight: 900 }}>5万件以上</Box>の塾・予備校から最適な一校を
+            <Box component="span" sx={{ fontSize: { xs: 20, sm: 24 }, fontWeight: 900, borderBottom: "2px solid rgba(255,255,255,0.6)" }}>5万件以上</Box>の塾・予備校から最適な一校を
           </Typography>
           <Typography sx={{ fontSize: { xs: 13, sm: 15 }, color: "rgba(255,255,255,0.85)", mb: 4, maxWidth: 480 }}>
-            個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して、今すぐ無料で探せます。
+            個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して、<strong>今すぐ無料で</strong>探せます。
           </Typography>
           <JukuSearchBox />
         </Container>

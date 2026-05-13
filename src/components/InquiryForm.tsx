@@ -61,9 +61,15 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
           rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
+      {/* 信頼シグナル */}
+      <div className="bg-gray-50 border border-gray-200 rounded-lg p-3 text-sm text-gray-600 space-y-1">
+        <p className="flex items-center gap-1.5"><span className="text-green-600 font-bold">✓</span> 通常2〜3営業日以内にご返信します</p>
+        <p className="flex items-center gap-1.5"><span className="text-green-600 font-bold">✓</span> 無料でお問い合わせいただけます</p>
+        <p className="flex items-center gap-1.5"><span className="text-green-600 font-bold">✓</span> ご入力いただいた情報は<a href="/policy/" className="underline hover:text-[#1e782d]">プライバシーポリシー</a>に基づき適切に管理します</p>
+      </div>
       <button type="submit" disabled={status==='loading'}
-        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50 hover:bg-[#155e24] transition-colors">
+        {status==='loading'?'送信中...':'お問い合わせを送信する'}
       </button>
     </form>
   );

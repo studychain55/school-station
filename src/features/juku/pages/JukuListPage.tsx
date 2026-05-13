@@ -76,13 +76,22 @@ export default function JukuListPage({
           <BreadCrumbBar items={breadcrumbs} />
           <Typography
             component="h1"
-            sx={{ fontWeight: 800, fontSize: { xs: "1.5rem", sm: "2rem" }, color: "#111827", mb: 0.5 }}
+            sx={{ fontWeight: 800, fontSize: { xs: "1.5rem", sm: "2rem" }, color: "#111827", mb: 0.75 }}
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
-          </Typography>
+          {totalCount > 0 ? (
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexWrap: "wrap" }}>
+              <Box sx={{ bgcolor: JUKU_RED, color: "#fff", px: 1.5, py: 0.4, borderRadius: 1, fontWeight: 700, fontSize: 13 }}>
+                {totalCount}件
+              </Box>
+              <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
+                の塾が見つかりました。目的・スタイルで絞り込めます。
+              </Typography>
+            </Box>
+          ) : (
+            <Typography sx={{ fontSize: 14, color: "#6B7280" }}>現在掲載準備中です</Typography>
+          )}
         </Container>
       </Box>
 

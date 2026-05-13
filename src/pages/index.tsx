@@ -124,11 +124,11 @@ export default function HomePage() {
             px: 2,
           }}
         >
-          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
-            高校選びのすべてが、ここに
+          <Typography variant="h1" sx={{ fontSize: { xs: "1.6rem", sm: "2.2rem", md: "2.8rem" }, fontWeight: "bold", mb: 1, lineHeight: 1.2 }}>
+            志望校の偏差値を今すぐ調べる
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
-            全国の高校を偏差値・進学実績・特色で比較
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.95rem", md: "1.05rem" }, opacity: 0.9, mb: 2.5 }}>
+            全国5,000校以上の高校を偏差値・進学実績・都道府県で比較
           </Typography>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
@@ -178,17 +178,22 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)" },
+                px: { xs: 4, sm: 6 },
+                py: { xs: 1.5, sm: 1.8 },
+                fontSize: { xs: 15, sm: 18 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                borderRadius: 2,
+                boxShadow: "0 6px 20px rgba(255,111,0,0.45)",
+                transition: "all 0.2s",
               }}
             >
-              全国ランキングを見る
+              全国ランキングを見る →
             </Button>
           </Link>
+          <Typography variant="caption" sx={{ display: "block", mt: 1, color: "#757575" }}>
+            無料・会員登録不要
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

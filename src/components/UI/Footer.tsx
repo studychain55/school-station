@@ -45,16 +45,16 @@ const FOOTER_SECTIONS = [
   },
 ];
 
-const linkStyle = { color: "#bcd7c0", textDecoration: "none", fontSize: 13, lineHeight: "2" };
+const linkStyle = { color: "#e0e7ff", textDecoration: "none", fontSize: 13, lineHeight: "2" };
 
 export default function Footer() {
   return (
-    <Box component="footer" sx={{ bgcolor: "#1e782d", color: "#fff", pt: 5, pb: 3, mt: 6 }}>
+    <Box component="footer" sx={{ bgcolor: "#4f46e5", color: "#fff", pt: 5, pb: 3, mt: 6 }}>
       <Container maxWidth="lg">
         <Grid container spacing={3} sx={{ mb: 4 }}>
           {FOOTER_SECTIONS.map((section) => (
             <Grid key={section.title} size={{ xs: 6, sm: 3 }}>
-              <Typography sx={{ fontWeight: 700, fontSize: 14, mb: 1.5, color: "#e9f2ea" }}>
+              <Typography sx={{ fontWeight: 700, fontSize: 14, mb: 1.5, color: "#e0e7ff" }}>
                 {section.title}
               </Typography>
               <Box component="ul" sx={{ listStyle: "none", p: 0, m: 0 }}>
@@ -108,15 +108,20 @@ export default function Footer() {
           <a href="https://kekkon-soudanjo-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">結婚相談所ナビ</a>
           <a href="https://karaoke-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">カラオケナビ</a>
           <a href="https://solarsystem-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">太陽光ナビ</a>
+            <a href="https://kobetsu-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">個別指導塾比較ナビ</a>
+            <a href="https://chugaku-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">中学受験塾比較ナビ</a>
+            <a href="https://koko-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">高校受験塾比較ナビ</a>
+            <a href="https://daigaku-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">大学受験予備校比較ナビ</a>
+            <a href="https://onlinetutor-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">オンライン家庭教師比較ナビ</a>
           </Box>
         </Box>
 
         <Box sx={{ borderTop: "1px solid rgba(255,255,255,0.15)", pt: 3, display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: 1 }}>
           <Typography sx={{ fontWeight: 700, fontSize: 15 }}>
-            School Station
+            オンライン塾比較ステーション
           </Typography>
           <Typography variant="caption" sx={{ color: "#90CAF9" }}>
-            &copy; {new Date().getFullYear()} School Station. All rights reserved.
+            &copy; {new Date().getFullYear()} オンライン塾比較ステーション. All rights reserved.
           </Typography>
         </Box>
       </Container>

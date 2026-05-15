@@ -124,11 +124,17 @@ export default function HomePage() {
             px: 2,
           }}
         >
-          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
-            高校選びのすべてが、ここに
+          <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: 3, opacity: 0.7, mb: 1, textTransform: "uppercase" }}>
+            High School Search &amp; Rankings
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
-            全国の高校を偏差値・進学実績・特色で比較
+          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
+            志望校探しは<br />School Stationで
+          </Typography>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.9, mb: 1 }}>
+            全国の高校を偏差値・進学実績・特色で一括比較
+          </Typography>
+          <Typography variant="body2" sx={{ fontSize: { xs: "0.75rem", md: "0.875rem" }, opacity: 0.65, mb: 2.5 }}>
+            公立・私立・国立 ― 都道府県別ランキングも掲載
           </Typography>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
@@ -179,16 +185,20 @@ export default function HomePage() {
               sx={{
                 bgcolor: "#FF6F00",
                 "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                px: 5,
+                py: 1.5,
+                fontSize: { xs: 15, sm: 17 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                boxShadow: "0 4px 16px rgba(255,111,0,0.35)",
+                borderRadius: 10,
               }}
             >
-              全国ランキングを見る
+              全国ランキングを見る →
             </Button>
           </Link>
+          <Typography variant="caption" sx={{ display: "block", color: "#9E9E9E", mt: 1 }}>
+            無料・会員登録不要
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

@@ -87,6 +87,28 @@ export default function JukuListPage({
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
+        {/* ソートピルボタン */}
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mb: 2 }}>
+          {[
+            { label: "おすすめ順", value: "" },
+            { label: "口コミが多い順", value: "review_count" },
+            { label: "評価が高い順", value: "rating" },
+            { label: "新着順", value: "new" },
+          ].map((opt) => (
+            <Box
+              key={opt.label}
+              component="span"
+              sx={{
+                display: "inline-block", px: 1.5, py: 0.5, borderRadius: 5, fontSize: 12, fontWeight: 600,
+                border: "1px solid #E5E7EB", bgcolor: "#fff", color: "#6B7280", cursor: "default",
+                "&:hover": { borderColor: JUKU_RED, color: JUKU_RED },
+              }}
+            >
+              {opt.label}
+            </Box>
+          ))}
+        </Box>
+
         {/* 塾名絞り込み */}
         <Box sx={{ mb: 2 }}>
           <TextField

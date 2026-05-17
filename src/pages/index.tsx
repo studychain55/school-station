@@ -82,7 +82,7 @@ export default function HomePage() {
   };
 
   return (
-    <>
+    <div className="pb-20 md:pb-0">
       <SEO
         title="School Station | 高校偏差値ランキング【2026年度版】"
         description="全国の高校偏差値ランキングを都道府県別・地方別・分類別に掲載。School Stationで志望校選びに役立つ偏差値情報をチェック。"
@@ -405,6 +405,16 @@ export default function HomePage() {
           </Typography>
         </Box>
       </Container>
-    </>
+
+      {/* 固定モバイルCTAバー */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-gray-200 px-4 py-3 shadow-[0_-4px_6px_-1px_rgba(0,0,0,0.1)]">
+        <Link
+          href="/juku/"
+          className="block w-full text-center bg-[#C62828] text-white font-bold py-3.5 rounded-xl text-sm"
+        >
+          近くの学習塾を今すぐ探す →
+        </Link>
+      </div>
+    </div>
   );
 }

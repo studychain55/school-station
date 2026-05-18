@@ -40,6 +40,10 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="bg-red-50 border border-red-200 rounded-lg px-4 py-3 text-sm text-gray-700 flex items-start gap-2">
+        <span className="text-red-500 font-bold mt-0.5">&#10003;</span>
+        <span>無料でお問い合わせいただけます。入力内容は安全に管理されます。</span>
+      </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
         <input required value={form.name} onChange={e=>setForm(f=>({...f,name:e.target.value}))}
@@ -62,9 +66,10 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
-        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        className="w-full bg-red-700 hover:bg-red-800 text-white font-bold py-4 rounded-lg disabled:opacity-50 transition-colors text-lg shadow-md">
+        {status==='loading' ? '送信中...' : '無料で問い合わせる'}
       </button>
+      <p className="text-xs text-gray-500 text-center">※ 返信は通常1〜2営業日以内にご連絡いたします</p>
     </form>
   );
 }

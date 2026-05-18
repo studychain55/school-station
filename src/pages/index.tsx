@@ -179,16 +179,20 @@ export default function HomePage() {
               sx={{
                 bgcolor: "#FF6F00",
                 "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                px: 5,
+                py: 1.5,
+                fontSize: { xs: 15, sm: 17 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                borderRadius: 8,
+                boxShadow: "0 4px 12px rgba(255,111,0,0.35)",
               }}
             >
-              全国ランキングを見る
+              全国高校偏差値ランキングを無料で見る
             </Button>
           </Link>
+          <Box sx={{ mt: 1 }}>
+            <Typography sx={{ fontSize: 11, color: "#757575" }}>5,000校以上掲載・完全無料</Typography>
+          </Box>
         </Box>
 
         {/* Quick Prefecture Links */}

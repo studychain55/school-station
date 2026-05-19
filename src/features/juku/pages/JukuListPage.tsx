@@ -125,7 +125,7 @@ export default function JukuListPage({
           };
 
           return (
-            <Box sx={{ mb: 3 }}>
+            <Box sx={{ mb: 3, position: "sticky", top: 64, zIndex: 10, bgcolor: "#fff", boxShadow: "0 2px 4px rgba(0,0,0,0.06)", py: 1.5, mx: -2, px: 2 }}>
               {/* 目的フィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
                 <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>

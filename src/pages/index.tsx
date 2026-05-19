@@ -178,12 +178,13 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)", boxShadow: "0 8px 24px rgba(255,111,0,0.45)" },
                 px: 4,
                 py: 1.2,
                 fontSize: { xs: 14, sm: 16 },
                 fontWeight: 700,
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                transition: "all 0.2s ease",
               }}
             >
               全国ランキングを見る

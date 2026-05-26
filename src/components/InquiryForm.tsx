@@ -62,9 +62,10 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
-        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        className="w-full bg-[#1e782d] text-white font-bold py-4 text-base rounded-lg disabled:opacity-50 hover:bg-[#155420] transition-colors">
+        {status==='loading'?'送信中...':'お問い合わせを送信する'}
       </button>
+      <p className="text-xs text-gray-400 mt-2 text-center">送信することでプライバシーポリシーに同意したものとみなします。</p>
     </form>
   );
 }

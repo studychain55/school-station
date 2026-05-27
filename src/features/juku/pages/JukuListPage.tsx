@@ -80,6 +80,17 @@ export default function JukuListPage({
           >
             {title}
           </Typography>
+          {/* 検索結果サマリー */}
+          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 0.5 }}>
+            <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
+              <Box component="strong" sx={{ color: "#111827" }}>{totalCount.toLocaleString()}</Box> 件
+            </Typography>
+            {router.query.purpose && (
+              <Link href={router.pathname} style={{ fontSize: 12, color: "#2563eb", textDecoration: "none" }}>
+                絞り込みを解除 ×
+              </Link>
+            )}
+          </Box>
           <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
             {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
           </Typography>

@@ -345,6 +345,9 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
             <Box sx={{ position: "sticky", top: 80, display: "flex", flexDirection: "column", gap: 2 }}>
               {/* 問い合わせCTA */}
               <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
+                <Typography sx={{ fontWeight: 700, fontSize: 13, mb: 0.5, opacity: 0.85 }}>
+                  📩 無料でお問い合わせ
+                </Typography>
                 <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
                   無料で問い合わせる
                 </Typography>

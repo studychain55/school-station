@@ -345,11 +345,14 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
             <Box sx={{ position: "sticky", top: 80, display: "flex", flexDirection: "column", gap: 2 }}>
               {/* 問い合わせCTA */}
               <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
+                <Box sx={{ display: "inline-block", bgcolor: "#FF8F00", color: "#fff", fontSize: 11, fontWeight: 700, px: 1.5, py: 0.5, borderRadius: 4, mb: 1 }}>
+                  無料相談受付中
+                </Box>
                 <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
-                  無料で問い合わせる
+                  無料でメール相談する
                 </Typography>
                 <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                  体験授業・資料請求も受付中
+                  24時間受付・返信は通常1営業日以内
                 </Typography>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>

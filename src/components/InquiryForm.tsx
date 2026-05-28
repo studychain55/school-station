@@ -40,6 +40,13 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="flex flex-wrap gap-3 mb-5">
+        {['入力3分で完了', '返信は24時間以内', '無料で相談できます'].map((text) => (
+          <span key={text} className="flex items-center gap-1 text-xs text-[#1e782d] font-medium">
+            <span>✓</span> {text}
+          </span>
+        ))}
+      </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
         <input required value={form.name} onChange={e=>setForm(f=>({...f,name:e.target.value}))}

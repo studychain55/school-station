@@ -130,6 +130,33 @@ export default function HomePage() {
           <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* CTA Button */}
+          <Box sx={{ mb: 2.5, display: "flex", flexDirection: "column", alignItems: "center", gap: 1 }}>
+            <Link href="/juku/" style={{ textDecoration: "none" }}>
+              <Box
+                component="span"
+                sx={{
+                  display: "inline-block",
+                  bgcolor: "#fff",
+                  color: "#1e782d",
+                  fontWeight: 700,
+                  fontSize: 14,
+                  px: 3.5,
+                  py: 1.25,
+                  borderRadius: 8,
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                  cursor: "pointer",
+                  "&:hover": { bgcolor: "#f5f5f5" },
+                  transition: "background-color 0.2s",
+                }}
+              >
+                塾・予備校を探す →
+              </Box>
+            </Link>
+            <Box component="span" sx={{ fontSize: 12, color: "rgba(255,255,255,0.75)" }}>
+              全国の塾・予備校情報を掲載中
+            </Box>
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

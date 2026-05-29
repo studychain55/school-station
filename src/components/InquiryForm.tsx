@@ -61,6 +61,12 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
           rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
+      <div className="rounded-lg bg-blue-50 border border-blue-100 p-3 mb-4 text-xs text-blue-700 space-y-1">
+        <p className="font-semibold">ご安心ください</p>
+        <p>✓ 24時間以内にご返信いたします</p>
+        <p>✓ 個人情報の第三者提供はありません</p>
+        <p>✓ 無料でご利用いただけます</p>
+      </div>
       <button type="submit" disabled={status==='loading'}
         className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
         {status==='loading'?'送信中...':' お問い合わせを送信する'}

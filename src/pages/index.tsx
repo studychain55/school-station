@@ -178,15 +178,16 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                "&:hover": { bgcolor: "#E65100", transform: "scale(1.05)" },
+                px: 5,
+                py: 1.5,
+                fontSize: { xs: 15, sm: 17 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                boxShadow: "0 6px 20px rgba(255,111,0,0.4)",
+                transition: "all 0.2s",
               }}
             >
-              全国ランキングを見る
+              今すぐ無料で偏差値を調べる →
             </Button>
           </Link>
         </Box>

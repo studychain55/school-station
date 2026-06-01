@@ -7,6 +7,7 @@ import TrainIcon from "@mui/icons-material/Train";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PublicIcon from "@mui/icons-material/Public";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ReviewStars from "@/components/juku/ReviewStars";
 import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2, REVIEW_CATEGORIES } from "@/utils/juku/config";
 import { fetchJukuSchoolDetail, fetchRelatedSchools } from "@/utils/db/fetchJuku";
@@ -155,6 +156,68 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
             </Box>
           </Box>
         </Container>
+      </Box>
+
+      {/* モバイル用スティッキーCTA */}
+      <Box
+        sx={{
+          display: { xs: "block", md: "none" },
+          position: "sticky",
+          top: 0,
+          zIndex: 100,
+          bgcolor: JUKU_RED,
+          px: 2,
+          py: 1.25,
+          boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+        }}
+      >
+        <Box sx={{ display: "flex", gap: 1.5, justifyContent: "center", alignItems: "center" }}>
+          {school.official_site_url && (
+            <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", flex: 1 }}>
+              <Box
+                sx={{
+                  bgcolor: "#fff",
+                  color: JUKU_RED,
+                  py: 1,
+                  borderRadius: 1.5,
+                  fontWeight: 700,
+                  fontSize: 13,
+                  textAlign: "center",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 0.4,
+                }}
+              >
+                <PublicIcon sx={{ fontSize: 15 }} />
+                無料で問い合わせる
+              </Box>
+            </a>
+          )}
+          {school.telephone && (
+            <a href={`tel:${school.telephone}`} style={{ textDecoration: "none", flex: 1 }}>
+              <Box
+                sx={{
+                  bgcolor: "rgba(255,255,255,0.15)",
+                  color: "#fff",
+                  py: 1,
+                  borderRadius: 1.5,
+                  fontWeight: 700,
+                  fontSize: 13,
+                  textAlign: "center",
+                  border: "1px solid rgba(255,255,255,0.4)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  gap: 0.4,
+                }}
+              >
+                <PhoneIcon sx={{ fontSize: 15 }} />
+                電話する
+              </Box>
+            </a>
+          )}
+        </Box>
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
@@ -353,9 +416,48 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
                 </Typography>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>
-                      <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
+                    <Box
+                      sx={{
+                        bgcolor: "#fff",
+                        color: JUKU_RED,
+                        py: 1.25,
+                        borderRadius: 1.5,
+                        fontWeight: 700,
+                        fontSize: 14,
+                        mb: 1,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: 0.5,
+                        "&:hover": { opacity: 0.9 },
+                      }}
+                    >
+                      <PublicIcon sx={{ fontSize: 16 }} />
                       公式サイトへ
+                      <ArrowForwardIcon sx={{ fontSize: 14 }} />
+                    </Box>
+                  </a>
+                )}
+                {school.telephone && (
+                  <a href={`tel:${school.telephone}`} style={{ textDecoration: "none" }}>
+                    <Box
+                      sx={{
+                        bgcolor: "rgba(255,255,255,0.15)",
+                        color: "#fff",
+                        py: 1.1,
+                        borderRadius: 1.5,
+                        fontWeight: 700,
+                        fontSize: 13,
+                        border: "1px solid rgba(255,255,255,0.35)",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        gap: 0.5,
+                        "&:hover": { bgcolor: "rgba(255,255,255,0.25)" },
+                      }}
+                    >
+                      <PhoneIcon sx={{ fontSize: 15 }} />
+                      {school.telephone}
                     </Box>
                   </a>
                 )}

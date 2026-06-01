@@ -9,6 +9,7 @@ import JukuCompareTable from "@/features/juku/components/JukuCompareTable";
 import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2, JUKU_PURPOSES, JUKU_CATEGORIES } from "@/utils/juku/config";
 import type { JukuListPageProps } from "@/types";
 import type { Breadcrumb } from "@/types";
+import type { JukuSchoolListItem } from "@/types";
 
 function BreadCrumbBar({ items }: { items: Breadcrumb[] }) {
   return (
@@ -35,6 +36,18 @@ function BreadCrumbBar({ items }: { items: Breadcrumb[] }) {
   );
 }
 
+type SortKey = "default" | "rating" | "reviews";
+
+function sortSchools(schools: JukuSchoolListItem[], key: SortKey): JukuSchoolListItem[] {
+  if (key === "rating") {
+    return [...schools].sort((a, b) => (b.review_average_rating ?? 0) - (a.review_average_rating ?? 0));
+  }
+  if (key === "reviews") {
+    return [...schools].sort((a, b) => (b.total_review_count ?? 0) - (a.total_review_count ?? 0));
+  }
+  return schools;
+}
+
 export default function JukuListPage({
   schools,
   totalCount,
@@ -47,9 +60,12 @@ export default function JukuListPage({
   const router = useRouter();
   const totalPages = Math.ceil(totalCount / perPage);
   const [nameFilter, setNameFilter] = useState("");
-  const displayedSchools = nameFilter
+  const [sortKey, setSortKey] = useState<SortKey>("default");
+
+  const filteredSchools = nameFilter
     ? schools.filter((s) => s.name.includes(nameFilter) || s.JukuBrand.name.includes(nameFilter))
     : schools;
+  const displayedSchools = sortSchools(filteredSchools, sortKey);
 
   const handlePageChange = (_: React.ChangeEvent<unknown>, page: number) => {
     const query = { ...router.query, page: page > 1 ? String(page) : undefined };
@@ -58,6 +74,12 @@ export default function JukuListPage({
   };
 
   const canonical = `https://school-station.jp${router.asPath.split("?")[0]}`;
+
+  const SORT_OPTIONS: { key: SortKey; label: string }[] = [
+    { key: "default", label: "おすすめ順" },
+    { key: "rating", label: "評価が高い順" },
+    { key: "reviews", label: "口コミが多い順" },
+  ];
 
   return (
     <>
@@ -81,17 +103,17 @@ export default function JukuListPage({
             {title}
           </Typography>
           <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
+            {totalCount > 0 ? `${totalCount.toLocaleString()}件の塾が見つかりました` : "現在掲載準備中です"}
           </Typography>
         </Container>
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
-        {/* 塾名絞り込み */}
-        <Box sx={{ mb: 2 }}>
+        {/* 絞り込み・ソート行 */}
+        <Box sx={{ display: "flex", gap: 1.5, mb: 2, flexWrap: "wrap", alignItems: "center" }}>
           <TextField
             size="small"
-            fullWidth
+            sx={{ bgcolor: "#fff", borderRadius: 1, flex: 1, minWidth: 180 }}
             placeholder="塾名・ブランド名で絞り込む"
             value={nameFilter}
             onChange={(e) => setNameFilter(e.target.value)}
@@ -104,8 +126,33 @@ export default function JukuListPage({
                 ),
               },
             }}
-            sx={{ bgcolor: "#fff", borderRadius: 1 }}
           />
+          {/* 並び替え */}
+          <Box sx={{ display: "flex", gap: 0.75, flexShrink: 0 }}>
+            {SORT_OPTIONS.map((opt) => (
+              <Box
+                key={opt.key}
+                component="button"
+                onClick={() => setSortKey(opt.key)}
+                sx={{
+                  px: 1.5,
+                  py: 0.6,
+                  borderRadius: 1.5,
+                  fontSize: 12,
+                  fontWeight: 600,
+                  border: "1px solid",
+                  cursor: "pointer",
+                  bgcolor: sortKey === opt.key ? JUKU_RED : "#fff",
+                  color: sortKey === opt.key ? "#fff" : "#374151",
+                  borderColor: sortKey === opt.key ? JUKU_RED : "#E5E7EB",
+                  transition: "all 0.12s",
+                  "&:hover": { borderColor: JUKU_RED, color: sortKey === opt.key ? "#fff" : JUKU_RED },
+                }}
+              >
+                {opt.label}
+              </Box>
+            ))}
+          </Box>
         </Box>
 
         {/* クイックフィルター */}
@@ -219,7 +266,7 @@ export default function JukuListPage({
             <Grid container spacing={2}>
               {displayedSchools.map((school, i) => (
                 <Grid key={school.id} size={{ xs: 12, sm: 6, lg: 4 }}>
-                  <JukuCard school={school} rank={currentPage === 1 && !nameFilter ? i + 1 : undefined} />
+                  <JukuCard school={school} rank={currentPage === 1 && !nameFilter && sortKey === "default" ? i + 1 : undefined} />
                 </Grid>
               ))}
             </Grid>

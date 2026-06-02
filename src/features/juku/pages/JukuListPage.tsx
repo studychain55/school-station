@@ -80,9 +80,44 @@ export default function JukuListPage({
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 2, flexWrap: "wrap", mt: 0.5 }}>
+            <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
+              {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
+            </Typography>
+            {totalCount > 0 && (
+              <Box sx={{ display: "flex", gap: 1 }}>
+                <Typography sx={{ fontSize: 12, color: "#9CA3AF" }}>並び替え:</Typography>
+                {[
+                  { label: "口コミ順", value: "rating" },
+                  { label: "新着順", value: "newest" },
+                ].map((opt) => (
+                  <Link
+                    key={opt.value}
+                    href={`${router.pathname}?sort=${opt.value}`}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <Box
+                      component="span"
+                      sx={{
+                        display: "inline-block",
+                        px: 1.5,
+                        py: 0.4,
+                        borderRadius: 1,
+                        border: "1px solid #E5E7EB",
+                        bgcolor: "#fff",
+                        fontSize: 12,
+                        color: "#374151",
+                        cursor: "pointer",
+                        "&:hover": { borderColor: JUKU_RED, color: JUKU_RED },
+                      }}
+                    >
+                      {opt.label}
+                    </Box>
+                  </Link>
+                ))}
+              </Box>
+            )}
+          </Box>
         </Container>
       </Box>
 

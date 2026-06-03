@@ -130,6 +130,29 @@ export default function HomePage() {
           <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* Hero CTA */}
+          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+            <Box
+              component="span"
+              sx={{
+                display: "inline-block",
+                px: 4,
+                py: 1.2,
+                mb: 2.5,
+                bgcolor: "#FF6F00",
+                color: "white",
+                fontWeight: 700,
+                fontSize: { xs: 14, sm: 16 },
+                borderRadius: 6,
+                boxShadow: "0 4px 16px rgba(255,111,0,0.4)",
+                cursor: "pointer",
+                transition: "all 0.2s",
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
+              }}
+            >
+              全国ランキングを見る →
+            </Box>
+          </Link>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

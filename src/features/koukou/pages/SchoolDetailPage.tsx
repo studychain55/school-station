@@ -283,10 +283,10 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
             ) : null}
 
             {/* Action Card */}
-            <Card sx={{ border: "1px solid #E0E0E0" }}>
+            <Card sx={{ border: "2px solid #1e782d", bgcolor: "#f0f6f0" }}>
               <CardContent>
-                <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
-                  アクション
+                <Typography variant="h2" component="h2" sx={{ fontSize: "1rem", mb: 1.5, fontWeight: 700, color: "#1e782d" }}>
+                  この学校の情報を確認する
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                   {school.address && (
@@ -297,9 +297,9 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                       href={generateGoogleMapsUrl(school)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      sx={{ justifyContent: "flex-start" }}
+                      sx={{ justifyContent: "flex-start", bgcolor: "#1e782d", "&:hover": { bgcolor: "#155a22" } }}
                     >
-                      Google Mapsで見る
+                      Google Mapsで場所を確認
                     </Button>
                   )}
                   {school.source_url && (
@@ -310,8 +310,9 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                       href={school.source_url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      sx={{ borderColor: "#1e782d", color: "#1e782d", "&:hover": { borderColor: "#155a22", bgcolor: "#e9f2ea" } }}
                     >
-                      公式サイト
+                      公式サイトを見る
                     </Button>
                   )}
                 </Box>

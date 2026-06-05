@@ -128,7 +128,7 @@ export default function JukuListPage({
             <Box sx={{ mb: 3 }}>
               {/* 目的フィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
+                <Typography sx={{ fontSize: 12, fontWeight: "bold", color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
                 {JUKU_PURPOSES.map((p) => {
                   const isActive = currentPurpose === p.value;
                   return (
@@ -150,7 +150,7 @@ export default function JukuListPage({
               </Box>
               {/* スタイルフィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>スタイル:</Typography>
+                <Typography sx={{ fontSize: 12, fontWeight: "bold", color: "#6B7280", minWidth: "fit-content" }}>スタイル:</Typography>
                 {JUKU_CATEGORIES.map((c) => {
                   const isActive = currentCategory === c.value;
                   return (

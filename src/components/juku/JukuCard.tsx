@@ -184,6 +184,24 @@ export default function JukuCard({ school, rank }: Props) {
               </Box>
             )}
           </Box>
+
+          {/* CTA */}
+          <Box sx={{ mt: 1.5 }}>
+            <Typography
+              sx={{
+                display: "inline-block",
+                fontSize: 13,
+                fontWeight: 700,
+                px: 2,
+                py: 0.75,
+                borderRadius: 1,
+                bgcolor: school.trial_available ? JUKU_RED : "#1e782d",
+                color: "#fff",
+              }}
+            >
+              {school.trial_available ? "見学・体験を申込む →" : "詳細を見る →"}
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </Link>

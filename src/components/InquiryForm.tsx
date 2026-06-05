@@ -13,9 +13,10 @@ interface Props {
   facilityId: number;
   facilityUid: string;
   facilityName: string;
+  inquiryType?: string;
 }
 
-export default function InquiryForm({ siteId, facilityTable, facilityId, facilityUid, facilityName }: Props) {
+export default function InquiryForm({ siteId, facilityTable, facilityId, facilityUid, facilityName, inquiryType }: Props) {
   const [form, setForm] = useState({ name: '', email: '', phone: '', message: '' });
   const [status, setStatus] = useState<'idle'|'loading'|'success'|'error'>('idle');
 
@@ -63,7 +64,7 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
         className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        {status==='loading'?'送信中...':(inquiryType==='trial'?'見学・体験を申し込む →':'無料で問い合わせる →')}
       </button>
     </form>
   );

@@ -119,6 +119,22 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
       <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3 } }}>
         <BreadCrumb items={breadcrumbs} />
 
+        {/* Quick Back to Ranking */}
+        <Box sx={{ mb: 2, display: "flex", gap: 1, flexWrap: "wrap" }}>
+          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+            <Box component="span" sx={{ display: "inline-block", px: 2, py: 0.8, bgcolor: "#1e782d", color: "#fff", borderRadius: 2, fontSize: 13, fontWeight: 600, cursor: "pointer", "&:hover": { bgcolor: "#155420" }, transition: "background-color 0.2s" }}>
+              ← 全国ランキングに戻る
+            </Box>
+          </Link>
+          {prefectureSlug && prefectureTitle && (
+            <Link href={`/rankings/koukou/p-${prefectureSlug}/`} style={{ textDecoration: "none" }}>
+              <Box component="span" sx={{ display: "inline-block", px: 2, py: 0.8, bgcolor: "#F5F9FF", border: "1px solid #1e782d", color: "#1e782d", borderRadius: 2, fontSize: 13, fontWeight: 600, cursor: "pointer", "&:hover": { bgcolor: "#e9f2ea" }, transition: "background-color 0.2s" }}>
+                {prefectureTitle}のランキング
+              </Box>
+            </Link>
+          )}
+        </Box>
+
         {/* Hero Section */}
         <Box sx={{ mb: 4, p: { xs: 2, sm: 3 }, background: "linear-gradient(135deg, #e9f2ea 0%, #bcd7c0 100%)", borderRadius: 2 }}>
           <Typography variant="h1" component="h1" sx={{ fontSize: { xs: "1.4rem", sm: "2rem" }, mb: 1, color: "#1e782d", fontWeight: 700 }}>

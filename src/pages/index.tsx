@@ -171,24 +171,49 @@ export default function HomePage() {
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
-        <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
-          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
-            <Button
-              variant="contained"
-              size="large"
-              sx={{
-                bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
-              }}
-            >
-              全国ランキングを見る
-            </Button>
-          </Link>
+        <Box sx={{ textAlign: "center", py: 3, mb: 2, bgcolor: "#F5F9FF", borderRadius: 2, px: 2 }}>
+          <Typography sx={{ fontSize: { xs: 13, sm: 14 }, color: "#424242", mb: 1.5 }}>
+            全国5,000校以上の偏差値データを無料で閲覧できます
+          </Typography>
+          <Box sx={{ display: "flex", gap: 2, justifyContent: "center", flexWrap: "wrap" }}>
+            <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+              <Button
+                variant="contained"
+                size="large"
+                sx={{
+                  bgcolor: "#FF6F00",
+                  "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)" },
+                  px: 4,
+                  py: 1.4,
+                  fontSize: { xs: 14, sm: 16 },
+                  fontWeight: 700,
+                  boxShadow: "0 4px 16px rgba(255,111,0,0.35)",
+                  borderRadius: 2,
+                  transition: "all 0.2s",
+                }}
+              >
+                全国ランキングを見る →
+              </Button>
+            </Link>
+            <Link href="/juku/" style={{ textDecoration: "none" }}>
+              <Button
+                variant="outlined"
+                size="large"
+                sx={{
+                  borderColor: "#1e782d",
+                  color: "#1e782d",
+                  "&:hover": { bgcolor: "#E8F5E9", borderColor: "#1e782d" },
+                  px: 3,
+                  py: 1.4,
+                  fontSize: { xs: 13, sm: 15 },
+                  fontWeight: 600,
+                  borderRadius: 2,
+                }}
+              >
+                塾・予備校を探す
+              </Button>
+            </Link>
+          </Box>
         </Box>
 
         {/* Quick Prefecture Links */}

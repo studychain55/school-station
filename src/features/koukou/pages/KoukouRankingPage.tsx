@@ -91,6 +91,21 @@ export default function KoukouRankingPage(props: Props) {
         {/* Stat Cards */}
         <StatCardGrid schools={schools} totalCount={totalCount} />
 
+        {/* 結果件数・フィルター */}
+        <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1.5, flexWrap: "wrap", gap: 1 }}>
+          <Typography sx={{ fontSize: 14, color: "#6B7280", fontWeight: 500 }}>
+            <Box component="span" sx={{ fontWeight: 700, color: "#1e782d", fontSize: 16 }}>
+              {totalCount.toLocaleString()}校
+            </Box>
+            {" "}が見つかりました
+            {currentPage > 1 && (
+              <Box component="span" sx={{ ml: 1, fontSize: 12 }}>
+                （{currentPage}ページ目）
+              </Box>
+            )}
+          </Typography>
+        </Box>
+
         {/* Classification Filter */}
         <Box
           component="nav"

@@ -80,9 +80,23 @@ export default function JukuListPage({
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, flexWrap: "wrap" }}>
+            {totalCount > 0 ? (
+              <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
+                <Box component="span" sx={{ fontWeight: 700, color: JUKU_RED, fontSize: 18 }}>
+                  {totalCount.toLocaleString()}
+                </Box>
+                {" "}件の塾が見つかりました
+              </Typography>
+            ) : (
+              <Typography sx={{ fontSize: 14, color: "#6B7280" }}>現在掲載準備中です</Typography>
+            )}
+            {currentPage > 1 && (
+              <Typography sx={{ fontSize: 12, color: "#9CA3AF", bgcolor: "#fff", px: 1.5, py: 0.3, borderRadius: 2, border: "1px solid #E5E7EB" }}>
+                {currentPage}ページ目 / 全{Math.ceil(totalCount / perPage)}ページ
+              </Typography>
+            )}
+          </Box>
         </Container>
       </Box>
 
@@ -124,8 +138,27 @@ export default function JukuListPage({
             return qs ? `${basePath}?${qs}` : basePath;
           };
 
+          const activeCount = (currentPurpose ? 1 : 0) + (currentCategory ? 1 : 0);
+
           return (
-            <Box sx={{ mb: 3 }}>
+            <Box sx={{ mb: 3, p: 2, bgcolor: "#F9FAFB", borderRadius: 2, border: "1px solid #E5E7EB" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", mb: 1.5 }}>
+                <Typography sx={{ fontSize: 13, fontWeight: 700, color: "#374151" }}>
+                  絞り込み
+                  {activeCount > 0 && (
+                    <Box component="span" sx={{ ml: 1, display: "inline-block", bgcolor: JUKU_RED, color: "#fff", borderRadius: "50%", width: 18, height: 18, fontSize: 11, fontWeight: 700, textAlign: "center", lineHeight: "18px" }}>
+                      {activeCount}
+                    </Box>
+                  )}
+                </Typography>
+                {activeCount > 0 && (
+                  <Link href={(() => { const q = { ...baseQuery }; delete q.purpose; delete q.category; const qs = new URLSearchParams(q as Record<string, string>).toString(); return qs ? `${basePath}?${qs}` : basePath; })()} style={{ textDecoration: "none" }}>
+                    <Typography sx={{ fontSize: 12, color: JUKU_RED, cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+                      絞り込みをリセット
+                    </Typography>
+                  </Link>
+                )}
+              </Box>
               {/* 目的フィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
                 <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
@@ -173,6 +206,7 @@ export default function JukuListPage({
             </Box>
           );
         })()}
+
 
         {schools.length === 0 ? (
           <Box

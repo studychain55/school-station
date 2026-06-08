@@ -116,7 +116,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
         }} />
       </Head>
 
-      <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3 } }}>
+      <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3 }, pb: { xs: 10, sm: 3 } }}>
         <BreadCrumb items={breadcrumbs} />
 
         {/* Hero Section */}
@@ -283,40 +283,121 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
             ) : null}
 
             {/* Action Card */}
-            <Card sx={{ border: "1px solid #E0E0E0" }}>
+            <Card sx={{ border: "2px solid #1e782d", bgcolor: "#f0f6f0" }}>
               <CardContent>
-                <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
-                  アクション
+                <Typography variant="h2" component="h2" sx={{ fontSize: "1rem", mb: 0.5, fontWeight: 700, color: "#1e782d" }}>
+                  この高校について調べる
                 </Typography>
-                <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
-                  {school.address && (
-                    <Button
-                      variant="contained"
-                      fullWidth
-                      startIcon={<LocationOnIcon />}
-                      href={generateGoogleMapsUrl(school)}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      sx={{ justifyContent: "flex-start" }}
-                    >
-                      Google Mapsで見る
-                    </Button>
-                  )}
+                <Typography sx={{ fontSize: 12, color: "#546E7A", mb: 2 }}>
+                  公式情報・アクセスを確認しましょう
+                </Typography>
+                <Box sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
                   {school.source_url && (
                     <Button
-                      variant="outlined"
+                      variant="contained"
                       fullWidth
                       endIcon={<OpenInNewIcon />}
                       href={school.source_url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      sx={{
+                        bgcolor: "#1e782d",
+                        "&:hover": { bgcolor: "#145722" },
+                        fontWeight: 700,
+                        py: 1.2,
+                        fontSize: 14,
+                      }}
                     >
-                      公式サイト
+                      公式サイトを見る
                     </Button>
                   )}
+                  {school.address && (
+                    <Button
+                      variant="outlined"
+                      fullWidth
+                      startIcon={<LocationOnIcon />}
+                      href={generateGoogleMapsUrl(school)}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      sx={{
+                        borderColor: "#1e782d",
+                        color: "#1e782d",
+                        "&:hover": { borderColor: "#145722", bgcolor: "#e8f5e9" },
+                        fontWeight: 600,
+                      }}
+                    >
+                      Google Mapsで見る
+                    </Button>
+                  )}
+                  {!school.source_url && !school.address && (
+                    <Typography sx={{ fontSize: 13, color: "#757575", textAlign: "center", py: 1 }}>
+                      詳細情報を準備中です
+                    </Typography>
+                  )}
                 </Box>
+                {prefectureSlug && (
+                  <Box sx={{ mt: 2, pt: 2, borderTop: "1px solid #c8e6c9" }}>
+                    <Link href={`/rankings/koukou/p-${prefectureSlug}/`} style={{ textDecoration: "none" }}>
+                      <Typography sx={{ fontSize: 13, color: "#1e782d", fontWeight: 600, textAlign: "center", "&:hover": { textDecoration: "underline" } }}>
+                        {prefectureTitle}の高校ランキングを見る →
+                      </Typography>
+                    </Link>
+                  </Box>
+                )}
               </CardContent>
             </Card>
+
+            {/* Sticky Mobile CTA */}
+            <Box
+              sx={{
+                display: { xs: "block", sm: "none" },
+                position: "fixed",
+                bottom: 0,
+                left: 0,
+                right: 0,
+                zIndex: 1200,
+                p: 1.5,
+                bgcolor: "rgba(255,255,255,0.97)",
+                borderTop: "1px solid #E0E0E0",
+                boxShadow: "0 -4px 12px rgba(0,0,0,0.08)",
+              }}
+            >
+              <Box sx={{ display: "flex", gap: 1 }}>
+                {school.source_url ? (
+                  <Button
+                    variant="contained"
+                    fullWidth
+                    endIcon={<OpenInNewIcon />}
+                    href={school.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ bgcolor: "#1e782d", "&:hover": { bgcolor: "#145722" }, fontWeight: 700, fontSize: 13 }}
+                  >
+                    公式サイト
+                  </Button>
+                ) : null}
+                {school.address && (
+                  <Button
+                    variant="outlined"
+                    fullWidth={!school.source_url}
+                    startIcon={<LocationOnIcon />}
+                    href={generateGoogleMapsUrl(school)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{ borderColor: "#1e782d", color: "#1e782d", fontWeight: 600, fontSize: 13 }}
+                  >
+                    地図
+                  </Button>
+                )}
+                {!school.source_url && !school.address && prefectureSlug && (
+                  <Link href={`/rankings/koukou/p-${prefectureSlug}/`} style={{ textDecoration: "none", flex: 1 }}>
+                    <Button variant="contained" fullWidth sx={{ bgcolor: "#1e782d", "&:hover": { bgcolor: "#145722" }, fontWeight: 700, fontSize: 13 }}>
+                      {prefectureTitle}のランキングへ
+                    </Button>
+                  </Link>
+                )}
+              </Box>
+            </Box>
           </Box>
         </Box>
 

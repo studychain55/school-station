@@ -124,12 +124,35 @@ export default function HomePage() {
             px: 2,
           }}
         >
-          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
-            高校選びのすべてが、ここに
+          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1, lineHeight: 1.2 }}>
+            志望校の偏差値を、今すぐ調べる
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
-            全国の高校を偏差値・進学実績・特色で比較
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.85, mb: 2 }}>
+            全国5,000校以上の高校偏差値を都道府県・学校分類別に掲載
           </Typography>
+          {/* メインCTA */}
+          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+            <Box
+              component="span"
+              sx={{
+                display: "inline-block",
+                px: { xs: 3, sm: 5 },
+                py: { xs: 1.2, sm: 1.5 },
+                bgcolor: "#FF6F00",
+                color: "white",
+                fontSize: { xs: 15, sm: 17 },
+                fontWeight: 700,
+                borderRadius: 2,
+                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+                mb: 2.5,
+                cursor: "pointer",
+                "&:hover": { bgcolor: "#E65100" },
+                transition: "background-color 0.2s",
+              }}
+            >
+              全国ランキングを見る →
+            </Box>
+          </Link>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[
@@ -138,11 +161,10 @@ export default function HomePage() {
               { label: "大阪", slug: "osaka" },
               { label: "愛知", slug: "aichi" },
               { label: "福岡", slug: "fukuoka" },
-              { label: "全国ランキング", slug: null },
             ].map((item) => (
               <Link
                 key={item.label}
-                href={item.slug ? `/rankings/koukou/p-${item.slug}/` : "/rankings/koukou/"}
+                href={`/rankings/koukou/p-${item.slug}/`}
                 style={{ textDecoration: "none" }}
               >
                 <Box
@@ -161,7 +183,7 @@ export default function HomePage() {
                     transition: "background-color 0.2s",
                   }}
                 >
-                  {item.label}
+                  {item.label}の高校
                 </Box>
               </Link>
             ))}
@@ -170,23 +192,21 @@ export default function HomePage() {
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
-        {/* Hero Button Section */}
-        <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
-          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
-            <Button
-              variant="contained"
-              size="large"
-              sx={{
-                bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
-              }}
-            >
-              全国ランキングを見る
+        {/* Quick CTA Strip */}
+        <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, justifyContent: "center", py: 3, mb: 1 }}>
+          <Link href="/rankings/koukou/public/" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" sx={{ fontSize: { xs: 13, sm: 14 }, borderColor: "#2E7D32", color: "#2E7D32", "&:hover": { borderColor: "#1B5E20", bgcolor: "#E8F5E9" } }}>
+              公立高校を探す
+            </Button>
+          </Link>
+          <Link href="/rankings/koukou/private/" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" sx={{ fontSize: { xs: 13, sm: 14 }, borderColor: "#C62828", color: "#C62828", "&:hover": { borderColor: "#B71C1C", bgcolor: "#FFEBEE" } }}>
+              私立高校を探す
+            </Button>
+          </Link>
+          <Link href="/rankings/koukou/national/" style={{ textDecoration: "none" }}>
+            <Button variant="outlined" sx={{ fontSize: { xs: 13, sm: 14 }, borderColor: "#F57F17", color: "#F57F17", "&:hover": { borderColor: "#E65100", bgcolor: "#FFF8E1" } }}>
+              国立高校を探す
             </Button>
           </Link>
         </Box>

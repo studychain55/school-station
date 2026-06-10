@@ -238,11 +238,15 @@ export default function JukuBrandPage({ brand, schools }: Props) {
                 mb: 3,
                 position: "sticky",
                 top: 80,
+                boxShadow: "0 4px 16px rgba(183,0,0,0.25)",
               }}
             >
-              <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>無料で相談・問い合わせ</Typography>
-              <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                教室や料金についてお気軽にご相談ください
+              <Typography sx={{ fontSize: 11, fontWeight: 700, letterSpacing: 1.5, color: "rgba(255,255,255,0.75)", mb: 0.5, textTransform: "uppercase" }}>
+                無料・今すぐ
+              </Typography>
+              <Typography sx={{ fontWeight: 800, fontSize: 16, mb: 0.5 }}>資料請求・無料体験の申込</Typography>
+              <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.85)", mb: 2.5, lineHeight: 1.6 }}>
+                教室の詳細・料金・体験授業について<br />公式サイトで確認できます
               </Typography>
               {brand.official_site_url && (
                 <a href={brand.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
@@ -250,20 +254,21 @@ export default function JukuBrandPage({ brand, schools }: Props) {
                     sx={{
                       bgcolor: "#fff",
                       color: JUKU_RED,
-                      py: 1.25,
-                      borderRadius: 1.5,
-                      fontWeight: 700,
-                      fontSize: 14,
+                      py: 1.5,
+                      borderRadius: 2,
+                      fontWeight: 800,
+                      fontSize: 15,
                       mb: 1,
-                      "&:hover": { opacity: 0.9 },
+                      transition: "all 0.15s",
+                      "&:hover": { bgcolor: "#FFF0F0", transform: "translateY(-1px)", boxShadow: "0 2px 8px rgba(0,0,0,0.15)" },
                     }}
                   >
-                    <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
-                    公式サイトへ
+                    <PublicIcon sx={{ fontSize: 17, mr: 0.75, verticalAlign: "middle" }} />
+                    公式サイトで詳細を見る
                   </Box>
                 </a>
               )}
-              <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.6)" }}>
+              <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.55)" }}>
                 外部サイトへ遷移します
               </Typography>
             </Box>

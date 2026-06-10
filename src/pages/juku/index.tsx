@@ -93,9 +93,23 @@ export default function JukuTopPage() {
             <br />
             かんたん検索
           </Typography>
-          <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.85)", mb: 4, maxWidth: 480 }}>
+          <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.85)", mb: 1.5, maxWidth: 480 }}>
             個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
           </Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 3 }}>
+            {["中学受験対策", "高校受験対策", "個別指導", "オンライン"].map((tag) => (
+              <Box
+                key={tag}
+                sx={{
+                  px: 1.5, py: 0.4, bgcolor: "rgba(255,255,255,0.18)", borderRadius: 5,
+                  fontSize: 12, fontWeight: 600, color: "rgba(255,255,255,0.9)",
+                  border: "1px solid rgba(255,255,255,0.3)",
+                }}
+              >
+                #{tag}
+              </Box>
+            ))}
+          </Box>
           <JukuSearchBox />
         </Container>
       </Box>

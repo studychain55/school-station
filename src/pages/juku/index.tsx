@@ -97,6 +97,37 @@ export default function JukuTopPage() {
             個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
           </Typography>
           <JukuSearchBox />
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mt: 3 }}>
+            {[
+              { label: "東京の塾", href: "/juku/p-tokyo/" },
+              { label: "大阪の塾", href: "/juku/p-osaka/" },
+              { label: "神奈川の塾", href: "/juku/p-kanagawa/" },
+              { label: "中学受験", href: "/juku/?purpose=%E4%B8%AD%E5%AD%A6%E5%8F%97%E9%A8%93" },
+              { label: "高校受験", href: "/juku/?purpose=%E9%AB%98%E6%A0%A1%E5%8F%97%E9%A8%93" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href} style={{ textDecoration: "none" }}>
+                <Box
+                  component="span"
+                  sx={{
+                    display: "inline-block",
+                    px: 1.75,
+                    py: 0.6,
+                    borderRadius: 3,
+                    bgcolor: "rgba(255,255,255,0.15)",
+                    color: "#fff",
+                    fontSize: 13,
+                    fontWeight: 600,
+                    border: "1px solid rgba(255,255,255,0.3)",
+                    cursor: "pointer",
+                    transition: "background-color 0.15s",
+                    "&:hover": { bgcolor: "rgba(255,255,255,0.28)" },
+                  }}
+                >
+                  {item.label}
+                </Box>
+              </Link>
+            ))}
+          </Box>
         </Container>
       </Box>
 

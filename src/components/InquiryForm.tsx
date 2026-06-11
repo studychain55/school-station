@@ -34,7 +34,7 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
   if (status === 'success') return (
     <div className="p-6 bg-green-50 rounded-xl text-center">
       <p className="text-[#1e782d] font-bold text-lg">お問い合わせを受け付けました</p>
-      <p className="text-gray-600 mt-2 text-sm">内容を確認の上、ご連絡いたします。</p>
+      <p className="text-gray-600 mt-2 text-sm">通常2営業日以内にご登録のメールアドレスへご返信いたします。</p>
     </div>
   );
 
@@ -63,8 +63,9 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
         className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        {status==='loading'?'送信中...':'お問い合わせを送信する'}
       </button>
+      <p className="text-center text-xs text-gray-500 mt-2">通常2営業日以内にご返信します。無料でご利用いただけます。</p>
     </form>
   );
 }

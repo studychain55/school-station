@@ -171,7 +171,7 @@ export default function HomePage() {
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
-        <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
+        <Box sx={{ textAlign: "center", py: 3, mb: 2, display: "flex", flexDirection: { xs: "column", sm: "row" }, justifyContent: "center", alignItems: "center", gap: 2 }}>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
@@ -187,6 +187,23 @@ export default function HomePage() {
               }}
             >
               全国ランキングを見る
+            </Button>
+          </Link>
+          <Link href="/juku/" style={{ textDecoration: "none" }}>
+            <Button
+              variant="outlined"
+              size="large"
+              sx={{
+                borderColor: "#1e782d",
+                color: "#1e782d",
+                "&:hover": { bgcolor: "#E8F5E9", borderColor: "#155724", transform: "translateY(-1px)" },
+                px: 4,
+                py: 1.2,
+                fontSize: { xs: 14, sm: 16 },
+                fontWeight: 700,
+              }}
+            >
+              塾・予備校を探す
             </Button>
           </Link>
         </Box>

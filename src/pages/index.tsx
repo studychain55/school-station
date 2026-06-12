@@ -127,8 +127,11 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
-            全国の高校を偏差値・進学実績・特色で比較
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.9, mb: 0.75 }}>
+            全国5,000校以上の偏差値・進学実績・特色を無料で比較
+          </Typography>
+          <Typography variant="body2" sx={{ fontSize: { xs: "0.75rem", md: "0.875rem" }, opacity: 0.75, mb: 2.5 }}>
+            志望校選び・塾探しをトータルサポート
           </Typography>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
@@ -171,7 +174,7 @@ export default function HomePage() {
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
-        <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
+        <Box sx={{ textAlign: "center", py: 3, mb: 2, display: "flex", flexWrap: "wrap", gap: 2, justifyContent: "center" }}>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
@@ -186,7 +189,24 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              高校偏差値ランキングを見る
+            </Button>
+          </Link>
+          <Link href="/juku/" style={{ textDecoration: "none" }}>
+            <Button
+              variant="outlined"
+              size="large"
+              sx={{
+                borderColor: "#1e782d",
+                color: "#1e782d",
+                "&:hover": { bgcolor: "#E8F5E9", borderColor: "#1e782d", transform: "translateY(-1px)" },
+                px: 4,
+                py: 1.2,
+                fontSize: { xs: 14, sm: 16 },
+                fontWeight: 700,
+              }}
+            >
+              塾・予備校を探す
             </Button>
           </Link>
         </Box>

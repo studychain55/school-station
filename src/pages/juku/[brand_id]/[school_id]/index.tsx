@@ -345,20 +345,31 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
             <Box sx={{ position: "sticky", top: 80, display: "flex", flexDirection: "column", gap: 2 }}>
               {/* 問い合わせCTA */}
               <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
-                <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
-                  無料で問い合わせる
+                <Typography sx={{ fontWeight: 800, fontSize: 16, mb: 0.5 }}>
+                  無料体験授業を申し込む
                 </Typography>
-                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                  体験授業・資料請求も受付中
+                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.85)", mb: 2 }}>
+                  資料請求・見学・入塾相談も受付中
                 </Typography>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>
+                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1.5, cursor: "pointer", "&:hover": { opacity: 0.9 } }}>
                       <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
-                      公式サイトへ
+                      公式サイトで申し込む
                     </Box>
                   </a>
                 )}
+                {school.telephone && (
+                  <a href={`tel:${school.telephone}`} style={{ textDecoration: "none" }}>
+                    <Box sx={{ bgcolor: "rgba(255,255,255,0.15)", border: "1px solid rgba(255,255,255,0.4)", color: "#fff", py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, cursor: "pointer", "&:hover": { bgcolor: "rgba(255,255,255,0.25)" } }}>
+                      <PhoneIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
+                      {school.telephone}
+                    </Box>
+                  </a>
+                )}
+                <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.65)", mt: 1.5 }}>
+                  受付時間内にお気軽にどうぞ
+                </Typography>
               </Box>
 
               {/* アクセス */}

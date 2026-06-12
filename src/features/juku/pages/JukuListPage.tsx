@@ -87,92 +87,106 @@ export default function JukuListPage({
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
-        {/* 塾名絞り込み */}
-        <Box sx={{ mb: 2 }}>
-          <TextField
-            size="small"
-            fullWidth
-            placeholder="塾名・ブランド名で絞り込む"
-            value={nameFilter}
-            onChange={(e) => setNameFilter(e.target.value)}
-            slotProps={{
-              input: {
-                startAdornment: (
-                  <InputAdornment position="start">
-                    <SearchIcon sx={{ fontSize: 18, color: "#9CA3AF" }} />
-                  </InputAdornment>
-                ),
-              },
-            }}
-            sx={{ bgcolor: "#fff", borderRadius: 1 }}
-          />
+        {/* 絞り込みパネル */}
+        <Box sx={{ mb: 3, bgcolor: "#fff", border: "1px solid #E5E7EB", borderRadius: 2, p: { xs: 2, sm: 2.5 } }}>
+          {/* 塾名絞り込み */}
+          <Box sx={{ mb: 2 }}>
+            <TextField
+              size="small"
+              fullWidth
+              placeholder="塾名・ブランド名で絞り込む"
+              value={nameFilter}
+              onChange={(e) => setNameFilter(e.target.value)}
+              slotProps={{
+                input: {
+                  startAdornment: (
+                    <InputAdornment position="start">
+                      <SearchIcon sx={{ fontSize: 18, color: "#9CA3AF" }} />
+                    </InputAdornment>
+                  ),
+                },
+              }}
+              sx={{ bgcolor: "#F9FAFB", borderRadius: 1 }}
+            />
+          </Box>
+
+          {/* クイックフィルター */}
+          {(() => {
+            const currentPurpose = router.query.purpose as string | undefined;
+            const currentCategory = router.query.category as string | undefined;
+            const basePath = router.pathname;
+            const baseQuery = { ...router.query };
+            delete baseQuery.page;
+
+            const buildFilterUrl = (key: string, value: string | undefined) => {
+              const q = { ...baseQuery };
+              if (value) q[key] = value; else delete q[key];
+              delete q.page;
+              const qs = new URLSearchParams(q as Record<string, string>).toString();
+              return qs ? `${basePath}?${qs}` : basePath;
+            };
+
+            const hasActive = currentPurpose || currentCategory;
+
+            return (
+              <Box>
+                {/* 目的フィルター */}
+                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
+                  <Typography sx={{ fontSize: 12, fontWeight: 700, color: "#374151", minWidth: "fit-content" }}>目的:</Typography>
+                  {JUKU_PURPOSES.map((p) => {
+                    const isActive = currentPurpose === p.value;
+                    return (
+                      <Link key={p.value} href={buildFilterUrl("purpose", isActive ? undefined : p.value)} style={{ textDecoration: "none" }}>
+                        <Box component="span" sx={{
+                          display: "inline-block", px: 1.5, py: 0.5, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
+                          bgcolor: isActive ? JUKU_RED : "#F9FAFB",
+                          color: isActive ? "#fff" : JUKU_RED,
+                          borderColor: isActive ? JUKU_RED : JUKU_RED_BG2,
+                          cursor: "pointer",
+                          transition: "all 0.12s",
+                          "&:hover": { bgcolor: isActive ? "#8E0000" : JUKU_RED_BG },
+                        }}>
+                          {p.label}
+                        </Box>
+                      </Link>
+                    );
+                  })}
+                </Box>
+                {/* スタイルフィルター */}
+                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
+                  <Typography sx={{ fontSize: 12, fontWeight: 700, color: "#374151", minWidth: "fit-content" }}>スタイル:</Typography>
+                  {JUKU_CATEGORIES.map((c) => {
+                    const isActive = currentCategory === c.value;
+                    return (
+                      <Link key={c.value} href={buildFilterUrl("category", isActive ? undefined : c.value)} style={{ textDecoration: "none" }}>
+                        <Box component="span" sx={{
+                          display: "inline-block", px: 1.5, py: 0.5, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
+                          bgcolor: isActive ? "#374151" : "#F9FAFB",
+                          color: isActive ? "#fff" : "#374151",
+                          borderColor: isActive ? "#374151" : "#E5E7EB",
+                          cursor: "pointer",
+                          transition: "all 0.12s",
+                          "&:hover": { borderColor: "#374151", bgcolor: "#F3F4F6" },
+                        }}>
+                          {c.label}
+                        </Box>
+                      </Link>
+                    );
+                  })}
+                </Box>
+                {hasActive && (
+                  <Box sx={{ mt: 1.5 }}>
+                    <Link href={router.pathname} style={{ textDecoration: "none" }}>
+                      <Typography sx={{ fontSize: 12, color: "#6B7280", "&:hover": { color: JUKU_RED }, cursor: "pointer" }}>
+                        ✕ フィルターをクリア
+                      </Typography>
+                    </Link>
+                  </Box>
+                )}
+              </Box>
+            );
+          })()}
         </Box>
-
-        {/* クイックフィルター */}
-        {(() => {
-          const currentPurpose = router.query.purpose as string | undefined;
-          const currentCategory = router.query.category as string | undefined;
-          const basePath = router.pathname;
-          const baseQuery = { ...router.query };
-          delete baseQuery.page;
-
-          const buildFilterUrl = (key: string, value: string | undefined) => {
-            const q = { ...baseQuery };
-            if (value) q[key] = value; else delete q[key];
-            delete q.page;
-            const qs = new URLSearchParams(q as Record<string, string>).toString();
-            return qs ? `${basePath}?${qs}` : basePath;
-          };
-
-          return (
-            <Box sx={{ mb: 3 }}>
-              {/* 目的フィルター */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
-                {JUKU_PURPOSES.map((p) => {
-                  const isActive = currentPurpose === p.value;
-                  return (
-                    <Link key={p.value} href={buildFilterUrl("purpose", isActive ? undefined : p.value)} style={{ textDecoration: "none" }}>
-                      <Box component="span" sx={{
-                        display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
-                        bgcolor: isActive ? JUKU_RED : "#fff",
-                        color: isActive ? "#fff" : JUKU_RED,
-                        borderColor: isActive ? JUKU_RED : JUKU_RED_BG2,
-                        cursor: "pointer",
-                        transition: "all 0.12s",
-                        "&:hover": { bgcolor: isActive ? "#8E0000" : JUKU_RED_BG },
-                      }}>
-                        {p.label}
-                      </Box>
-                    </Link>
-                  );
-                })}
-              </Box>
-              {/* スタイルフィルター */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>スタイル:</Typography>
-                {JUKU_CATEGORIES.map((c) => {
-                  const isActive = currentCategory === c.value;
-                  return (
-                    <Link key={c.value} href={buildFilterUrl("category", isActive ? undefined : c.value)} style={{ textDecoration: "none" }}>
-                      <Box component="span" sx={{
-                        display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
-                        bgcolor: isActive ? "#374151" : "#fff",
-                        color: isActive ? "#fff" : "#374151",
-                        borderColor: isActive ? "#374151" : "#E5E7EB",
-                        cursor: "pointer",
-                        transition: "all 0.12s",
-                        "&:hover": { borderColor: "#374151", bgcolor: "#F3F4F6" },
-                      }}>
-                        {c.label}
-                      </Box>
-                    </Link>
-                  );
-                })}
-              </Box>
-            </Box>
-          );
-        })()}
 
         {schools.length === 0 ? (
           <Box

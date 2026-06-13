@@ -87,15 +87,22 @@ export default function JukuTopPage() {
           </Typography>
           <Typography
             component="h1"
-            sx={{ fontWeight: 800, fontSize: { xs: "1.75rem", sm: "2.5rem" }, mb: 1.5, lineHeight: 1.2 }}
+            sx={{ fontWeight: 800, fontSize: { xs: "1.75rem", sm: "2.5rem" }, mb: 1, lineHeight: 1.2 }}
           >
-            全国の塾・予備校を
+            お子さまに合った塾が
             <br />
-            かんたん検索
+            かんたんに見つかる
           </Typography>
-          <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.85)", mb: 4, maxWidth: 480 }}>
+          <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.85)", mb: 2, maxWidth: 480 }}>
             個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
           </Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mb: 4, maxWidth: 480 }}>
+            {["✓ 全国の塾を無料で比較", "✓ 口コミ・料金を掲載", "✓ 体験授業の申し込みも可能"].map((text) => (
+              <Typography key={text} sx={{ fontSize: { xs: 11, sm: 13 }, bgcolor: "rgba(255,255,255,0.15)", px: 1.5, py: 0.4, borderRadius: 2, color: "rgba(255,255,255,0.95)", fontWeight: 600 }}>
+                {text}
+              </Typography>
+            ))}
+          </Box>
           <JukuSearchBox />
         </Container>
       </Box>

@@ -9,8 +9,23 @@ import Head from "next/head";
 import SEO from "@/components/UI/SEO";
 import prefectures, { recommendPrefectures } from "@/data/prefectures";
 import { REGIONS } from "@/data/regions";
+import { useRouter } from "next/router";
+import React, { useState } from "react";
 
 export default function HomePage() {
+  const router = useRouter();
+  const [searchKw, setSearchKw] = useState("");
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const kw = searchKw.trim();
+    if (kw) {
+      router.push(`/juku/?kw=${encodeURIComponent(kw)}`);
+    } else {
+      router.push("/juku/");
+    }
+  };
+
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -130,6 +145,47 @@ export default function HomePage() {
           <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* テキスト検索フォーム */}
+          <Box
+            component="form"
+            onSubmit={handleSearch}
+            sx={{ display: "flex", width: "100%", maxWidth: 500, mb: 2.5, borderRadius: 2, overflow: "hidden", boxShadow: "0 4px 16px rgba(0,0,0,0.25)" }}
+          >
+            <Box
+              component="input"
+              type="text"
+              value={searchKw}
+              onChange={(e: React.ChangeEvent<HTMLInputElement>) => setSearchKw(e.target.value)}
+              placeholder="エリア・学校名・塾名で検索"
+              sx={{
+                flex: 1,
+                px: 2,
+                py: 1.5,
+                fontSize: 14,
+                border: "none",
+                outline: "none",
+                color: "#111",
+              }}
+            />
+            <Box
+              component="button"
+              type="submit"
+              sx={{
+                px: 3,
+                py: 1.5,
+                bgcolor: "#FF6F00",
+                color: "white",
+                fontWeight: 700,
+                fontSize: 14,
+                border: "none",
+                cursor: "pointer",
+                "&:hover": { bgcolor: "#E65100" },
+                transition: "background-color 0.2s",
+              }}
+            >
+              検索
+            </Box>
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[
@@ -178,15 +234,17 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)" },
+                px: 5,
+                py: 1.8,
+                fontSize: { xs: 15, sm: 17 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                minHeight: 52,
+                boxShadow: "0 6px 16px rgba(255,111,0,0.35)",
+                borderRadius: 2,
               }}
             >
-              全国ランキングを見る
+              全国ランキングを見る →
             </Button>
           </Link>
         </Box>

@@ -100,7 +100,7 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
       <Box sx={{ bgcolor: JUKU_RED_BG, borderBottom: `3px solid ${JUKU_RED}`, py: { xs: 3, sm: 4 } }}>
         <Container maxWidth="lg">
           {/* パンくず */}
-          <Box sx={{ display: "flex", gap: 0.75, mb: 2, flexWrap: "wrap" }}>
+          <Box sx={{ display: "flex", gap: 0.75, mb: 1.5, flexWrap: "wrap" }}>
             {[
               { label: "ホーム", href: "/" },
               { label: "塾を探す", href: "/juku/" },
@@ -118,6 +118,13 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
                 )}
               </Box>
             ))}
+          </Box>
+          <Box sx={{ mb: 2 }}>
+            <Link href="/juku/" style={{ textDecoration: "none" }}>
+              <Typography sx={{ fontSize: 13, color: JUKU_RED, "&:hover": { textDecoration: "underline" } }}>
+                ← 塾一覧に戻る
+              </Typography>
+            </Link>
           </Box>
 
           <Box sx={{ display: "flex", gap: 2.5, alignItems: "flex-start" }}>

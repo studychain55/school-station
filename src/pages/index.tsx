@@ -131,7 +131,7 @@ export default function HomePage() {
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
           {/* 都道府県クイックナビ */}
-          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1, mb: 3 }}>
             {[
               { label: "東京", slug: "tokyo" },
               { label: "神奈川", slug: "kanagawa" },
@@ -166,12 +166,36 @@ export default function HomePage() {
               </Link>
             ))}
           </Box>
+          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+            <Box
+              component="span"
+              sx={{
+                display: "inline-block",
+                px: 4,
+                py: 1.5,
+                borderRadius: 8,
+                bgcolor: "#FF6F00",
+                color: "white",
+                fontSize: 15,
+                fontWeight: 700,
+                cursor: "pointer",
+                boxShadow: "0 4px 12px rgba(0,0,0,0.3)",
+                "&:hover": { bgcolor: "#E65100" },
+                transition: "background-color 0.2s",
+              }}
+            >
+              今すぐ偏差値ランキングを見る
+            </Box>
+          </Link>
         </Box>
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
+          <Typography variant="body2" sx={{ color: "#555", mb: 2, fontSize: 14 }}>
+            全国5,000校以上の高校偏差値を都道府県・分類別に検索・比較できます
+          </Typography>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
@@ -186,7 +210,7 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              都道府県別ランキングを探す
             </Button>
           </Link>
         </Box>

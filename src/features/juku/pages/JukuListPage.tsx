@@ -80,9 +80,30 @@ export default function JukuListPage({
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
-          </Typography>
+          {/* 件数バッジ: 強調表示 */}
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1.5, mt: 1 }}>
+            <Box
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: 0.5,
+                bgcolor: totalCount > 0 ? JUKU_RED : "#9CA3AF",
+                color: "#fff",
+                px: 1.5,
+                py: 0.4,
+                borderRadius: 5,
+                fontSize: 13,
+                fontWeight: 700,
+              }}
+            >
+              {totalCount > 0 ? `${totalCount}件掲載中` : "掲載準備中"}
+            </Box>
+            {currentPage > 1 && (
+              <Typography sx={{ fontSize: 13, color: "#6B7280" }}>
+                {currentPage}ページ目を表示中
+              </Typography>
+            )}
+          </Box>
         </Container>
       </Box>
 

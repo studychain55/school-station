@@ -172,21 +172,26 @@ export default function HomePage() {
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.95rem", sm: "1.05rem" }, color: "#424242", mb: 2, fontWeight: 500 }}>
+            全国5,000校以上の偏差値を無料で検索できます
+          </Typography>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)", boxShadow: "0 6px 20px rgba(255,111,0,0.4)" },
+                px: 5,
+                py: 1.5,
+                fontSize: { xs: 15, sm: 17 },
                 fontWeight: 700,
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                borderRadius: 2,
+                transition: "all 0.2s ease",
               }}
             >
-              全国ランキングを見る
+              高校を無料で探す →
             </Button>
           </Link>
         </Box>

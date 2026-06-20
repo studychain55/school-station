@@ -121,13 +121,20 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
 
         {/* Hero Section */}
         <Box sx={{ mb: 4, p: { xs: 2, sm: 3 }, background: "linear-gradient(135deg, #e9f2ea 0%, #bcd7c0 100%)", borderRadius: 2 }}>
-          <Typography variant="h1" component="h1" sx={{ fontSize: { xs: "1.4rem", sm: "2rem" }, mb: 1, color: "#1e782d", fontWeight: 700 }}>
+          <Typography variant="h1" component="h1" sx={{ fontSize: { xs: "1.6rem", sm: "2.2rem" }, mb: 1, color: "#1e782d", fontWeight: 800, lineHeight: 1.2 }}>
             {school.name}
           </Typography>
-          <Typography variant="body1" sx={{ color: "#37474F", mb: 1 }}>
+          <Typography variant="body1" sx={{ color: "#37474F", mb: 2 }}>
             {school.classification === "PUBLIC" ? "公立高校" : school.classification === "PRIVATE" ? "私立高校" : "国立高校"}
             {prefectureTitle && ` • ${prefectureTitle}`}
           </Typography>
+          {prefectureSlug && (
+            <Link href={`/rankings/koukou/p-${prefectureSlug}/`} style={{ textDecoration: "none" }}>
+              <Button variant="outlined" size="small" sx={{ fontSize: 12, color: "#1e782d", borderColor: "#1e782d", "&:hover": { bgcolor: "rgba(30,120,45,0.08)" } }}>
+                {prefectureTitle}の高校ランキングを見る
+              </Button>
+            </Link>
+          )}
         </Box>
 
         {/* Main Grid */}

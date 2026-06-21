@@ -282,7 +282,7 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
               <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center", mb: 2, pb: 1, borderBottom: `2px solid ${JUKU_RED}` }}>
                 <Typography sx={{ fontWeight: 700, fontSize: 16, color: "#111827" }}>コース・料金</Typography>
                 <Link href={`/juku/${school.JukuBrand.slug}/${school.slug}/prices/`} style={{ textDecoration: "none" }}>
-                  <Typography sx={{ fontSize: 13, color: JUKU_RED }}>詳細を見る →</Typography>
+                  <Typography sx={{ fontSize: 13, color: JUKU_RED }}>詳細・お問い合わせ →</Typography>
                 </Link>
               </Box>
               {sortedCourses.length === 0 ? (

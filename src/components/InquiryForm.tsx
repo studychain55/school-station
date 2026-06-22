@@ -39,7 +39,7 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
   );
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4">
+    <form id="inquiry" onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
         <input required value={form.name} onChange={e=>setForm(f=>({...f,name:e.target.value}))}
@@ -61,6 +61,10 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
           rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
+      <div style={{ backgroundColor: "#FFF3E0", borderRadius: "8px", padding: "12px", fontSize: "12px", color: "#6b7280", display: "flex", alignItems: "flex-start", gap: "8px", marginBottom: "8px" }}>
+        <span style={{ color: "#FF6F00", fontWeight: 700 }}>✓</span>
+        <span>個人情報は適切に管理されます。無料体験のお申し込みや資料請求のみに使用し、通常2営業日以内にご連絡いたします。</span>
+      </div>
       <button type="submit" disabled={status==='loading'}
         className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
         {status==='loading'?'送信中...':' お問い合わせを送信する'}

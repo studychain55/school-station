@@ -125,7 +125,7 @@ export default function HomePage() {
           }}
         >
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
-            高校選びのすべてが、ここに
+            志望校合格への第一歩は、正しい情報から
           </Typography>
           <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
             全国の高校を偏差値・進学実績・特色で比較
@@ -187,6 +187,23 @@ export default function HomePage() {
               }}
             >
               全国ランキングを見る
+            </Button>
+          </Link>
+          <Link href="/juku/" style={{ textDecoration: "none", marginLeft: "12px" }}>
+            <Button
+              variant="outlined"
+              size="large"
+              sx={{
+                borderColor: "#FF6F00",
+                color: "#FF6F00",
+                "&:hover": { borderColor: "#E65100", bgcolor: "#FFF3E0" },
+                px: 4,
+                py: 1.2,
+                fontSize: { xs: 14, sm: 16 },
+                fontWeight: 700,
+              }}
+            >
+              塾・予備校を探す
             </Button>
           </Link>
         </Box>

@@ -157,7 +157,7 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
         </Container>
       </Box>
 
-      <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
+      <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 }, pb: { xs: "96px", sm: "96px" } }}>
         <Grid container spacing={3}>
           {/* メインコンテンツ */}
           <Grid size={{ xs: 12, md: 8 }}>
@@ -426,6 +426,22 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           </Grid>
         </Grid>
       </Container>
+
+      {/* スティッキーCTA */}
+      <div style={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 50, backgroundColor: "white", borderTop: "2px solid #FF6F00", boxShadow: "0 -4px 12px rgba(0,0,0,0.1)", padding: "12px 16px" }}>
+        <div style={{ maxWidth: "960px", margin: "0 auto", display: "flex", gap: "12px", alignItems: "center", justifyContent: "space-between" }}>
+          <div style={{ minWidth: 0, display: "none" }} className="sm-block">
+            <p style={{ fontSize: "12px", color: "#6b7280" }}>塾・予備校への無料体験申込</p>
+            <p style={{ fontSize: "14px", fontWeight: 700, color: "#FF6F00" }}>まずは無料体験授業から</p>
+          </div>
+          <a
+            href="#inquiry"
+            style={{ display: "block", backgroundColor: "#FF6F00", color: "white", fontWeight: 700, fontSize: "14px", padding: "10px 32px", borderRadius: "9999px", textDecoration: "none", textAlign: "center", flexShrink: 0 }}
+          >
+            無料体験を申し込む
+          </a>
+        </div>
+      </div>
 
       {/* 同じブランドの他の教室 */}
       {relatedSchools.length > 0 && (

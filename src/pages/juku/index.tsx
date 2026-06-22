@@ -100,6 +100,18 @@ export default function JukuTopPage() {
         </Container>
       </Box>
 
+      {/* 件数ヘッダー */}
+      <Box sx={{ bgcolor: "#fff", borderBottom: "1px solid #E5E7EB" }}>
+        <Container maxWidth="lg" sx={{ py: 1.5 }}>
+          <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <p style={{ fontSize: "14px", color: "#6b7280", margin: 0 }}>
+              <strong style={{ color: "#111827" }}>5万+</strong> 件の塾・予備校
+            </p>
+            <span style={{ fontSize: "12px", color: "#9ca3af", backgroundColor: "#f9fafb", padding: "4px 8px", borderRadius: "4px" }}>条件を変えて絞り込めます</span>
+          </div>
+        </Container>
+      </Box>
+
       {/* 目的から探す */}
       <Box sx={{ py: { xs: 4, sm: 5 }, bgcolor: "#fff" }}>
         <Container maxWidth="lg">

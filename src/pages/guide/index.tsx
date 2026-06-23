@@ -83,6 +83,16 @@ export default function GuidePage() {
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         <BreadCrumb items={breadcrumbs} />
 
+        {/* CTAバナー */}
+        <Box sx={{ maxWidth: 600, mx: "auto", mb: 4, p: 2, bgcolor: "#f9f9f9", borderRadius: 2, textAlign: "center", border: "1px solid #eee" }}>
+          <Typography sx={{ fontSize: 14, color: "#555", mb: 1 }}>塾・予備校を探したい方はこちら</Typography>
+          <Link href="/juku/" style={{ textDecoration: "none" }}>
+            <Box component="span" sx={{ display: "inline-block", bgcolor: "#C62828", color: "#fff", fontWeight: 700, px: 3, py: 1.5, borderRadius: 1.5, fontSize: 14, "&:hover": { opacity: 0.9 }, transition: "opacity 0.2s" }}>
+              塾・予備校を探す →
+            </Box>
+          </Link>
+        </Box>
+
         {/* Hero */}
         <Box
           sx={{

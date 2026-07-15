@@ -80,7 +80,7 @@ export default function JukuListPage({
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
+          <Typography sx={{ fontSize: 15, color: totalCount > 0 ? JUKU_RED : "#6B7280", fontWeight: 700 }}>
             {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
           </Typography>
         </Container>
@@ -125,7 +125,7 @@ export default function JukuListPage({
           };
 
           return (
-            <Box sx={{ mb: 3 }}>
+            <Box sx={{ mb: 3, position: "sticky", top: 0, zIndex: 10, bgcolor: "#fff", pt: 1, pb: 1.5, boxShadow: "0 2px 6px rgba(0,0,0,0.07)", px: 1.5, mx: -1.5, borderRadius: 1 }}>
               {/* 目的フィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
                 <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>

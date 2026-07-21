@@ -87,6 +87,8 @@ export default function JukuListPage({
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
+        {/* フィルターバー */}
+        <Box className="sticky top-0 z-10 shadow-sm" sx={{ bgcolor: '#fff', pt: 2, pb: 1 }}>
         {/* 塾名絞り込み */}
         <Box sx={{ mb: 2 }}>
           <TextField
@@ -173,6 +175,7 @@ export default function JukuListPage({
             </Box>
           );
         })()}
+        </Box>
 
         {schools.length === 0 ? (
           <Box

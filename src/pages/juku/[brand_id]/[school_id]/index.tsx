@@ -402,7 +402,11 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
                 {school.telephone && (
                   <Box sx={{ display: "flex", gap: 1, mt: 0.75 }}>
                     <PhoneIcon sx={{ fontSize: 16, color: JUKU_RED, mt: 0.25 }} />
-                    <Typography sx={{ fontSize: 13, color: "#374151" }}>{school.telephone}</Typography>
+                    <Typography sx={{ fontSize: 13, color: "#374151" }}>
+                      <a href={`tel:${school.telephone.replace(/-/g, "")}`} style={{ color: JUKU_RED, textDecoration: "none" }}>
+                        {school.telephone}
+                      </a>
+                    </Typography>
                   </Box>
                 )}
               </Box>

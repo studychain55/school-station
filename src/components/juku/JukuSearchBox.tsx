@@ -142,7 +142,7 @@ export default function JukuSearchBox() {
             boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
           }}
         >
-          塾を探す
+          無料で塾・予備校を探す
         </Button>
       </Box>
     </Box>

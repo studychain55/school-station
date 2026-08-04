@@ -1,16 +1,31 @@
-import { Container, Typography, Box, Button, Paper } from "@mui/material";
+import { Container, Typography, Box, Button, Paper, InputBase, IconButton } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
 import AccordionDetails from "@mui/material/AccordionDetails";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import SearchIcon from "@mui/icons-material/Search";
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import { useRouter } from "next/router";
+import { useState } from "react";
 import SEO from "@/components/UI/SEO";
 import prefectures, { recommendPrefectures } from "@/data/prefectures";
 import { REGIONS } from "@/data/regions";
 
 export default function HomePage() {
+  const router = useRouter();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    const q = searchQuery.trim();
+    if (q) {
+      router.push(`/rankings/koukou/?q=${encodeURIComponent(q)}`);
+    } else {
+      router.push("/rankings/koukou/");
+    }
+  };
   const organizationJsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
@@ -130,6 +145,37 @@ export default function HomePage() {
           <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* 検索バー */}
+          <Box
+            component="form"
+            onSubmit={handleSearch}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              bgcolor: "rgba(255,255,255,0.95)",
+              borderRadius: 3,
+              px: 2,
+              py: 0.5,
+              width: "100%",
+              maxWidth: 480,
+              mb: 2,
+              boxShadow: "0 4px 16px rgba(0,0,0,0.25)",
+            }}
+          >
+            <SearchIcon sx={{ color: "#757575", mr: 1, fontSize: 22 }} />
+            <InputBase
+              fullWidth
+              placeholder="エリア・学校名・駅名で検索"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              inputProps={{ "aria-label": "学校を検索" }}
+              sx={{ fontSize: { xs: 14, sm: 15 }, color: "#212121" }}
+            />
+            <IconButton type="submit" aria-label="検索" size="small" sx={{ color: "#1e782d", ml: 0.5 }}>
+              <SearchIcon />
+            </IconButton>
+          </Box>
+
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

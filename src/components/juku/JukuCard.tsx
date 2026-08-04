@@ -1,8 +1,9 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Box, Typography, Chip } from "@mui/material";
+import { Box, Typography, Chip, Button } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import TrainIcon from "@mui/icons-material/Train";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ReviewStars from "./ReviewStars";
 import { JUKU_RED, JUKU_RED_BG } from "@/utils/juku/config";
 import type { JukuSchoolListItem } from "@/types";
@@ -165,7 +166,7 @@ export default function JukuCard({ school, rank }: Props) {
           </Box>
 
           {/* アクセス */}
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 1.5 }}>
             {school.address && (
               <Box sx={{ display: "flex", alignItems: "center", gap: 0.3 }}>
                 <LocationOnIcon sx={{ fontSize: 13, color: "#9CA3AF" }} />
@@ -184,6 +185,28 @@ export default function JukuCard({ school, rank }: Props) {
               </Box>
             )}
           </Box>
+
+          {/* CTA */}
+          <Button
+            variant="contained"
+            size="small"
+            endIcon={<ArrowForwardIcon sx={{ fontSize: 14 }} />}
+            sx={{
+              bgcolor: JUKU_RED,
+              "&:hover": { bgcolor: "#8E0000" },
+              fontSize: 12,
+              fontWeight: 700,
+              py: 0.5,
+              px: 1.5,
+              borderRadius: 1.5,
+              boxShadow: "none",
+              alignSelf: "flex-start",
+              pointerEvents: "none",
+            }}
+            tabIndex={-1}
+          >
+            詳細を見る
+          </Button>
         </Box>
       </Box>
     </Link>

@@ -297,7 +297,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                       href={generateGoogleMapsUrl(school)}
                       target="_blank"
                       rel="noopener noreferrer"
-                      sx={{ justifyContent: "flex-start" }}
+                      sx={{ justifyContent: "flex-start", bgcolor: "#FF6F00", "&:hover": { bgcolor: "#E65100", opacity: 0.9 }, fontWeight: 700, py: 1.5, boxShadow: "0 4px 12px rgba(255,111,0,0.3)", transition: "opacity 0.2s" }}
                     >
                       Google Mapsで見る
                     </Button>
@@ -310,10 +310,14 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                       href={school.source_url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      sx={{ fontWeight: 700, py: 1.5, borderColor: "#1e782d", color: "#1e782d", "&:hover": { borderColor: "#0f3c17", bgcolor: "#f0f6f0" } }}
                     >
                       公式サイト
                     </Button>
                   )}
+                  <Typography sx={{ fontSize: 11, color: "#9CA3AF", textAlign: "center", mt: 0.5 }}>
+                    無料・24時間受付中
+                  </Typography>
                 </Box>
               </CardContent>
             </Card>
@@ -379,105 +383,6 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
         <Box sx={{ mb: 4 }}>
           <Typography variant="h2" component="h2" sx={{ mb: 2, fontSize: "1.25rem", fontWeight: 600 }}>
             受験コラムを読む
-          </Typography>
-          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(3, 1fr)" }, gap: 2 }}>
-            <Link href="/column/hensachi-guide/" style={{ textDecoration: "none" }}>
-              <Paper
-                elevation={0}
-                sx={{
-                  p: 2.5,
-                  border: "1px solid #E0E0E0",
-                  borderLeft: "4px solid #FF6F00",
-                  transition: "all 0.3s ease",
-                  "&:hover": {
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                    transform: "translateY(-2px)",
-                    borderLeftColor: "#E65100",
-                  },
-                }}
-              >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#1e782d", lineHeight: 1.4 }}>
-                  偏差値の見方・使い方を徹底解説
-                </Typography>
-                <Typography sx={{ fontSize: 12, color: "#757575" }}>
-                  偏差値の計算方法や見方、受験戦略への活かし方を初心者向けに解説
-                </Typography>
-              </Paper>
-            </Link>
-            <Link href="/column/koko-choice/" style={{ textDecoration: "none" }}>
-              <Paper
-                elevation={0}
-                sx={{
-                  p: 2.5,
-                  border: "1px solid #E0E0E0",
-                  borderLeft: "4px solid #FF6F00",
-                  transition: "all 0.3s ease",
-                  "&:hover": {
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                    transform: "translateY(-2px)",
-                    borderLeftColor: "#E65100",
-                  },
-                }}
-              >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#1e782d", lineHeight: 1.4 }}>
-                  志望校の選び方｜受験校を決める5つの基準
-                </Typography>
-                <Typography sx={{ fontSize: 12, color: "#757575" }}>
-                  学力レベル・学科・教育方針など、最適な志望校選びの基準を解説
-                </Typography>
-              </Paper>
-            </Link>
-            <Link href="/column/nyushi-schedule/" style={{ textDecoration: "none" }}>
-              <Paper
-                elevation={0}
-                sx={{
-                  p: 2.5,
-                  border: "1px solid #E0E0E0",
-                  borderLeft: "4px solid #FF6F00",
-                  transition: "all 0.3s ease",
-                  "&:hover": {
-                    boxShadow: "0 4px 12px rgba(0,0,0,0.08)",
-                    transform: "translateY(-2px)",
-                    borderLeftColor: "#E65100",
-                  },
-                }}
-              >
-                <Typography sx={{ fontSize: 14, fontWeight: 600, mb: 1, color: "#1e782d", lineHeight: 1.4 }}>
-                  高校受験のスケジュール｜中3の年間スケジュール
-                </Typography>
-                <Typography sx={{ fontSize: 12, color: "#757575" }}>
-                  春の基礎固めから冬の追い込みまで、時期別の勉強法を解説
-                </Typography>
-              </Paper>
-            </Link>
-          </Box>
-          <Box sx={{ mt: 2, textAlign: "center" }}>
-            <Link href="/column/" style={{ textDecoration: "none" }}>
-              <Typography sx={{ color: "#1e782d", fontSize: 14, fontWeight: 600, "&:hover": { textDecoration: "underline" } }}>
-                すべてのコラムを見る →
-              </Typography>
-            </Link>
-          </Box>
-        </Box>
-
-        {/* SEO Text Section */}
-        <Box sx={{ mb: 4, p: 2, bgcolor: "#f4f4f4", borderRadius: 1 }}>
-          <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
-            {school.name}について
-          </Typography>
-          <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 1.5 }}>
-            {school.name}は{school.classification === "PUBLIC" ? "公立の" : school.classification === "PRIVATE" ? "私立の" : "国立の"}高校です。
-            {school.deviation_value_max && (
-              <>
-                {new Date().getFullYear()}年度の偏差値は{school.deviation_value_max}で、
-                {school.deviation_value_max >= 70 ? "難関校" : school.deviation_value_max >= 60 ? "上位校" : "標準的な"}レベルの学校となっています。
-              </>
-            )}
-          </Typography>
-          <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
-            School Stationでは{school.name}の詳細な偏差値情報や所在地、評価などをまとめています。
-            志望校選びの参考として、これらの情報をぜひお役立てください。
-            学校の教育方針や部活動、施設など、偏差値以外の情報も学校選択の重要な要素です。
           </Typography>
         </Box>
       </Container>

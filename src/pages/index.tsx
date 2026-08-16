@@ -178,17 +178,21 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)", opacity: 0.9 },
+                px: 6,
+                py: 1.5,
+                fontSize: { xs: 15, sm: 18 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                boxShadow: "0 4px 16px rgba(255,111,0,0.4)",
+                transition: "opacity 0.2s",
               }}
             >
-              全国ランキングを見る
+              無料で高校を探す
             </Button>
           </Link>
+          <Typography sx={{ fontSize: 12, color: "#6B7280", mt: 1 }}>
+            完全無料・会員登録不要で検索できます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

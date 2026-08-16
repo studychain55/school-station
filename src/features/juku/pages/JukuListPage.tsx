@@ -92,7 +92,7 @@ export default function JukuListPage({
           <TextField
             size="small"
             fullWidth
-            placeholder="塾名・ブランド名で絞り込む"
+            placeholder="塾名・ブランド名・キーワードで絞り込む"
             value={nameFilter}
             onChange={(e) => setNameFilter(e.target.value)}
             slotProps={{

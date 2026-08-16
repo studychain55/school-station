@@ -165,7 +165,7 @@ export default function JukuCard({ school, rank }: Props) {
           </Box>
 
           {/* アクセス */}
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 1 }}>
             {school.address && (
               <Box sx={{ display: "flex", alignItems: "center", gap: 0.3 }}>
                 <LocationOnIcon sx={{ fontSize: 13, color: "#9CA3AF" }} />
@@ -184,6 +184,17 @@ export default function JukuCard({ school, rank }: Props) {
               </Box>
             )}
           </Box>
+          {/* CTA */}
+          <Typography
+            sx={{
+              fontSize: 12,
+              fontWeight: 700,
+              color: JUKU_RED,
+              textAlign: "right",
+            }}
+          >
+            詳細・お問い合わせ →
+          </Typography>
         </Box>
       </Box>
     </Link>

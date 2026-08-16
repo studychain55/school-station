@@ -169,6 +169,24 @@ export default function HomePage() {
         </Box>
       </Box>
 
+      {/* 利用実績バー */}
+      <div className="bg-gray-50 border-y border-gray-100 py-3">
+        <div className="max-w-5xl mx-auto px-4 flex flex-wrap justify-center gap-6 md:gap-12">
+          <div className="flex flex-col items-center">
+            <span className="text-base font-bold text-gray-800">5,000校以上</span>
+            <span className="text-xs text-gray-500">掲載高校数</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-base font-bold text-gray-800">無料</span>
+            <span className="text-xs text-gray-500">検索・比較</span>
+          </div>
+          <div className="flex flex-col items-center">
+            <span className="text-base font-bold text-gray-800">全国47都道府県</span>
+            <span className="text-xs text-gray-500">対応エリア</span>
+          </div>
+        </div>
+      </div>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>

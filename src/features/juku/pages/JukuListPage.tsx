@@ -174,6 +174,45 @@ export default function JukuListPage({
           );
         })()}
 
+        {/* アクティブフィルター表示 */}
+        {(() => {
+          const currentPurpose = router.query.purpose as string | undefined;
+          const currentCategory = router.query.category as string | undefined;
+          if (!currentPurpose && !currentCategory) return null;
+          const basePath = router.pathname;
+          const baseQuery = { ...router.query };
+          delete baseQuery.page;
+          const buildRemoveUrl = (key: string) => {
+            const q = { ...baseQuery };
+            delete q[key];
+            delete q.page;
+            const qs = new URLSearchParams(q as Record<string, string>).toString();
+            return qs ? `${basePath}?${qs}` : basePath;
+          };
+          return (
+            <Box sx={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 1, mb: 3, px: 2, py: 1.5, bgcolor: "#F9FAFB", borderRadius: 2, border: "1px solid #E5E7EB" }}>
+              <Typography sx={{ fontSize: 12, color: "#6B7280", fontWeight: 600, mr: 0.5 }}>絞り込み中:</Typography>
+              {currentPurpose && (
+                <Link href={buildRemoveUrl("purpose")} style={{ textDecoration: "none" }}>
+                  <Box component="span" sx={{ display: "inline-flex", alignItems: "center", gap: 0.5, fontSize: 12, bgcolor: "#fff", border: "1px solid #D1D5DB", color: "#374151", px: 1.5, py: 0.3, borderRadius: 5, cursor: "pointer", "&:hover": { bgcolor: "#F3F4F6" }, transition: "all 0.12s" }}>
+                    🎯 {currentPurpose} <span>×</span>
+                  </Box>
+                </Link>
+              )}
+              {currentCategory && (
+                <Link href={buildRemoveUrl("category")} style={{ textDecoration: "none" }}>
+                  <Box component="span" sx={{ display: "inline-flex", alignItems: "center", gap: 0.5, fontSize: 12, bgcolor: "#fff", border: "1px solid #D1D5DB", color: "#374151", px: 1.5, py: 0.3, borderRadius: 5, cursor: "pointer", "&:hover": { bgcolor: "#F3F4F6" }, transition: "all 0.12s" }}>
+                    ✓ {currentCategory} <span>×</span>
+                  </Box>
+                </Link>
+              )}
+              <Link href={basePath} style={{ textDecoration: "none", marginLeft: "auto" }}>
+                <Typography sx={{ fontSize: 12, color: "#9CA3AF", "&:hover": { color: "#6B7280" }, textDecoration: "underline" }}>リセット</Typography>
+              </Link>
+            </Box>
+          );
+        })()}
+
         {schools.length === 0 ? (
           <Box
             sx={{

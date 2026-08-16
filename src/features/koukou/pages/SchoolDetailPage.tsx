@@ -285,8 +285,12 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
             {/* Action Card */}
             <Card sx={{ border: "1px solid #E0E0E0" }}>
               <CardContent>
-                <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
+                <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 1, fontWeight: 600 }}>
                   アクション
+                </Typography>
+                <Typography sx={{ fontSize: 12, color: "#D84315", fontWeight: 600, mb: 2, display: "flex", alignItems: "center", gap: 0.5 }}>
+                  <Box component="span" sx={{ display: "inline-block", width: 6, height: 6, bgcolor: "#D84315", borderRadius: "50%" }} />
+                  出願前に必ず最新情報を確認
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                   {school.address && (
@@ -310,11 +314,15 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                       href={school.source_url}
                       target="_blank"
                       rel="noopener noreferrer"
+                      sx={{ borderColor: "#1e782d", color: "#1e782d", fontWeight: 700, "&:hover": { bgcolor: "#f0f6f0", borderColor: "#1e782d" } }}
                     >
-                      公式サイト
+                      公式サイトで詳細を確認
                     </Button>
                   )}
                 </Box>
+                <Typography sx={{ fontSize: 11, color: "#9E9E9E", mt: 1.5, textAlign: "center" }}>
+                  学校説明会・見学会の情報も確認できます
+                </Typography>
               </CardContent>
             </Card>
           </Box>

@@ -100,6 +100,27 @@ export default function JukuTopPage() {
         </Container>
       </Box>
 
+      {/* 全国の塾を見るCTA */}
+      <Box sx={{ py: 3, bgcolor: "#fff", textAlign: "center", borderBottom: "1px solid #F3F4F6" }}>
+        <Link href="/juku/p-tokyo/" style={{ textDecoration: "none" }}>
+          <Box sx={{
+            display: "inline-block",
+            px: 5, py: 1.5,
+            bgcolor: JUKU_RED,
+            color: "#fff",
+            fontWeight: 700,
+            fontSize: 15,
+            borderRadius: 8,
+            boxShadow: "0 4px 12px rgba(176,0,32,0.25)",
+            transition: "all 0.15s",
+            "&:hover": { opacity: 0.9, transform: "translateY(-1px)" },
+          }}>
+            エリアから塾を無料で探す
+          </Box>
+        </Link>
+        <Typography sx={{ fontSize: 11, color: "#9CA3AF", mt: 1 }}>体験授業・資料請求もかんたん</Typography>
+      </Box>
+
       {/* 目的から探す */}
       <Box sx={{ py: { xs: 4, sm: 5 }, bgcolor: "#fff" }}>
         <Container maxWidth="lg">

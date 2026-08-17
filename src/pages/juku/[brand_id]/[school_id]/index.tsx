@@ -463,6 +463,43 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           </Container>
         </Box>
       )}
+
+      {/* モバイル用フローティングCTA */}
+      <Box
+        sx={{
+          display: { xs: "block", md: "none" },
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          bgcolor: "#fff",
+          borderTop: "1px solid #E5E7EB",
+          p: 1.5,
+          zIndex: 50,
+          boxShadow: "0 -2px 8px rgba(0,0,0,0.08)",
+        }}
+      >
+        <Box sx={{ display: "flex", gap: 1.5, maxWidth: 480, mx: "auto" }}>
+          {school.official_site_url ? (
+            <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ flex: 1, textDecoration: "none" }}>
+              <Box sx={{ bgcolor: JUKU_RED, color: "#fff", fontWeight: 700, fontSize: 14, py: 1.25, borderRadius: 1.5, textAlign: "center", "&:hover": { opacity: 0.9 } }}>
+                無料体験・問い合わせ
+              </Box>
+            </a>
+          ) : (
+            <Box sx={{ flex: 1, bgcolor: JUKU_RED, color: "#fff", fontWeight: 700, fontSize: 14, py: 1.25, borderRadius: 1.5, textAlign: "center", opacity: 0.6 }}>
+              問い合わせる
+            </Box>
+          )}
+          {school.phone && (
+            <a href={`tel:${school.phone}`} style={{ textDecoration: "none" }}>
+              <Box sx={{ border: `2px solid ${JUKU_RED}`, color: JUKU_RED, fontWeight: 700, fontSize: 14, py: 1.25, px: 2, borderRadius: 1.5, textAlign: "center", "&:hover": { bgcolor: JUKU_RED_BG } }}>
+                <PhoneIcon sx={{ fontSize: 18, verticalAlign: "middle" }} />
+              </Box>
+            </a>
+          )}
+        </Box>
+      </Box>
     </>
   );
 }

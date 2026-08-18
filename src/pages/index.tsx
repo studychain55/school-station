@@ -178,17 +178,22 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)", boxShadow: "0 6px 20px rgba(255,111,0,0.45)" },
+                px: { xs: 5, sm: 7 },
+                py: { xs: 1.5, sm: 1.8 },
+                fontSize: { xs: 15, sm: 18 },
+                fontWeight: 800,
+                borderRadius: 3,
+                boxShadow: "0 4px 16px rgba(255,111,0,0.35)",
+                transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
               }}
             >
-              全国ランキングを見る
+              高校偏差値ランキングを調べる →
             </Button>
           </Link>
+          <Typography sx={{ mt: 1.5, fontSize: 13, color: "#757575" }}>
+            全国5,000校以上・都道府県別・無料で利用できます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

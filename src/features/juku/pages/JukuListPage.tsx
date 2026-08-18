@@ -76,13 +76,22 @@ export default function JukuListPage({
           <BreadCrumbBar items={breadcrumbs} />
           <Typography
             component="h1"
-            sx={{ fontWeight: 800, fontSize: { xs: "1.5rem", sm: "2rem" }, color: "#111827", mb: 0.5 }}
+            sx={{ fontWeight: 800, fontSize: { xs: "1.5rem", sm: "2rem" }, color: "#111827", mb: 0.75 }}
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
-          </Typography>
+          {totalCount > 0 ? (
+            <Box sx={{ display: "inline-flex", alignItems: "baseline", gap: 0.5 }}>
+              <Typography component="span" sx={{ fontSize: { xs: 22, sm: 28 }, fontWeight: 800, color: JUKU_RED, lineHeight: 1 }}>
+                {totalCount}
+              </Typography>
+              <Typography component="span" sx={{ fontSize: 14, color: "#6B7280", fontWeight: 500 }}>
+                件の塾が見つかりました
+              </Typography>
+            </Box>
+          ) : (
+            <Typography sx={{ fontSize: 14, color: "#6B7280" }}>現在掲載準備中です</Typography>
+          )}
         </Container>
       </Box>
 
@@ -92,19 +101,26 @@ export default function JukuListPage({
           <TextField
             size="small"
             fullWidth
-            placeholder="塾名・ブランド名で絞り込む"
+            placeholder="塾名・ブランド名で絞り込む（例: 英進館、栄光ゼミナール）"
             value={nameFilter}
             onChange={(e) => setNameFilter(e.target.value)}
             slotProps={{
               input: {
                 startAdornment: (
                   <InputAdornment position="start">
-                    <SearchIcon sx={{ fontSize: 18, color: "#9CA3AF" }} />
+                    <SearchIcon sx={{ fontSize: 18, color: JUKU_RED }} />
                   </InputAdornment>
                 ),
               },
             }}
-            sx={{ bgcolor: "#fff", borderRadius: 1 }}
+            sx={{
+              bgcolor: "#fff",
+              borderRadius: 1,
+              "& .MuiOutlinedInput-root": {
+                "&:hover fieldset": { borderColor: JUKU_RED },
+                "&.Mui-focused fieldset": { borderColor: JUKU_RED },
+              },
+            }}
           />
         </Box>
 

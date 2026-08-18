@@ -169,6 +169,17 @@ export default function HomePage() {
         </Box>
       </Box>
 
+      {/* 安心ポイント */}
+      <Box sx={{ backgroundColor: "#fff", borderBottom: "1px solid #f0f0f0", py: 1.5 }}>
+        <Box sx={{ maxWidth: "800px", mx: "auto", px: 2, display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 3 }}>
+          {["無料で閲覧できる", "会員登録不要", "全国の高校を掲載"].map((text) => (
+            <Box key={text} sx={{ display: "flex", alignItems: "center", gap: 0.5, fontSize: "0.75rem", color: "#555" }}>
+              <span style={{ color: "#22c55e", fontWeight: "bold" }}>✓</span>{text}
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>

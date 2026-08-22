@@ -164,6 +164,31 @@ export default function JukuCard({ school, rank }: Props) {
             ))}
           </Box>
 
+          {/* 対象学年 */}
+          {school.JukuSchoolYear.length > 0 && (
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.5, mb: 0.75 }}>
+              {school.JukuSchoolYear.slice(0, 4).map((y) => (
+                <Box
+                  key={y.id}
+                  component="span"
+                  sx={{
+                    display: "inline-block",
+                    px: 0.75,
+                    py: 0.1,
+                    borderRadius: 1,
+                    fontSize: 10,
+                    fontWeight: 600,
+                    bgcolor: "#EDE7F6",
+                    color: "#5E35B1",
+                    lineHeight: 1.6,
+                  }}
+                >
+                  {y.year}
+                </Box>
+              ))}
+            </Box>
+          )}
+
           {/* アクセス */}
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
             {school.address && (

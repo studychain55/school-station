@@ -6,7 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import { useRouter } from "next/router";
 import JukuCard from "@/components/juku/JukuCard";
 import JukuCompareTable from "@/features/juku/components/JukuCompareTable";
-import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2, JUKU_PURPOSES, JUKU_CATEGORIES } from "@/utils/juku/config";
+import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2, JUKU_PURPOSES, JUKU_CATEGORIES, JUKU_YEARS } from "@/utils/juku/config";
 import type { JukuListPageProps } from "@/types";
 import type { Breadcrumb } from "@/types";
 
@@ -47,9 +47,10 @@ export default function JukuListPage({
   const router = useRouter();
   const totalPages = Math.ceil(totalCount / perPage);
   const [nameFilter, setNameFilter] = useState("");
-  const displayedSchools = nameFilter
-    ? schools.filter((s) => s.name.includes(nameFilter) || s.JukuBrand.name.includes(nameFilter))
-    : schools;
+  const currentYear = router.query.year as string | undefined;
+  const displayedSchools = schools
+    .filter((s) => !nameFilter || s.name.includes(nameFilter) || s.JukuBrand.name.includes(nameFilter))
+    .filter((s) => !currentYear || s.JukuSchoolYear.some((y) => y.year === currentYear));
 
   const handlePageChange = (_: React.ChangeEvent<unknown>, page: number) => {
     const query = { ...router.query, page: page > 1 ? String(page) : undefined };
@@ -149,7 +150,7 @@ export default function JukuListPage({
                 })}
               </Box>
               {/* スタイルフィルター */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
                 <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>スタイル:</Typography>
                 {JUKU_CATEGORIES.map((c) => {
                   const isActive = currentCategory === c.value;
@@ -165,6 +166,29 @@ export default function JukuListPage({
                         "&:hover": { borderColor: "#374151", bgcolor: "#F3F4F6" },
                       }}>
                         {c.label}
+                      </Box>
+                    </Link>
+                  );
+                })}
+              </Box>
+              {/* 学年フィルター */}
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
+                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>学年:</Typography>
+                {JUKU_YEARS.map((y) => {
+                  const currentYear = router.query.year as string | undefined;
+                  const isActive = currentYear === y.value;
+                  return (
+                    <Link key={y.value} href={buildFilterUrl("year", isActive ? undefined : y.value)} style={{ textDecoration: "none" }}>
+                      <Box component="span" sx={{
+                        display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
+                        bgcolor: isActive ? "#5E35B1" : "#fff",
+                        color: isActive ? "#fff" : "#5E35B1",
+                        borderColor: isActive ? "#5E35B1" : "#EDE7F6",
+                        cursor: "pointer",
+                        transition: "all 0.12s",
+                        "&:hover": { borderColor: "#5E35B1", bgcolor: "#EDE7F6" },
+                      }}>
+                        {y.label}
                       </Box>
                     </Link>
                   );
@@ -211,9 +235,9 @@ export default function JukuListPage({
           </Box>
         ) : (
           <>
-            {nameFilter && (
+            {(nameFilter || currentYear) && (
               <Typography sx={{ fontSize: 13, color: "#6B7280", mb: 1.5 }}>
-                「{nameFilter}」で絞り込み中 — {displayedSchools.length}件
+                {[nameFilter && `「${nameFilter}」`, currentYear && `学年：${currentYear}`].filter(Boolean).join("・")}で絞り込み中 — {displayedSchools.length}件
               </Typography>
             )}
             <Grid container spacing={2}>

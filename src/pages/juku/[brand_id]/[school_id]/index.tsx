@@ -343,6 +343,12 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           {/* サイドバー */}
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: "sticky", top: 80, display: "flex", flexDirection: "column", gap: 2 }}>
+              {/* 信頼バッジ */}
+              <div className="flex flex-wrap gap-3 mb-4 p-3 bg-gray-50 rounded-lg">
+                <span className="flex items-center gap-1 text-xs text-green-700 font-medium"><span>✓</span> 完全無料</span>
+                <span className="flex items-center gap-1 text-xs text-green-700 font-medium"><span>✓</span> 24時間以内に返信</span>
+                <span className="flex items-center gap-1 text-xs text-green-700 font-medium"><span>✓</span> 個人情報保護に準拠</span>
+              </div>
               {/* 問い合わせCTA */}
               <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
                 <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>

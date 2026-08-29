@@ -108,7 +108,7 @@ export default function JukuListPage({
           />
         </Box>
 
-        {/* クイックフィルター */}
+        {/* 絞り込み検索 */}
         {(() => {
           const currentPurpose = router.query.purpose as string | undefined;
           const currentCategory = router.query.category as string | undefined;
@@ -125,7 +125,8 @@ export default function JukuListPage({
           };
 
           return (
-            <Box sx={{ mb: 3 }}>
+            <Box sx={{ mb: 3, p: 2, bgcolor: "#F9FAFB", borderRadius: 2, border: "1px solid #E5E7EB" }}>
+              <Typography sx={{ fontSize: 13, fontWeight: 700, color: "#374151", mb: 1.5 }}>絞り込み検索</Typography>
               {/* 目的フィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
                 <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>

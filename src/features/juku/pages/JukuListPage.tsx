@@ -1,8 +1,10 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import Head from "next/head";
 import Link from "next/link";
 import { Container, Box, Typography, Grid, Pagination, TextField, InputAdornment } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
+import SortIcon from "@mui/icons-material/Sort";
+import StarIcon from "@mui/icons-material/Star";
 import { useRouter } from "next/router";
 import JukuCard from "@/components/juku/JukuCard";
 import JukuCompareTable from "@/features/juku/components/JukuCompareTable";
@@ -47,9 +49,27 @@ export default function JukuListPage({
   const router = useRouter();
   const totalPages = Math.ceil(totalCount / perPage);
   const [nameFilter, setNameFilter] = useState("");
-  const displayedSchools = nameFilter
+  const [sortKey, setSortKey] = useState<"default" | "rating" | "reviews">("default");
+
+  const SORT_OPTIONS: { value: typeof sortKey; label: string; icon?: React.ReactNode }[] = [
+    { value: "default", label: "おすすめ順" },
+    { value: "rating", label: "評価が高い順" },
+    { value: "reviews", label: "口コミが多い順" },
+  ];
+
+  const filteredSchools = nameFilter
     ? schools.filter((s) => s.name.includes(nameFilter) || s.JukuBrand.name.includes(nameFilter))
     : schools;
+
+  const displayedSchools = useMemo(() => {
+    if (sortKey === "rating") {
+      return [...filteredSchools].sort((a, b) => (b.review_average_rating ?? 0) - (a.review_average_rating ?? 0));
+    }
+    if (sortKey === "reviews") {
+      return [...filteredSchools].sort((a, b) => b.total_review_count - a.total_review_count);
+    }
+    return filteredSchools;
+  }, [filteredSchools, sortKey]);
 
   const handlePageChange = (_: React.ChangeEvent<unknown>, page: number) => {
     const query = { ...router.query, page: page > 1 ? String(page) : undefined };
@@ -87,8 +107,8 @@ export default function JukuListPage({
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
-        {/* 塾名絞り込み */}
-        <Box sx={{ mb: 2 }}>
+        {/* 絞り込み＆ソートバー */}
+        <Box sx={{ mb: 2, display: "flex", flexDirection: { xs: "column", sm: "row" }, gap: 1.5, alignItems: { sm: "center" } }}>
           <TextField
             size="small"
             fullWidth
@@ -106,6 +126,40 @@ export default function JukuListPage({
             }}
             sx={{ bgcolor: "#fff", borderRadius: 1 }}
           />
+          {/* ソートセレクター */}
+          <Box sx={{ display: "flex", gap: 0.75, alignItems: "center", flexShrink: 0 }}>
+            <SortIcon sx={{ fontSize: 17, color: "#6B7280" }} />
+            {SORT_OPTIONS.map((opt) => {
+              const isActive = sortKey === opt.value;
+              return (
+                <Box
+                  key={opt.value}
+                  component="button"
+                  onClick={() => setSortKey(opt.value)}
+                  sx={{
+                    display: "inline-flex",
+                    alignItems: "center",
+                    gap: 0.4,
+                    px: 1.5,
+                    py: 0.6,
+                    borderRadius: 5,
+                    fontSize: 12,
+                    fontWeight: 600,
+                    border: "1px solid",
+                    cursor: "pointer",
+                    transition: "all 0.12s",
+                    bgcolor: isActive ? JUKU_RED : "#fff",
+                    color: isActive ? "#fff" : "#4B5563",
+                    borderColor: isActive ? JUKU_RED : "#E5E7EB",
+                    "&:hover": { borderColor: JUKU_RED, color: isActive ? "#fff" : JUKU_RED, bgcolor: isActive ? "#8E0000" : JUKU_RED_BG },
+                  }}
+                >
+                  {opt.value === "rating" && <StarIcon sx={{ fontSize: 11 }} />}
+                  {opt.label}
+                </Box>
+              );
+            })}
+          </Box>
         </Box>
 
         {/* クイックフィルター */}
@@ -213,7 +267,7 @@ export default function JukuListPage({
           <>
             {nameFilter && (
               <Typography sx={{ fontSize: 13, color: "#6B7280", mb: 1.5 }}>
-                「{nameFilter}」で絞り込み中 — {displayedSchools.length}件
+                「{nameFilter}」で絞り込み中 — {filteredSchools.length}件
               </Typography>
             )}
             <Grid container spacing={2}>

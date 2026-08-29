@@ -227,7 +227,7 @@ export default function JukuBrandPage({ brand, schools }: Props) {
 
           {/* サイドバー */}
           <Grid size={{ xs: 12, md: 4 }}>
-            {/* 問い合わせCTA */}
+            {/* 問い合わせCTA - 強化版 */}
             <Box
               sx={{
                 bgcolor: JUKU_RED,
@@ -238,34 +238,104 @@ export default function JukuBrandPage({ brand, schools }: Props) {
                 mb: 3,
                 position: "sticky",
                 top: 80,
+                boxShadow: "0 4px 20px rgba(183,28,28,0.25)",
               }}
             >
-              <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>無料で相談・問い合わせ</Typography>
-              <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                教室や料金についてお気軽にご相談ください
+              {/* 信頼バッジ */}
+              <Box sx={{ display: "flex", justifyContent: "center", gap: 1.5, mb: 2 }}>
+                {["完全無料", "即日対応", "しつこい勧誘なし"].map((badge) => (
+                  <Box
+                    key={badge}
+                    sx={{
+                      fontSize: 10,
+                      fontWeight: 700,
+                      px: 1,
+                      py: 0.3,
+                      bgcolor: "rgba(255,255,255,0.2)",
+                      borderRadius: 1,
+                      letterSpacing: 0.5,
+                    }}
+                  >
+                    ✓ {badge}
+                  </Box>
+                ))}
+              </Box>
+
+              <Typography sx={{ fontWeight: 800, fontSize: 16, mb: 0.5, lineHeight: 1.3 }}>
+                無料で相談・資料請求
               </Typography>
+              <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.85)", mb: 2.5, lineHeight: 1.6 }}>
+                体験授業・料金・カリキュラムについて<br />お気軽にご相談ください
+              </Typography>
+
               {brand.official_site_url && (
                 <a href={brand.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                   <Box
                     sx={{
-                      bgcolor: "#fff",
-                      color: JUKU_RED,
-                      py: 1.25,
+                      bgcolor: "#FFD600",
+                      color: "#7B1A00",
+                      py: 1.5,
                       borderRadius: 1.5,
-                      fontWeight: 700,
-                      fontSize: 14,
-                      mb: 1,
-                      "&:hover": { opacity: 0.9 },
+                      fontWeight: 800,
+                      fontSize: 15,
+                      mb: 1.5,
+                      cursor: "pointer",
+                      transition: "all 0.15s",
+                      "&:hover": { bgcolor: "#FFC000", transform: "translateY(-1px)", boxShadow: "0 4px 12px rgba(0,0,0,0.2)" },
                     }}
                   >
-                    <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
-                    公式サイトへ
+                    <PublicIcon sx={{ fontSize: 17, mr: 0.75, verticalAlign: "middle" }} />
+                    無料で問い合わせる
                   </Box>
                 </a>
               )}
-              <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.6)" }}>
-                外部サイトへ遷移します
+
+              {/* 体験授業ボタン */}
+              {brand.official_site_url && (
+                <a href={brand.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+                  <Box
+                    sx={{
+                      bgcolor: "rgba(255,255,255,0.15)",
+                      border: "1px solid rgba(255,255,255,0.4)",
+                      color: "#fff",
+                      py: 1.1,
+                      borderRadius: 1.5,
+                      fontWeight: 700,
+                      fontSize: 13,
+                      mb: 2,
+                      cursor: "pointer",
+                      transition: "all 0.15s",
+                      "&:hover": { bgcolor: "rgba(255,255,255,0.25)" },
+                    }}
+                  >
+                    無料体験授業を申し込む
+                  </Box>
+                </a>
+              )}
+
+              <Typography sx={{ fontSize: 10, color: "rgba(255,255,255,0.55)" }}>
+                ※ 公式サイトへ遷移します
               </Typography>
+            </Box>
+
+            {/* 教室数インフォ */}
+            <Box sx={{ bgcolor: "#fff", border: "1px solid #E5E7EB", borderRadius: 2, p: 2.5, mb: 3, textAlign: "center" }}>
+              <Typography sx={{ fontSize: 12, color: "#6B7280", mb: 0.5 }}>全国の教室数</Typography>
+              <Typography sx={{ fontWeight: 800, fontSize: "1.75rem", color: JUKU_RED, lineHeight: 1 }}>
+                {schools.length}<Typography component="span" sx={{ fontSize: 13, fontWeight: 600, color: "#6B7280" }}>教室</Typography>
+              </Typography>
+              {rating && (
+                <>
+                  <Box sx={{ my: 1, borderTop: "1px solid #F3F4F6" }} />
+                  <Typography sx={{ fontSize: 12, color: "#6B7280", mb: 0.25 }}>平均評価</Typography>
+                  <Typography sx={{ fontWeight: 800, fontSize: "1.5rem", color: "#F59E0B", lineHeight: 1 }}>
+                    ★ {rating.toFixed(1)}
+                    <Typography component="span" sx={{ fontSize: 11, color: "#9CA3AF", fontWeight: 400, ml: 0.5 }}>
+                      ({totalReviews}件)
+                    </Typography>
+                  </Typography>
+                </>
+              )}
             </Box>
           </Grid>
         </Grid>

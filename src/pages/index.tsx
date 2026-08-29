@@ -191,6 +191,83 @@ export default function HomePage() {
           </Link>
         </Box>
 
+        {/* 3ステップ使い方セクション */}
+        <Box sx={{ my: 4, px: { xs: 0, sm: 1 } }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 1, fontSize: { xs: "1.1rem", sm: "1.3rem" }, fontWeight: 700, color: "#1e782d", textAlign: "center" }}>
+            3ステップで志望校を見つけよう
+          </Typography>
+          <Typography variant="body2" sx={{ textAlign: "center", color: "#757575", mb: 3, fontSize: 13 }}>
+            School Stationなら無料で簡単に高校情報を比較できます
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(3, 1fr)" }, gap: 2 }}>
+            {[
+              {
+                step: "01",
+                title: "エリア・分類を選ぶ",
+                desc: "都道府県や公立・私立・国立など、希望する条件でランキングを絞り込みます。",
+                color: "#1e782d",
+              },
+              {
+                step: "02",
+                title: "偏差値を比較する",
+                desc: "一覧表示された高校の偏差値・進学実績・特色をまとめてチェックできます。",
+                color: "#FF6F00",
+              },
+              {
+                step: "03",
+                title: "志望校リストに追加",
+                desc: "気になる学校をピックアップして、安全校・チャレンジ校のバランスを整えましょう。",
+                color: "#1565C0",
+              },
+            ].map((item) => (
+              <Box
+                key={item.step}
+                sx={{
+                  position: "relative",
+                  p: { xs: 2.5, sm: 3 },
+                  bgcolor: "#fff",
+                  border: "1px solid #E0E0E0",
+                  borderTop: `4px solid ${item.color}`,
+                  borderRadius: 2,
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.04)",
+                }}
+              >
+                <Typography sx={{ fontSize: "2rem", fontWeight: 800, color: item.color, lineHeight: 1, mb: 1, opacity: 0.15, position: "absolute", top: 12, right: 16 }}>
+                  {item.step}
+                </Typography>
+                <Typography sx={{ fontSize: 11, fontWeight: 700, color: item.color, letterSpacing: 1, mb: 0.75 }}>
+                  STEP {item.step}
+                </Typography>
+                <Typography sx={{ fontWeight: 700, fontSize: { xs: 15, sm: 16 }, color: "#111827", mb: 1 }}>
+                  {item.title}
+                </Typography>
+                <Typography sx={{ fontSize: 13, color: "#6B7280", lineHeight: 1.7 }}>
+                  {item.desc}
+                </Typography>
+              </Box>
+            ))}
+          </Box>
+          <Box sx={{ textAlign: "center", mt: 3 }}>
+            <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+              <Button
+                variant="outlined"
+                sx={{
+                  borderColor: "#1e782d",
+                  color: "#1e782d",
+                  fontWeight: 700,
+                  px: 4,
+                  py: 1,
+                  fontSize: 14,
+                  "&:hover": { bgcolor: "#1e782d", color: "#fff" },
+                  transition: "all 0.2s",
+                }}
+              >
+                さっそくランキングを見る →
+              </Button>
+            </Link>
+          </Box>
+        </Box>
+
         {/* Quick Prefecture Links */}
         <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
           人気エリアのランキング

@@ -131,7 +131,7 @@ export default function HomePage() {
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
           {/* 都道府県クイックナビ */}
-          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1, mb: 2 }}>
             {[
               { label: "東京", slug: "tokyo" },
               { label: "神奈川", slug: "kanagawa" },
@@ -166,6 +166,28 @@ export default function HomePage() {
               </Link>
             ))}
           </Box>
+          {/* 塾を探すCTA */}
+          <Link href="/juku/" style={{ textDecoration: "none" }}>
+            <Box
+              component="span"
+              sx={{
+                display: "inline-block",
+                px: 3,
+                py: 1,
+                borderRadius: 2,
+                bgcolor: "rgba(255,255,255,0.15)",
+                border: "1px solid rgba(255,255,255,0.5)",
+                color: "white",
+                fontSize: 13,
+                fontWeight: 600,
+                cursor: "pointer",
+                "&:hover": { bgcolor: "rgba(255,255,255,0.25)" },
+                transition: "background-color 0.2s",
+              }}
+            >
+              塾・予備校を探す →
+            </Box>
+          </Link>
         </Box>
       </Box>
 

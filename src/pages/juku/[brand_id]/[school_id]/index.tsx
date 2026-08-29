@@ -7,6 +7,7 @@ import TrainIcon from "@mui/icons-material/Train";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import PhoneIcon from "@mui/icons-material/Phone";
 import PublicIcon from "@mui/icons-material/Public";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ReviewStars from "@/components/juku/ReviewStars";
 import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2, REVIEW_CATEGORIES } from "@/utils/juku/config";
 import { fetchJukuSchoolDetail, fetchRelatedSchools } from "@/utils/db/fetchJuku";
@@ -100,7 +101,7 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
       <Box sx={{ bgcolor: JUKU_RED_BG, borderBottom: `3px solid ${JUKU_RED}`, py: { xs: 3, sm: 4 } }}>
         <Container maxWidth="lg">
           {/* パンくず */}
-          <Box sx={{ display: "flex", gap: 0.75, mb: 2, flexWrap: "wrap" }}>
+          <Box sx={{ display: "flex", gap: 0.75, mb: 2, flexWrap: "wrap", alignItems: "center" }}>
             {[
               { label: "ホーム", href: "/" },
               { label: "塾を探す", href: "/juku/" },
@@ -153,6 +154,32 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
                 <Typography sx={{ fontSize: 13, color: "#9CA3AF" }}>口コミ募集中</Typography>
               )}
             </Box>
+          </Box>
+
+          {/* 一覧に戻るリンク */}
+          <Box sx={{ mt: 2 }}>
+            <Link href="/juku/" style={{ textDecoration: "none" }}>
+              <Box
+                sx={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 0.5,
+                  color: JUKU_RED,
+                  fontSize: 13,
+                  fontWeight: 600,
+                  border: `1px solid ${JUKU_RED_BG2}`,
+                  bgcolor: "#fff",
+                  px: 1.5,
+                  py: 0.5,
+                  borderRadius: 1.5,
+                  "&:hover": { bgcolor: JUKU_RED_BG },
+                  transition: "background-color 0.15s",
+                }}
+              >
+                <ArrowBackIcon sx={{ fontSize: 14 }} />
+                塾一覧に戻る
+              </Box>
+            </Link>
           </Box>
         </Container>
       </Box>
@@ -348,8 +375,11 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
                 <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
                   無料で問い合わせる
                 </Typography>
-                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
+                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 0.5 }}>
                   体験授業・資料請求も受付中
+                </Typography>
+                <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.65)", mb: 2 }}>
+                  通常1〜2営業日以内にご返信いたします
                 </Typography>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>

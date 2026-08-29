@@ -165,7 +165,7 @@ export default function JukuCard({ school, rank }: Props) {
           </Box>
 
           {/* アクセス */}
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 1.5 }}>
             {school.address && (
               <Box sx={{ display: "flex", alignItems: "center", gap: 0.3 }}>
                 <LocationOnIcon sx={{ fontSize: 13, color: "#9CA3AF" }} />
@@ -183,6 +183,24 @@ export default function JukuCard({ school, rank }: Props) {
                 </Typography>
               </Box>
             )}
+          </Box>
+
+          {/* CTA */}
+          <Box
+            sx={{
+              mt: "auto",
+              bgcolor: school.review_average_rating && school.review_average_rating > 0 ? "#b70c07" : JUKU_RED,
+              color: "#fff",
+              fontSize: 12,
+              fontWeight: 700,
+              py: 1,
+              borderRadius: 1.5,
+              textAlign: "center",
+              "&:hover": { opacity: 0.9 },
+              transition: "opacity 0.15s",
+            }}
+          >
+            {school.review_average_rating && school.review_average_rating > 0 ? "口コミを見る・無料体験を申し込む →" : "詳細を見る →"}
           </Box>
         </Box>
       </Box>

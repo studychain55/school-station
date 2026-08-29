@@ -427,6 +427,50 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
         </Grid>
       </Container>
 
+      {/* モバイル用スティッキーCTAバー */}
+      {school.official_site_url && (
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            zIndex: 1200,
+            bgcolor: "#fff",
+            borderTop: `2px solid ${JUKU_RED}`,
+            px: 2,
+            py: 1.25,
+            gap: 1.5,
+            alignItems: "center",
+            boxShadow: "0 -2px 12px rgba(0,0,0,0.1)",
+          }}
+        >
+          <Box sx={{ flex: 1, minWidth: 0 }}>
+            <Typography sx={{ fontWeight: 700, fontSize: 13, color: "#111827", overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+              {school.name}
+            </Typography>
+            <Typography sx={{ fontSize: 11, color: "#6B7280" }}>体験授業・資料請求受付中</Typography>
+          </Box>
+          <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", flexShrink: 0 }}>
+            <Box
+              sx={{
+                bgcolor: JUKU_RED,
+                color: "#fff",
+                px: 2.5,
+                py: 1,
+                borderRadius: 1.5,
+                fontWeight: 700,
+                fontSize: 13,
+                whiteSpace: "nowrap",
+              }}
+            >
+              無料で問い合わせる
+            </Box>
+          </a>
+        </Box>
+      )}
+
       {/* 同じブランドの他の教室 */}
       {relatedSchools.length > 0 && (
         <Box sx={{ bgcolor: "#F9FAFB", py: { xs: 4, sm: 5 }, borderTop: "1px solid #E5E7EB" }}>

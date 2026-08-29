@@ -343,6 +343,13 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           {/* サイドバー */}
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: "sticky", top: 80, display: "flex", flexDirection: "column", gap: 2 }}>
+              {/* 体験案内メッセージ */}
+              <Box sx={{ bgcolor: "#fefce8", border: "1px solid #fde68a", borderRadius: 2, p: 1.5, mb: 0 }}>
+                <Typography sx={{ fontSize: 14, color: "#92400e", fontWeight: 600 }}>
+                  📚 無料体験授業受付中。お気軽にご相談ください。
+                </Typography>
+              </Box>
+
               {/* 問い合わせCTA */}
               <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
                 <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>

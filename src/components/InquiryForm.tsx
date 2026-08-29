@@ -35,6 +35,11 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
     <div className="p-6 bg-green-50 rounded-xl text-center">
       <p className="text-[#1e782d] font-bold text-lg">お問い合わせを受け付けました</p>
       <p className="text-gray-600 mt-2 text-sm">内容を確認の上、ご連絡いたします。</p>
+      <div className="text-left bg-white rounded-lg p-3 border border-green-100 text-xs text-gray-500 space-y-1.5 mt-3">
+        <p>📧 ご登録のメールアドレスに確認メールをお送りします</p>
+        <p>📞 お急ぎの場合は直接お電話でお問い合わせください</p>
+        <p>🔒 ご入力の情報はお問い合わせ対応にのみ使用します</p>
+      </div>
     </div>
   );
 
@@ -58,13 +63,15 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お問い合わせ内容 <span className="text-red-500">*</span></label>
         <textarea required value={form.message} onChange={e=>setForm(f=>({...f,message:e.target.value}))}
-          rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
+          maxLength={500} rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
+        <p className="text-right text-[10px] text-gray-400 mt-0.5">{form.message.length}/500文字</p>
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
         className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        {status==='loading'?'送信中...':'お問い合わせを送信する'}
       </button>
+      <p className="text-center text-xs text-gray-400">🔒 ご入力の個人情報は厳重に管理し、お問い合わせ対応にのみ使用します</p>
     </form>
   );
 }

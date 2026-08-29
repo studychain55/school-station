@@ -165,7 +165,7 @@ export default function JukuCard({ school, rank }: Props) {
           </Box>
 
           {/* アクセス */}
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 1.5 }}>
             {school.address && (
               <Box sx={{ display: "flex", alignItems: "center", gap: 0.3 }}>
                 <LocationOnIcon sx={{ fontSize: 13, color: "#9CA3AF" }} />
@@ -183,6 +183,23 @@ export default function JukuCard({ school, rank }: Props) {
                 </Typography>
               </Box>
             )}
+          </Box>
+
+          {/* CTA */}
+          <Box
+            sx={{
+              bgcolor: JUKU_RED,
+              color: "#fff",
+              fontSize: 12,
+              fontWeight: 700,
+              textAlign: "center",
+              py: 0.75,
+              borderRadius: 1,
+              "&:hover": { bgcolor: "#8E0000" },
+              transition: "background-color 0.15s",
+            }}
+          >
+            無料体験授業を申込む →
           </Box>
         </Box>
       </Box>

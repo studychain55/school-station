@@ -240,31 +240,37 @@ export default function JukuBrandPage({ brand, schools }: Props) {
                 top: 80,
               }}
             >
-              <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>無料で相談・問い合わせ</Typography>
-              <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                教室や料金についてお気軽にご相談ください
-              </Typography>
+              <Typography sx={{ fontWeight: 800, fontSize: 16, mb: 0.5 }}>{brand.name}に</Typography>
+              <Typography sx={{ fontWeight: 800, fontSize: 16, mb: 1 }}>無料で相談する</Typography>
+              <Box sx={{ display: "flex", flexDirection: "column", gap: 0.5, mb: 2 }}>
+                {["体験授業・見学は無料", "料金の詳細を確認できる", "個人情報は厳守"].map((text) => (
+                  <Typography key={text} sx={{ fontSize: 11, color: "rgba(255,255,255,0.85)", display: "flex", alignItems: "center", justifyContent: "center", gap: 0.5 }}>
+                    <span>✓</span> {text}
+                  </Typography>
+                ))}
+              </Box>
               {brand.official_site_url && (
                 <a href={brand.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                   <Box
                     sx={{
                       bgcolor: "#fff",
                       color: JUKU_RED,
-                      py: 1.25,
-                      borderRadius: 1.5,
-                      fontWeight: 700,
+                      py: 1.5,
+                      borderRadius: 2,
+                      fontWeight: 800,
                       fontSize: 14,
                       mb: 1,
                       "&:hover": { opacity: 0.9 },
+                      boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
                     }}
                   >
                     <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
-                    公式サイトへ
+                    無料で問い合わせる →
                   </Box>
                 </a>
               )}
-              <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.6)" }}>
-                外部サイトへ遷移します
+              <Typography sx={{ fontSize: 10, color: "rgba(255,255,255,0.55)" }}>
+                公式サイトへ遷移します
               </Typography>
             </Box>
           </Grid>

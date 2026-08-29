@@ -82,19 +82,22 @@ export default function JukuTopPage() {
         }}
       >
         <Container maxWidth="lg" sx={{ position: "relative", zIndex: 1 }}>
-          <Typography sx={{ fontSize: 13, color: JUKU_RED_BG2, mb: 1, fontWeight: 600, letterSpacing: 2 }}>
-            JUKU SEARCH
+          <Typography sx={{ fontSize: 11, color: JUKU_RED_BG2, mb: 1, fontWeight: 700, letterSpacing: 3, textTransform: "uppercase" }}>
+            Juku Search — 塾・予備校を探す
           </Typography>
           <Typography
             component="h1"
-            sx={{ fontWeight: 800, fontSize: { xs: "1.75rem", sm: "2.5rem" }, mb: 1.5, lineHeight: 1.2 }}
+            sx={{ fontWeight: 800, fontSize: { xs: "1.75rem", sm: "2.5rem" }, mb: 1, lineHeight: 1.2 }}
           >
-            全国の塾・予備校を
+            お子さんにぴったりの塾を
             <br />
-            かんたん検索
+            無料で探す
           </Typography>
-          <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.85)", mb: 4, maxWidth: 480 }}>
-            個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
+          <Typography sx={{ fontSize: { xs: 13, sm: 15 }, color: "rgba(255,255,255,0.75)", mb: 1 }}>
+            全国の個別指導・集団授業・オンライン塾を一括検索
+          </Typography>
+          <Typography sx={{ fontSize: { xs: 12, sm: 14 }, color: "rgba(255,255,255,0.85)", mb: 4, maxWidth: 480 }}>
+            目的（中学受験・高校受験・大学受験）・スタイル・エリアで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
           </Typography>
           <JukuSearchBox />
         </Container>

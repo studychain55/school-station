@@ -463,6 +463,13 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           </Container>
         </Box>
       )}
+
+      {/* 一覧に戻るリンク */}
+      <Box sx={{ textAlign: "center", py: 4 }}>
+        <Link href="/juku/" style={{ textDecoration: "none", fontSize: 14, color: "#6B7280" }}>
+          ← 塾・予備校一覧に戻る
+        </Link>
+      </Box>
     </>
   );
 }

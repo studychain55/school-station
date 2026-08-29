@@ -189,6 +189,14 @@ export default function HomePage() {
               全国ランキングを見る
             </Button>
           </Link>
+          {/* 塾・予備校リンク */}
+          <Box sx={{ mt: 2 }}>
+            <Link href="/juku/" style={{ textDecoration: "none" }}>
+              <Typography component="span" sx={{ fontSize: 14, fontWeight: 600, color: "#C62828", "&:hover": { textDecoration: "underline" } }}>
+                塾・予備校を探す →
+              </Typography>
+            </Link>
+          </Box>
         </Box>
 
         {/* Quick Prefecture Links */}

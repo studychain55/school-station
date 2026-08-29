@@ -186,9 +186,12 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              全国ランキングを無料で見る →
             </Button>
           </Link>
+          <Typography variant="caption" sx={{ display: "block", color: "#757575", mt: 1, fontSize: 12 }}>
+            全国5,000校以上を掲載・無料でご利用いただけます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

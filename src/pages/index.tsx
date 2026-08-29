@@ -179,16 +179,41 @@ export default function HomePage() {
               sx={{
                 bgcolor: "#FF6F00",
                 "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
-                fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                px: { xs: 4, sm: 6 },
+                py: { xs: 1.5, sm: 2 },
+                fontSize: { xs: 15, sm: 18 },
+                fontWeight: 800,
+                borderRadius: 3,
+                boxShadow: "0 6px 20px rgba(255,111,0,0.45)",
+                letterSpacing: "0.03em",
               }}
             >
-              全国ランキングを見る
+              高校偏差値ランキングを調べる →
             </Button>
           </Link>
+          <Typography sx={{ mt: 1.5, fontSize: 13, color: "#757575" }}>
+            全国5,000校以上を無料で検索・比較
+          </Typography>
+          <Box sx={{ mt: 2 }}>
+            <Link href="/juku/" style={{ textDecoration: "none" }}>
+              <Button
+                variant="outlined"
+                size="medium"
+                sx={{
+                  borderColor: "#1e782d",
+                  color: "#1e782d",
+                  fontWeight: 700,
+                  fontSize: { xs: 13, sm: 14 },
+                  px: 3,
+                  py: 1,
+                  borderRadius: 2,
+                  "&:hover": { bgcolor: "#e8f5e9", borderColor: "#1e782d" },
+                }}
+              >
+                近くの塾・予備校を探す
+              </Button>
+            </Link>
+          </Box>
         </Box>
 
         {/* Quick Prefecture Links */}

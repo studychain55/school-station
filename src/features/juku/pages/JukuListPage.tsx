@@ -125,16 +125,17 @@ export default function JukuListPage({
           };
 
           return (
-            <Box sx={{ mb: 3 }}>
+            <Box sx={{ mb: 3, p: 2, bgcolor: "#FFF5F5", border: `1px solid ${JUKU_RED_BG2}`, borderRadius: 2 }}>
+              <Typography sx={{ fontSize: 13, fontWeight: 700, color: "#374151", mb: 1.5 }}>絞り込み条件</Typography>
               {/* 目的フィルター */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, mb: 1.5, alignItems: "center" }}>
+                <Typography sx={{ fontSize: 12, fontWeight: 700, color: "#374151", minWidth: 48 }}>目的</Typography>
                 {JUKU_PURPOSES.map((p) => {
                   const isActive = currentPurpose === p.value;
                   return (
                     <Link key={p.value} href={buildFilterUrl("purpose", isActive ? undefined : p.value)} style={{ textDecoration: "none" }}>
                       <Box component="span" sx={{
-                        display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
+                        display: "inline-block", px: 1.5, py: 0.5, borderRadius: 5, fontSize: 13, fontWeight: 600, border: "1px solid",
                         bgcolor: isActive ? JUKU_RED : "#fff",
                         color: isActive ? "#fff" : JUKU_RED,
                         borderColor: isActive ? JUKU_RED : JUKU_RED_BG2,
@@ -149,14 +150,14 @@ export default function JukuListPage({
                 })}
               </Box>
               {/* スタイルフィルター */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>スタイル:</Typography>
+              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1, alignItems: "center" }}>
+                <Typography sx={{ fontSize: 12, fontWeight: 700, color: "#374151", minWidth: 48 }}>スタイル</Typography>
                 {JUKU_CATEGORIES.map((c) => {
                   const isActive = currentCategory === c.value;
                   return (
                     <Link key={c.value} href={buildFilterUrl("category", isActive ? undefined : c.value)} style={{ textDecoration: "none" }}>
                       <Box component="span" sx={{
-                        display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
+                        display: "inline-block", px: 1.5, py: 0.5, borderRadius: 5, fontSize: 13, fontWeight: 600, border: "1px solid",
                         bgcolor: isActive ? "#374151" : "#fff",
                         color: isActive ? "#fff" : "#374151",
                         borderColor: isActive ? "#374151" : "#E5E7EB",

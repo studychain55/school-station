@@ -34,12 +34,16 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
   if (status === 'success') return (
     <div className="p-6 bg-green-50 rounded-xl text-center">
       <p className="text-[#1e782d] font-bold text-lg">お問い合わせを受け付けました</p>
-      <p className="text-gray-600 mt-2 text-sm">内容を確認の上、ご連絡いたします。</p>
+      <p className="text-gray-600 mt-2 text-sm">通常24時間以内にご返信いたします。</p>
+      <p className="text-gray-500 mt-1 text-xs">ご入力のメールアドレスに確認メールをお送りしました。</p>
     </div>
   );
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
+      <div className="bg-green-50 border border-green-200 rounded-lg px-4 py-3 text-sm text-green-800">
+        <span className="font-bold">通常24時間以内にご返信します。</span>無料でお気軽にご相談ください。
+      </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
         <input required value={form.name} onChange={e=>setForm(f=>({...f,name:e.target.value}))}
@@ -51,20 +55,21 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
           className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="example@email.com"/>
       </div>
       <div>
-        <label className="block text-sm font-bold text-gray-700 mb-1">電話番号</label>
+        <label className="block text-sm font-bold text-gray-700 mb-1">電話番号 <span className="text-gray-400 font-normal text-xs">（任意）</span></label>
         <input type="tel" value={form.phone} onChange={e=>setForm(f=>({...f,phone:e.target.value}))}
           className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="090-1234-5678"/>
       </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お問い合わせ内容 <span className="text-red-500">*</span></label>
         <textarea required value={form.message} onChange={e=>setForm(f=>({...f,message:e.target.value}))}
-          rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
+          rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="例：体験授業の日程について知りたい、料金の詳細を教えてほしい、など"/>
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
-        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50 hover:bg-[#155e24] transition-colors">
+        {status==='loading'?'送信中...':'無料でお問い合わせする'}
       </button>
+      <p className="text-center text-xs text-gray-400">送信された情報は塾・学校への問い合わせ目的にのみ使用されます</p>
     </form>
   );
 }

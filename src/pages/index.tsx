@@ -124,12 +124,19 @@ export default function HomePage() {
             px: 2,
           }}
         >
-          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
-            高校選びのすべてが、ここに
+          <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1, lineHeight: 1.2 }}>
+            志望校が見つかる、高校偏差値ランキング
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
-            全国の高校を偏差値・進学実績・特色で比較
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.85, mb: 1.5 }}>
+            全国5,000校以上の偏差値・進学実績・学校特色を無料で比較
           </Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: { xs: 0.75, sm: 1.5 }, mb: 2.5 }}>
+            {["✓ 公立・私立・国立すべて網羅", "✓ 2026年度最新データ", "✓ 会員登録不要・完全無料"].map((text) => (
+              <Typography key={text} sx={{ fontSize: { xs: "0.7rem", sm: "0.8rem" }, bgcolor: "rgba(255,255,255,0.15)", px: 1.5, py: 0.4, borderRadius: 2, color: "white", fontWeight: 600 }}>
+                {text}
+              </Typography>
+            ))}
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[
@@ -178,17 +185,22 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)", boxShadow: "0 6px 18px rgba(255,111,0,0.45)" },
+                px: { xs: 4, sm: 6 },
+                py: { xs: 1.4, sm: 1.6 },
+                fontSize: { xs: 15, sm: 18 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                boxShadow: "0 4px 14px rgba(255,111,0,0.35)",
+                borderRadius: 2,
+                transition: "all 0.2s ease",
               }}
             >
-              全国ランキングを見る
+              全国の高校偏差値ランキングを見る →
             </Button>
           </Link>
+          <Typography sx={{ mt: 1.5, fontSize: 12, color: "#757575" }}>
+            登録不要・完全無料でご利用いただけます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

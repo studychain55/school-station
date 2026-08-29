@@ -1,4 +1,4 @@
-import { Container, Typography, Box, Paper, Card, CardContent, Button, Rating, Divider, Link as MuiLink } from "@mui/material";
+import { Container, Typography, Box, Paper, Card, CardContent, Button, Rating, Divider, Link as MuiLink, Chip } from "@mui/material";
 import Head from "next/head";
 import Link from "next/link";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -124,10 +124,44 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           <Typography variant="h1" component="h1" sx={{ fontSize: { xs: "1.4rem", sm: "2rem" }, mb: 1, color: "#1e782d", fontWeight: 700 }}>
             {school.name}
           </Typography>
-          <Typography variant="body1" sx={{ color: "#37474F", mb: 1 }}>
-            {school.classification === "PUBLIC" ? "公立高校" : school.classification === "PRIVATE" ? "私立高校" : "国立高校"}
-            {prefectureTitle && ` • ${prefectureTitle}`}
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 1, mb: 1.5 }}>
+            <Chip
+              label={school.classification === "PUBLIC" ? "公立高校" : school.classification === "PRIVATE" ? "私立高校" : "国立高校"}
+              size="small"
+              sx={{ bgcolor: "#1e782d", color: "#fff", fontWeight: 600, fontSize: 12 }}
+            />
+            {prefectureTitle && (
+              <Chip
+                label={prefectureTitle}
+                size="small"
+                variant="outlined"
+                sx={{ borderColor: "#1e782d", color: "#1e782d", fontWeight: 600, fontSize: 12 }}
+              />
+            )}
+            {school.deviation_value_max && (
+              <Chip
+                label={`偏差値 ${school.deviation_value_max}`}
+                size="small"
+                sx={{ bgcolor: "#FF6F00", color: "#fff", fontWeight: 700, fontSize: 12 }}
+              />
+            )}
+          </Box>
+          {prefectureSlug && (
+            <Link href={`/rankings/koukou/p-${prefectureSlug}/`} style={{ textDecoration: "none" }}>
+              <Typography
+                sx={{
+                  fontSize: 13,
+                  color: "#1e782d",
+                  fontWeight: 600,
+                  display: "inline-flex",
+                  alignItems: "center",
+                  "&:hover": { textDecoration: "underline" },
+                }}
+              >
+                ← {prefectureTitle || ""}高校偏差値ランキングに戻る
+              </Typography>
+            </Link>
+          )}
         </Box>
 
         {/* Main Grid */}

@@ -1,4 +1,4 @@
-import { Container, Typography, Box, Button } from "@mui/material";
+import { Container, Typography, Box, Button, Chip } from "@mui/material";
 import Link from "next/link";
 import SEO from "@/components/UI/SEO";
 import BreadCrumb from "@/components/UI/BreadCrumb";
@@ -76,13 +76,28 @@ export default function KoukouRankingPage(props: Props) {
             borderRadius: 2,
           }}
         >
-          <Typography
-            variant="h1"
-            component="h1"
-            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#1e782d" }}
-          >
-            {areaLabel}{classLabel} 高校偏差値ランキング
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", flexWrap: "wrap", gap: 1.5, mb: 1 }}>
+            <Typography
+              variant="h1"
+              component="h1"
+              sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, color: "#1e782d", m: 0 }}
+            >
+              {areaLabel}{classLabel} 高校偏差値ランキング
+            </Typography>
+            {totalCount > 0 && (
+              <Chip
+                label={`${totalCount.toLocaleString()}校`}
+                size="small"
+                sx={{
+                  bgcolor: "#1e782d",
+                  color: "#fff",
+                  fontWeight: 700,
+                  fontSize: 12,
+                  height: 22,
+                }}
+              />
+            )}
+          </Box>
           <Typography variant="body2" sx={{ color: "#37474F", lineHeight: 1.6 }}>
             {description.slice(0, 140)}
           </Typography>

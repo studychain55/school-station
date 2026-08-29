@@ -4,6 +4,7 @@ import { Container, Box, Typography, Grid } from "@mui/material";
 import SchoolIcon from "@mui/icons-material/School";
 import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import dynamic from "next/dynamic";
 import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2, JUKU_PURPOSES, JUKU_CATEGORIES, POPULAR_PREFECTURES } from "@/utils/juku/config";
 import prefectures from "@/data/prefectures";
@@ -61,6 +62,25 @@ export default function JukuTopPage() {
         />
       </Head>
 
+      {/* 信頼バナー */}
+      <Box sx={{ bgcolor: JUKU_RED, color: "#fff", py: 0.75 }}>
+        <Container maxWidth="lg">
+          <Box sx={{ display: "flex", justifyContent: "center", flexWrap: "wrap", gap: { xs: 2, sm: 4 } }}>
+            {[
+              { icon: <CheckCircleOutlineIcon sx={{ fontSize: 15 }} />, text: "掲載塾数5万+" },
+              { icon: <CheckCircleOutlineIcon sx={{ fontSize: 15 }} />, text: "完全無料で利用できます" },
+              { icon: <CheckCircleOutlineIcon sx={{ fontSize: 15 }} />, text: "47都道府県対応" },
+              { icon: <CheckCircleOutlineIcon sx={{ fontSize: 15 }} />, text: "口コミ・料金を比較" },
+            ].map((item) => (
+              <Box key={item.text} sx={{ display: "flex", alignItems: "center", gap: 0.5, fontSize: 12, fontWeight: 600 }}>
+                {item.icon}
+                <Typography sx={{ fontSize: 12, fontWeight: 600 }}>{item.text}</Typography>
+              </Box>
+            ))}
+          </Box>
+        </Container>
+      </Box>
+
       {/* ヒーローセクション */}
       <Box
         sx={{
@@ -97,6 +117,41 @@ export default function JukuTopPage() {
             個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
           </Typography>
           <JukuSearchBox />
+
+          {/* 学年クイックフィルター */}
+          <Box sx={{ mt: 3 }}>
+            <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.7)", mb: 1, fontWeight: 600 }}>学年から探す:</Typography>
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+              {[
+                { label: "小学生", value: "小学生" },
+                { label: "中学生", value: "中学生" },
+                { label: "高校生", value: "高校生" },
+                { label: "浪人・高卒", value: "浪人・高卒生" },
+              ].map((grade) => (
+                <Link key={grade.value} href={`/juku/?purpose=${encodeURIComponent(grade.value)}`} style={{ textDecoration: "none" }}>
+                  <Box
+                    component="span"
+                    sx={{
+                      display: "inline-block",
+                      px: 2,
+                      py: 0.6,
+                      borderRadius: 3,
+                      bgcolor: "rgba(255,255,255,0.15)",
+                      color: "#fff",
+                      fontSize: 13,
+                      fontWeight: 700,
+                      border: "1px solid rgba(255,255,255,0.3)",
+                      cursor: "pointer",
+                      transition: "background-color 0.15s",
+                      "&:hover": { bgcolor: "rgba(255,255,255,0.28)" },
+                    }}
+                  >
+                    {grade.label}
+                  </Box>
+                </Link>
+              ))}
+            </Box>
+          </Box>
         </Container>
       </Box>
 

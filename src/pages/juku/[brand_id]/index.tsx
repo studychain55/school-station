@@ -10,6 +10,7 @@ import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2 } from "@/utils/juku/config";
 import { fetchJukuBrandWithSchools } from "@/utils/db/fetchJuku";
 import { setConditionalCacheHeaders } from "@/utils/cacheHeaders";
 import type { JukuBrand, JukuSchoolListItem } from "@/types";
+import InquiryForm from "@/components/InquiryForm";
 
 type Props = {
   brand: JukuBrand;
@@ -269,6 +270,21 @@ export default function JukuBrandPage({ brand, schools }: Props) {
             </Box>
           </Grid>
         </Grid>
+      </Container>
+
+      {/* お問い合わせフォーム */}
+      <Container maxWidth="lg" sx={{ py: 4 }} id="contact">
+        <div className="bg-white rounded-xl border border-gray-200 p-6 md:p-8 max-w-2xl mx-auto">
+          <h2 className="text-lg font-bold mb-1">✉️ {brand.name}に無料で問い合わせる</h2>
+          <p className="text-sm text-gray-500 mb-4">料金・カリキュラム・体験授業などお気軽にご相談ください。</p>
+          <InquiryForm
+            siteId="school-station"
+            facilityTable="JukuBrand"
+            facilityId={brand.id}
+            facilityUid={brand.slug}
+            facilityName={brand.name}
+          />
+        </div>
       </Container>
     </>
   );

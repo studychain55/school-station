@@ -130,6 +130,29 @@ export default function HomePage() {
           <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* 全国ランキングCTAボタン */}
+          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+            <Box
+              component="span"
+              sx={{
+                display: "inline-block",
+                px: 4,
+                py: 1.2,
+                mb: 2,
+                borderRadius: 3,
+                bgcolor: "#FF6F00",
+                color: "white",
+                fontSize: { xs: 13, sm: 15 },
+                fontWeight: 700,
+                cursor: "pointer",
+                boxShadow: "0 4px 16px rgba(0,0,0,0.3)",
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
+                transition: "all 0.2s",
+              }}
+            >
+              全国ランキングを見る →
+            </Box>
+          </Link>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[
@@ -138,7 +161,7 @@ export default function HomePage() {
               { label: "大阪", slug: "osaka" },
               { label: "愛知", slug: "aichi" },
               { label: "福岡", slug: "fukuoka" },
-              { label: "全国ランキング", slug: null },
+              { label: "全都道府県", slug: null },
             ].map((item) => (
               <Link
                 key={item.label}
@@ -171,7 +194,7 @@ export default function HomePage() {
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
-        <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
+        <Box sx={{ textAlign: "center", py: 3, mb: 2, display: "flex", gap: 2, justifyContent: "center", flexWrap: "wrap" }}>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
@@ -187,6 +210,23 @@ export default function HomePage() {
               }}
             >
               全国ランキングを見る
+            </Button>
+          </Link>
+          <Link href="/juku/" style={{ textDecoration: "none" }}>
+            <Button
+              variant="outlined"
+              size="large"
+              sx={{
+                borderColor: "#1e782d",
+                color: "#1e782d",
+                "&:hover": { bgcolor: "#e9f2ea", borderColor: "#155420" },
+                px: 4,
+                py: 1.2,
+                fontSize: { xs: 14, sm: 16 },
+                fontWeight: 700,
+              }}
+            >
+              塾・予備校を探す
             </Button>
           </Link>
         </Box>

@@ -351,9 +351,14 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
                 <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
                   体験授業・資料請求も受付中
                 </Typography>
+                <Link href={`/juku/${school.JukuBrand.slug}/${school.slug}/contact/`} style={{ textDecoration: "none", display: "block", width: "100%", marginBottom: 8 }}>
+                  <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, width: "100%", "&:hover": { opacity: 0.9 } }}>
+                    無料でお問い合わせ
+                  </Box>
+                </Link>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>
+                    <Box sx={{ bgcolor: "rgba(255,255,255,0.15)", color: "#fff", py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>
                       <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
                       公式サイトへ
                     </Box>

@@ -481,6 +481,47 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           </Typography>
         </Box>
       </Container>
+
+      {/* Mobile Sticky CTA */}
+      <Box
+        sx={{
+          display: { xs: "flex", sm: "none" },
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1200,
+          bgcolor: "white",
+          borderTop: "1px solid #E0E0E0",
+          p: 1.5,
+          gap: 1,
+          boxShadow: "0 -2px 8px rgba(0,0,0,0.08)",
+        }}
+      >
+        {prefectureSlug && (
+          <Button
+            component={Link}
+            href={`/rankings/koukou/p-${prefectureSlug}/`}
+            variant="contained"
+            fullWidth
+            sx={{ fontSize: 13, py: 1, bgcolor: "#1e782d", "&:hover": { bgcolor: "#155c22" } }}
+          >
+            都道府県ランキングを見る
+          </Button>
+        )}
+        {school.source_url && (
+          <Button
+            href={school.source_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            variant="outlined"
+            fullWidth
+            sx={{ fontSize: 13, py: 1, borderColor: "#1e782d", color: "#1e782d" }}
+          >
+            公式サイト
+          </Button>
+        )}
+      </Box>
     </>
   );
 }

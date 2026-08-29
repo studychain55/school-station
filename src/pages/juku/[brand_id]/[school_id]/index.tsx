@@ -157,6 +157,23 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
         </Container>
       </Box>
 
+      {/* モバイル向けトップCTA */}
+      <Box sx={{ display: { xs: "block", md: "none" }, bgcolor: "#fff", borderBottom: "1px solid #E5E7EB", px: 2, py: 2 }}>
+        <Box sx={{ display: "flex", gap: 1.5, alignItems: "center", justifyContent: "space-between" }}>
+          <Box>
+            <Typography sx={{ fontSize: 13, fontWeight: 700, color: "#111827" }}>{school.name}</Typography>
+            {school.address && <Typography sx={{ fontSize: 11, color: "#6B7280", mt: 0.25 }}>{school.address}</Typography>}
+          </Box>
+          {school.official_site_url && (
+            <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", flexShrink: 0 }}>
+              <Box sx={{ bgcolor: JUKU_RED, color: "#fff", px: 2.5, py: 1, borderRadius: 1.5, fontWeight: 700, fontSize: 13, whiteSpace: "nowrap" }}>
+                無料で問い合わせ
+              </Box>
+            </a>
+          )}
+        </Box>
+      </Box>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         <Grid container spacing={3}>
           {/* メインコンテンツ */}

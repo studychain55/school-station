@@ -169,6 +169,23 @@ export default function HomePage() {
         </Box>
       </Box>
 
+      {/* ===== 安心ポイント ===== */}
+      <Box sx={{ bgcolor: "white", borderBottom: "1px solid #f3f4f6" }}>
+        <Box sx={{ maxWidth: 900, mx: "auto", px: 2, py: 2.5, display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 1, textAlign: "center" }}>
+          {[
+            { icon: "🔍", title: "豊富な掲載数", desc: "全国のスクールを網羅" },
+            { icon: "💰", title: "料金を透明比較", desc: "相場がひと目でわかる" },
+            { icon: "✅", title: "無料で問い合わせ", desc: "まとめて比較・相談" },
+          ].map((item) => (
+            <Box key={item.title} sx={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0.5 }}>
+              <Box component="span" sx={{ fontSize: "1.25rem" }}>{item.icon}</Box>
+              <Typography sx={{ fontSize: "0.75rem", fontWeight: 700, color: "#1f2937" }}>{item.title}</Typography>
+              <Typography sx={{ fontSize: "0.625rem", color: "#6b7280" }}>{item.desc}</Typography>
+            </Box>
+          ))}
+        </Box>
+      </Box>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>

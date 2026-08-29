@@ -346,11 +346,18 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
               {/* 問い合わせCTA */}
               <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
                 <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
-                  無料で問い合わせる
+                  {school.name}に無料で問い合わせる
                 </Typography>
-                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
+                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 1.5 }}>
                   体験授業・資料請求も受付中
                 </Typography>
+                <Box sx={{ bgcolor: "rgba(255,255,255,0.15)", borderRadius: 1, p: 1.5, mb: 2, textAlign: "left" }}>
+                  <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.9)", lineHeight: 1.8 }}>
+                    ✓ 無料・匿名で相談できます<br />
+                    ✓ しつこい営業はありません<br />
+                    ✓ 個人情報は安全に管理
+                  </Typography>
+                </Box>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
                     <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>

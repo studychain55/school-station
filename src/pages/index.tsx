@@ -127,9 +127,26 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
+            <Box component="span" sx={{
+              display: "inline-block",
+              bgcolor: "#FF6F00",
+              color: "#fff",
+              fontWeight: 700,
+              fontSize: { xs: 13, sm: 15 },
+              px: 4, py: 1.25,
+              borderRadius: 10,
+              mb: 2,
+              boxShadow: "0 4px 14px rgba(255,111,0,0.45)",
+              "&:hover": { bgcolor: "#E65100" },
+              transition: "background-color 0.2s",
+            }}>
+              まずは無料で偏差値ランキングを見る →
+            </Box>
+          </Link>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

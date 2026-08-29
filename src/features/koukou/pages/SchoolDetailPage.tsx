@@ -282,6 +282,55 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
               </Card>
             ) : null}
 
+            {/* CTA Card */}
+            <Card sx={{ mb: 3, border: "2px solid #1e782d", bgcolor: "#f0f9f2" }}>
+              <CardContent>
+                <Typography sx={{ fontSize: 13, fontWeight: 700, color: "#1e782d", mb: 1 }}>
+                  この学校に興味がありますか？
+                </Typography>
+                <Typography sx={{ fontSize: 12, color: "#555", mb: 2, lineHeight: 1.6 }}>
+                  学校見学・説明会への参加で、実際の雰囲気を確かめましょう。
+                </Typography>
+                {school.source_url && (
+                  <Button
+                    variant="contained"
+                    fullWidth
+                    endIcon={<OpenInNewIcon />}
+                    href={school.source_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    sx={{
+                      bgcolor: "#1e782d",
+                      "&:hover": { bgcolor: "#155720" },
+                      fontWeight: 700,
+                      fontSize: 14,
+                      py: 1.2,
+                      mb: 1,
+                    }}
+                  >
+                    公式サイトで見学予約
+                  </Button>
+                )}
+                {!school.source_url && (
+                  <Button
+                    variant="contained"
+                    fullWidth
+                    sx={{
+                      bgcolor: "#1e782d",
+                      "&:hover": { bgcolor: "#155720" },
+                      fontWeight: 700,
+                      fontSize: 14,
+                      py: 1.2,
+                      mb: 1,
+                    }}
+                    disabled
+                  >
+                    見学・資料請求
+                  </Button>
+                )}
+              </CardContent>
+            </Card>
+
             {/* Action Card */}
             <Card sx={{ border: "1px solid #E0E0E0" }}>
               <CardContent>

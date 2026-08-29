@@ -79,13 +79,23 @@ export default function KoukouRankingPage(props: Props) {
           <Typography
             variant="h1"
             component="h1"
-            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#1e782d" }}
+            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#1e782d", fontWeight: 700 }}
           >
             {areaLabel}{classLabel} 高校偏差値ランキング
           </Typography>
-          <Typography variant="body2" sx={{ color: "#37474F", lineHeight: 1.6 }}>
+          <Typography variant="body2" sx={{ color: "#37474F", lineHeight: 1.6, mb: 1.5 }}>
             {description.slice(0, 140)}
           </Typography>
+          <Box sx={{ display: "inline-flex", alignItems: "center", bgcolor: "#fff", px: 2, py: 0.75, borderRadius: 5, border: "1px solid #bcd7c0" }}>
+            <Typography sx={{ fontSize: 13, fontWeight: 700, color: "#1e782d" }}>
+              {totalCount.toLocaleString()}校掲載中
+            </Typography>
+            {currentPage > 1 && (
+              <Typography sx={{ fontSize: 12, color: "#757575", ml: 1.5 }}>
+                {currentPage}ページ目 / 全{Math.ceil(totalCount / perPage)}ページ
+              </Typography>
+            )}
+          </Box>
         </Box>
 
         {/* Stat Cards */}
@@ -128,9 +138,14 @@ export default function KoukouRankingPage(props: Props) {
 
         {/* Full Ranking */}
         <Box sx={{ mb: 2 }}>
-          <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
-            全ランキング（{totalCount.toLocaleString()}校）
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 1, mb: 2 }}>
+            <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1rem", sm: "1.25rem" } }}>
+              全ランキング
+            </Typography>
+            <Typography sx={{ fontSize: 13, color: "#757575", bgcolor: "#f4f4f4", px: 1.5, py: 0.5, borderRadius: 4 }}>
+              {totalCount.toLocaleString()}校中 {startRank}〜{Math.min(startRank + schools.length - 1, totalCount)}位を表示
+            </Typography>
+          </Box>
           <RankingTable schools={schools} startRank={startRank} prefectureSlug={prefectureSlug} />
         </Box>
 

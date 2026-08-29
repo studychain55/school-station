@@ -93,8 +93,11 @@ export default function JukuTopPage() {
             <br />
             かんたん検索
           </Typography>
-          <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.85)", mb: 4, maxWidth: 480 }}>
-            個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
+          <Typography sx={{ fontSize: { xs: 14, sm: 16 }, color: "rgba(255,255,255,0.95)", mb: 1, fontWeight: 700 }}>
+            <Box component="span" sx={{ fontSize: { xs: 20, sm: 24 }, fontWeight: 900, borderBottom: "2px solid rgba(255,255,255,0.6)" }}>5万件以上</Box>の塾・予備校から最適な一校を
+          </Typography>
+          <Typography sx={{ fontSize: { xs: 13, sm: 15 }, color: "rgba(255,255,255,0.85)", mb: 4, maxWidth: 480 }}>
+            個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して、<strong>今すぐ無料で</strong>探せます。
           </Typography>
           <JukuSearchBox />
         </Container>
@@ -272,7 +275,7 @@ export default function JukuTopPage() {
           >
             <Box>
               <Typography sx={{ fontWeight: 800, fontSize: { xs: "1.1rem", sm: "1.3rem" }, color: "#111827", mb: 0.5 }}>
-                塾ランキングを見る
+                人気塾ランキングをチェック
               </Typography>
               <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
                 口コミ評価に基づいた全国・都道府県別のランキング
@@ -293,7 +296,7 @@ export default function JukuTopPage() {
                   "&:hover": { opacity: 0.88 },
                 }}
               >
-                ランキングを見る →
+                ランキングを今すぐ見る →
               </Box>
             </Link>
           </Box>

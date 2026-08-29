@@ -48,23 +48,26 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">メールアドレス <span className="text-red-500">*</span></label>
         <input required type="email" value={form.email} onChange={e=>setForm(f=>({...f,email:e.target.value}))}
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="example@email.com"/>
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="例：sample@example.com"/>
       </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">電話番号</label>
         <input type="tel" value={form.phone} onChange={e=>setForm(f=>({...f,phone:e.target.value}))}
-          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="090-1234-5678"/>
+          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="例：090-0000-0000"/>
       </div>
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お問い合わせ内容 <span className="text-red-500">*</span></label>
         <textarea required value={form.message} onChange={e=>setForm(f=>({...f,message:e.target.value}))}
-          rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご要望をご記入ください"/>
+          rows={5} className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="ご質問・ご相談内容をご記入ください"/>
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
-        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50 hover:bg-[#155a22] transition-colors">
+        {status==='loading'?'送信中...':'無料でお問い合わせを送信する'}
       </button>
+      <p className="text-xs text-gray-500 text-center mt-2">
+        送信内容は<a href="/privacy/" className="underline hover:text-[#1e782d]">プライバシーポリシー</a>に基づき適切に管理いたします。
+      </p>
     </form>
   );
 }

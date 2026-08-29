@@ -463,6 +463,16 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           </Container>
         </Box>
       )}
+      {/* モバイル固定CTA */}
+      <Box sx={{ position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 50, bgcolor: "white", borderTop: "1px solid #E5E7EB", p: 1.5, display: { md: "none" } }}>
+        {school.official_site_url ? (
+          <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", display: "block", backgroundColor: "#C0392B", color: "#fff", textAlign: "center", fontWeight: 700, padding: "10px", borderRadius: "8px", fontSize: "14px" }}>
+            無料で問い合わせる
+          </a>
+        ) : (
+          <Box sx={{ bgcolor: "#C0392B", color: "#fff", textAlign: "center", fontWeight: 700, py: 1.25, borderRadius: 2, fontSize: 14 }}>無料で問い合わせる</Box>
+        )}
+      </Box>
     </>
   );
 }

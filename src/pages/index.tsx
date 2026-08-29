@@ -189,6 +189,12 @@ export default function HomePage() {
               全国ランキングを見る
             </Button>
           </Link>
+          {/* 信頼バッジ */}
+          <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 3, mt: 2, color: "text.secondary", fontSize: 12 }}>
+            <span>✓ 無料で検索・比較</span>
+            <span>✓ 全国対応</span>
+            <span>✓ しつこい営業なし</span>
+          </Box>
         </Box>
 
         {/* Quick Prefecture Links */}

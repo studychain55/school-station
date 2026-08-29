@@ -213,7 +213,7 @@ export default function JukuBrandCard({ brand, schools, rank }: Props) {
               "&:hover": { opacity: 0.88 },
             }}
           >
-            詳細を見る
+            無料体験・詳細を見る →
           </Box>
         </Link>
       </Box>

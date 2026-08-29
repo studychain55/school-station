@@ -74,6 +74,7 @@ export type JukuBrand = {
   logo_url: string | null;
   official_site_url: string | null;
   is_online: boolean;
+  trial_available: boolean;
   is_active: boolean;
   created_at: string;
 };
@@ -153,6 +154,7 @@ export type JukuSchool = {
   description: string | null;
   review_average_rating: number | null;
   total_review_count: number;
+  trial_available: boolean;
   is_active: boolean;
   JukuBrand: JukuBrand;
   JukuSchoolYear: JukuSchoolYear[];
@@ -170,7 +172,7 @@ export type JukuSchoolListItem = Pick<
   | "id" | "brand_id" | "slug" | "name"
   | "prefecture_id" | "city_id" | "address"
   | "review_average_rating" | "total_review_count"
-  | "is_active"
+  | "trial_available" | "is_active"
 > & {
   JukuBrand: Pick<JukuBrand, "id" | "slug" | "name" | "logo_url">;
   JukuSchoolYear: JukuSchoolYear[];

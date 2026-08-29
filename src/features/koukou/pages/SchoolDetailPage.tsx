@@ -247,7 +247,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           </Box>
 
           {/* Right Column - Sidebar */}
-          <Box>
+          <Box sx={{ position: { sm: "sticky" }, top: { sm: 16 }, alignSelf: { sm: "start" } }}>
             {/* Evaluation Card */}
             {school.star_rating !== null || school.review_count !== null ? (
               <Card sx={{ mb: 3, border: "1px solid #E0E0E0" }}>
@@ -281,6 +281,44 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                 </CardContent>
               </Card>
             ) : null}
+
+            {/* Inquiry CTA Card */}
+            <Card sx={{ mb: 3, border: "2px solid #1e782d", borderRadius: 2, overflow: "hidden" }}>
+              <Box sx={{ bgcolor: "#1e782d", p: 2, textAlign: "center" }}>
+                <Typography sx={{ color: "#fff", fontWeight: 700, fontSize: 15, mb: 0.5 }}>
+                  {school.name}
+                </Typography>
+                <Typography sx={{ color: "rgba(255,255,255,0.85)", fontSize: 12 }}>
+                  見学・資料請求はこちら
+                </Typography>
+              </Box>
+              <CardContent sx={{ display: "flex", flexDirection: "column", gap: 1.5 }}>
+                <Button
+                  variant="contained"
+                  fullWidth
+                  sx={{
+                    bgcolor: "#1e782d",
+                    "&:hover": { bgcolor: "#155f22" },
+                    fontWeight: 700,
+                    py: 1.25,
+                    fontSize: 14,
+                    borderRadius: 1.5,
+                  }}
+                  href={school.source_url || generateGoogleMapsUrl(school)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  無料で見学・資料請求
+                </Button>
+                <Box component="ul" sx={{ m: 0, pl: 0, listStyle: "none", display: "flex", flexDirection: "column", gap: 0.5 }}>
+                  {["24時間受付", "返信保証", "完全無料"].map((item) => (
+                    <Box component="li" key={item} sx={{ display: "flex", alignItems: "center", gap: 0.75, fontSize: 11, color: "#6B7280" }}>
+                      <Box component="span" sx={{ color: "#1e782d", fontWeight: 700 }}>✓</Box> {item}
+                    </Box>
+                  ))}
+                </Box>
+              </CardContent>
+            </Card>
 
             {/* Action Card */}
             <Card sx={{ border: "1px solid #E0E0E0" }}>

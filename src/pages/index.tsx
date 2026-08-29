@@ -170,6 +170,13 @@ export default function HomePage() {
       </Box>
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
+        {/* Trust bar */}
+        <Box sx={{ bgcolor: "#f0f6f0", borderRadius: 1, py: 1, px: 2, mb: 2, textAlign: "center" }}>
+          <Typography sx={{ fontSize: 12, color: "#555" }}>
+            全国5,000校以上の偏差値データを掲載 ・ 完全無料 ・ 毎年更新
+          </Typography>
+        </Box>
+
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
@@ -179,16 +186,20 @@ export default function HomePage() {
               sx={{
                 bgcolor: "#FF6F00",
                 "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                px: 6,
+                py: 1.5,
+                fontSize: { xs: 15, sm: 17 },
                 fontWeight: 700,
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                borderRadius: 2,
               }}
             >
               全国ランキングを見る
             </Button>
           </Link>
+          <Typography sx={{ mt: 1, fontSize: 12, color: "#888" }}>
+            志望校の偏差値をすぐに確認できます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

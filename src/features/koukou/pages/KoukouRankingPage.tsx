@@ -79,12 +79,15 @@ export default function KoukouRankingPage(props: Props) {
           <Typography
             variant="h1"
             component="h1"
-            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#1e782d" }}
+            sx={{ fontSize: { xs: "1.3rem", sm: "1.6rem", md: "2rem" }, mb: 1, color: "#1e782d", fontWeight: 800 }}
           >
             {areaLabel}{classLabel} 高校偏差値ランキング
           </Typography>
-          <Typography variant="body2" sx={{ color: "#37474F", lineHeight: 1.6 }}>
+          <Typography variant="body2" sx={{ color: "#37474F", lineHeight: 1.6, mb: 1 }}>
             {description.slice(0, 140)}
+          </Typography>
+          <Typography variant="body2" sx={{ color: "#1e782d", fontWeight: 600, fontSize: { xs: "0.8rem", sm: "0.875rem" } }}>
+            全{totalCount.toLocaleString()}校を偏差値順に掲載
           </Typography>
         </Box>
 

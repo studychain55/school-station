@@ -127,8 +127,11 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.9, mb: 1.5 }}>
             全国の高校を偏差値・進学実績・特色で比較
+          </Typography>
+          <Typography variant="body2" sx={{ fontSize: { xs: "0.75rem", md: "0.875rem" }, opacity: 0.75, mb: 2.5 }}>
+            5,000校以上のデータを無料で検索・比較できます
           </Typography>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
@@ -178,22 +181,26 @@ export default function HomePage() {
               size="large"
               sx={{
                 bgcolor: "#FF6F00",
-                "&:hover": { bgcolor: "#E65100", transform: "translateY(-1px)" },
-                px: 4,
-                py: 1.2,
-                fontSize: { xs: 14, sm: 16 },
+                "&:hover": { bgcolor: "#E65100", transform: "translateY(-2px)" },
+                px: 5,
+                py: 1.5,
+                fontSize: { xs: 15, sm: 18 },
                 fontWeight: 700,
-                boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                boxShadow: "0 6px 20px rgba(255,111,0,0.4)",
+                borderRadius: 3,
               }}
             >
-              全国ランキングを見る
+              全国ランキングを見る →
             </Button>
           </Link>
         </Box>
 
         {/* Quick Prefecture Links */}
-        <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
+        <Typography variant="h2" component="h2" sx={{ mb: 1, fontWeight: 700, fontSize: { xs: "1.1rem", sm: "1.3rem" } }}>
           人気エリアのランキング
+        </Typography>
+        <Typography variant="body2" sx={{ mb: 2, color: "#757575", fontSize: "0.875rem" }}>
+          都道府県別の高校偏差値ランキングをチェック
         </Typography>
         <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(3, 1fr)" }, gap: 2, mb: 5 }}>
           {recommendPrefectures.map((pref) => (

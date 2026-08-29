@@ -137,12 +137,14 @@ export default function JukuSearchBox() {
           onClick={handleSearch}
           startIcon={<SearchIcon />}
           sx={{
-            bgcolor: "#fff", color: JUKU_RED, fontWeight: 700, px: 3, py: 1,
+            bgcolor: "#fff", color: JUKU_RED, fontWeight: 800, px: 4, py: 1.5,
             whiteSpace: "nowrap", "&:hover": { bgcolor: "#FFF0F0" },
             boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+            fontSize: 15,
+            letterSpacing: 0.5,
           }}
         >
-          塾を探す
+          学校・塾を探す
         </Button>
       </Box>
     </Box>

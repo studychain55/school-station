@@ -100,24 +100,34 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
       <Box sx={{ bgcolor: JUKU_RED_BG, borderBottom: `3px solid ${JUKU_RED}`, py: { xs: 3, sm: 4 } }}>
         <Container maxWidth="lg">
           {/* パンくず */}
-          <Box sx={{ display: "flex", gap: 0.75, mb: 2, flexWrap: "wrap" }}>
-            {[
-              { label: "ホーム", href: "/" },
-              { label: "塾を探す", href: "/juku/" },
-              { label: school.JukuBrand.name, href: `/juku/${school.JukuBrand.slug}/` },
-              { label: school.name },
-            ].map((item, i) => (
-              <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
-                {i > 0 && <Typography sx={{ color: "#9CA3AF", fontSize: 13 }}>›</Typography>}
-                {item.href ? (
-                  <Link href={item.href} style={{ textDecoration: "none" }}>
-                    <Typography sx={{ fontSize: 13, color: JUKU_RED }}>{item.label}</Typography>
-                  </Link>
-                ) : (
-                  <Typography sx={{ fontSize: 13, color: "#6B7280" }}>{item.label}</Typography>
-                )}
-              </Box>
-            ))}
+          <Box sx={{ display: "flex", gap: 0.75, mb: 1, flexWrap: "wrap", alignItems: "center", justifyContent: "space-between" }}>
+            <Box sx={{ display: "flex", gap: 0.75, flexWrap: "wrap" }}>
+              {[
+                { label: "ホーム", href: "/" },
+                { label: "塾を探す", href: "/juku/" },
+                { label: school.JukuBrand.name, href: `/juku/${school.JukuBrand.slug}/` },
+                { label: school.name },
+              ].map((item, i) => (
+                <Box key={i} sx={{ display: "flex", alignItems: "center", gap: 0.75 }}>
+                  {i > 0 && <Typography sx={{ color: "#9CA3AF", fontSize: 13 }}>›</Typography>}
+                  {item.href ? (
+                    <Link href={item.href} style={{ textDecoration: "none" }}>
+                      <Typography sx={{ fontSize: 13, color: JUKU_RED }}>{item.label}</Typography>
+                    </Link>
+                  ) : (
+                    <Typography sx={{ fontSize: 13, color: "#6B7280" }}>{item.label}</Typography>
+                  )}
+                </Box>
+              ))}
+            </Box>
+            {/* クイックアクションバー */}
+            <button
+              onClick={() => { if (typeof navigator !== 'undefined' && navigator.share) { navigator.share({ title: document.title, url: window.location.href }); } else if (typeof navigator !== 'undefined') { navigator.clipboard?.writeText(window.location.href); } }}
+              style={{ display: "flex", alignItems: "center", gap: 4, padding: "4px 12px", fontSize: 12, background: "#fff", border: "1px solid #E5E7EB", borderRadius: 999, cursor: "pointer", color: "#6B7280" }}
+            >
+              <span>🔗</span>
+              <span>共有</span>
+            </button>
           </Box>
 
           <Box sx={{ display: "flex", gap: 2.5, alignItems: "flex-start" }}>

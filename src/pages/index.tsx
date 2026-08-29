@@ -127,8 +127,11 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
-            全国の高校を偏差値・進学実績・特色で比較
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.9, mb: 1 }}>
+            全国の高校・塾を偏差値・進学実績・特色で比較
+          </Typography>
+          <Typography variant="body2" sx={{ fontSize: { xs: "0.75rem", md: "0.875rem" }, opacity: 0.75, mb: 2.5, bgcolor: "rgba(255,255,255,0.1)", display: "inline-block", px: 2, py: 0.5, borderRadius: 3 }}>
+            無料で検索・比較できます
           </Typography>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>

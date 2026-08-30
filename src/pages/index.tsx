@@ -169,6 +169,23 @@ export default function HomePage() {
         </Box>
       </Box>
 
+      {/* 価値訴求バナー */}
+      <Box sx={{ maxWidth: "900px", mx: "auto", px: 2, mt: "-24px", position: "relative", zIndex: 10, mb: 3 }}>
+        <Box sx={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 2 }}>
+          {[
+            { icon: "🏆", title: "5,000校以上掲載", desc: "全国の高校・中高一貫校を網羅" },
+            { icon: "📊", title: "偏差値で比較", desc: "最新の偏差値データで一覧比較" },
+            { icon: "✅", title: "完全無料", desc: "資料請求・問い合わせもすべて無料" },
+          ].map((v) => (
+            <Paper key={v.title} elevation={3} sx={{ p: { xs: 1.5, sm: 2 }, textAlign: "center", border: "1px solid #f0f0f0", borderRadius: 2 }}>
+              <Typography sx={{ fontSize: 28, lineHeight: 1.2, mb: 0.5 }}>{v.icon}</Typography>
+              <Typography sx={{ fontWeight: 700, fontSize: { xs: 11, sm: 13 }, mb: 0.25 }}>{v.title}</Typography>
+              <Typography sx={{ fontSize: { xs: 10, sm: 11 }, color: "#757575", lineHeight: 1.4 }}>{v.desc}</Typography>
+            </Paper>
+          ))}
+        </Box>
+      </Box>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>

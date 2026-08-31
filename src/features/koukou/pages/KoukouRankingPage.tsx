@@ -93,8 +93,9 @@ export default function KoukouRankingPage(props: Props) {
 
         {/* Classification Filter */}
         <Box
-          component="nav"
-          aria-label="分類フィルター"
+          component="div"
+          role="group"
+          aria-label="並び替え"
           sx={{
             display: "grid",
             gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" },

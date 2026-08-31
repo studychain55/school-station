@@ -169,6 +169,11 @@ export default function HomePage() {
         </Box>
       </Box>
 
+      {/* 実績バー */}
+      <Box sx={{ bgcolor: "#1e782d", color: "white", py: 1.25, textAlign: "center", fontSize: 14, fontWeight: "bold", letterSpacing: "0.05em" }}>
+        全国掲載中 ｜ 無料で一括比較・お問い合わせ
+      </Box>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>

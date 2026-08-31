@@ -8,6 +8,7 @@ import BreadCrumb from "@/components/UI/BreadCrumb";
 import FAQ from "@/components/UI/FAQ";
 import { generateGoogleMapsUrl } from "@/utils/maps";
 import type { MinkouSchoolListItem, Breadcrumb } from "@/types";
+import InquiryForm from "@/components/InquiryForm";
 
 type Props = {
   school: MinkouSchoolListItem;
@@ -460,6 +461,22 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           </Box>
         </Box>
 
+        {/* お問い合わせフォーム */}
+        <Box id="inquiry" sx={{ scrollMarginTop: "5rem", mb: 4 }}>
+          <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
+            無料でお問い合わせ
+          </Typography>
+          <Box sx={{ bgcolor: "white", border: "1px solid #E0E0E0", borderRadius: 2, p: { xs: 2, sm: 3 } }}>
+            <InquiryForm
+              siteId="school-station"
+              facilityTable="MinkouSchool"
+              facilityId={school.id}
+              facilityUid={school.slug}
+              facilityName={school.name}
+            />
+          </Box>
+        </Box>
+
         {/* SEO Text Section */}
         <Box sx={{ mb: 4, p: 2, bgcolor: "#f4f4f4", borderRadius: 1 }}>
           <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
@@ -481,6 +498,32 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           </Typography>
         </Box>
       </Container>
+
+      {/* モバイル固定CTA */}
+      <Box
+        sx={{
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          zIndex: 40,
+          bgcolor: "white",
+          borderTop: "1px solid #E0E0E0",
+          p: 1.5,
+          display: { xs: "block", md: "none" },
+          boxShadow: "0 -2px 8px rgba(0,0,0,0.1)",
+        }}
+      >
+        <Button
+          variant="contained"
+          fullWidth
+          href="#inquiry"
+          component="a"
+          sx={{ bgcolor: "#1e782d", "&:hover": { bgcolor: "#155c23" }, fontWeight: "bold", py: 1.25, fontSize: 14 }}
+        >
+          無料でお問い合わせ
+        </Button>
+      </Box>
     </>
   );
 }

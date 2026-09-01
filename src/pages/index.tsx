@@ -83,6 +83,36 @@ export default function HomePage() {
 
   return (
     <>
+      {/* モバイル専用スティッキーCTA */}
+      <Box
+        sx={{
+          display: { xs: "flex", md: "none" },
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1300,
+          bgcolor: "#FF6F00",
+          boxShadow: "0 -2px 12px rgba(0,0,0,0.18)",
+          p: 0,
+        }}
+      >
+        <Link href="/rankings/koukou/" style={{ textDecoration: "none", width: "100%" }}>
+          <Box
+            sx={{
+              width: "100%",
+              textAlign: "center",
+              py: 1.5,
+              color: "#fff",
+              fontWeight: 700,
+              fontSize: 15,
+            }}
+          >
+            学校を無料で探す →
+          </Box>
+        </Link>
+      </Box>
+
       <SEO
         title="School Station | 高校偏差値ランキング【2026年度版】"
         description="全国の高校偏差値ランキングを都道府県別・地方別・分類別に掲載。School Stationで志望校選びに役立つ偏差値情報をチェック。"

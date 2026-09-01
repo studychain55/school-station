@@ -174,6 +174,45 @@ export default function JukuListPage({
           );
         })()}
 
+        {/* アクティブフィルターチップ */}
+        {(() => {
+          const currentPurpose = router.query.purpose as string | undefined;
+          const currentCategory = router.query.category as string | undefined;
+          const chips: { label: string; onRemoveHref: string }[] = [];
+
+          const buildRemoveUrl = (key: string) => {
+            const q = { ...router.query };
+            delete q[key];
+            delete q.page;
+            const qs = new URLSearchParams(q as Record<string, string>).toString();
+            return qs ? `${router.pathname}?${qs}` : router.pathname;
+          };
+
+          if (currentPurpose) chips.push({ label: `目的: ${currentPurpose}`, onRemoveHref: buildRemoveUrl("purpose") });
+          if (currentCategory) chips.push({ label: `スタイル: ${currentCategory}`, onRemoveHref: buildRemoveUrl("category") });
+
+          if (chips.length === 0) return null;
+          return (
+            <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 2, alignItems: "center" }}>
+              <Typography sx={{ fontSize: 12, color: "#6B7280" }}>絞り込み中:</Typography>
+              {chips.map((chip) => (
+                <Link key={chip.label} href={chip.onRemoveHref} style={{ textDecoration: "none" }}>
+                  <Box component="span" sx={{
+                    display: "inline-flex", alignItems: "center", gap: 0.5,
+                    px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600,
+                    bgcolor: JUKU_RED, color: "#fff", cursor: "pointer",
+                    "&:hover": { bgcolor: "#8E0000" },
+                    transition: "all 0.12s",
+                  }}>
+                    {chip.label}
+                    <Box component="span" sx={{ ml: 0.25, fontWeight: 400, fontSize: 13, lineHeight: 1 }}>✕</Box>
+                  </Box>
+                </Link>
+              ))}
+            </Box>
+          );
+        })()}
+
         {schools.length === 0 ? (
           <Box
             sx={{

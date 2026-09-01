@@ -164,8 +164,15 @@ export default function JukuCard({ school, rank }: Props) {
             ))}
           </Box>
 
+          {/* 対象学年 */}
+          {school.JukuSchoolYear.length > 0 && (
+            <Typography sx={{ fontSize: 11, color: "#6B7280", mb: 0.5 }}>
+              対象: {school.JukuSchoolYear.map((y) => y.year).join("・")}
+            </Typography>
+          )}
+
           {/* アクセス */}
-          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5 }}>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, mb: 1 }}>
             {school.address && (
               <Box sx={{ display: "flex", alignItems: "center", gap: 0.3 }}>
                 <LocationOnIcon sx={{ fontSize: 13, color: "#9CA3AF" }} />
@@ -183,6 +190,24 @@ export default function JukuCard({ school, rank }: Props) {
                 </Typography>
               </Box>
             )}
+          </Box>
+
+          {/* CTA */}
+          <Box
+            sx={{
+              width: "100%",
+              bgcolor: JUKU_RED,
+              color: "#fff",
+              textAlign: "center",
+              py: 0.75,
+              borderRadius: 1,
+              fontSize: 13,
+              fontWeight: 700,
+              "&:hover": { bgcolor: "#8E0000" },
+              transition: "background-color 0.15s",
+            }}
+          >
+            詳細を見る →
           </Box>
         </Box>
       </Box>

@@ -81,7 +81,7 @@ export default function JukuListPage({
             {title}
           </Typography>
           <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
+            {totalCount > 0 ? <><span style={{ fontWeight: 700, color: "#1e782d" }}>{totalCount}件</span>の塾が見つかりました</> : "現在掲載準備中です"}
           </Typography>
         </Container>
       </Box>

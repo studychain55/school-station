@@ -124,8 +124,28 @@ export default function JukuListPage({
             return qs ? `${basePath}?${qs}` : basePath;
           };
 
+          const hasActiveFilter = !!(currentPurpose || currentCategory);
+          const resetPath = (() => {
+            const q = { ...baseQuery };
+            delete q.purpose;
+            delete q.category;
+            delete q.page;
+            const qs = new URLSearchParams(q as Record<string, string>).toString();
+            return qs ? `${basePath}?${qs}` : basePath;
+          })();
+
           return (
             <Box sx={{ mb: 3 }}>
+              {/* 条件リセット */}
+              {hasActiveFilter && (
+                <Box sx={{ display: "flex", justifyContent: "flex-end", mb: 1 }}>
+                  <Link href={resetPath} style={{ textDecoration: "none" }}>
+                    <Box component="span" sx={{ fontSize: 12, color: "#6B7280", display: "inline-flex", alignItems: "center", gap: 0.5, "&:hover": { color: JUKU_RED, textDecoration: "underline" } }}>
+                      ✕ 条件をリセット
+                    </Box>
+                  </Link>
+                </Box>
+              )}
               {/* 目的フィルター */}
               <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
                 <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>

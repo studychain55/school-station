@@ -18,7 +18,7 @@ export default function JukuCard({ school, rank }: Props) {
   const router = useRouter();
 
   return (
-    <Link href={href} style={{ textDecoration: "none" }}>
+    <Link href={href} aria-label={`${school.name}（${school.JukuBrand.name}）の詳細を見る`} style={{ textDecoration: "none" }}>
       <Box
         sx={{
           bgcolor: "#fff",

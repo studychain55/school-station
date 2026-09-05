@@ -124,10 +124,21 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           <Typography variant="h1" component="h1" sx={{ fontSize: { xs: "1.4rem", sm: "2rem" }, mb: 1, color: "#1e782d", fontWeight: 700 }}>
             {school.name}
           </Typography>
-          <Typography variant="body1" sx={{ color: "#37474F", mb: 1 }}>
+          <Typography variant="body1" sx={{ color: "#37474F", mb: 2 }}>
             {school.classification === "PUBLIC" ? "公立高校" : school.classification === "PRIVATE" ? "私立高校" : "国立高校"}
             {prefectureTitle && ` • ${prefectureTitle}`}
           </Typography>
+          {school.deviation_value_max && (
+            <Box sx={{ display: "inline-flex", alignItems: "baseline", gap: 1, bgcolor: "rgba(255,255,255,0.7)", px: 2, py: 1, borderRadius: 1 }}>
+              <Typography sx={{ color: "#757575", fontSize: 13, fontWeight: 600 }}>偏差値</Typography>
+              <Typography sx={{ color: "#1e782d", fontSize: { xs: "2rem", sm: "2.5rem" }, fontWeight: 700, lineHeight: 1 }}>
+                {school.deviation_value_max}
+              </Typography>
+              {school.deviation_value_min && school.deviation_value_min !== school.deviation_value_max && (
+                <Typography sx={{ color: "#757575", fontSize: 13 }}>〜{school.deviation_value_min}</Typography>
+              )}
+            </Box>
+          )}
         </Box>
 
         {/* Main Grid */}
@@ -286,7 +297,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
             <Card sx={{ border: "1px solid #E0E0E0" }}>
               <CardContent>
                 <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
-                  アクション
+                  この学校を調べる
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                   {school.address && (

@@ -131,6 +131,9 @@ export default function HomePage() {
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
           {/* 都道府県クイックナビ */}
+          <Typography variant="body2" sx={{ fontSize: 12, opacity: 0.7, mb: 1 }}>
+            都道府県を選んで探す
+          </Typography>
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[
               { label: "東京", slug: "tokyo" },
@@ -172,6 +175,9 @@ export default function HomePage() {
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>
+          <Typography variant="body2" sx={{ color: "#757575", mb: 1.5, fontSize: 14 }}>
+            5,000校以上の偏差値データを無料で公開中
+          </Typography>
           <Link href="/rankings/koukou/" style={{ textDecoration: "none" }}>
             <Button
               variant="contained"
@@ -186,9 +192,12 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              全国ランキングを見る →
             </Button>
           </Link>
+          <Typography variant="caption" sx={{ display: "block", color: "#9E9E9E", mt: 1 }}>
+            偏差値が高い順に並んでいます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}
@@ -298,6 +307,13 @@ export default function HomePage() {
                 </Paper>
               </Link>
             ))}
+          </Box>
+          <Box sx={{ mt: 2, textAlign: "center" }}>
+            <Link href="/column/" style={{ textDecoration: "none" }}>
+              <Typography sx={{ color: "#1e782d", fontSize: 14, fontWeight: 600, "&:hover": { textDecoration: "underline" } }}>
+                すべてのコラムを見る →
+              </Typography>
+            </Link>
           </Box>
         </Box>
 

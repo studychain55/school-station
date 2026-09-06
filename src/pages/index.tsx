@@ -186,9 +186,12 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              今すぐ高校を探す →
             </Button>
           </Link>
+          <Typography variant="body2" sx={{ mt: 1.5, color: "#757575", fontSize: 13 }}>
+            全国5,000校以上の偏差値を無料で検索・比較できます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

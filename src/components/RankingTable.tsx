@@ -22,12 +22,15 @@ function formatDeviation(school: MinkouSchoolListItem): string {
 export default function RankingTable({ schools, startRank = 1, prefectureSlug }: Props) {
   if (schools.length === 0) {
     return (
-      <Box sx={{ py: 6, textAlign: "center" }}>
+      <Box sx={{ py: 6, textAlign: "center", border: "1px dashed #E0E0E0", borderRadius: 2 }}>
         <Typography variant="h6" sx={{ color: "#BDBDBD", mb: 1, fontWeight: 500 }}>
           該当する高校が見つかりませんでした
         </Typography>
+        <Typography variant="body2" sx={{ color: "#9E9E9E", mb: 1.5 }}>
+          別の都道府県や分類（公立・私立・国立）に絞り込んでみてください。
+        </Typography>
         <Typography variant="body2" sx={{ color: "#9E9E9E" }}>
-          検索条件を変更してお試しください。
+          全国ランキングから探す場合は、上部のフィルターで「全て」を選択してください。
         </Typography>
       </Box>
     );

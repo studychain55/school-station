@@ -285,8 +285,11 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
             {/* Action Card */}
             <Card sx={{ border: "1px solid #E0E0E0" }}>
               <CardContent>
-                <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 2, fontWeight: 600 }}>
-                  アクション
+                <Typography variant="h2" component="h2" sx={{ fontSize: "1.25rem", mb: 0.5, fontWeight: 600 }}>
+                  学校情報を確認する
+                </Typography>
+                <Typography variant="body2" sx={{ color: "#757575", fontSize: 12, mb: 2 }}>
+                  公式情報・地図でさらに詳しく調べましょう
                 </Typography>
                 <Box sx={{ display: "flex", flexDirection: "column", gap: 1 }}>
                   {school.address && (
@@ -299,7 +302,7 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                       rel="noopener noreferrer"
                       sx={{ justifyContent: "flex-start" }}
                     >
-                      Google Mapsで見る
+                      Google Mapsで位置を確認
                     </Button>
                   )}
                   {school.source_url && (
@@ -311,9 +314,14 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      公式サイト
+                      公式サイトで詳細を見る
                     </Button>
                   )}
+                </Box>
+                <Box sx={{ mt: 2, p: 1.5, bgcolor: "#f0f6f0", borderRadius: 1 }}>
+                  <Typography variant="caption" sx={{ color: "#555", display: "block", lineHeight: 1.6 }}>
+                    📋 掲載データは各校・文部科学省の公表情報をもとに毎年更新しています。最新の入試情報は必ず公式サイトでご確認ください。
+                  </Typography>
                 </Box>
               </CardContent>
             </Card>

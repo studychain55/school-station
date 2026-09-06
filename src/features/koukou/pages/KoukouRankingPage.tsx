@@ -99,7 +99,7 @@ export default function KoukouRankingPage(props: Props) {
             display: "grid",
             gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(4, 1fr)" },
             gap: 1,
-            mb: 3,
+            mb: 1.5,
           }}
         >
           {CLASSIFICATION_LINKS.map((link) => (
@@ -115,6 +115,10 @@ export default function KoukouRankingPage(props: Props) {
             </Link>
           ))}
         </Box>
+        <Typography variant="body2" sx={{ mb: 2.5, color: "#757575", fontSize: 12, textAlign: "right" }}>
+          {classificationLabel ? `${classificationLabel} ` : "全て "}
+          {areaLabel && `${areaLabel}の`}高校 {totalCount.toLocaleString()}校を掲載中
+        </Typography>
 
         {/* TOP 5 Highlight (only on page 1) */}
         {currentPage === 1 && top5.length > 0 && (

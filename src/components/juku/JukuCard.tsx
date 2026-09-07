@@ -184,6 +184,9 @@ export default function JukuCard({ school, rank }: Props) {
               </Box>
             )}
           </Box>
+          <span className="mt-auto block text-white text-xs font-bold py-2 rounded-lg w-full text-center" style={{backgroundColor: '#1e782d'}}>
+            詳細を見る →
+          </span>
         </Box>
       </Box>
     </Link>

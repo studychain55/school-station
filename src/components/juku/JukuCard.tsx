@@ -184,6 +184,9 @@ export default function JukuCard({ school, rank }: Props) {
               </Box>
             )}
           </Box>
+          <Typography sx={{ fontSize: 11, fontWeight: 700, color: JUKU_RED, mt: 1 }}>
+            詳細を見る →
+          </Typography>
         </Box>
       </Box>
     </Link>

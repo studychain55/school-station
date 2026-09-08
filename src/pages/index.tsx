@@ -405,6 +405,13 @@ export default function HomePage() {
           </Typography>
         </Box>
       </Container>
+
+      {/* モバイル固定CTAバー */}
+      <div className="fixed bottom-0 left-0 right-0 z-50 md:hidden bg-white border-t border-gray-200 p-3 shadow-lg">
+        <Link href="/juku/" className="block w-full text-center bg-[#7C3AED] text-white font-bold py-3 rounded-xl text-sm">
+          条件に合う学習塾を今すぐ探す →
+        </Link>
+      </div>
     </>
   );
 }

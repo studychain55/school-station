@@ -1,3 +1,4 @@
+import React from "react";
 import { Container, Typography, Box, Button, Paper } from "@mui/material";
 import Accordion from "@mui/material/Accordion";
 import AccordionSummary from "@mui/material/AccordionSummary";
@@ -127,9 +128,41 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* 検索フォーム */}
+          <Box
+            component="form"
+            onSubmit={(e: React.FormEvent<HTMLFormElement>) => {
+              e.preventDefault();
+              const kw = (e.currentTarget.elements.namedItem("kw") as HTMLInputElement)?.value?.trim();
+              window.location.href = `/rankings/koukou/${kw ? `?q=${encodeURIComponent(kw)}` : ""}`;
+            }}
+            sx={{ display: "flex", gap: 1, width: "100%", maxWidth: 480, mb: 2 }}
+          >
+            <Box
+              component="input"
+              name="kw"
+              type="text"
+              placeholder="高校名・都市名で検索"
+              sx={{
+                flex: 1, px: 2, py: 1.2, fontSize: 14, borderRadius: 2, border: "none",
+                outline: "none", color: "#111", bgcolor: "white",
+              }}
+            />
+            <Box
+              component="button"
+              type="submit"
+              sx={{
+                bgcolor: "#FF6F00", color: "white", fontWeight: 700, fontSize: 14,
+                px: 3, py: 1.2, borderRadius: 2, border: "none", cursor: "pointer",
+                "&:hover": { bgcolor: "#E65100" }, flexShrink: 0,
+              }}
+            >
+              検索
+            </Box>
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

@@ -344,21 +344,60 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: "sticky", top: 80, display: "flex", flexDirection: "column", gap: 2 }}>
               {/* 問い合わせCTA */}
-              <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
-                <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
-                  無料で問い合わせる
+              <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center", border: "2px solid rgba(255,255,255,0.2)" }}>
+                <Typography sx={{ fontWeight: 800, fontSize: 16, mb: 0.5 }}>
+                  無料体験・資料請求
                 </Typography>
-                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                  体験授業・資料請求も受付中
+                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.85)", mb: 2 }}>
+                  体験授業・資料請求・見学を受付中
                 </Typography>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>
+                    <Box
+                      sx={{
+                        bgcolor: "#fff",
+                        color: JUKU_RED,
+                        py: 1.5,
+                        borderRadius: 1.5,
+                        fontWeight: 800,
+                        fontSize: 15,
+                        mb: 1.5,
+                        "&:hover": { opacity: 0.92 },
+                        boxShadow: "0 2px 8px rgba(0,0,0,0.15)",
+                      }}
+                    >
                       <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
-                      公式サイトへ
+                      無料で問い合わせる
                     </Box>
                   </a>
                 )}
+                {school.telephone && (
+                  <a href={`tel:${school.telephone}`} style={{ textDecoration: "none" }}>
+                    <Box
+                      sx={{
+                        bgcolor: "rgba(255,255,255,0.15)",
+                        color: "#fff",
+                        py: 1,
+                        borderRadius: 1.5,
+                        fontWeight: 700,
+                        fontSize: 13,
+                        mb: 1.5,
+                        border: "1px solid rgba(255,255,255,0.3)",
+                        "&:hover": { bgcolor: "rgba(255,255,255,0.25)" },
+                      }}
+                    >
+                      📞 電話で問い合わせる
+                    </Box>
+                  </a>
+                )}
+                {/* 信頼シグナル */}
+                <Box sx={{ display: "flex", flexDirection: "column", gap: 0.5, mt: 1 }}>
+                  {["無料で相談できます", "しつこい勧誘なし", "見学・体験授業あり"].map((t) => (
+                    <Typography key={t} sx={{ fontSize: 11, color: "rgba(255,255,255,0.8)" }}>
+                      ✓ {t}
+                    </Typography>
+                  ))}
+                </Box>
               </Box>
 
               {/* アクセス */}

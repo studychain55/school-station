@@ -131,6 +131,9 @@ export default function HomePage() {
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
           {/* 都道府県クイックナビ */}
+          <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.65)", mb: 0.75, letterSpacing: 0.5 }}>
+            人気のキーワード：
+          </Typography>
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[
               { label: "東京", slug: "tokyo" },

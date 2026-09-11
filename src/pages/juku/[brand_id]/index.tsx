@@ -238,6 +238,7 @@ export default function JukuBrandPage({ brand, schools }: Props) {
                 mb: 3,
                 position: "sticky",
                 top: 80,
+                boxShadow: "0 4px 16px rgba(0,0,0,0.18)",
               }}
             >
               <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>無料で相談・問い合わせ</Typography>

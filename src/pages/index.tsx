@@ -169,6 +169,13 @@ export default function HomePage() {
         </Box>
       </Box>
 
+      {/* Trust Strip */}
+      <Box sx={{ bgcolor: "#e8f5e9", color: "#1e782d", py: 1, textAlign: "center" }}>
+        <Typography variant="body2" sx={{ fontSize: 13, fontWeight: 500 }}>
+          全国<strong>10,000校以上</strong>の偏差値データを掲載 ｜ 完全無料 ｜ 最新2026年度版
+        </Typography>
+      </Box>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* Hero Button Section */}
         <Box sx={{ textAlign: "center", py: 3, mb: 2 }}>

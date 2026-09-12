@@ -481,6 +481,44 @@ export default function SchoolDetailPage({ school, breadcrumbs, canonical, prefe
           </Typography>
         </Box>
       </Container>
+
+      {/* Sticky Mobile CTA */}
+      <Box
+        sx={{
+          display: { xs: "flex", sm: "none" },
+          position: "fixed",
+          bottom: 0,
+          left: 0,
+          right: 0,
+          zIndex: 1200,
+          bgcolor: "#1e782d",
+          color: "white",
+          px: 2,
+          py: 1.5,
+          gap: 1,
+          alignItems: "center",
+          justifyContent: "center",
+          boxShadow: "0 -2px 8px rgba(0,0,0,0.2)",
+        }}
+      >
+        <Button
+          variant="contained"
+          size="small"
+          href={school.source_url || `/rankings/koukou/`}
+          target={school.source_url ? "_blank" : undefined}
+          rel={school.source_url ? "noopener noreferrer" : undefined}
+          sx={{
+            bgcolor: "white",
+            color: "#1e782d",
+            fontWeight: 700,
+            fontSize: 13,
+            px: 3,
+            "&:hover": { bgcolor: "#f0f6f0" },
+          }}
+        >
+          {school.source_url ? "公式サイトを見る" : "ランキングに戻る"}
+        </Button>
+      </Box>
     </>
   );
 }

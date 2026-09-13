@@ -186,9 +186,12 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              今すぐ全国ランキングを見る →
             </Button>
           </Link>
+          <Typography variant="body2" sx={{ mt: 1, color: "#757575", fontSize: 12 }}>
+            ※完全無料・会員登録不要でご利用いただけます
+          </Typography>
         </Box>
 
         {/* Quick Prefecture Links */}

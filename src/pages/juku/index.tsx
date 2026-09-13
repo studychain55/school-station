@@ -97,6 +97,9 @@ export default function JukuTopPage() {
             個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
           </Typography>
           <JukuSearchBox />
+          <Typography sx={{ mt: 1.5, fontSize: 12, color: "rgba(255,255,255,0.65)", textAlign: "center" }}>
+            ※無料で比較・資料請求できます。しつこい営業は一切ありません。
+          </Typography>
         </Container>
       </Box>
 

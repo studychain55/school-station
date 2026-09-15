@@ -184,6 +184,7 @@ export default function HomePage() {
                 fontSize: { xs: 14, sm: 16 },
                 fontWeight: 700,
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
+                minHeight: "44px",
               }}
             >
               全国ランキングを見る

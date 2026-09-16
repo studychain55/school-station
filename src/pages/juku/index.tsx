@@ -100,6 +100,34 @@ export default function JukuTopPage() {
         </Container>
       </Box>
 
+      {/* かんたん3ステップ */}
+      <Box sx={{ py: { xs: 4, sm: 5 }, bgcolor: "#F9FAFB" }}>
+        <Container maxWidth="lg">
+          <Typography component="h2" sx={{ fontWeight: 800, fontSize: { xs: "1.25rem", sm: "1.5rem" }, mb: 0.75, color: "#111827", textAlign: "center" }}>
+            かんたん3ステップで見つかる
+          </Typography>
+          <Typography sx={{ fontSize: 14, color: "#6B7280", textAlign: "center", mb: 3 }}>
+            強引な勧誘なし・完全無料でご利用いただけます
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(3, 1fr)" }, gap: 2 }}>
+            {[
+              { step: "1", title: "塾を探す", desc: "地域・目的・スタイルで絞り込んで、ぴったりの塾をすぐ発見", icon: "🔍" },
+              { step: "2", title: "料金・環境を確認", desc: "口コミ・料金・授業スタイルを比較して納得のいく選択を", icon: "📋" },
+              { step: "3", title: "無料で見学・相談", desc: "気になる塾に直接問い合わせ。強引な勧誘は一切なし", icon: "✅" },
+            ].map((item) => (
+              <Box key={item.step} sx={{ bgcolor: "#fff", border: "1px solid #E5E7EB", borderRadius: 2, p: 3, textAlign: "center", position: "relative" }}>
+                <Box sx={{ position: "absolute", top: -14, left: "50%", transform: "translateX(-50%)", bgcolor: JUKU_RED, color: "#fff", fontWeight: 800, fontSize: 13, px: 1.5, py: 0.25, borderRadius: 5 }}>
+                  STEP {item.step}
+                </Box>
+                <Typography sx={{ fontSize: 32, mb: 1.5, mt: 0.5 }}>{item.icon}</Typography>
+                <Typography sx={{ fontWeight: 800, fontSize: 16, color: "#111827", mb: 0.75 }}>{item.title}</Typography>
+                <Typography sx={{ fontSize: 13, color: "#6B7280", lineHeight: 1.6 }}>{item.desc}</Typography>
+              </Box>
+            ))}
+          </Box>
+        </Container>
+      </Box>
+
       {/* 目的から探す */}
       <Box sx={{ py: { xs: 4, sm: 5 }, bgcolor: "#fff" }}>
         <Container maxWidth="lg">

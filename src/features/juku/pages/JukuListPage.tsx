@@ -47,6 +47,7 @@ export default function JukuListPage({
   const router = useRouter();
   const totalPages = Math.ceil(totalCount / perPage);
   const [nameFilter, setNameFilter] = useState("");
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
   const displayedSchools = nameFilter
     ? schools.filter((s) => s.name.includes(nameFilter) || s.JukuBrand.name.includes(nameFilter))
     : schools;
@@ -124,52 +125,106 @@ export default function JukuListPage({
             return qs ? `${basePath}?${qs}` : basePath;
           };
 
+          const hasActiveFilters = !!(currentPurpose || currentCategory);
+          const activePurposeLabel = currentPurpose ? JUKU_PURPOSES.find((p) => p.value === currentPurpose)?.label : null;
+          const activeCategoryLabel = currentCategory ? JUKU_CATEGORIES.find((c) => c.value === currentCategory)?.label : null;
+
           return (
             <Box sx={{ mb: 3 }}>
-              {/* 目的フィルター */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
-                {JUKU_PURPOSES.map((p) => {
-                  const isActive = currentPurpose === p.value;
-                  return (
-                    <Link key={p.value} href={buildFilterUrl("purpose", isActive ? undefined : p.value)} style={{ textDecoration: "none" }}>
+              {/* アクティブフィルターチップ（常に表示） */}
+              {hasActiveFilters && (
+                <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
+                  <Typography sx={{ fontSize: 12, color: "#6B7280" }}>絞り込み中:</Typography>
+                  {activePurposeLabel && (
+                    <Link href={buildFilterUrl("purpose", undefined)} style={{ textDecoration: "none" }}>
                       <Box component="span" sx={{
-                        display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
-                        bgcolor: isActive ? JUKU_RED : "#fff",
-                        color: isActive ? "#fff" : JUKU_RED,
-                        borderColor: isActive ? JUKU_RED : JUKU_RED_BG2,
-                        cursor: "pointer",
-                        transition: "all 0.12s",
-                        "&:hover": { bgcolor: isActive ? "#8E0000" : JUKU_RED_BG },
+                        display: "inline-flex", alignItems: "center", gap: 0.5, px: 1.5, py: 0.4, borderRadius: 5,
+                        fontSize: 12, fontWeight: 600, bgcolor: JUKU_RED, color: "#fff", cursor: "pointer",
+                        "&:hover": { bgcolor: "#8E0000" }, transition: "all 0.12s",
                       }}>
-                        {p.label}
+                        {activePurposeLabel} ×
                       </Box>
                     </Link>
-                  );
-                })}
-              </Box>
-              {/* スタイルフィルター */}
-              <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
-                <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>スタイル:</Typography>
-                {JUKU_CATEGORIES.map((c) => {
-                  const isActive = currentCategory === c.value;
-                  return (
-                    <Link key={c.value} href={buildFilterUrl("category", isActive ? undefined : c.value)} style={{ textDecoration: "none" }}>
+                  )}
+                  {activeCategoryLabel && (
+                    <Link href={buildFilterUrl("category", undefined)} style={{ textDecoration: "none" }}>
                       <Box component="span" sx={{
-                        display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
-                        bgcolor: isActive ? "#374151" : "#fff",
-                        color: isActive ? "#fff" : "#374151",
-                        borderColor: isActive ? "#374151" : "#E5E7EB",
-                        cursor: "pointer",
-                        transition: "all 0.12s",
-                        "&:hover": { borderColor: "#374151", bgcolor: "#F3F4F6" },
+                        display: "inline-flex", alignItems: "center", gap: 0.5, px: 1.5, py: 0.4, borderRadius: 5,
+                        fontSize: 12, fontWeight: 600, bgcolor: "#374151", color: "#fff", cursor: "pointer",
+                        "&:hover": { bgcolor: "#1F2937" }, transition: "all 0.12s",
                       }}>
-                        {c.label}
+                        {activeCategoryLabel} ×
                       </Box>
                     </Link>
-                  );
-                })}
+                  )}
+                </Box>
+              )}
+
+              {/* フィルターパネル開閉ボタン */}
+              <Box
+                onClick={() => setIsFilterOpen((v) => !v)}
+                sx={{
+                  display: "inline-flex", alignItems: "center", gap: 0.75, px: 2, py: 0.75,
+                  border: `1px solid ${hasActiveFilters ? JUKU_RED : "#E5E7EB"}`,
+                  borderRadius: 1.5, cursor: "pointer", bgcolor: "#fff", mb: 1.5,
+                  "&:hover": { borderColor: JUKU_RED, bgcolor: JUKU_RED_BG },
+                  transition: "all 0.12s",
+                }}
+              >
+                <Typography sx={{ fontSize: 13, fontWeight: 600, color: hasActiveFilters ? JUKU_RED : "#374151" }}>
+                  {isFilterOpen ? "▲ フィルターを閉じる" : "▼ フィルターで絞り込む"}
+                </Typography>
               </Box>
+
+              {/* 折りたたみフィルターパネル */}
+              {isFilterOpen && (
+                <Box sx={{ bgcolor: "#F9FAFB", border: "1px solid #E5E7EB", borderRadius: 2, p: 2 }}>
+                  {/* 目的フィルター */}
+                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, mb: 1.5, alignItems: "center" }}>
+                    <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>目的:</Typography>
+                    {JUKU_PURPOSES.map((p) => {
+                      const isActive = currentPurpose === p.value;
+                      return (
+                        <Link key={p.value} href={buildFilterUrl("purpose", isActive ? undefined : p.value)} style={{ textDecoration: "none" }}>
+                          <Box component="span" sx={{
+                            display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
+                            bgcolor: isActive ? JUKU_RED : "#fff",
+                            color: isActive ? "#fff" : JUKU_RED,
+                            borderColor: isActive ? JUKU_RED : JUKU_RED_BG2,
+                            cursor: "pointer",
+                            transition: "all 0.12s",
+                            "&:hover": { bgcolor: isActive ? "#8E0000" : JUKU_RED_BG },
+                          }}>
+                            {p.label}
+                          </Box>
+                        </Link>
+                      );
+                    })}
+                  </Box>
+                  {/* スタイルフィルター */}
+                  <Box sx={{ display: "flex", flexWrap: "wrap", gap: 0.75, alignItems: "center" }}>
+                    <Typography sx={{ fontSize: 12, color: "#6B7280", minWidth: "fit-content" }}>スタイル:</Typography>
+                    {JUKU_CATEGORIES.map((c) => {
+                      const isActive = currentCategory === c.value;
+                      return (
+                        <Link key={c.value} href={buildFilterUrl("category", isActive ? undefined : c.value)} style={{ textDecoration: "none" }}>
+                          <Box component="span" sx={{
+                            display: "inline-block", px: 1.5, py: 0.4, borderRadius: 5, fontSize: 12, fontWeight: 600, border: "1px solid",
+                            bgcolor: isActive ? "#374151" : "#fff",
+                            color: isActive ? "#fff" : "#374151",
+                            borderColor: isActive ? "#374151" : "#E5E7EB",
+                            cursor: "pointer",
+                            transition: "all 0.12s",
+                            "&:hover": { borderColor: "#374151", bgcolor: "#F3F4F6" },
+                          }}>
+                            {c.label}
+                          </Box>
+                        </Link>
+                      );
+                    })}
+                  </Box>
+                </Box>
+              )}
             </Box>
           );
         })()}

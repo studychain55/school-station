@@ -266,6 +266,13 @@ export default function JukuBrandPage({ brand, schools }: Props) {
               <Typography sx={{ fontSize: 11, color: "rgba(255,255,255,0.6)" }}>
                 外部サイトへ遷移します
               </Typography>
+              <Box sx={{ mt: 2, pt: 2, borderTop: "1px solid rgba(255,255,255,0.2)", display: "flex", flexDirection: "column", gap: 0.5 }}>
+                {["✓ 強引な営業なし", "✓ 無料でご相談いただけます"].map((text) => (
+                  <Typography key={text} sx={{ fontSize: 12, color: "rgba(255,255,255,0.85)", fontWeight: 500 }}>
+                    {text}
+                  </Typography>
+                ))}
+              </Box>
             </Box>
           </Grid>
         </Grid>

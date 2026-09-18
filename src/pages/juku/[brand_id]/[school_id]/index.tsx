@@ -157,7 +157,7 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
         </Container>
       </Box>
 
-      <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
+      <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 }, pb: { xs: 10, md: 4 } }}>
         <Grid container spacing={3}>
           {/* メインコンテンツ */}
           <Grid size={{ xs: 12, md: 8 }}>
@@ -426,6 +426,39 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           </Grid>
         </Grid>
       </Container>
+
+      {/* モバイル用固定CTA */}
+      {school.official_site_url && (
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            zIndex: 50,
+            bgcolor: "#fff",
+            borderTop: "1px solid #E5E7EB",
+            px: 2,
+            py: 1.5,
+            gap: 1.5,
+          }}
+        >
+          <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", flex: 1 }}>
+            <Box sx={{ bgcolor: JUKU_RED, color: "#fff", py: 1.25, borderRadius: 2, fontWeight: 700, fontSize: 14, textAlign: "center" }}>
+              公式サイトへ
+            </Box>
+          </a>
+          {school.telephone && (
+            <a href={`tel:${school.telephone}`} style={{ textDecoration: "none" }}>
+              <Box sx={{ bgcolor: JUKU_RED_BG, color: JUKU_RED, py: 1.25, px: 2, borderRadius: 2, fontWeight: 700, fontSize: 14, textAlign: "center", border: `1px solid ${JUKU_RED_BG2}`, display: "flex", alignItems: "center", gap: 0.5 }}>
+                <PhoneIcon sx={{ fontSize: 18 }} />
+                電話
+              </Box>
+            </a>
+          )}
+        </Box>
+      )}
 
       {/* 同じブランドの他の教室 */}
       {relatedSchools.length > 0 && (

@@ -83,6 +83,9 @@ export default function JukuListPage({
           <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
             {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
           </Typography>
+          <Typography sx={{ fontSize: 13, color: "#9CA3AF", mt: 0.5 }}>
+            授業スタイル・目的で絞り込み可。体験授業・料金相談は各塾に無料でお問い合わせください。
+          </Typography>
         </Container>
       </Box>
 

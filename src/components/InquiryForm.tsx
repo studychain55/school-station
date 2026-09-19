@@ -39,6 +39,14 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
   );
 
   return (
+    <div>
+      <div className="flex flex-wrap gap-3 mb-4 p-3 bg-red-50 rounded-lg border border-red-100">
+        {['無料で相談できます', '返信は通常1営業日以内', '個人情報は厳守'].map((text) => (
+          <span key={text} className="flex items-center gap-1 text-xs text-[#C62828] font-medium">
+            <span>✓</span> {text}
+          </span>
+        ))}
+      </div>
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
         <label className="block text-sm font-bold text-gray-700 mb-1">お名前 <span className="text-red-500">*</span></label>
@@ -51,7 +59,7 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
           className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="example@email.com"/>
       </div>
       <div>
-        <label className="block text-sm font-bold text-gray-700 mb-1">電話番号</label>
+        <label className="block text-sm font-bold text-gray-700 mb-1">電話番号 <span className="text-xs text-gray-400 font-normal">（任意）</span></label>
         <input type="tel" value={form.phone} onChange={e=>setForm(f=>({...f,phone:e.target.value}))}
           className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-[#1e782d]" placeholder="090-1234-5678"/>
       </div>
@@ -62,9 +70,10 @@ export default function InquiryForm({ siteId, facilityTable, facilityId, facilit
       </div>
       {status==='error' && <p className="text-red-500 text-sm">送信に失敗しました。もう一度お試しください。</p>}
       <button type="submit" disabled={status==='loading'}
-        className="w-full bg-[#1e782d] text-white font-bold py-4 rounded-lg disabled:opacity-50">
-        {status==='loading'?'送信中...':' お問い合わせを送信する'}
+        className="w-full bg-[#1e782d] hover:bg-[#155420] text-white font-bold py-4 rounded-lg disabled:opacity-50 transition-colors">
+        {status==='loading'?'送信中...':'無料で問い合わせる →'}
       </button>
     </form>
+    </div>
   );
 }

@@ -127,9 +127,16 @@ export default function HomePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" }, fontWeight: "bold", mb: 1.5, lineHeight: 1.2 }}>
             高校選びのすべてが、ここに
           </Typography>
-          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2.5 }}>
+          <Typography variant="body1" sx={{ fontSize: { xs: "0.875rem", md: "1rem" }, opacity: 0.8, mb: 2 }}>
             全国の高校を偏差値・進学実績・特色で比較
           </Typography>
+          {/* 検索フォーム */}
+          <Box component="form" action="/rankings/koukou/" method="get" sx={{ display: "flex", width: "100%", maxWidth: 480, mb: 2.5, borderRadius: 2, overflow: "hidden", boxShadow: "0 4px 20px rgba(0,0,0,0.3)" }}>
+            <Box component="input" type="text" name="q" placeholder="高校名・都道府県で検索" sx={{ flex: 1, px: 2, py: 1.5, fontSize: 14, border: "none", outline: "none", color: "#111827" }} />
+            <Box component="button" type="submit" sx={{ bgcolor: "#FF6F00", color: "#fff", fontWeight: 700, fontSize: 14, px: 3, border: "none", cursor: "pointer", "&:hover": { bgcolor: "#E65100" }, transition: "background-color 0.2s" }}>
+              検索
+            </Box>
+          </Box>
           {/* 都道府県クイックナビ */}
           <Box sx={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 1 }}>
             {[

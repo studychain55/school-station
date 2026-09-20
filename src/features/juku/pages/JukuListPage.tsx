@@ -80,9 +80,20 @@ export default function JukuListPage({
           >
             {title}
           </Typography>
-          <Typography sx={{ fontSize: 14, color: "#6B7280" }}>
-            {totalCount > 0 ? `${totalCount}件の塾が見つかりました` : "現在掲載準備中です"}
-          </Typography>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexWrap: "wrap" }}>
+            {totalCount > 0 ? (
+              <>
+                <Box component="span" sx={{ display: "inline-flex", alignItems: "center", bgcolor: JUKU_RED, color: "#fff", fontSize: 12, fontWeight: 700, px: 1.5, py: 0.4, borderRadius: 5 }}>
+                  {totalCount.toLocaleString()}件
+                </Box>
+                <Typography component="span" sx={{ fontSize: 13, color: "#6B7280" }}>
+                  の塾が見つかりました
+                </Typography>
+              </>
+            ) : (
+              <Typography sx={{ fontSize: 14, color: "#6B7280" }}>現在掲載準備中です</Typography>
+            )}
+          </Box>
         </Container>
       </Box>
 
@@ -211,11 +222,19 @@ export default function JukuListPage({
           </Box>
         ) : (
           <>
-            {nameFilter && (
+            {nameFilter && displayedSchools.length === 0 ? (
+              <Box sx={{ textAlign: "center", py: 8, bgcolor: "#fff", borderRadius: 2, border: "1px solid #E5E7EB", mb: 2 }}>
+                <Typography sx={{ fontSize: 40, mb: 2 }}>🔍</Typography>
+                <Typography sx={{ fontWeight: 700, fontSize: 16, color: "#374151", mb: 1 }}>
+                  「{nameFilter}」に一致する塾が見つかりませんでした
+                </Typography>
+                <Typography sx={{ fontSize: 13, color: "#6B7280", mb: 2 }}>塾名・ブランド名を変えてお試しください</Typography>
+              </Box>
+            ) : nameFilter ? (
               <Typography sx={{ fontSize: 13, color: "#6B7280", mb: 1.5 }}>
                 「{nameFilter}」で絞り込み中 — {displayedSchools.length}件
               </Typography>
-            )}
+            ) : null}
             <Grid container spacing={2}>
               {displayedSchools.map((school, i) => (
                 <Grid key={school.id} size={{ xs: 12, sm: 6, lg: 4 }}>

@@ -128,9 +128,10 @@ export default function KoukouRankingPage(props: Props) {
 
         {/* Full Ranking */}
         <Box sx={{ mb: 2 }}>
-          <Typography variant="h2" component="h2" sx={{ mb: 2 }}>
+          <Typography variant="h2" component="h2" sx={{ mb: 0.5 }}>
             全ランキング（{totalCount.toLocaleString()}校）
           </Typography>
+          <Typography sx={{ fontSize: 12, color: "text.secondary", mb: 2 }}>複数の学校を比べて最適な1校を選びましょう</Typography>
           <RankingTable schools={schools} startRank={startRank} prefectureSlug={prefectureSlug} />
         </Box>
 

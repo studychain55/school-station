@@ -701,18 +701,18 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
           <Grid size={{ xs: 12, md: 4 }}>
             <Box sx={{ position: "sticky", top: 80, display: "flex", flexDirection: "column", gap: 2 }}>
               {/* 問い合わせCTA */}
-              <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center" }}>
-                <Typography sx={{ fontWeight: 700, fontSize: 15, mb: 0.5 }}>
-                  無料で問い合わせる
+              <Box sx={{ bgcolor: JUKU_RED, borderRadius: 2, p: 3, color: "#fff", textAlign: "center", boxShadow: "0 4px 16px rgba(180,0,0,0.25)" }}>
+                <Typography sx={{ fontWeight: 800, fontSize: 16, mb: 0.5 }}>
+                  無料で体験授業を申し込む
                 </Typography>
-                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.8)", mb: 2 }}>
-                  体験授業・資料請求も受付中
+                <Typography sx={{ fontSize: 12, color: "rgba(255,255,255,0.85)", mb: 2 }}>
+                  資料請求・見学も無料で受付中
                 </Typography>
                 {school.official_site_url && (
                   <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
-                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.25, borderRadius: 1.5, fontWeight: 700, fontSize: 14, mb: 1, "&:hover": { opacity: 0.9 } }}>
+                    <Box sx={{ bgcolor: "#fff", color: JUKU_RED, py: 1.5, borderRadius: 1.5, fontWeight: 800, fontSize: 15, mb: 1, "&:hover": { opacity: 0.9 }, transition: "opacity 0.15s" }}>
                       <PublicIcon sx={{ fontSize: 16, mr: 0.5, verticalAlign: "middle" }} />
-                      公式サイトへ
+                      公式サイトで申し込む →
                     </Box>
                   </a>
                 )}

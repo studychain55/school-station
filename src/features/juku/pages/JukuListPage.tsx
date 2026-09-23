@@ -141,6 +141,9 @@ export default function JukuListPage({
         </Box>
 
         {/* クイックフィルター */}
+        <Typography sx={{ fontSize: 13, fontWeight: 700, color: "#374151", mb: 1, display: "flex", alignItems: "center", gap: 0.5 }}>
+          🔍 絞り込み
+        </Typography>
         {(() => {
           const currentPurpose = router.query.purpose as string | undefined;
           const currentCategory = router.query.category as string | undefined;

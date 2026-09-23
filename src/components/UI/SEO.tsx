@@ -17,8 +17,8 @@ const OG_IMAGE = `${SITE_URL}/og-image.png`;
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "name": "School Station",
-  "description": "全国の高校偏差値ランキングを都道府県別・地方別・分類別に掲載",
+  "name": "オンライン塾比較ステーション",
+  "description": "オンライン塾を料金・特徴・口コミで比較。全国の高校偏差値ランキングも掲載",
   "url": SITE_URL,
   "potentialAction": {
     "@type": "SearchAction",
@@ -33,8 +33,8 @@ const websiteJsonLd = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "name": "School Station",
-  "description": "高校偏差値ランキング情報サイト",
+  "name": "オンライン塾比較ステーション",
+  "description": "オンライン塾比較・高校偏差値ランキング情報サイト",
   "url": SITE_URL,
   "logo": `${SITE_URL}/logo.png`,
   "sameAs": [],
@@ -54,11 +54,11 @@ export default function SEO({ title, description, canonical, breadcrumbs, faqIte
     "dateModified": new Date().toISOString().split('T')[0],
     "author": {
       "@type": "Organization",
-      "name": "School Station",
+      "name": "オンライン塾比較ステーション",
     },
     "publisher": {
       "@type": "Organization",
-      "name": "School Station",
+      "name": "オンライン塾比較ステーション",
       "logo": {
         "@type": "ImageObject",
         "url": `${SITE_URL}/logo.png`,
@@ -110,7 +110,7 @@ export default function SEO({ title, description, canonical, breadcrumbs, faqIte
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
-      <meta property="og:site_name" content="School Station" />
+      <meta property="og:site_name" content="オンライン塾比較ステーション" />
       <meta property="og:image" content={OG_IMAGE} />
       <meta property="og:image:width" content="1200" />
       <meta property="og:image:height" content="630" />

@@ -19,7 +19,7 @@ export default function Custom404() {
 
   return (
     <>
-      <SEO title="ページが見つかりません | School Station" description="お探しのページは見つかりませんでした。" />
+      <SEO title="ページが見つかりません | オンライン塾比較ステーション" description="お探しのページは見つかりませんでした。" />
       <Head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       </Head>

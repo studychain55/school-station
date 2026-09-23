@@ -33,14 +33,14 @@ export default function JukuTopPage() {
   return (
     <>
       <Head>
-        <title>塾・予備校を探す | School Station</title>
+        <title>オンライン塾・塾を探す | オンライン塾比較ステーション</title>
         <meta
           name="description"
-          content="全国の塾・予備校を検索。都道府県・目的・授業スタイルで絞り込み可能。個別指導・集団授業・オンライン塾の口コミ・料金を比較して最適な塾を見つけよう。"
+          content="オンライン塾を料金・特徴・口コミで徹底比較。全国の塾・予備校も都道府県・目的・授業スタイルで検索可能。個別指導・映像授業・集団授業から最適な塾を見つけよう。"
         />
-        <link rel="canonical" href="https://school-station.jp/juku/" />
-        <meta property="og:title" content="塾・予備校を探す | School Station" />
-        <meta property="og:description" content="全国の塾・予備校を地域・目的・スタイルで検索。口コミ・料金比較もできます。" />
+        <link rel="canonical" href="https://school-station.com/juku/" />
+        <meta property="og:title" content="オンライン塾・塾を探す | オンライン塾比較ステーション" />
+        <meta property="og:description" content="オンライン塾を料金・特徴・口コミで比較。全国の塾・予備校も検索できます。" />
         <meta property="og:type" content="website" />
         <script
           type="application/ld+json"
@@ -48,12 +48,12 @@ export default function JukuTopPage() {
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "School Station 塾検索",
-              url: "https://school-station.jp/juku/",
-              description: "全国の塾・予備校を検索できるサービス",
+              name: "オンライン塾比較ステーション",
+              url: "https://school-station.com/juku/",
+              description: "オンライン塾・全国の塾・予備校を比較検索できるサービス",
               potentialAction: {
                 "@type": "SearchAction",
-                target: "https://school-station.jp/juku/p-{prefecture}/",
+                target: "https://school-station.com/juku/p-{prefecture}/",
                 "query-input": "required name=prefecture",
               },
             }),
@@ -97,6 +97,67 @@ export default function JukuTopPage() {
             個別指導・集団授業・オンライン塾を都道府県・目的・スタイルで絞り込み。口コミ・料金を比較して最適な塾を見つけよう。
           </Typography>
           <JukuSearchBox />
+        </Container>
+      </Box>
+
+      {/* ━━━━ オンライン塾特集 ━━━━ */}
+      <Box sx={{ py: { xs: 4, sm: 5 }, bgcolor: "#FFF8E1", borderBottom: "1px solid #FFE082" }}>
+        <Container maxWidth="lg">
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1, mb: 1 }}>
+            <Box sx={{ bgcolor: "#FF6F00", color: "#fff", fontSize: 11, fontWeight: 700, px: 1, py: 0.25, borderRadius: 1 }}>
+              注目
+            </Box>
+            <Typography component="h2" sx={{ fontWeight: 800, fontSize: { xs: "1.15rem", sm: "1.4rem" }, color: "#111827" }}>
+              オンライン塾ランキング
+            </Typography>
+          </Box>
+          <Typography sx={{ fontSize: 13, color: "#6B7280", mb: 2.5 }}>
+            料金・口コミ・特徴で比較した厳選オンライン塾。全国どこからでも受講可能。
+          </Typography>
+          <Box sx={{ display: "grid", gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)", md: "repeat(4, 1fr)" }, gap: 1.5, mb: 2.5 }}>
+            {[
+              { label: "個別指導のオンライン塾", href: "/juku/?category=%E5%80%8B%E5%88%A5%E6%8C%87%E5%B0%8E", sub: "マンツーマン・少人数" },
+              { label: "映像授業のオンライン塾", href: "/juku/?category=%E6%98%A0%E5%83%8F%E6%8E%88%E6%A5%AD", sub: "月額2,178円〜" },
+              { label: "大学受験のオンライン塾", href: "/juku/ranking/daigaku/", sub: "難関大対策" },
+              { label: "中学受験のオンライン塾", href: "/juku/ranking/chugaku/", sub: "小学生向け" },
+            ].map((item) => (
+              <Link key={item.label} href={item.href} style={{ textDecoration: "none" }}>
+                <Box
+                  sx={{
+                    bgcolor: "#fff",
+                    border: "1.5px solid #FFE082",
+                    borderRadius: 2,
+                    px: 2,
+                    py: 1.5,
+                    "&:hover": { borderColor: "#FF6F00", bgcolor: "#FFF3E0" },
+                    transition: "all 0.15s",
+                  }}
+                >
+                  <Typography sx={{ fontWeight: 700, fontSize: 13, color: "#E65100" }}>{item.label}</Typography>
+                  <Typography sx={{ fontSize: 11, color: "#6B7280" }}>{item.sub}</Typography>
+                </Box>
+              </Link>
+            ))}
+          </Box>
+          <Link href="/juku/ranking/" style={{ textDecoration: "none" }}>
+            <Box
+              sx={{
+                display: "inline-flex",
+                alignItems: "center",
+                bgcolor: JUKU_RED,
+                color: "#fff",
+                px: 3,
+                py: 1.25,
+                borderRadius: 2,
+                fontWeight: 700,
+                fontSize: 14,
+                "&:hover": { bgcolor: "#A31515" },
+                transition: "background-color 0.15s",
+              }}
+            >
+              オンライン塾ランキングを全て見る →
+            </Box>
+          </Link>
         </Container>
       </Box>
 
@@ -323,20 +384,22 @@ export default function JukuTopPage() {
         </Container>
       </Box>
 
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            mainEntity: FAQ_ITEMS.map((item) => ({
-              "@type": "Question",
-              name: item.q,
-              acceptedAnswer: { "@type": "Answer", text: item.a },
-            })),
-          }),
-        }}
-      />
+      <Head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: FAQ_ITEMS.map((item) => ({
+                "@type": "Question",
+                name: item.q,
+                acceptedAnswer: { "@type": "Answer", text: item.a },
+              })),
+            }),
+          }}
+        />
+      </Head>
     </>
   );
 }

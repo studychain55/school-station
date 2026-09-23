@@ -10,10 +10,13 @@ import type { RankingPageProps } from "@/types";
 import prefectures from "@/data/prefectures";
 import { REGIONS } from "@/data/regions";
 import { generateFAQItems } from "@/utils/seo/generateRankingMetadata";
+import { buildKoukouPrefectureRankingHref } from "@/utils/routes/koukou";
 
 type Props = RankingPageProps & {
   canonical: string;
 };
+
+const CURRENT_YEAR = new Date().getFullYear();
 
 const CLASSIFICATION_LINKS = [
   { label: "全て", href: "/rankings/koukou/", classification: undefined },
@@ -72,14 +75,14 @@ export default function KoukouRankingPage(props: Props) {
           sx={{
             mb: 3,
             p: { xs: 2.5, sm: 3 },
-            background: "linear-gradient(135deg, #e9f2ea 0%, #bcd7c0 100%)",
+            background: "linear-gradient(135deg, #e0e7ff 0%, #e0e7ff 100%)",
             borderRadius: 2,
           }}
         >
           <Typography
             variant="h1"
             component="h1"
-            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#1e782d" }}
+            sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem", md: "1.8rem" }, mb: 1, color: "#4f46e5" }}
           >
             {areaLabel}{classLabel} 高校偏差値ランキング
           </Typography>
@@ -160,7 +163,7 @@ export default function KoukouRankingPage(props: Props) {
           </Typography>
           <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(3, 1fr)", sm: "repeat(4, 1fr)", md: "repeat(6, 1fr)" }, gap: 1 }}>
             {prefectures.map((pref) => (
-              <Link key={pref.slug} href={`/rankings/koukou/p-${pref.slug}/`} style={{ textDecoration: "none" }}>
+              <Link key={pref.slug} href={buildKoukouPrefectureRankingHref(pref.slug)} style={{ textDecoration: "none" }}>
                 <Button variant="outlined" fullWidth size="small" sx={{ fontSize: 12, minHeight: 36 }}>
                   {pref.title}
                 </Button>
@@ -177,7 +180,7 @@ export default function KoukouRankingPage(props: Props) {
           <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242" }}>
             {prefectureTitle && (
               <>
-                {prefectureTitle}の高校を偏差値順にランキング。School Station では{totalCount}校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
+                {prefectureTitle}の高校を偏差値順にランキング。オンライン塾比較ステーション では{totalCount}校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
                 <br />
                 <br />
                 偏差値は学校の学力レベルを示す指標で、50を平均として上下に分布します。偏差値が高いほど入試難易度が高い傾向にあります。{prefectureTitle}の中でも偏差値トップの高校は入試競争が激しくなるため、志願倍率や入試結果も合わせてご確認ください。
@@ -185,7 +188,7 @@ export default function KoukouRankingPage(props: Props) {
             )}
             {regionTitle && (
               <>
-                {regionTitle}地方の高校を偏差値順にランキング。School Station では{totalCount}校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
+                {regionTitle}地方の高校を偏差値順にランキング。オンライン塾比較ステーション では{totalCount}校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
                 <br />
                 <br />
                 {regionTitle}内の都道府県ごとに偏差値の分布が異なります。詳細は各都道府県のランキングページでご確認ください。
@@ -193,7 +196,7 @@ export default function KoukouRankingPage(props: Props) {
             )}
             {!prefectureTitle && !regionTitle && (
               <>
-                全国の高校を偏差値順にランキング。School Station では{totalCount}校の高校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
+                全国の高校を偏差値順にランキング。オンライン塾比較ステーション では{totalCount}校の高校の偏差値データを網羅しており、進路選択や学校選びに役立つ情報を提供しています。上記のランキングに掲載されている学校は、文部科学省や各校が発表している{CURRENT_YEAR}年度の最新偏差値データをもとに作成しています。
                 <br />
                 <br />
                 偏差値は学校の学力レベルを示す指標で、50を平均として上下に分布します。各都道府県や地方ごとのランキングもご確認いただけます。自分の志望エリアに合わせて、最適な学校選択をしてください。
@@ -221,14 +224,14 @@ export default function KoukouRankingPage(props: Props) {
               { href: "/column/bukatsu-choise/", title: "高校の部活選び｜入学前に知ること" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
-                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>
+                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#4f46e5", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>
                   {article.title}
                 </Box>
               </Link>
             ))}
           </Box>
           <Link href="/column/" style={{ textDecoration: "none" }}>
-            <Box component="span" sx={{ fontSize: 13, color: "#1e782d", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
+            <Box component="span" sx={{ fontSize: 13, color: "#4f46e5", cursor: "pointer", "&:hover": { textDecoration: "underline" } }}>
               すべてのコラムを見る →
             </Box>
           </Link>
@@ -240,5 +243,3 @@ export default function KoukouRankingPage(props: Props) {
     </>
   );
 }
-
-const CURRENT_YEAR = new Date().getFullYear();

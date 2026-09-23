@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { AppBar, Toolbar, Typography, Container, Box } from "@mui/material";
 
-const JUKU_RED = "#C62828";
+const JUKU_RED = "#0f766e";
 
 export default function Header() {
   const router = useRouter();
@@ -18,7 +18,7 @@ export default function Header() {
           top: 0,
           zIndex: 2000,
           padding: "8px 16px",
-          backgroundColor: isJuku ? JUKU_RED : "#1e782d",
+          backgroundColor: isJuku ? JUKU_RED : "#4f46e5",
           color: "#fff",
           textDecoration: "none",
         }}
@@ -30,16 +30,16 @@ export default function Header() {
       <AppBar
         position="sticky"
         sx={{
-          bgcolor: isJuku ? JUKU_RED : "#1e782d",
-          boxShadow: "0 1px 3px rgba(0,0,0,0.12)",
+          bgcolor: "#ffffff",
+          boxShadow: "0 1px 0 rgba(15, 23, 42, 0.08)",
           transition: "background-color 0.2s",
         }}
       >
         <Container maxWidth="lg">
           <Toolbar disableGutters sx={{ minHeight: { xs: 52, sm: 56 }, gap: { xs: 1.5, sm: 3 } }}>
-            <Link href="/" aria-label="School Station ホーム" style={{ textDecoration: "none", color: "inherit" }}>
-              <Typography variant="h6" sx={{ fontWeight: 700, color: "#fff", letterSpacing: 1, fontSize: { xs: 14, sm: 18 } }}>
-                School Station
+            <Link href="/" aria-label="オンライン塾比較ステーション ホーム" style={{ textDecoration: "none", color: "inherit" }}>
+              <Typography variant="h6" sx={{ fontWeight: 700, color: "#0f172a", letterSpacing: 0, fontSize: { xs: 12, sm: 15 }, lineHeight: 1.2 }}>
+                オンライン塾比較ステーション
               </Typography>
             </Link>
             <Box sx={{ flexGrow: 1 }} />
@@ -50,12 +50,12 @@ export default function Header() {
               <Box
                 component="span"
                 sx={{
-                  color: isJuku ? "rgba(255,255,255,0.7)" : "#e9f2ea",
-                  "&:hover": { color: "#fff" },
+                  color: "#475569",
+                  "&:hover": { color: "#0f766e", bgcolor: "rgba(15, 118, 110, 0.12)" },
                   transition: "color 0.15s",
                 }}
               >
-                高校ランキング
+                偏差値データ
               </Box>
             </Link>
             <Link
@@ -65,17 +65,17 @@ export default function Header() {
               <Box
                 component="span"
                 sx={{
-                  color: isJuku ? "#fff" : "rgba(233,242,234,0.7)",
+                  color: "#0f766e",
                   fontWeight: isJuku ? 700 : 500,
-                  bgcolor: isJuku ? "rgba(255,255,255,0.18)" : "transparent",
+                  bgcolor: "rgba(15, 118, 110, 0.08)",
                   px: isJuku ? 1.5 : 0,
                   py: isJuku ? 0.5 : 0,
                   borderRadius: 1,
                   transition: "all 0.15s",
-                  "&:hover": { color: "#fff" },
+                  "&:hover": { color: "#0f766e", bgcolor: "rgba(15, 118, 110, 0.12)" },
                 }}
               >
-                塾を探す
+                比較する
               </Box>
             </Link>
           </Toolbar>

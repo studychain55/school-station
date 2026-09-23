@@ -2,6 +2,13 @@ import type { NextApiRequest, NextApiResponse } from "next";
 import prefectures from "@/data/prefectures";
 import { REGIONS } from "@/data/regions";
 import supabase from "@/utils/supabase";
+import {
+  buildKoukouCityRankingHref,
+  buildKoukouPrefectureRankingHref,
+  buildKoukouSchoolDetailHref,
+} from "@/utils/routes/koukou";
+import { facultyHref, universityHref } from "@/lib/daigaku-lp";
+import { universities } from "@/lib/daigaku-lp-data";
 
 const SITE_URL = "https://school-station.com";
 
@@ -14,7 +21,38 @@ type URLEntry = {
 
 export default async function handler(_req: NextApiRequest, res: NextApiResponse) {
   const urls: URLEntry[] = [
-    { loc: "/", changefreq: "weekly", priority: 1.0 },
+    
+    { loc: "/service/", changefreq: "weekly", priority: 0.8 },
+    { loc: "/service/eiken-coach/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/service/eiken-coach-adults/", changefreq: "monthly", priority: 0.7 },
+    { loc: "/service/toeic-coach/", changefreq: "monthly", priority: 0.7 },
+{ loc: "/", changefreq: "weekly", priority: 1.0 },
+    { loc: "/english-level/eiken-1-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toeic-900-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/ielts-7-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toefl-ibt-95-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/eiken-pre1-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toeic-800-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/ielts-6-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toefl-ibt-80-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/eiken-2-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toeic-600-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/ielts-5-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toefl-ibt-60-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/eiken-pre2-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toeic-400-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/ielts-4-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/toefl-ibt-40-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/english-level/eiken-3-vocabulary-test/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/eiken-grade1-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/eiken-pre1-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/eiken-grade2-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/eiken-pre2-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/eiken-grade3-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/toeic-600-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/toeic-700-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/toeic-800-vocabulary/", changefreq: "weekly", priority: 0.95 },
+    { loc: "/toeic-900-vocabulary/", changefreq: "weekly", priority: 0.95 },
     { loc: "/rankings/koukou/", changefreq: "weekly", priority: 0.9 },
     { loc: "/rankings/koukou/public/", changefreq: "weekly", priority: 0.8 },
     { loc: "/rankings/koukou/private/", changefreq: "weekly", priority: 0.8 },
@@ -86,6 +124,23 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
 
   const today = new Date().toISOString().split("T")[0];
 
+  universities.forEach((university) => {
+    urls.push({
+      loc: universityHref(university),
+      changefreq: "monthly",
+      priority: 0.65,
+      lastmod: today,
+    });
+    university.faculties.forEach((faculty) => {
+      urls.push({
+        loc: facultyHref(university, faculty),
+        changefreq: "monthly",
+        priority: 0.6,
+        lastmod: today,
+      });
+    });
+  });
+
   // Region pages
   REGIONS.forEach((r) => {
     urls.push({
@@ -99,7 +154,7 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
   // Prefecture pages
   prefectures.forEach((p) => {
     urls.push({
-      loc: `/rankings/koukou/p-${p.slug}/`,
+      loc: buildKoukouPrefectureRankingHref(p.slug),
       changefreq: "weekly",
       priority: 0.75,
       lastmod: today,
@@ -124,7 +179,7 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
         const pref = prefectures.find((p) => p.id === city.prefecture_id);
         if (pref) {
           urls.push({
-            loc: `/rankings/koukou/p-${pref.slug}/c-${city.id}/`,
+            loc: buildKoukouCityRankingHref(pref.slug, city.id),
             changefreq: "weekly",
             priority: 0.65,
             lastmod: today,
@@ -151,7 +206,7 @@ export default async function handler(_req: NextApiRequest, res: NextApiResponse
         if (pref) {
           const lastmod = school.updated_at ? school.updated_at.split("T")[0] : today;
           urls.push({
-            loc: `/rankings/koukou/p-${pref.slug}/schools/${school.id}/`,
+            loc: buildKoukouSchoolDetailHref(school.id, pref.slug, pref.id) ?? buildKoukouPrefectureRankingHref(pref.slug),
             changefreq: "monthly",
             priority: 0.6,
             lastmod,

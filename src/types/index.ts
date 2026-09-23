@@ -179,6 +179,22 @@ export type JukuSchoolListItem = Pick<
   JukuSchoolStation: Pick<JukuSchoolStation, "station_name" | "walk_minutes">[];
 };
 
+export type JukuRankingItem = Pick<
+  JukuSchool,
+  | "id" | "brand_id" | "slug" | "name"
+  | "prefecture_id" | "city_id" | "address"
+  | "review_average_rating" | "total_review_count"
+  | "official_site_url" | "description" | "is_active"
+> & {
+  JukuBrand: Pick<JukuBrand, "id" | "slug" | "name" | "logo_url" | "is_online" | "official_site_url">;
+  JukuSchoolYear: JukuSchoolYear[];
+  JukuSchoolCategory: JukuSchoolCategory[];
+  JukuSchoolPurpose: JukuSchoolPurpose[];
+  JukuSchoolStation: Pick<JukuSchoolStation, "station_name" | "walk_minutes">[];
+  JukuRecommend: JukuRecommend[];
+  JukuCourse: Pick<JukuCourse, "id" | "name" | "target_grade" | "monthly_fee_min" | "monthly_fee_max" | "enrollment_fee" | "sort_order">[];
+};
+
 export type JukuListPageProps = {
   schools: JukuSchoolListItem[];
   totalCount: number;
@@ -191,4 +207,5 @@ export type JukuListPageProps = {
   stationName?: string;
   currentPage: number;
   perPage: number;
+  showOnlineBanner?: boolean;
 };

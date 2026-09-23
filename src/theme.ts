@@ -3,16 +3,16 @@ import { createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#1565C0",
-      light: "#42A5F5",
-      dark: "#0D47A1",
-      "50": "#E3F2FD",
-      "100": "#BBDEFB",
+      main: "#0f766e",
+      light: "#14b8a6",
+      dark: "#134e4a",
+      "50": "#ecfdf5",
+      "100": "#ccfbf1",
     },
     secondary: {
-      main: "#FF6F00",
-      light: "#FFA040",
-      dark: "#E65100",
+      main: "#f59e0b",
+      light: "#fbbf24",
+      dark: "#b45309",
     },
     background: {
       default: "#F8FAFC",
@@ -31,7 +31,7 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: '"Noto Sans JP", "Helvetica Neue", Arial, sans-serif',
-    h1: { fontSize: "2rem", fontWeight: 700, lineHeight: 1.2, letterSpacing: "-0.01em" },
+    h1: { fontSize: "2rem", fontWeight: 700, lineHeight: 1.2, letterSpacing: 0 },
     h2: { fontSize: "1.5rem", fontWeight: 700, lineHeight: 1.3 },
     h3: { fontSize: "1.25rem", fontWeight: 600, lineHeight: 1.4 },
     body1: { lineHeight: 1.6 },
@@ -46,7 +46,7 @@ const theme = createTheme({
           textTransform: "none",
           transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
           "&:focus-visible": {
-            outline: "2px solid #1565C0",
+            outline: "2px solid #0f766e",
             outlineOffset: 2,
           },
         },
@@ -90,10 +90,10 @@ const theme = createTheme({
           "& .MuiPaginationItem-root": {
             fontWeight: 500,
             "&.Mui-selected": {
-              backgroundColor: "#1565C0",
+              backgroundColor: "#0f766e",
               color: "#fff",
               "&:hover": {
-                backgroundColor: "#0D47A1",
+                backgroundColor: "#134e4a",
               },
             },
           },

@@ -86,39 +86,39 @@ export default function Footer() {
           <a href="https://hakenstation.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">派遣ステーション</a>
             <a href="https://mendan-kakutoku.com/" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">求職者面談獲得くん</a>
             <a href="https://robots-center.com/" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ロボット手書きDMセンター</a>
-            <a href="https://scout-souken.com/" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">AIスカウト総合研究所</a>
-            <a href="https://japan-writing-center.com/" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">AIショート動画広告納品くん</a>
-          <a href="https://driverstation.jp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">ドライバーステーション</a>
-          <a href="https://internationalschool-navi.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">インターナショナルスクールナビ</a>
-          <a href="https://ryugakustation.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">留学ステーション</a>
-          <a href="https://musicschool-station.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-white transition-colors">音楽教室ステーション</a>
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-          
-            
-            
-            
-            
-            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </Box>
         </Box>
 

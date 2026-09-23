@@ -11,7 +11,7 @@ import SEO from "@/components/UI/SEO";
 import FAQ from "@/components/UI/FAQ";
 import BreadCrumb from "@/components/UI/BreadCrumb";
 import type { RankingPageProps } from "@/types";
-import Head from "next/head";
+import { buildKoukouPrefectureRankingHref } from "@/utils/routes/koukou";
 
 const ADJACENT_PREFECTURES: Record<number, number[]> = {
   1: [2], 2: [1, 3, 7], 3: [2, 4, 8], 4: [3, 5, 7, 8], 5: [2, 4, 6, 7],
@@ -38,7 +38,7 @@ type PrefectureRankingPageProps = RankingPageProps & {
 };
 
 export default function PrefectureRanking(props: PrefectureRankingPageProps) {
-  const { schools, totalCount, title, description, breadcrumbs, prefectureTitle, prefectureSlug, currentPage, perPage, adjacentPrefectures } = props;
+  const { schools, totalCount, title, description, breadcrumbs, prefectureTitle, prefectureSlug, adjacentPrefectures } = props;
 
   const faqItems = generateFAQItems({
     schools,
@@ -54,29 +54,15 @@ export default function PrefectureRanking(props: PrefectureRankingPageProps) {
       <SEO
         title={title}
         description={description}
-        canonical={`/rankings/koukou/p-${prefectureSlug}/`}
+        canonical={buildKoukouPrefectureRankingHref(prefectureSlug)}
         breadcrumbs={breadcrumbs}
         faqItems={faqItems}
         schools={schools.slice(0, 10).map((s, i) => ({ name: s.name, position: i + 1 }))}
         isRankingPage={true}
       />
-      <Head>
-        <script type="application/ld+json" dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "FAQPage",
-            "mainEntity": faqItems.map((item) => ({
-              "@type": "Question",
-              "name": item.question,
-              "acceptedAnswer": { "@type": "Answer", "text": item.answer },
-            })),
-          })
-        }} />
-      </Head>
-
       <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3 } }}>
         <BreadCrumb items={breadcrumbs} />
-        <KoukouRankingPage {...props} canonical={`/rankings/koukou/p-${prefectureSlug}/`} />
+        <KoukouRankingPage {...props} canonical={buildKoukouPrefectureRankingHref(prefectureSlug)} />
         <Divider sx={{ my: 4 }} />
 
         <Box sx={{ mb: 4 }}>
@@ -96,7 +82,7 @@ export default function PrefectureRanking(props: PrefectureRankingPageProps) {
               { href: "/column/kokosei-nyushi/", title: "高校入試の種類と対策" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
-                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1" }, transition: "all 0.15s" }}>
+                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#4f46e5", "&:hover": { bgcolor: "#FFF8E1" }, transition: "all 0.15s" }}>
                   {article.title}
                 </Box>
               </Link>
@@ -113,7 +99,7 @@ export default function PrefectureRanking(props: PrefectureRankingPageProps) {
             </Typography>
             <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }, gap: 1 }}>
               {adjacentPrefectures.map((adj) => (
-                <Link key={adj.id} href={`/rankings/koukou/p-${adj.slug}/`} style={{ textDecoration: "none" }}>
+                <Link key={adj.id} href={buildKoukouPrefectureRankingHref(adj.slug)} style={{ textDecoration: "none" }}>
                   <Button variant="outlined" fullWidth size="small" sx={{ fontSize: 13, py: 0.8 }}>
                     {adj.title}
                   </Button>

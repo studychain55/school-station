@@ -12,13 +12,14 @@ import SEO from "@/components/UI/SEO";
 import FAQ from "@/components/UI/FAQ";
 import BreadCrumb from "@/components/UI/BreadCrumb";
 import type { RankingPageProps } from "@/types";
+import { buildKoukouPrefectureRankingHref } from "@/utils/routes/koukou";
 
 type RegionRankingPageProps = RankingPageProps & {
   prefecturesInRegion: Array<{ id: number; title: string; slug: string }>;
 };
 
 export default function RegionRanking(props: RegionRankingPageProps) {
-  const { schools, totalCount, title, description, breadcrumbs, regionTitle, regionSlug, currentPage, perPage, prefecturesInRegion } = props;
+  const { schools, totalCount, title, description, breadcrumbs, regionTitle, regionSlug, prefecturesInRegion } = props;
 
   const faqItems = generateFAQItems({
     schools,
@@ -73,7 +74,7 @@ export default function RegionRanking(props: RegionRankingPageProps) {
             </Typography>
             <Box sx={{ display: "grid", gridTemplateColumns: { xs: "repeat(2, 1fr)", sm: "repeat(3, 1fr)", md: "repeat(4, 1fr)" }, gap: 1 }}>
               {prefecturesInRegion.map((pref) => (
-                <Link key={pref.id} href={`/rankings/koukou/p-${pref.slug}/`} style={{ textDecoration: "none" }}>
+                <Link key={pref.id} href={buildKoukouPrefectureRankingHref(pref.slug)} style={{ textDecoration: "none" }}>
                   <Button variant="outlined" fullWidth size="small" sx={{ fontSize: 13, py: 0.8 }}>
                     {pref.title}
                   </Button>
@@ -135,7 +136,7 @@ export default function RegionRanking(props: RegionRankingPageProps) {
               { href: "/column/koukou-bukatsu/", title: "高校の部活動選び｜勉強との両立" },
             ].map((article) => (
               <Link key={article.href} href={article.href} style={{ textDecoration: "none" }}>
-                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#1e782d", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>
+                <Box sx={{ p: 1.5, border: "1px solid #E0E0E0", borderLeft: "3px solid #FF6F00", borderRadius: 1, fontSize: 13, color: "#4f46e5", "&:hover": { bgcolor: "#FFF8E1", borderLeftColor: "#E65100" }, transition: "all 0.15s" }}>
                   {article.title}
                 </Box>
               </Link>

@@ -22,7 +22,7 @@ const DETAIL_SELECT = `
   JukuSchoolCategory(id, category),
   JukuSchoolPurpose(id, purpose),
   JukuCourse(id, name, target_grade, monthly_fee_min, monthly_fee_max, enrollment_fee, annual_fee, description, sort_order),
-  JukuReview(id, user_type, year_type, purpose, frequency, rating_total, rating_teacher, rating_curriculum, rating_access, rating_price, rating_support, body_total, body_teacher, body_curriculum, body_advantage, created_at),
+  JukuReview(id, user_type, year_type, purpose, frequency, rating_total, rating_teacher, rating_curriculum, rating_access, rating_price, rating_support, body_total, body_teacher, body_curriculum, body_advantage, is_active, created_at),
   JukuImage(id, url, alt, sort_order),
   JukuSchoolStation(id, station_name, line_name, walk_minutes, sort_order),
   JukuRecommend(id, title, body, sort_order)
@@ -141,6 +141,72 @@ export async function fetchJukuBrandWithSchools(
   }
 
   return { brand, schools: (schools as unknown as JukuSchoolListItem[]) || [] };
+}
+
+const RANKING_SELECT = `
+  id, brand_id, slug, name,
+  prefecture_id, city_id, address,
+  official_site_url, description,
+  review_average_rating, total_review_count, is_active,
+  JukuBrand(id, slug, name, logo_url, is_online, official_site_url),
+  JukuSchoolYear(id, year),
+  JukuSchoolCategory(id, category),
+  JukuSchoolPurpose(id, purpose),
+  JukuSchoolStation(station_name, walk_minutes),
+  JukuRecommend(id, title, body, sort_order),
+  JukuCourse(id, name, target_grade, monthly_fee_min, monthly_fee_max, enrollment_fee, sort_order)
+` as const;
+
+export async function fetchOnlineJukuRanking(
+  params: { page?: number; perPage?: number; purpose?: string; category?: string; year?: string } = {}
+): Promise<{ schools: import("@/types").JukuRankingItem[]; totalCount: number }> {
+  const { page = 1, perPage = 50 } = params;
+
+  // Get online brand IDs first
+  const { data: onlineBrands } = await supabase
+    .from("JukuBrand")
+    .select("id")
+    .eq("is_online", true)
+    .eq("is_active", true);
+
+  const onlineBrandIds = onlineBrands?.map((b) => b.id) ?? [];
+  if (onlineBrandIds.length === 0) return { schools: [], totalCount: 0 };
+
+  // Fetch ALL online schools (no range limit) so in-memory filters work correctly
+  const { data, error } = await supabase
+    .from("JukuSchool")
+    .select(RANKING_SELECT)
+    .eq("is_active", true)
+    .in("brand_id", onlineBrandIds)
+    .not("review_average_rating", "is", null)
+    .order("review_average_rating", { ascending: false })
+    .order("total_review_count", { ascending: false });
+
+  if (error) {
+    console.error("fetchOnlineJukuRanking error:", error.message);
+    return { schools: [], totalCount: 0 };
+  }
+
+  let schools = (data as unknown as import("@/types").JukuRankingItem[]) || [];
+
+  // In-memory filters
+  if (params.purpose) {
+    schools = schools.filter((s) => s.JukuSchoolPurpose.some((p) => p.purpose === params.purpose));
+  }
+  if (params.category) {
+    schools = schools.filter((s) => s.JukuSchoolCategory.some((c) => c.category === params.category));
+  }
+  if (params.year) {
+    schools = schools.filter((s) => s.JukuSchoolYear.some((y) => y.year === params.year));
+  }
+
+  const totalCount = schools.length;
+
+  // In-memory pagination
+  const offset = (page - 1) * perPage;
+  schools = schools.slice(offset, offset + perPage);
+
+  return { schools, totalCount };
 }
 
 export async function fetchJukuRanking(

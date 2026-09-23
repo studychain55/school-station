@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#4f46e5", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#4f46e5", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouPartTimePage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #4f46e5 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouPartTimePage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校生のアルバイトガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e0e7ff", maxWidth: 600, mx: "auto" }}>
             学業との両立・時間管理・給料・職場選び・面接対策
           </Typography>
         </Box>
@@ -147,7 +147,7 @@ export default function KoukouPartTimePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>実践的な社会人スキルの習得</strong> — 『学校教育では習わない「顧客対応」「電話対応」「報告・連絡・相談」「チームワーク」などの職業スキルが習得できる』『職場での経験を通じて、理論的な知識ではなく、実際の社会で求められるスキルを身につけることができる』『その経験は大学進学後のインターンシップや就職活動で大きな武器になる』『特に営業系・営業管理系の志望に進む場合、アルバイト経験が極めて有利』『面接で「○○というアルバイト経験を通じて、顧客のニーズを汲み取る力を学んだ』と説明できれば、採用官に強い印象を与える』という『キャリア形成への直結性』があります。
@@ -155,7 +155,7 @@ export default function KoukouPartTimePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>経済的独立と金銭感覚の育成</strong> — 『自分で稼いだお金を自分で管理する経験が、金銭感覚を養う』『給料から税金が引かれることで、社会の仕組みを直接学べる』『収支管理の重要性を実感し、無駄遣いを避けるようになる』『親からの経済的独立が促進され、自立心が育成される』『その経験が大学進学後の奨学金返済や、将来の人生設計で活かされる』という『生涯にわたる金銭管理能力』の基礎が形成されます。
@@ -163,7 +163,7 @@ export default function KoukouPartTimePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>人間関係スキルと自己認識の向上</strong> — 『様々な年代・背景を持つ人との関係構築経験が、対人スキルを高める』『職場での上司・先輩からの指導を受けることで、フィードバック受容能力が育成される』『自分の弱点を客観的に認識し、改善する機会が生まれる』『困難な状況での対応力やストレス対処能力が養われる』『その経験が、大学生活での人間関係構築やメンタルヘルス維持に活かされる』という『人格的成長』が達成されます。
@@ -182,7 +182,7 @@ export default function KoukouPartTimePage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>個別指導塾・家庭教師（時給1500～2500円）</strong> — 『教育系志望の生徒にとって最適なアルバイト』『指導経験を通じて、子どもの学習支援方法を実践的に学べる』『塾での指導内容が自分の受験対策の復習になり、理解が深まる』『勉強する側の視点から、教える側の視点に転換する経験が得られる』『シフト調整が容易で、テスト期間の対応が可能な場合が多い』『面接で「塾講師経験を通じて、教育への関心が深まり、教育学部進学を志望した』と説明できれば、推薦入試で強いアピール』『ただし専門知識が必要であり、生徒の成績向上への責任も大きい』という『やりがいと責任が両立する職種』です。
@@ -190,7 +190,7 @@ export default function KoukouPartTimePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>図書館スタッフ・博物館スタッフ（時給950～1100円）</strong> — 『落ち着いた環境で待機時間に勉強でき、学業との両立に最適』『来館者との交流を通じて、情報提供スキルや対人スキルが習得できる』『図書館・博物館の特性として、夜間営業が少なく、帰宅時間が早い』『シフト調整が容易で、テスト対策期間の対応が可能』『文系志望、特に文献研究が必要な学部志望の生徒に適切』『時給は低い傾向だが、勉強時間確保の優先度が高い生徒には最適な選択』『職場の雰囲気が落ち着いているため、精神的ストレスが少ない』という『学業重視の生徒向けの職種』です。
@@ -198,7 +198,7 @@ export default function KoukouPartTimePage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>コンビニ・スーパーのレジ打ち・商品補充（時給900～1000円）</strong> — 『最も一般的な高校生アルバイト』『基本的な顧客対応スキルが習得できる』『シフト調整が容易で、複数の高校との利用者構成のため理解がある』『ただし忙しい時間帯は精神的ストレスが大きく、身体的負担もある』『接客スキルは習得できるが、専門的なスキルには繋がりにくい』『時給も低く、勉強時間確保の面でも課題がある』『学業と両立させるには「平日の昼間帯」「閑散時間帯」を選ぶなどの工夫が必要』という『万能だが学業両立には工夫が必要』な職種です。

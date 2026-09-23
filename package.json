@@ -4,10 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "npx @opennextjs/cloudflare build && wrangler deploy"
+    "deploy": "npm run build && node scripts/patch-opennext-pages-manifest.mjs && npx @opennextjs/cloudflare build --skipNextBuild && node scripts/patch-opennext-dynamic-require.mjs && wrangler deploy"
   },
   "dependencies": {
     "@emotion/react": "^11.14.0",

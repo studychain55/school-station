@@ -1,9 +1,9 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-primary: #1e782d;
-  --color-primary-light: #e9f2ea;
-  --color-primary-dark: #155420;
+  --color-primary: #4f46e5;
+  --color-primary-light: #e0e7ff;
+  --color-primary-dark: #4338ca;
 }
 
 html {
@@ -12,12 +12,12 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
-  letter-spacing: 0.04em;
-  background-color: #f8fafc;
+  letter-spacing: 0;
+  background-color: #f7f8f5;
 }
 
 a, p, span, button, h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 0.04em;
+  letter-spacing: 0;
 }
 
 a {
@@ -25,12 +25,39 @@ a {
 }
 
 a:focus-visible {
-  outline: 2px solid #1565C0;
+  outline: 2px solid #0f766e;
   outline-offset: 2px;
   border-radius: 2px;
 }
 
 ::selection {
-  background-color: #BBDEFB;
-  color: #0D47A1;
+  background-color: #ccfbf1;
+  color: #134e4a;
 }
+
+/* ── studychain typography standards ── */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0;
+  line-height: 1.5;
+}
+p, li, dd, dt {
+  line-height: 1.8;
+  letter-spacing: 0;
+}
+/* section title accent bar */
+.section-title {
+  position: relative;
+  padding-left: 0.875rem;
+}
+.section-title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 1.2em;
+  background-color: var(--color-primary);
+  border-radius: 2px;
+}
+

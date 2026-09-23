@@ -43,6 +43,7 @@ export default function JukuListPage({
   breadcrumbs,
   currentPage,
   perPage,
+  showOnlineBanner,
 }: JukuListPageProps) {
   const router = useRouter();
   const totalPages = Math.ceil(totalCount / perPage);
@@ -62,12 +63,13 @@ export default function JukuListPage({
   return (
     <>
       <Head>
-        <title>{title} | School Station</title>
+        <title>{title} | オンライン塾比較ステーション</title>
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
-        <meta property="og:title" content={`${title} | School Station`} />
+        <meta property="og:title" content={`${title} | オンライン塾比較ステーション`} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
+        {currentPage > 1 && <meta name="robots" content="noindex, follow" />}
       </Head>
 
       {/* ヘッダーバー */}
@@ -85,6 +87,36 @@ export default function JukuListPage({
           </Typography>
         </Container>
       </Box>
+
+      {/* オンライン塾バナー（都道府県・地域ページで表示） */}
+      {showOnlineBanner && (
+        <Box sx={{ bgcolor: "#E3F2FD", borderBottom: "1px solid #BBDEFB", py: 2 }}>
+          <Container maxWidth="lg">
+            <Box sx={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: 1.5 }}>
+              <Box sx={{ display: "flex", alignItems: "center", gap: 1.5 }}>
+                <Box sx={{ fontSize: 28 }}>💻</Box>
+                <Box>
+                  <Typography sx={{ fontWeight: 700, fontSize: 14, color: "#1565C0" }}>
+                    全国対応のオンライン塾もチェック！
+                  </Typography>
+                  <Typography sx={{ fontSize: 12, color: "#374151" }}>
+                    自宅で受講できる。引っ越しや転勤があっても続けられます。
+                  </Typography>
+                </Box>
+              </Box>
+              <Link href="/juku/ranking/" style={{ textDecoration: "none" }}>
+                <Box sx={{
+                  bgcolor: "#1565C0", color: "#fff", px: 2.5, py: 1, borderRadius: 1.5,
+                  fontWeight: 700, fontSize: 13, whiteSpace: "nowrap",
+                  "&:hover": { bgcolor: "#0D47A1" }, transition: "background-color 0.15s",
+                }}>
+                  オンライン塾ランキングを見る →
+                </Box>
+              </Link>
+            </Box>
+          </Container>
+        </Box>
+      )}
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         {/* 塾名絞り込み */}

@@ -91,7 +91,7 @@ export default function KokoseiBaitoPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1e782d 0%, #1e782d 50%, #1976D2 100%)",
+            background: "linear-gradient(135deg, #4f46e5 0%, #4f46e5 50%, #1976D2 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -99,7 +99,7 @@ export default function KokoseiBaitoPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校生のバイトと勉強の両立
           </Typography>
-          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e0e7ff", maxWidth: 600, mx: "auto" }}>
             受験に影響しない効果的なバイト活用法を実践的に解説
           </Typography>
         </Box>
@@ -213,7 +213,7 @@ export default function KokoseiBaitoPage() {
             バイトと勉強を両立させるには、バイト先選びが非常に重要です。以下のポイントを参考に、自分に合ったバイト先を見つけましょう：
           </Typography>
 
-          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0", mb: 3 }}>
+          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #e0e7ff", mb: 3 }}>
             <SubSection title="シフト調整が可能な職場">
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 定期テスト前や受験時期に勤務を減らすことができる職場が理想的です。飲食店、コンビニ、スーパーなどは、比較的シフト調整がしやすいです。面接時に「定期テスト前は勤務を減らしたい」と相談してみましょう。
@@ -229,7 +229,7 @@ export default function KokoseiBaitoPage() {
             </SubSection>
           </Paper>
 
-          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #bcd7c0", mb: 3 }}>
+          <Paper sx={{ p: 2.5, bgcolor: "#F5F9FF", border: "1px solid #e0e7ff", mb: 3 }}>
             <SubSection title="勤務時間が短めの職場">
               <Typography variant="body2" sx={{ lineHeight: 1.8, color: "#424242", mb: 2 }}>
                 1日3～4時間程度のシフトが多い職場が理想的です。長時間勤務の職場は疲労が溜まりやすく、勉強に支障が出やすいため、避けた方が無難です。
@@ -259,7 +259,7 @@ export default function KokoseiBaitoPage() {
 
           <Paper sx={{ overflowX: "auto", mb: 3 }}>
             <Table>
-              <TableHead sx={{ bgcolor: "#1e782d" }}>
+              <TableHead sx={{ bgcolor: "#4f46e5" }}>
                 <TableRow>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>時期</TableCell>
                   <TableCell sx={{ color: "#fff", fontWeight: 700 }}>推奨勤務時間</TableCell>
@@ -340,7 +340,7 @@ export default function KokoseiBaitoPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>バイト本数を減らす</Typography>
@@ -351,7 +351,7 @@ export default function KokoseiBaitoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>バイトを辞める</Typography>
@@ -362,7 +362,7 @@ export default function KokoseiBaitoPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Box>
                   <Typography sx={{ fontWeight: 600, fontSize: "0.95rem", mb: 0.5 }}>短時間シフトのみ</Typography>
@@ -451,8 +451,8 @@ export default function KokoseiBaitoPage() {
         <Divider sx={{ my: 4 }} />
 
         {/* Call to Action */}
-        <Box sx={{ my: 4, p: 3, bgcolor: "#e9f2ea", borderRadius: 2, textAlign: "center" }}>
-          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#1e782d" }}>
+        <Box sx={{ my: 4, p: 3, bgcolor: "#e0e7ff", borderRadius: 2, textAlign: "center" }}>
+          <Typography variant="h3" component="h3" sx={{ fontSize: "1.1rem", fontWeight: 700, mb: 1, color: "#4f46e5" }}>
             受験対策に役立つコラム記事
           </Typography>
           <Typography variant="body2" sx={{ color: "#37474F", mb: 2 }}>
@@ -465,12 +465,12 @@ export default function KokoseiBaitoPage() {
                 display: "inline-block",
                 px: 3,
                 py: 1.2,
-                bgcolor: "#1e782d",
+                bgcolor: "#4f46e5",
                 color: "#fff",
                 borderRadius: 1,
                 fontWeight: 600,
                 fontSize: "0.9rem",
-                "&:hover": { bgcolor: "#1e782d", transform: "translateY(-1px)" },
+                "&:hover": { bgcolor: "#4f46e5", transform: "translateY(-1px)" },
                 transition: "all 0.2s",
                 cursor: "pointer",
               }}
@@ -492,10 +492,10 @@ export default function KokoseiBaitoPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#4f46e5" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#4f46e5", mb: 1 }}>
                   効果的な勉強法
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -510,10 +510,10 @@ export default function KokoseiBaitoPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#4f46e5" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#4f46e5", mb: 1 }}>
                   受験スケジュール完全ガイド
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -528,10 +528,10 @@ export default function KokoseiBaitoPage() {
                   p: 3,
                   border: "1px solid #E0E0E0",
                   transition: "all 0.2s",
-                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#1e782d" },
+                  "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)", borderColor: "#4f46e5" },
                 }}
               >
-                <Typography sx={{ fontWeight: 600, color: "#1e782d", mb: 1 }}>
+                <Typography sx={{ fontWeight: 600, color: "#4f46e5", mb: 1 }}>
                   志望校の選び方
                 </Typography>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
@@ -557,7 +557,7 @@ export default function KokoseiBaitoPage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#1e782d" }}>
+              <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 1, color: "#4f46e5" }}>
                 <ArrowBackIcon />
                 <Typography sx={{ fontWeight: 600 }}>コラム一覧へ</Typography>
               </Box>
@@ -574,7 +574,7 @@ export default function KokoseiBaitoPage() {
                 "&:hover": { boxShadow: "0 4px 8px rgba(0,0,0,0.1)" },
               }}
             >
-              <Typography sx={{ fontWeight: 600, color: "#1e782d" }}>
+              <Typography sx={{ fontWeight: 600, color: "#4f46e5" }}>
                 次の記事: 効果的な勉強法
               </Typography>
             </Paper>
@@ -588,7 +588,7 @@ export default function KokoseiBaitoPage() {
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box id={id} sx={{ mb: 3 }}>
-      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#1e782d" }}>
+      <Typography variant="h2" component="h2" sx={{ mb: 2.5, fontSize: "1.5rem", fontWeight: 700, color: "#4f46e5" }}>
         {title}
       </Typography>
       {children}

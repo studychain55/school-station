@@ -10,7 +10,7 @@ import SchoolIcon from "@mui/icons-material/School";
 function Section({ title, id, children }: { title: string; id: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 4 }}>
-      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#1e782d", mb: 2, scrollMarginTop: 80 }} id={id}>
+      <Typography variant="h2" component="h2" sx={{ fontSize: { xs: "1.2rem", sm: "1.5rem" }, fontWeight: 700, color: "#4f46e5", mb: 2, scrollMarginTop: 80 }} id={id}>
         {title}
       </Typography>
       {children}
@@ -21,7 +21,7 @@ function Section({ title, id, children }: { title: string; id: string; children:
 function SubSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <Box sx={{ mb: 3, ml: { xs: 0, sm: 2 } }}>
-      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#1e782d", mb: 1.5 }}>
+      <Typography variant="h3" component="h3" sx={{ fontSize: "1.05rem", fontWeight: 600, color: "#4f46e5", mb: 1.5 }}>
         {title}
       </Typography>
       {children}
@@ -124,7 +124,7 @@ export default function KoukouWinterStudyPage() {
             textAlign: "center",
             py: { xs: 4, sm: 5 },
             mb: 4,
-            background: "linear-gradient(135deg, #1e782d 0%, #1976D2 50%, #42A5F5 100%)",
+            background: "linear-gradient(135deg, #4f46e5 0%, #1976D2 50%, #42A5F5 100%)",
             borderRadius: 3,
             color: "#fff",
           }}
@@ -132,7 +132,7 @@ export default function KoukouWinterStudyPage() {
           <Typography variant="h1" sx={{ fontSize: { xs: "1.3rem", sm: "1.7rem", md: "2rem" }, mb: 2, fontWeight: 700 }}>
             高校生の冬休み勉強ガイド
           </Typography>
-          <Typography variant="body2" sx={{ color: "#e9f2ea", maxWidth: 600, mx: "auto" }}>
+          <Typography variant="body2" sx={{ color: "#e0e7ff", maxWidth: 600, mx: "auto" }}>
             受験対策・定期テスト復習・新年からの計画立案
           </Typography>
         </Box>
@@ -147,7 +147,7 @@ export default function KoukouWinterStudyPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高校1年生の冬休み</strong> — 『1年間の学習内容を完全に自分のものにするための復習期間』『中学との学習方法の違いに適応して4ヶ月経ち、今ここで理解度を確認すべき時期』『特に数学・英語・物理・化学などの積み上げ教科で、理解不足な箇所を今発見して徹底復習できれば、2年生での学習がスムーズ』『逆に冬休みに放置すると、2年生の授業についていけなくなる』という『基礎確認の機会』です。『定期テストで70点以下だった科目を集中復習する』『その科目で80点以上を目指す学力を冬休みで作る』『新学期の自信が大きく変わる』という『心理的効果も大きい』です。
@@ -155,7 +155,7 @@ export default function KoukouWinterStudyPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高校2年生の冬休み</strong> — 『受験対策の基礎を本格的に構築する最初の機会』『3年生の受験対策に向けて、各科目の弱点分野を把握し、その対策を開始すべき時期』『3年生になってから受験勉強を開始する生徒よりも、2年の冬休みから準備を開始した生徒の方が圧倒的に有利』『志望大学の入試傾向を研究し、どの分野に力を入れるべきかを戦略的に考える』『その戦略に基づいて冬休みの学習計画を立てる』という『戦略立案と実行の分岐点』です。『文理選択が済んでいれば、文系科目・理系科目の本格的な学習が開始される』『この時期に基礎を固めるか固めないかで、3年生での学習進度が大きく異なる』『冬休みで確実な基礎を作り、3年生では応用・実戦対策に集中できる環境を作る』のです。
@@ -163,7 +163,7 @@ export default function KoukouWinterStudyPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>高校3年生の冬休み</strong> — 『共通テスト本試験を2～3週間後に控えた人生で最も重要な勉強期間』『この冬休みをどう過ごすかで共通テストの点数が20～50点変わることも珍しくない』『朝から晩まで完全に受験対策に集中できる最後の連続期間』『冬休み終了時の1月中旬に共通テストを迎えるため、この期間のやり遂げ感が本試験での自信につながる』『本試験で実力を発揮する土台は冬休みで形成される』という『人生決定級の重要性』があります。『共通テスト後は二次試験対策に切り替わるため、冬休みは共通テスト対策に全力を尽くすべき最後の時期』『共通テストで450点以上（900点中）を目指し、その基盤を冬休みで完成させる』『新年からは「絶対に合格する」という強い心理状態で試験本番を迎える』ことが成功につながります。
@@ -182,7 +182,7 @@ export default function KoukouWinterStudyPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>午前の時間帯（8時～12時）：最難関科目に充てる</strong> — 『朝起床後3～4時間は脳が最も活性化し、複雑な思考が必要な科目に最適』『数学・物理・化学などの理系科目、英語の文法学習などに充てるべき』『この4時間で難問を3～5問解く』『その過程で自分の思考プロセスの弱点を発見できる』『弱点発見と改善が朝の勉強の最大の目的』という『効率的時間活用』です。『午前は「質優先」で、量より理解度を深める学習』『焦らず、1問1問に時間をかけて完全理解を目指す』『解けたか解けないかではなく「なぜこう考えるのか」「なぜこの方法を選ぶのか」を意識する』という『深い学習』が重要です。
@@ -190,7 +190,7 @@ export default function KoukouWinterStudyPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>午後の時間帯（13時～17時）：標準難度科目の学習</strong> — 『食事後で少し眠気があるため、集中力がやや低下する時間帯』『難易度の高い問題より、標準的な問題に向き合う時間として活用』『英語の長文読解、国語の現代文・古文、社会科目の基本的内容習得などに最適』『この時間で確実な基礎知識を習得することが、難問へのステップアップを可能にする』『午後は「量優先」で、できるだけ多くの問題に触れる』『毎日20～30問の問題を解く目安』『その中で出題パターンを認識し、本試験への準備をする』という『実戦的な学習』が重要です。
@@ -198,7 +198,7 @@ export default function KoukouWinterStudyPage() {
               </ListItem>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>夜間の時間帯（19時～22時）：復習・整理・翌日準備</strong> — 『1日の勉強成果を脳に定着させるため、復習が極めて重要な時間帯』『午前・午後で学んだ内容を見直し、理解が不完全な部分を補強』『その日解いた問題の中で間違えた問題をもう一度解く』『同じ問題なら今度は80%以上の確率で正答できるはず』『その成功体験が脳に記憶として定着』『夜間は「復習優先」で、新しい内容の習得は控える』『就寝1時間前から脳の興奮を落ち着かせるため、難しい内容は避ける』『単語帳の確認、前日の復習などの軽めの学習で1日を締めくくる』という『良質な睡眠への導き』が重要です。
@@ -217,7 +217,7 @@ export default function KoukouWinterStudyPage() {
             <List>
               <ListItem disablePadding sx={{ mb: 1.5 }}>
                 <ListItemIcon sx={{ minWidth: 32 }}>
-                  <CheckCircleIcon sx={{ color: "#1e782d" }} />
+                  <CheckCircleIcon sx={{ color: "#4f46e5" }} />
                 </ListItemIcon>
                 <Typography variant="body2" sx={{ color: "#424242" }}>
                   <strong>12月25日～1月5日の過ごし方の事前計画</strong> — 『このクリスマス～正月の期間は、学校も塾も活動が少なくなる』『親戚訪問・帰省・家族行事が集中する期間』『勉強時間が大きく減少しやすいため、事前に対策を立てる必要がある』『帰省がある場合は、帰省先に参考書・問題集を持参し、移動中や空き時間に軽い勉強をする』『親戚訪問の日程を親と相談し、帰宅後に最低1～2時間の勉強時間を確保する計画を立てる』『完全に休息の日を作るのではなく、「軽めの勉強をする日」という位置付けで継続性を保つ』という『柔軟で現実的な対応』が習慣を守ります。

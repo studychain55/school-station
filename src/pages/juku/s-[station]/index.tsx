@@ -29,6 +29,7 @@ export const getServerSideProps: GetServerSideProps<JukuListPageProps> = async (
       stationName,
       currentPage: page,
       perPage,
+      showOnlineBanner: true,
     },
   };
 };

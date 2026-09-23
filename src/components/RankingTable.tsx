@@ -4,6 +4,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ClassificationBadge from "./ClassificationBadge";
 import { generateGoogleMapsUrl } from "@/utils/maps";
 import type { MinkouSchoolListItem } from "@/types";
+import { buildKoukouSchoolDetailHref } from "@/utils/routes/koukou";
 
 type Props = {
   schools: MinkouSchoolListItem[];
@@ -60,6 +61,11 @@ export default function RankingTable({ schools, startRank = 1, prefectureSlug }:
           {schools.map((school, i) => {
             const rank = startRank + i;
             const isTop3 = rank <= 3;
+            const detailHref = buildKoukouSchoolDetailHref(
+              school.id,
+              prefectureSlug,
+              school.prefecture_id
+            );
             return (
               <TableRow
                 key={school.id}
@@ -74,14 +80,14 @@ export default function RankingTable({ schools, startRank = 1, prefectureSlug }:
                 <TableCell sx={{ py: 1.2 }}>
                   <Box sx={{ display: "flex", alignItems: "center", gap: 1, flexWrap: "wrap" }}>
                     <Box sx={{ display: "flex", alignItems: "center", gap: 0.8 }}>
-                      {prefectureSlug ? (
-                        <NextLink href={`/rankings/koukou/p-${prefectureSlug}/schools/${school.id}/`} style={{ textDecoration: "none" }}>
+                      {detailHref ? (
+                        <NextLink href={detailHref} style={{ textDecoration: "none" }}>
                           <MuiLink
                             component="span"
                             sx={{
                               fontWeight: 600,
                               fontSize: { xs: 13, sm: 14 },
-                              color: "#1e782d",
+                              color: "#4f46e5",
                               cursor: "pointer",
                               "&:hover": { textDecoration: "underline" },
                             }}
@@ -106,7 +112,7 @@ export default function RankingTable({ schools, startRank = 1, prefectureSlug }:
                               justifyContent: "center",
                               minWidth: 24,
                               minHeight: 24,
-                              color: "#1e782d",
+                              color: "#4f46e5",
                               "&:hover": { color: "#0d5a1f" },
                               transition: "color 0.2s",
                             }}
@@ -147,7 +153,7 @@ export default function RankingTable({ schools, startRank = 1, prefectureSlug }:
                   )}
                 </TableCell>
                 <TableCell sx={{ textAlign: "center", px: { xs: 1, sm: 2 } }}>
-                  <Typography sx={{ fontWeight: 700, fontSize: { xs: 14, sm: 16 }, color: "#1e782d" }}>
+                  <Typography sx={{ fontWeight: 700, fontSize: { xs: 14, sm: 16 }, color: "#4f46e5" }}>
                     {formatDeviation(school)}
                   </Typography>
                 </TableCell>

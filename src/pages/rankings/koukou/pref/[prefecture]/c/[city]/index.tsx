@@ -11,11 +11,15 @@ import FAQ from "@/components/UI/FAQ";
 import BreadCrumb from "@/components/UI/BreadCrumb";
 import supabase from "@/utils/supabase";
 import type { RankingPageProps } from "@/types";
+import {
+  buildKoukouCityRankingHref,
+  buildKoukouPrefectureRankingHref,
+} from "@/utils/routes/koukou";
 
 type CityRankingPageProps = RankingPageProps & { cityTitle: string };
 
 export default function CityRanking(props: CityRankingPageProps) {
-  const { schools, totalCount, title, description, breadcrumbs, prefectureTitle, prefectureSlug, cityTitle, cityId, currentPage, perPage } = props;
+  const { schools, totalCount, title, description, breadcrumbs, prefectureTitle, prefectureSlug, cityTitle, cityId } = props;
 
   const faqItems = generateFAQItems({
     schools,
@@ -31,7 +35,7 @@ export default function CityRanking(props: CityRankingPageProps) {
       <SEO
         title={title}
         description={description}
-        canonical={`/rankings/koukou/p-${prefectureSlug}/c-${cityId}/`}
+        canonical={buildKoukouCityRankingHref(prefectureSlug, cityId)}
         breadcrumbs={breadcrumbs}
         faqItems={faqItems}
         schools={schools.slice(0, 10).map((s, i) => ({ name: s.name, position: i + 1 }))}
@@ -52,7 +56,7 @@ export default function CityRanking(props: CityRankingPageProps) {
       </Head>
       <Container maxWidth="lg" sx={{ py: { xs: 2, sm: 3 } }}>
         <BreadCrumb items={breadcrumbs} />
-        <KoukouRankingPage {...props} canonical={`/rankings/koukou/p-${prefectureSlug}/c-${cityId}/`} />
+        <KoukouRankingPage {...props} canonical={buildKoukouCityRankingHref(prefectureSlug, cityId)} />
         <Divider sx={{ my: 4 }} />
         <Box sx={{ mb: 4 }}>
           <FAQ items={faqItems} />
@@ -100,7 +104,7 @@ export const getServerSideProps: GetServerSideProps<CityRankingPageProps> = asyn
       breadcrumbs: [
         { label: "ホーム", href: "/" },
         { label: "高校偏差値ランキング", href: "/rankings/koukou/" },
-        { label: pref.title, href: `/rankings/koukou/p-${pref.slug}/` },
+        { label: pref.title, href: buildKoukouPrefectureRankingHref(pref.slug) },
         { label: cityTitle },
       ],
       prefectureTitle: pref.title,

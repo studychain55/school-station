@@ -42,6 +42,7 @@ export const getServerSideProps: GetServerSideProps<JukuListPageProps> = async (
       prefectureSlug: pref.slug,
       currentPage: page,
       perPage,
+      showOnlineBanner: true,
     },
   };
 };

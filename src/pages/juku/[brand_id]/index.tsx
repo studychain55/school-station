@@ -10,6 +10,7 @@ import { JUKU_RED, JUKU_RED_BG, JUKU_RED_BG2 } from "@/utils/juku/config";
 import { fetchJukuBrandWithSchools } from "@/utils/db/fetchJuku";
 import { setConditionalCacheHeaders } from "@/utils/cacheHeaders";
 import type { JukuBrand, JukuSchoolListItem } from "@/types";
+import InquiryForm from "@/components/InquiryForm";
 
 type Props = {
   brand: JukuBrand;
@@ -269,7 +270,36 @@ export default function JukuBrandPage({ brand, schools }: Props) {
             </Box>
           </Grid>
         </Grid>
+
+        {/* お問い合わせフォーム */}
+        <Box id="brand-contact" sx={{ mt: 6, mb: 10 }}>
+          <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8">
+            <h2 className="text-2xl font-bold text-gray-900 mb-1">{brand.name}に無料で問い合わせる</h2>
+            <p className="text-sm text-gray-500 mb-5">料金・コース・入塾方法など、お気軽にご相談ください。</p>
+            <InquiryForm siteId="school-station" facilityTable="JukuBrand" facilityId={brand.id} facilityUid={brand.slug} facilityName={brand.name} />
+          </div>
+        </Box>
       </Container>
+
+      {/* モバイル用スティッキーCTA */}
+      <div className="fixed bottom-0 left-0 right-0 md:hidden bg-white border-t border-gray-200 px-4 py-3 z-50 flex gap-2">
+        <button
+          onClick={() => document.getElementById('brand-contact')?.scrollIntoView({ behavior: 'smooth' })}
+          className="flex-1 bg-[#c62828] text-white font-bold py-3 rounded-lg text-sm"
+        >
+          ✉️ 無料で問い合わせる
+        </button>
+        {brand.official_site_url && (
+          <a
+            href={brand.official_site_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-shrink-0 border-2 border-[#c62828] text-[#c62828] font-bold py-3 px-4 rounded-lg text-sm"
+          >
+            公式
+          </a>
+        )}
+      </div>
     </>
   );
 }

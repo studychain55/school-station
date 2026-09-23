@@ -21,11 +21,13 @@ const nextConfig: NextConfig = {
       { source: "/juku/s-:station", destination: "/juku/station/:station" },
       { source: "/juku/ranking/p-:prefecture/", destination: "/juku/ranking/pref/:prefecture/" },
       { source: "/juku/ranking/p-:prefecture", destination: "/juku/ranking/pref/:prefecture" },
-      // Koukou ranking routes
+      // Koukou ranking routes - maintain p-* URLs for backward compatibility
       { source: "/rankings/koukou/p-:prefecture/c-:city/", destination: "/rankings/koukou/pref/:prefecture/c/:city/" },
       { source: "/rankings/koukou/p-:prefecture/c-:city", destination: "/rankings/koukou/pref/:prefecture/c/:city" },
       { source: "/rankings/koukou/p-:prefecture/", destination: "/rankings/koukou/pref/:prefecture/" },
       { source: "/rankings/koukou/p-:prefecture", destination: "/rankings/koukou/pref/:prefecture" },
+      { source: "/rankings/koukou/p-:prefecture/schools/:schoolId/", destination: "/rankings/koukou/pref/:prefecture/schools/:schoolId/" },
+      { source: "/rankings/koukou/p-:prefecture/schools/:schoolId", destination: "/rankings/koukou/pref/:prefecture/schools/:schoolId" },
       { source: "/rankings/koukou/public/p-:prefecture/", destination: "/rankings/koukou/public/pref/:prefecture/" },
       { source: "/rankings/koukou/public/p-:prefecture", destination: "/rankings/koukou/public/pref/:prefecture" },
     ],

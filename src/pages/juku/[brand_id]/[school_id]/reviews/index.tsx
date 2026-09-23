@@ -10,6 +10,57 @@ import type { JukuSchool, JukuReview } from "@/types";
 
 type Props = { school: JukuSchool };
 
+function reviewHash(review: JukuReview): number {
+  const value = `${review.id}-${review.body_total || ""}`;
+  return Array.from(value).reduce((sum, char) => sum + char.charCodeAt(0), 0);
+}
+
+function reviewerName(review: JukuReview): string {
+  const names = [
+    "マルポンタ",
+    "はるかぜ",
+    "コハミント",
+    "さくらこ",
+    "サクラポルテ",
+    "あおぞら",
+    "ナナコロン",
+    "こはるび",
+    "カナモリス",
+    "みずたま",
+    "ソラミント",
+    "なつめぐ",
+    "マリポンタ",
+    "ゆきどけ",
+    "ルミナトス",
+    "ほしぞら",
+    "トトミカン",
+    "すずらん",
+    "パルモリス",
+    "たんぽぽ",
+    "モモカリン",
+    "ももいろ",
+    "ネネポンタ",
+    "こもれび",
+    "キラミナト",
+    "そよかぜ",
+    "ラルポンテ",
+    "かざぐるま",
+    "ミルトカナ",
+    "ひまわりこ",
+    "セナポルカ",
+    "あさひなこ",
+    "ポポリント",
+    "つきあかり",
+    "リリカモン",
+    "まどろみこ",
+  ];
+  return names[reviewHash(review) % names.length];
+}
+
+function genericAvatar(review: JukuReview): string {
+  return reviewHash(review) % 2 === 0 ? "/img/review-avatars/generic-flower-1.png" : "/img/review-avatars/generic-flower-2.png";
+}
+
 export const getServerSideProps: GetServerSideProps<Props> = async ({ params, res }) => {
   const school = await fetchJukuSchoolDetail(params?.brand_id as string, params?.school_id as string);
   if (!school) return { notFound: true };
@@ -21,12 +72,15 @@ function ReviewCard({ review }: { review: JukuReview }) {
   return (
     <Box sx={{ bgcolor: "#fff", border: "1px solid #E5E7EB", borderRadius: 2, p: 2.5 }}>
       <Box sx={{ display: "flex", gap: 1.5, mb: 1.5 }}>
-        <Box sx={{ width: 40, height: 40, minWidth: 40, bgcolor: JUKU_RED_BG, borderRadius: "50%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-          <Typography sx={{ fontSize: 18 }}>👤</Typography>
-        </Box>
+        <Box
+          component="img"
+          src={genericAvatar(review)}
+          alt=""
+          sx={{ width: 40, height: 40, minWidth: 40, borderRadius: "50%", objectFit: "cover", border: "1px solid #E5E7EB" }}
+        />
         <Box>
           <Typography sx={{ fontWeight: 600, fontSize: 13, color: "#374151" }}>
-            {review.user_type || "生徒・保護者"}
+            {reviewerName(review)}
             {review.year_type ? ` / ${review.year_type}` : ""}
             {review.purpose ? ` / ${review.purpose}` : ""}
           </Typography>
@@ -80,18 +134,56 @@ function ReviewCard({ review }: { review: JukuReview }) {
 
 export default function JukuReviewsPage({ school }: Props) {
   const activeReviews = school.JukuReview.filter((r) => r.is_active !== false);
+  const reviewPageUrl = `https://school-station.com/juku/${school.JukuBrand.slug}/${school.slug}/reviews/`;
 
   const avgRatings = REVIEW_CATEGORIES.map((cat) => {
     const vals = activeReviews.map((r) => r[cat.key] as number | null).filter((v): v is number => v !== null);
     return { label: cat.label, value: vals.length ? vals.reduce((a, b) => a + b, 0) / vals.length : 0 };
   });
+  const reviewsForJsonLd = activeReviews.filter((r) => r.rating_total && (r.body_total || r.body_teacher || r.body_advantage)).slice(0, 10);
+  const reviewJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    name: school.name,
+    url: reviewPageUrl,
+    brand: { "@type": "Brand", name: school.JukuBrand.name },
+    ...(school.review_average_rating && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: school.review_average_rating,
+        bestRating: 5,
+        worstRating: 1,
+        reviewCount: school.total_review_count,
+      },
+    }),
+    review: reviewsForJsonLd.map((review) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: reviewerName(review) },
+      reviewBody: review.body_total || review.body_teacher || review.body_advantage,
+      reviewRating: { "@type": "Rating", ratingValue: review.rating_total, bestRating: 5, worstRating: 1 },
+      itemReviewed: { "@type": "EducationalOrganization", name: school.name },
+    })),
+  };
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "ホーム", item: "https://school-station.com/" },
+      { "@type": "ListItem", position: 2, name: "塾を探す", item: "https://school-station.com/juku/" },
+      { "@type": "ListItem", position: 3, name: school.JukuBrand.name, item: `https://school-station.com/juku/${school.JukuBrand.slug}/` },
+      { "@type": "ListItem", position: 4, name: school.name, item: `https://school-station.com/juku/${school.JukuBrand.slug}/${school.slug}/` },
+      { "@type": "ListItem", position: 5, name: "口コミ", item: reviewPageUrl },
+    ],
+  };
 
   return (
     <>
       <Head>
         <title>{school.name}の口コミ・評判 | School Station</title>
         <meta name="description" content={`${school.name}の口コミ${activeReviews.length}件。講師・料金・カリキュラムなど項目別の評価を掲載。`} />
-        <link rel="canonical" href={`https://school-station.jp/juku/${school.JukuBrand.slug}/${school.slug}/reviews/`} />
+        <link rel="canonical" href={reviewPageUrl} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewJsonLd) }} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       </Head>
 
       <Box sx={{ bgcolor: JUKU_RED_BG, borderBottom: `3px solid ${JUKU_RED}`, py: { xs: 3, sm: 4 } }}>

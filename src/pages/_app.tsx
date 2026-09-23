@@ -1,4 +1,5 @@
 import type { AppProps } from "next/app";
+import { useRouter } from "next/router";
 import { ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -9,17 +10,28 @@ import BackToTop from "@/components/BackToTop";
 import "@/styles/globals.css";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const CHROMELESS_ROUTES = new Set([
+  "/daigakujyukentaisaku/[universitySlug]",
+  "/daigakujyukentaisaku/[universitySlug]/[facultySlug]",
+  "/daigakujyukentaisaku/gunmapazdaigaku",
+  "/daigakujyukentaisaku/gunmapazdaigaku/kangogakubu",
+  "/tango/eikenjun1",
+  "/tango/eikenjun1.html",
+]);
 
 export default function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+  const isChromeless = CHROMELESS_ROUTES.has(router.pathname);
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Header />
-      <main id="main-content" style={{ minHeight: "60vh" }}>
+      {!isChromeless && <Header />}
+      <main id="main-content" style={{ minHeight: isChromeless ? 0 : "60vh" }}>
         <Component {...pageProps} />
       </main>
-      <Footer />
-      <BackToTop />
+      {!isChromeless && <Footer />}
+      {!isChromeless && <BackToTop />}
       {GA_ID && <GoogleAnalytics gaId={GA_ID} />}
     </ThemeProvider>
   );

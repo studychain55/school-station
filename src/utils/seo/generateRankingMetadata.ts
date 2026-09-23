@@ -23,7 +23,7 @@ export function generateRankingTitle(params: MetadataParams): string {
 
   parts.push("高校偏差値ランキング");
 
-  return `${parts.join(" ")}【${CURRENT_YEAR}年度版】| School Station`;
+  return `${parts.join(" ")}【${CURRENT_YEAR}年度版】| オンライン塾比較ステーション`;
 }
 
 export function generateRankingDescription(params: MetadataParams): string {
@@ -38,7 +38,7 @@ export function generateRankingDescription(params: MetadataParams): string {
     desc += `トップは${top3.join("、")}。`;
   }
 
-  desc += `${CURRENT_YEAR}年度の最新偏差値ランキングをSchool Stationでチェック。`;
+  desc += `${CURRENT_YEAR}年度の最新偏差値ランキングをオンライン塾比較ステーションでチェック。`;
 
   return desc;
 }
@@ -60,7 +60,7 @@ export function generateFAQItems(params: MetadataParams & { schools: MinkouSchoo
 
   items.push({
     question: `${area}には${classLabel}高校が何校ありますか？`,
-    answer: `${area}には偏差値データのある${classLabel}高校が${totalCount}校登録されています。School Stationでは全校の偏差値を一覧で確認できます。`,
+    answer: `${area}には偏差値データのある${classLabel}高校が${totalCount}校登録されています。オンライン塾比較ステーションでは全校の偏差値を一覧で確認できます。`,
   });
 
   if (schools.length >= 5) {

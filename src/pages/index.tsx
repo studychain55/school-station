@@ -382,7 +382,7 @@ export default function HomePage() {
                 boxShadow: "0 4px 12px rgba(255,111,0,0.3)",
               }}
             >
-              全国ランキングを見る
+              今すぐランキングを見る →
             </Button>
           </Link>
         </Box>

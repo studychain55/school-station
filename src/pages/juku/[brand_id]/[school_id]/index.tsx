@@ -420,6 +420,24 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
         </Container>
       </Box>
 
+      {/* デスクトップ用 CTA */}
+      <Box sx={{ display: { xs: "none", md: "flex" }, gap: 1.5, maxWidth: "lg", mx: "auto", px: 3, pt: 2, pb: 0 }}>
+        {school.telephone && (
+          <a href={`tel:${school.telephone.replace(/-/g, "")}`} style={{ textDecoration: "none" }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, border: "2px solid #7c3aed", color: "#7c3aed", fontWeight: 700, px: 2.5, py: 1.5, borderRadius: 2, fontSize: 14, cursor: "pointer", "&:hover": { bgcolor: "#f5f3ff" } }}>
+              📞 電話で問い合わせ
+            </Box>
+          </a>
+        )}
+        {(school.official_site_url || school.JukuBrand?.official_site_url) && (
+          <a href={school.official_site_url || school.JukuBrand.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none" }}>
+            <Box sx={{ display: "flex", alignItems: "center", gap: 1, bgcolor: "#E53935", color: "#fff", fontWeight: 700, px: 2.5, py: 1.5, borderRadius: 2, fontSize: 14, cursor: "pointer", "&:hover": { bgcolor: "#C62828" } }}>
+              ✉️ 問い合わせ・予約
+            </Box>
+          </a>
+        )}
+      </Box>
+
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
         <Grid container spacing={3}>
           {/* メインコンテンツ */}

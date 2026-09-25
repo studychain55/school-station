@@ -154,9 +154,9 @@ export default function HomePage() {
           </Typography>
           <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1.5, justifyContent: "center" }}>
             {[
-              { label: "無料相談・問い合わせしやすい塾を探す", href: "/juku/?category=%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3" },
-              { label: "資料請求できる塾を比較", href: "/juku/?purpose=%E5%A4%A7%E5%AD%A6%E5%8F%97%E9%A8%93" },
-              { label: "無料体験ありの塾を見る", href: "/juku/?category=%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3" },
+              { label: "オンライン塾を一覧で見る", href: "/juku/?category=%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3" },
+              { label: "大学受験向けの塾を探す", href: "/juku/?purpose=%E5%A4%A7%E5%AD%A6%E5%8F%97%E9%A8%93" },
+              { label: "高校受験向けの塾を探す", href: "/juku/?purpose=%E9%AB%98%E6%A0%A1%E5%8F%97%E9%A8%93" },
             ].map((btn) => (
               <Link key={btn.label} href={btn.href} style={{ textDecoration: "none" }}>
                 <Box

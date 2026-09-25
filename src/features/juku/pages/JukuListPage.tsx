@@ -48,9 +48,13 @@ export default function JukuListPage({
   const router = useRouter();
   const totalPages = Math.ceil(totalCount / perPage);
   const [nameFilter, setNameFilter] = useState("");
-  const displayedSchools = nameFilter
+  const [sortBy, setSortBy] = useState<"default" | "rating">("default");
+  const filteredSchools = nameFilter
     ? schools.filter((s) => s.name.includes(nameFilter) || s.JukuBrand.name.includes(nameFilter))
     : schools;
+  const displayedSchools = sortBy === "rating"
+    ? [...filteredSchools].sort((a, b) => (b.review_average_rating ?? 0) - (a.review_average_rating ?? 0))
+    : filteredSchools;
 
   const handlePageChange = (_: React.ChangeEvent<unknown>, page: number) => {
     const query = { ...router.query, page: page > 1 ? String(page) : undefined };
@@ -119,11 +123,10 @@ export default function JukuListPage({
       )}
 
       <Container maxWidth="lg" sx={{ py: { xs: 3, sm: 4 } }}>
-        {/* 塾名絞り込み */}
-        <Box sx={{ mb: 2 }}>
+        {/* 塾名絞り込み・並び替え */}
+        <Box sx={{ mb: 2, display: "flex", gap: 1.5, alignItems: "center", flexWrap: "wrap" }}>
           <TextField
             size="small"
-            fullWidth
             placeholder="塾名・ブランド名で絞り込む"
             value={nameFilter}
             onChange={(e) => setNameFilter(e.target.value)}
@@ -136,8 +139,27 @@ export default function JukuListPage({
                 ),
               },
             }}
-            sx={{ bgcolor: "#fff", borderRadius: 1 }}
+            sx={{ bgcolor: "#fff", borderRadius: 1, flex: 1, minWidth: 180 }}
           />
+          <Box sx={{ display: "flex", gap: 0.75, flexShrink: 0 }}>
+            {([{ value: "default", label: "掲載順" }, { value: "rating", label: "評価が高い順" }] as const).map((opt) => (
+              <Box
+                key={opt.value}
+                component="button"
+                onClick={() => setSortBy(opt.value)}
+                sx={{
+                  px: 1.5, py: 0.75, border: "1px solid", borderRadius: 1.5, fontSize: 12, fontWeight: 600,
+                  cursor: "pointer", transition: "all 0.12s",
+                  bgcolor: sortBy === opt.value ? JUKU_RED : "#fff",
+                  color: sortBy === opt.value ? "#fff" : JUKU_RED,
+                  borderColor: sortBy === opt.value ? JUKU_RED : JUKU_RED_BG2,
+                  "&:hover": { bgcolor: sortBy === opt.value ? "#8E0000" : JUKU_RED_BG },
+                }}
+              >
+                {opt.label}
+              </Box>
+            ))}
+          </Box>
         </Box>
 
         {/* クイックフィルター */}

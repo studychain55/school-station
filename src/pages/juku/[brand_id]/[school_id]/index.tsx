@@ -352,6 +352,48 @@ export default function JukuSchoolPage({ school, relatedSchools }: Props) {
         />
       </Head>
 
+      {/* モバイル用スティッキーCTA */}
+      {school.official_site_url && (
+        <Box
+          sx={{
+            display: { xs: "flex", md: "none" },
+            position: "fixed",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            zIndex: 1200,
+            bgcolor: "#fff",
+            borderTop: `2px solid ${JUKU_RED}`,
+            px: 2,
+            py: 1.25,
+            gap: 1,
+            alignItems: "center",
+            boxShadow: "0 -4px 12px rgba(0,0,0,0.12)",
+          }}
+        >
+          <Box sx={{ flex: 1, minWidth: 0 }}>
+            <Typography sx={{ fontSize: 11, color: "#6B7280", lineHeight: 1.2 }}>無料体験・資料請求受付中</Typography>
+            <Typography sx={{ fontSize: 11, color: "#1e782d", fontWeight: 700 }}>通常3営業日以内に返信</Typography>
+          </Box>
+          <a href={school.official_site_url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", flexShrink: 0 }}>
+            <Box
+              sx={{
+                bgcolor: JUKU_RED,
+                color: "#fff",
+                px: 2.5,
+                py: 1,
+                borderRadius: 1.5,
+                fontWeight: 800,
+                fontSize: 13,
+                whiteSpace: "nowrap",
+              }}
+            >
+              無料で申し込む →
+            </Box>
+          </a>
+        </Box>
+      )}
+
       {/* ヘッダー */}
       <Box sx={{ bgcolor: JUKU_RED_BG, borderBottom: `3px solid ${JUKU_RED}`, py: { xs: 3, sm: 4 } }}>
         <Container maxWidth="lg">
